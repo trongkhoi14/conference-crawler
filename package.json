@@ -1,0 +1,32 @@
+{
+  "name": "conference-crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trongkhoi14/conference-crawler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trongkhoi14/conference-crawler/issues"
+  },
+  "homepage": "https://github.com/trongkhoi14/conference-crawler#readme",
+  "dependencies": {
+    "datefinder": "^1.0.4",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3",
+    "node-cron": "^3.0.3",
+    "node-schedule": "^2.1.1",
+    "nodemon": "^3.0.2",
+    "puppeteer": "^21.6.1",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
+}
