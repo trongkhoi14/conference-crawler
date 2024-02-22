@@ -1,6 +1,8 @@
 const puppeteer = require('puppeteer');
 const dateFinder = require('datefinder');
+const fs = require('fs');
 require('dotenv').config();
+const Conference = require('../models/conference-model');
 
 const getConferenceList = (browser) => new Promise(async(resolve, reject) => {
     try {
@@ -94,15 +96,136 @@ const searchConferenceLinks  = (browser, conference) => new Promise(async(resolv
 })
 
 // Get conference date, submisstion date, notification date, ...
-const getConferenceDetails  = (browser, conference) => new Promise(async(resolve, reject) => {
+const getConferenceDetails  =  async (browser, conference)  => {
     try {
+        // Getting keywords from dict 
+        const submissionDate_keywords = fs.readFileSync(__dirname + '/dict/submission_date_dict.txt', 'utf-8').split('\n').map(keyword => keyword.trim());
+        const conferenceDate_keywords = fs.readFileSync(__dirname + '/dict/conference_date_dict.txt', 'utf-8').split('\n').map(keyword => keyword.trim());
+        const notificationDate_keywords = fs.readFileSync(__dirname + '/dict/notification_date_dict.txt', 'utf-8').split('\n').map(keyword => keyword.trim());
 
+        // For each conference link
+        for(const conferenceLink of conference.Links) {
+            // Array to store conference details
+            const submissionDate = [];
+            const conferenceDate = [];
+            const notificationDate = [];
+
+            // Create ramdom time to outplay Captcha
+            setTimeout(function () {
+            },  Math.floor(Math.random() * 2000) + 1000);
+
+            // Open new tab
+            const page = await browser.newPage();
+            
+            //  Go to conference link
+            await page.goto(`${conferenceLink}`, { waitUntil: 'domcontentloaded' });
+
+            // Getting page content
+            const bodyContent = await page.content();
+
+            // Getting submisstion date
+            for (const keyword of submissionDate_keywords) {
+                // Kiểm tra xem đã tìm được submisstion date chưa
+                //if(submissionDate.length > 0) break;
+
+                let index = bodyContent.indexOf(keyword);
+                while (index !== -1 && index < bodyContent.length) {
+                    const snapshot = bodyContent.substring(Math.max(0, index - 50), index + keyword.length + 100);
+                    //console.log(snapshot)
+                    const submissionDateFinder = dateFinder(formatString(snapshot));
+                    if(submissionDateFinder.length > 0) {
+                        // Trước khi push cần phải kiểm tra có phải fake new hay không
+                        if(!isFakeNews(submissionDate, keyword)) {
+                            submissionDate.push({
+                                date: findClosestDate(submissionDateFinder, snapshot.indexOf(keyword), keyword.length),
+                                keyword: keyword,
+                                update_time: new Date()
+                            })
+                        }
+                        break;
+                    }
+                    // Tìm vị trí tiếp theo của keyword
+                    index = bodyContent.indexOf(keyword, index + 1);
+                }
+                if (index === -1)  {
+                    //console.log(`Not found: ${keyword}`);
+                }
+            }
+
+            // Getting conference date
+            for (const keyword of conferenceDate_keywords) {
+                // Kiểm tra xem đã tìm được conference date chưa
+                if(conferenceDate.length > 0) break;
+
+                let index = bodyContent.indexOf(keyword);
+                while (index !== -1 && index < bodyContent.length) {
+                    const snapshot = bodyContent.substring(Math.max(0, index - 50), index + keyword.length + 100);
+                    const conferenceDateFinder = dateFinder(formatString(snapshot));
+                    if(conferenceDateFinder.length > 0) {
+                        if(!isFakeNews(conferenceDate, keyword)) {
+                            conferenceDate.push({
+                                date: findClosestDate(conferenceDateFinder, snapshot.indexOf(keyword), keyword.length),
+                                keyword: keyword,
+                                update_time: new Date()
+                            })
+                        }
+                        break;
+                    }
+                    // Tìm vị trí tiếp theo của keyword
+                    index = bodyContent.indexOf(keyword, index + 1);
+                }
+                if (index === -1)  {
+                    //console.log(`Not found: ${keyword}`);
+                }
+            }
+
+            // Getting notification date
+            for (const keyword of notificationDate_keywords) {
+                // Kiểm tra xem đã tìm được notification date chưa
+                //if(notificationDate.length > 0) break;
+
+                let index = bodyContent.indexOf(keyword);
+                while (index !== -1 && index < bodyContent.length) {
+                    const snapshot = bodyContent.substring(Math.max(0, index - 50), index + keyword.length + 100);
+                    const notificationDateFinder = dateFinder(formatString(snapshot));
+                    if(notificationDateFinder.length > 0) {
+                        if(!isFakeNews(notificationDate, keyword)) {
+                            notificationDate.push({
+                                date: findClosestDate(notificationDateFinder, snapshot.indexOf(keyword), keyword.length),
+                                keyword: keyword,
+                                update_time: new Date()
+                            }) 
+                        }
+                        break;
+                    }
+                    // Tìm vị trí tiếp theo của keyword
+                    index = bodyContent.indexOf(keyword, index + 1);
+                }
+                if (index === -1)  {
+                    //console.log(`Not found: ${keyword}`);
+                }
+            }
+
+            // If full information, Update conference in Database
+            if(submissionDate.length > 0 && conferenceDate.length > 0 && notificationDate.length > 0) 
+            {
+                await Conference.findByIdAndUpdate(conference._id, {
+                    ConferenceDate: conferenceDate,
+                    SubmissonDate: submissionDate,
+                    NotificationDate: notificationDate
+                }, {new: true})
+                break;
+            }
+
+            // Close tab
+            await page.close();      
+
+        }
         
     } catch (error) {
-        console.log("Error in web-scraper-service/getConferenceDetails");
-        reject(error)
+        console.log("Error in web-scraper-service/getConferenceDetails" + error);
     }
-})
+}
 
 const getTotalPages = async (browser, url) => {
     let page = await browser.newPage();
@@ -171,6 +294,58 @@ const getConferencesOnPage = (browser, currentLink) => new Promise(async(resolve
         reject(error);
     }
 }) 
+
+//
+// Tiền xử lý trước khi trích xuất ngày tháng
+const formatString = (str) => {
+    return str.replace(/(\s0)([1-9])\b/g, '$2').replace(/(\d+)(st|nd|rd|th),/g, '$1,');
+};
+
+// Xử lý khi datefinder tìm được nhiều ngày
+const findClosestDate = (dateResults, keywordIndex, keywordLength) => {
+    // Nếu chỉ có một ngày được tìm thấy, trả về ngày đó luôn
+    if (dateResults.length === 1) {
+        return dateResults[0].date;
+    }
+
+    // Tìm ngày có sự chênh lệch index nhỏ nhất
+    let closestDate = dateResults.reduce((closest, result) => {
+        let diff = 0;
+        if (result.startIndex < keywordIndex) {
+            let dateIndex = result.endIndex;
+            diff = Math.abs(keywordIndex- dateIndex);
+            //console.log('truoc: ' +diff)
+        }
+        else {
+            let dateIndex = result.startIndex;
+            diff = Math.abs(dateIndex - keywordIndex - keywordLength);
+            //console.log('sau: '+ diff)
+        }
+
+        if (closest === null || diff < closest.diff) {
+            return { date: result.date, diff: diff };
+        }
+
+        return closest;
+    }, null);
+
+    return closestDate.date;
+};
+
+
+const isFakeNews = (array, keywordToCheck) => {
+    // Trường hợp vừa có "Notification of Conditional Acceptance" vừa có "notification"
+    // thì "notification" là thông tin fake, không được lấy
+
+    // some được sử dụng để kiểm tra xem ít nhất một phần tử trong mảng 
+    // có chứa từ khóa được chỉ định hay không
+    // Nếu keyword đã xuất hiện --> là fake new
+    if(array.some(item => item.keyword.toLowerCase().includes(keywordToCheck.toLowerCase()))) {
+        return true;
+    }
+    return false;
+}
+
 
 
 

@@ -11,7 +11,7 @@ const crawlController = async (browserInstance) => {
 
         // Schedule the job to run at 2:00 AM every day
         // Code to here
-        await crawlNewConferences(browser);
+        // await crawlNewConferences(browser);
 
         // Schedule the job to run for each conference in the database
         // Code to here
@@ -44,7 +44,6 @@ const crawlNewConferences = async (browser) => {
         let conferenceLink = await webScraperService.searchConferenceLinks(browser, newConferences[i])
         newConferences[i].Links = conferenceLink;
 
-
         // Store new conference
         await Conference.create(newConferences[i]);
 
@@ -60,12 +59,27 @@ const crawlNewConferences = async (browser) => {
 // Get all conferences detail from conference link
 const crawlAllConferencesDetail = async (browser) => {
     console.log('>> Crawling all conference detail...')
-    console.log('>> Crawl all conference detail successfully')
-}
+    // Step 1: Get all conference from Database
+    let allConferences = await Conference.find({});
+    // console.log(allConferences.length)
+    // Step 2: For each conference, get detail
+    for(let i=0; i<allConferences.length; i++) {
+        console.log(i)
+        await webScraperService.getConferenceDetails(browser, allConferences[i]);
+        
+        // Create ramdom time to outplay Captcha
+        setTimeout(function() {
+        }, Math.floor(Math.random() * 2000) + 1000)
 
-// Process and store after getting all information
-const processConferenceDetails = async (details) => {
-    //console.log('Conference Details:', details);
+        if(i==199) break;
+        /* 
+            Cần có một file log, lưu lại i nào bị lỗi --> cần cào lại
+            một lần chỉ cào một số ít thôi, lưu lại lần cuối cào thì i bằng 
+            bao nhiêu rồi
+        */
+    }
+
+    console.log('>> Crawl all conference detail successfully')
 }
 
 // Get new conferences
