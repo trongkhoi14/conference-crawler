@@ -1,7 +1,15 @@
 # conference-crawler
 
 ## Overview
+The "conference-crawler" project is an automated tool designed to gather information about conferences and events worldwide. Utilizing web scraping techniques, this project automatically scans websites, and other sources to search for and collect information about conferences across various fields of expertise.
 
+The goal of "conference-crawler" is to provide a consolidated and up-to-date database of conferences and events in multiple domains, enabling researchers, experts, and event organizers to easily track and participate in events relevant to their interests and needs.
+
+The features of the "conference-crawler" project include:
+
+- Automated data scraping of conferences from the website https://portal.core.edu.au/conf-ranks/.
+- Automatic search for the official websites of conferences.
+- Detailed data scraping of conferences, including conference dates, submission dates, notification dates, etc., from the official conference websites.
 
 ## Getting started
 ### Run the application at your local
