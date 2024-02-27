@@ -1,8 +1,10 @@
 const cron = require('node-cron');
 const schedule = require('node-schedule');
 const webScraperService = require('../services/web-scraper-service')
-const Conference = require('../models/conference-model');
-
+const emailService = require('../services/email-service')
+const dbConference = require('../models/conference-model');
+const dbFollow = require('../models/follow-model');
+const conferenceModel = require('../models/conference-model');
 
 const crawlController = async (browserInstance) => {
     try {
@@ -11,17 +13,23 @@ const crawlController = async (browserInstance) => {
 
         // Schedule the job to run at 2:00 AM every day
         // Code to here
-        await crawlNewConferences(browser);
+        // await crawlNewConferences(browser);
 
         // Schedule the job to run for each conference in the database
         // Code to here
-        await crawlAllConferencesDetail(browser);
+        // await crawlAllConferencesDetail(browser);
+
+        // Send email
+        const followList = await dbFollow.find({});
+        console.log(followList)
+        for(let i=0; i<followList.length; i++) {
+            emailService.sendingEmail(followList[i].userId, followList[i].confId);
+        }
+        
 
     } catch (error) {
-        console.log('Error in crawlController: '+ error);
+        console.log('Error in crawlController: ' + error);
     }
-    
-   
 }
 
 // Get new conferences from Core portal
@@ -30,26 +38,26 @@ const crawlNewConferences = async (browser) => {
     console.log('>> Getting conference list from Core portal...')
     const conferenceList = await webScraperService.getConferenceList(browser);
     console.log('>> Conference list from Core portal: ' + conferenceList.length);
-    
+
     // Step 2: Compare with conference list in Database 
-    const existingConferences = await Conference.find({}, 'Title');
+    const existingConferences = await dbConference.find({}, 'Title');
     console.log('>> ExistingConferences: ', existingConferences.length);
     const newConferences = getNewConferences(conferenceList, existingConferences);
     console.log('>> NewConferences: ', newConferences.length)
-    
+
     // Step 3: For each new conference, get conference link
     console.log('>> Getting conferences link...')
-    for(let i=0; i<newConferences.length; i++) {
+    for (let i = 0; i < newConferences.length; i++) {
         console.log(i)
         let conferenceLink = await webScraperService.searchConferenceLinks(browser, newConferences[i])
         newConferences[i].Links = conferenceLink;
 
 
         // Store new conference
-        await Conference.create(newConferences[i]);
+        await dbConference.create(newConferences[i]);
 
         // Create ramdom time to outplay Captcha
-        setTimeout(function() {
+        setTimeout(function () {
         }, Math.floor(Math.random() * 2000) + 1000)
 
         //if(i==98) break;
