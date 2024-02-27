@@ -23,10 +23,10 @@ const sendingEmail = async (userId, confId) => {
     console.log(confId)
 
     const user = await dbUser.findById(userId);
-    console.log(userEmail);
+    console.log(user.email);
 
     const conf = await dbConference.findById(confId);
-    console.log(confEmail);
+    console.log(conf.Title);
 
     const email = user.email;    // Gửi đến ai?
     const subject = "Demo Sending Email";       // Tiêu đề

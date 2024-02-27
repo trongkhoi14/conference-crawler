@@ -20,12 +20,61 @@ const crawlController = async (browserInstance) => {
         // await crawlAllConferencesDetail(browser);
 
         // Send email
-        const followList = await dbFollow.find({});
-        console.log(followList)
-        for(let i=0; i<followList.length; i++) {
-            emailService.sendingEmail(followList[i].userId, followList[i].confId);
-        }
+        // const followList = await dbFollow.find({});
+        // console.log(followList)
+        // for(let i=0; i<followList.length; i++) {
+        //     emailService.sendingEmail(followList[i].userId, followList[i].confId);
+        // }
+
+        // Lấy ra ngày hiện tại
+        const currentDate = new Date();
+
+        // Tạo ngày sau một tuần từ ngày hiện tại
+        const oneWeekLater = new Date(currentDate);
+        oneWeekLater.setDate(oneWeekLater.getDate() + 7);
+
+        const upcommingConf = await dbConference.find({
+            $or: [
+                { 'ConferenceDate.date': { $gte: currentDate, $lt: oneWeekLater } },
+                { 'SubmissionDate.date': { $gte: currentDate, $lt: oneWeekLater } },
+                { 'NotificationDate.date': { $gte: currentDate, $lt: oneWeekLater } }
+            ]
+        });
         
+        let upcomingEvents = [];
+
+        upcommingConf.forEach(conf => {
+            conf.ConferenceDate.forEach(confDate => {
+                if (confDate.date >= currentDate && confDate.date < oneWeekLater) {
+                    upcomingEvents.push({ 
+                        title: conf.Title,
+                        date: confDate.date, 
+                        keyword: confDate.keyword });
+                }
+            });
+        
+            conf.SubmissonDate.forEach(submissionDate => {
+                if (submissionDate.date >= currentDate && submissionDate.date < oneWeekLater) {
+                    upcomingEvents.push({ 
+                        title: conf.Title,
+                        date: submissionDate.date, 
+                        keyword: submissionDate.keyword });
+                }
+            });
+        
+            conf.NotificationDate.forEach(notificationDate => {
+                if (notificationDate.date >= currentDate && notificationDate.date < oneWeekLater) {
+                    upcomingEvents.push({ 
+                        title: conf.Title,
+                        date: notificationDate.date, 
+                        keyword: notificationDate.keyword });
+                }
+            });
+
+        });
+        
+        console.log(upcomingEvents);
+
 
     } catch (error) {
         console.log('Error in crawlController: ' + error);
@@ -71,15 +120,15 @@ const crawlAllConferencesDetail = async (browser) => {
     let allConferences = await Conference.find({});
     // console.log(allConferences.length)
     // Step 2: For each conference, get detail
-    for(let i=0; i<allConferences.length; i++) {
+    for (let i = 0; i < allConferences.length; i++) {
         console.log(i)
         await webScraperService.getConferenceDetails(browser, allConferences[i]);
-        
+
         // Create ramdom time to outplay Captcha
-        setTimeout(function() {
+        setTimeout(function () {
         }, Math.floor(Math.random() * 2000) + 1000)
 
-        if(i==199) break;
+        if (i == 199) break;
         /* 
             Cần có một file log, lưu lại i nào bị lỗi --> cần cào lại
             một lần chỉ cào một số ít thôi, lưu lại lần cuối cào thì i bằng 
