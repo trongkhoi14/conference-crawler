@@ -16,7 +16,7 @@ const main = async () => {
 
     // Notification
     // notificationController();
-    cron.schedule("0 14 * * *", async () => {
+    cron.schedule("15 14,15,16 * * *", async () => {
         console.log("Sending email notifications...");
         notificationController();
     }, {
