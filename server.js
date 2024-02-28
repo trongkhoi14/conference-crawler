@@ -6,7 +6,7 @@ var cron = require('node-cron');
 
 const main = async () => {
     // Connect to database
-    // await dbConnect();
+    await dbConnect();
 
     // Create browser
     // let browser = startBrowser();
@@ -15,13 +15,13 @@ const main = async () => {
     // crawlController(browser);
 
     // Notification
-    notificationController();
-    // cron.schedule("55 15 * * *", async () => {
-    //     console.log("Sending email notifications...");
-    //     notificationController();
-    // }, {
-    //     timezone: "Asia/Ho_Chi_Minh" // Đặt múi giờ cho lịch
-    // });
+    // notificationController();
+    cron.schedule("15 16 * * *", async () => {
+        console.log("Sending email notifications...");
+        notificationController();
+    }, {
+        timezone: "Asia/Ho_Chi_Minh" // Đặt múi giờ cho lịch
+    });
 };
 
 main();
