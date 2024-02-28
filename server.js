@@ -15,13 +15,13 @@ const main = async () => {
     // crawlController(browser);
 
     // Notification
-    // notificationController();
-    cron.schedule("50 14,15,16 * * *", async () => {
-        console.log("Sending email notifications...");
-        notificationController();
-    }, {
-        timezone: "Asia/Ho_Chi_Minh" // Đặt múi giờ cho lịch
-    });
+    notificationController();
+    // cron.schedule("55 15 * * *", async () => {
+    //     console.log("Sending email notifications...");
+    //     notificationController();
+    // }, {
+    //     timezone: "Asia/Ho_Chi_Minh" // Đặt múi giờ cho lịch
+    // });
 };
 
 main();

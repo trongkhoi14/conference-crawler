@@ -1,4 +1,3 @@
-
 const emailService = require('../services/email-service')
 const dbConference = require('../models/conference-model');
 const dbFollow = require('../models/follow-model');
@@ -12,16 +11,16 @@ const notificationController = async () => {
         // Tạo ngày sau một tuần từ ngày hiện tại
         const oneWeekLater = new Date(currentDate);
         oneWeekLater.setDate(oneWeekLater.getDate() + 7);
-
+        
         // Lấy danh sách tất cả các sự kiện sắp diễn ra trong vòng một tuần
         const upcommingConfs = await dbConference.find({
             $or: [
                 { 'ConferenceDate.date': { $gte: currentDate, $lt: oneWeekLater } },
-                { 'SubmissionDate.date': { $gte: currentDate, $lt: oneWeekLater } },
+                { 'SubmissonDate.date': { $gte: currentDate, $lt: oneWeekLater } },
                 { 'NotificationDate.date': { $gte: currentDate, $lt: oneWeekLater } }
             ]
         });
-
+        console.log(1)
         let upcomingEvents = [];
 
         for (const conf of upcommingConfs) {
