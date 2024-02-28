@@ -3,6 +3,7 @@ const { crawlController } = require('./src/controllers/conference-controller')
 const { notificationController } = require('./src/controllers/notification-controller')
 const dbConnect = require('./src/config/dbconnect');
 var cron = require('node-cron');
+const express = require('express');
 
 const main = async () => {
     // Connect to database
@@ -24,7 +25,20 @@ const main = async () => {
     });
 };
 
-main();
+
+const app = express()
+
+app.get('/', async (req, res) => {
+    await dbConnect()
+    notificationController()
+    res.status(200).json({
+        message: "Send emmail successfully"
+    })
+})
+
+app.listen(8080, ()=> {
+    console.log(`Server was running on port 8080`)
+})
 
 
 

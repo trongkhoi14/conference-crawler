@@ -20,7 +20,6 @@ const notificationController = async () => {
                 { 'NotificationDate.date': { $gte: currentDate, $lt: oneWeekLater } }
             ]
         });
-        console.log(1)
         let upcomingEvents = [];
 
         for (const conf of upcommingConfs) {
