@@ -1,7 +1,8 @@
 const nodemailer = require('nodemailer');
 const { OAuth2Client } = require('google-auth-library');
 const dbConference = require('../models/conference-model');
-const dbUser = require('../models/user-model')
+const dbUser = require('../models/user-model');
+const { notification } = require('../template/mail-template');
 
 const GOOGLE_MAILER_CLIENT_ID = '400969448988-lva8hj82r5m8ic0qsc8hc6e9msn26uth.apps.googleusercontent.com'
 const GOOGLE_MAILER_CLIENT_SECRET = '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'
@@ -18,26 +19,12 @@ myOAuth2Client.setCredentials({
     refresh_token: GOOGLE_MAILER_REFRESH_TOKEN
 })
 
-const sendingEmail = async (userId, confId) => {
-    console.log(userId)
-    console.log(confId)
-
-    const user = await dbUser.findById(userId);
-    console.log(user.email);
-
-    const conf = await dbConference.findById(confId);
-    console.log(conf.Title);
-
-    const email = user.email;    // Gửi đến ai?
-    const subject = "Demo Sending Email";       // Tiêu đề
-    const content = "This is demo";             // Nội dung
-
-
-
+const sendingEmail = async (payload) => {
+   
     const myAccessTokenObject = await myOAuth2Client.getAccessToken();
     // Access Token nằm trong property 'token' trong Object vừa get được ở trên
     const myAccessToken = myAccessTokenObject?.token;
-
+    const { data } = notification(payload)
     const transport = nodemailer.createTransport({
         service: 'gmail',
         auth: {
@@ -50,14 +37,9 @@ const sendingEmail = async (userId, confId) => {
         }
     });
 
-    const mailOptions = {
-        to: email,
-        subject: subject,
-        html: `<h3>${content}</h3>`
-    };
     try {
         // Gửi email
-        // await transport.sendMail(mailOptions)
+        await transport.sendMail(data)
         console.log(">> Send email successfully")
     } catch (error) {
         console.log("Error in SendingEmail: " + error);
