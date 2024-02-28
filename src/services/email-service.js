@@ -4,10 +4,10 @@ const dbConference = require('../models/conference-model');
 const dbUser = require('../models/user-model');
 const { notification } = require('../template/mail-template');
 
-const GOOGLE_MAILER_CLIENT_ID = '400969448988-lva8hj82r5m8ic0qsc8hc6e9msn26uth.apps.googleusercontent.com'
-const GOOGLE_MAILER_CLIENT_SECRET = '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'
-const GOOGLE_MAILER_REFRESH_TOKEN = '1//041ORfACDkn-UCgYIARAAGAQSNwF-L9IrmifO3y2uhZuI3Et98XZrhTM6LzjSR9xtqt4R06hvTCon6qEMfqd8S5FWYIoU_O0zBxk'
-const ADMIN_EMAIL_ADDRESS = 'luongkhoi.14042002@gmail.com'
+const GOOGLE_MAILER_CLIENT_ID = process.env.GOOGLE_MAILER_CLIENT_ID
+const GOOGLE_MAILER_CLIENT_SECRET = process.env.GOOGLE_MAILER_CLIENT_SECRET
+const GOOGLE_MAILER_REFRESH_TOKEN = process.env.GOOGLE_MAILER_REFRESH_TOKEN
+const ADMIN_EMAIL_ADDRESS = process.env.ADMIN_EMAIL_ADDRESS
 
 // Khởi tạo OAuth2Client với Client ID và Client Secret 
 const myOAuth2Client = new OAuth2Client(
