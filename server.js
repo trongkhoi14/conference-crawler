@@ -6,10 +6,10 @@ var cron = require('node-cron');
 
 const main = async () => {
     // Connect to database
-    await dbConnect();
+    // await dbConnect();
 
     // Create browser
-    let browser = startBrowser();
+    // let browser = startBrowser();
 
     // Crawl data
     // crawlController(browser);
