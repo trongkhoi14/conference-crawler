@@ -25,20 +25,21 @@ const main = async () => {
     });
 };
 
+main();
 
-const app = express()
+// const app = express()
 
-app.get('/', async (req, res) => {
-    await dbConnect()
-    notificationController()
-    res.status(200).json({
-        message: "Send emmail successfully"
-    })
-})
+// app.get('/', async (req, res) => {
+//     await dbConnect()
+//     notificationController()
+//     res.status(200).json({
+//         message: "Send emmail successfully"
+//     })
+// })
 
-app.listen(process.env.PORT, ()=> {
-    console.log(`Server was running on port ${process.env.PORT}`)
-})
+// app.listen(process.env.PORT, ()=> {
+//     console.log(`Server was running on port ${process.env.PORT}`)
+// })
 
 
 
