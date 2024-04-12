@@ -97,9 +97,42 @@ const crawlNewConferences = async (browser) => {
 //     console.log(">> Crawl all conference detail successfully");
 // };
 const crawlAllConferencesDetail = async (browser) => {
-    console.log('>> Crawling all conference detail...')
-    console.log('>> Crawl all conference detail successfully')
-}
+    console.log(">> Crawling all conference detail...");
+
+    try {
+        // Step 1: Get the last updated time from the collection in the database
+        const lastUpdateTimeDoc = await LastUpdateTime.findOne();
+        const lastUpdateTime = lastUpdateTimeDoc
+            ? lastUpdateTimeDoc.lastUpdateTime
+            : Date.now();
+
+        // Step 2: Get all conferences from Database that need to be updated based on the last update time
+        const errorConferences = await ConferenceError.distinct("conferenceId");
+        let allConferences = await Conference.find({
+            updatedAt: { $lt: lastUpdateTime }, // Find conferences that were updated before the last update time
+            _id: { $nin: errorConferences }, // Exclude conferences with IDs in errorConferences array
+        })
+            .sort({ updatedAt: 1 })
+            .limit(100);
+
+        // Step 3: Update the last updated time for crawlAllConferencesDetail
+        lastUpdateTimeDoc.lastUpdateTime = Date.now();
+        await lastUpdateTimeDoc.save();
+
+        // Step 4: Loop through each conference and get detail
+        for (const conference of allConferences) {
+            console.log(conference._id);
+            await webScraperService.getConferenceDetails(browser, conference);
+
+            // Create random time to outplay Captcha
+            setTimeout(function () {}, Math.floor(Math.random() * 2000) + 1000);
+        }
+
+        console.log(">> Crawl all conference detail successfully");
+    } catch (error) {
+        console.log("Error in crawlAllConferencesDetail: ", error);
+    }
+};
 
 // Process and store after getting all information
 const processConferenceDetails = async (details) => {
