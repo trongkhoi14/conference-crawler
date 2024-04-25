@@ -1,5 +1,5 @@
 const startBrowser = require('./src/untils/browser');
-const { crawlController } = require('./src/controllers/conference-controller')
+const { crawlController, crawlAllConferencesDetail } = require('./src/controllers/conference-controller')
 const { notificationController } = require('./src/controllers/notification-controller')
 const dbConnect = require('./src/config/dbconnect');
 var cron = require('node-cron');
@@ -10,16 +10,17 @@ const main = async () => {
     await dbConnect();
 
     // Create browser
-    // let browser = startBrowser();
+    let browser = startBrowser();
 
     // Crawl data
-    // crawlController(browser);
+    crawlController(browser);
 
     // Notification
     // notificationController();
     cron.schedule("15 16 * * *", async () => {
         console.log("Sending email notifications...");
         notificationController();
+        crawlAllConferencesDetail(browser);
     }, {
         timezone: "Asia/Ho_Chi_Minh" // Đặt múi giờ cho lịch
     });

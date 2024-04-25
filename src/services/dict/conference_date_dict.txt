@@ -1,56 +1,212 @@
+ISMB/ECCB talk presenters upload their pre-recorded talk video to the ISCB Nucleus platform between June 26 and no later than 5:00 pm (Eastern), July 15. No extensions. Videos become part of the conference library.
+Due to residual logistic issues associated with the COVID pandemic, INFOCOM 2023 conference site has been moved to the New York area, USA (from Tokyo, Japan) with new meeting dates of May 17-20, 2023.
+The IEEE Information Theory Workshop (ITW), a conference of the IEEE Information Theory Society, returns to France after 20 years. ITW 2023 will be organized in Saint-Malo from 23 to 28 April 2023.
+The 31st International Conference on Computers in Education (ICCE 2023) is organized by the Asia-Pacific Society for Computers in Education (APSCE). ICCE 2023 will be held on December 4-8, 2023
+28th June 2023 – Online-only session of ISAGA 2023 conference(Online)  /  4th to 7th July 2023 – ISAGA 2023 conference in La Rochelle, France (in-person only)
+The 57th Annual Conference on Information Sciences and Systems (CISS) will take place in person, Johns Hopkins Unversity, during March 22--24 2023.
+The Doctoral Symposium is a concentrated half-day event that will be held during IEEE/IFIP NOMS 2023, which will be held 8-12 May 2023 in Miami.
+The 21st International Conference on Applied Cryptography and Network Security (ACNS 2023) will be held in Kyoto, Japan, on 19–22 June 2023.
+HAI 2023—the Eleventh International Conference on Human-Agent Interaction (HAI 2023) will be held on Gothenberg, Sweden, December 4-7, 2023
+The 25th IEEE International Conference on High Performance Computing and Communications (HPCC 2023), 17-21 Dec. 2023, Melbourne, Australia.
+2023 IEEE International Conference on Image Processing (ICIP 2023), which will be held in Kuala Lumpur from October 8 to October 11, 2023.
+IEEE CoG 2023 will take place at Northeastern University, which is located in Boston in the United States, from August 21st to 24th.
+A CALL FOR PAPERS (CFP) IS NOW OPEN FOR THE 2023 IAS ANNUAL MEETING WHICH WILL BE HELD IN NASHVILLE, TENNESSEE, USA IN OCTOBER 2023
+The 2023 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining, Morocco, 07-10 November 2023.
+MobileHCI 2023 will be held in person (with hybrid participation) during September 26-29, 2023 in Athens, Greece.
+ICSOC 2023, the 21st event in this series, will take place in Rome, Italy from November 28 – December 1, 2023.
+The 17th European Conference on Software Architecture (ECSA 2023) will be held from September 18 to 22, 2023.
+FAST '23 will take place on February 21–23, 2023, at the Hyatt Regency Santa Clara in Santa Clara, CA, USA.
+DICTA 2023 will be held in Port Macquarie, New South Wales Australia from28 November to 1 December 2023
+We invite you to submit original work to IEEE/ACM IWQoS 2023, held June 16-23, 2023 in Orlando
+The main conference is preceded by co-located events held in the same location on June 12th.
+The following workshops are co-located with EICS 2023 and occur on Tuesday, June 27th 2023:
+48th International Conference on Current Trends in Theory and Practice of Computer Science
+2023 20th Annual IEEE International Conference on Sensing, Communication, and Networking
+GD 2023 will be held at Isola delle Femmine (Palermo), Italy, on September 20-22, 2023,
+17 – 19 April 2023, Antwerp, BE @ Flanders Meeting & Convention Center Antwerp (FMCCA)
+The 24th International Conference on Artificial Intelligence in Education (AIED 2023)
+2023 IEEE International Symposium on Performance Analysis of Systems and Software
+The 21st IEEE International Conference on Embedded and Ubiquitous Computing 2023
+IEEE VR 2023: the 30th IEEE Conference on Virtual Reality and 3D User Interfaces
+(COCOA 2023) will be held during December 15-17, 2023 in Honolulu, Hawaii, USA.
+Conference, Special sessions, and Workshops, August 28 to September 1, 2023
+35th International Conference on Advanced Information Systems Engineering
+25th ACM International Conference on Multimodal Interaction (ICMI 2023)
+will take place between July 3-7, 2023 in Tokyo, Japan and virtually.
+24th International Conference On Distributed Computing And Networking
+20th Conference on Database Systems for Business, Technology and Web
+GPC 2023 will be held on 22th-24th September 2023 at Harbin, China,
+Nominations for the European Prize in Combinatorics: April 15, 2023
+15th International Conference on COMmunication Systems & NETworkS
+20th International Colloquium on Theoretical Aspects of Computing
+MAY 22-25, 2023 AT THE HYATT REGENCY, SAN FRANCISCO, CA & ONLINE
+9th IEEE International Conference on Network Softwarization
+Tue 8 - Thu 10 August 2023 Chicago, Illinois, United States
+InSITE 2023: Informing Science + IT Education Conferences
+Boosting Future Networks through Advanced Softwarization
+June 27 - 30, 2023 | Charleston, South Carolina, USA
+26th International Conference on Discovery Science
+A virtual one-day event under the auspices of AMTA
+EQUALITY & JUSTICE DESIGN FOR EQUALITY AND JUSTICE
+Kyungpook National University, Daegu, South Korea.
+Welcome to the 26th International Conference on
+(8 July - 9 July 2023 Workshops & Tutorials)
+Sun 1 - Fri 6 October 2023 Västerås, Sweden
+IEEE VIS: Visualization & Visual Analytics
+ICME 2023 will take place July 10-14, 2023
+& JUSTICE DESIGN FOR EQUALITY AND JUSTICE
+4th - 7th September 2023, Copenhagen (DK)
+ICCSA 2023 Conference in Athens, Greece
+September 7-9, 2023, Dubrovnik, Croatia
+DESIGN FOREQUALITY & JUSTICE DESIGN FOR
+Exeter, England, UK, 1-3 November 2023
+2-8 July 2023 | Chicago, Illinois, USA
+Robotics, AI, Sensors and Industry 4.0
+12/06/2023 – 16/06/2023, ZARAGOZA 2023
 will be run as an in-person conference
-Workshop and tutorial proposals
+11–14 September 2023 // Madrid, Spain
+October 9-11, 2023 | Porto, Portugal
+The 17TH INTERNATIONAL CONFERENCE ON
+Visualization and Data Analysis 2023
+29 May – 2 June 2023  | ExCeL London
+Melbourne, Australia, 22-27 October
+Bangalore, India, July 11-14, 2023
+Wuhan, China, 20 - 22 October 2023
+2023 November 6th to November 9th
+January 3 - 8 | Hybrid Conference
+9-13 October 2023, Paris, France
+19–23 June 2023 // Madrid, Spain
+Jul 5 - 6 2023, Online (Virtual)
+PROVABLE AND PRACTICAL SECURITY
+Oct. 23 – 25 (Main Conference*)
+EDBT/ICDT 2023 Joint Conference
+04-08 December 2023, Lima, Peru
 Conference Sessions & Tutorials
+Workshop and tutorial proposals
+Paris, France, 22–27 April 2023
 Workshops Tutorials Conference
-is tentatively scheduled for
+28th March - 31st March, 2023
+28 August - 1 September 2023.
 Conference technical program
+is tentatively scheduled for
+ETAPS Joint Call for Papers
 In-Person Conference Starts
+Wednesday, 8 November 2023
+Official Opening IDDM 2023
+IEEE CCEM Main Conference
 In-Person Conference Ends
+FUZZ-IEEE 2023 Conference
+Conference presentation:
+Nový Smokovec, Slovakia
+Raleigh, North Carolina
+ICISC 2023 Conference :
 will take place between
+Conference Celebration
+MONDAY 16 JANUARY 2023
 Conference Days-ONLINE
 WiSec main conference
+ECSCW 2023 Conference
 will take place early
+9 July – 14 July 2023
+Digital Audio Effects
+Date of the Symposium
 run in parallel with
-Doctoral Consortium
-Start of Conference
+ECCO Conference 2023
+ABZ 2023 conference:
+will be held during
+4-7th January, 2023
 Workshops Tutorials
+Doctoral Consortium
+18-20 December 2023
+Start of Conference
+York, UK and Online
+15-19 January 2023
+March 6 — 10, 2023
 EvoStar Conference
-End of Conference
+Onsite conference:
+25-29 March, 2023,
+August 23td - 25th
 Conference starts
+Conference Date	:
+April 23-25, 2023
+CONFERENCE DATES:
+Conference Dates:
+Conference dates:
+Conference begins
+May 8th-12th 2023
+Conference start:
+End of Conference
+4-7 December 2023
+Online Conference
 will be held from
-CONFERENCE DATES
-Conference dates
-Conference Dates
+Conference Date:
+Ioannina, Greece
+Main Conference:
 was held between
-ECAI Conference
+CONFERENCE DATES
+Conference date:
+Conference Dates
+Main conference:
+Conference dates
+Conference Days
 ECCO Conference
-DATE Conference
-Main Conference
 Conference Date
-Workshops Start
-Main conference
+Shanghai, China
+Main Conference
+ECAI Conference
 Conference ends
-Conference date
 will be held in
-Workshop Event
+14–16 NOV, 2023
+Conference days
+12–17 NOV, 2023
+Conference date
+DATE Conference
+Main conference
+Workshop dates:
+Workshops Start
 Working Groups
+(ProvSec 2023)
+Workshop Event
+IDC Conference
+27-29 Sep 2023
 Workshops End
 conference in
+Workshop Date
+ECSQARU 2023
+New York, NY
+EuroSys 2023
 be hosted by
 will be held
-will occur
-Conference
-take place
+SOFSEM 2023
+Event Date:
+Conference:
+IGARSS 2023
+IMECS 2023:
+ICTAC 2023
+EUSPN 2023
+EDOC 2023:
 Start, End
 conference
-Workshops
+(EUC-2023)
+Conference
+take place
+will occur
+June 10–15
+CAiSE ’23
 Symposium
+Workshops
+DLT 2023:
 Tutorials
-Schedule
 Workshop
+Exhibits
+Schedule
+Program
+Dates:
 Dates
-held
+ROME
 CoRL
+held
 Date
 When
+EMAS
 DLT

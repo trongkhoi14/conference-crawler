@@ -1,8 +1,8 @@
-const puppeteer = require('puppeteer');
-const dateFinder = require('datefinder');
-const fs = require('fs');
-require('dotenv').config();
-const Conference = require('../models/conference-model');
+const puppeteer = require("puppeteer");
+const dateFinder = require("datefinder");
+const fs = require("fs");
+require("dotenv").config();
+const Conference = require("../models/conference-model");
 const ConferenceError = require("../models/conferenceError-model");
 
 const getConferenceList = (browser) =>
@@ -38,11 +38,8 @@ const getConferenceList = (browser) =>
         }
     });
 
-const searchConferenceLinks = async (browser, conference) => {
+const searchConferenceLinks = async (browser, conference, maxLinks) => {
     try {
-        // Total link need to collect
-        const maxLinks = 4;
-
         // Array to get all link from searching
         let links = [];
 
@@ -70,7 +67,7 @@ const searchConferenceLinks = async (browser, conference) => {
                     "medium.com",
                     "dl.acm.org",
                     "easychair.org",
-                    "youtube.com"
+                    "youtube.com",
                 ];
                 for (const el of els) {
                     const href = el.href;
@@ -128,6 +125,10 @@ const getConferenceDetails = async (browser, conference) => {
             )
             .split("\n")
             .map((keyword) => keyword.trim());
+        const cameraReady_keywords = fs
+            .readFileSync(__dirname + "/dict/camera_ready_dict.txt", "utf-8")
+            .split("\n")
+            .map((keyword) => keyword.trim());
 
         // For each conference link
         for (let k = 0; k < conference.Links.length; k++) {
@@ -135,6 +136,7 @@ const getConferenceDetails = async (browser, conference) => {
             const submissionDate = [];
             const conferenceDate = [];
             const notificationDate = [];
+            const cameraReady = [];
 
             // Create ramdom time to outplay Captcha
             setTimeout(function () {}, Math.floor(Math.random() * 2000) + 1000);
@@ -260,6 +262,42 @@ const getConferenceDetails = async (browser, conference) => {
                 }
             }
 
+            // Getting camera ready
+            for (const keyword of cameraReady_keywords) {
+                // Kiểm tra xem đã tìm được notification date chưa
+                //if(notificationDate.length > 0) break;
+
+                let index = bodyContent.indexOf(keyword);
+                while (index !== -1 && index < bodyContent.length) {
+                    const snapshot = bodyContent.substring(
+                        Math.max(0, index - 50),
+                        index + keyword.length + 100
+                    );
+                    const cameraReadyFinder = dateFinder(
+                        formatString(snapshot)
+                    );
+                    if (cameraReadyFinder.length > 0) {
+                        if (!isFakeNews(cameraReady, keyword)) {
+                            cameraReady.push({
+                                date: findClosestDate(
+                                    cameraReadyFinder,
+                                    snapshot.indexOf(keyword),
+                                    keyword.length
+                                ),
+                                keyword: keyword,
+                                update_time: new Date(),
+                            });
+                        }
+                        break;
+                    }
+                    // Tìm vị trí tiếp theo của keyword
+                    index = bodyContent.indexOf(keyword, index + 1);
+                }
+                if (index === -1) {
+                    //console.log(`Not found: ${keyword}`);
+                }
+            }
+
             // If full information, Update conference in Database
             if (
                 submissionDate.length > 0 &&
@@ -272,11 +310,13 @@ const getConferenceDetails = async (browser, conference) => {
                         ConferenceDate: conferenceDate,
                         SubmissonDate: submissionDate,
                         NotificationDate: notificationDate,
+                        CameraReady: cameraReady,
                         Links: [conference.Links[k]],
                     },
                     { new: true }
                 );
                 await page.close();
+                return true;
                 break;
             } else if (k === conference.Links.length - 1) {
                 await createOrUpdateError(
@@ -284,6 +324,8 @@ const getConferenceDetails = async (browser, conference) => {
                     "MissingInformation",
                     "Submission, conference, or notification date not found for any link."
                 );
+                await page.close();
+                return false;
             }
 
             // Close tab
@@ -293,16 +335,17 @@ const getConferenceDetails = async (browser, conference) => {
         console.log(
             "Error in web-scraper-service/getConferenceDetails" + error
         );
-        await createOrUpdateError(
-            conference._id,
-            "ErrorNetwork",
-            error
-        );
+        await createOrUpdateError(conference._id, "ErrorNetwork", error);
+        await page.close();
+        return false;
     }
 };
 
 const createOrUpdateError = async (conferenceId, errorType, errorMessage) => {
-    const existingError = await ConferenceError.findOne({ conferenceId, errorType });
+    const existingError = await ConferenceError.findOne({
+        conferenceId,
+        errorType,
+    });
 
     if (existingError) {
         // If error exists, update the existing error
