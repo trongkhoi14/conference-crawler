@@ -49,7 +49,7 @@ const searchConferenceLinks = async (browser, conference, maxLinks) => {
         // Searching with keyword = Acronym + 2023
         await page.goto("https://www.google.com/");
         await page.waitForSelector("#APjFqb");
-        await page.keyboard.sendCharacter(conference.Acronym + " 2023");
+        await page.keyboard.sendCharacter('\"' + conference.Acronym + '\"' + " call for papers 2023");
         await page.keyboard.press("Enter");
         await page.waitForNavigation();
         await page.waitForSelector("#search");
@@ -101,7 +101,7 @@ const searchConferenceLinks = async (browser, conference, maxLinks) => {
 
         return links.slice(0, maxLinks);
     } catch (error) {
-        console.log("Error in web-scraper-service/searchConferenceLinks ");
+        console.log("Error in web-scraper-service/searchConferenceLinks: " + error);
         // Log conference lỗi ra một collection riêng
     }
 };

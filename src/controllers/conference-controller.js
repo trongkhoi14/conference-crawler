@@ -14,30 +14,29 @@ const crawlController = async (browserInstance) => {
     try {
         // Create browser
         let browser = await browserInstance;
-        cron.schedule("0 * * * *", async () => {
-            // new conference from core portal
-            await crawlNewConferences(browser);
+        // cron.schedule("0 * * * *", async () => {
+        //     // new conference from core portal
+        //     await crawlNewConferences(browser);
 
-            // crawl detail
-            await crawlAllConferencesDetail(browser);
+        //     // crawl detail
+        //     await crawlAllConferencesDetail(browser);
             
-            // process conf error
-            await processConferenceError(browser);
-        }, {
-            timezone: "Asia/Ho_Chi_Minh" // Đặt múi giờ cho lịch
-        });
+        //     // process conf error
+        //     await processConferenceError(browser);
+        // }, {
+        //     timezone: "Asia/Ho_Chi_Minh" // Đặt múi giờ cho lịch
+        // });
         
         // Schedule the job to run at 2:00 AM every day
         // Code to here
-        // await crawlNewConferences(browser);
+        await crawlNewConferences(browser);
         
-        //await crawlNewConferences(browser);
 
         // Schedule the job to run for each conference in the database
         // Code to here
         // await crawlAllConferencesDetail(browser);
         
-        // await processConferenceError(browser);
+        await processConferenceError(browser);
     } catch (error) {
         console.log("Error in crawlController: " + error);
     }
