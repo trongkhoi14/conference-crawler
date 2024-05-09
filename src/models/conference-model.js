@@ -55,9 +55,6 @@ var conferenceSchema = new mongoose.Schema({
     timestamps: true 
 })
 
-
-
-
 module.exports = mongoose.model('Conference', conferenceSchema);
 
 

@@ -14,6 +14,7 @@ A CALL FOR PAPERS (CFP) IS NOW OPEN FOR THE 2023 IAS ANNUAL MEETING WHICH WILL B
 The 2023 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining, Morocco, 07-10 November 2023.
 MobileHCI 2023 will be held in person (with hybrid participation) during September 26-29, 2023 in Athens, Greece.
 ICSOC 2023, the 21st event in this series, will take place in Rome, Italy from November 28 – December 1, 2023.
+Middleware 2023 will be a physical conference in Bologna, scheduled for
 The 17th European Conference on Software Architecture (ECSA 2023) will be held from September 18 to 22, 2023.
 FAST '23 will take place on February 21–23, 2023, at the Hyatt Regency Santa Clara in Santa Clara, CA, USA.
 DICTA 2023 will be held in Port Macquarie, New South Wales Australia from28 November to 1 December 2023
@@ -210,3 +211,6 @@ Date
 When
 EMAS
 DLT
+ACM SIGSIM-PADS'23
+SIGUCCS Annual Conference
+SIGDIAL Call for Papers

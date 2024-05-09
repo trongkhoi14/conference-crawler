@@ -1,6 +1,7 @@
 const startBrowser = require('./src/untils/browser');
 const { crawlController, crawlAllConferencesDetail } = require('./src/controllers/conference-controller')
 const { notificationController } = require('./src/controllers/notification-controller')
+const { dataPineline } = require('./src/etl/datapineline')
 const dbConnect = require('./src/config/dbconnect');
 var cron = require('node-cron');
 const express = require('express');
@@ -17,13 +18,15 @@ const main = async () => {
 
     // Notification
     // notificationController();
-    cron.schedule("15 16 * * *", async () => {
-        console.log("Sending email notifications...");
-        notificationController();
-        crawlAllConferencesDetail(browser);
-    }, {
-        timezone: "Asia/Ho_Chi_Minh" // Đặt múi giờ cho lịch
-    });
+    // cron.schedule("15 16 * * *", async () => {
+    //     console.log("Sending email notifications...");
+    //     notificationController();
+    //     crawlAllConferencesDetail(browser);
+    // }, {
+    //     timezone: "Asia/Ho_Chi_Minh" // Đặt múi giờ cho lịch
+    // });
+
+    dataPineline()
 };
 
 main();

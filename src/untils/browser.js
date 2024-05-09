@@ -5,10 +5,11 @@ const startBrowser = async () => {
     try {
         browser = await puppeteer.launch({
             //Không hiển thị GUI lên
-            headless: 'new',
+            headless: "new",
             defaultViewport: false,
             args: ["--disable-setuid-sandbox"],
-            'ignoreHTTPSErrors': true
+            'ignoreHTTPSErrors': true,
+            product: 'chrome'
         })
         
     } catch (error) {
