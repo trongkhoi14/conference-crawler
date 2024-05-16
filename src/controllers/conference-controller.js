@@ -9,35 +9,49 @@ const dbConference = require("../models/conference-model");
 const dbFollow = require("../models/follow-model");
 const dbUser = require("../models/user-model");
 const conferenceModel = require("../models/conference-model");
+const { dataPineline } = require("../etl/datapineline");
+const conferenceHasIncorrectLinks = require("../config/IncorrectLink");
 
 const crawlController = async (browserInstance) => {
     try {
         // Create browser
         let browser = await browserInstance;
-        // cron.schedule("0 * * * *", async () => {
-        //     // new conference from core portal
-        // await crawlNewConferences(browser);
 
-        //     // crawl detail
-        //     await crawlAllConferencesDetail(browser);
+        /*
+        await crawlNewConferences(browser);
 
-        //     // process conf error
-        //     await processConferenceError(browser);
-        // }, {
-        //     timezone: "Asia/Ho_Chi_Minh" // Đặt múi giờ cho lịch
-        // });
+        await crawlAllConferencesDetail(browser);
 
-        // Schedule the job to run at 2:00 AM every day
-        // Code to here
-        // await crawlNewConferences(browser);
-
-        // Schedule the job to run for each conference in the database
-        // Code to here
+        await processConferenceError(browser);
+        */
+        // await processConferenceHasWrongLink(browser);
         // await crawlAllConferencesDetail(browser);
+        await processConferenceError(browser);
 
-        // await processConferenceError(browser);
     } catch (error) {
         console.log("Error in crawlController: " + error);
+    }
+};
+
+const processConferenceHasWrongLink = async (browser) => {
+    console.log(conferenceHasIncorrectLinks.length);
+    for (let i = 0; i < conferenceHasIncorrectLinks.length; i++) {
+        const currentConference = await conferenceModel.findOne({
+            _id: conferenceHasIncorrectLinks[i],
+        });
+        let conferenceLink =
+            await webScraperService.searchConferenceLinksByTitle(
+                browser,
+                currentConference,
+                4
+            );
+        currentConference.Links = conferenceLink;
+
+        await conferenceModel.findByIdAndUpdate(currentConference._id, {
+            Links: conferenceLink,
+
+        });
+        console.log(currentConference._id + " " + i)
     }
 };
 
@@ -74,51 +88,81 @@ const crawlNewConferences = async (browser) => {
         await Conference.create(newConferences[i]);
 
         // Create ramdom time to outplay Captcha
-        await setTimeout(function () {}, Math.floor(Math.random() * 2000) + 1000);
+        await setTimeout(function () {},
+        Math.floor(Math.random() * 2000) + 1000);
 
         if (i == 98) break;
     }
     console.log(">> Get conferences link successfully");
 };
 
+const getLastUpdateTime = async () => {
+    const lastUpdateTimeDoc = await LastUpdateTime.findOne();
+    return lastUpdateTimeDoc ? lastUpdateTimeDoc.lastUpdateTime : Date.now();
+};
+
+const getConferencesToUpdate = async (lastUpdateTime, errorConferences) => {
+    // return await Conference.find({
+    //     updatedAt: { $lt: lastUpdateTime },
+    //     _id: { $nin: errorConferences },
+    // })
+    //     .sort({ updatedAt: 1 })
+    //     .limit(100);
+    let result = []
+    for (let i = 0; i < conferenceHasIncorrectLinks.length; i++) {
+        const currentConference = await Conference.findById(conferenceHasIncorrectLinks[i])
+        result.push(currentConference)
+    }
+    return result
+};
+
+const updateLastUpdateTime = async (lastUpdateTimeDoc) => {
+    lastUpdateTimeDoc.lastUpdateTime = Date.now();
+    await lastUpdateTimeDoc.save();
+};
+
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+const processConference = async (browser, conference) => {
+    console.log(conference._id);
+    let fullInformationPoint = conference.Links.length > 1 ? 3 : 2;
+    const isCrawlSuccess = await webScraperService.getConferenceDetails(
+        browser,
+        conference,
+        fullInformationPoint
+    );
+
+    if (isCrawlSuccess) {
+        await dataPineline(conference._id);
+    }
+
+    await delay(Math.floor(Math.random() * 2000) + 1000);
+};
+
+
 const crawlAllConferencesDetail = async (browser) => {
     console.log(">> Crawling all conference detail...");
-    
+
     try {
-        // Step 1: Get the last updated time from the collection in the database
-        const lastUpdateTimeDoc = await LastUpdateTime.findOne();
-        const lastUpdateTime = lastUpdateTimeDoc
-            ? lastUpdateTimeDoc.lastUpdateTime
-            : Date.now();
-
-        // Step 2: Get all conferences from Database that need to be updated based on the last update time
+        const lastUpdateTime = await getLastUpdateTime();
         const errorConferences = await ConferenceError.distinct("conferenceId");
-        let allConferences = await Conference.find({
-            updatedAt: { $lt: lastUpdateTime }, // Find conferences that were updated before the last update time
-            _id: { $nin: errorConferences }, // Exclude conferences with IDs not in errorConferences array
-        })
-            .sort({ updatedAt: 1 })
-            .limit(100);
+        let allConferences = await getConferencesToUpdate(
+            lastUpdateTime,
+            errorConferences
+        );
 
-        // Step 3: Update the last updated time for crawlAllConferencesDetail
-        lastUpdateTimeDoc.lastUpdateTime = Date.now();
-        await lastUpdateTimeDoc.save();
+        const lastUpdateTimeDoc = await LastUpdateTime.findOne();
+        await updateLastUpdateTime(lastUpdateTimeDoc);
 
-        // Step 4: Loop through each conference and get detail
         for (const conference of allConferences) {
-            console.log(conference._id);
-            let fullInformationPoint = 2;
-            if (conference.Links.length > 1) {
-                fullInformationPoint = 3;
+            try {
+                await processConference(browser, conference);
+            } catch (conferenceError) {
+                console.log(
+                    `Error processing conference ${conference._id}:`,
+                    conferenceError
+                );
             }
-            const isCrawlSuccess = await webScraperService.getConferenceDetails(
-                browser,
-                conference,
-                fullInformationPoint
-            );
-
-            // Create random time to outplay Captcha
-            await setTimeout(function () {}, Math.floor(Math.random() * 2000) + 1000);
         }
 
         console.log(">> Crawl all conference detail successfully");
@@ -135,9 +179,9 @@ const processConferenceError = async (browser) => {
             : Date.now();
 
         const errorConferences = await ConferenceError.find({
-            errorType: "MissingInformation"
+            errorType: "MissingInformation",
         }).distinct("conferenceId");
-        console.log("Số conf lỗi: " + errorConferences.length)
+        console.log("Số conf lỗi: " + errorConferences.length);
 
         let allConferences = await Conference.find({
             updatedAt: { $lt: lastUpdateTime },
@@ -145,8 +189,8 @@ const processConferenceError = async (browser) => {
         })
             .sort({ updatedAt: 1 })
             .limit(100);
-        console.log(allConferences)
         lastUpdateTimeDoc.lastUpdateTime = Date.now();
+
         await lastUpdateTimeDoc.save();
 
         // Step 4: Loop through each conference and get detail
@@ -170,6 +214,9 @@ const processConferenceError = async (browser) => {
 
                 if (isCrawlSuccess) {
                     console.log("success: " + conference._id);
+
+                    await dataPineline(conference._id);
+
                     await ConferenceError.deleteMany({
                         conferenceId: conference._id,
                     });

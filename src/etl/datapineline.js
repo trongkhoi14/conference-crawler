@@ -1,41 +1,49 @@
 const Conference = require("../models/conference-model");
-const { postConference } = require("../services/conference-service")
+const { postConference } = require("../services/conference-service");
 
-
-const dataPineline = async () => {
-    const allConferences = (await Conference.find({}).limit(3)).filter(
-        (conf) => conf.Links.length == 1
-    );
-
-    const processedConf = allConferences.map((conference) => {
-        const importantDates = [
-            {
-                date: conference.ConferenceDate[0].date,
-                keyword: conference.ConferenceDate[0].keyword,
-            },
-            ...conference.SubmissonDate.map((item) => ({
-                date: item.date,
-                keyword: item.keyword,
-            })),
-            ...conference.NotificationDate.map((item) => ({
-                date: item.date,
-                keyword: item.keyword,
-            })),
-        ];
-        return {
-            conf_name: conference.Title,
-            acronym: conference.Acronym,
-            callForPaper: "Not found",
-            link: conference.Links[0],
-            rank: conference.Rank,
-            fieldsOfResearch: getFieldOfRearchName(conference.PrimaryFoR)
-                ? getFieldOfRearchName(conference.PrimaryFoR)
-                : "null",
-            importantDates: importantDates,
-        };
+const dataPineline = async (conferenceId) => {
+    const allConference = await Conference.findone({
+        _id: conferenceId,
     });
 
-    postConference(processedConf);
+    for (const conference of allConference) {
+        if (conference.Links.length == 1) {
+
+            const importantDates = [
+                {
+                    date_value: conference.ConferenceDate[0]?.date,
+                    date_type: conference.ConferenceDate[0]?.keyword,
+                },
+                ...conference.SubmissonDate.map((item) => ({
+                    date_value: item.date,
+                    date_type: item.keyword,
+                })),
+                ...conference.NotificationDate.map((item) => ({
+                    date_value: item.date,
+                    date_type: item.keyword,
+                })),
+            ];
+
+            const processedConf = {
+                conf_name: conference.Title,
+                acronym: conference.Acronym,
+                callForPaper: "Not found",
+                link: conference.Links[0],
+                rank: conference.Rank,
+                fieldsOfResearch: getFieldOfRearchName(conference.PrimaryFoR)
+                    ? [getFieldOfRearchName(conference.PrimaryFoR)]
+                    : ["none"],
+                importantDates: importantDates,
+                nkey: conference._id.toString(),
+            };
+
+            postConference(processedConf)
+
+            setTimeout(() => {
+                console.log("waiting ... ")
+            }, 1000);
+        }
+    }
 };
 
 const getFieldOfRearchName = (forCode) => {

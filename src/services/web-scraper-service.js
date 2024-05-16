@@ -6,6 +6,7 @@ const { readKeywordsFromFile } = require("../untils/handleFileDict");
 const { waitForRandomTime } = require("../untils/time");
 const { formatStringDate } = require("../untils/date");
 const { notification } = require("../template/mail-template");
+const { dataPineline } = require("../etl/datapineline");
 
 const getConferenceList = (browser) =>
     new Promise(async (resolve, reject) => {
@@ -73,7 +74,14 @@ const searchConferenceLinks = async (browser, conference, maxLinks) => {
                     "easychair.org",
                     "youtube.com",
                     "linkedin.com",
+                    "research.com",
+                    "springer.com",
+                    "aconf.org",
+                    "myhuiban.com",
+                    "call4paper.com",
+                    "portal.core"
                 ];
+
                 for (const el of els) {
                     const href = el.href;
                     // Kiểm tra xem liên kết có chứa tên miền không mong muốn
@@ -113,6 +121,121 @@ const searchConferenceLinks = async (browser, conference, maxLinks) => {
     }
 };
 
+const searchConferenceLinksByTitle = async (browser, conference, maxLinks) => {
+    try {
+        // Array to get all link from searching
+        let links = [];
+
+        // Open new page
+        let page = await browser.newPage();
+
+        // Searching with keyword = Acronym + 2023
+        await page.goto("https://www.google.com/");
+        await page.waitForSelector("#APjFqb");
+        await page.keyboard.sendCharacter(
+            conference.Title + " 2023"
+        );
+        await page.keyboard.press("Enter");
+        await page.waitForNavigation();
+        await page.waitForSelector("#search");
+
+        while (links.length < maxLinks) {
+            const linkList = await page.$$eval("#search a", (els) => {
+                const result = [];
+                const unwantedDomains = [
+                    "scholar.google",
+                    "translate.google",
+                    "google.com",
+                    "wikicfp.com",
+                    "dblp.org",
+                    "medium.com",
+                    "dl.acm.org",
+                    "easychair.org",
+                    "youtube.com",
+                    "linkedin.com",
+                    "research.com",
+                    "springer.com",
+                    "aconf.org",
+                    "myhuiban.com",
+                    "call4paper.com",
+                    "portal.core"
+                ];
+                for (const el of els) {
+                    const href = el.href;
+                    // Kiểm tra xem liên kết có chứa tên miền không mong muốn
+                    if (
+                        !unwantedDomains.some((domain) => href.includes(domain))
+                    ) {
+                        result.push({
+                            link: href,
+                        });
+                    }
+                }
+                return result;
+            });
+
+            links = links.concat(linkList.map((item) => item.link));
+
+            // Nếu links có nhiều hơn maxLinks, cắt bớt đi
+            if (links.length > maxLinks) {
+                links = links.slice(0, maxLinks);
+            }
+
+            if (links.length < maxLinks) {
+                // Chưa đủ liên kết, tiếp tục tìm kiếm bằng cách lướt xuống
+                await page.keyboard.press("PageDown");
+                await page.waitForTimeout(2000); // Wating for loading
+            }
+        }
+
+        await page.close();
+        return links.slice(0, maxLinks);
+    } catch (error) {
+        console.log(
+            "Error in web-scraper-service/searchConferenceLinks: " + error
+        );
+        // Log conference lỗi ra một collection riêng
+    }
+};
+
+const getKeywords = async (conference) => {
+    if (conference.Links.length == 1) {
+        return await readKeywordsFromConference(conference);
+    } else {
+        return readKeywordsFromDict();
+    }
+};
+
+const getSnapshotRange = (fullInformationPoint) => {
+    if (fullInformationPoint === 3) {
+        return 50;
+    } else if (fullInformationPoint === 2) {
+        return 100;
+    }
+    return 50; // Default value, in case neither condition is met
+};
+
+const evaluateFullInformationPoint = (conferenceLink, conference) => {
+    if (
+        conferenceLink.includes("23") &&
+        conferenceLink.includes(".org") &&
+        conferenceLink.includes(conference.Acronym.toLowerCase()) &&
+        (conferenceLink.includes("cfp") ||
+            conferenceLink.includes("call") ||
+            conferenceLink.includes("paper"))
+    ) {
+        return 0;
+    } else if (
+        conferenceLink.includes("23") &&
+        conferenceLink.includes(conference.Acronym.toLowerCase()) &&
+        (conferenceLink.includes("cfp") ||
+            conferenceLink.includes("call") ||
+            conferenceLink.includes("paper"))
+    ) {
+        return 1;
+    }
+};
+
 // Get conference date, submisstion date, notification date, ...
 const getConferenceDetails = async (
     browser,
@@ -120,36 +243,17 @@ const getConferenceDetails = async (
     fullInformationPoint
 ) => {
     try {
-        let submissionDate_keywords,
+        const {
+            submissionDate_keywords,
             conferenceDate_keywords,
             notificationDate_keywords,
-            cameraReady_keywords;
+            cameraReady_keywords,
+        } = await getKeywords(conference);
 
-        if (conference.Links.length == 1) {
-            ({
-                submissionDate_keywords,
-                conferenceDate_keywords,
-                notificationDate_keywords,
-                cameraReady_keywords,
-            } = await readKeywordsFromConference(conference));
-        } else {
-            ({
-                submissionDate_keywords,
-                conferenceDate_keywords,
-                notificationDate_keywords,
-                cameraReady_keywords,
-            } = readKeywordsFromDict());
-        }
-
-        let snapshotRange;
-
-        if (fullInformationPoint == 3) {
-            snapshotRange = 50;
-        } else if (fullInformationPoint == 2) {
-            snapshotRange = 100;
-        }
+        const snapshotRange = getSnapshotRange(fullInformationPoint);
 
         for (let k = 0; k < conference.Links.length; k++) {
+            const conferenceLink = conference.Links[k].toLowerCase();
             const {
                 submissionDate,
                 conferenceDate,
@@ -164,6 +268,25 @@ const getConferenceDetails = async (
                 cameraReady_keywords,
                 snapshotRange
             );
+
+            if (
+                conferenceLink.includes("23") &&
+                conferenceLink.includes(".org") &&
+                conferenceLink.includes(conference.Acronym.toLowerCase()) &&
+                (conferenceLink.includes("cfp") ||
+                    conferenceLink.includes("call") ||
+                    conferenceLink.includes("paper"))
+            ) {
+                fullInformationPoint = 0;
+            } else if (
+                conferenceLink.includes("23") &&
+                conferenceLink.includes(conference.Acronym.toLowerCase()) &&
+                (conferenceLink.includes("cfp") ||
+                    conferenceLink.includes("call") ||
+                    conferenceLink.includes("paper"))
+            ) {
+                fullInformationPoint = 1;
+            }
 
             if (
                 shouldUpdateConference(
@@ -298,6 +421,14 @@ const shouldUpdateConference = (
             (submissionDate.length > 0 && notificationDate.length > 0) ||
             (conferenceDate.length > 0 && notificationDate.length > 0)
         );
+    } else if (fullInformationPoint === 1) {
+        return (
+            submissionDate.length > 0 ||
+            conferenceDate.length > 0 ||
+            notificationDate.length > 0
+        );
+    } else if (fullInformationPoint === 0) {
+        return true;
     }
     return false;
 };
@@ -356,18 +487,34 @@ const readKeywordsFromDict = () => {
 const readKeywordsFromConference = async (conference) => {
     const conferenceData = await Conference.findOne({ _id: conference._id });
 
-    const submissionDate_keywords = conferenceData.SubmissonDate.map(
-        (item) => item.keyword
-    );
-    const conferenceDate_keywords = conferenceData.ConferenceDate.map(
-        (item) => item.keyword
-    );
-    const notificationDate_keywords = conferenceData.NotificationDate.map(
-        (item) => item.keyword
-    );
-    const cameraReady_keywords = conferenceData.CameraReady.map(
-        (item) => item.keyword
-    );
+    let submissionDate_keywords = [];
+    let conferenceDate_keywords = [];
+    let notificationDate_keywords = [];
+    let cameraReady_keywords = [];
+
+    if (conferenceData.SubmissonDate?.length > 0) {
+        submissionDate_keywords = conferenceData.SubmissonDate.map(
+            (item) => item.keyword
+        );
+    }
+
+    if (conferenceData.ConferenceDate?.length > 0) {
+        conferenceDate_keywords = conferenceData.ConferenceDate.map(
+            (item) => item.keyword
+        );
+    }
+
+    if (conferenceData.NotificationDate?.length > 0) {
+        notificationDate_keywords = conferenceData.NotificationDate.map(
+            (item) => item.keyword
+        );
+    }
+
+    if (conferenceData.CameraReady?.length > 0) {
+        cameraReady_keywords = conferenceData.CameraReady.map(
+            (item) => item.keyword
+        );
+    }
 
     return {
         submissionDate_keywords,
@@ -526,4 +673,5 @@ module.exports = {
     getConferenceList,
     searchConferenceLinks,
     getConferenceDetails,
+    searchConferenceLinksByTitle,
 };

@@ -5,6 +5,7 @@ const dbUser = require('../models/user-model')
 
 const notificationController = async () => {
     try {
+        /*
         // Lấy ra ngày hiện tại
         const currentDate = new Date();
 
@@ -74,6 +75,15 @@ const notificationController = async () => {
                 await emailService.sendingEmail(payload)
             }
         }
+        */
+        const payload = {
+            confTitle: "demo",
+            eventName: "ACM Conference",
+            eventDate: "13-05-2024",
+            uEmail: "morgana13@yogirt.com"
+        }
+        await emailService.sendingEmail(payload)
+
     } catch (error) {
         console.log("Error in Notification Controller: " + error);
     }

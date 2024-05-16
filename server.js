@@ -15,7 +15,7 @@ const main = async () => {
 
     // Crawl data
     crawlController(browser);
-
+    // notificationController();
     // Notification
     // notificationController();
     // cron.schedule("15 16 * * *", async () => {
@@ -26,7 +26,6 @@ const main = async () => {
     //     timezone: "Asia/Ho_Chi_Minh" // Đặt múi giờ cho lịch
     // });
 
-    dataPineline()
 };
 
 main();

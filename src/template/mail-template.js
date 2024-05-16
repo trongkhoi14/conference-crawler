@@ -36,7 +36,7 @@ module.exports.notification = (payload) => {
                             <p> We would like to inform you about an upcoming event that is scheduled to take place soon:</p>
                             <ul>
                                 <li>${eventName}</li>
-                                <li>Date: ${formatDate(eventDate)}</li>
+                                <li>Date: ${eventDate}</li>
                             </ul>
                             <p>Please be prepared to join this event and don't forget to mark your calendar!</p>
                         </div>
