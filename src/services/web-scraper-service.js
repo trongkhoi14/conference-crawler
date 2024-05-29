@@ -674,4 +674,6 @@ module.exports = {
     searchConferenceLinks,
     getConferenceDetails,
     searchConferenceLinksByTitle,
+    extractDatesFromBody,
+    readKeywordsFromDict
 };

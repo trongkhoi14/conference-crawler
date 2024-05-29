@@ -16,6 +16,7 @@ Regular Paper Submissions (including Special Sessions)
 Full paper (track A) and abstract (track B) submission
 Short abstract submissions for all related categories
 Submission of Abstract for Doctoral Research Workshop
+Author Registration and Early Registration Deadline
 Deadline for final submission of papers (PaperPlaza)
 the final submission of the paper to be submitted by
 Invited session full papers and extended abstracts
@@ -47,6 +48,7 @@ Deadline for Extended abstract submission
 Final Submissions Due (for accepted work)
 Regular papers submission for main tracks
 Extended Conference paper full submission
+Submission deadline for workshop papers
 The submission deadline for the paper is
 Full and Short Paper Submission Deadline
 Abstract deadline for direct submissions
@@ -87,6 +89,7 @@ Submission deadline (nhiều round)
 Submission deadline for abstracts
 Deadline for receipt of abstracts
 Research paper submission round 1
+Abstract registration deadline
 Regular Paper submission Deadline
 Supplementary Material Submission
 Submissions must be registered by
@@ -112,6 +115,8 @@ Paper Submission Final Deadline
 Submission – Research/ADS paper
 Submission of papers by authors
 Workshop and Tutorial proposals
+Submission of Revisions (Round 1)
+Submission of Revisions (Round 2)
 Submission of Revisions Round 1
 Submission of Revisions Round 2
 Final Paper Submission Deadline
@@ -140,6 +145,7 @@ Abstracts Submission Deadline
 Symposium submission deadline
 Deadline for paper submission
 ABSTRACT SUBMISSION DEADLINE
+Workshop proposal submission
 Abstract submission deadline
 Không hiểu cần ae check link
 SUBMISSION OF REVISED PAPERS
@@ -149,6 +155,8 @@ Workshop submission deadline
 Submissions due (July Round)
 Paper submission (2nd round)
 Workshop Submission Deadline
+Early Registration Deadline
+Early registration deadline
 Abstract Submission Deadline
 Tutorial/Workshop Submission
 Poster (track C) submission
@@ -162,6 +170,8 @@ Submission of proposals for
 Article submission deadline
 Tutorial Proposals Deadline
 Title and Abstract deadline
+Submission Deadline (Round 1)
+Submission Deadline (Round 2)
 Submission Deadline Round 2
 Submission Deadline Round 1
 Initial submission deadline
@@ -232,6 +242,7 @@ Papers Submission Due
 Final Paper Deadline
 Paper submission due
 Paper Submission Due
+Abstracts Submission
 Submission of Papers
 Final Paper due date
 Submission Due (GMT)
@@ -260,6 +271,7 @@ Full paper deadline
 Re-submissions due
 Revised papers due
 Poster Submissions
+Abstract Deadline
 Abstract deadline
 Revision Deadline
 Paper submissions
@@ -303,7 +315,6 @@ Submission
 Full-Paper
 Abstracts
 Submit by
-Deadline
 Abstract
 Submit
 Close

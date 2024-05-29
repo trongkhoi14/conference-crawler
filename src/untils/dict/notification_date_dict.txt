@@ -11,6 +11,7 @@ On review list but no submission, no DBLP, no data, rerank to C Note
 Authors will be notified of acceptance on or before July 21, 2023.
 Decisions sent to authors (conditional acceptance or rejection)
 Authors will be notified of the decision and get final reviews
+Notification of authors about acceptance/rejection of workshop papers
 Asia Pacific Symposium on Intelligent and Evolutionary Systems
 Acceptance notifications for full, short, and industry papers
 1st round review results (accept, minor revision, or reject)
@@ -102,6 +103,7 @@ Notification – KDD Cup proposal
 Notification of Acceptance Date
 Initial reviews sent to authors
 Author Notification for Papers
+Workshop proposal notification
 Notifications of Decision Sent
 Notification of acceptance for
 Final notifications to authors
@@ -119,6 +121,9 @@ Early rejection if applicable
 Demo acceptance notification
 Acceptance Notification Date
 Early Rejection Notification
+Author Notification (Round 1)
+Author Notification (Round 2)
+Author Notification (Round 2 - Final)
 Author Notification Round 1
 Reviews released to authors
 Author Notification Round 2
@@ -167,6 +172,8 @@ Results notification
 Authors are notified
 Author notifications
 Papers Notifications
+Round 2 notification
+Round 1 notification
 Author Notifications
 Author notification
 Final reviews due

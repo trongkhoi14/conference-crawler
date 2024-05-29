@@ -2,18 +2,20 @@ const Conference = require("../models/conference-model");
 const { postConference } = require("../services/conference-service");
 
 const dataPineline = async (conferenceId) => {
-    const allConference = await Conference.findone({
+    const allConference = await Conference.find({
         _id: conferenceId,
     });
 
     for (const conference of allConference) {
         if (conference.Links.length == 1) {
-
-            const importantDates = [
+            const organizations = [
                 {
-                    date_value: conference.ConferenceDate[0]?.date,
-                    date_type: conference.ConferenceDate[0]?.keyword,
+                    name: "location 1",
+                    start_date: conference.ConferenceDate[0]?.date,
+                    end_date: conference.ConferenceDate[1]?.date
                 },
+            ];
+            const importantDates = [
                 ...conference.SubmissonDate.map((item) => ({
                     date_value: item.date,
                     date_type: item.keyword,
@@ -22,25 +24,31 @@ const dataPineline = async (conferenceId) => {
                     date_value: item.date,
                     date_type: item.keyword,
                 })),
+                ...conference.CameraReady.map((item) => ({
+                    date_value: item.date,
+                    date_type: item.keyword,
+                })),
             ];
 
             const processedConf = {
                 conf_name: conference.Title,
                 acronym: conference.Acronym,
-                callForPaper: "Not found",
+                callForPaper: conference.CallForPaper? conference.CallForPaper : "Not found",
                 link: conference.Links[0],
                 rank: conference.Rank,
                 fieldsOfResearch: getFieldOfRearchName(conference.PrimaryFoR)
                     ? [getFieldOfRearchName(conference.PrimaryFoR)]
                     : ["none"],
-                importantDates: importantDates,
+                importantDates: importantDates? importantDates : [""],
                 nkey: conference._id.toString(),
+                organizations: organizations? organizations : [""],
+                source: "CORE2023"
             };
 
             postConference(processedConf)
-
+            console.log(processedConf);
             setTimeout(() => {
-                console.log("waiting ... ")
+                console.log("waiting ... ");
             }, 1000);
         }
     }

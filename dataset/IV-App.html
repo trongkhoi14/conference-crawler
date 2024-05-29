@@ -1,0 +1,950 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head id="ctl00_Head1"><meta http-equiv="content-language" content="en"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="imagetoolbar" content="no"><meta name="author" content="Insticc"><meta id="ctl00_PageTitle" name="title" content="IVAPP, 14th Int'l. Conf. on Information Visualization Theory and Applications"><meta id="ctl00_PageLocation" name="location" content="19 - 21 February, 2023, Lisbon, Portugal"><meta id="ctl00_PageDescription" name="description" content="Information Visualization, General Visualization Techniques, Scientific Visualization"><meta id="ctl00_PageKeywords" name="keywords" content="Visual Data Analysis and Knowledge Discovery, Big Data Visualisation, Display and Interaction Technology, Databases and Visualization, Visual Data Mining, Graph Visualization, Interface and Interaction Techniques for Visualization, Internet, Web and Security Visualization, Software Visualization, Information Visualization, High-Dimensional Data and Dimensionality Reduction, Text and Document Visualization, Visual Representation and Interaction, Data Management and Knowledge Representation, Explainable Machine Learning by Visualization, Multi-dimensional Data Visualization, Interactive Visual Interfaces for Visualization, Perception and Cognition in Visualization, Visualization Applications, Visualization Algorithms and Technologies, Visualization Tools and Systems for Simulation and Modeling, Multivariate Data Visualisation, Empirical Studies of Information Visualisations, Immersive Analytics, Dynamic or Temporal Data Visualisation, Usability Studies and Visualization, Glyph-Based Visualization, Human-Centered Aspects of Visualization, Coordinated and Multiple Views, Interpretation and Evaluation Methods, Large Data Visualization, Integration of Data Analysis, Interaction, and Visualization, Data Driven Storytelling, Visual Analytics, Explainable Artificial Intelligence, Algorithm Transparency, Multi-sensory Data Presentation, Biomedical Visualization and Applications, Virtual Environments and Data Visualization, Volume Visualization, Scientific Visualization, Flow Visualization, GPU-based Visualization, Geographic Information Visualisation, Small-screen visualisation, Uncertainty Visualization"><meta name="language" content="en"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes;"><link id="ctl00_favIcon" rel="icon" href="https://www.insticc.org/images/WISE/Events/3426/FavIcons/original.png" type="image/ico"><link id="ctl00_favIconShortcut" rel="shortcut icon" href="https://www.insticc.org/images/WISE/Events/3426/FavIcons/original.png" type="image/x-icon"><link rel="stylesheet" href="App_Themes/photomorpher.css" type="text/css">
+
+    <script type="text/javascript" src="JavaScript/photomorpher.js"></script>
+
+    
+    
+
+
+    <!--[if lt IE 8]>
+           <style type="text/css">
+                           #content {
+                                           float: right;
+                                           }
+           </style>
+    <![endif]-->
+
+<link href="App_Themes/2023/style.css" type="text/css" rel="stylesheet"><title>
+	IVAPP 2023 - CallForPapers
+</title></head>
+<body>
+    <form name="aspnetForm" method="post" action="./CallForPapers.aspx?y=2023" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUINTY1NjQ1NjMPZBYCZg9kFgQCAQ9kFgwCBA8WAh4HY29udGVudAVNSVZBUFAsIDE0dGggSW50J2wuIENvbmYuIG9uIEluZm9ybWF0aW9uIFZpc3VhbGl6YXRpb24gVGhlb3J5IGFuZCBBcHBsaWNhdGlvbnNkAgUPFgIfAAUoMTkgLSAyMSBGZWJydWFyeSwgMjAyMywgTGlzYm9uLCBQb3J0dWdhbGQCBg8WAh8ABVVJbmZvcm1hdGlvbiBWaXN1YWxpemF0aW9uLCBHZW5lcmFsIFZpc3VhbGl6YXRpb24gVGVjaG5pcXVlcywgU2NpZW50aWZpYyBWaXN1YWxpemF0aW9uZAIHDxYCHwAF1QxWaXN1YWwgRGF0YSBBbmFseXNpcyBhbmQgS25vd2xlZGdlIERpc2NvdmVyeSwgQmlnIERhdGEgVmlzdWFsaXNhdGlvbiwgRGlzcGxheSBhbmQgSW50ZXJhY3Rpb24gVGVjaG5vbG9neSwgRGF0YWJhc2VzIGFuZCBWaXN1YWxpemF0aW9uLCBWaXN1YWwgRGF0YSBNaW5pbmcsIEdyYXBoIFZpc3VhbGl6YXRpb24sIEludGVyZmFjZSBhbmQgSW50ZXJhY3Rpb24gVGVjaG5pcXVlcyBmb3IgVmlzdWFsaXphdGlvbiwgSW50ZXJuZXQsIFdlYiBhbmQgU2VjdXJpdHkgVmlzdWFsaXphdGlvbiwgU29mdHdhcmUgVmlzdWFsaXphdGlvbiwgSW5mb3JtYXRpb24gVmlzdWFsaXphdGlvbiwgSGlnaC1EaW1lbnNpb25hbCBEYXRhIGFuZCBEaW1lbnNpb25hbGl0eSBSZWR1Y3Rpb24sIFRleHQgYW5kIERvY3VtZW50IFZpc3VhbGl6YXRpb24sIFZpc3VhbCBSZXByZXNlbnRhdGlvbiBhbmQgSW50ZXJhY3Rpb24sIERhdGEgTWFuYWdlbWVudCBhbmQgS25vd2xlZGdlIFJlcHJlc2VudGF0aW9uLCBFeHBsYWluYWJsZSBNYWNoaW5lIExlYXJuaW5nIGJ5IFZpc3VhbGl6YXRpb24sIE11bHRpLWRpbWVuc2lvbmFsIERhdGEgVmlzdWFsaXphdGlvbiwgSW50ZXJhY3RpdmUgVmlzdWFsIEludGVyZmFjZXMgZm9yIFZpc3VhbGl6YXRpb24sIFBlcmNlcHRpb24gYW5kIENvZ25pdGlvbiBpbiBWaXN1YWxpemF0aW9uLCBWaXN1YWxpemF0aW9uIEFwcGxpY2F0aW9ucywgVmlzdWFsaXphdGlvbiBBbGdvcml0aG1zIGFuZCBUZWNobm9sb2dpZXMsIFZpc3VhbGl6YXRpb24gVG9vbHMgYW5kIFN5c3RlbXMgZm9yIFNpbXVsYXRpb24gYW5kIE1vZGVsaW5nLCBNdWx0aXZhcmlhdGUgRGF0YSBWaXN1YWxpc2F0aW9uLCBFbXBpcmljYWwgU3R1ZGllcyBvZiBJbmZvcm1hdGlvbiBWaXN1YWxpc2F0aW9ucywgSW1tZXJzaXZlIEFuYWx5dGljcywgRHluYW1pYyBvciBUZW1wb3JhbCBEYXRhIFZpc3VhbGlzYXRpb24sIFVzYWJpbGl0eSBTdHVkaWVzIGFuZCBWaXN1YWxpemF0aW9uLCBHbHlwaC1CYXNlZCBWaXN1YWxpemF0aW9uLCBIdW1hbi1DZW50ZXJlZCBBc3BlY3RzIG9mIFZpc3VhbGl6YXRpb24sIENvb3JkaW5hdGVkIGFuZCBNdWx0aXBsZSBWaWV3cywgSW50ZXJwcmV0YXRpb24gYW5kIEV2YWx1YXRpb24gTWV0aG9kcywgTGFyZ2UgRGF0YSBWaXN1YWxpemF0aW9uLCBJbnRlZ3JhdGlvbiBvZiBEYXRhIEFuYWx5c2lzLCBJbnRlcmFjdGlvbiwgYW5kIFZpc3VhbGl6YXRpb24sIERhdGEgRHJpdmVuIFN0b3J5dGVsbGluZywgVmlzdWFsIEFuYWx5dGljcywgRXhwbGFpbmFibGUgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UsIEFsZ29yaXRobSBUcmFuc3BhcmVuY3ksIE11bHRpLXNlbnNvcnkgRGF0YSBQcmVzZW50YXRpb24sIEJpb21lZGljYWwgVmlzdWFsaXphdGlvbiBhbmQgQXBwbGljYXRpb25zLCBWaXJ0dWFsIEVudmlyb25tZW50cyBhbmQgRGF0YSBWaXN1YWxpemF0aW9uLCBWb2x1bWUgVmlzdWFsaXphdGlvbiwgU2NpZW50aWZpYyBWaXN1YWxpemF0aW9uLCBGbG93IFZpc3VhbGl6YXRpb24sIEdQVS1iYXNlZCBWaXN1YWxpemF0aW9uLCBHZW9ncmFwaGljIEluZm9ybWF0aW9uIFZpc3VhbGlzYXRpb24sIFNtYWxsLXNjcmVlbiB2aXN1YWxpc2F0aW9uLCBVbmNlcnRhaW50eSBWaXN1YWxpemF0aW9uZAIKDxYCHgRocmVmBUVodHRwczovL3d3dy5pbnN0aWNjLm9yZy9pbWFnZXMvV0lTRS9FdmVudHMvMzQyNi9GYXZJY29ucy9vcmlnaW5hbC5wbmdkAgsPFgIfAQVFaHR0cHM6Ly93d3cuaW5zdGljYy5vcmcvaW1hZ2VzL1dJU0UvRXZlbnRzLzM0MjYvRmF2SWNvbnMvb3JpZ2luYWwucG5nZAIDD2QWGgIBDw8WAh4LTmF2aWdhdGVVcmwFEn4vSG9tZS5hc3B4P3k9MjAyM2QWAmYPDxYCHghJbWFnZVVybAU8aHR0cHM6Ly9pbnN0aWNjLm9yZy9pbWFnZXMvd2lzZS9ldmVudHMvMzQyNi9iYW5uZXJzL3dlYi53ZWJwZGQCAw8PFgIfAgUSfi9Ib21lLmFzcHg/eT0yMDIzZGQCBQ8PFgIfAgUWfi9Db250YWN0cy5hc3B4P3k9MjAyM2RkAgcPDxYCHwIFEX4vRkFRLmFzcHg/eT0yMDIzZGQCCQ8PFgIeB1Zpc2libGVoZGQCCw9kFgJmDxYCHgtfIUl0ZW1Db3VudAIkFkhmD2QWBAIBDw8WCh4EVGV4dAUHQWN0aW9ucx8CZR4IQ3NzQ2xhc3MFCGx2MCBsaW5rHgRfIVNCAgIfBGhkZAIDDw8WCB8GBQdBY3Rpb25zHwcFA2x2MB8IAgIfBGhkZAIBD2QWBAIBDw8WCh8GBQtJbmZvcm1hdGlvbh8CZR8HBQhsdjAgbGluax8IAgIfBGhkZAIDDw8WBh8GBQtJbmZvcm1hdGlvbh8HBQNsdjAfCAICZGQCAg9kFgQCAQ8PFgofBgUSQ29uZmVyZW5jZSBEZXRhaWxzHwJlHwcFCGx2MSBsaW5rHwgCAh8EaGRkAgMPDxYGHwYFEkNvbmZlcmVuY2UgRGV0YWlscx8HBQNsdjEfCAICZGQCAw9kFgQCAQ8PFgofBgUPSW1wb3J0YW50IERhdGVzHwIFHH4vSW1wb3J0YW50RGF0ZXMuYXNweD95PTIwMjMfBwUIbHYyIGxpbmsfCAICHwRoZGQCAw8PFggfBgUP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BGhkZAIDDw8WCB8GBRBJbnZpdGVkIFNwZWFrZXJzHwcFA2x2Mh8IAgIfBGhkZAIiD2QWBAIBDw8WCB8GBQZBd2FyZHMfAgUcfi9QcmV2aW91c0F3YXJkcy5hc3B4P3k9MjAyMx8HBQhsdjIgbGluax8IAgJkZAIDDw8WCB8GBQZBd2FyZHMfBwUDbHYyHwgCAh8EaGRkAiMPZBYEAgEPDxYKHwYFD0Jvb2tzIFB1Ymxpc2hlZB8CBSZ+L0Jvb2tzUHVibGlzaGVkU2NpdGVwcmVzcy5hc3B4P3k9MjAyMx8HBRBsdjIgbGlua3N0eWxlVGFiHwgCAh8EaGRkAgMPDxYIHwYFD0Jvb2tzIFB1Ymxpc2hlZB8HBQNsdjIfCAICHwRoZGQCDQ8PFgIfBGhkFgICAQ8WAh4JaW5uZXJodG1sZWQCDw9kFgICBQ8WAh8FAgMWBmYPZBYEAgEPDxYCHwYFDVNwb25zb3JlZCBieTpkZAIDDxYCHwUCARYCZg9kFgRmDxUBFmh0dHA6Ly93d3cuaW5zdGljYy5vcmdkAgEPDxYGHgdUb29sVGlwBVBJbnN0aXR1dGUgZm9yIFN5c3RlbXMgYW5kIFRlY2hub2xvZ2llcyBvZiBJbmZvcm1hdGlvbiwgQ29udHJvbCBhbmQgQ29tbXVuaWNhdGlvbh4NQWx0ZXJuYXRlVGV4dAVQSW5zdGl0dXRlIGZvciBTeXN0ZW1zIGFuZCBUZWNobm9sb2dpZXMgb2YgSW5mb3JtYXRpb24sIENvbnRyb2wgYW5kIENvbW11bmljYXRpb24fAwVYaHR0cHM6Ly9pbnN0aWNjLm9yZy9pbWFnZXMvQ29udGFjdHMvT3JnYW5pemF0aW9ucy82MDdhZjYyZDg5NGE2Nzc2MjVkODQ5ZDkvTG9nby93ZWIud2VicGRkAgEPZBYEAgEPDxYCHwYFFUlOU1RJQ0MgaXMgTWVtYmVyIG9mOmRkAgMPFgIfBQIBFgJmD2QWBGYPFQETaHR0cDovL3d3dy53Zm1jLm9yZ2QCAQ8PFgYfCgUdV29ya2Zsb3cgTWFuYWdlbWVudCBDb2FsaXRpb24fCwUdV29ya2Zsb3cgTWFuYWdlbWVudCBDb2FsaXRpb24fAwVYaHR0cHM6Ly9pbnN0aWNjLm9yZy9pbWFnZXMvQ29udGFjdHMvT3JnYW5pemF0aW9ucy82MDdhZjYyZjg5NGE2Nzc2MjVkODRiYWIvTG9nby93ZWIud2VicGRkAgIPZBYEAgEPDxYCHwYFCkxvZ2lzdGljczpkZAIDDxYCHwUCARYCZg9kFgRmDxUBGWh0dHA6Ly93d3cuc2NpdGV2ZW50cy5jb21kAgEPDxYGHwoFIlNjaWVuY2UgYW5kIFRlY2hub2xvZ3kgRXZlbnRzLCBMZGEfCwUiU2NpZW5jZSBhbmQgVGVjaG5vbG9neSBFdmVudHMsIExkYR8DBVhodHRwczovL2luc3RpY2Mub3JnL2ltYWdlcy9Db250YWN0cy9Pcmdhbml6YXRpb25zLzYwN2FmNjJlODk0YTY3NzYyNWQ4NGFmZC9Mb2dvL3dlYi53ZWJwZGQCEw9kFgJmDxYCHwVmZAIVD2QWAgIBD2QWGGYPZBYGAgEPFgIfAQUrfi9DYWxsZm9yUGFwZXJzLmFzcHg/eT0yMDIzI2ltcG9ydGFudF9kYXRlc2QCBQ9kFgICAQ8WAh8BBSF+L0NhbGxmb3JQYXBlcnMuYXNweD95PTIwMjMjdmVudWVkAgcPFgIfBgUFSVZBUFBkAgEPDxYCHg5iSGFzdGl0bGVTY29wZWdkFgQCAQ9kFgICAQ8WAh8GBQVTQ09QRWQCBQ8PFgIfBgW/B1RoZSBJbnRlcm5hdGlvbmFsIENvbmZlcmVuY2Ugb24gSW5mb3JtYXRpb24gVmlzdWFsaXphdGlvbiBUaGVvcnkgYW5kIEFwcGxpY2F0aW9ucyBhaW1zIGF0IGJlY29taW5nIGEgbWFqb3IgcG9pbnQgb2YgY29udGFjdCBiZXR3ZWVuIHJlc2VhcmNoZXJzLCBlbmdpbmVlcnMmbmJzcDthbmQgcHJhY3RpdGlvbmVycyBpbiBJbmZvcm1hdGlvbiBWaXN1YWxpemF0aW9uLiBUaGUgY29uZmVyZW5jZSB3aWxsIGJlIHN0cnVjdHVyZWQgYWxvbmcgc2V2ZXJhbCB0b3BpY3MgcmVsYXRlZCB0byBJbmZvcm1hdGlvbiZuYnNwO2FuZCBEYXRhJm5ic3A7VmlzdWFsaXphdGlvbi4gV2Ugd2VsY29tZSBwYXBlcnMgZGVzY3JpYmluZyBvcmlnaW5hbCB3b3JrIGluIGFueSBvZiB0aGUgdG9waWNzIGxpc3RlZCBiZWxvdy4gUGFwZXJzIGRlc2NyaWJpbmcgYWR2YW5jZWQgcHJvdG90eXBlcywgc3lzdGVtcywgdG9vbHMgYW5kIHRlY2huaXF1ZXMgYXMgd2VsbCBhcyBnZW5lcmFsIHN1cnZleSBwYXBlcnMgaW5kaWNhdGluZyBmdXR1cmUgZGlyZWN0aW9ucyZuYnNwO2Fsc28gZW5jb3VyYWdlZC4mbmJzcDtXZSBhbHNvIHdlbGNvbWUgdGhlb3JldGljYWwgYW5kL29yIGVtcGlyaWNhbCBjb250cmlidXRpb25zLiZuYnNwO1BhcGVyIGFjY2VwdGFuY2Ugd2lsbCBiZSBiYXNlZCBvbiBxdWFsaXR5LCByZWxldmFuY2UgdG8gdGhlIGNvbmZlcmVuY2UgdGhlbWUgYW5kIG9yaWdpbmFsaXR5LiBUaGUgY29uZmVyZW5jZSBwcm9ncmFtIHdpbGwgaW5jbHVkZSBib3RoIG9yYWwgYW5kIHBvc3RlciZuYnNwO3ByZXNlbnRhdGlvbnMuIFNwZWNpYWwgc2Vzc2lvbnMsIGRlZGljYXRlZCB0byBjYXNlLXN0dWRpZXMgYW5kIGNvbW1lcmNpYWwgcHJlc2VudGF0aW9ucywgYXMgd2VsbCBhcyB0ZWNobmljYWwgdHV0b3JpYWxzLCBkZWRpY2F0ZWQgdG8gdGVjaG5pY2FsL3NjaWVudGlmaWMgdG9waWNzLCBhcmUgYWxzbyBlbnZpc2FnZWQuZGQCAg9kFgICCQ8WAh8FAgMWBmYPZBYKZg8VAQExZAIBDw8WAh8GBQQxMDY5ZGQCAw8PFgIfBgUFRmFsc2VkZAIFD2QWAmYPFQIBMRlJTkZPUk1BVElPTiBWSVNVQUxJWkFUSU9OZAIHDxYCHwUCDxYeZg9kFgJmDxUBLFZpc3VhbCBEYXRhIEFuYWx5c2lzIGFuZCBLbm93bGVkZ2UgRGlzY292ZXJ5ZAIBD2QWAmYPFQEWQmlnIERhdGEgVmlzdWFsaXNhdGlvbmQCAg9kFgJmDxUBIkRpc3BsYXkgYW5kIEludGVyYWN0aW9uIFRlY2hub2xvZ3lkAgMPZBYCZg8VAS9EYXRhYmFzZXMgYW5kIFZpc3VhbGl6YXRpb24sIFZpc3VhbCBEYXRhIE1pbmluZ2QCBA9kFgJmDxUBE0dyYXBoIFZpc3VhbGl6YXRpb25kAgUPZBYCZg8VATZJbnRlcmZhY2UgYW5kIEludGVyYWN0aW9uIFRlY2huaXF1ZXMgZm9yIFZpc3VhbGl6YXRpb25kAgYPZBYCZg8VAShJbnRlcm5ldCwgV2ViIGFuZCBTZWN1cml0eSBWaXN1YWxpemF0aW9uZAIHD2QWAmYPFQEWU29mdHdhcmUgVmlzdWFsaXphdGlvbmQCCA9kFgJmDxUBGUluZm9ybWF0aW9uIFZpc3VhbGl6YXRpb25kAgkPZBYCZg8VATJIaWdoLURpbWVuc2lvbmFsIERhdGEgYW5kIERpbWVuc2lvbmFsaXR5IFJlZHVjdGlvbmQCCg9kFgJmDxUBH1RleHQgYW5kIERvY3VtZW50IFZpc3VhbGl6YXRpb25kAgsPZBYCZg8VASVWaXN1YWwgUmVwcmVzZW50YXRpb24gYW5kIEludGVyYWN0aW9uZAIMD2QWAmYPFQEsRGF0YSBNYW5hZ2VtZW50IGFuZCBLbm93bGVkZ2UgUmVwcmVzZW50YXRpb25kAg0PZBYCZg8VAS1FeHBsYWluYWJsZSBNYWNoaW5lIExlYXJuaW5nIGJ5IFZpc3VhbGl6YXRpb25kAg4PZBYCZg8VASRNdWx0aS1kaW1lbnNpb25hbCBEYXRhIFZpc3VhbGl6YXRpb25kAgEPZBYKZg8VAQEyZAIBDw8WAh8GBQQxMDcwZGQCAw8PFgIfBgUFRmFsc2VkZAIFD2QWAmYPFQIBMiBHRU5FUkFMIFZJU1VBTElaQVRJT04gVEVDSE5JUVVFU2QCBw8WAh8FAhUWKmYPZBYCZg8VAS9JbnRlcmFjdGl2ZSBWaXN1YWwgSW50ZXJmYWNlcyBmb3IgVmlzdWFsaXphdGlvbmQCAQ9kFgJmDxUBKVBlcmNlcHRpb24gYW5kIENvZ25pdGlvbiBpbiBWaXN1YWxpemF0aW9uZAICD2QWAmYPFQEaVmlzdWFsaXphdGlvbiBBcHBsaWNhdGlvbnNkAgMPZBYCZg8VASlWaXN1YWxpemF0aW9uIEFsZ29yaXRobXMgYW5kIFRlY2hub2xvZ2llc2QCBA9kFgJmDxUBO1Zpc3VhbGl6YXRpb24gVG9vbHMgYW5kIFN5c3RlbXMgZm9yIFNpbXVsYXRpb24gYW5kIE1vZGVsaW5nZAIFD2QWAmYPFQEfTXVsdGl2YXJpYXRlIERhdGEgVmlzdWFsaXNhdGlvbmQCBg9kFgJmDxUBL0VtcGlyaWNhbCBTdHVkaWVzIG9mIEluZm9ybWF0aW9uIFZpc3VhbGlzYXRpb25zZAIHD2QWAmYPFQETSW1tZXJzaXZlIEFuYWx5dGljc2QCCA9kFgJmDxUBJkR5bmFtaWMgb3IgVGVtcG9yYWwgRGF0YSBWaXN1YWxpc2F0aW9uZAIJD2QWAmYPFQEjVXNhYmlsaXR5IFN0dWRpZXMgYW5kIFZpc3VhbGl6YXRpb25kAgoPZBYCZg8VARlHbHlwaC1CYXNlZCBWaXN1YWxpemF0aW9uZAILD2QWAmYPFQEnSHVtYW4tQ2VudGVyZWQgQXNwZWN0cyBvZiBWaXN1YWxpemF0aW9uZAIMD2QWAmYPFQEeQ29vcmRpbmF0ZWQgYW5kIE11bHRpcGxlIFZpZXdzZAIND2QWAmYPFQElSW50ZXJwcmV0YXRpb24gYW5kIEV2YWx1YXRpb24gTWV0aG9kc2QCDg9kFgJmDxUBGExhcmdlIERhdGEgVmlzdWFsaXphdGlvbmQCDw9kFgJmDxUBPEludGVncmF0aW9uIG9mIERhdGEgQW5hbHlzaXMsIEludGVyYWN0aW9uLCBhbmQgVmlzdWFsaXphdGlvbmQCEA9kFgJmDxUBGERhdGEgRHJpdmVuIFN0b3J5dGVsbGluZ2QCEQ9kFgJmDxUBEFZpc3VhbCBBbmFseXRpY3NkAhIPZBYCZg8VASNFeHBsYWluYWJsZSBBcnRpZmljaWFsIEludGVsbGlnZW5jZWQCEw9kFgJmDxUBFkFsZ29yaXRobSBUcmFuc3BhcmVuY3lkAhQPZBYCZg8VAR9NdWx0aS1zZW5zb3J5IERhdGEgUHJlc2VudGF0aW9uZAICD2QWCmYPFQEBM2QCAQ8PFgIfBgUEMTA3MWRkAgMPDxYCHwYFBUZhbHNlZGQCBQ9kFgJmDxUCATMYU0NJRU5USUZJQyBWSVNVQUxJWkFUSU9OZAIHDxYCHwUCCRYSZg9kFgJmDxUBKUJpb21lZGljYWwgVmlzdWFsaXphdGlvbiBhbmQgQXBwbGljYXRpb25zZAIBD2QWAmYPFQErVmlydHVhbCBFbnZpcm9ubWVudHMgYW5kIERhdGEgVmlzdWFsaXphdGlvbmQCAg9kFgJmDxUBFFZvbHVtZSBWaXN1YWxpemF0aW9uZAIDD2QWAmYPFQEYU2NpZW50aWZpYyBWaXN1YWxpemF0aW9uZAIED2QWAmYPFQESRmxvdyBWaXN1YWxpemF0aW9uZAIFD2QWAmYPFQEXR1BVLWJhc2VkIFZpc3VhbGl6YXRpb25kAgYPZBYCZg8VASRHZW9ncmFwaGljIEluZm9ybWF0aW9uIFZpc3VhbGlzYXRpb25kAgcPZBYCZg8VARpTbWFsbC1zY3JlZW4gdmlzdWFsaXNhdGlvbmQCCA9kFgJmDxUBGVVuY2VydGFpbnR5IFZpc3VhbGl6YXRpb25kAgMPDxYCHgliSGFzdGl0bGVnZBYCZg9kFgQCAw9kFgICAQ8WAh8GBRpWSVNJR1JBUFAgS0VZTk9URSBTUEVBS0VSU2QCBQ8WAh8EaGQCBA8PFgIeE2JIYXN0aXRsZVN1Ym1pc3Npb25nZBYEAgMPDxYEHwMFRmh0dHBzOi8vaW5zdGljYy5vcmcvaW1hZ2VzL3dpc2Uvc2hhcmVkL3N1Ym1pdFBhcGVyQnV0dG9uL29yaWdpbmFsLndlYnAfBGhkZAIFDw8WBB8DBUlodHRwczovL2luc3RpY2Mub3JnL2ltYWdlcy93aXNlL3NoYXJlZC9zdWJtaXRBYnN0cmFjdEJ1dHRvbi9vcmlnaW5hbC53ZWJwHwRoZGQCBQ9kFgICAQ9kFgICAQ8PFgIfBgVuU0NPUFVTLCBHb29nbGUgU2Nob2xhciwgREJMUCwgU2VtYW50aWMgU2Nob2xhciwgRUkgYW5kICBXZWIgb2YgU2NpZW5jZSAvIENvbmZlcmVuY2UgUHJvY2VlZGluZ3MgQ2l0YXRpb24gSW5kZXhkZAIGDw8WAh4XYkhhc3RpdGxlSW1wb3J0YW50RGF0ZXNnZBYCZg9kFgICBQ9kFgoCAQ9kFgICAg8PFgIfBgUWMTkgLSAyMSBGZWJydWFyeSwgMjAyM2RkAgMPZBYIAgEPFgIfAQUZfi9HbG9zc2FyeS5hc3B4I1JQP3k9MjAyM2QCBQ8PFggeCUZvcmVDb2xvcgpOHglGb250X0JvbGRoHwYFGk5vdmVtYmVyIDEsIDIwMjIgKGV4cGlyZWQpHwgChBBkZAILDw8WCB8QCk4fEWgfBgUaRGVjZW1iZXIgNiwgMjAyMiAoZXhwaXJlZCkf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ZXJlZCBQb3J0dWdhbOKAmXMgbGVhZGluZyBjb25mZXJlbmNlIGhvdGVsLmRkAgkPDxYCHhliSGFzdGl0bGVDb25mZXJlbmNlQ2hhaXJzZ2QWAgIBD2QWAgIBDw8WAh8GBRpWSVNJR1JBUFAgQ09ORkVSRU5DRSBDSEFJUmRkAgoPDxYCHhViSGFzdGl0bGVQcm9ncmFtQ2hhaXJnZBYCAgEPZBYCAgEPDxYCHwYFEVBST0dSQU0gQ08tQ0hBSVJTZGQCCw9kFgYCAQ8PFgIfBgUZUFJPR1JBTSBDT01NSVRURUUgTUVNQkVSU2RkAgMPFgIfBGhkAgUPZBYCAgEPFgIfBQIoFlBmD2QWBAIBD2QWAmYPFQENRGF2aWQgQm9ybGFuZGQCAw9kFgJmDxUCMlJFTkNJLCBVbml2ZXJzaXR5IG9mIE5vcnRoIENhcm9saW5hIGF0IENoYXBlbCBIaWxsDywgVW5pdGVkIFN0YXRlc2QCAQ9kFgQCAQ9kFgJmDxUBEEFsZXhhbmRlciBCb3JuaWtkAgMPZBYCZg8VAjhMQkkgLSBBcmNoYWVvbG9naWNhbCBQcm9zcGVjdGlvbiBhbmQgVmlydHVhbCBBcmNoYWVvbG9neQksIEF1c3RyaWFkAgIPZBYEAgEPZBYCZg8VAQ5Sb21haW4gQm91cnF1aWQCAw9kFgJmDxUCK0xhQlJJIFVNUiBDTlJTIDU4MDAsIFVuaXZlcnNpdHkgb2YgQm9yZGVhdXgILCBGcmFuY2VkAgMPZBYEAgEPZBYCZg8VAQ1NaWNoYWVsIEJ1cmNoZAIDD2QWAmYPFQJYQ2VudGVyIGZvciBEYXRhIEFuYWx5dGljcywgVmlzdWFsaXphdGlvbiwgYW5kIFNpbXVsYXRpb24sIFVuaXZlcnNpdHkgb2YgQXBwbGllZCBTY2llbmNlcw0sIFN3aXR6ZXJsYW5kZAIED2QWBAIBD2QWAmYPFQETTWFyaWEgQmVhdHJpeiBDYXJtb2QCAw9kFgJmDxUCVExBU0lHRSwgRGVwYXJ0YW1lbnRvIGRlIEluZm9ybcOhdGljYSwgRmFjdWxkYWRlIGRlIENpw6puY2lhcywgVW5pdmVyc2lkYWRlIGRlIExpc2JvYQosIFBvcnR1Z2FsZAIFD2QWBAIBD2QWAmYPFQEOQ2hpaC1NaW5nIENoZW5kAgMPZBYCZg8VAhxOYXRpb25hbCBDaGVuZ2NoaSBVbml2ZXJzaXR5GywgVGFpd2FuLCBSZXB1YmxpYyBvZiBDaGluYWQCBg9kFgQCAQ9kFgJmDxUBDFlvbmd3YW4gQ2h1bmQCAw9kFgJmDxUCT1NjaG9vbCBvZiBFY29ub21pYywgUG9saXRpY2FsIGFuZCBQb2xpY3kgU2NpZW5jZSwgVW5pdmVyc2l0eSBvZiBUZXhhcyBhdCBEYWxsYXMPLCBVbml0ZWQgU3RhdGVzZAIHD2QWBAIBD2QWAmYPFQETQW50JiMyNDM7bmlvIENvZWxob2QCAw9kFgJmDxUCWURlcGFydGFtZW50byBkZSBFbmdlbmhhcmlhIEluZm9ybcOhdGljYSwgRmFjdWxkYWRlIGRlIEVuZ2VuaGFyaWEgZGEgVW5pdmVyc2lkYWRlIGRvIFBvcnRvCiwgUG9ydHVnYWxkAggPZBYEAgEPZBYCZg8VARFEYW5pbG8gQi4gQ29pbWJyYWQCAw9kFgJmDxUCOENvbXB1dGVyIFNjaWVuY2UgRGVwYXJ0bWVudCwgRmVkZXJhbCBVbml2ZXJzaXR5IG9mIEJhaGlhCCwgQnJhemlsZAIJD2QWBAIBD2QWAmYPFQESQ2VsbWFyIEcuIGRhIFNpbHZhZAIDD2QWAmYPFQIWVW5pdmVyc2l0eSBvZiBDYW1waW5hcwgsIEJyYXppbGQCCg9kFgQCAQ9kFgJmDxUBEEdlb3JnaW9zIERvdW5pYXNkAgMPZBYCZg8VAkxEZXBhcnRtZW50IE9mIEZpbmFuY2lhbCBBbmQgTWFuYWdlbWVudCBFbmdpbmVlcmluZywgVW5pdmVyc2l0eSBvZiB0aGUgQWVnZWFuCCwgR3JlZWNlZAILD2QWBAIBD2QWAmYPFQELQWNoaW0gRWJlcnRkAgMPZBYCZg8VAjBGQiBJTkYgLSBBRyBDRyZIQ0ksIFVuaXZlcnNpdHkgb2YgS2Fpc2Vyc2xhdXRlcm4JLCBHZXJtYW55ZAIMD2QWBAIBD2QWAmYPFQEORGFuaWxvIE0uIEVsZXJkAgMPZBYCZg8VAktEZXBhcnRtZW50IG9mIE1hdGhlbWF0aWNzIGFuZCBDb21wdXRlciBTY2llbmNlLCBTw6NvIFBhdWxvIFN0YXRlIFVuaXZlcnNpdHkILCBCcmF6aWxkAg0PZBYEAgEPZBYCZg8VARRTYXJhIElyaW5hIEZhYnJpa2FudGQCAw9kFgJmDxUCFFVuaXZlcnNpdHkgb2YgWnVyaWNoDSwgU3dpdHplcmxhbmRkAg4PZBYEAgEPZBYCZg8VASNNYXJpYSBDcmlzdGluYSBGZXJyZWlyYSBkZSBPbGl2ZWlyYWQCAw9kFgJmDxUCMENvbXB1dGVyIFNjaWVuY2UsIFVuaXZlcnNpdHkgb2YgU8OjbyBQYXVsbywgSUNNQwgsIEJyYXppbGQCDw9kFgQCAQ9kFgJmDxUBD0VucmljbyBHb2JiZXR0aWQCAw9kFgJmDxUCFlZpc3VhbCBDb21wdXRpbmcsIENSUzQHLCBJdGFseWQCEA9kFgQCAQ9kFgJmDxUBD0NocmlzdGlhbiBIZWluZWQCAw9kFgJmDxUCEkxlaXB6aWcgVW5pdmVyc2l0eQksIEdlcm1hbnlkAhEPZBYEAgEPZBYCZg8VAQxTZW9raGVlIEhvbmdkAgMPZBYCZg8VAiJTY2hvb2wgb2YgSVQsIFVuaXZlcnNpdHkgb2YgU3lkbmV5CywgQXVzdHJhbGlhZAISD2QWBAIBD2QWAmYPFQEMVG9yc3RlbiBIb3BwZAIDD2QWAmYPFQIhS2FybHNydWhlIEluc3RpdHV0ZSBvZiBUZWNobm9sb2d5CSwgR2VybWFueWQCEw9kFgQCAQ9kFgJmDxUBB0ppZSBIdWFkAgMPZBYCZg8VAiVGRUlULCBVbml2ZXJzaXR5IG9mIFRlY2hub2xvZ3kgU3lkbmV5CywgQXVzdHJhbGlhZAIUD2QWBAIBD2QWAmYPFQEPSmltbXkgSm9oYW5zc29uZAIDD2QWAmYPFQIVTGlua8O2cGluZyBVbml2ZXJzaXR5CCwgU3dlZGVuZAIVD2QWBAIBD2QWAmYPFQENTWFyayBXLiBKb25lc2QCAw9kFgJmDxUCElN3YW5zZWEgVW5pdmVyc2l0eRAsIFVuaXRlZCBLaW5nZG9tZAIWD2QWBAIBD2QWAmYPFQETRGFuaWVsIEomIzI0Njtuc3NvbmQCAw9kFgJmDxUCFUxpbmvDtnBpbmcgVW5pdmVyc2l0eQgsIFN3ZWRlbmQCFw9kFgQCAQ9kFgJmDxUBC0lsaXIgSnVzdWZpZAIDD2QWAmYPFQIyQ29tcHV0ZXIgU2NpZW5jZSwgQmxla2luZ2UgSW5zdGl0dXRlIG9mIFRlY2hub2xvZ3kILCBTd2VkZW5kAhgPZBYEAgEPZBYCZg8VAQ5IYWltIExldmtvd2l0emQCAw9kFgJmDxUCNUNvbXB1dGVyIFNjaWVuY2UsIFVuaXZlcnNpdHkgb2YgTWFzc2FjaHVzZXR0cywgTG93ZWxsDywgVW5pdGVkIFN0YXRlc2QCGQ9kFgQCAQ9kFgJmDxUBCEV2YSBNYXlyZAIDD2QWAmYPFQJMRGVwYXJ0bWVudCBmb3IgS25vd2xlZGdlICYgQ29tbXVuaWNhdGlvbiBNYW5hZ2VtZW50LCBEYW51YmUgVW5pdmVyc2l0eSBLcmVtcwksIEF1c3RyaWFkAhoPZBYEAgEPZBYCZg8VAQ9WYWxlcmkgTWxhZGVub3ZkAgMPZBYCZg8VAj9UaGVvcnkgb2YgRWxlY3RyaWNhbCBFbmdpbmVlcmluZywgVGVjaG5pY2FsIFVuaXZlcnNpdHkgb2YgU29maWEKLCBCdWxnYXJpYWQCGw9kFgQCAQ9kFgJmDxUBEEtlbm5ldGggTW9yZWxhbmRkAgMPZBYCZg8VAh1PYWsgUmlkZ2UgTmF0aW9uYWwgTGFib3JhdG9yeQ8sIFVuaXRlZCBTdGF0ZXNkAhwPZBYEAgEPZBYCZg8VAQ5UaW1vdGh5IE5ld21hbmQCAw9kFgJmDxUCNUNvbXB1dGVyIFNjaWVuY2UsIFVuaXZlcnNpdHkgb2YgQWxhYmFtYSBpbiBIdW50c3ZpbGxlDywgVW5pdGVkIFN0YXRlc2QCHQ9kFgQCAQ9kFgJmDxUBCkppbmFoIFBhcmtkAgMPZBYCZg8VAhpTY2hvb2wgb2YgQ29tcHV0aW5nLCBLQUlTVBQsIEtvcmVhLCBSZXB1YmxpYyBvZmQCHg9kFgQCAQ9kFgJmDxUBE01hdXJpemlvIFBhdHJpZ25hbmlkAgMPZBYCZg8VAitFbmdpbmVlcmluZyBEZXBhcnRtZW50LCBSb21hIFRyZSBVbml2ZXJzaXR5BywgSXRhbHlkAh8PZBYEAgEPZBYCZg8VARVGZXJuYW5kbyBWLiBQYXVsb3ZpY2hkAgMPZBYCZg8VAlJEZXBhcnRtZW50IG9mIE1hdGhlbWF0aWNzIGFuZCBDb21wdXRlciBTY2llbmNlLCBFaW5kaG92ZW4gVW5pdmVyc2l0eSBvZiBUZWNobm9sb2d5DSwgTmV0aGVybGFuZHNkAiAPZBYEAgEPZBYCZg8VARBQaGlsaXAgSi4gUmhvZGVzZAIDD2QWAmYPFQI0RGVwdC4gb2YgQ29tcHV0ZXIgU2NpZW5jZSwgVW5pdmVyc2l0eSBvZiBNaXNzaXNzaXBwaQ8sIFVuaXRlZCBTdGF0ZXNkAiEPZBYEAgEPZBYCZg8VAQtGaWxpcCBTYWRsb2QCAw9kFgJmDxUCFUhlaWRlbGJlcmcgVW5pdmVyc2l0eQksIEdlcm1hbnlkAiIPZBYEAgEPZBYCZg8VARFCZWF0cml6IFMuIFNhbnRvc2QCAw9kFgJmDxUCIERFVEkvSUVFVEEsIFVuaXZlcnNpdHkgb2YgQXZlaXJvCiwgUG9ydHVnYWxkAiMPZBYEAgEPZBYCZg8VAQtBbmdlbCBTYXBwYWQCAw9kFgJmDxUCQEVTUE9MIFBvbHl0ZWNobmljIFVuaXZlcnNpdHksIEVjdWFkb3IgYW5kIENvbXB1dGVyIFZpc2lvbiBDZW50ZXIHLCBTcGFpbmQCJA9kFgQCAQ9kFgJmDxUBEUdlcmlrIFNjaGV1ZXJtYW5uZAIDD2QWAmYPFQIzSW5zdGl0dXRlIG9mIENvbXB1dGVyIFNjaWVuY2UsIFVuaXZlcnNpdMOkdCBMZWlwemlnCSwgR2VybWFueWQCJQ9kFgQCAQ9kFgJmDxUBDk1hcmNlbCBXb3JyaW5nZAIDD2QWAmYPFQInRnVsbCBQcm9mZXNzb3IsIFVuaXZlcnNpdHkgb2YgQW1zdGVyZGFtDSwgTmV0aGVybGFuZHNkAiYPZBYEAgEPZBYCZg8VAQtZYWxvbmcgWWFuZ2QCAw9kFgJmDxUCH0NvbXB1dGVyIFNjaWVuY2UsIFZpcmdpbmlhIFRlY2gPLCBVbml0ZWQgU3RhdGVzZAInD2QWBAIBD2QWAmYPFQENSmlhbnBpbmcgWmVuZ2QCAw9kFgJmDxUCCU1pY3Jvc29mdA8sIFVuaXRlZCBTdGF0ZXNkAhcPDxYCHwYFBDIwMjRkZAIZDxYCHwRoZAIbDw8WAh8DBTtodHRwczovL2luc3RpY2Mub3JnL2ltYWdlcy93aXNlLy9vdGhlci9mb290ZXIvb3JpZ2luYWwud2VicGRkZHwy+pqyQg/6qRR+Tns7A/O5NuDPs3S0SMEHu5YYlohD">
+</div>
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FG31741MWY"></script>
+                                        <script>window.dataLayer = window.dataLayer || [];
+                                        function gtag() { 
+                                        dataLayer.push(arguments); }
+                                        gtag('js', new Date());
+                                        gtag('config', 'G-FG31741MWY');
+                                        </script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="ADA4E869">
+</div>
+        <div id="container">
+       
+            <div style="width: 1000px; height: 171px; position:relative;">
+            
+                <a id="ctl00_HyperLinkBanner" href="Home.aspx?y=2023"><img id="ctl00_Banner" alt="Banner" src="https://insticc.org/images/wise/events/3426/banners/web.webp" style="border-width:0px;"></a>
+            </div>
+            <div id="up_all">
+                <a id="ctl00_HyperLinkHome" href="Home.aspx?y=2023">Home</a>
+                &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.insticc.org/Primoris/" target="_blank">Log In</a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a id="ctl00_HyperLinkContacts" href="Contacts.aspx?y=2023">Contacts</a>
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+             <a id="ctl00_HyperLinkFaq" href="FAQ.aspx?y=2023">FAQs</a>
+                &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.insticc.org/" target="_blank">INSTICC Portal</a>
+            </div>
+            <div id="sep_top">
+                &nbsp;
+            </div>
+            <div id="main">
+ 
+                
+                <div id="nav">
+                    
+                    
+        
+        
+    
+        
+        <span id="ctl00_WebsiteMenu1_RepeaterMenu_ctl01_lblMenuItem" class="lv0">Information</span>
+    
+        
+        <span id="ctl00_WebsiteMenu1_RepeaterMenu_ctl02_lblMenuItem" class="lv1">Conference Details</span>
+    
+        
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl04_hplMenuItem" class="lv2 linkstrong" href="https://www.insticc.org/node/technicalprogram/IVAPP/2023">Technical Program</a>
+        
+    
+        
+        
+    
+        
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl07_hplMenuItem" class="lv2 link" href="ProgramCommittee.aspx?y=2023">Program Committee</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl08_hplMenuItem" class="lv2 link" href="EventChairs.aspx?y=2023">Event Chairs</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl09_hplMenuItem" class="lv2 link" href="https://visigrapp.scitevents.org/KeynoteSpeakers.aspx">Keynote Lectures</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl10_hplMenuItem" class="lv2 link" href="BestPaperAward.aspx?y=2023">Best Paper Awards</a>
+        
+    
+        
+        <span id="ctl00_WebsiteMenu1_RepeaterMenu_ctl11_lblMenuItem" class="lv1">Satellite Events</span>
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl12_hplMenuItem" class="lv2 link" href="Workshops.aspx?y=2023">Workshops</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl13_hplMenuItem" class="lv2 link" href="SpecialSessions.aspx?y=2023">Special Sessions</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl14_hplMenuItem" class="lv2 link" href="Tutorials.aspx?y=2023">Tutorials</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl15_hplMenuItem" class="lv2 link" href="Demos.aspx?y=2023">Demos</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl16_hplMenuItem" class="lv2 link" href="Panel.aspx?y=2023">Panels</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl17_hplMenuItem" class="lv2 link" href="DoctoralConsortium.aspx?y=2023">Doctoral Consortium</a>
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        <span id="ctl00_WebsiteMenu1_RepeaterMenu_ctl22_lblMenuItem" class="lv1">Partners</span>
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl23_hplMenuItem" class="lv2 link" href="RDCommunity.aspx?y=2023">Academic Partners</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl24_hplMenuItem" class="lv2 link" href="IndustrialPartners.aspx?y=2023">Industrial Partners</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl25_hplMenuItem" class="lv2 link" href="Exhibitors.aspx?y=2023">Exhibitors</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl26_hplMenuItem" class="lv2 link" href="Institutions.aspx?y=2023">Institutional Partners</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl27_hplMenuItem" class="lv2 link" href="MediaPartner.aspx?y=2023">Media Partners</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl28_hplMenuItem" class="lv2 link" href="PartnerEvent.aspx?y=2023">Partner Events</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl29_hplMenuItem" class="lv2 link" href="PublicationPartner.aspx?y=2023">Publication Partners</a>
+        
+    
+        
+        <span id="ctl00_WebsiteMenu1_RepeaterMenu_ctl30_lblMenuItem" class="lv1">Previous Conferences</span>
+    
+        
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl32_hplMenuItem" class="lv2 link" href="Abstracts.aspx?y=2023">Abstracts</a>
+        
+    
+        
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl34_hplMenuItem" class="lv2 link" href="PreviousAwards.aspx?y=2023">Awards</a>
+        
+    
+        
+        
+    
+
+                    
+                    
+
+<div id="SponsersLeft">
+    <div id="ctl00_SponsorsLeftMARKS_divTextSponsersLeft" class="SponsorLeft">
+    </div>
+
+    <div style="text-align: center">
+        
+
+
+        
+                <p>
+                    </p><div style="margin-top: 30px; margin-bottom: 15px;">
+                        <span id="ctl00_SponsorsLeftMARKS_RepeaterParma_ctl00_labelOrganization" style="font-weight: bold">Sponsored by:</span>
+                    </div>
+                    
+                            <div style="margin-bottom: 10px;">
+                                <a target="_blank" href="http://www.insticc.org">
+                                    <img id="ctl00_SponsorsLeftMARKS_RepeaterParma_ctl00_ChildRepeater_ctl00_organizationLabel" title="Institute for Systems and Technologies of Information, Control and Communication" src="https://insticc.org/images/Contacts/Organizations/607af62d894a677625d849d9/Logo/web.webp" alt="Institute for Systems and Technologies of Information, Control and Communication" style="border-width:0px;"></a>
+                            </div>
+                        
+                <p></p>
+            
+                <p>
+                    </p><div style="margin-top: 30px; margin-bottom: 15px;">
+                        <span id="ctl00_SponsorsLeftMARKS_RepeaterParma_ctl01_labelOrganization" style="font-weight: bold">INSTICC is Member of:</span>
+                    </div>
+                    
+                            <div style="margin-bottom: 10px;">
+                                <a target="_blank" href="http://www.wfmc.org">
+                                    <img id="ctl00_SponsorsLeftMARKS_RepeaterParma_ctl01_ChildRepeater_ctl00_organizationLabel" title="Workflow Management Coalition" src="https://insticc.org/images/Contacts/Organizations/607af62f894a677625d84bab/Logo/web.webp" alt="Workflow Management Coalition" style="border-width:0px;"></a>
+                            </div>
+                        
+                <p></p>
+            
+                <p>
+                    </p><div style="margin-top: 30px; margin-bottom: 15px;">
+                        <span id="ctl00_SponsorsLeftMARKS_RepeaterParma_ctl02_labelOrganization" style="font-weight: bold">Logistics:</span>
+                    </div>
+                    
+                            <div style="margin-bottom: 10px;">
+                                <a target="_blank" href="http://www.scitevents.com">
+                                    <img id="ctl00_SponsorsLeftMARKS_RepeaterParma_ctl02_ChildRepeater_ctl00_organizationLabel" title="Science and Technology Events, Lda" src="https://insticc.org/images/Contacts/Organizations/607af62e894a677625d84afd/Logo/web.webp" alt="Science and Technology Events, Lda" style="border-width:0px;"></a>
+                            </div>
+                        
+                <p></p>
+            
+    </div>
+
+    
+</div>
+
+                    
+                </div>
+
+                <div id="content">
+                    
+                    
+                    
+
+
+                    
+<h1>Call for Papers</h1>
+    
+<div class="center">
+<div id="nav_cfp">
+<a href="#scope">Scope</a> | <a href="#conference_areas">Conference Areas</a> | 
+<a href="#keynote_speakers">Keynote Lectures</a> | <a href="#paper_submission">Paper Submission</a>
+<br>
+<a href="#publications">Publications</a> | 
+<a href="CallforPapers.aspx?y=2023#important_dates" id="ctl00_pageContent_ctl00_aDates">Important Dates</a> 
+<span id="ctl00_pageContent_ctl00_lblPipeDate">|</span> 
+<a href="#secretariat">Secretariat</a> 
+    <div id="ctl00_pageContent_ctl00_onlineStreamingDiv" style="display:inline-block">
+| <a href="CallforPapers.aspx?y=2023#venue" id="ctl00_pageContent_ctl00_aVenue">Venue</a>
+    </div>
+<br>
+<a href="#conference_chair">Conference Chair</a> | <a href="#program_co-chairs">Program Chair</a> | 
+<a href="#program_committee">Program Committee</a>
+</div>
+
+IVAPP 
+is sponsored by <a href="http://www.insticc.org/" target="_blank">INSTICC</a> 
+– Institute for Systems and Technologies of Information, Control and Communication<br>
+</div>
+<div id="Scope">
+    <a name="scope"></a>
+    <h2 id="ctl00_pageContent_ctl01_divTitle" class="dotted">
+        SCOPE</h2>
+    
+    <p>
+        <span id="ctl00_pageContent_ctl01_lblScope" class="Scope">The International Conference on Information Visualization Theory and Applications aims at becoming a major point of contact between researchers, engineers&nbsp;and practitioners in Information Visualization. The conference will be structured along several topics related to Information&nbsp;and Data&nbsp;Visualization. We welcome papers describing original work in any of the topics listed below. Papers describing advanced prototypes, systems, tools and techniques as well as general survey papers indicating future directions&nbsp;also encouraged.&nbsp;We also welcome theoretical and/or empirical contributions.&nbsp;Paper acceptance will be based on quality, relevance to the conference theme and originality. The conference program will include both oral and poster&nbsp;presentations. Special sessions, dedicated to case-studies and commercial presentations, as well as technical tutorials, dedicated to technical/scientific topics, are also envisaged.</span>
+    </p>
+</div>
+
+<div id="Conference_Areas">
+<a name="conference_areas"></a>
+<h2 class="dotted">CONFERENCE AREAS</h2>
+<p>
+<span id="ctl00_pageContent_ctl02_lblinfoConference_Areas">Each of these topic areas is expanded below but the sub-topics list is not exhaustive. Papers may address one or more of the listed sub-topics, although authors should not feel limited by them. Unlisted but related sub-topics are also acceptable, provided they fit in one of the following main topic areas: </span>    
+    
+</p>
+<div id="ctl00_pageContent_ctl02_divTopics">
+   
+    <div id="ctl00_pageContent_ctl02_divAreas">
+    <span id="ctl00_pageContent_ctl02_lbl1069"><b>1</b>. INFORMATION VISUALIZATION</span><br><span id="ctl00_pageContent_ctl02_lbl1070"><b>2</b>. GENERAL VISUALIZATION TECHNIQUES</span><br><span id="ctl00_pageContent_ctl02_lbl1071"><b>3</b>. SCIENTIFIC VISUALIZATION</span><br></div>
+    <br>
+        <br>
+</div>
+
+ 
+        <a name="A1"></a>
+        
+        
+       <h3> <span id="ctl00_pageContent_ctl02_rptArea_ctl00_lblArea" style="font-weight:bold;">AREA 1: INFORMATION VISUALIZATION</span></h3>
+        
+            <br>
+        <ul>
+            
+                    <li>Visual Data Analysis and Knowledge Discovery
+                    </li>
+                
+                    <li>Big Data Visualisation
+                    </li>
+                
+                    <li>Display and Interaction Technology
+                    </li>
+                
+                    <li>Databases and Visualization, Visual Data Mining
+                    </li>
+                
+                    <li>Graph Visualization
+                    </li>
+                
+                    <li>Interface and Interaction Techniques for Visualization
+                    </li>
+                
+                    <li>Internet, Web and Security Visualization
+                    </li>
+                
+                    <li>Software Visualization
+                    </li>
+                
+                    <li>Information Visualization
+                    </li>
+                
+                    <li>High-Dimensional Data and Dimensionality Reduction
+                    </li>
+                
+                    <li>Text and Document Visualization
+                    </li>
+                
+                    <li>Visual Representation and Interaction
+                    </li>
+                
+                    <li>Data Management and Knowledge Representation
+                    </li>
+                
+                    <li>Explainable Machine Learning by Visualization
+                    </li>
+                
+                    <li>Multi-dimensional Data Visualization
+                    </li>
+                
+        </ul>
+     
+        <a name="A2"></a>
+        
+        
+       <h3> <span id="ctl00_pageContent_ctl02_rptArea_ctl01_lblArea" style="font-weight:bold;">AREA 2: GENERAL VISUALIZATION TECHNIQUES</span></h3>
+        
+            <br>
+        <ul>
+            
+                    <li>Interactive Visual Interfaces for Visualization
+                    </li>
+                
+                    <li>Perception and Cognition in Visualization
+                    </li>
+                
+                    <li>Visualization Applications
+                    </li>
+                
+                    <li>Visualization Algorithms and Technologies
+                    </li>
+                
+                    <li>Visualization Tools and Systems for Simulation and Modeling
+                    </li>
+                
+                    <li>Multivariate Data Visualisation
+                    </li>
+                
+                    <li>Empirical Studies of Information Visualisations
+                    </li>
+                
+                    <li>Immersive Analytics
+                    </li>
+                
+                    <li>Dynamic or Temporal Data Visualisation
+                    </li>
+                
+                    <li>Usability Studies and Visualization
+                    </li>
+                
+                    <li>Glyph-Based Visualization
+                    </li>
+                
+                    <li>Human-Centered Aspects of Visualization
+                    </li>
+                
+                    <li>Coordinated and Multiple Views
+                    </li>
+                
+                    <li>Interpretation and Evaluation Methods
+                    </li>
+                
+                    <li>Large Data Visualization
+                    </li>
+                
+                    <li>Integration of Data Analysis, Interaction, and Visualization
+                    </li>
+                
+                    <li>Data Driven Storytelling
+                    </li>
+                
+                    <li>Visual Analytics
+                    </li>
+                
+                    <li>Explainable Artificial Intelligence
+                    </li>
+                
+                    <li>Algorithm Transparency
+                    </li>
+                
+                    <li>Multi-sensory Data Presentation
+                    </li>
+                
+        </ul>
+     
+        <a name="A3"></a>
+        
+        
+       <h3> <span id="ctl00_pageContent_ctl02_rptArea_ctl02_lblArea" style="font-weight:bold;">AREA 3: SCIENTIFIC VISUALIZATION</span></h3>
+        
+            <br>
+        <ul>
+            
+                    <li>Biomedical Visualization and Applications
+                    </li>
+                
+                    <li>Virtual Environments and Data Visualization
+                    </li>
+                
+                    <li>Volume Visualization
+                    </li>
+                
+                    <li>Scientific Visualization
+                    </li>
+                
+                    <li>Flow Visualization
+                    </li>
+                
+                    <li>GPU-based Visualization
+                    </li>
+                
+                    <li>Geographic Information Visualisation
+                    </li>
+                
+                    <li>Small-screen visualisation
+                    </li>
+                
+                    <li>Uncertainty Visualization
+                    </li>
+                
+        </ul>
+    
+
+ </div>    <div id="ctl00_pageContent_ctl03_Keynotemini">
+ <a id="ctl00_pageContent_ctl03_lnkKeynotes" name="keynote_speakers"></a>
+    <h2 id="ctl00_pageContent_ctl03_divKeynotesTitle" class="dotted">
+        VISIGRAPP KEYNOTE SPEAKERS
+    </h2>
+    
+    <div id="ctl00_pageContent_ctl03_divkeynotes">
+    <a href="https://visigrapp.scitevents.org/KeynoteSpeakers.aspx?y=2023#1" id="ctl00_pageContent_ctl03_lblChairName0"><strong>Alexandru Telea</strong>,&nbsp;</a><span>Utrecht University, Netherlands</span><br><a href="https://visigrapp.scitevents.org/KeynoteSpeakers.aspx?y=2023#2" id="ctl00_pageContent_ctl03_lblChairName1"><strong>Ferran Argelaguet</strong>,&nbsp;</a><span>Institut National de Recherche en Informatique et en Automatique (INRIA), France</span><br><a href="https://visigrapp.scitevents.org/KeynoteSpeakers.aspx?y=2023#3" id="ctl00_pageContent_ctl03_lblChairName2"><strong>Vincent Hayward</strong>,&nbsp;</a><span>Sorbonne University, France</span><br><a href="https://visigrapp.scitevents.org/KeynoteSpeakers.aspx?y=2023#4" id="ctl00_pageContent_ctl03_lblChairName3"><strong>Liang Zheng</strong>,&nbsp;</a><span>School of Computing, Australian National University, Australia</span><br></div>
+    
+</div>
+
+
+
+<div id="Submition_GuidelinesCFP">
+    <h2 id="ctl00_pageContent_ctl04_divTitle" class="dotted">
+        <a name="paper_submission"></a>PAPER SUBMISSION
+    </h2>
+    <div>
+        <span id="ctl00_pageContent_ctl04_lblSubmitionGuideLines">
+            <!--<p class="center"><strong>PAPER SUBMISSION WILL BE AVAILABLE SOON</strong><br/></p>-->
+            <p>
+                Authors can submit their work in the form of a complete paper or an abstract, but please note that accepted abstracts are presented but not published in the proceedings of the conference. Complete papers can be submitted as a Regular Paper, representing completed and validated research, or as a Position Paper, portraying a short report of work in progress or an arguable opinion about an issue discussing ideas, facts, situations, methods, procedures or results of scientific research focused on one of the conference topic areas.
+    <br>
+                <br>
+                Authors should submit a paper in English, carefully checked for correct grammar and spelling, addressing one or several of the conference areas or topics. Each paper should clearly indicate the nature of its technical/scientific contribution, and the problems, domains or environments to which it is applicable. To facilitate the double-blind paper evaluation method, authors are kindly requested to produce and provide the paper WITHOUT any reference to any of the authors, including the authors’ personal details, the acknowledgments section of the paper and any other reference that may disclose the authors’ identity.
+               <br>
+                <br>
+                When submitting a complete paper please note that only original papers should be submitted. Authors are advised to read <a href="NormsPlagiarism.aspx">INSTICC's ethical norms regarding plagiarism and self-plagiarism</a> thoroughly before submitting and must make sure that their submissions do not substantially overlap work which has been published elsewhere or simultaneously submitted to a journal or another conference with proceedings. Papers that contain any form of plagiarism will be rejected without reviews.
+             
+    <br>
+                <br>
+                All papers must be submitted through the online submission platform  <a href="http://www.insticc.org/primoris" target="_blank">PRIMORIS</a> and should follow the instructions and templates that can be found under <a href="Guidelines.aspx" target="_blank">Guidelines and Templates</a>. After the paper submission has been successfully completed, authors will receive an automatic confirmation e-mail.
+         
+    <br>
+                <br>
+            </p>
+        </span>
+
+    </div>
+    
+    
+
+</div>
+
+
+
+
+<div id="CFPPublications">
+    <a name="publications"></a>
+    <h2 class="dotted">PUBLICATIONS</h2>
+    <div id="ctl00_pageContent_ctl05_Publications">
+        <p>
+            All accepted complete papers will be published in the conference proceedings, under an ISBN reference, on paper and on digital support.
+        <br>
+            SCITEPRESS is a member of CrossRef (<a href="http://www.crossref.org/" target="_blank">http://www.crossref.org/</a>) and every paper on our digital library is given a DOI (Digital Object Identifier).
+        <br>
+
+
+            The proceedings will be submitted for indexation by
+            <span id="ctl00_pageContent_ctl05_Indexers">SCOPUS, Google Scholar, DBLP, Semantic Scholar, EI and  Web of Science / Conference Proceedings Citation Index</span>.
+        </p>
+    </div>
+    
+</div>
+
+<div id="ctl00_pageContent_ctl06_Important_Dates_Cfp">
+    <a name="important_dates"></a>
+
+    <h2 id="ctl00_pageContent_ctl06_divTitleDates" class="dotted">IMPORTANT DATES</h2>
+
+    
+    <div id="ctl00_pageContent_ctl06_datesDiv">
+        <div id="ctl00_pageContent_ctl06_divConfDate">
+            <p>
+                <span id="ctl00_pageContent_ctl06_lblConferenceDate">Conference Date: </span><span id="ctl00_pageContent_ctl06_lblDateConference" style="font-weight:bold;">19 - 21 February, 2023</span>
+                <br>
+            </p>
+        </div>
+
+        <div id="ctl00_pageContent_ctl06_divRegular">
+            <div style="padding-left: 10px">
+                <a href="Glossary.aspx?y=2023#RP" id="ctl00_pageContent_ctl06_aRegular">
+                    <h3>
+                        <span id="ctl00_pageContent_ctl06_lblRegular" style="font-size:10pt;font-weight:bold;">Regular Papers</span></h3>
+                </a>
+            </div>
+            <div style="padding-left: 18px">
+                <span id="ctl00_pageContent_ctl06_lblRPaperSub">Paper Submission: </span>
+                <span id="ctl00_pageContent_ctl06_lblRPaperSubDates" style="color:Gray;font-weight:normal;">November 1, 2022 (expired)</span>
+                
+
+                <span id="ctl00_pageContent_ctl06_lblRAuthors"><br>Authors Notification: </span>
+                <span id="ctl00_pageContent_ctl06_lblRAuthorsDates" style="color:Gray;font-weight:normal;">December 6, 2022 (expired)</span>
+                
+
+                <span id="ctl00_pageContent_ctl06_lblRFinalPaperSubmission"> <br>Camera Ready and Registration: </span>
+                <span id="ctl00_pageContent_ctl06_lblRFinalPaperSubmissionDates" style="color:Gray;font-weight:normal;">December 20, 2022 (expired)</span>
+                
+                <br>
+            </div>
+        </div>
+
+        <div id="ctl00_pageContent_ctl06_divPosition">
+            <br>
+            <div style="padding-left: 10px">
+                <a href="Glossary.aspx?y=2023#PP" id="ctl00_pageContent_ctl06_aPosition">
+                    <h3>
+                        <span id="ctl00_pageContent_ctl06_LabelPosition" style="font-size:10pt;font-weight:bold;">Position Papers</span></h3>
+                </a>
+            </div>
+            <div style="padding-left: 18px">
+                <span id="ctl00_pageContent_ctl06_lblPPaperSub">Paper Submission: </span>
+                <span id="ctl00_pageContent_ctl06_lblPPaperSubDates" style="color:Gray;font-weight:normal;">November 24, 2022 (expired)</span>
+                
+
+                <span id="ctl00_pageContent_ctl06_lblPAuthors"><br>Authors Notification: </span>
+                <span id="ctl00_pageContent_ctl06_lblPAuthorsDates" style="color:Gray;font-weight:normal;">December 22, 2022 (expired)</span>
+                
+
+                <span id="ctl00_pageContent_ctl06_lblPFinalPaperSubmission"><br>Camera Ready and Registration: </span>
+                <span id="ctl00_pageContent_ctl06_lblPFinalPaperSubmissionDates" style="color:Gray;font-weight:normal;">January 9, 2023 (expired)</span>
+                
+            </div>
+        </div>
+        <div id="ctl00_pageContent_ctl06_divSpecialSubmission">
+            <br>
+            <div style="padding-left: 10px">
+                
+                    <h3>
+                        <span id="ctl00_pageContent_ctl06_LabelSpecialSubmission" style="cursor: help">Late-Breaking</span></h3>
+                    
+                
+            </div>
+            <div style="padding-left: 18px">
+                <span id="ctl00_pageContent_ctl06_lblPPaperSubSpecialSubmission">Paper Submission: </span>
+                <span id="ctl00_pageContent_ctl06_lblPPaperSubSpecialSubmissionDates" style="color:Gray;font-weight:normal;">December 15, 2022 (expired)</span>
+                
+                
+                <span id="ctl00_pageContent_ctl06_lblPAuthorsSpecialSubmission">  <br>Authors Notification: </span>
+                <span id="ctl00_pageContent_ctl06_lblPAuthorsSpecialSubmissionDates" style="color:Gray;font-weight:normal;">January 4, 2023 (expired)</span>
+                
+
+                <span id="ctl00_pageContent_ctl06_lblPFinalPaperLateSubmission"> <br>Camera Ready and Registration: </span>
+                <span id="ctl00_pageContent_ctl06_lblPFinalPaperLateSubmissionDates" style="color:Gray;font-weight:normal;">January 11, 2023 (expired)</span>
+                
+            </div>
+        </div>
+        <br>
+        
+
+        
+        <div id="ctl00_pageContent_ctl06_divSatellite">
+            
+
+            
+                    <div style="padding-left: 10px">
+                        <span id="ctl00_pageContent_ctl06_RepeaterDateGroups_ctl00_lblType" style="font-size:10pt;font-weight:bold;">Doctoral Consortium</span>
+                        
+                        
+                    </div>
+
+                    
+
+                    
+                    
+                            <div id="ctl00_pageContent_ctl06_RepeaterDateGroups_ctl00_RepeaterDates_ctl00_divDates" style="padding-left: 18px">
+                                <span id="ctl00_pageContent_ctl06_RepeaterDateGroups_ctl00_RepeaterDates_ctl00_lblDescription">Paper Submission:</span>
+                                <span id="ctl00_pageContent_ctl06_RepeaterDateGroups_ctl00_RepeaterDates_ctl00_lblDateSatEvent" style="color:Gray;font-weight:normal;">January 2, 2023 (expired)</span>
+                                
+                            </div>
+                        
+                            <div id="ctl00_pageContent_ctl06_RepeaterDateGroups_ctl00_RepeaterDates_ctl01_divDates" style="padding-left: 18px">
+                                <span id="ctl00_pageContent_ctl06_RepeaterDateGroups_ctl00_RepeaterDates_ctl01_lblDescription">Authors Notification:</span>
+                                <span id="ctl00_pageContent_ctl06_RepeaterDateGroups_ctl00_RepeaterDates_ctl01_lblDateSatEvent" style="color:Gray;font-weight:normal;">January 13, 2023 (expired)</span>
+                                
+                            </div>
+                        
+                            <div id="ctl00_pageContent_ctl06_RepeaterDateGroups_ctl00_RepeaterDates_ctl02_divDates" style="padding-left: 18px">
+                                <span id="ctl00_pageContent_ctl06_RepeaterDateGroups_ctl00_RepeaterDates_ctl02_lblDescription">Camera Ready and Registration:</span>
+                                <span id="ctl00_pageContent_ctl06_RepeaterDateGroups_ctl00_RepeaterDates_ctl02_lblDateSatEvent" style="color:Gray;font-weight:normal;">January 23, 2023 (expired)</span>
+                                
+                            </div>
+                        
+                    <br>
+                
+                    <div style="padding-left: 10px">
+                        <span id="ctl00_pageContent_ctl06_RepeaterDateGroups_ctl01_lblType" style="font-size:10pt;font-weight:bold;">Tutorials</span>
+                        
+                        
+                    </div>
+
+                    
+
+                    
+                    
+                            <div id="ctl00_pageContent_ctl06_RepeaterDateGroups_ctl01_RepeaterDates_ctl00_divDates" style="padding-left: 18px">
+                                <span id="ctl00_pageContent_ctl06_RepeaterDateGroups_ctl01_RepeaterDates_ctl00_lblDescription">Tutorial Proposal:</span>
+                                <span id="ctl00_pageContent_ctl06_RepeaterDateGroups_ctl01_RepeaterDates_ctl00_lblDateSatEvent" style="color:Gray;font-weight:normal;">January 13, 2023 (expired)</span>
+                                
+                            </div>
+                        
+                    <br>
+                
+                    <div style="padding-left: 10px">
+                        <span id="ctl00_pageContent_ctl06_RepeaterDateGroups_ctl02_lblType" style="font-size:10pt;font-weight:bold;">Demos</span>
+                        
+                        
+                    </div>
+
+                    
+
+                    
+                    
+                            <div id="ctl00_pageContent_ctl06_RepeaterDateGroups_ctl02_RepeaterDates_ctl00_divDates" style="padding-left: 18px">
+                                <span id="ctl00_pageContent_ctl06_RepeaterDateGroups_ctl02_RepeaterDates_ctl00_lblDescription">Demo Proposal:</span>
+                                <span id="ctl00_pageContent_ctl06_RepeaterDateGroups_ctl02_RepeaterDates_ctl00_lblDateSatEvent" style="color:Gray;font-weight:normal;">January 13, 2023 (expired)</span>
+                                
+                            </div>
+                        
+                    <br>
+                
+                    <div style="padding-left: 10px">
+                        <span id="ctl00_pageContent_ctl06_RepeaterDateGroups_ctl03_lblType" style="font-size:10pt;font-weight:bold;">Panels</span>
+                        
+                        
+                    </div>
+
+                    
+
+                    
+                    
+                            <div id="ctl00_pageContent_ctl06_RepeaterDateGroups_ctl03_RepeaterDates_ctl00_divDates" style="padding-left: 18px">
+                                <span id="ctl00_pageContent_ctl06_RepeaterDateGroups_ctl03_RepeaterDates_ctl00_lblDescription">Panel Proposal:</span>
+                                <span id="ctl00_pageContent_ctl06_RepeaterDateGroups_ctl03_RepeaterDates_ctl00_lblDateSatEvent" style="color:Gray;font-weight:normal;">January 13, 2023 (expired)</span>
+                                
+                            </div>
+                        
+                    <br>
+                
+        </div>
+        
+    </div>
+</div>
+
+<div id="Secretariat">
+   
+   <a name="secretariat"></a> 
+    <h2 class="dotted">SECRETARIAT</h2>
+   
+      <p>
+        <strong>
+            <span id="ctl00_pageContent_ctl07_lblSecretariat">IVAPP Secretariat</span>
+        </strong>
+        <br>
+        <span id="ctl00_pageContent_ctl07_lblAdress">Address: Avenida de S. Francisco Xavier, Lote 7 Cv. C</span>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="ctl00_pageContent_ctl07_lblAdress2">         2900-616 Setúbal -  Portugal</span>
+        <br>
+        <span id="ctl00_pageContent_ctl07_lblTel">Tel.: +351 265 520 185</span>
+        <br>
+        <span id="ctl00_pageContent_ctl07_lblFax">Fax: +351 265 520 186</span>
+        <br>
+        <span id="ctl00_pageContent_ctl07_lblEmail">e-mail: </span><a href="mailto: ivapp.secretariat@insticc.org" id="ctl00_pageContent_ctl07_lnkEmail">ivapp.secretariat@insticc.org</a>
+        <br>
+        <span id="ctl00_pageContent_ctl07_lblWeb">Web: </span><a href="https://ivapp.scitevents.org" id="ctl00_pageContent_ctl07_lnkWeb">https://ivapp.scitevents.org</a></p>
+          
+</div><div id="ctl00_pageContent_ctl08_divVenueSummary">
+<a name="venue"></a>
+    <h2 class="dotted">VENUE</h2>
+
+<p>
+    <span id="ctl00_pageContent_ctl08_lblVenueSummary" class="Scope">Our conference will take place at the Lisbon Marriott Hotel, this 4 star Venue was considered Portugal’s leading conference hotel.</span>
+</p>
+    
+</div>
+
+<div id="Conference_Chairs">
+<a name="conference_co-chairs"></a>
+<h2 id="ctl00_pageContent_ctl09_divTitle" class="dotted">
+<a name="conference_chair"></a>
+ <span id="ctl00_pageContent_ctl09_lblChairs">VISIGRAPP CONFERENCE CHAIR</span></h2>
+
+
+
+    <div id="ctl00_pageContent_ctl09_div_Repeater"><p><span id="ctl00_pageContent_ctl09_lblChairName0" class="Normal" style="font-weight:bold;">Kadi Bouatouch</span>,&nbsp;<span id="ctl00_pageContent_ctl09_lblChair0" class="Normal" style="font-weight:normal;">IRISA, University of Rennes 1, France</span><br></p></div>
+
+
+ 
+</div>
+
+<div id="Program_Chair_Home">
+
+    <h2 id="ctl00_pageContent_ctl10_divTitle" class="dotted">
+   <a name="program_co-chairs"></a> <span id="ctl00_pageContent_ctl10_lblTitle">PROGRAM CO-CHAIRS</span>
+        </h2>
+
+    
+        <div id="ctl00_pageContent_ctl10_divChairs">
+        <p><span id="ctl00_pageContent_ctl10_lblChairName0" class="Normal" style="font-weight:bold;">Christophe Hurter</span>,&nbsp;<span id="ctl00_pageContent_ctl10_lblChair0" class="Normal" style="font-weight:normal;">French Civil Aviation University (ENAC), France</span><br><span id="ctl00_pageContent_ctl10_lblChairName1" class="Normal" style="font-weight:bold;">Helen C. Purchase</span>,&nbsp;<span id="ctl00_pageContent_ctl10_lblChair1" class="Normal" style="font-weight:normal;">Monash University, Australia</span><br></p></div>
+  
+    
+
+    </div>
+
+<div id="Program_Committee">
+    <a name="program_committee"></a>   
+    <h2 class="dotted"><span id="ctl00_pageContent_ctl11_LabelPCName">PROGRAM COMMITTEE MEMBERS</span></h2>
+    
+    <div id="ctl00_pageContent_ctl11_div_Repeater">
+        <p>
+            
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl00_lblChairName" style="font-weight: bold">David Borland</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl00_lblChairInfo">RENCI, University of North Carolina at Chapel Hill, United States</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl01_lblChairName" style="font-weight: bold">Alexander Bornik</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl01_lblChairInfo">LBI - Archaeological Prospection and Virtual Archaeology, Austria</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl02_lblChairName" style="font-weight: bold">Romain Bourqui</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl02_lblChairInfo">LaBRI UMR CNRS 5800, University of Bordeaux, France</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl03_lblChairName" style="font-weight: bold">Michael Burch</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl03_lblChairInfo">Center for Data Analytics, Visualization, and Simulation, University of Applied Sciences, Switzerland</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl04_lblChairName" style="font-weight: bold">Maria Beatriz Carmo</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl04_lblChairInfo">LASIGE, Departamento de Informática, Faculdade de Ciências, Universidade de Lisboa, Portugal</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl05_lblChairName" style="font-weight: bold">Chih-Ming Chen</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl05_lblChairInfo">National Chengchi University, Taiwan, Republic of China</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl06_lblChairName" style="font-weight: bold">Yongwan Chun</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl06_lblChairInfo">School of Economic, Political and Policy Science, University of Texas at Dallas, United States</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl07_lblChairName" style="font-weight: bold">António Coelho</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl07_lblChairInfo">Departamento de Engenharia Informática, Faculdade de Engenharia da Universidade do Porto, Portugal</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl08_lblChairName" style="font-weight: bold">Danilo B. Coimbra</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl08_lblChairInfo">Computer Science Department, Federal University of Bahia, Brazil</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl09_lblChairName" style="font-weight: bold">Celmar G. da Silva</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl09_lblChairInfo">University of Campinas, Brazil</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl10_lblChairName" style="font-weight: bold">Georgios Dounias</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl10_lblChairInfo">Department Of Financial And Management Engineering, University of the Aegean, Greece</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl11_lblChairName" style="font-weight: bold">Achim Ebert</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl11_lblChairInfo">FB INF - AG CG&amp;HCI, University of Kaiserslautern, Germany</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl12_lblChairName" style="font-weight: bold">Danilo M. Eler</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl12_lblChairInfo">Department of Mathematics and Computer Science, São Paulo State University, Brazil</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl13_lblChairName" style="font-weight: bold">Sara Irina Fabrikant</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl13_lblChairInfo">University of Zurich, Switzerland</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl14_lblChairName" style="font-weight: bold">Maria Cristina Ferreira de Oliveira</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl14_lblChairInfo">Computer Science, University of São Paulo, ICMC, Brazil</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl15_lblChairName" style="font-weight: bold">Enrico Gobbetti</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl15_lblChairInfo">Visual Computing, CRS4, Italy</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl16_lblChairName" style="font-weight: bold">Christian Heine</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl16_lblChairInfo">Leipzig University, Germany</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl17_lblChairName" style="font-weight: bold">Seokhee Hong</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl17_lblChairInfo">School of IT, University of Sydney, Australia</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl18_lblChairName" style="font-weight: bold">Torsten Hopp</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl18_lblChairInfo">Karlsruhe Institute of Technology, Germany</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl19_lblChairName" style="font-weight: bold">Jie Hua</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl19_lblChairInfo">FEIT, University of Technology Sydney, Australia</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl20_lblChairName" style="font-weight: bold">Jimmy Johansson</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl20_lblChairInfo">Linköping University, Sweden</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl21_lblChairName" style="font-weight: bold">Mark W. Jones</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl21_lblChairInfo">Swansea University, United Kingdom</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl22_lblChairName" style="font-weight: bold">Daniel Jönsson</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl22_lblChairInfo">Linköping University, Sweden</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl23_lblChairName" style="font-weight: bold">Ilir Jusufi</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl23_lblChairInfo">Computer Science, Blekinge Institute of Technology, Sweden</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl24_lblChairName" style="font-weight: bold">Haim Levkowitz</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl24_lblChairInfo">Computer Science, University of Massachusetts, Lowell, United States</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl25_lblChairName" style="font-weight: bold">Eva Mayr</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl25_lblChairInfo">Department for Knowledge &amp; Communication Management, Danube University Krems, Austria</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl26_lblChairName" style="font-weight: bold">Valeri Mladenov</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl26_lblChairInfo">Theory of Electrical Engineering, Technical University of Sofia, Bulgaria</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl27_lblChairName" style="font-weight: bold">Kenneth Moreland</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl27_lblChairInfo">Oak Ridge National Laboratory, United States</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl28_lblChairName" style="font-weight: bold">Timothy Newman</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl28_lblChairInfo">Computer Science, University of Alabama in Huntsville, United States</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl29_lblChairName" style="font-weight: bold">Jinah Park</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl29_lblChairInfo">School of Computing, KAIST, Korea, Republic of</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl30_lblChairName" style="font-weight: bold">Maurizio Patrignani</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl30_lblChairInfo">Engineering Department, Roma Tre University, Italy</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl31_lblChairName" style="font-weight: bold">Fernando V. Paulovich</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl31_lblChairInfo">Department of Mathematics and Computer Science, Eindhoven University of Technology, Netherlands</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl32_lblChairName" style="font-weight: bold">Philip J. Rhodes</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl32_lblChairInfo">Dept. of Computer Science, University of Mississippi, United States</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl33_lblChairName" style="font-weight: bold">Filip Sadlo</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl33_lblChairInfo">Heidelberg University, Germany</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl34_lblChairName" style="font-weight: bold">Beatriz S. Santos</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl34_lblChairInfo">DETI/IEETA, University of Aveiro, Portugal</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl35_lblChairName" style="font-weight: bold">Angel Sappa</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl35_lblChairInfo">ESPOL Polytechnic University, Ecuador and Computer Vision Center, Spain</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl36_lblChairName" style="font-weight: bold">Gerik Scheuermann</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl36_lblChairInfo">Institute of Computer Science, Universität Leipzig, Germany</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl37_lblChairName" style="font-weight: bold">Marcel Worring</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl37_lblChairInfo">Full Professor, University of Amsterdam, Netherlands</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl38_lblChairName" style="font-weight: bold">Yalong Yang</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl38_lblChairInfo">Computer Science, Virginia Tech, United States</span>
+                    <br>
+                
+                    <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl39_lblChairName" style="font-weight: bold">Jianping Zeng</span>,
+            <span id="ctl00_pageContent_ctl11_rptProgCommittee_ctl39_lblChairInfo">Microsoft, United States</span>
+                    <br>
+                
+            <br>
+            
+
+        </p>
+    </div>
+</div>
+
+
+                </div>
+
+                <div id="footer">
+
+                    ©&nbsp;<span id="ctl00_CurrentYear">2024</span>
+                    &nbsp;<a href="http://www.insticc.org/" target="_blank">INSTICC</a>
+                    
+                </div>
+            </div>
+              <img id="ctl00_ImageFooter" alt="footer" src="https://insticc.org/images/wise//other/footer/original.webp" style="border-width:0px;">
+
+            
+        </div>
+    </form>
+    
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+
+
+
+
+
+</body></html><!--Start of Zopim Live Chat Script--><!--End of Zopim Live Chat Script-->

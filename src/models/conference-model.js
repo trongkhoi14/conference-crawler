@@ -48,6 +48,12 @@ var conferenceSchema = new mongoose.Schema({
     },
     NotificationDate: {
         type: Array
+    },
+    CameraReady: {
+        type: Array
+    },
+    CallForPaper: {
+        type: String
     }
 
 }, 
