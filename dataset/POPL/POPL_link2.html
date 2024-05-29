@@ -1,0 +1,380 @@
+<!DOCTYPE html><html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="https://popl23.sigplan.org/favicon.ico?28d37e6d7e5e12d24c39bdba0f4f3cfd" rel="shortcut icon" type="image/x-icon">
+<link href="https://popl23.sigplan.org/stylesheets/common_.css?d7bcca3579a066193caf560ede9d6399" rel="stylesheet" type="text/css">
+<title>POPL 2023</title>
+<script type="text/javascript">var show_webdsl_debug=false;</script>
+<script type="text/javascript">var contextpath="https://popl23.sigplan.org";</script>
+<link rel="stylesheet" href="https://popl23.sigplan.org/stylesheets/bootstrap/css/bootstrap.min.css?7f89537eaf606bff49f5cc1a7c24dbca" type="text/css"><link rel="stylesheet" href="https://popl23.sigplan.org/stylesheets/conf.css?e96790a641dfff25d51f7d269119daa7" type="text/css"><link rel="stylesheet" href="https://popl23.sigplan.org/getFile/0c489b51-94ee-436b-a00d-6d790236748d/logobar.css?1672687442217" type="text/css"><link rel="stylesheet" href="https://popl23.sigplan.org/stylesheets/owl-carousel/owl.theme.css?f23cf727e4fcca9a5470658da5e755c9" type="text/css"><link rel="stylesheet" href="https://popl23.sigplan.org/stylesheets/owl-carousel/owl.carousel.css?0371b5a2d50e985b09b7d337edc0dc9f" type="text/css"><link rel="stylesheet" href="https://popl23.sigplan.org/stylesheets/owl-carousel/owl.transitions.css?b1bdaeac4065bf67a7d7a06213192964" type="text/css"><link rel="stylesheet" href="https://popl23.sigplan.org/stylesheets/theme.bootstrap_3.min.css?6867e70881e6ed2c03b6c9cf9c3152e0" type="text/css"><script type="text/javascript" src="//code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="https://popl23.sigplan.org/javascript/owl-carousel/owl.carousel.min.js?88d0fe722f04973e2888b58a63aa0570"></script>
+<script type="text/javascript" src="https://popl23.sigplan.org/javascript/jquery.tablesorter.combined.min.js?285b21976326641f8f1b910492e6d5d0"></script>
+<script type="text/javascript" src="https://popl23.sigplan.org/javascript/jquery.tablesorter.pager.min.js?4551cdfea66f45a11ae5548f3d50a06f"></script>
+<script type="text/javascript" src="https://popl23.sigplan.org/javascript/tablesorter-init.js?ee6babedf1a6be960e4543a1bb57b421"></script>
+<script type="text/javascript" src="https://popl23.sigplan.org/javascript/bootstrap/js/bootstrap.min.js?2f34b630ffe30ba2ff2b91e3f3c322a1"></script>
+<script type="text/javascript" src="https://popl23.sigplan.org/javascript/notify.min.js?e86d399917a84b69a4683f504c7a7813"></script><style type="text/css" id="notify-bootstrap">.notifyjs-bootstrap-base {
+  font-weight: bold;
+  padding: 8px 15px 8px 14px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  white-space: nowrap;
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-position: 3px 7px;
+}
+.notifyjs-bootstrap-error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border-color: #EED3D7;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAtRJREFUeNqkVc1u00AQHq+dOD+0poIQfkIjalW0SEGqRMuRnHos3DjwAH0ArlyQeANOOSMeAA5VjyBxKBQhgSpVUKKQNGloFdw4cWw2jtfMOna6JOUArDTazXi/b3dm55socPqQhFka++aHBsI8GsopRJERNFlY88FCEk9Yiwf8RhgRyaHFQpPHCDmZG5oX2ui2yilkcTT1AcDsbYC1NMAyOi7zTX2Agx7A9luAl88BauiiQ/cJaZQfIpAlngDcvZZMrl8vFPK5+XktrWlx3/ehZ5r9+t6e+WVnp1pxnNIjgBe4/6dAysQc8dsmHwPcW9C0h3fW1hans1ltwJhy0GxK7XZbUlMp5Ww2eyan6+ft/f2FAqXGK4CvQk5HueFz7D6GOZtIrK+srupdx1GRBBqNBtzc2AiMr7nPplRdKhb1q6q6zjFhrklEFOUutoQ50xcX86ZlqaZpQrfbBdu2R6/G19zX6XSgh6RX5ubyHCM8nqSID6ICrGiZjGYYxojEsiw4PDwMSL5VKsC8Yf4VRYFzMzMaxwjlJSlCyAQ9l0CW44PBADzXhe7xMdi9HtTrdYjFYkDQL0cn4Xdq2/EAE+InCnvADTf2eah4Sx9vExQjkqXT6aAERICMewd/UAp/IeYANM2joxt+q5VI+ieq2i0Wg3l6DNzHwTERPgo1ko7XBXj3vdlsT2F+UuhIhYkp7u7CarkcrFOCtR3H5JiwbAIeImjT/YQKKBtGjRFCU5IUgFRe7fF4cCNVIPMYo3VKqxwjyNAXNepuopyqnld602qVsfRpEkkz+GFL1wPj6ySXBpJtWVa5xlhpcyhBNwpZHmtX8AGgfIExo0ZpzkWVTBGiXCSEaHh62/PoR0p/vHaczxXGnj4bSo+G78lELU80h1uogBwWLf5YlsPmgDEd4M236xjm+8nm4IuE/9u+/PH2JXZfbwz4zw1WbO+SQPpXfwG/BBgAhCNZiSb/pOQAAAAASUVORK5CYII=);
+}
+.notifyjs-bootstrap-success {
+  color: #468847;
+  background-color: #DFF0D8;
+  border-color: #D6E9C6;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAutJREFUeNq0lctPE0Ecx38zu/RFS1EryqtgJFA08YCiMZIAQQ4eRG8eDGdPJiYeTIwHTfwPiAcvXIwXLwoXPaDxkWgQ6islKlJLSQWLUraPLTv7Gme32zoF9KSTfLO7v53vZ3d/M7/fIth+IO6INt2jjoA7bjHCJoAlzCRw59YwHYjBnfMPqAKWQYKjGkfCJqAF0xwZjipQtA3MxeSG87VhOOYegVrUCy7UZM9S6TLIdAamySTclZdYhFhRHloGYg7mgZv1Zzztvgud7V1tbQ2twYA34LJmF4p5dXF1KTufnE+SxeJtuCZNsLDCQU0+RyKTF27Unw101l8e6hns3u0PBalORVVVkcaEKBJDgV3+cGM4tKKmI+ohlIGnygKX00rSBfszz/n2uXv81wd6+rt1orsZCHRdr1Imk2F2Kob3hutSxW8thsd8AXNaln9D7CTfA6O+0UgkMuwVvEFFUbbAcrkcTA8+AtOk8E6KiQiDmMFSDqZItAzEVQviRkdDdaFgPp8HSZKAEAL5Qh7Sq2lIJBJwv2scUqkUnKoZgNhcDKhKg5aH+1IkcouCAdFGAQsuWZYhOjwFHQ96oagWgRoUov1T9kRBEODAwxM2QtEUl+Wp+Ln9VRo6BcMw4ErHRYjH4/B26AlQoQQTRdHWwcd9AH57+UAXddvDD37DmrBBV34WfqiXPl61g+vr6xA9zsGeM9gOdsNXkgpEtTwVvwOklXLKm6+/p5ezwk4B+j6droBs2CsGa/gNs6RIxazl4Tc25mpTgw/apPR1LYlNRFAzgsOxkyXYLIM1V8NMwyAkJSctD1eGVKiq5wWjSPdjmeTkiKvVW4f2YPHWl3GAVq6ymcyCTgovM3FzyRiDe2TaKcEKsLpJvNHjZgPNqEtyi6mZIm4SRFyLMUsONSSdkPeFtY1n0mczoY3BHTLhwPRy9/lzcziCw9ACI+yql0VLzcGAZbYSM5CCSZg1/9oc/nn7+i8N9p/8An4JMADxhH+xHfuiKwAAAABJRU5ErkJggg==);
+}
+.notifyjs-bootstrap-info {
+  color: #3A87AD;
+  background-color: #D9EDF7;
+  border-color: #BCE8F1;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYFAhkSsdes/QAAA8dJREFUOMvVlGtMW2UYx//POaWHXg6lLaW0ypAtw1UCgbniNOLcVOLmAjHZolOYlxmTGXVZdAnRfXQm+7SoU4mXaOaiZsEpC9FkiQs6Z6bdCnNYruM6KNBw6YWewzl9z+sHImEWv+vz7XmT95f/+3/+7wP814v+efDOV3/SoX3lHAA+6ODeUFfMfjOWMADgdk+eEKz0pF7aQdMAcOKLLjrcVMVX3xdWN29/GhYP7SvnP0cWfS8caSkfHZsPE9Fgnt02JNutQ0QYHB2dDz9/pKX8QjjuO9xUxd/66HdxTeCHZ3rojQObGQBcuNjfplkD3b19Y/6MrimSaKgSMmpGU5WevmE/swa6Oy73tQHA0Rdr2Mmv/6A1n9w9suQ7097Z9lM4FlTgTDrzZTu4StXVfpiI48rVcUDM5cmEksrFnHxfpTtU/3BFQzCQF/2bYVoNbH7zmItbSoMj40JSzmMyX5qDvriA7QdrIIpA+3cdsMpu0nXI8cV0MtKXCPZev+gCEM1S2NHPvWfP/hL+7FSr3+0p5RBEyhEN5JCKYr8XnASMT0xBNyzQGQeI8fjsGD39RMPk7se2bd5ZtTyoFYXftF6y37gx7NeUtJJOTFlAHDZLDuILU3j3+H5oOrD3yWbIztugaAzgnBKJuBLpGfQrS8wO4FZgV+c1IxaLgWVU0tMLEETCos4xMzEIv9cJXQcyagIwigDGwJgOAtHAwAhisQUjy0ORGERiELgG4iakkzo4MYAxcM5hAMi1WWG1yYCJIcMUaBkVRLdGeSU2995TLWzcUAzONJ7J6FBVBYIggMzmFbvdBV44Corg8vjhzC+EJEl8U1kJtgYrhCzgc/vvTwXKSib1paRFVRVORDAJAsw5FuTaJEhWM2SHB3mOAlhkNxwuLzeJsGwqWzf5TFNdKgtY5qHp6ZFf67Y/sAVadCaVY5YACDDb3Oi4NIjLnWMw2QthCBIsVhsUTU9tvXsjeq9+X1d75/KEs4LNOfcdf/+HthMnvwxOD0wmHaXr7ZItn2wuH2SnBzbZAbPJwpPx+VQuzcm7dgRCB57a1uBzUDRL4bfnI0RE0eaXd9W89mpjqHZnUI5Hh2l2dkZZUhOqpi2qSmpOmZ64Tuu9qlz/SEXo6MEHa3wOip46F1n7633eekV8ds8Wxjn37Wl63VVa+ej5oeEZ/82ZBETJjpJ1Rbij2D3Z/1trXUvLsblCK0XfOx0SX2kMsn9dX+d+7Kf6h8o4AIykuffjT8L20LU+w4AZd5VvEPY+XpWqLV327HR7DzXuDnD8r+ovkBehJ8i+y8YAAAAASUVORK5CYII=);
+}
+.notifyjs-bootstrap-warn {
+  color: #C09853;
+  background-color: #FCF8E3;
+  border-color: #FBEED5;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAABJlBMVEXr6eb/2oD/wi7/xjr/0mP/ykf/tQD/vBj/3o7/uQ//vyL/twebhgD/4pzX1K3z8e349vK6tHCilCWbiQymn0jGworr6dXQza3HxcKkn1vWvV/5uRfk4dXZ1bD18+/52YebiAmyr5S9mhCzrWq5t6ufjRH54aLs0oS+qD751XqPhAybhwXsujG3sm+Zk0PTwG6Shg+PhhObhwOPgQL4zV2nlyrf27uLfgCPhRHu7OmLgAafkyiWkD3l49ibiAfTs0C+lgCniwD4sgDJxqOilzDWowWFfAH08uebig6qpFHBvH/aw26FfQTQzsvy8OyEfz20r3jAvaKbhgG9q0nc2LbZxXanoUu/u5WSggCtp1anpJKdmFz/zlX/1nGJiYmuq5Dx7+sAAADoPUZSAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfdBgUBGhh4aah5AAAAlklEQVQY02NgoBIIE8EUcwn1FkIXM1Tj5dDUQhPU502Mi7XXQxGz5uVIjGOJUUUW81HnYEyMi2HVcUOICQZzMMYmxrEyMylJwgUt5BljWRLjmJm4pI1hYp5SQLGYxDgmLnZOVxuooClIDKgXKMbN5ggV1ACLJcaBxNgcoiGCBiZwdWxOETBDrTyEFey0jYJ4eHjMGWgEAIpRFRCUt08qAAAAAElFTkSuQmCC);
+}
+</style>
+<script type="text/javascript" src="https://popl23.sigplan.org/javascript/ajax.js?a40d577d9afd4a1b5dc6ea43cd74db43"></script>
+<script type="text/javascript">$(document).ready( function(){
+          $('#program-menu a[data-fltr-type]').on('click', function(event){
+            event.preventDefault();
+            window.location = $(this).attr('href') + "?" + encodeURIComponent( $(this).data('fltr-type') ) + '=' + encodeURIComponent( $(this).data('fltr-val') );
+          })
+        })
+      </script>
+<script type="text/javascript">(function($){
+        $(document).ready(function(){
+          $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+            event.preventDefault(); 
+            event.stopPropagation(); 
+            $(this).parent().siblings().removeClass('open');
+            $(this).parent().toggleClass('open');
+          });
+        });
+      })(jQuery);
+      </script>
+<meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://popl23.sigplan.org/getImage/carousel/Boston_skyline_from_Longfellow_Bridge_September_2017_panorama_2.jpg?1652955486000">
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-4G0QWEKVQS"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-4G0QWEKVQS', {'cookie_domain': 'auto', 'anonymizeIp': true });gtag('config', 'UA-9607501-2', {'cookie_domain': 'auto', 'anonymizeIp': true });</script>
+<script>
+
+  //set correct referrer policy for springer publication link
+
+  $(function(){ $('a[href*="link.springer"]').attr('referrerpolicy','no-referrer-when-downgrade') } );
+
+</script>
+<meta prefix="og: http://ogp.me/ns#" property="og:title" content="POPL 2023">
+<meta name="description" content="Welcome to the website of the 50th ACM SIGPLAN Symposium on Principles of Programming Languages (POPL 2023). For the fiftieth POPL and the 50th anniversary of POPL, we will be back where POPL #1 happened: Boston, Massachusetts. 
+The annual Symposium on Principles of Programming Languages is a forum for the discussion of all aspects of programming languages and programming systems. Both theoretical and experimental papers are welcome on topics ranging from formal frameworks to experience reports. We seek submissions that make principled, enduring contributions to the theory, design, underst ...">
+<meta prefix="og: http://ogp.me/ns#" property="og:description" content="Welcome to the website of the 50th ACM SIGPLAN Symposium on Principles of Programming Languages (POPL 2023). For the fiftieth POPL and the 50th anniversary of POPL, we will be back where POPL #1 happened: Boston, Massachusetts. 
+The annual Symposium on Principles of Programming Languages is a forum for the discussion of all aspects of programming languages and programming systems. Both theoretical and experimental papers are welcome on topics ranging from formal frameworks to experience reports. We seek submissions that make principled, enduring contributions to the theory, design, underst ...">
+<script type="text/javascript">function addEventModalLoadOnClick( containerNode ){
+        $(containerNode).find( "a[data-event-modal]" ).on("click", function(e){
+          var eventId = $(this).data("event-modal"); 
+          var modalElem = $("#modal-" + eventId);
+          if(modalElem.length){
+            modalElem.modal({ backdrop: 'static', keyboard: true}, 'show');
+          } else {
+            var loaderElem = $("#event-modal-loader");
+            loaderElem.find("input.event-id-input").val( eventId );
+            loaderElem.find("#load-modal-action").click();
+          }
+          e.preventDefault();
+        } );
+      }
+    </script><script type="text/javascript">function addStarredEventOnClick( containerNode ){
+        $(containerNode).find( "[data-event-star]" ).on("click", function(e){
+          var eventId = $(this).data("event-star"); 
+          var starEventFormElem = $("#event-star-form");
+          starEventFormElem.find("input.event-id-input").val( eventId );
+          starEventFormElem.find("#star-event-action").click();
+          e.preventDefault();
+          e.stopPropagation();
+        } );
+      }
+    </script><script type="text/javascript">function pauseOnCloseModal( modalid ){
+        //pauses video (only youtube at the moment) when closing modal
+        $('#' + modalid).on('hidden.bs.modal', function () {
+          $(this).find('.embed-container iframe[src*=enablejsapi]').each( function(){ this.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*') } );
+        } )
+      }
+    </script>
+<style>body.tablesorter-disableSelection { -ms-user-select: none; -moz-user-select: -moz-none;-khtml-user-select: none; -webkit-user-select: none; user-select: none; }.tablesorter-resizable-container { position: relative; height: 1px; }.tablesorter-resizable-handle { position: absolute; display: inline-block; width: 8px;top: 1px; cursor: ew-resize; z-index: 3; user-select: none; -moz-user-select: none; }</style><style type="text/css" id="core-notify">.notifyjs-corner {
+  position: fixed;
+  margin: 5px;
+  z-index: 1050;
+}
+
+.notifyjs-corner .notifyjs-wrapper,
+.notifyjs-corner .notifyjs-container {
+  position: relative;
+  display: block;
+  height: inherit;
+  width: inherit;
+  margin: 3px;
+}
+
+.notifyjs-wrapper {
+  z-index: 1;
+  position: absolute;
+  display: inline-block;
+  height: 0;
+  width: 0;
+}
+
+.notifyjs-container {
+  display: none;
+  z-index: 1;
+  position: absolute;
+}
+
+.notifyjs-hidable {
+  cursor: pointer;
+}
+
+[data-notify-text],[data-notify-html] {
+  position: relative;
+}
+
+.notifyjs-arrow {
+  position: absolute;
+  z-index: 2;
+  width: 0;
+  height: 0;
+}</style></head>
+<body id="home"><div class="frame"><div class="logobar"><div class="container"><a href="https://popl23.sigplan.org" class="navbar-brand navigate"><span class="brand-text">POPL 2023</span></a><div class="place">Sun 15 - Sat 21 January 2023 <a href="https://popl23.sigplan.org/venue/POPL-2023-venue" class="navigate">Boston, Massachusetts, United States</a></div></div></div><div class="navbar navbar-default"><div class="container"><div class="navbar-header"><button type="button" data-toggle="collapse" data-target="#navigationbar" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div><div id="navigationbar" class="navigationbar collapse navbar-collapse"><ul class="block nav navbar-nav"><li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Attending <span class="caret"></span></a><ul class="block dropdown-menu"><li class="block"><a href="https://popl23.sigplan.org/venue/POPL-2023-venue" class="navigate">Venue: Boston Park Plaza</a></li><li class="block"><a href="https://popl23.sigplan.org/attending/supporting-POPL" class="navigate">Supporting POPL</a></li><li class="block"><a href="https://popl23.sigplan.org/attending/registration" class="navigate">Registration</a></li><li class="block"><a href="https://popl23.sigplan.org/attending/information-for-students" class="navigate">Information for Students</a></li><li class="block"><a href="https://popl23.sigplan.org/attending/info-presenters" class="navigate">Information for Presenters</a></li><li class="block"><a href="https://popl23.sigplan.org/attending/info-attendees" class="navigate">Information for Virtual Attendees</a></li><li class="block"><a href="https://popl23.sigplan.org/attending/nearby-events" class="navigate">Nearby Events</a></li></ul></li><li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Program <span class="caret"></span></a><ul id="program-menu" class="block dropdown-menu"><li class="block"><a href="https://popl23.sigplan.org/program/program-POPL-2023/" class="navigate">Complete Program</a></li><li class="block"><a href="https://popl23.sigplan.org/program/program-POPL-2023/" data-fltr-type="prog" data-fltr-val="Your Program" class="navigate"><span class="glyphicon glyphicon-star"></span> Your Program</a></li><li class="block divider"></li><li class="dropdown dropdown-submenu "><a href="#" data-toggle="dropdown" class="dropdown-toggle"><strong>Filter by Day</strong></a><ul class="block dropdown-menu"><li class="block"><a href="https://popl23.sigplan.org/program/program-POPL-2023/" data-fltr-type="date" data-fltr-val="Sun 15 Jan 2023" class="navigate">Sun 15 Jan</a></li><li class="block"><a href="https://popl23.sigplan.org/program/program-POPL-2023/" data-fltr-type="date" data-fltr-val="Mon 16 Jan 2023" class="navigate">Mon 16 Jan</a></li><li class="block"><a href="https://popl23.sigplan.org/program/program-POPL-2023/" data-fltr-type="date" data-fltr-val="Tue 17 Jan 2023" class="navigate">Tue 17 Jan</a></li><li class="block"><a href="https://popl23.sigplan.org/program/program-POPL-2023/" data-fltr-type="date" data-fltr-val="Wed 18 Jan 2023" class="navigate">Wed 18 Jan</a></li><li class="block"><a href="https://popl23.sigplan.org/program/program-POPL-2023/" data-fltr-type="date" data-fltr-val="Thu 19 Jan 2023" class="navigate">Thu 19 Jan</a></li><li class="block"><a href="https://popl23.sigplan.org/program/program-POPL-2023/" data-fltr-type="date" data-fltr-val="Fri 20 Jan 2023" class="navigate">Fri 20 Jan</a></li><li class="block"><a href="https://popl23.sigplan.org/program/program-POPL-2023/" data-fltr-type="date" data-fltr-val="Sat 21 Jan 2023" class="navigate">Sat 21 Jan</a></li></ul></li></ul></li><li id="tracks-in-navbar" class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Tracks <span class="caret"></span></a><ul class="block dropdown-menu multi-column columns-3"><div class="row"><div class="col-sm-5"><ul class="block multi-column-dropdown"><li class="block dropdown-header">POPL 2023</li><li class="block"><a href="https://popl23.sigplan.org/track/POPL-2023-popl-research-papers" class="navigate">POPL</a></li><li class="block"><a href="https://popl23.sigplan.org/track/POPL-2023-session-previews" class="navigate">Session Previews</a></li><li class="block"><a href="https://popl23.sigplan.org/track/POPL-2023-artifact-evaluation" class="navigate">Artifact Evaluation</a></li><li class="block"><a href="https://popl23.sigplan.org/track/POPL-2023-diversity-equity-inclusion" class="navigate">Diversity, Equity and Inclusion</a></li><li class="block"><a href="https://popl23.sigplan.org/track/POPL-2023-student-research-competition" class="navigate">Student Research Competition</a></li><li class="block"><a href="https://popl23.sigplan.org/track/POPL-2023-student-volunteers" class="navigate">Student Volunteers</a></li><li class="block"><a href="https://popl23.sigplan.org/track/POPL-2023-tutorialfest" class="navigate">TutorialFest</a></li><li class="block"><a href="https://popl23.sigplan.org/track/POPL-2023-workshops-and-co-located-events" class="navigate">Workshops and Co-located Events</a></li></ul></div><div class="col-sm-7"><ul class="block multi-column-dropdown"><li class="block dropdown-header">Co-hosted Conferences</li><li class="block"><a href="https://popl23.sigplan.org/home/CPP-2023" class="navigate"><strong>CPP</strong> </a></li><li class="block"><a href="https://popl23.sigplan.org/home/VMCAI-2023" class="navigate"><strong>VMCAI</strong> </a></li><li class="block dropdown-header">Workshops</li><li class="block"><a href="https://popl23.sigplan.org/home/CoqPL-2023" class="navigate"><strong>CoqPL</strong> </a></li><li class="dropdown dropdown-submenu "><a href="#" data-toggle="dropdown" class="dropdown-toggle"><strong>LAFI</strong></a><ul class="block dropdown-menu"><li class="block"><a href="https://popl23.sigplan.org/home/lafi-2023" class="navigate"><strong>LAFI</strong> </a></li><li class="block"><a href="https://popl23.sigplan.org/details/lafi-2023-papers/23/Introduction-to-the-tensor-programs-framework-a-PL-approach-that-helps-analyse-theor" class="small menu-advertised-event navigate">- Introduction to the tensor-programs framework, a PL approach that helps analyse theoretical properties of deep learning.</a></li></ul></li><li class="block"><a href="https://popl23.sigplan.org/home/PEPM-2023" class="navigate"><strong>PEPM</strong> </a></li><li class="block"><a href="https://popl23.sigplan.org/home/PLMW-POPL-2023" class="navigate"><strong>PLMW @ POPL</strong> </a></li><li class="block"><a href="https://popl23.sigplan.org/home/prisc-2023" class="navigate"><strong>PriSC</strong> </a></li><li class="block"><a href="https://popl23.sigplan.org/home/prolala-2023" class="navigate"><strong>ProLaLa</strong> </a></li><li class="block dropdown-header">Co-hosted Symposia</li><li class="block"><a href="https://popl23.sigplan.org/home/PADL-2023" class="navigate"><strong>PADL</strong> </a></li></ul></div></div></ul></li><li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Organization <span class="caret"></span></a><ul class="block dropdown-menu multi-column columns-2"><div class="row"><div class="col-sm-6"><ul class="block multi-column-dropdown"><li class="block dropdown-header">POPL 2023 Committees</li><li class="block"><a href="https://popl23.sigplan.org/committee/POPL-2023-organizing-committee" class="navigate">Organizing Committee</a></li><li class="block dropdown-header">Track Committees  </li><li class="block"><a href="https://popl23.sigplan.org/committee/POPL-2023-popl-research-papers-program-committee" class="navigate"><strong>POPL</strong></a></li><li class="block"><a href="https://popl23.sigplan.org/committee/POPL-2023-artifact-evaluation-artifact-evaluation-committee" class="navigate"><strong>Artifact Evaluation</strong></a></li><li class="block"><a href="https://popl23.sigplan.org/committee/POPL-2023-student-research-competition-selection-committee" class="navigate"><strong>Student Research Competition</strong></a></li><li class="block"><a href="https://popl23.sigplan.org/committee/POPL-2023-tutorialfest-tutorial-evaluation-committee" class="navigate"><strong>TutorialFest</strong></a></li><li class="block dropdown-header">Contributors</li><li class="block"><a href="https://popl23.sigplan.org/people-index" class="navigate"><span class="glyphicon glyphicon-search"></span><sup><span class="glyphicon glyphicon-user"></span></sup> People Index</a></li></ul></div><div class="col-sm-6"><ul class="block multi-column-dropdown"><li class="block dropdown-header">Co-hosted Conferences</li><li class="dropdown dropdown-submenu "><a href="#" data-toggle="dropdown" class="dropdown-toggle"><strong>CPP</strong></a><ul class="block dropdown-menu"><li class="block"><a href="https://popl23.sigplan.org/committee/CPP-2023-papers-organizing-committee" class="navigate">Organizing Committee</a></li><li class="block"><a href="https://popl23.sigplan.org/committee/CPP-2023-papers-program-committee" class="navigate">Program Committee</a></li><li class="block"><a href="https://popl23.sigplan.org/committee/CPP-2023-papers-steering-committee" class="navigate">Steering Committee</a></li></ul></li><li class="dropdown dropdown-submenu "><a href="#" data-toggle="dropdown" class="dropdown-toggle"><strong>VMCAI</strong></a><ul class="block dropdown-menu"><li class="block"><a href="https://popl23.sigplan.org/committee/VMCAI-2023-papers-organizing-committee" class="navigate">Organizing Committee</a></li><li class="block"><a href="https://popl23.sigplan.org/committee/VMCAI-2023-papers-program-committee" class="navigate">Program Committee</a></li><li class="block"><a href="https://popl23.sigplan.org/committee/VMCAI-2023-papers-artifact-evaluation-committee" class="navigate">Artifact Evaluation Committee</a></li></ul></li><li class="block dropdown-header">Workshops</li><li class="dropdown dropdown-submenu "><a href="#" data-toggle="dropdown" class="dropdown-toggle"><strong>CoqPL</strong></a><ul class="block dropdown-menu"><li class="block"><a href="https://popl23.sigplan.org/committee/CoqPL-2023-papers-program-committee" class="navigate">Program Committee</a></li></ul></li><li class="dropdown dropdown-submenu "><a href="#" data-toggle="dropdown" class="dropdown-toggle"><strong>LAFI</strong></a><ul class="block dropdown-menu"><li class="block"><a href="https://popl23.sigplan.org/committee/lafi-2023-papers-organizing-committee" class="navigate">Organizing Committee</a></li><li class="block"><a href="https://popl23.sigplan.org/committee/lafi-2023-papers-program-committee" class="navigate">Program Committee</a></li><li class="block"><a href="https://popl23.sigplan.org/committee/lafi-2023-papers-steering-committee" class="navigate">Steering Committee</a></li></ul></li><li class="dropdown dropdown-submenu "><a href="#" data-toggle="dropdown" class="dropdown-toggle"><strong>PEPM</strong></a><ul class="block dropdown-menu"><li class="block"><a href="https://popl23.sigplan.org/committee/PEPM-2023-PEPM-2022-1-organizing-committee" class="navigate">Organizing Committee</a></li><li class="block"><a href="https://popl23.sigplan.org/committee/PEPM-2023-PEPM-2022-1-program-committee" class="navigate">Program Committee</a></li><li class="block"><a href="https://popl23.sigplan.org/committee/PEPM-2023-PEPM-2022-1-steering-committee" class="navigate">Steering Committee</a></li></ul></li><li class="dropdown dropdown-submenu "><a href="#" data-toggle="dropdown" class="dropdown-toggle"><strong>PLMW @ POPL</strong></a><ul class="block dropdown-menu"><li class="block"><a href="https://popl23.sigplan.org/committee/PLMW-POPL-2023-papers-organizing-committee" class="navigate">Organizing Committee</a></li><li class="block"><a href="https://popl23.sigplan.org/committee/PLMW-POPL-2023-papers-invited-speakers" class="navigate">Speakers</a></li><li class="block"><a href="https://popl23.sigplan.org/committee/PLMW-POPL-2023-papers-panelists" class="navigate">Panelists</a></li></ul></li><li class="dropdown dropdown-submenu "><a href="#" data-toggle="dropdown" class="dropdown-toggle"><strong>PriSC</strong></a><ul class="block dropdown-menu"><li class="block"><a href="https://popl23.sigplan.org/committee/prisc-2023-papers-program-committee" class="navigate">Program Committee</a></li><li class="block"><a href="https://popl23.sigplan.org/committee/prisc-2023-papers-steering-committee" class="navigate">Steering Committee</a></li></ul></li><li class="dropdown dropdown-submenu "><a href="#" data-toggle="dropdown" class="dropdown-toggle"><strong>ProLaLa</strong></a><ul class="block dropdown-menu"><li class="block"><a href="https://popl23.sigplan.org/committee/prolala-2023-papers-program-committee" class="navigate">Program Committee</a></li></ul></li><li class="block dropdown-header">Co-hosted Symposia</li><li class="dropdown dropdown-submenu "><a href="#" data-toggle="dropdown" class="dropdown-toggle"><strong>PADL</strong></a><ul class="block dropdown-menu"><li class="block"><a href="https://popl23.sigplan.org/committee/PADL-2023-papers-programme-chairs" class="navigate">Programme Chairs</a></li><li class="block"><a href="https://popl23.sigplan.org/committee/PADL-2023-papers-program-committee" class="navigate">Program Committee</a></li></ul></li></ul></div></div></ul></li><li class="block"><a href="https://popl23.sigplan.org/search//all" class="navigate"><span class="glyphicon glyphicon-search"></span><span class="hidden-sm"> Search</span></a></li><li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="hidden-sm">Series <span class="caret"></span></span><span title="" class="visible-sm" data-original-title="Series"><span class="glyphicon glyphicon-repeat"></span> <span class="caret"></span></span></a><ul class="block dropdown-menu"><li class="block"><a href="https://popl23.sigplan.org/series/POPL" class="navigate"><span class="glyphicon glyphicon-home"></span> Series</a></li><li class="block divider"></li><li class="block"><a href="https://conf.researchr.org/home/POPL-2025" class="navigate">POPL 2025</a></li><li class="block"><a href="https://popl24.sigplan.org" class="navigate">POPL 2024</a></li><li class="block"><span class="text-muted" style="margin-left: 2px;"><span class="glyphicon glyphicon-hand-right"></span> POPL 2023</span></li><li class="block"><a href="https://popl22.sigplan.org" class="navigate">POPL 2022</a></li><li class="block"><a href="https://popl21.sigplan.org" class="navigate">POPL 2021</a></li><li class="block"><a href="https://popl20.sigplan.org" class="navigate">POPL 2020</a></li><li class="block"><a href="https://popl19.sigplan.org" class="navigate">POPL 2019</a></li><li class="block"><a href="https://popl18.sigplan.org" class="navigate">POPL 2018</a></li><li class="block"><a href="https://popl17.sigplan.org" class="navigate">POPL 2017</a></li><li class="block"><a href="https://popl16.sigplan.org" class="navigate">POPL 2016</a></li></ul></li></ul><div class="navbar-right"><ul class="block nav navbar-nav"><li class="block"><a href="https://conf.researchr.org/signin/POPL-2023/https%3A%5Es%5Espopl23.sigplan.org%5Es" rel="nofollow" class="navigate">Sign in</a></li><li class="block"><a href="https://popl23.sigplan.org/signup" class="navigate">Sign up</a></li></ul></div></div></div></div><script type="text/javascript">$(document).ready(function(){
+      $('.carousel').carousel({
+        interval: 10000
+      })
+    });
+  </script><div id="carousel-539a93a3-d05c-418c-be30-cfabaded5451" data-ride="carousel" class="carousel slide carousel-fade"><ol class="carousel-indicators"><li data-target="#carousel-539a93a3-d05c-418c-be30-cfabaded5451" data-slide-to="0" class="active"></li><li data-target="#carousel-539a93a3-d05c-418c-be30-cfabaded5451" data-slide-to="1"></li><li data-target="#carousel-539a93a3-d05c-418c-be30-cfabaded5451" data-slide-to="2"></li></ol><div class="carousel-inner" style="background-color: #FFF;"><div class="item active"><div class="fill" style="background-image:url('https://popl23.sigplan.org/getImage/carousel/Boston_skyline_from_Longfellow_Bridge_September_2017_panorama_2.jpg?1652955486000');"></div><div class="attribution"></div><div class="carousel-caption"><h3></h3><h5></h5></div></div><div class="item"><div class="fill" style="background-image:url('https://popl23.sigplan.org/getImage/carousel/Samuel_Adams_Statue.jpeg?1672687243000');"></div><div class="attribution"><a rel="license" href="http://creativecommons.org/licenses/by/2.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by/2.0/80x15.png"></a> Photo by <em>Sharon Hahn Darlin</em></div><div class="carousel-caption"><h3>Samuel Adams Statue</h3><h5></h5></div></div><div class="item"><div class="fill" style="background-image:url('https://popl23.sigplan.org/getImage/carousel/Fl6GQoDWIAI_AkG.jpeg?1673371469000');"></div><div class="attribution">Photo by <em>Shriram Krishnamurthi</em></div><div class="carousel-caption"><h3>Boston Skyline</h3><h5></h5></div></div></div><a href="#carousel-539a93a3-d05c-418c-be30-cfabaded5451" data-slide="prev" class="left carousel-control"><span class="glyphicon glyphicon-chevron-left"></span></a><a href="#carousel-539a93a3-d05c-418c-be30-cfabaded5451" data-slide="next" class="right carousel-control"><span class="glyphicon glyphicon-chevron-right"></span></a></div><div id="content" class="container"><div class="row"><div class="col-sm-7"><div class="row"><div class="col-sm-12"><div class="page-header"><h1>POPL 2023</h1></div><p>Welcome to the website of the 50th ACM SIGPLAN Symposium on Principles of Programming Languages (POPL 2023). For the fiftieth POPL and the 50th anniversary of POPL, we will be back where POPL #1 happened: Boston, Massachusetts.</p>
+<p>The annual Symposium on Principles of Programming Languages is a forum for the discussion of all aspects of programming languages and programming systems. Both theoretical and experimental papers are welcome on topics ranging from formal frameworks to experience reports. We seek submissions that make principled, enduring contributions to the theory, design, understanding, implementation or application of programming languages.</p>
+<p>The symposium is sponsored by ACM SIGPLAN, in cooperation with ACM SIGACT and ACM SIGLOG.</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto; height: 50px;" src="https://popl23.sigplan.org/getImage/orig/ACM_SIGPLAN.png"></p>
+<p>The talk recordings are now available on <a href="https://www.youtube.com/@acmsigplan">SIGPLAN youtube channel</a>:</p>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLyrlk8Xaylp4ecKH5damlZ2FrhbauW9Fm">POPL</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLyrlk8Xaylp438uop7ZFzMy1UmDr8ldS6">Session Previews</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLyrlk8Xaylp7ORTiLrvv3810M7ZKpRze1">PriSC</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLyrlk8Xaylp6SEAB_KV55BWQpa549LO0F">CoqPL</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLyrlk8Xaylp6EB6XceHKB-UKBfmYYJAbH">CPP</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLyrlk8Xaylp7-txIxXNCd5LZMJ2aeocNZ">PLMW</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLyrlk8Xaylp5qB1WxiNktmhkFWdnYkt-j">PEPM</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLyrlk8Xaylp4HIfnE3mh-YFyYsG3_xwLi">PADL</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLyrlk8Xaylp6BftIH_Oxii8Krl_S8fBlM">VMCAI</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLyrlk8Xaylp6wmATSViXUIPSFOw7brH3b">LAFI</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLyrlk8Xaylp5T-nzYiOKZkI4T7V623lbr">ProLaLa</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLyrlk8Xaylp7grMOdWMofVvbFXjXvv5_m">SRC</a></li>
+</ul>
+</div></div><div class="row"><div class="col-sm-12"><div class="page-header"><h3>Schedule Overview</h3></div><style>
+
+.schedule-overview {
+  table-layout: fixed;
+  margin:0px auto;
+  border-spacing: 7px;
+  border-collapse: separate;
+}
+
+.schedule-overview td a {
+  color: rgb(0,13,77);
+}
+
+.schedule-overview th {
+  border-width: 0px;
+  text-align: center;
+}
+
+.schedule-overview td {
+  width: 85px;
+  min-width:85px;
+  padding:15px 0px;
+  border-width:0px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.schedule-overview .POPL-hosted-1 { background-color: rgba(249,212,94,0.7); }
+.schedule-overview .POPL-hosted-2 { background-color: rgba(255,116,65,0.5); }
+.schedule-overview .POPL-hosted-3 { background-color: rgba(255,116,65,0.4); }
+
+.schedule-overview .mentoring-1 { background-color: rgba(79,0,128,0.3 ); }
+.schedule-overview .mentoring-2 { background-color: rgba(79,0,128,0.25); }
+.schedule-overview .mentoring-3 { background-color: rgba(79,0,128,0.2 ); }
+
+.schedule-overview .colocated-0 { background-color: rgba(255,255,255,0 ); }
+.schedule-overview .colocated-1 { background-color: rgba(14,138,0,0.4 ); }
+.schedule-overview .colocated-2 { background-color: rgba(14,138,0,0.35); }
+.schedule-overview .colocated-3 { background-color: rgba(14,138,0,0.3 ); }
+
+</style>
+<div style="overflow:auto;" id="POPL23-schedule-overview">
+<table class="schedule-overview">
+<tbody>
+<tr>
+<th><a href="">Jan 15<br>Sun</a></th>
+<th><a href="">Jan 16<br>Mon</a></th>
+<th><a href="">Jan 17<br>Tue</a></th>
+<th><a href="">Jan 18<br>Wed</a></th>
+<th><a href="">Jan 19<br>Thu</a></th>
+<th><a href="">Jan 20<br>Fri</a></th>
+<th><a href="">Jan 21<br>Sat</a></th>
+</tr>
+<tr>
+<td colspan="1" class="colocated-1"><a href="https://popl23.sigplan.org/home/lafi-2023">LAFI</a></td>
+<td colspan="2" class="colocated-2"><a href="https://popl23.sigplan.org/home/PADL-2023">PADL</a></td>
+<td colspan="3" rowspan="5" class="POPL-hosted-1" style="font-size: 32px;"><a href="https://popl23.sigplan.org/track/POPL-2023-popl-research-papers">POPL</a></td>
+<td colspan="1" class="colocated-3"><a her="https://popl23.sigplan.org/home/CoqPL-2023">CoqPL</a></td>
+</tr>
+<tr>
+<td colspan="1" class="colocated-1"><a href="https://popl23.sigplan.org/home/prolala-2023">ProLaLa</a></td>
+<td colspan="2" class="colocated-1"><a href="https://popl23.sigplan.org/home/CPP-2023">CPP</a></td>
+<td colspan="1" class="colocated-3"><a href="https://popl23.sigplan.org/home/prisc-2023"> PriSC</a></td>
+</tr>
+<tr>
+<td colspan="1" class="colocated-0"></td>
+<td colspan="2" class="colocated-1"><a href="https://popl23.sigplan.org/home/VMCAI-2023">VMCAI</a></td>
+</tr>
+<tr>
+<td colspan="1" class="colocated-0"></td>
+<td colspan="1" class="POPL-hosted-2"><a href="https://popl23.sigplan.org/track/POPL-2023-tutorialfest">Tutorial<br>Fest</a></td>
+<td colspan="1" class="mentoring-3"><a href="https://popl23.sigplan.org/home/PLMW-POPL-2023">PLMW</a></td>
+</tr>
+<tr>
+<td colspan="1" class="colocated-0"></td>
+<td colspan="1" class="colocated-0"></td>
+<td colspan="1" class="colocated-1"><a href="https://popl23.sigplan.org/home/PEPM-2023">PEPM</a></td>
+</tr>
+<tr><td></td>
+<td colspan="2" class="colocated-0"> </td>
+</tr>
+<tr>
+</tr>
+<tr>
+<th><a href="">Jan 15<br>Sun</a></th>
+<th><a href="">Jan 16<br>Mon</a></th>
+<th><a href="">Jan 17<br>Tue</a></th>
+<th><a href="">Jan 18<br>Wed</a></th>
+<th><a href="">Jan 19<br>Thu</a></th>
+<th><a href="">Jan 20<br>Fri</a></th>
+<th><a href="">Jan 21<br>Sat</a></th>
+</tr>
+</tbody>
+</table>
+</div>
+</div></div><div class="row"><div class="col-sm-12"><h3>Invited Talk</h3><div id="dbae8f3533173125f05afb13aaf1ba6fwrapper"><div id="dbae8f3533173125f05afb13aaf1ba6f" class="owl-carousel owl-theme" style="opacity: 1; display: block;"><div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 536px; left: 0px; display: block;"><div class="owl-item" style="width: 268px;"><a href="https://popl23.sigplan.org/details/POPL-2023-popl-research-papers/75/Principles-of-Persistent-Programming" class="highlight-carousel-item navigate"><div class="thumbnail"><span style="position:absolute;"></span><img alt="Viktor Vafeiadis" src="https://popl23.sigplan.org/getProfileImage/viktorvafeiadis/47de49f0-6ff0-4bdf-af64-4f49112c7484/avatar.jpg?1711458412000" class="outputimage owl-top"><div class="caption"><div class="owl-bottom"><h5>Principles of Persistent Programming</h5><h6><i>Viktor Vafeiadis</i></h6></div></div></div></a></div></div></div><div class="owl-controls clickable" style="display: none;"><div class="owl-pagination"><div class="owl-page"><span class=""></span></div></div></div></div></div><script type="text/javascript">$(document).ready(function() {
+	 
+		  $("#dbae8f3533173125f05afb13aaf1ba6f").owlCarousel({
+		 
+		      autoPlay: 15000, //Set AutoPlay to 15 sec
+		 
+		      items : 4,
+		      itemsDesktop : [1199,4],
+		      itemsDesktopSmall : [979,4],
+		      itemsTablet: [768,3],
+		      itemsTabletSmall: [600,2],
+		      itemsMobile: [479,2],
+		      itemsScaleUp: false,
+		      stopOnHover: true,
+		      responsiveBaseWidth: "#dbae8f3533173125f05afb13aaf1ba6fwrapper"
+		      
+		 
+		  });
+		 
+		});
+	</script><script type="text/javascript">$(window).on('load', function() {
+		var a = [/*"owl-top",*/ "owl-bottom"];
+		a.forEach(function(cl) {
+			var maxHeight=0;
+	        $('#dbae8f3533173125f05afb13aaf1ba6f .' + cl + ',#dbae8f3533173125f05afb13aaf1ba6f .' + cl + ' *').each(function () {
+	            var thisHeight = $(this).outerHeight( true );
+	            if (thisHeight > maxHeight ){
+	            	maxHeight = thisHeight;
+	            }
+	        });
+	        $('#dbae8f3533173125f05afb13aaf1ba6f .' + cl).css('height', maxHeight);
+	    });
+    });
+    </script></div></div><div class="row"><div class="col-sm-12"><h3>TutorialFest</h3><div id="ed9972d5261a48d379eb24812c42cda6wrapper"><div id="ed9972d5261a48d379eb24812c42cda6" class="owl-carousel owl-theme" style="opacity: 1; display: block;"><div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 4288px; left: 0px; display: block;"><div class="owl-item" style="width: 268px;"><a href="https://popl23.sigplan.org/details/POPL-2023-tutorialfest/2/Z3-Internals-A-guide-to-principles-art-and-empirics-of-programming-SMT-solvers" class="highlight-carousel-item navigate"><div class="thumbnail"><span style="position:absolute;"></span><img alt="Nikolaj Bjørner" src="https://popl23.sigplan.org/getProfileImage/nikolajbjrner/aa1dddad-917e-443e-b708-00c2b53141aa/avatar.jpg?1711464622000" class="outputimage owl-top"><div class="caption"><div class="owl-bottom"><h5>Z3 Internals – A guide to principles, art and empirics of programming SMT solvers</h5><h6><i>Nikolaj Bjørner</i></h6></div></div></div></a></div><div class="owl-item" style="width: 268px;"><a href="https://popl23.sigplan.org/details/POPL-2023-tutorialfest/8/RUST-Regions-Uniqueness-Ownership-Types" class="highlight-carousel-item navigate"><div class="thumbnail"><span style="position:absolute;"></span><img alt="James Noble" src="https://popl23.sigplan.org/getProfileImage/jamesnoble/5cf464df-3407-4f6d-a5fd-87c575728ec8/avatar.jpg?1711468618000" class="outputimage owl-top"><div class="caption"><div class="owl-bottom"><h5>RUST: Regions, Uniqueness, Ownership &amp; Types</h5><h6><i>James Noble, Tobias Wrigstad</i></h6></div></div></div></a></div><div class="owl-item" style="width: 268px;"><a href="https://popl23.sigplan.org/details/POPL-2023-tutorialfest/1/Neurosymbolic-Programming" class="highlight-carousel-item navigate"><div class="thumbnail"><span style="position:absolute;"></span><img alt="Swarat Chaudhuri" src="https://popl23.sigplan.org/getProfileImage/swaratchaudhuri/f14f801d-7872-4f5f-aee9-5593a8980c9e/avatar.jpg?1713125001000" class="outputimage owl-top"><div class="caption"><div class="owl-bottom"><h5>Neurosymbolic Programming</h5><h6><i>Swarat Chaudhuri, Atharva Sehgal, Armando Solar-Lezama</i></h6></div></div></div></a></div><div class="owl-item" style="width: 268px;"><a href="https://popl23.sigplan.org/details/POPL-2023-tutorialfest/3/Isabelle-HOL-Foundations-Induction-and-Coinduction" class="highlight-carousel-item navigate"><div class="thumbnail"><span style="position:absolute;"></span><img alt="Andrei Popescu" src="https://popl23.sigplan.org/getProfileImage/andreipopescu/b0156576-06db-4a6f-9fc2-702a8dd3e2ae/avatar.jpg?1711509877000" class="outputimage owl-top"><div class="caption"><div class="owl-bottom"><h5>Isabelle/HOL: Foundations, Induction, and Coinduction</h5><h6><i>Andrei Popescu, Dmitriy Traytel</i></h6></div></div></div></a></div><div class="owl-item" style="width: 268px;"><a href="https://popl23.sigplan.org/details/POPL-2023-tutorialfest/5/Deductive-Verification-of-Probabilistic-Programs" class="highlight-carousel-item navigate"><div class="thumbnail"><span style="position:absolute;"></span><img alt="Benjamin Lucien Kaminski" src="https://popl23.sigplan.org/getProfileImage/benjaminlucienkaminski/f32a71db-a722-450c-b447-9b6619e271ec/avatar.jpg?1711465603000" class="outputimage owl-top"><div class="caption"><div class="owl-bottom"><h5>Deductive Verification of Probabilistic Programs</h5><h6><i>Benjamin Lucien Kaminski, Joost-Pieter Katoen, Christoph Matheja</i></h6></div></div></div></a></div><div class="owl-item" style="width: 268px;"><a href="https://popl23.sigplan.org/details/POPL-2023-tutorialfest/6/Incorrectness-Logic-and-Under-approximation-Foundations-of-Bug-Catching" class="highlight-carousel-item navigate"><div class="thumbnail"><span style="position:absolute;"></span><img alt="Quang Loc Le" src="https://popl23.sigplan.org/getProfileImage/quanglocle/8cc665a3-ead7-435a-ae03-50f99dafdfe4/avatar.jpg?1711498816000" class="outputimage owl-top"><div class="caption"><div class="owl-bottom"><h5>Incorrectness Logic and Under-approximation: Foundations of Bug Catching</h5><h6><i>Quang Loc Le, Peter O'Hearn, Azalea Raad, Julien Vanegue</i></h6></div></div></div></a></div><div class="owl-item" style="width: 268px;"><a href="https://popl23.sigplan.org/details/POPL-2023-tutorialfest/7/Using-a-Proof-Assistant-to-Teach-PL-Theory-Without-the-Overhead" class="highlight-carousel-item navigate"><div class="thumbnail"><span style="position:absolute;"></span><img alt="Jonathan Aldrich" src="https://popl23.sigplan.org/getProfileImage/jonathanaldrich/6de96ceb-6f14-4c2c-80c5-c526ad74ec7e/avatar.jpg?1711456124000" class="outputimage owl-top"><div class="caption"><div class="owl-bottom"><h5>Using a Proof Assistant to Teach PL Theory, Without the Overhead</h5><h6><i>Jonathan Aldrich, John Boyland</i></h6></div></div></div></a></div><div class="owl-item" style="width: 268px;"><a href="https://popl23.sigplan.org/details/POPL-2023-tutorialfest/4/QuickChick-Combining-Random-Testing-and-Verification-in-Coq" class="highlight-carousel-item navigate"><div class="thumbnail"><span style="position:absolute;"></span><img alt="Leonidas Lampropoulos" src="https://popl23.sigplan.org/getProfileImage/leonidaslampropoulos/2844e82b-e0b3-4baa-af4a-ca3b55e2ea1c/avatar.jpg?1711457305000" class="outputimage owl-top"><div class="caption"><div class="owl-bottom"><h5>QuickChick: Combining Random Testing and Verification in Coq</h5><h6><i>Leonidas Lampropoulos</i></h6></div></div></div></a></div></div></div><div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div></div></div></div><script type="text/javascript">$(document).ready(function() {
+	 
+		  $("#ed9972d5261a48d379eb24812c42cda6").owlCarousel({
+		 
+		      autoPlay: 15000, //Set AutoPlay to 15 sec
+		 
+		      items : 4,
+		      itemsDesktop : [1199,4],
+		      itemsDesktopSmall : [979,4],
+		      itemsTablet: [768,3],
+		      itemsTabletSmall: [600,2],
+		      itemsMobile: [479,2],
+		      itemsScaleUp: false,
+		      stopOnHover: true,
+		      responsiveBaseWidth: "#ed9972d5261a48d379eb24812c42cda6wrapper"
+		      
+		 
+		  });
+		 
+		});
+	</script><script type="text/javascript">$(window).on('load', function() {
+		var a = [/*"owl-top",*/ "owl-bottom"];
+		a.forEach(function(cl) {
+			var maxHeight=0;
+	        $('#ed9972d5261a48d379eb24812c42cda6 .' + cl + ',#ed9972d5261a48d379eb24812c42cda6 .' + cl + ' *').each(function () {
+	            var thisHeight = $(this).outerHeight( true );
+	            if (thisHeight > maxHeight ){
+	            	maxHeight = thisHeight;
+	            }
+	        });
+	        $('#ed9972d5261a48d379eb24812c42cda6 .' + cl).css('height', maxHeight);
+	    });
+    });
+    </script></div></div></div><div class="col-sm-4 col-sm-offset-1 sidebar"><div class="panel panel-primary"><div class="panel-heading clearfix"><div class="panel-title"><span class="glyphicon glyphicon-road"></span> POPL 2023 Tracks</div></div><div class="panel-body"><div class="all-tracks"><a href="https://popl23.sigplan.org/track/POPL-2023-popl-research-papers" class="text-muted navigate">POPL Research Papers</a> | <a href="https://popl23.sigplan.org/track/POPL-2023-session-previews" class="text-muted navigate">Session Previews</a> | <a href="https://popl23.sigplan.org/track/POPL-2023-artifact-evaluation" class="text-muted navigate">Artifact Evaluation</a> | <a href="https://popl23.sigplan.org/track/POPL-2023-diversity-equity-inclusion" class="text-muted navigate">Diversity, Equity and Inclusion</a> | <a href="https://popl23.sigplan.org/track/POPL-2023-student-research-competition" class="text-muted navigate">Student Research Competition</a> | <a href="https://popl23.sigplan.org/track/POPL-2023-student-volunteers" class="text-muted navigate">Student Volunteers</a> | <a href="https://popl23.sigplan.org/track/POPL-2023-tutorialfest" class="text-muted navigate">TutorialFest</a> | <a href="https://popl23.sigplan.org/track/POPL-2023-workshops-and-co-located-events" class="text-muted navigate">Workshops and Co-located Events</a><br><a href="javascript:var btn=$('#tracks-in-navbar:not(.open)>a'); if(btn){ if(!btn.is(':visible')){$('.navbar-toggle').click();} } btn.click(); $('html, body').animate({scrollTop: $(btn).offset().top}, 200); void(0);" class="small">Show all tracks</a></div></div></div><div class="panel panel-warning"><div class="panel-heading clearfix"><div class="panel-title">Supporters</div></div><table class="table table-hover"><tbody><tr href="https://aws.amazon.com/" title="" class="clickable-row new-window" data-original-title="Amazon AWS"><td><span class="supporter-logo "><img alt="Amazon AWS" src="https://popl23.sigplan.org/getLogo/e5ecf3f4-e7a0-4034-bf74-0ed8482eca80?1665525565000" class="outputimage"></span></td><td>Carbon Offset</td></tr><tr href="https://www.janestreet.com/" title="" class="clickable-row new-window" data-original-title="Jane Street"><td><span class="supporter-logo "><img alt="Jane Street" src="https://popl23.sigplan.org/getLogo/9813fdbb-8f18-4bb8-9b26-10ea87f1ffc8?1665588380000" class="outputimage"></span></td><td>Platinum &amp; PLMW Gold</td></tr><tr href="https://ahrefs.com/about" title="" class="clickable-row new-window" data-original-title="ahrefs"><td><span class="supporter-logo "><img alt="ahrefs" src="https://popl23.sigplan.org/getLogo/df9a51a5-0ec3-462a-88c6-b1cf4f7e346d?1664823454000" class="outputimage"></span></td><td>Platinum</td></tr><tr href="https://www.epicgames.com/site/en-US/home" title="" class="clickable-row new-window" data-original-title="Epic Games"><td><span class="supporter-logo "><img alt="Epic Games" src="https://popl23.sigplan.org/getLogo/7f0179da-2567-46bd-b326-29b47dc76cb8?1665524703000" class="outputimage"></span></td><td>Platinum</td></tr><tr href="https://www.meta.com/" title="" class="clickable-row new-window" data-original-title="Meta"><td><span class="supporter-logo "><img alt="Meta" src="https://popl23.sigplan.org/getLogo/01bc78db-0217-4618-96f6-67a0ca705b1c?1670020620000" class="outputimage"></span></td><td>Gold &amp; DEI@POPL</td></tr><tr href="https://iohk.io" title="" class="clickable-row new-window" data-original-title="IOHK"><td><span class="supporter-logo "><img alt="IOHK" src="https://popl23.sigplan.org/getLogo/b25388f0-54fc-417e-ac8c-e8f4dec259ae?1670900754000" class="outputimage"></span></td><td>Silver</td></tr><tr href="https://www.jetbrains.com/" title="" class="clickable-row new-window" data-original-title="JetBrains"><td><span class="supporter-logo "><img alt="JetBrains" src="https://popl23.sigplan.org/getLogo/0146fd54-250c-448c-bd6e-851445a4473e?1659587079000" class="outputimage"></span></td><td>Silver</td></tr><tr href="https://tarides.com" title="" class="clickable-row new-window" data-original-title="Tarides"><td><span class="supporter-logo "><img alt="Tarides" src="https://popl23.sigplan.org/getLogo/67a4b806-3657-4481-86c5-652a17bb0def?1665588452000" class="outputimage"></span></td><td>Women@POPL Event</td></tr><tr href="https://certik.org" title="" class="clickable-row new-window" data-original-title="CertiK"><td><span class="supporter-logo "><img alt="CertiK" src="https://popl23.sigplan.org/getLogo/085635e6-8e3a-4f52-9163-efe7414ed1a5?1664823742000" class="outputimage"></span></td><td>Bronze</td></tr><tr href="https://www.certora.com/" title="" class="clickable-row new-window" data-original-title="Certora"><td><span class="supporter-logo "><img alt="Certora" src="https://popl23.sigplan.org/getLogo/8986d097-4591-4a6f-a13a-46665bae8f46?1665524886000" class="outputimage"></span></td><td>Bronze</td></tr><tr href="http://google.com" title="" class="clickable-row new-window" data-original-title="Google"><td><span class="supporter-logo "><img alt="Google" src="https://popl23.sigplan.org/getLogo/c4cd9257-1dbe-4b75-82af-fedb325efa6d?1665524764000" class="outputimage"></span></td><td>Bronze</td></tr><tr href="https://veridise.com/" title="" class="clickable-row new-window" data-original-title="Veridise"><td><span class="supporter-logo "><img alt="Veridise" src="https://popl23.sigplan.org/getLogo/9c69750f-4cfb-4918-b9d9-832ae1041f11?1659587080000" class="outputimage"></span></td><td>Early Stage</td></tr><tr href="http://galois.com/" title="" class="clickable-row new-window" data-original-title="Galois, Inc."><td><span class="supporter-logo "><img alt="Galois, Inc." src="https://popl23.sigplan.org/getLogo/fc5c5a71-48a9-45fa-a045-ccb3e37b277c?1665588294000" class="outputimage"></span></td><td>PLMW Silver</td></tr></tbody></table></div></div></div><div id="messages-placeholder" class="alert alert-warning" style="display:none;"><a data-dismiss="alert" class="close">x</a><em>Wed 29 May 12:40</em></div></div><div id="notifications-ph" class="webdsl-placeholder"></div><div id="event-modal-loader" class="webdsl-placeholder"><form name="form_131600131703c411e65b13378d08eb1f6672b5a0259" id="form_131600131703c411e65b13378d08eb1f6672b5a0259" action="https://popl23.sigplan.org/eventDetailsModalByAjaxConferenceEdition" accept-charset="UTF-8" method="POST" class="hidden"><input type="hidden" name="form_131600131703c411e65b13378d08eb1f6672b5a0259" value="1"><input type="hidden" name="context" value="POPL-2023"><input name="ae03f7f6f951d515a297b161e922205d" type="text" value="" class="inputString form-control event-id-input"><button style="position: absolute; left: -9999px; width: 1px; height: 1px;" onclick="javascript:serverInvoke(&quot;https://popl23.sigplan.org/eventDetailsModalByAjaxConferenceEdition&quot;,&quot;eventDetailsModalByAjaxConferenceEdition_ia0_3c411e65b13378d08eb1f6672b5a0259&quot;, [{&quot;name&quot;:&quot;context&quot;, &quot;value&quot;:&quot;POPL-2023&quot;},],&quot;form_131600131703c411e65b13378d08eb1f6672b5a0259&quot;, this.nextSibling, false,&quot;event-modal-loader&quot;); return false;"></button><a submitid="eventDetailsModalByAjaxConferenceEdition_ia0_3c411e65b13378d08eb1f6672b5a0259" href="javascript:void(0)" onclick="javascript:loadImageElem=this;$(this.previousSibling).click()" id="load-modal-action"></a></form></div><div id="event-star-form" class="webdsl-placeholder"><form name="form_509860938088b48fd14544d4239b498a2cf339e02b" id="form_509860938088b48fd14544d4239b498a2cf339e02b" action="https://popl23.sigplan.org/eventStarByAjaxConferenceEdition" accept-charset="UTF-8" method="POST" class="hidden"><input type="hidden" name="form_509860938088b48fd14544d4239b498a2cf339e02b" value="1"><input type="hidden" name="context" value="POPL-2023"><input name="a0b55aa29cf9431a9461b359872014e3" type="text" value="" class="inputString form-control event-id-input"><button style="position: absolute; left: -9999px; width: 1px; height: 1px;" onclick="javascript:serverInvoke(&quot;https://popl23.sigplan.org/eventStarByAjaxConferenceEdition&quot;,&quot;eventStarByAjaxConferenceEdition_ia0_88b48fd14544d4239b498a2cf339e02b&quot;, [{&quot;name&quot;:&quot;context&quot;, &quot;value&quot;:&quot;POPL-2023&quot;},],&quot;form_509860938088b48fd14544d4239b498a2cf339e02b&quot;, this.nextSibling, false,&quot;event-star-form&quot;); return false;"></button><a submitid="eventStarByAjaxConferenceEdition_ia0_88b48fd14544d4239b498a2cf339e02b" href="javascript:void(0)" onclick="javascript:loadImageElem=this;$(this.previousSibling).click()" id="star-event-action"></a></form></div><div id="event-modals" class="webdsl-placeholder"></div><script type="text/javascript">(function(){
+    var post_process_function = function(n){ var node=(n&&n.nodeType === 1)?n:document; addEventModalLoadOnClick(node); addStarredEventOnClick(node); };
+    var original_post_process_func = ajax_post_process;
+    ajax_post_process = function(){
+      original_post_process_func.apply(this,arguments);
+      post_process_function.apply(this,arguments);
+    };
+    $(document).ready( post_process_function );
+  })();   
+  </script><footer class="footer"><div class="container"><div class="footer-box"><div class="row"><div class="col-sm-3"><h3><a href="https://popl23.sigplan.org" class="navigate"><span class="glyphicon glyphicon-home"></span> POPL 2023</a></h3><div><a href="https://popl23.sigplan.org/contact" class="navigate"><span class="glyphicon glyphicon-envelope"></span> contact form</a></div><hr>using <a href="https://conf.researchr.org" class="navigate">conf.researchr.org</a> (<a href="http://yellowgrass.org/roadmap/conf.researchr.org" class="navigate">v1.64.1</a>)<br><small><a href="https://popl23.sigplan.org/support" target="_blank" class="navigate"><span class="glyphicon glyphicon-question-sign"></span> Support page</a></small><br><small></small></div><div class="col-sm-5"><div class="row"><div class="col-sm-6"><h4>Tracks</h4><a href="https://popl23.sigplan.org/track/POPL-2023-popl-research-papers" class="navigate">POPL</a><br><a href="https://popl23.sigplan.org/track/POPL-2023-session-previews" class="navigate">Session Previews</a><br><a href="https://popl23.sigplan.org/track/POPL-2023-artifact-evaluation" class="navigate">Artifact Evaluation</a><br><a href="https://popl23.sigplan.org/track/POPL-2023-diversity-equity-inclusion" class="navigate">Diversity, Equity and Inclusion</a><br><a href="https://popl23.sigplan.org/track/POPL-2023-student-research-competition" class="navigate">Student Research Competition</a><br><a href="https://popl23.sigplan.org/track/POPL-2023-student-volunteers" class="navigate">Student Volunteers</a><br><a href="https://popl23.sigplan.org/track/POPL-2023-tutorialfest" class="navigate">TutorialFest</a><br><a href="https://popl23.sigplan.org/track/POPL-2023-workshops-and-co-located-events" class="navigate">Workshops and Co-located Events</a></div><div class="col-sm-6"><h4>Co-hosted Conferences</h4><a href="https://popl23.sigplan.org/home/CPP-2023" class="navigate">CPP 2023</a><br><a href="https://popl23.sigplan.org/home/VMCAI-2023" class="navigate">VMCAI 2023</a><br><h4>Workshops</h4><a href="https://popl23.sigplan.org/home/CoqPL-2023" class="navigate">CoqPL 2023</a><br><a href="https://popl23.sigplan.org/home/lafi-2023" class="navigate">LAFI 2023</a><br><a href="https://popl23.sigplan.org/home/PEPM-2023" class="navigate">PEPM 2023</a><br><a href="https://popl23.sigplan.org/home/PLMW-POPL-2023" class="navigate">PLMW @ POPL 2023</a><br><a href="https://popl23.sigplan.org/home/prisc-2023" class="navigate">PriSC 2023</a><br><a href="https://popl23.sigplan.org/home/prolala-2023" class="navigate">ProLaLa 2023</a><br><h4>Co-hosted Symposia</h4><a href="https://popl23.sigplan.org/home/PADL-2023" class="navigate">PADL 2023</a></div></div></div><div class="col-sm-2"><h4>Attending</h4><a href="https://popl23.sigplan.org/venue/POPL-2023-venue" class="navigate">Venue: Boston Park Plaza</a><br><a href="https://popl23.sigplan.org/attending/supporting-POPL" class="navigate">Supporting POPL</a><br><a href="https://popl23.sigplan.org/attending/registration" class="navigate">Registration</a><br><a href="https://popl23.sigplan.org/attending/information-for-students" class="navigate">Information for Students</a><br><a href="https://popl23.sigplan.org/attending/info-presenters" class="navigate">Information for Presenters</a><br><a href="https://popl23.sigplan.org/attending/info-attendees" class="navigate">Information for Virtual Attendees</a><br><a href="https://popl23.sigplan.org/attending/nearby-events" class="navigate">Nearby Events</a></div><div class="col-sm-2"><a href="https://popl23.sigplan.org/signup" class="navigate">Sign Up</a></div></div></div></div></footer></div><script type="text/javascript">(function(){
+    var post_process_function = function(n){ var node=(n&&n.nodeType === 1)?n:document; $(node).find('[title]').tooltip({placement: function(tt, elem){ return $(document).scrollLeft() > 100 ? 'auto left' : 'auto top' }, container: 'body', sanitize: false}); $('.tooltip.fade.in, .ui-tooltip-content').remove(); };
+    var original_post_process_func = ajax_post_process;
+    ajax_post_process = function(){
+      original_post_process_func.apply(this,arguments);
+      post_process_function.apply(this,arguments);
+    };
+    $(document).ready( post_process_function );
+  })();   
+  </script><script type="text/javascript">jQuery(document).ready(function($) {
+        $(".clickable-row").click(function() {
+          var href = $(this).attr("href");
+          if( window.location.href.indexOf( href ) < 0 ){
+            if ($(this).hasClass('new-window') ){
+              window.open( href );
+            } else {
+              window.document.location = href;
+            }
+          }
+        });
+    });
+    </script>
+</body></html>

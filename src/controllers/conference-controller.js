@@ -29,12 +29,13 @@ const crawlController = async (browserInstance) => {
         await processConferenceError(browser);
         */
         // await processConferenceHasWrongLink(browser);
-        //await crawlAllConferencesDetail(browser);
+        // await crawlAllConferencesDetail(browser);
         // await processConferenceError(browser);
         // await getEvaluationDataset(browser)
         // formatEvaluationDataset()
         // updateFormattedConferences()
         // updateCSVConferenceLinks(browser)
+
         await savePageContent(browser)
     } catch (error) {
         console.log("Error in crawlController: " + error);
@@ -42,15 +43,75 @@ const crawlController = async (browserInstance) => {
 };
 
 const savePageContent = async (browser) => {
-    const allConferences = await Conference.find({})
+    const filePath = 'EvaluationDataset.csv';
+    const fileContent = fs.readFileSync(filePath, 'utf8');
+    const existingData = csvParse(fileContent, { columns: true });
 
-    for(let i=85; i< 100; i++) {
-        console.log(i)
-        const page = await browser.newPage();
-        await page.goto(allConferences[i].Links[0], { waitUntil: "domcontentloaded" });
-        const bodyContent = await page.content();
-    
-        fs.writeFile(`./dataset/${allConferences[i].Acronym}.html`, bodyContent, (err) => {
+    // Filter rows where machine equals human
+    const filteredData = existingData.filter(row => row.machine === row.human && row.machine !== 'link 5');
+
+    for (let i = 98; i < 100; i++) {
+        console.log(i);
+        const currentConference = await Conference.findOne({ _id: filteredData[i].conference_id });
+
+        const dirPath = `./dataset/${currentConference.Acronym}`;
+        // Ensure the directory exists
+        if (!fs.existsSync(dirPath)) {
+            fs.mkdirSync(dirPath, { recursive: true });
+        }
+
+        // link 1
+        let page = await browser.newPage();
+        await page.goto(filteredData[i].link1, { waitUntil: "domcontentloaded" });
+        let bodyContent = await page.content();
+        let fileSavePath = `${dirPath}/${currentConference.Acronym}_link1.html`;
+
+        fs.writeFile(fileSavePath, bodyContent, (err) => {
+            if (err) {
+                console.error('Error writing file:', err);
+            } else {
+                console.log('File saved successfully!');
+            }
+        });
+        await page.close();
+
+        // link 2
+        page = await browser.newPage();
+        await page.goto(filteredData[i].link2, { waitUntil: "domcontentloaded" });
+        bodyContent = await page.content();
+        fileSavePath = `${dirPath}/${currentConference.Acronym}_link2.html`;
+
+        fs.writeFile(fileSavePath, bodyContent, (err) => {
+            if (err) {
+                console.error('Error writing file:', err);
+            } else {
+                console.log('File saved successfully!');
+            }
+        });
+        await page.close();
+
+        // link 3
+        page = await browser.newPage();
+        await page.goto(filteredData[i].link3, { waitUntil: "domcontentloaded" });
+        bodyContent = await page.content();
+        fileSavePath = `${dirPath}/${currentConference.Acronym}_link3.html`;
+
+        fs.writeFile(fileSavePath, bodyContent, (err) => {
+            if (err) {
+                console.error('Error writing file:', err);
+            } else {
+                console.log('File saved successfully!');
+            }
+        });
+        await page.close();
+
+        // link 4
+        page = await browser.newPage();
+        await page.goto(filteredData[i].link4, { waitUntil: "domcontentloaded" });
+        bodyContent = await page.content();
+        fileSavePath = `${dirPath}/${currentConference.Acronym}_link4.html`;
+
+        fs.writeFile(fileSavePath, bodyContent, (err) => {
             if (err) {
                 console.error('Error writing file:', err);
             } else {
@@ -59,10 +120,7 @@ const savePageContent = async (browser) => {
         });
         await page.close();
     }
-    
-
-   
-}
+};
 
 const updateCSVConferenceLinks = async (browser) => {
     const filePath = 'formatted_conferences.csv';
@@ -381,22 +439,25 @@ const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 const processConference = async (browser, conference) => {
     console.log(conference._id);
-    let isCrawlSuccess = false
-    if(conference.Links.length === 1 && isContainsAnyException(conference.Links[0])) {
-        isCrawlSuccess = await handleConferenceException(browser, conference._id);
-    }
-    else {
-        let fullInformationPoint = conference.Links.length > 1 ? 3 : 2;
-        isCrawlSuccess = await webScraperService.getConferenceDetails(
-            browser,
-            conference,
-            fullInformationPoint
-        );
-    }
 
+    let isCrawlSuccess = false
+    
+    // if(conference.Links.length === 1 && isContainsAnyException(conference.Links[0])) {
+    //     isCrawlSuccess = await handleConferenceException(browser, conference._id);
+    // }
+    // else {
+    //     let fullInformationPoint = conference.Links.length > 1 ? 3 : 2;
+    //     isCrawlSuccess = await webScraperService.getConferenceDetails(
+    //         browser,
+    //         conference,
+    //         fullInformationPoint
+    //     );
+    // }
+
+    await webScraperService.getLocation(browser, conference)
 
     if (isCrawlSuccess) {
-        await dataPineline(conference._id);
+        // await dataPineline(conference._id);
     }
 
     await delay(Math.floor(Math.random() * 2000) + 1000);

@@ -57,6 +57,7 @@ Regular/Short Paper Abstract Submission
 Doctoral Consortium Submission Deadline
 Revised manuscript submission deadline
 Workshop proposals submission deadline
+Workshop Proposal Submissions Deadline
 Accepted Submissions Due in Final Form
 Deadline for paper/abstract submission
 Workshop Proposals Submission Deadline
@@ -134,7 +135,9 @@ Full Paper Submission deadline
 Deadline to Register Abstracts
 Full Paper submission deadline
 Full Paper Submission Deadline
+Full-text Submission deadline
 Submission – KDD Cup proposal
+Workshop Submissions deadline
 Submission of track proposals
 Mandatory abstract submission
 Regular paper submissions due
@@ -142,6 +145,7 @@ First cycle abstract deadline
 New paper submission deadline
 Full Paper (4-pages) Deadline
 Abstracts Submission Deadline
+Abstract Submission deadline
 Symposium submission deadline
 Deadline for paper submission
 ABSTRACT SUBMISSION DEADLINE
@@ -259,6 +263,7 @@ Submission Deadline
 Intention to Submit
 Submission deadline
 Abstract Submission
+Artifact submission
 WiP / LB Submission
 Submission Due Date
 SUBMISSION DEADLINE

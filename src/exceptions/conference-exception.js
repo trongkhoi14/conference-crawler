@@ -41,7 +41,7 @@ const handleConferenceException = async (browser, conferenceId) => {
         case listConferenceException[4]:
             break;
     }
-    return false;
+    return true;
 };
 
 const isContainsAnyException = (conferenceLink) => {
@@ -498,18 +498,22 @@ const getRESEARCHRConferenceDetail = async (browser, conference) => {
                 })
                 if(getCallForPaper.length > 0) {
                     callForPaper = getCallForPaper[0]
-                } 
+                } else {
+                    getCallForPaper = await page.$$eval("#Call-for-Papers-of-the-research-track", (els)=> {
+                        return els.map(el => {
+                            return el.innerText
+                        })
+                    })
+                    if(getCallForPaper.length > 0) {
+                        callForPaper = getCallForPaper[0].replace("Call for Papers of the research track", "")
+                    } 
+                }
             }
 
-            console.log(callForPaper)
-            console.log(conferenceDate)
-            console.log(submissionDate)
-            console.log(notificationDate)
-            console.log(cameraReady)
         }
 
 
-        /*
+        
         await Conference.findByIdAndUpdate(
             conference._id,
             {
@@ -521,7 +525,7 @@ const getRESEARCHRConferenceDetail = async (browser, conference) => {
             },
             { new: true }
         );
-        */
+        
         
        
     } catch (error) {

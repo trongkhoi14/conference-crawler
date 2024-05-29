@@ -1,0 +1,516 @@
+<!DOCTYPE html><html lang="en" data-bs-theme="light"><head>
+    <script src="https://sigcse.org/assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ACM SIGCSE based on Blog Template · Bootstrap v5.3 by Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="author" content="MAPQ">
+    <title>ACM SIGCSE</title>
+
+        <link rel="shortcut icon" href="https://sigcse.org/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://sigcse.org/assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://sigcse.org/assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://sigcse.org/assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://sigcse.org/assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://sigcse.org/assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://sigcse.org/assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://sigcse.org/assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://sigcse.org/assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://sigcse.org/assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://sigcse.org/assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://sigcse.org/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://sigcse.org/assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://sigcse.org/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://sigcse.org/assets/images/favicon/manifest.json">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://sigcse.org/assets/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+        <!-- Bootstrap core CSS -->
+    <!-- 'https://sigcse.org/assets/css/bootstrap.min.css' -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://sigcse.org/assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link href="https://sigcse.org/assets/css/blog.css" rel="stylesheet">
+
+
+
+  </head>
+  <body>
+    <a name="Top"></a>
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+      </symbol>
+    </svg>
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (light)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10"></circle>
+        <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path>
+      </symbol>
+      <symbol id="cart" viewBox="0 0 16 16">
+        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+      </symbol>
+      <symbol id="chevron-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+      </symbol>
+    </svg>
+
+
+
+    <div class="container">
+        <header class="border-bottom lh-1 py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <a href="https://sigcse.org/">
+          <img src="https://sigcse.org/assets/images/logo/SIGCSE-logo_home.jpg" class="img-fluid" alt="SIGCSE Organization Logo"></a>
+      </div>
+
+      <div class="col-4 text-center">
+        <!-- <a class="blog-header-logo text-body-emphasis text-decoration-none" href="../index.html">ACM SIGCSE</a> -->
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="btn btn-sm btn-outline-secondary" href="https://sigcse.org/membership/join.html">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Top level menu : Home/About/Membership/Events... -->
+  <div class="nav-scroller py-1 mb-3 border-bottom">
+    <nav class="nav nav-underline justify-content-between">
+
+      
+         
+          
+            <a class="nav-item nav-link link-body-emphasis text-primary" href="https://sigcse.org/">Home</a>
+          
+
+        
+      
+        
+          <a class="nav-item nav-link link-body-emphasis text-primary" href="https://sigcse.org/about/">About</a>
+        
+      
+        
+          <a class="nav-item nav-link link-body-emphasis text-primary" href="https://sigcse.org/news/">News</a>
+        
+      
+        
+          <a class="nav-item nav-link link-body-emphasis text-primary" href="https://sigcse.org/membership/">Membership</a>
+        
+      
+        
+          <a class="nav-item nav-link link-body-emphasis active" href="https://sigcse.org/events/">Events</a>
+        
+      
+        
+          <a class="nav-item nav-link link-body-emphasis text-primary" href="https://sigcse.org/programs/">Programs</a>
+        
+      
+        
+          <a class="nav-item nav-link link-body-emphasis text-primary" href="https://sigcse.org/policies/">Policies</a>
+        
+      
+        
+          <a class="nav-item nav-link link-body-emphasis text-primary" href="https://sigcse.org/resources/">Resources</a>
+        
+      
+        
+          <a class="nav-item nav-link link-body-emphasis text-primary" href="https://sigcse.org/siteindex/">Pages</a>
+        
+      
+
+    </nav>
+  </div>
+
+  
+      <!-- https://stackoverflow.com/questions/9612235/what-are-some-good-ways-to-implement-breadcrumbs-on-a-jekyll-site -->
+
+
+
+
+
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    
+
+    
+
+    
+      
+        <li class="breadcrumb-item"><a href="https://sigcse.org/events/index.html">Events</a></li>
+      
+    
+      <li class="breadcrumb-item">ITiCSE Conference</li>
+      
+    
+
+  </ol>
+</nav>
+
+
+    </div><!-- container -->
+
+
+    <main class="container">
+      <div class="row g-5">
+        <div class="col-md-8">
+            <h4 class="fst-italic border-bottom">ITiCSE Conference</h4>
+            <p><em><a href="interesthosting.html">We are calling for expressions of interest in the ITiCSE
+leadership for future years.</a></em></p>
+
+<p>The ACM Conference on Innovation and Technology in Computer Science Education (ITiCSE) is one of four conferences sponsored by the ACM Special Interest Group on Computer Science Education (SIGCSE). It is the only SIGCSE conference overseen in conjunction with two other organizations, the ACM Europe Council and Informatics Europe. It is an international informatics/computing education conference held annually in Europe in June or July and has existed since 1996.</p>
+
+<p>SIGCSE provides a forum for educators to discuss issues related to the development, implementation, and/or evaluation of computing programs, curricula, and courses, as well as syllabi, laboratories, and other elements of teaching and pedagogy. ACM Europe Council was created by ACM to recognise and support European ACM members and activities. Informatics Europe represents the academic and research community in Informatics in Europe. With over 140 member institutions across 33 countries, Informatics Europe promotes common positions and acts on common priorities including informatics education.</p>
+
+<p>The ITiCSE conference has been held annually since 1996, in late June or early July. It has been held in many different countries (see list below). Attendance regularly exceeds 200. This conference brings together delegates from all over the world to address pressing issues in computing education. In addition to invited lectures, paper, panel, poster and "tips &amp; techniques" sessions, the conference provides facilities and exposure for working groups of up to ten members, whose final reports may be published by SIGCSE. Exhibits and tutorials are also offered. Plus good food, good company and interesting locales. If you have never been to an ITiCSE, do yourself a favor and go. You will not regret it!</p>
+
+<h5 id="typical-iticse-schedule">Typical ITiCSE Schedule</h5>
+
+<ul>
+  <li>Friday Working groups arrive and meet</li>
+  <li>Saturday Working groups meet, doctoral consortium</li>
+  <li>Sunday Working groups meet, doctorcal consortium continues, delegates arrive, opening reception</li>
+  <li>Monday Conference opening, Keynote speech, followed by a full day of sessions</li>
+  <li>Tuesday A.M.: Plenary meeting followed by sessions</li>
+  <li>Tuesday P.M.: Tourist excursion(s)</li>
+  <li>Tuesday Evening: Conference banquet</li>
+  <li>Wednesday Plenary meeting followed by a full day of sessions</li>
+  <li>Poster sessions at coffee breaks Monday through Wednesday.</li>
+</ul>
+
+<h5 id="policies">Policies</h5>
+<h6 id="iticse-specific">ITiCSE Specific</h6>
+
+<h6 id="current-steering-committee">Current Steering committee</h6>
+
+<h6 id="policies-that-apply-to-all-conferences">Policies that apply to all conferences</h6>
+
+<h5 id="get-involved">Get Involved</h5>
+<h6 id="proposing-an-iticse-location">Proposing an ITiCSE Location</h6>
+
+<p>The ITiCSE Steering Committee would like to hear from computing
+faculty interested in hosting an ITiCSE conference at their institution
+or those interested in serving as program chairs. <a href="interesthosting.html">Here is the call for
+Expressing Interest in the leadership for future ITiCSE.</a></p>
+
+<p>For further information about see the <a href="https://iticse.acm.org/faq/">ITiCSE FAQ</a> or for additional information about hosting ITiCSE, <a href="host.html">here are some guidelines</a>.</p>
+
+<h6 id="application-for-membership-of-the-conference-committee">Application for Membership of the Conference Committee</h6>
+
+<p>Prospective ITiCSE Conference Committee members are expected to have previous ITiCSE involvement including previous conference attendance. Working group participation and previous conference organizing experience are, while not strictly required, highly recommended.</p>
+
+<p>If interested, apply to be a member of the conference committee by filling out <a href="https://docs.google.com/forms/d/e/1FAIpQLSfskKUSpxSeUQxXvbEi-Q7L0St8_w04U0HhoZJcyT03WeeXGA/viewform"><strong>this form</strong></a>.
+See the ITICSE section on Policies (above) for details on responsibilities for the different positions.
+Also feel free to consult the <a href="https://iticse.acm.org/faq/">ITiCSE FAQ</a> for additional information about the conference.</p>
+
+<h6 id="iticse-history">ITiCSE History</h6>
+
+<p><a href="https://users.cs.duke.edu/~rodger/sigcseconferences.html">A History of SIGCSE Events</a>
+(maintained by Susan Rodger)</p>
+
+<h5 id="latest-iticse-conferences">Latest ITiCSE conferences</h5>
+
+<p>Follow these links for the <a href="https://iticse.acm.org">current ITiCSE Conference</a> or the previous ITiCSE conference web sites and proceedings in the ACM DL. You can even browse by the <a href="covers.html">proceeding covers</a>.</p>
+
+<ul>
+  <li><a href="https://sigcse.org/events/iticse/2023.html">28th ITiCSE 2023</a>: Turku, Finland, July 10-12, 2023.<br>
+<a href="https://iticse.acm.org/2023/" target="_blank">https://iticse.acm.org/2023/</a><br>Proceedings:
+    <ul>
+      <li><a href="https://dl.acm.org/doi/proceedings/10.1145/3587102" target="_blank">ITiCSE 2023: Proceedings of the 2023 Conference on Innovation and Technology in Computer Science Education V. 1</a></li>
+      <li><a href="https://dl.acm.org/doi/proceedings/10.1145/3587103" target="_blank">ITiCSE 2023: Proceedings of the 2023 Conference on Innovation and Technology in Computer Science Education V. 2</a></li>
+      <li><a href="https://dl.acm.org/doi/proceedings/10.1145/3623762" target="_blank">ITiCSE-WGR ‘23: Proceedings of the 2023 Working Group Reports on Innovation and Technology in Computer Science Education</a><br>&nbsp;
+  <br></li>
+    </ul>
+  </li>
+  <li><a href="https://sigcse.org/events/iticse/2022.html">27th ITiCSE 2022</a>: Dublin Ireland, July 8 - 13, 2022.<br>
+<a href="https://iticse.acm.org/2022/" target="_blank">https://iticse.acm.org/2022/</a><br>Proceedings:
+    <ul>
+      <li><a href="https://dl.acm.org/doi/proceedings/10.1145/3502718" target="_blank">ITiCSE ’22: Proceedings of the 27th ACM Conference on on Innovation and Technology in Computer Science Education v1</a></li>
+      <li><a href="https://dl.acm.org/doi/proceedings/10.1145/3502717" target="_blank">ITiCSE ’22: Proceedings of the 27th ACM Conference on on Innovation and Technology in Computer Science Education v2 </a></li>
+      <li><a href="https://dl.acm.org/doi/10.1145/3571785" target="_blank">ITiCSE-WGR ‘22: Proceedings of the 2022 Working Group Reports on Innovation and Technology in Computer Science Education</a><br>&nbsp;
+  <br></li>
+    </ul>
+  </li>
+  <li><a href="https://sigcse.org/events/iticse/2021.html">26th ITiCSE 2021</a>: Virtual Event (scheduled for Paderborn, Germany), June 26-July 1, 2022.<br>
+<a href="https://iticse.acm.org/2021/" target="_blank">https://iticse.acm.org/2021/</a><br>Proceedings:
+    <ul>
+      <li><a href="https://dl.acm.org/doi/proceedings/10.1145/3430665" target="_blank">ITiCSE ‘21: Proceedings of the 26th ACM Conference on Innovation and Technology in Computer Science Education v1</a></li>
+      <li><a href="https://dl.acm.org/doi/proceedings/10.1145/3456565" target="_blank">ITiCSE ‘21: Proceedings of the 26th ACM Conference on Innovation and Technology in Computer Science Education v2</a></li>
+      <li><a href="https://dl.acm.org/doi/proceedings/10.1145/3502870" target="_blank">ITiCSE-WGR ‘21: Proceedings of the 2021 Working Group Reports on Innovation and Technology in Computer Science Education</a><br>&nbsp;
+  <br></li>
+    </ul>
+  </li>
+  <li><a href="conferences.html"><i>View all ITiCSE conferences</i></a></li>
+</ul>
+
+        </div>
+
+        <div class="col-md-4">
+          <div class="position-sticky" style="top: 2rem;">
+                <!-- <div class="p-4 mb-3 bg-body-tertiary rounded">
+    </div> -->
+	<h4 class="fst-italic border-bottom">About SIGCSE</h4>
+<p class="mb-0">
+The aim of SIGCSE is to provide an equitable global forum that promotes and advances research, teaching, and practice in computing education at all educational levels across all demographics
+</p>
+
+	<p>&nbsp;</p>
+	<h4 class="fst-italic">Upcoming SIGCSE Events</h4>
+<ul class="list-unstyled">
+
+  
+
+  
+  
+
+  
+  
+    <li>
+      
+        <a class="d-flex flex-column flex-lg-row gap-2 align-items-start align-items-lg-center py-2 link-body-emphasis text-decoration-none border-top" href="https://iticse.acm.org/2024/">
+      
+      <div class="col-lg-8">
+        <h6 class="mb-0">ITiCSE 2024</h6>
+        <small class="text-body-secondary">
+        8-10 July 2024 (WG: 5-7 July)<br>Milan, Italy</small>
+      </div>
+      </a>
+    </li>
+  
+    <li>
+      
+        <a class="d-flex flex-column flex-lg-row gap-2 align-items-start align-items-lg-center py-2 link-body-emphasis text-decoration-none border-top" href="https://icer2024.acm.org">
+      
+      <div class="col-lg-8">
+        <h6 class="mb-0">ICER '24</h6>
+        <small class="text-body-secondary">
+        13-15 August 2024<br>RMIT, Melbourne, Australia</small>
+      </div>
+      </a>
+    </li>
+  
+    <li>
+      
+        <a class="d-flex flex-column flex-lg-row gap-2 align-items-start align-items-lg-center py-2 link-body-emphasis text-decoration-none border-top" href="http://sigcsevirtual.acm.org/">
+      
+      <div class="col-lg-8">
+        <h6 class="mb-0">SIGCSE Virtual 2024</h6>
+        <small class="text-body-secondary">
+        05-07 December 2024<br>Online</small>
+      </div>
+      </a>
+    </li>
+  
+    <li>
+      
+        <a class="d-flex flex-column flex-lg-row gap-2 align-items-start align-items-lg-center py-2 link-body-emphasis text-decoration-none border-top" href="https://sigcse2025.sigcse.org/">
+      
+      <div class="col-lg-8">
+        <h6 class="mb-0">Technical Symposium 2025</h6>
+        <small class="text-body-secondary">
+        Feb-26 to Mar-01, 2025<br>Pittsburgh, PA</small>
+      </div>
+      </a>
+    </li>
+  
+    <li>
+      
+        <a class="d-flex flex-column flex-lg-row gap-2 align-items-start align-items-lg-center py-2 link-body-emphasis text-decoration-none border-top" href="#">
+      
+      <div class="col-lg-8">
+        <h6 class="mb-0">RESPECT 2025</h6>
+        <small class="text-body-secondary">
+        To be announced</small>
+      </div>
+      </a>
+    </li>
+  
+    <li>
+      
+        <a class="d-flex flex-column flex-lg-row gap-2 align-items-start align-items-lg-center py-2 link-body-emphasis text-decoration-none border-top" href="https://comped.acm.org/">
+      
+      <div class="col-lg-8">
+        <h6 class="mb-0">CompEd 2025</h6>
+        <small class="text-body-secondary">
+        21-25 October 2025<br>Gaborone, Botswana</small>
+      </div>
+      </a>
+    </li>
+  
+
+    <li>
+      <a class="d-flex flex-column flex-lg-row gap-2 align-items-start align-items-lg-center py-2 link-body-emphasis text-decoration-none border-top" href="https://sigcse.org/events/incoop.html">
+        <div class="col-lg-8">
+          <small class="text-body-secondary">
+            Many conferences across the world are held
+            <strong>in-cooperation with SIGCSE</strong>.</small>
+        </div>
+      </a>
+    </li>
+</ul>
+
+
+          </div>
+        </div> <!-- col-md-4 -->
+
+      </div> <!-- row g-5 -->
+    </main>
+
+
+    <footer class="py-3 text-center text-body-secondary bg-body-tertiary">
+      <p class="mb-0"><a href="#Top">Back to top</a>&nbsp;•&nbsp;<i>Site last updated on 2024-05-22</i>&nbsp;•&nbsp;Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a></p>
+    </footer>
+
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://sigcse.org/assets/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- Placed at the end of the document so the pages load faster 
+      Used https://www.srihash.org to generate integrity hash
+    -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha384-NXgwF8Kv9SSAr+jemKKcbvQsz+teULH/a5UNJvZc6kP47hZgl62M1vGnw6gHQhb1" crossorigin="anonymous"></script>
+
+    <script>window.jQuery || document.write('<script src=https://sigcse.org/assets/js/vendor/jquery-3.7.1.slim.min.js><\/script>')</script><script src="https://sigcse.org/assets/js/vendor/jquery-3.7.1.slim.min.js"></script>
+
+    <script src="https://sigcse.org/assets/js/vendor/holder.min.js"></script>
+
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+      window.jQuery.htmlPrefilter = function( html ) {
+        return html;
+      };
+    </script>
+  
+
+</body></html>

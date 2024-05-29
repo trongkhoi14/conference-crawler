@@ -54,6 +54,9 @@ var conferenceSchema = new mongoose.Schema({
     },
     CallForPaper: {
         type: String
+    },
+    Location: {
+        type: String
     }
 
 }, 

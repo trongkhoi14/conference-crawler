@@ -1,0 +1,341 @@
+<!DOCTYPE html><html lang="en"><head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta property="og:image" content="http://www.ozchi.org/2023/static/images/ozchilogo23og.png">
+
+    <!-- External Javascript libs_ext  -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js" integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js" integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script>
+
+
+    <!-- Library libs_ext -->
+    <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+
+    <!--    Internal Libs -->
+    <script src="static/js/data/api.js"></script>
+
+    
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous">
+
+    <!-- External Fonts (no google for china) -->
+    <link href="static/css/PublicSans.css" rel="stylesheet">
+    <link href="static/css/Montserrat.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/main.css">
+<!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
+    <link rel="stylesheet" href="static/css/fa_solid.css">
+    <link rel="stylesheet" href="static/css/lazy_load.css">
+    <link rel="stylesheet" href="static/css/typeahead.css">
+
+    <title>OzCHI 2023</title>
+    
+</head>
+
+<body>
+<!-- NAV -->
+
+
+
+
+<!-- Extra NAV entries for conference -->
+
+
+
+
+
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto" id="main-nav">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img class="logo" src="static/images/ozchi-logo-text-black.png" height="auto" width="180px">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-right flex-grow-1" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="program.html">Program</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Keynote.html">Keynote</a>
+            </li>
+                
+                <li class="nav-item active">
+                  <a class="nav-link" href="submission.html">Submissions</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="workshops.html">Workshops</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="registration.html">Registration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="venue.html">Venue</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="attend.html">Attend</a>
+            </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="volunteering.html">Volunteering</a>
+                </li>
+              
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="organisers.html">Organisers</a>
+                </li>
+                
+               
+                
+                
+                
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- User Overrides -->
+
+<style>
+ .back {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("") no-repeat center;
+    background-size: cover;
+  }
+  .back h2 {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700;
+  }
+</style>
+
+<div class="jumbotron jumbotron-fluid back" style="padding-bottom: 20px;">
+    <div class="row header p-6 m-5">
+      <div class="p-1 mx-auto text-center col-md-9 col-sm-12">
+       <img class="logo" src="static/images/ozchi2023logo1.png" height="auto" width="500px">
+      <h2>
+        Submission Instructions
+      </h2>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+    <!-- Tabs -->
+    <div class="tabs">
+         
+    </div>
+    <!-- Content -->
+    <div class="content">
+        
+<h2>Call for contribution</h2>
+
+<p> We invite contributions on any topic related to how people or societies interact with novel technologies, including but not limited to:</p>
+<ul>
+<li>Indigenous influences on technology</li>
+<li>Design for connection</li>
+<li>Equity and ethics in human computer interaction </li>
+<li>Conceptual issues in human computer interaction or design </li>
+<li>Empirical studies of interactions between people and technology</li>
+<li>Social implications of novel systems</li>
+<li>Design for under-represented groups</li>
+<li>Technical human computer interaction</li>
+</ul>
+<p>Contributions must be novel, not published or under review elsewhere. Authors may be students, academics, or industry practitioners–all are welcome!</p>
+<p>There will be some opportunity for online participation in the short and long paper tracks, and workshop organisers may elect to hold workshops online. All participants should note, though, that the conference will run in New Zealand Daylight Time and consider their options accordingly.</p>
+
+
+  
+
+<p>All times are in Anywhere on Earth (AoE) time zone. When the deadline is day D, the last time to submit is when D ends AoE. 
+<br><a href="https://time.is/Anywhere_on_Earth">Check your local time in AoE.</a></p>
+
+<h2>Call for Papers Information</h2>
+
+<p>All submissions should be formatted using the single column ACM Master Article Template, which can be found here:
+<br><a href="https://authors.acm.org/proceedings/production-information/taps-production-workflow">ACM Proceedings Template.</a></p>
+
+<p>You can submit your paper for review on PCS here:
+    <br><a href="https://new.precisionconference.com/ozchi23a">Submit on PCS</a></p>
+
+<h4>Long Papers</h4>
+<p>Long papers are substantial new contributions that present either novel research or novel conceptual thinking. Long papers should be polished, fully formed thinking or completed research studies. Contributions should be at minimum 7,500 words plus references, but may be any length longer than this (authors are encouraged to submit a paper of length proportional to its contribution). Long papers should be anonymised for peer review. Accepted long papers will be included in the conference proceedings at the ACM Digital Library.</p>
+<ul>
+<li> <strike>14 June 2023 </strike> <strike><strong>21 June 2023</strong></strike> (Extended) Submission deadline</li>
+    <li> <strike><strong>3 August 2023:</strong></strike> Author notification</li>
+    <li><strike><strong>4 October 2023:</strong></strike> Camera ready deadline </li>
+</ul>
+<h4>Short papers and late breaking works</h4>
+<p>There are two types of short papers submissions: </p>
+  <ul>
+  <li>1. Papers that contribute a description of novel research or conceptual thinking that does not require the full 7,500 words, or which presents work that is still in progress. These papers may be up to 7,000 words plus references and should be anonymised for peer review. Accepted short papers will be included in the conference proceedings at the ACM Digital Library.</li>
+  <li>Case study papers that may be industry or research based, and present an application of design, usability or human computer interaction in a specific setting to achieve a specific goal. Case study authors may choose not to have their studies included in proceedings if they wish. Case studies should be up to 7,000 words plus references, but may be shorter. Due to the highly specialised nature of case studies, these contributions do not need to be anonymised.</li>
+  </ul>
+<ul>
+<li> <strike>16 August 2023 </strike> <strike><strong>23 August 2023</strong></strike> Submission deadline</li>
+    <li> <strike><strong>16 October 2023:</strong></strike> Author notification</li>
+<li><strike><strong>6 November 2023:</strong></strike> Camera ready deadline </li>
+</ul>
+<h4>Case studies</h4>
+<p>Case studies may be industry or research based, and present an application of design, usability or human computer interaction in a specific setting to achieve a specific goal. Case study authors may choose not to have their studies included in proceedings if they wish. Case studies should be up to 7,000 words plus references, but may be shorter. Due to the highly specialised nature of case studies, these contributions do not need to be anonymised.</p>
+<ul>
+<li> <strike>16 August 2023 </strike> <strike><strong>23 August 2023</strong></strike> Submission deadline</li>
+<li> <strong>16 October 2023:</strong> Author notification</li>
+<li><strong>6 November 2023:</strong> Camera ready deadline </li>
+</ul>
+<h4>Workshops</h4>
+<p>Workshops should aim to bring together HCI researchers and/or practitioners to discuss and advance a topic of common interest. Workshop proposals comprise two parts:</p>
+<ul>
+  <li>A workshop abstract of up to 4,000 words plus references, explaining the topic, its relevance to HCI, current research questions, and the proposed outcomes of the workshop</li>
+  <li> A supplementary document including:</li>
+  <ul>
+    <li>Whether the workshop is a half or full day</li>
+    <li>Proposed timetable</li>
+    <li>Organiser bios</li>
+    <li>A URL for the workshop website (does not need to be active at submission) </li>
+    <li>A 100 word blurb for the OzCHI website</li>
+    <li>A description of required support (e.g. a room with whiteboards and pens and tables for group discussion). Please note that requests for support that cannot be accommodated will be returned to authors for discussion</li>
+    
+  </ul>
+</ul>
+<ul>
+<li> <strike>12 July 2023:</strike> <strike> <strong>21 July </strong></strike> (Extended) Submission deadline</li>
+    <li><strike> <strong>7 August 2023:</strong></strike> Author notification</li>
+<li><strong>30 October 2023:</strong> Camera ready deadline </li>
+<br>
+<p>Workshops will be held on Sunday December 3.
+Proposals should indicate whether workshops are in-person or hybrid, or to be held online only.</p>
+<p><strong>Submissions should be emailed to the workshop chairs: mark.apperley@waikato.ac.nz and cc'ed to hdavis@swin.edu.au</strong></p> 
+
+
+</ul>
+<h4>Doctoral Colloquium</h4>
+<p>The doctoral colloquium is a forum for doctoral researchers to share their work and get feedback in a supportive environment. This is also an excellent opportunity to meet other doctoral students in your discipline. Doctoral students may be at any stage in their candidature, however we normally accept submissions from students who are at least 6 months in. Students should be the sole author on their contribution, except where required by their institution to include their supervisors. Submissions to the doctoral colloquium should be no more than 4000 words plus references, and should give an overview of the literature gap, and the method the student proposes to use or is using to address this gap. Planned social or practical benefits of the work should be addressed, and students may wish to recap any results they have from early studies. Students should submit a letter of support from their supervisor as supplementary material.</p>
+<p>The DC will take place on Sunday December 3rd. There is no fee to attend the DC. However, you must register for at least one day of the OzCHI conference OR be a student volunteer. Submissions should be sent to: DC_Chair@ozchi.org</p>
+<ul>
+<li> <strong><strike>23 August 2023</strike></strong> Submission deadline</li>
+    <li> <strong><strike>21 September 2023:</strike></strong> Author notification</li>
+<li><strong>30 October 2023:</strong> Camera ready deadline </li>
+</ul>
+
+<h4>Demos</h4>
+<p>Demos are contributions that, although original and innovative, have not yet reached the maturity for publication as a short or full paper, and will be presented in a special, highly interactive session. The OzCHI Demonstration track is the hands-on part of the conference for showing your work and engaging with the OzCHI attendees. Your demonstration can take the shape of a live interactive demo, a lab or corporate exhibition, or any combination of these!  	</p>
+<ul>
+<li> <strike>4 October 2023</strike> <strong>11 October 2023:</strong> (Extended) Submission deadline</li>
+<li> <strong>30 October 2023:</strong> Author notification</li>
+</ul>
+<p><strong>Submission</strong></p>
+<p>Authors are asked to submit an extended abstract introducing and outlining their demo, including title, duration, and any equipment required. The extended abstract should use the <a href="https://authors.acm.org/proceedings/production-information/taps-production-workflow">ACM Proceedings Template</a> and can be up to four pages in length (plus one additional page for references). Authors are also strongly encouraged to submit a short (30 MB max) video of their demo. /p&gt;
+</p><p>Submissions can be made via email <a href="mailto:demochair@ozchi.org">(demochair@ozchi.org)</a>.  Files too large to email can be submitted via Dropbox <a href="https://www.dropbox.com/request/2LfAyZHWi0ahbvjDHMym">(https://www.dropbox.com/request/2LfAyZHWi0ahbvjDHMym)</a>.
+  </p><p><strong>At the conference</strong></p>
+  <p>Accepted demos will be on display throughout the conference. Authors will be asked to present their demos during an assigned time within the conference timeline.</p>
+
+  <h2>Volunteer to review</h2>
+<p> OzCHI’s program rests on the generous contribution of our community of authors and reviewers.
+To volunteer, please open PCS and go to your ‘Reviews’ tab, then Click on the link ‘Volunteer to Review’.
+You can also click the following link to go to the reviews tab on PCS: 
+<br><a href="https://new.precisionconference.com/review_volunteering">Volunteer to review</a></p>
+<p>Select OzCHI in ‘Society’ if not already selected, then please volunteer to review full and short papers. </p>
+ 
+<p> If you haven’t done so in a while, you may want to update your areas of expertise from the general review area here:
+    <br><a href="https://new.precisionconference.com/expertise">Expertise</a>
+ </p>
+<br>
+<br>
+<br>
+
+<!-- Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag("js", new Date());
+  gtag("config", "UA-");
+</script>
+
+<!-- Footer -->
+<footer class="footer bg-white p-4">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-sm-12 p-2">
+              <h4><center>Sponsors</center></h4>
+          </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-5 p-2">
+          <img src="static/images/Sponsors/university-of-melbourne.svg" class="mx-auto d-block" style="width: 50%;">
+        </div>
+        <div class="col-sm-5 p-2">
+          <img src="static/images/Sponsors/vuw.jpg" class="mx-auto d-block" style="width: 100%;">
+        </div>
+      </div>        
+      <div class="row justify-content-center">
+          <div class="col-sm-5 p-2">
+              <img src="static/images/Sponsors/hfesa.png" class="mx-auto d-block" style="width: 60%">
+          </div>
+          <div class="col-sm-5 p-2">
+            <img src="static/images/Sponsors/SIGCHINZ.png" class="mx-auto d-block" style="width: 120%;">
+          </div>
+        </div>
+        <div class="row justify-content-center">
+        <div class="col-sm-5 p-2">
+          <img src="static/images/Sponsors/insight.png" class="mx-auto d-block" style="width: 30%;">
+        </div>
+        </div>
+      </div>
+    
+          
+<div class="container">
+  <p class="float-right"><a href="#">Back to Top</a></p>
+  <p class="text-center">© 2023 OzCHI and HFESA</p>
+</div>
+</footer>
+
+
+<!-- Code for hash tags -->
+<script type="text/javascript">
+  $(document).ready(function () {
+    if (window.location.hash !== "") {
+      $(`a[href="${window.location.hash}"]`).tab("show");
+    }
+
+    $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+      const hash = $(e.target).attr("href");
+      if (hash.substr(0, 1) === "#") {
+        const position = $(window).scrollTop();
+        window.location.replace(`#${hash.substr(1)}`);
+        $(window).scrollTop(position);
+      }
+    });
+  });
+</script>
+<!--    <script src="static/js/modules/lazyLoad.js"></script>-->
+
+
+</div></div></body></html>

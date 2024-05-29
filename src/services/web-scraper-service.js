@@ -5,8 +5,6 @@ const ConferenceError = require("../models/conferenceError-model");
 const { readKeywordsFromFile } = require("../untils/handleFileDict");
 const { waitForRandomTime } = require("../untils/time");
 const { formatStringDate } = require("../untils/date");
-const { notification } = require("../template/mail-template");
-const { dataPineline } = require("../etl/datapineline");
 
 const getConferenceList = (browser) =>
     new Promise(async (resolve, reject) => {
@@ -622,6 +620,31 @@ const getConferencesOnPage = (browser, currentLink) =>
         }
     });
 
+const getLocation = async (browser, currentConference) => {
+    console.log(">> Getting location ...")
+    
+    let portalLink = 
+        `${process.env.PORTAL}?` +
+        `search=` +
+        `${currentConference.Title.replace(" ", "+")}` +
+        `&by=all`+
+        `&source=${process.env.CORE2023}`+
+        `&sort=atitle&page=1`
+
+    
+    let page = await browser.newPage();
+
+    await page.goto(portalLink);
+
+    await page.waitForSelector("#search");
+
+    //page.keyboard.sendCharacter('嗨');
+    const confRow = await page.$$eval(".evenrow", (els) => {
+        return els
+    })
+    console.log(confRow)
+}
+
 // Xử lý khi datefinder tìm được nhiều ngày
 const findClosestDate = (dateResults, keywordIndex, keywordLength) => {
     // Nếu chỉ có một ngày được tìm thấy, trả về ngày đó luôn
@@ -675,5 +698,6 @@ module.exports = {
     getConferenceDetails,
     searchConferenceLinksByTitle,
     extractDatesFromBody,
-    readKeywordsFromDict
+    readKeywordsFromDict,
+    getLocation
 };

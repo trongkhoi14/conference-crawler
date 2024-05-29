@@ -10,7 +10,7 @@ const dataPineline = async (conferenceId) => {
         if (conference.Links.length == 1) {
             const organizations = [
                 {
-                    name: "location 1",
+                    name: conference.Location? conference.Location : "updating",
                     start_date: conference.ConferenceDate[0]?.date,
                     end_date: conference.ConferenceDate[1]?.date
                 },

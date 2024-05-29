@@ -1,0 +1,746 @@
+<!DOCTYPE html><html class="bootstrap-nav" lang="en-US" dir="ltr"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Page Title -->
+    <title>ACM CCS 2023</title>
+
+    <!-- Meta Data for Search Engine -->
+
+    <!-- Primary Meta Tags -->
+    <title>ACM CCS 2023</title>
+    <meta name="title" content="ACM CCS 2023">
+    <meta name="description" content="The ACM Conference on Computer and Communications Security (CCS) is the flagship annual conference of the Special Interest Group on Security, Audit and Control (SIGSAC) of the Association for Computing Machinery (ACM). The conference brings together information security researchers, practitioners, developers, and users from all over the world to explore cutting-edge ideas and results.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sigsac.org/ccs/CCS2023/">
+    <meta property="og:title" content="ACM CCS 2023">
+    <meta property="og:description" content="The ACM Conference on Computer and Communications Security (CCS) is the flagship annual conference of the Special Interest Group on Security, Audit and Control (SIGSAC) of the Association for Computing Machinery (ACM). The conference brings together information security researchers, practitioners, developers, and users from all over the world to explore cutting-edge ideas and results.">
+    <meta property="og:image" content="https://www.sigsac.org/ccs/CCS2023/assets/img/preview.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.sigsac.org/ccs/CCS2023/">
+    <meta property="twitter:title" content="ACM CCS 2023">
+    <meta property="twitter:description" content="The ACM Conference on Computer and Communications Security (CCS) is the flagship annual conference of the Special Interest Group on Security, Audit and Control (SIGSAC) of the Association for Computing Machinery (ACM). The conference brings together information security researchers, practitioners, developers, and users from all over the world to explore cutting-edge ideas and results.">
+    <meta property="twitter:image" content="https://www.sigsac.org/ccs/CCS2023/assets/img/preview.webp">
+
+    <!-- End of Meta Data for Search Engine -->
+
+    <!-- Favicons -->
+    <style type="text/css">svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.3333333333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-both,.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-both,:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2.5em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1.25em}.svg-inline--fa.fa-stack-2x{height:2em;width:2.5em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.svg-inline--fa .fa-primary{fill:var(--fa-primary-color,currentColor);opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa .fa-secondary{fill:var(--fa-secondary-color,currentColor);opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-primary{opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-secondary{opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa mask .fa-primary,.svg-inline--fa mask .fa-secondary{fill:#000}.fad.fa-inverse{color:#fff}</style><link rel="manifest" href="assets/img/favicons/manifest.json"> <!-- Android Icon Setup -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png"> <!-- Apple Icon Setup -->
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png"> <!-- Microsoft Icon Setup -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png"> <!-- PNG Icon 32x32 -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png"> <!-- PNG Icon 16x16 -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#ffffff"> <!-- Icon Theme Color -->
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="vendors/swiper/swiper-bundle.min.css">
+    <link type="text/css" rel="stylesheet" href="vendors/loaders.css/loaders.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Mono%7cPT+Serif:400,400i%7cLato:100,300,400,700,800,900">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/user.css">
+
+</head>
+
+<body class="overflow-hidden-x">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-sparrow" style="background-color: rgba(0, 0, 0, 0);">
+        <div class="container">
+            <!-- Logo on the Navigation Bar -->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.webp" alt="ACM CCS 2023" height="35">
+            </a>
+
+            <!-- Navigation Bar Collapsed Icon -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Bar Information -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events/ccs30.html">CCS30</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="workshops.html">Workshops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="keynotes.html">Keynotes</a>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="nav-callFor" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Call For</a>
+                        <ul class="dropdown-menu end-0 ms-auto" aria-labelledby="nav-callFor">
+                            <li>
+                                <a class="dropdown-item" href="call-for-artifacts.html">Call For Artifacts</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="call-for-paper.html">Call For Paper</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="call-for-posters.html">Call For Posters</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="call-for-sponsor.html">Call For Sponsors</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="call-for-workshops.html">Call For Workshops</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="nav-attend" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Attending</a> 
+                        <ul class="dropdown-menu end-0 ms-auto" aria-labelledby="nav-attend">
+                            <li>
+                                <a class="dropdown-item" href="travel.html">Venue Location</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="venue-navigator.html">Venue Navigator</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="travel-student-grants.html">Student Travel Grants</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="travel-entry.html">Visa Letter</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="registration.html">Registration</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="travel-hotel.html">Hotel Offers</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="travel-childcare.html">Childcare</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="travel-guide.html">Travel Guide</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="program.html">Program</a>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="nav-orgs" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Proceedings</a>
+                        <ul class="dropdown-menu end-0 ms-auto" aria-labelledby="nav-orgs">
+                            <li>
+                                <a class="dropdown-item" href="tocs/tocs-ccs23.html">CCS Conference '23</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="tocs/tocs-aisec23.html">AISEC '23</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="tocs/tocs-artman23.html">ARTMAN '23</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="tocs/tocs-ashes23.html">ASHES '23</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="tocs/tocs-ccsw23.html">CCSW '23</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="tocs/tocs-cpsiotsec23.html">CPSIoTSec '23</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="tocs/tocs-mtd23.html">MTD '23</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="tocs/tocs-sats23.html">SaTS '23</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="tocs/tocs-scored23.html">SCORED '23</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="tocs/tocs-wahc23.html">WAHC '23</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="tocs/tocs-wpes23.html">WPES '23</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="tocs/tocs-hepack4ml23.html">HEPack4ML '23</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="album.html">Photo Album</a>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="nav-orgs" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Organization</a>
+                        <ul class="dropdown-menu end-0 ms-auto" aria-labelledby="nav-orgs">
+                            <li>
+                                <a class="dropdown-item" href="orgs-general.html">Organizing Committee</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="orgs-program.html">Program Committee</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="orgs-poster.html">Poster Committee</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="orgs-artifact.html">AE Committee</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="nav-orgs" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Code</a>
+                        <ul class="dropdown-menu end-0 ms-auto" aria-labelledby="nav-orgs">
+                            <li>
+                                <a class="dropdown-item" href="code-of-conduct.html">Code of Conduct</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="diversity-and-inclusion.html">Diversity and Inclusion</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <main class="main min-vh-100" id="top">
+
+        <!-- Preloader -->
+        
+
+        <section class="py-0 overflow-hidden">
+
+            <!-- Background Holder -->
+            <div class="bg-holder overlay digital-header overlay-1" style="background-image: url(&quot;assets/img/headers/index.webp&quot;); filter: blur(0.1794px); opacity: 1; transform: translate3d(0px, 0px, 0px) scale(1.0036, 1.00359);" data-zanim-xs="{&quot;delay&quot;:0,&quot;animation&quot;:&quot;zoom-out&quot;}">
+                <!--<div class="yt-video" data-youtube-embed='{"videoId":"r7qqzr-HMHA","startSeconds":1,"endSeconds":120}'></div>-->
+                <!--<div class="yt-video" data-youtube-embed='{"videoId":"hOJVkzeyKt0","startSeconds":40,"endSeconds":160}'></div>-->
+                <div class="yt-video" data-youtube-embed="{&quot;videoId&quot;:&quot;_CziGROfaGI&quot;,&quot;startSeconds&quot;:1,&quot;endSeconds&quot;:58}" style="width: 1236px; height: 695.25px; min-height: 789px; min-width: 1402.67px;"></div>
+            </div>
+    
+            <!-- The Title -->
+            <div class="container">
+                <div class="row min-vh-100 py-8 flex-center text-center">
+                    <div class="col-lg-8 col-xl-7" data-zanim-timeline="{}">
+                        <h1 class="fs-3 fs-sm-4 fs-md-5 text-white display-4" data-parallax="data-parallax" data-rellax-speed="4">
+                            <span class="overflow-hidden">
+                                <span class="d-inline-block" data-zanim-xs="{&quot;delay&quot;:0.1}" style="transform: translate3d(0px, 7.8507px, 0px); opacity: 0.8878;">
+                                    <img src="assets/img/logo.webp" alt="ACM logo" width="200"><br>
+                                    ACM CCS 2023
+                                </span>
+                            </span>
+                        </h1>
+                        <h2 class="fs-1 fs-sm-2 fs-md-3 text-white display-1" data-parallax="data-parallax" data-rellax-speed="4">
+                            <span class="overflow-hidden">
+                                <span class="d-inline-block text-uppercase py-1" data-zanim-xs="{&quot;delay&quot;:0.2}" style="transform: translate3d(0px, 23.282px, 0px); opacity: 0.6674;">
+                                    26-30 Nov., 2023
+                                </span>
+                            </span>
+                        </h2>
+                        <div class="overflow-hidden" data-parallax="data-parallax" data-rellax-speed="3">
+                            <h3 class="mt-3 mt-sm-4 mt-md-5 mb-4 text-300 fw-normal" data-zanim-xs="{&quot;delay&quot;:0.4}" style="transform: translate3d(0px, 65.4269px, 0px); opacity: 0.0653;">
+                                <a href="travel.html" style="color:whitesmoke;">Tivoli Congress Center</a>,<br>
+                                Copenhagen, Denmark
+                            </h3>
+                        </div>
+                    </div>
+                </div><a class="indicator indicator-down" data-zanim-timeline="{&quot;delay&quot;:1}" href="#page-content" data-offset="60"><span class="indicator-arrow indicator-arrow-one" data-zanim-xs="{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;y&quot;:15},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;y&quot;:-5,&quot;scale&quot;:1},&quot;ease&quot;:&quot;Back.easeOut&quot;,&quot;duration&quot;:0.4,&quot;delay&quot;:0.25}" style="transform: translate(-50%, 0%) translate(-0.2px, 15px) rotate(45deg); opacity: 0;"></span><span class="indicator-arrow indicator-arrow-two" data-zanim-xs="{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;y&quot;:15},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;y&quot;:-5,&quot;scale&quot;:1},&quot;ease&quot;:&quot;Back.easeOut&quot;,&quot;duration&quot;:0.4,&quot;delay&quot;:0.5}" style="transform: translate(-50%, 0%) translate(-0.2px, 15px) rotate(45deg); opacity: 0;"></span></a>
+            </div>
+        </section>
+
+        <div id="page-content"></div>
+
+        <section class="py-0 border-top border-bottom">
+            <div class="container-fluid">
+                <div class="row align-items-center py-4 py-md-4 py-lg-0" id="coming_ups">
+                    <div class="col-md-6 col-lg-3 px-lg-5 py-4 py-md-5">
+                        <div class="d-flex align-items-start font-sans-serif overflow-hidden" data-zanim-timeline="{&quot;delay&quot;:0.1}" data-zanim-trigger="scroll"><img class="me-3" src="assets/img/icons/date-badged.svg" alt="icon" width="50" data-zanim-xs="{&quot;delay&quot;:0.2,&quot;animation&quot;:&quot;slide-right&quot;}">
+                            <div class="flex-1" id="coming_ups_1"><div class="overflow-hidden">
+<h4 fw-normal="" data-zanim-xs="{&quot;delay&quot;:0.1,&quot;animation&quot;:&quot;slide-right&quot;}">27. January 2024</h4>
+</div>
+<div class="overflow-hidden">
+<p class="mb-0" data-zanim-xs="{&quot;delay&quot;:0.2,&quot;animation&quot;:&quot;slide-right&quot;}">
+<a href="https://www.sigsac.org/ccs/CCS2024/call-for/call-for-papers.html"><b>ACM CCS 2024</b></a><br>
+CCS 2024 1st Round CFP
+</p>
+</div>
+</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 px-lg-5 py-4 py-md-5">
+                        <div class="d-flex align-items-start font-sans-serif overflow-hidden" data-zanim-timeline="{&quot;delay&quot;:0.2}" data-zanim-trigger="scroll"><img class="me-3" src="assets/img/icons/date.svg" alt="icon" width="50" data-zanim-xs="{&quot;delay&quot;:0.2,&quot;animation&quot;:&quot;slide-right&quot;}">
+                            <div class="flex-1" id="coming_ups_2"><div class="overflow-hidden">
+<h4 fw-normal="" data-zanim-xs="{&quot;delay&quot;:0.1,&quot;animation&quot;:&quot;slide-right&quot;}">13. March 2024</h4>
+</div>
+<div class="overflow-hidden">
+<p class="mb-0" data-zanim-xs="{&quot;delay&quot;:0.2,&quot;animation&quot;:&quot;slide-right&quot;}">
+<a href="https://www.sigsac.org/ccs/CCS2024/call-for/call-for-papers.html"><b>ACM CCS 2024</b></a><br>
+CCS 2024 2nd Round CFP
+</p>
+</div>
+</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 px-lg-5 py-4 py-md-5">
+                        <div class="d-flex align-items-start font-sans-serif overflow-hidden" data-zanim-timeline="{&quot;delay&quot;:0.3}" data-zanim-trigger="scroll"><img class="me-3" src="assets/img/icons/date.svg" alt="icon" width="50" data-zanim-xs="{&quot;delay&quot;:0.2,&quot;animation&quot;:&quot;slide-right&quot;}">
+                            <div class="flex-1" id="coming_ups_3"><div class="overflow-hidden">
+<h4 fw-normal="" data-zanim-xs="{&quot;delay&quot;:0.1,&quot;animation&quot;:&quot;slide-right&quot;}">13. April 2024</h4>
+</div>
+<div class="overflow-hidden">
+<p class="mb-0" data-zanim-xs="{&quot;delay&quot;:0.2,&quot;animation&quot;:&quot;slide-right&quot;}">
+<a href="https://www.sigsac.org/ccs/CCS2024/call-for/call-for-papers.html"><b>ACM CCS 2024</b></a><br>
+CCS 2024 Workshop Submission
+</p>
+</div>
+</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 px-lg-5 py-4 py-md-7">
+                        <div class="d-flex align-items-start font-sans-serif overflow-hidden" data-zanim-timeline="{&quot;delay&quot;:0.3}" data-zanim-trigger="scroll"><img class="me-3" src="assets/img/icons/date.svg" alt="icon" width="50" data-zanim-xs="{&quot;delay&quot;:0.2,&quot;animation&quot;:&quot;slide-right&quot;}">
+                            <div class="flex-1" id="coming_ups_4"><div class="overflow-hidden">
+<h4 fw-normal="" data-zanim-xs="{&quot;delay&quot;:0.1,&quot;animation&quot;:&quot;slide-right&quot;}">13. October 2024</h4>
+</div>
+<div class="overflow-hidden">
+<p class="mb-0" data-zanim-xs="{&quot;delay&quot;:0.2,&quot;animation&quot;:&quot;slide-right&quot;}">
+<a href="https://sigsac.org/ccs/CCS2024/"><b>ACM CCS 2024</b></a><br>
+CCS 2024 at Salt Lake, US.
+</p>
+</div>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-start py-0">
+            <div class="container">
+                <div class="row align-items-center py-4 py-md-4 py-lg-5">
+                    <div class="col-lg-5 text-black text-center text-lg-start" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                        <div class="overflow-hidden">
+                            <h4 class="text-uppercase fw-normal ls text-white bg-dark p-1 rounded d-inline-block" data-zanim-xs="{&quot;delay&quot;:0.1}">Latest&nbsp;&nbsp;Conference</h4>
+                        </div>
+                        <div class="overflow-hidden">
+                            <h1 class="fw-light display-1 fs-5 fs-sm-6" data-zanim-xs="{&quot;delay&quot;:0.2}">
+                                News</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 text-black text-center text-lg-start" data-zanim-timeline="{}" data-zanim-trigger="scroll" id="latest_news"><span class="h3 fw-normal" data-zanim-xs="{&quot;delay&quot;:0.1}">
+[29. November 2023]
+</span>
+<h2 data-zanim-xs="{&quot;delay&quot;:0.2}">
+ACM CCS 2024
+</h2>
+<p class="lead mb-0" data-zanim-xs="{&quot;delay&quot;:0.3}">
+ACM CCS 2024 will be held in Salt Lake, US. Looking forward to seeing you all there!
+</p><a class="lead mb-0" data-zanim-xs="{&quot;delay&quot;:0.4}" href="https://sigsac.org/ccs/CCS2024/"> More Information
+</a></div>
+                </div>
+                <div class="row py-4 py-md-4 py-lg-5 text-center d-flex" data-zanim-timeline="{}" data-zanim-trigger="scroll" id="news_block"><div class="col-md-6 col-lg-4 py-3 py-md-3 py-lg-3" data-zanim-xs="{&quot;delay&quot;:0.1}">
+<span class="h4 fw-normal">[28. November 2023]</span>
+<h3 class="fw-normal border-top border-dark">Tivoli Gardens
+<p class="lead mb-0">
+We apologize for the inconvenience caused by the error accessing the CCS exclusive discount for Tivoli Gardens. Due to a typo in the internal system, the correct password for accessing the purchase is <b>ACM<u>CSS</u>2023</b>, not ACMCCS2023.
+</p>
+<a class="lead mb-0" href="travel-tivoli.html"> More Information </a>
+</h3></div>
+<div class="col-md-6 col-lg-4 py-3 py-md-3 py-lg-3" data-zanim-xs="{&quot;delay&quot;:0.1}">
+<span class="h4 fw-normal">[28. November 2023]</span>
+<h3 class="fw-normal border-top border-dark">CCS Banquet
+<p class="lead mb-0">
+Join us at <b><a href="navigator/venue-congress.html">Tivoli Congress Hall</a></b> to celebrate your participation in making CCS the best security conference!
+</p>
+<a class="lead mb-0" href="program.html"> More Information </a>
+</h3></div>
+<div class="col-md-6 col-lg-4 py-3 py-md-3 py-lg-3" data-zanim-xs="{&quot;delay&quot;:0.1}">
+<span class="h4 fw-normal">[28. November 2023]</span>
+<h3 class="fw-normal border-top border-dark">CCS Business Meeting
+<p class="lead mb-0">
+CCS is grateful for your support! Your feedback is our driving force to make CCS better. Join us at <b><a href="navigator/venue-harlekin.html">Hall Harlekin</a></b>
+</p>
+<a class="lead mb-0" href="program.html"> More Information </a>
+</h3></div>
+<div class="col-md-6 col-lg-4 py-3 py-md-3 py-lg-3" data-zanim-xs="{&quot;delay&quot;:0.1}">
+<span class="h4 fw-normal">[26. November 2023]</span>
+<h3 class="fw-normal border-top border-dark">Location of CCS30
+<p class="lead mb-0">
+Remember to attend CCS30 at Tivoli Congress Hall!
+</p>
+<a class="lead mb-0" href="program.html"> More Information </a>
+</h3></div>
+<div class="col-md-6 col-lg-4 py-3 py-md-3 py-lg-3" data-zanim-xs="{&quot;delay&quot;:0.1}">
+<span class="h4 fw-normal">[26. November 2023]</span>
+<h3 class="fw-normal border-top border-dark">Proceedings Access
+<p class="lead mb-0">
+Proceedings Access are now available. Please click "Proceedings" in the navigation menu.
+</p>
+<a class="lead mb-0" href="index.html"> More Information </a>
+</h3></div>
+<div class="col-md-6 col-lg-4 py-3 py-md-3 py-lg-3" data-zanim-xs="{&quot;delay&quot;:0.1}">
+<span class="h4 fw-normal">[24. November 2023]</span>
+<h3 class="fw-normal border-top border-dark">CCS 30
+<p class="lead mb-0">
+We are celebrating 30 years of CCS. We will have a special session to celebrate 30 years of CCS.
+</p>
+<a class="lead mb-0" href="events/ccs30.html"> More Information </a>
+</h3></div>
+<div class="col-md-6 col-lg-4 py-3 py-md-3 py-lg-3" data-zanim-xs="{&quot;delay&quot;:0.1}">
+<span class="h4 fw-normal">[21. November 2023]</span>
+<h3 class="fw-normal border-top border-dark">Venue
+<p class="lead mb-0">
+Free access to the WiFi at the conference venue is provided.
+</p>
+<a class="lead mb-0" href="travel-telecom.html"> More Information </a>
+</h3></div>
+<div class="col-md-6 col-lg-4 py-3 py-md-3 py-lg-3" data-zanim-xs="{&quot;delay&quot;:0.1}">
+<span class="h4 fw-normal">[6. November 2023]</span>
+<h3 class="fw-normal border-top border-dark">Registration
+<p class="lead mb-0">
+Main conference is sold out! You can still register for the workshop days (26 and 30 November).
+</p>
+<a class="lead mb-0" href="registration.html"> More Information </a>
+</h3></div>
+<div class="col-md-6 col-lg-4 py-3 py-md-3 py-lg-3" data-zanim-xs="{&quot;delay&quot;:0.1}">
+<span class="h4 fw-normal">[28. October 2023]</span>
+<h3 class="fw-normal border-top border-dark">Program
+<p class="lead mb-0">
+Program has been released! Additional events and functions may come up or add up recently.
+</p>
+<a class="lead mb-0" href="program.html"> More Information </a>
+</h3></div>
+</div>
+            </div>
+        </section>
+
+        <!-- Sponsor Section -->
+
+        <section class="py-5" id="sponsor_section"><div class="bg-holder" style="background-image:url(&quot;assets/img/sponsors/cybersec-bg.webp&quot;);">
+<video class="bg-video" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline">
+<source src="assets/video/cybersec.webm" type="video/webm">
+</video>
+</div>
+<div class="container-fluid">
+<div class="row align-items-center py-2 py-md-2">
+<div class="col-lg-3 col-md-4 col-sm-5 text-center text-lg-start" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+<div class="overflow-hidden">
+<h3 class="text-uppercase fw-normal ls text-white p-1 rounded d-inline-block" data-zanim-xs="{&quot;delay&quot;:0.1}">Sponsor</h3>
+</div>
+<div class="overflow-hidden">
+<center>
+<a href="https://sigsac.org">
+<img class="img-fluid" src="assets/img/logo.webp" style="width: 100%; max-width: 220px;">
+</a>
+</center>
+</div>
+</div>
+<div class="col-lg-9 col-md-8 col-sm-7 text-white text-center text-lg-start" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+<center>
+<h1 class="text-white">ACM SIGSAC</h1>
+<h3 class="text-white">ACM Special Interest Group on Security, Audit and Control (SIGSAC)</h3>
+</center>
+<p class="text-start text-lg-center text-white">
+The ACM Special Interest Group on Security, Audit and Control's mission is to develop the information security profession by sponsoring high quality research conferences and workshops.
+</p>
+</div>
+</div>
+</div>
+</section>
+
+        <!-- Platinum Patron Section full/full/full -->
+
+        <section class="py-0"> <!-- Please leave the py settings inside the div/class -->
+            <div class="container">
+                <div class="row align-items-center" id="diamond_patrons"><div class="col-12 col-md-12 py-4 position-relative">
+<div class="bg-holder" style="background-image:url(&quot;assets/img/sponsors/Huawei-bg.webp&quot;);">
+<video class="bg-video" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline">
+<source src="assets/video/Huawei.webm" type="video/webm">
+</video>
+</div>
+<div class="overflow-hidden position-relative">
+<h5 class="text-uppercase fw-normal ls text-white p-1 rounded d-inline-block" style="background-color: cornflowerblue;" data-zanim-xs="{&quot;delay&quot;:0.1}">Diamond Patron</h5>
+</div>
+<div class="overflow-hidden position-relative rounded-3" style="background:white; opacity: 0.75;">
+<center>
+<a class="mask" title="Huawei: 
+
+Founded in 1987, Huawei is a leading global provider of information and communications technology (ICT) infrastructure and smart devices. We have 207,000 employees and operate in over 170 countries and regions, serving more than three billion people around the world. We are committed to bringing digital to every person, home and organization for a fully connected, intelligent world." href="https://www.huawei.com/en/">
+<img class="img-fluid" src="assets/img/sponsors/Huawei.webp" style="width: 100%; max-width: 900px;">
+</a>
+</center>
+</div>
+<div>
+</div>
+</div>
+</div>
+            </div>
+        </section>
+
+        <!-- Platinum Patron Section full/half/half -->
+
+        <section class="py-0"> <!-- Please leave the py settings inside the div/class -->
+            <div class="container">
+                <div class="row align-items-center" id="platinum_patrons"><div class="col-12 col-md-6 py-4 position-relative">
+<div class="bg-holder" style="background-image:url(&quot;assets/img/sponsors/Dora-bg.webp&quot;);">
+<video class="bg-video" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline">
+<source src="assets/video/Dora.webm" type="video/webm">
+</video>
+</div>
+<div class="overflow-hidden position-relative">
+<h5 class="text-uppercase fw-normal ls text-white p-1 rounded d-inline-block" style="background-color: slategray;" data-zanim-xs="{&quot;delay&quot;:0.1}">Platinum Patron</h5>
+</div>
+<div class="overflow-hidden position-relative rounded-3" style="background:white; opacity: 0.75;">
+<center>
+<a class="mask" title="DoraHacks: 
+
+DoraHacks is a global hackathon organizer and one of the world's most active multi-chain Web3 developer platforms. It creates a global hacker movement and provides crypto native toolkits to help developers around the world team up and fund their ideas and BUIDLs via hackathons, bounties, grants, grant DAOs, and public good staking. By far, more than 4000 projects from the DoraHacks community have received over $30 million in grants and other forms of contributions from supporters worldwide. A large number of open source communities, DAOs, and more than 50 major blockchain ecosystems are actively using Dora's infrastructure (DoraHacks.io) for open source funding and community governance." href="https://dorahacks.io">
+<img class="img-fluid" src="assets/img/sponsors/Dora.webp" style="width: 100%; max-width: 450px;">
+</a>
+</center>
+</div>
+<div>
+</div>
+</div>
+<div class="col-12 col-md-6 py-4 position-relative">
+<div class="bg-holder" style="background-image:url(&quot;assets/img/sponsors/Tii-bg.webp&quot;);">
+<video class="bg-video" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline">
+<source src="assets/video/Tii.webm" type="video/webm">
+</video>
+</div>
+<div class="overflow-hidden position-relative">
+<h5 class="text-uppercase fw-normal ls text-white p-1 rounded d-inline-block" style="background-color: slategray;" data-zanim-xs="{&quot;delay&quot;:0.1}">Platinum Patron</h5>
+</div>
+<div class="overflow-hidden position-relative rounded-3" style="background:white; opacity: 0.75;">
+<center>
+<a class="mask" title="Technology Innovation Institute, TII: 
+
+Technology Innovation Institute is a UAE-based research center leading global advances in artificial intelligence, autonomous robotics, quantum computing, cryptography, directed energy, secure communication, smart devices, advanced materials, and propulsion and space technologies. TII serves as the dedicated applied research pillar of the Advanced Technology Research Council (ATRC)." href="https://www.tii.ae">
+<img class="img-fluid" src="assets/img/sponsors/Tii.webp" style="width: 100%; max-width: 450px;">
+</a>
+</center>
+</div>
+<div>
+</div>
+</div>
+<div class="col-12 col-md-6 py-4 position-relative">
+<div class="bg-holder" style="background-image:url(&quot;assets/img/sponsors/Ant-bg.webp&quot;);">
+<video class="bg-video" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline">
+<source src="assets/video/Ant.webm" type="video/webm">
+</video>
+</div>
+<div class="overflow-hidden position-relative">
+<h5 class="text-uppercase fw-normal ls text-white p-1 rounded d-inline-block" style="background-color: slategray;" data-zanim-xs="{&quot;delay&quot;:0.1}">Platinum Patron</h5>
+</div>
+<div class="overflow-hidden position-relative rounded-3" style="background:white; opacity: 0.75;">
+<center>
+<a class="mask" title="Ant Research: 
+
+Explore Cutting-edge Technologies - Ant Research To further accelerate Ant Group's technology development, optimize the innovation framework, and bring deep insights into technology evolution, Ant Group launched Ant Research in April 2021. Ant Research is dedicated to innovative and practical scientific research. Looking forward to a digitalized future, Ant Research focuses on developing cutting-edge technologies and resolving technical challenges to support Ant Group's business operation and provide a technical foundation for digitalized and intelligent development." href="https://www.antgroup.com/en">
+<img class="img-fluid" src="assets/img/sponsors/Ant.webp" style="width: 100%; max-width: 450px;">
+</a>
+</center>
+</div>
+<div>
+</div>
+</div>
+<div class="col-12 col-md-6 py-4 position-relative">
+<div class="bg-holder" style="background-image:url(&quot;assets/img/sponsors/Nsf-bg.webp&quot;);">
+<video class="bg-video" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline">
+<source src="assets/video/Nsf.webm" type="video/webm">
+</video>
+</div>
+<div class="overflow-hidden position-relative">
+<h5 class="text-uppercase fw-normal ls text-white p-1 rounded d-inline-block" style="background-color: slategray;" data-zanim-xs="{&quot;delay&quot;:0.1}">Platinum Patron</h5>
+</div>
+<div class="overflow-hidden position-relative rounded-3" style="background:white; opacity: 0.75;">
+<center>
+<a class="mask" title="National Science Foundation, NSF: 
+
+The U.S. National Science Foundation is an independent federal agency that supports science and engineering in all 50 states and U.S. territories. NSF was established in 1950 by Congress to: 1. Promote the progress of science. 2. Advance the national health, prosperity and welfare. 3. Secure the national defense." href="https://www.nsf.gov/">
+<img class="img-fluid" src="assets/img/sponsors/Nsf.webp" style="width: 100%; max-width: 450px;">
+</a>
+</center>
+</div>
+<div>
+</div>
+</div>
+</div>
+            </div>
+        </section>
+
+        <section class="py-0"> <!-- Please leave the py settings inside the div/class -->
+            <div class="container">
+                <div class="row align-items-center" id="gold_patrons"><div class="col-12 col-md-4 py-3 position-relative">
+<div class="bg-holder" style="background-image:url(&quot;assets/img/sponsors/Ibm-bg.webp&quot;);">
+<video class="bg-video" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline">
+<source src="assets/video/Ibm.webm" type="video/webm">
+</video>
+</div>
+<div class="overflow-hidden position-relative">
+<h5 class="text-uppercase fw-normal ls text-white p-1 rounded d-inline-block" style="background-color: goldenrod;" data-zanim-xs="{&quot;delay&quot;:0.1}">Gold Patron</h5>
+</div>
+<div class="overflow-hidden position-relative rounded-3" style="background:white; opacity: 0.75;">
+<center>
+<a class="mask" title="International Business Machines, IBM: 
+
+Creators, partners and clients putting technology to work in the real world - Our clients systems support modern society. In making them faster, more productive, and more secure, we don't just make business work better. We make the world work better." href="https://www.ibm.com/">
+<img class="img-fluid" src="assets/img/sponsors/Ibm.webp" style="width: 100%; max-width: 450px;">
+</a>
+</center>
+</div>
+<div>
+</div>
+</div>
+<div class="col-12 col-md-4 py-3 position-relative">
+<div class="bg-holder" style="background-image:url(&quot;assets/img/sponsors/Tiktok-bg.webp&quot;);">
+<video class="bg-video" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline">
+<source src="assets/video/Tiktok.webm" type="video/webm">
+</video>
+</div>
+<div class="overflow-hidden position-relative">
+<h5 class="text-uppercase fw-normal ls text-white p-1 rounded d-inline-block" style="background-color: goldenrod;" data-zanim-xs="{&quot;delay&quot;:0.1}">Gold Patron</h5>
+</div>
+<div class="overflow-hidden position-relative rounded-3" style="background:white; opacity: 0.75;">
+<center>
+<a class="mask" title="TikTok: 
+
+TikTok is the leading destination for short-form mobile video. Our mission is to inspire creativity and bring joy." href="https://www.tiktok.com/">
+<img class="img-fluid" src="assets/img/sponsors/Tiktok.webp" style="width: 100%; max-width: 450px;">
+</a>
+</center>
+</div>
+<div>
+</div>
+</div>
+</div>
+            </div>
+        </section>
+
+        <!-- Gold and Below half/quad/quad -->
+
+        <section class="py-0 border-bottom"> <!-- Please leave the py settings inside the div/class -->
+            <div class="container">
+                <div class="row align-items-center" id="bronze_patrons"><div class="col-6 col-md-3 py-3 position-relative">
+<div class="overflow-hidden position-relative">
+<h6 class="text-uppercase fw-normal ls text-white p-1 rounded d-inline-block" style="background-color: brown;" data-zanim-xs="{&quot;delay&quot;:0.1}">Bronze Patron</h6>
+</div>
+<div class="overflow-hidden position-relative rounded-3" style="background:white; opacity: 0.75;">
+<center>
+<a class="mask" title="Abelian Foundation: 
+
+Abelian is a Layer 1 Blockchain system which is quantum resistant and privacy preserving. By privacy preserving, Abelian has a privacy coin ABEL, which can be used with full privacy, privacy with accountability, or privacy in the pseudonymous level." href="https://abelian.info">
+<img class="img-fluid" src="assets/img/sponsors/Abe.webp" style="width: 100%; max-width: 225px;">
+</a>
+</center>
+</div>
+<div>
+</div>
+</div>
+<div class="col-6 col-md-3 py-3 position-relative">
+<div class="overflow-hidden position-relative">
+<h6 class="text-uppercase fw-normal ls text-white p-1 rounded d-inline-block" style="background-color: brown;" data-zanim-xs="{&quot;delay&quot;:0.1}">Bronze Patron</h6>
+</div>
+<div class="overflow-hidden position-relative rounded-3" style="background:white; opacity: 0.75;">
+<center>
+<a class="mask" title="IOHK: 
+
+Founded in 2015 by Charles Hoskinson and Jeremy Wood, IOHK is one of the world's pre-eminent blockchain infrastructure research and engineering companies. We are a fully decentralized remote working organisation committed to the highest principles of academic rigour and evidence-based software development." href="https://iohk.io">
+<img class="img-fluid" src="assets/img/sponsors/Iohk.webp" style="width: 100%; max-width: 225px;">
+</a>
+</center>
+</div>
+<div>
+</div>
+</div>
+<div class="col-6 col-md-3 py-3 position-relative">
+<div class="overflow-hidden position-relative">
+<h6 class="text-uppercase fw-normal ls text-white p-1 rounded d-inline-block" style="background-color: brown;" data-zanim-xs="{&quot;delay&quot;:0.1}">Bronze Patron</h6>
+</div>
+<div class="overflow-hidden position-relative rounded-3" style="background:white; opacity: 0.75;">
+<center>
+<a class="mask" title="Evertas: 
+
+Evertas was born from a shared desire: to create insurance for this new risk, based on timeless standards and principles. As a leader in early blockchain organizations, and the ﬁrst full-time blockchain hire at the world's largest custodian bank, J. Gdanski understood the technology and the institutional environment like few others." href="https://www.evertas.com/">
+<img class="img-fluid" src="assets/img/sponsors/Evertas.webp" style="width: 100%; max-width: 225px;">
+</a>
+</center>
+</div>
+<div>
+</div>
+</div>
+</div>
+            </div>
+        </section>
+
+        <!-- Social Media and About ACM CCS -->
+        <section class="justify-content-center bg-black font-sans-serif">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <h3 class="text-white">About ACM CCS</h3>
+                        <p class="mb-0 text-white">
+                            The ACM Conference on Computer and Communications Security (CCS) is the <span style="color:red;">flagship annual conference</span> of the Special Interest Group on Security, Audit and Control (SIGSAC) 
+                            of the Association for Computing Machinery (ACM). The conference brings together information security researchers, practitioners, developers, 
+                            and users from all over the world to explore cutting-edge ideas and results.
+                            <br><br>
+                            CCS will follow the <span style="color:red;">ACM Policy Against Harassment at ACM Activities</span>. Please familiarize yourself with <a href="https://www.acm.org/special-interest-groups/volunteer-resources/officers-manual/policy-against-discrimination-and-harassment" style="color:red;">the ACM Policy Against Harassment</a> and <a href="https://www.acm.org/about-acm/reporting-unacceptable-behavior" style="color:red;">guide</a> to Reporting Unacceptable Behavior.
+                        </p>
+                        <br><br>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <h6 class="text-white">Due to X's change of policy, you have to <a href="https://x.com">log into X</a> to view embedded timeline. <a href="https://twittercommunity.com/t/again-list-widget-says-nothing-to-see-here-yet-if-logged-out/198782/">Why is that?</a></h6>
+                        <!--<a class="twitter-timeline" data-height="300" data-theme="white" href="https://twitter.com/acm_ccs?ref_src=twsrc%5Etfw">Tweets by acm_ccs</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+                        <!--<blockquote class="twitter-tweet"><p lang="en" dir="ltr">CDGeB is the first competition in a series challenging a difficult Internet geolocation problem - cloud data geolocation. The winner gets 5KUSD to present the results in the <a href="https://twitter.com/hashtag/RTIGeo?src=hash&amp;ref_src=twsrc%5Etfw">#RTIGeo</a> session of <a href="https://twitter.com/hashtag/CCSW?src=hash&amp;ref_src=twsrc%5Etfw">#CCSW</a> workshop collocated with@acm_ccs</p>&mdash; ACM CCS 2023 (@acm_ccs) <a href="https://twitter.com/acm_ccs/status/1717367069925310688?ref_src=twsrc%5Etfw">October 26, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+                        <a class="twitter-timeline" data-height="250" href="https://twitter.com/acm_ccs?ref_src=twsrc%5Etfw">Tweets by acm_ccs</a> <script src="https://www.youtube.com/iframe_api"></script><script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <h6 class="text-white py-2">If you still couldn't see the timeline, try<br>
+                              1. Disabling Tracking Prevention Add-ons in your web browsers<br>
+                              2. Disabling <a href="https://learn.microsoft.com/en-us/microsoft-edge/web-platform/tracking-prevention">Tracking Prevention</a> or <a href="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop">Enhanced Tracking Protection</a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-black text-600 py-4 font-sans-serif text-center overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-4 order-lg-2 position-relative">
+                <a class="indicator indicator-up" href="#top">
+                    <span class="indicator-arrow indicator-arrow-one" data-zanim-xs="{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;y&quot;:15},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;y&quot;:-5,&quot;scale&quot;:1},&quot;ease&quot;:&quot;Back.easeOut&quot;,&quot;duration&quot;:0.4,&quot;delay&quot;:0.9}"></span>
+                    <span class="indicator-arrow indicator-arrow-two" data-zanim-xs="{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;y&quot;:15},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;y&quot;:-5,&quot;scale&quot;:1},&quot;ease&quot;:&quot;Back.easeOut&quot;,&quot;duration&quot;:0.4,&quot;delay&quot;:1.05}"></span>
+                </a>
+            </div>
+            <div class="col-lg-4 text-lg-start mt-4 mt-lg-0">
+              <p class="fs--1 text-uppercase ls fw-bold mb-0">Copyright © 2022-2023 ACM/SIGSAC.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end order-lg-2 mt-2 mt-lg-0">
+              <p class="fs--1 text-uppercase ls fw-bold mb-0"><a class="text-600" href="https://compute.dtu.dk/">DTU Compute</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <!-- Javascripts -->
+    <script src="vendors/popper/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/anchorjs/anchor.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="vendors/lodash/lodash.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+    <script src="vendors/gsap/gsap.js"></script>
+    <script src="vendors/gsap/customEase.js"></script>
+    <script src="vendors/gsap/drawSVGPlugin.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <!-- Special Index Javascript -->
+    <script src="assets/js/index.js"></script>
+    <!-- Performance Optimzation Script -->
+    <script src="assets/js/preloader.js"></script><script type="speculationrules">{"prerender":[{"source":"list","urls":["call-for-paper.html","call-for-artifacts.html","call-for-posters.html","call-for-sponsor.html","call-for-workshops.html","code-of-conduct.html","diversity-and-inclusion.html","index.html","orgs-artifact.html","orgs-general.html","orgs-poster.html","orgs-program.html","program.html","registration.html","travel-entry.html","travel-guide.html","travel-guide.html","travel-hotel.html","travel-student-grants.html","travel-telecom.html","travel.html","workshops.html"]}]}</script>
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.2f70fb173b9000da126c79afe2098f02.html?origin=https%3A%2F%2Fwww.sigsac.org" title="Twitter settings iframe" style="display: none;"></iframe></body></html>

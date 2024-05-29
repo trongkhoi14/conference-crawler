@@ -45,6 +45,7 @@ Review Notification, Rebuttal Period Begins
 Talk and/or Poster Acceptance Notifications
 Notification of paper acceptance/rejection
 Notification of accept/reject/review again
+Workshop Proposal Acceptance Notification
 author notification for all contributions
 Asia Pacific Conference on Communications
 Conference paper acceptance notification
@@ -89,6 +90,7 @@ Paper accept/reject notifications
 Notification of Paper Acceptance
 Abstract Acceptance Notification
 Tutorial Acceptance Notification
+Workshop Notification of authors
 Notification of Final Acceptance
 Workshop Acceptance Notification
 Notification of paper acceptance

@@ -117,12 +117,12 @@ const conferenceHasIncorrectLinks = [
     // DOCENG
     // "6639c07d647e53b594533cdd",
     // conf.researchr.org
-    // "6639c1b66e0c3f3fe99c564f",
+    // "6639c1b66e0c3f3fe99c564f", //timeout
     // "6639c2534931f50e65517e19",
     // "6639c2764931f50e65517e3d",
     // "6639c39fbf0a76d1ef717bc3",
     // "6639c69c4c771c093141cb90",
-    // "6639c4a8078f0b3454c91ba0",
+    // "6639c4a8078f0b3454c91ba0", 
     // "6639c6a64c771c093141cb9a",
     // "6639c4b2078f0b3454c91baa",
     // "6639c6df4c771c093141cbd0",
@@ -133,7 +133,7 @@ const conferenceHasIncorrectLinks = [
     // "6639d05e2aa97d8b88806079",
     // "6639d05a2aa97d8b88806075",
     // "6639d3bd8fb9939b82bceb6d",
-    // "6639d3e38fb9939b82bceb8d", //xong thằng này
+    // "6639d3e38fb9939b82bceb8d", 
     // "6639d1c0387369a897058689",
     // "6639d1c8387369a897058691",
     // "6639d3c68fb9939b82bceb75",
@@ -149,6 +149,8 @@ const conferenceHasIncorrectLinks = [
     // "6639d3fa8fb9939b82bceba1",
     // "6639d68ab9c725a1d3ed3d7d",
     // "6639d1ac387369a897058675",
+    // Test chức năng cào location
+    "6639d1ac387369a897058675"
 ];
 
 module.exports = conferenceHasIncorrectLinks;

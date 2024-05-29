@@ -1,0 +1,2093 @@
+<!DOCTYPE html><html class="nộiBộ"><head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no, minimum-scale=1, height=device-height, viewport-fit=cover">
+		<meta name="keywords" content="Apcal,hanu,Connections,Social Network">
+		<title>Call for Papers</title>
+		<meta name="google-site-verification" content="C3rLvOFFbqDi_-BAOFxujRlxlGslP_ggG5n7BIc0P4c">
+		<meta name="description" content="Ngôn ngữ học ứng dụng - Xu hướng chuyển đổi trong khu vực Châu Á - Thái Bình Dương. Kết nối các nhà nghiên cứu khu vực Châu Á - Thái Bình Dương chia sẻ kinh nghiệm nghiên cứu và giảng dạy trong lĩnh vực Ngôn ngữ học ứng dụng">
+		<link rel="icon" type="image/png" sizes="32x32" href="https://hanu.connections.vn/img/other/HANU/logo-256.png">
+		<meta property="og:title" content="Call for Papers"><meta property="og:site_name" content="https://apcal.hanu.edu.vn/"><meta property="og:type" content="website"><meta property="og:url" content="https://apcal.hanu.edu.vn/c/11690/Call-for-Papers"><meta property="og:image" content="https://cdn.inevn.com/img/thumb/320248.1kx.isij"><meta property="og:description" content="Ngôn ngữ học ứng dụng - Xu hướng chuyển đổi trong khu vực Châu Á - Thái Bình Dương. Kết nối các nhà nghiên cứu khu vực Châu Á - Thái Bình Dương chia sẻ kinh nghiệm nghiên cứu và giảng dạy trong lĩnh vực Ngôn ngữ học ứng dụng"><script src="https://cdn.inevn.com/js/jquery.main.isj"></script><script src="https://cdn.inevn.com/js/include.core.isj"></script>		<link href="sitemap.xml">
+		<link rel="stylesheet" href="https://thuctap.inevn.com/nguyendinhhuy/css/include.sub.css?=0523">
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,200;1,400&amp;display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/style.css">
+		<style>
+			.t94{
+				top: 94%
+			}
+
+			@keyframes my { 
+				0% { color: #FF3454;  } 
+				50% { color: #242B33;  } 
+				100% { color: #FF3454;  }
+			} 
+
+			.clickMe {
+				-webkit-animation: my 1s infinite;
+				/* -moz-animation: my 700ms infinite; 
+				-o-animation: my 700ms infinite; 
+				animation: my 700ms infinite; */
+			}
+
+			.clickMe:hover{
+				transform: scale(1.2);
+				transition: all 1s linear;
+			}
+
+		</style>
+		<script type="text/javascript">
+			var logo = "https://hanu.connections.vn/img/other/HANU/logo-256.png"; // "/apcal_img/logo_hanu.png"; // LOGO
+			if(!localStorage.getItem("ngônNgữ"))
+				localStorage.setItem("ngônNgữ","en");
+			$(function(){
+				tảiTrước({
+					dữLiệu:{ // Sử dụng package riêng
+						js:["package.hanu"],
+						css:["package.all"]
+					},
+					biểuTượng:logo,
+					chờ:1067, // Tạo độ trễ khi vào xem nội dung (đảm bảo nội dung render đầy đủ)
+					koChe:false, // Không hiển thị
+					màuNền:"darkred", // Màu nền chờ
+					riêng:true, // Tải theo thư viện khác
+					cache:true, // Được sử dụng cache của hệ thống (Package, tải dữ liệu...)
+					trước:function(){
+						dữLiệu.bỏQua(["bàiLực.0","bàiTrữ.0","tàiKhoản.0","địnhNghĩa.0"],true);
+					},
+					xong:function(){ // Viết code giao diện hiển thị
+						// $.đệm("ngônNgữ","en",1); // Ngôn ngữ mặc định tiếng anh , $.đệm("ngônNgữ","vi",1)// Ngôn ngữ mặc định tiếng việt
+						$.extend(ngônNgữ.vi,{ // Bản dịch tiếng việt
+							registration:"Đăng ký tham gia",
+							submission:"Gửi bài tham luận",
+							topic:"Chủ đề",
+							guide:"Hướng dẫn",
+							leadAuthor:"Tác giả chính",
+							coAuthor:"Đồng tác giả",
+							correspondingAuthor:"Tác giả liên hệ",
+							role:"Vai trò",
+							surname: "Họ",
+							biodata: "Mô tả bản thân",
+							occupation: "Nghề nghiệp",
+							middleName: "Tên đệm",
+							saveDraft:"Lưu nháp",
+							participant:"Đăng ký tham gia",
+							presenter:"Đăng ký nộp Proposal",
+						});
+						$.extend(ngônNgữ.en,{ // Bản dịch tiếng anh
+							registration: "Registration",
+							submission: "Submission",
+							topic: "Topics",
+							guide: "Instructions",
+							leadAuthor:"First Author",
+							coAuthor:"Co-Author",
+							correspondingAuthor:"Corresponding Author",
+							role:"Role",
+							surname: "Surname",
+							biodata: "Biodata",
+							occupation: "Occupation",
+							middleName: "Middle name",
+							saveDraft:"Save Draft",
+							minute:"minute",
+							participant:"Participant",
+							presenter:"Presenter",
+						});
+						var ôữ = $.đệm("ngônNgữ"),
+							tiêuĐề = "APCAL - Hội thảo khoa học quốc tế", // phạmVi.lấy("s"), // Tên website
+							iHĐ = 1423806,
+							ảụTổng = [11675,11686],
+							$thựcTập = "https://tts.ine.vn/nguyendinhhuy/",
+							W = $(".wrapper"),
+							ảf = $.gộp(["include.activity","include.signin","include.users","include.core","include.core.sub","include.software","version"],(là("IE")||là("A"))&&["include.debug"]),
+							vCode = $.đệm("phiênBảnCode")||{},
+							vs = 142345, // ID version file code
+							thân; // thẻ chứa nội dung body thay đổi
+						$.get($thựcTập+"build/version.json?=" + now().u, function(d) {
+							$.đệm("phiênBảnCode", Jd(d), 1);
+						});
+						CẦN.js([$thựcTập+"js/function.min.js?"+(vCode["function.min"]||vs)], true, function(){ // Với website khác set giá trị thành TRUE
+							vCode = $.đệm("phiênBảnCode")||{};
+							CẦN.js($.gộp(ảf.map(function(á){
+								return $codeJs+á+".min.js?"+getVersion(á+".min")
+							}),[$thựcTập+"CauHinhWeb/js/include.min.js?"+getVersion(),"/js/apcal.js?"+getVersion()]),true,function(){
+								cache.lấy({"idBVInd":{"80f67c15d03f78d5f8d82396c9affda5":["1427613","1466389"],"8178b8ab604823be5e779f46d16143b7":["119730"],"d2bf2b619b5b6a6dca5b0fbbc0ea2520":["119731"],"8c5fb530a70eebdb8c4c37b76210f8d5":["119731"]},"dlBVInd":{"119730":{"i":"119730","g":"0","p":"1","h":"0","k":"0","c":"0","ạ":"25","ê":"CONFERENCE AIMS","r":null,"ô":null,"ộ":"<div style=\"text-align: justify;\"><div>The aims of the APCAL HANU International conference are threefold:&nbsp;<\/div><div>(1) to celebrate the 50th anniversary of diplomatic relations between Australia and Vietnam;&nbsp;<\/div><div>(2) to suggest future visions for and aspirations of applied linguistics in Asia-Pacific contexts, and&nbsp;<\/div><div>(3) to foster closer friendships and networks among researchers and practitioners whose work involve applied linguistics relevant to Asia-Pacific contexts or students. The conference invites researchers, practitioners, and PhD students to bring the present functionalities, introspections, current trends, and anticipate future vision of applied linguistics in the Asia-Pacific region.<\/div><\/div>","ú":null,"ã":null,"ả":"325037","ụ":"[\"11696\",\"11702\"]","à":null,"ó":null,"ỏ":"[]","è":"[]","ị":null,"ế":null,"ứ":null,"v":null,"ở":"60944","ệ":null,"ờ":"1680238793","ấ":"1680238793","ậ":"1681177112","x":"124","_cậpNhật":1716407674,"dữLiệu":{"tậpTin":[]}},"119731":{"i":"119731","g":"0","p":"1","h":"0","k":"0","c":"0","ạ":"25","ê":"Instructions","r":null,"ô":"","ộ":"<div><div style=\"text-align: justify;\"><div><font size=\"3\">It is our pleasure to announce the Call for Papers for APCAL HANU Conference 2023. This year's conference theme is <i>Applied Linguistics – Transformation Trends in\nthe Asia-Pacific Region<\/i>. <\/font><\/div><div><font size=\"3\">Submissions are welcome from researchers (including emerging researchers) and practitioners. The formats are detailed below.<\/font><\/div><div><font size=\"3\">Each submission should include:<\/font><\/div><div><font size=\"3\">•  Title (15 words max.)<\/font><\/div><div><font size=\"3\">•  Complete abstract (250 words max.)<\/font><\/div><div><font size=\"3\">•  Author Biodata (50 words max.)<\/font><\/div><div><font size=\"3\">•  Affiliation<\/font><\/div><div><font size=\"3\">•  Presentation submission strand&nbsp; <\/font><\/div><div><b><font size=\"3\">&nbsp;<\/font><\/b><\/div><div><b><font size=\"3\">I. TYPE OF\nPRESENTATIONS<\/font><\/b><\/div><div><font size=\"3\"><b>Research&nbsp;<\/b><b>Papers\n<\/b><\/font><\/div><div><font size=\"3\">Research papers are 15 minutes followed by 5 minutes of discussion. This format is best suited to developed empirical research or theoretical work. Empirical papers should include the research objectives, methods, results, conclusions, and implications. Theoretical or conceptual papers should discuss an approach, a framework or a critical issue, and provide new insights. The proposal must not exceed 250 words.<\/font><\/div><div><font size=\"3\"><b><br><\/b><\/font><\/div><div><font size=\"3\"><b>Works-in-Progress<\/b><\/font><\/div><div><span style=\"color: inherit;\"><font size=\"3\">Work-in-Progress sessions are 15 minutes followed by 5 minutes of discussion. A Work-in-Progress session is an opportunity for the presenter(s) to&nbsp;seek feedback on research projects or practices&nbsp;which are in development. The presentation should include a brief overview of the project, their progress so far, issues arising and plans. The abstract must not exceed 250 words.<\/font><\/span><\/div><div><b><font size=\"3\">&nbsp;<\/font><\/b><\/div><div><b style=\"font-size: medium; color: inherit;\">Abstract submission\ndeadline:&nbsp;<\/b><b style=\"\"><font size=\"4\" style=\"\" color=\"#e92525\">June 30th,\n2023<\/font><\/b><\/div><div><b style=\"font-size: medium;\">Notification of\nabstract acceptance: <\/b><b style=\"\"><font color=\"#e92525\"><font size=\"4\">By<\/font><font size=\"3\">&nbsp;<\/font><\/font><\/b><b style=\"\"><font color=\"#e92525\" style=\"\" size=\"4\">July 10th, 2023<\/font><font size=\"3\"><\/font><\/b><\/div><div><b><font size=\"3\"><br><\/font><\/b><\/div><div><b><font size=\"3\">II. FULL PAPER\nPUBLICATION (optional)<\/font><\/b><\/div><div><font size=\"3\">Full papers submission for peer review and publication in the APCAL HANU Conference Proceedings with ISBN. <\/font><\/div><div><b><font size=\"3\">Deadline for\nsubmission of full text: <\/font><font size=\"4\" color=\"#e92525\">September 30th, 2023<\/font><font size=\"3\"><\/font><\/b><\/div><font size=\"3\">\n\nFull paper submission for peer review and\npublication in the special issue of&nbsp;the Journal of Foreign Language Sciences, Hanoi University (ISSN: 1859 – 2503)<br><\/font><\/div><\/div><div style=\"text-align: justify;\"><b style=\"\"><font size=\"3\">Deadline for submission of the full text: <\/font><font size=\"4\" color=\"#e92525\">October 30th, 2023<\/font><\/b><\/div>","ú":null,"ã":null,"ả":"","ụ":"[\"11690\",\"11681\"]","à":null,"ó":null,"ỏ":"[]","è":"[]","ị":null,"ế":null,"ứ":null,"v":null,"ở":"60944","ệ":null,"ờ":"1680238889","ấ":"1680238889","ậ":"1694924579","x":"122","_cậpNhật":1716407674,"dữLiệu":{"tậpTin":[]}},"1427613":{"558579":"{\"ậ\":[320460]}","558580":"","558581":"","558582":"l50_t50_tt","558583":"1","558659":"tac","558711":"","559906":"apcal","1218720":"w50","1602842":"{\"à\":[\"60944\"]}","2786632":"banner","i":"1427613","sởHữu":"60944","khởiTạo":"1680266675","_cậpNhật":1716407674},"1466389":{"558579":"{\"ậ\":[\"346709\"]}","558580":"","558581":"https:\/\/apcal.hanu.edu.vn\/","558582":"l50_t50_tt","558583":"1","558659":"tac","558711":"","559906":"apcal","1218720":"w50","1602842":"{\"à\":[\"60944\"]}","2786632":"banner","5272264":"","5479240":"","5479529":"","5479530":"","i":"1466389","sởHữu":"60944","khởiTạo":"1689304463","_cậpNhật":1716407674}},"idXửLý":["80f67c15d03f78d5f8d82396c9affda5","8178b8ab604823be5e779f46d16143b7","d2bf2b619b5b6a6dca5b0fbbc0ea2520","8c5fb530a70eebdb8c4c37b76210f8d5"],"phânLoại":{"a2662fb06842e1acd65bccbe40b85dfa":["1427613","1466389"],"bàiViết":["119730","119731"]},"xửLý":{"a2662fb06842e1acd65bccbe40b85dfa":["80f67c15d03f78d5f8d82396c9affda5"],"bàiViết":["8178b8ab604823be5e779f46d16143b7","d2bf2b619b5b6a6dca5b0fbbc0ea2520","8c5fb530a70eebdb8c4c37b76210f8d5"]},"time":1716407674}, function(c){ // Truyền vào dữ liệu cache HOẶC url file cache bài viết trang chủ -> Callback trả về biến boolean, nếu TRUE -> Tìm thấy file dữ liệu cache
+									var data = {
+										ụTổng:{
+											vi:11675,
+											en:11686
+										}[ôữ], // "11675", // ID chuyên mục tổng của website
+										// menuChính:{
+										// 	// vi:[0, 11678, 11680, "discuss", "register", 11683, 11684],
+										// 	en:[0, 11687, 11689, 11690, "register", 11692, 11694],
+										// }[ôữ], // Mảng ID menu ()
+										linkKhác:{ // Đổi url theo ID định danh
+											0:"/",
+											// u:function(){
+											// 	đăngKý.ngườiDùng();
+											// },
+											ý:rf,
+											discuss: "/submit",
+											register: "/register",
+											par:"/participant",
+											pre:"/presenter",
+											reviewer: "/dang-ky-thong-tin-tai-khoan"
+										},
+										tênKhác:{ // Đổi tên hiển thị theo ID định danh
+											0:dịch("home"),
+											discuss: dịch("submission"),
+											register: dịch("registration"),
+											pre:dịch("presenter"),
+											par:dịch("participant"),
+											ý:dịch("registration"),
+											reviewer: "Reviewer"
+											// u:dịch(""),
+											
+										},
+										ĩ:[39145,40028,4088]
+									},
+									ụMĐ = {
+										vi:"11702",
+										en:"11696"
+									}[ôữ],
+									ụTT = {
+										vi:"11683",
+										en:"11693"
+									}[ôữ],
+									ụẫ = {
+										vi:11681,
+										en:11690
+									}[ôữ],
+									// ếẫ = {
+									// 	vi:"119731",
+									// 	en:"119731",
+									// }[ôữ],
+									ụễ = {
+										vi:11680,
+										en:11689
+									}[ôữ],
+									ụWS = 11729,
+									md5HT = "0bd813b114759645b667d101a1935d7f",
+									ụTổng = data.ụTổng,
+									linkKhác = data.linkKhác||{},
+									tênKhác = data.tênKhác||{},
+									chưaCóCache = !c,
+									ảậ = ["1681889614","1700464705","1716980512","1716980512"];
+									iA("1716980512",ảậ)&&ảậ.splice(iA("1716980512",ảậ)-1,1);
+									// cl("LOG ##########",max(["1681889614","1700464705","1716980512","1716980512"]))
+									// Hiện giao diện
+									W.show();
+									
+									// Cấu hình màu cl1, cl2... cho trang web
+									$("body").iStyle(Chíp.làmMàu([màuChính,"#FF3454", "#FFC200", "#242B33"])).append(  // màu theo thứ tự: cl1, cl2, cl3,...
+										bốCục.facebook(), // Tạo thư viện facebook → Tạo nút LIKE - SHARE lúc xem bài viết
+										bốCục.backToTop(), // Tạo nút back to top
+									);
+	
+									// Cấu hình bỏ qua tải dữ liệu
+									dữLiệu.bỏQua(["bàiLực.0","bàiTrữ.0","tàiKhoản.0","địnhNghĩa.0"],là("U")); // Bỏ qua lấy dữ liệu của các đối tượng này (Tùy vào mục đích sử dụng website để bỏ qua các dữ liệu k cần sử dụng đến), nếu true thì bỏ qua - false thì lấy dữ liệu của các đối tượng này
+									
+									// Cấu hình mặc định cho trang web
+									config({
+										tiêuĐề:tiêuĐề,
+										hệThống:"APCAL",
+										logo:logo,
+										ảnhMặcĐịnh:{
+											en: "https://cdn.inevn.com/upload/7df781b17a4c869a32da4e114a26fdd0.jpg",
+											vi: "https://cdn.inevn.com/upload/03be52cb4a80e90a1a84cabc72b4fb28.jpg"
+										}[ôữ], // Ảnh mặc định thay thế khi các đối tượng k có ảnh đại diện
+										cacheĐc:1,
+										đăngKýTàiKhoản:{
+											// Cấu hình đăng ký tài khoản
+											cộtGộp:["ê","ọ","ệ", "danhXưng",2232261],
+											bắtBuộc:[], // gộp thêm các thông tin bắt buộc
+											koBắtBuộc:["ố"], // Bỏ qua các thông tin bắt buộc mặc định
+											nềnTrái:{
+												logo: logo,
+												nền: "url('/apcal_img/nền_abstract1.png')",
+												tên: 
+												{
+													trên: dịch("register"),
+													dưới: dịch("account"),
+												},
+												khốiVuông:false,
+												ảnh:"",
+											},
+											// nút: [
+											// 	{
+											// 		i: "đóng",
+											// 		bo:"-fr"
+											// 	}
+											// ],
+											mail:!là("IE")&&function(D){
+												// cl("#LOGGGGG Dữ liệu mail", D);
+												var uạ = location.origin + "/verify/" + D.mãXácNhận;
+												return {
+													ê:"APCAL", //Tên người gửi mail
+													subject:"[APCAL] SUCCESSFUL ACCOUNT REGISTRATION", //Tiêu đề gửi mail
+													body:'<div><font size="3"><br></font></div><div><font size="3"><o:p></o:p></font></div><div><img class="bấmĐc wmx w1 fn" src="https://i3.connections.vn/cdn.inevn.com/img/thumb/322570.1kx.isij?w=1280&quality=&strip=all" style="" wh="0,0,0"></div><div><o:p><font size="3">&nbsp;</font></o:p></div><div><font size="3">Dear <b>'+D.ể+'</b>,<o:p></o:p></font></div><div><font size="3">Thank you for registering for “<b>APCAL HANU International Conference “Applied Linguistics – Transformative Trends in the Asia-Pacific Region”</b>. <o:p></o:p></font></div><div><o:p><font size="3">&nbsp;</font></o:p></div><div><font size="3">We would like to confirm that<b> your account has been successfully registered.</b> Please follow these steps to log in to your account and submit your abstract:<o:p></o:p></font></div><div><o:p><font size="3">&nbsp;</font></o:p></div><div><font size="3">⁃ Step 1: Visit the website : <a href="'+uạ+'">'+uạ+'</a><o:p></o:p></font></div><div><font size="3">⁃  Step 2: Click <b><font color="#168c8c">“LOGIN”</font></b> to log in to your account:<o:p></o:p></font></div><div><font size="3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;+ Username: <b><font color="#4529a0">'+D.e+'</font></b><o:p></o:p></font></div><div><font size="3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;+ Password: <b><font color="#bb1e77">'+D.ậ+'</font></b><o:p></o:p></font></div><div><font size="3">⁃ Step 3: Click <b><font color="#168c8c">“Submit new Abstract”</font> </b><o:p></o:p></font></div><div><o:p><font size="3">&nbsp;</font></o:p></div><div><font size="3"><div>Thank you very much!<o:p></o:p></div><div><o:p>&nbsp;</o:p></div><br>\n\nBest\nregards,</font></div><div><font size="3"><o:p></o:p></font></div><div>------------------------------------<o:p></o:p></div><div><b>APCAL HANU International Conference “Applied Linguistics - Transformative Trends in the Asia-Pacific Region”<o:p></o:p></b></div><div>Email: <a href=\"mailto:2023APCALsub@hanu.edu.vn\">2023APCALsub@hanu.edu.vn</a><o:p></o:p></div>\n\nWebsite: <a href="' + location.origin + '">' + location.origin + '</a></div>', // Nội dung mail
+													eChữKý:"",
+													// ngườiNhận:"",
+													// mailNgườiNhận:"",
+												}
+											}, 
+											thuộcTính:{
+												phânLoại:"apcal",
+											},
+											sửaLớp: {
+												"cậpNhật" :"-pa -t50 -l50 -tt -fr",
+												"hủy": "-fr",
+												"dòngThôngTin .ê": "fwb -col-xs-2 col-xs-12"
+											},
+											
+											// {
+											// 	ê:"[APCAL] ĐĂNG KÝ THÀNH CÔNG",
+											// 	subject:"",
+											// 	body:"",
+											// 	eChữKý:"",
+											// 	ngườiNhận:"",
+											// 	mailNgườiNhận:"",
+											// }
+											
+										},
+										verify: {
+											thôngBáo:{
+												hếtHạn:{
+													tiêuĐề: "Notification",
+													môTả: "Your verification link has expired. If you need any further assistance, please contact our Technical Support team. Thank you!",
+													icon: "cancel"
+												}, // Thiếu mã xác nhận
+												saiMã:{}, // Link không còn hiệu lực
+												ok:{
+													tiêuĐề: "Verified!",
+													môTả: "Your APCAL 2023 account has been successfully verified. Please login and experience our platform.",
+													loại: "ok"
+												}, // Xác thực thành công
+												lỗi:{}, // Xác thực thất bại
+											
+											}
+										}
+										
+									});
+									
+									// Khởi tạo nút Hỗ trợ trực tuyến mặc định theo hệ thống (Tùy vào mục đích sử dụng để cấu hình lại phần nút Hỗ trợ trực tuyến)
+									tánGẫu.khởiTạo(true);
+	
+									var khởiTạoCache = function(b){ // Lấy hoặc tạo cache chuyên mục
+										// b: Xác định tạo mới cache hay lấy cache (b: Tạo cache)
+										if(b){
+											cache.địnhNghĩa(data.ĩ, {
+												id:"dinhnghia",
+												u:"/createcache.php",
+												mới:false, // Tạo cache và Reload lại trang nếu không có dữ liệu cache
+												ghi:false, // Không ghi file cache riêng
+											}, function(d){
+												cache.chuyênMục(ảụTổng, {
+													id:"cache",
+													mới:true,
+													u:"/createcache.php",
+													d:d
+												});
+											});
+										} else {
+											cache.chuyênMục(ảụTổng, {
+												id:"cache",
+												u:"/createcache.php",
+												// mới:true, // Tạo cache và Reload lại trang nếu không có dữ liệu cache
+												dữLiệu:{"time":1700464705,"chuyênMục":{"11674":{"i":"11674","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"0","ứ":"0","r":null,"ê":"APCAL - Hanu conference","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"","khởiTạo":"1679310106","ậ":"1680591203","_cậpNhật":1700456151,"time":1700464706},"11675":{"i":"11675","ạ":"25","ở":"60944","p":"0","u":"1","ấ":"1","ứ":"0","r":null,"ê":"APCAL HANU 2023_VIE","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11674\"]","khởiTạo":"1679310272","ậ":"1681897281","_cậpNhật":1700456151,"time":1700464706},"11678":{"i":"11678","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"2","ứ":"0","r":null,"ê":"APCAL 2023","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11675\"]","khởiTạo":"1679887217","ậ":"1680266543","_cậpNhật":1700464705,"time":1700464706},"11680":{"i":"11680","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"2","ứ":"0","r":null,"ê":"Thông tin diễn giả","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11675\"]","khởiTạo":"1679887219","ậ":null,"_cậpNhật":1700458700,"time":1700464706},"11681":{"i":"11681","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"2","ứ":"0","r":null,"ê":"Gửi bài tham luận","ô":null,"ả":null,"ì":"320263","ợ":null,"à":null,"ị":null,"ụ":"[\"11675\"]","khởiTạo":"1679887219","ậ":"1680266987","_cậpNhật":1700464705,"time":1700464706},"11683":{"i":"11683","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"2","ứ":"0","r":null,"ê":"Tin tức - Sự kiện","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11675\"]","khởiTạo":"1679887219","ậ":null,"_cậpNhật":1700464705,"time":1700464706},"11684":{"i":"11684","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"2","ứ":"0","r":null,"ê":"Liên hệ","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11675\"]","khởiTạo":"1679887219","ậ":null,"_cậpNhật":1700464705,"time":1700464706},"11686":{"i":"11686","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"1","ứ":"0","r":null,"ê":"APCAL HANU 2023_ENG","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11674\"]","khởiTạo":"1680232222","ậ":"1680232282","quanHệ":{"-sởHữu":{"tàiKhoản":{"l":["140229","54864","90143"],"":["140229","54864","90143"]}},"tàiKhoản":{"54864":["-sởHữu"],"90143":["-sởHữu"],"140229":["-sởHữu"]}},"_cậpNhật":1700456151,"time":1700464706},"11687":{"i":"11687","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"2","ứ":"7","r":null,"ê":"APCAL 2023","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11686\"]","khởiTạo":"1680232458","ậ":"1681889614","_cậpNhật":1700464705,"time":1700464706},"11689":{"i":"11689","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"2","ứ":"5","r":null,"ê":"Keynote Speakers","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11686\"]","khởiTạo":"1680232459","ậ":"1687749940","_cậpNhật":1700458700,"time":1700464706},"11690":{"i":"11690","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"2","ứ":"4","r":null,"ê":"Call for Papers","ô":"","ả":null,"ì":"320248","ợ":null,"à":null,"ị":null,"ụ":"[\"11686\"]","khởiTạo":"1680232459","ậ":"1681889614","_cậpNhật":1700464705,"time":1700464706},"11691":{"i":"11691","ạ":"25","ở":"60944","p":"0","u":"1","ấ":"2","ứ":"2","r":null,"ê":"Sponsors and Partners","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11686\"]","khởiTạo":"1680232459","ậ":"1681889614","_cậpNhật":1700464705,"time":1700464706},"11692":{"i":"11692","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"2","ứ":"3","r":null,"ê":"Pre-Conference Events","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11686\"]","khởiTạo":"1680232459","ậ":"1681889614","_cậpNhật":1700464705,"time":1700464706},"11695":{"i":"11695","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"3","ứ":"0","r":null,"ê":"Conference Welcome","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11687\"]","khởiTạo":"1680236404","ậ":null,"_cậpNhật":1700464705,"time":1700464706},"11696":{"i":"11696","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"3","ứ":"0","r":null,"ê":"Purpose","ô":"","ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11687\"]","khởiTạo":"1680236404","ậ":"1680512745","_cậpNhật":1700464705,"time":1700464706},"11697":{"i":"11697","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"3","ứ":"0","r":null,"ê":"Schedule","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11687\"]","khởiTạo":"1680236404","ậ":null,"_cậpNhật":1700464705,"time":1700464706},"11701":{"i":"11701","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"3","ứ":"0","r":null,"ê":"Lời chào","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11678\"]","khởiTạo":"1680266560","ậ":null,"_cậpNhật":1700464705,"time":1700464706},"11702":{"i":"11702","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"3","ứ":"0","r":null,"ê":"Mục đích","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11678\"]","khởiTạo":"1680266561","ậ":null,"_cậpNhật":1700464705,"time":1700464706},"11703":{"i":"11703","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"3","ứ":"0","r":null,"ê":"Chương trình Hội thảo","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11678\"]","khởiTạo":"1680266561","ậ":null,"_cậpNhật":1700464705,"time":1700464706},"11729":{"i":"11729","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"3","ứ":"0","r":null,"ê":"Workshops","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11692\"]","khởiTạo":"1680689501","ậ":null,"_cậpNhật":1700464705,"time":1700464706},"11750":{"i":"11750","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"2","ứ":"1","r":null,"ê":"Contact Us","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11686\"]","khởiTạo":"1681874474","ậ":"1681889614","_cậpNhật":1700464705,"time":1700464706},"11755":{"i":"11755","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"2","ứ":"6","r":null,"ê":"About Us","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11686\"]","khởiTạo":"1681889370","ậ":"1681889614","_cậpNhật":1700464705,"time":1700464706},"11756":{"i":"11756","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"3","ứ":"0","r":null,"ê":"About HANU","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11755\"]","khởiTạo":"1681889399","ậ":null,"_cậpNhật":1700464705,"time":1700464706},"11757":{"i":"11757","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"3","ứ":"0","r":null,"ê":"About ALAA","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11755\"]","khởiTạo":"1681889399","ậ":null,"_cậpNhật":1700464705,"time":1700464706},"12725":{"i":"12725","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"3","ứ":"0","r":null,"ê":"Sponsorship Invitation","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11687\"]","khởiTạo":"1695434958","ậ":"1695434979","_cậpNhật":1700464705,"time":1700464706},"12726":{"i":"12726","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"2","ứ":"0","r":null,"ê":"Exploring Hanoi","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11686\"]","khởiTạo":"1695459513","ậ":"1695459530","_cậpNhật":1700464705,"time":1700464706}},"chuyênLực":{"11675":["11678","11680","11681","11683","11684"],"11678":["11701","11702","11703"],"11686":["11687","11755","11689","11690","11692","11691","11750","12726"],"11687":["11695","11696","11697","12725"],"11692":["11729"],"11755":["11756","11757"]}}											});
+										}
+									};
+									khởiTạoCache();
+									CẦN.db(["chuyênMục."+ụTổng, "chuyênLực."+ụTổng, "bảng."+md5HT], function(){
+										// Lấy tất cả chuyên mục trên webiste
+										var allỤ = khôngGian.chuyênMục.sau(ụTổng)||[],
+											ảự = config("chuyênLực."+ụTổng),
+											menuChính = data.menuChính||$.gộp([0],ảự),
+											// menuChính = data.menuChính||$.gộp([0],ảự.slice(0,3),["ý"],ảự.slice(3,count(ảự))),
+											lấyCache = function(fn){
+												dữLiệu.bỏQua(["tàiKhoản.0","địnhNghĩa.0"],false);
+												khởiTạoCache();
+												cache.lấy({"idBVInd":{"80f67c15d03f78d5f8d82396c9affda5":["1427613","1466389"],"8178b8ab604823be5e779f46d16143b7":["119730"],"d2bf2b619b5b6a6dca5b0fbbc0ea2520":["119731"],"8c5fb530a70eebdb8c4c37b76210f8d5":["119731"]},"dlBVInd":{"119730":{"i":"119730","g":"0","p":"1","h":"0","k":"0","c":"0","ạ":"25","ê":"CONFERENCE AIMS","r":null,"ô":null,"ộ":"<div style=\"text-align: justify;\"><div>The aims of the APCAL HANU International conference are threefold:&nbsp;<\/div><div>(1) to celebrate the 50th anniversary of diplomatic relations between Australia and Vietnam;&nbsp;<\/div><div>(2) to suggest future visions for and aspirations of applied linguistics in Asia-Pacific contexts, and&nbsp;<\/div><div>(3) to foster closer friendships and networks among researchers and practitioners whose work involve applied linguistics relevant to Asia-Pacific contexts or students. The conference invites researchers, practitioners, and PhD students to bring the present functionalities, introspections, current trends, and anticipate future vision of applied linguistics in the Asia-Pacific region.<\/div><\/div>","ú":null,"ã":null,"ả":"325037","ụ":"[\"11696\",\"11702\"]","à":null,"ó":null,"ỏ":"[]","è":"[]","ị":null,"ế":null,"ứ":null,"v":null,"ở":"60944","ệ":null,"ờ":"1680238793","ấ":"1680238793","ậ":"1681177112","x":"124","_cậpNhật":1716407674,"dữLiệu":{"tậpTin":[]}},"119731":{"i":"119731","g":"0","p":"1","h":"0","k":"0","c":"0","ạ":"25","ê":"Instructions","r":null,"ô":"","ộ":"<div><div style=\"text-align: justify;\"><div><font size=\"3\">It is our pleasure to announce the Call for Papers for APCAL HANU Conference 2023. This year's conference theme is <i>Applied Linguistics – Transformation Trends in\nthe Asia-Pacific Region<\/i>. <\/font><\/div><div><font size=\"3\">Submissions are welcome from researchers (including emerging researchers) and practitioners. The formats are detailed below.<\/font><\/div><div><font size=\"3\">Each submission should include:<\/font><\/div><div><font size=\"3\">•  Title (15 words max.)<\/font><\/div><div><font size=\"3\">•  Complete abstract (250 words max.)<\/font><\/div><div><font size=\"3\">•  Author Biodata (50 words max.)<\/font><\/div><div><font size=\"3\">•  Affiliation<\/font><\/div><div><font size=\"3\">•  Presentation submission strand&nbsp; <\/font><\/div><div><b><font size=\"3\">&nbsp;<\/font><\/b><\/div><div><b><font size=\"3\">I. TYPE OF\nPRESENTATIONS<\/font><\/b><\/div><div><font size=\"3\"><b>Research&nbsp;<\/b><b>Papers\n<\/b><\/font><\/div><div><font size=\"3\">Research papers are 15 minutes followed by 5 minutes of discussion. This format is best suited to developed empirical research or theoretical work. Empirical papers should include the research objectives, methods, results, conclusions, and implications. Theoretical or conceptual papers should discuss an approach, a framework or a critical issue, and provide new insights. The proposal must not exceed 250 words.<\/font><\/div><div><font size=\"3\"><b><br><\/b><\/font><\/div><div><font size=\"3\"><b>Works-in-Progress<\/b><\/font><\/div><div><span style=\"color: inherit;\"><font size=\"3\">Work-in-Progress sessions are 15 minutes followed by 5 minutes of discussion. A Work-in-Progress session is an opportunity for the presenter(s) to&nbsp;seek feedback on research projects or practices&nbsp;which are in development. The presentation should include a brief overview of the project, their progress so far, issues arising and plans. The abstract must not exceed 250 words.<\/font><\/span><\/div><div><b><font size=\"3\">&nbsp;<\/font><\/b><\/div><div><b style=\"font-size: medium; color: inherit;\">Abstract submission\ndeadline:&nbsp;<\/b><b style=\"\"><font size=\"4\" style=\"\" color=\"#e92525\">June 30th,\n2023<\/font><\/b><\/div><div><b style=\"font-size: medium;\">Notification of\nabstract acceptance: <\/b><b style=\"\"><font color=\"#e92525\"><font size=\"4\">By<\/font><font size=\"3\">&nbsp;<\/font><\/font><\/b><b style=\"\"><font color=\"#e92525\" style=\"\" size=\"4\">July 10th, 2023<\/font><font size=\"3\"><\/font><\/b><\/div><div><b><font size=\"3\"><br><\/font><\/b><\/div><div><b><font size=\"3\">II. FULL PAPER\nPUBLICATION (optional)<\/font><\/b><\/div><div><font size=\"3\">Full papers submission for peer review and publication in the APCAL HANU Conference Proceedings with ISBN. <\/font><\/div><div><b><font size=\"3\">Deadline for\nsubmission of full text: <\/font><font size=\"4\" color=\"#e92525\">September 30th, 2023<\/font><font size=\"3\"><\/font><\/b><\/div><font size=\"3\">\n\nFull paper submission for peer review and\npublication in the special issue of&nbsp;the Journal of Foreign Language Sciences, Hanoi University (ISSN: 1859 – 2503)<br><\/font><\/div><\/div><div style=\"text-align: justify;\"><b style=\"\"><font size=\"3\">Deadline for submission of the full text: <\/font><font size=\"4\" color=\"#e92525\">October 30th, 2023<\/font><\/b><\/div>","ú":null,"ã":null,"ả":"","ụ":"[\"11690\",\"11681\"]","à":null,"ó":null,"ỏ":"[]","è":"[]","ị":null,"ế":null,"ứ":null,"v":null,"ở":"60944","ệ":null,"ờ":"1680238889","ấ":"1680238889","ậ":"1694924579","x":"122","_cậpNhật":1716407674,"dữLiệu":{"tậpTin":[]}},"1427613":{"558579":"{\"ậ\":[320460]}","558580":"","558581":"","558582":"l50_t50_tt","558583":"1","558659":"tac","558711":"","559906":"apcal","1218720":"w50","1602842":"{\"à\":[\"60944\"]}","2786632":"banner","i":"1427613","sởHữu":"60944","khởiTạo":"1680266675","_cậpNhật":1716407674},"1466389":{"558579":"{\"ậ\":[\"346709\"]}","558580":"","558581":"https:\/\/apcal.hanu.edu.vn\/","558582":"l50_t50_tt","558583":"1","558659":"tac","558711":"","559906":"apcal","1218720":"w50","1602842":"{\"à\":[\"60944\"]}","2786632":"banner","5272264":"","5479240":"","5479529":"","5479530":"","i":"1466389","sởHữu":"60944","khởiTạo":"1689304463","_cậpNhật":1716407674}},"idXửLý":["80f67c15d03f78d5f8d82396c9affda5","8178b8ab604823be5e779f46d16143b7","d2bf2b619b5b6a6dca5b0fbbc0ea2520","8c5fb530a70eebdb8c4c37b76210f8d5"],"phânLoại":{"a2662fb06842e1acd65bccbe40b85dfa":["1427613","1466389"],"bàiViết":["119730","119731"]},"xửLý":{"a2662fb06842e1acd65bccbe40b85dfa":["80f67c15d03f78d5f8d82396c9affda5"],"bàiViết":["8178b8ab604823be5e779f46d16143b7","d2bf2b619b5b6a6dca5b0fbbc0ea2520","8c5fb530a70eebdb8c4c37b76210f8d5"]},"time":1716407674}, function(){
+													// cl("LOG","########",config("chuyênMục."+ụTổng),config("chuyênLực."+ụTổng),{"time":1700464705,"chuyênMục":{"11674":{"i":"11674","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"0","ứ":"0","r":null,"ê":"APCAL - Hanu conference","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"","khởiTạo":"1679310106","ậ":"1680591203","_cậpNhật":1700456151,"time":1700464706},"11675":{"i":"11675","ạ":"25","ở":"60944","p":"0","u":"1","ấ":"1","ứ":"0","r":null,"ê":"APCAL HANU 2023_VIE","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11674\"]","khởiTạo":"1679310272","ậ":"1681897281","_cậpNhật":1700456151,"time":1700464706},"11678":{"i":"11678","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"2","ứ":"0","r":null,"ê":"APCAL 2023","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11675\"]","khởiTạo":"1679887217","ậ":"1680266543","_cậpNhật":1700464705,"time":1700464706},"11680":{"i":"11680","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"2","ứ":"0","r":null,"ê":"Thông tin diễn giả","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11675\"]","khởiTạo":"1679887219","ậ":null,"_cậpNhật":1700458700,"time":1700464706},"11681":{"i":"11681","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"2","ứ":"0","r":null,"ê":"Gửi bài tham luận","ô":null,"ả":null,"ì":"320263","ợ":null,"à":null,"ị":null,"ụ":"[\"11675\"]","khởiTạo":"1679887219","ậ":"1680266987","_cậpNhật":1700464705,"time":1700464706},"11683":{"i":"11683","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"2","ứ":"0","r":null,"ê":"Tin tức - Sự kiện","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11675\"]","khởiTạo":"1679887219","ậ":null,"_cậpNhật":1700464705,"time":1700464706},"11684":{"i":"11684","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"2","ứ":"0","r":null,"ê":"Liên hệ","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11675\"]","khởiTạo":"1679887219","ậ":null,"_cậpNhật":1700464705,"time":1700464706},"11686":{"i":"11686","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"1","ứ":"0","r":null,"ê":"APCAL HANU 2023_ENG","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11674\"]","khởiTạo":"1680232222","ậ":"1680232282","quanHệ":{"-sởHữu":{"tàiKhoản":{"l":["140229","54864","90143"],"":["140229","54864","90143"]}},"tàiKhoản":{"54864":["-sởHữu"],"90143":["-sởHữu"],"140229":["-sởHữu"]}},"_cậpNhật":1700456151,"time":1700464706},"11687":{"i":"11687","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"2","ứ":"7","r":null,"ê":"APCAL 2023","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11686\"]","khởiTạo":"1680232458","ậ":"1681889614","_cậpNhật":1700464705,"time":1700464706},"11689":{"i":"11689","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"2","ứ":"5","r":null,"ê":"Keynote Speakers","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11686\"]","khởiTạo":"1680232459","ậ":"1687749940","_cậpNhật":1700458700,"time":1700464706},"11690":{"i":"11690","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"2","ứ":"4","r":null,"ê":"Call for Papers","ô":"","ả":null,"ì":"320248","ợ":null,"à":null,"ị":null,"ụ":"[\"11686\"]","khởiTạo":"1680232459","ậ":"1681889614","_cậpNhật":1700464705,"time":1700464706},"11691":{"i":"11691","ạ":"25","ở":"60944","p":"0","u":"1","ấ":"2","ứ":"2","r":null,"ê":"Sponsors and Partners","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11686\"]","khởiTạo":"1680232459","ậ":"1681889614","_cậpNhật":1700464705,"time":1700464706},"11692":{"i":"11692","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"2","ứ":"3","r":null,"ê":"Pre-Conference Events","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11686\"]","khởiTạo":"1680232459","ậ":"1681889614","_cậpNhật":1700464705,"time":1700464706},"11695":{"i":"11695","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"3","ứ":"0","r":null,"ê":"Conference Welcome","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11687\"]","khởiTạo":"1680236404","ậ":null,"_cậpNhật":1700464705,"time":1700464706},"11696":{"i":"11696","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"3","ứ":"0","r":null,"ê":"Purpose","ô":"","ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11687\"]","khởiTạo":"1680236404","ậ":"1680512745","_cậpNhật":1700464705,"time":1700464706},"11697":{"i":"11697","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"3","ứ":"0","r":null,"ê":"Schedule","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11687\"]","khởiTạo":"1680236404","ậ":null,"_cậpNhật":1700464705,"time":1700464706},"11701":{"i":"11701","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"3","ứ":"0","r":null,"ê":"Lời chào","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11678\"]","khởiTạo":"1680266560","ậ":null,"_cậpNhật":1700464705,"time":1700464706},"11702":{"i":"11702","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"3","ứ":"0","r":null,"ê":"Mục đích","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11678\"]","khởiTạo":"1680266561","ậ":null,"_cậpNhật":1700464705,"time":1700464706},"11703":{"i":"11703","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"3","ứ":"0","r":null,"ê":"Chương trình Hội thảo","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11678\"]","khởiTạo":"1680266561","ậ":null,"_cậpNhật":1700464705,"time":1700464706},"11729":{"i":"11729","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"3","ứ":"0","r":null,"ê":"Workshops","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11692\"]","khởiTạo":"1680689501","ậ":null,"_cậpNhật":1700464705,"time":1700464706},"11750":{"i":"11750","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"2","ứ":"1","r":null,"ê":"Contact Us","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11686\"]","khởiTạo":"1681874474","ậ":"1681889614","_cậpNhật":1700464705,"time":1700464706},"11755":{"i":"11755","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"2","ứ":"6","r":null,"ê":"About Us","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11686\"]","khởiTạo":"1681889370","ậ":"1681889614","_cậpNhật":1700464705,"time":1700464706},"11756":{"i":"11756","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"3","ứ":"0","r":null,"ê":"About HANU","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11755\"]","khởiTạo":"1681889399","ậ":null,"_cậpNhật":1700464705,"time":1700464706},"11757":{"i":"11757","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"3","ứ":"0","r":null,"ê":"About ALAA","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11755\"]","khởiTạo":"1681889399","ậ":null,"_cậpNhật":1700464705,"time":1700464706},"12725":{"i":"12725","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"3","ứ":"0","r":null,"ê":"Sponsorship Invitation","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11687\"]","khởiTạo":"1695434958","ậ":"1695434979","_cậpNhật":1700464705,"time":1700464706},"12726":{"i":"12726","ạ":"25","ở":"60944","p":"1","u":"1","ấ":"2","ứ":"0","r":null,"ê":"Exploring Hanoi","ô":null,"ả":null,"ì":null,"ợ":null,"à":null,"ị":null,"ụ":"[\"11686\"]","khởiTạo":"1695459513","ậ":"1695459530","_cậpNhật":1700464705,"time":1700464706}},"chuyênLực":{"11675":["11678","11680","11681","11683","11684"],"11678":["11701","11702","11703"],"11686":["11687","11755","11689","11690","11692","11691","11750","12726"],"11687":["11695","11696","11697","12725"],"11692":["11729"],"11755":["11756","11757"]}},{"idBVInd":{"80f67c15d03f78d5f8d82396c9affda5":["1427613","1466389"],"8178b8ab604823be5e779f46d16143b7":["119730"],"d2bf2b619b5b6a6dca5b0fbbc0ea2520":["119731"],"8c5fb530a70eebdb8c4c37b76210f8d5":["119731"]},"dlBVInd":{"119730":{"i":"119730","g":"0","p":"1","h":"0","k":"0","c":"0","ạ":"25","ê":"CONFERENCE AIMS","r":null,"ô":null,"ộ":"<div style=\"text-align: justify;\"><div>The aims of the APCAL HANU International conference are threefold:&nbsp;<\/div><div>(1) to celebrate the 50th anniversary of diplomatic relations between Australia and Vietnam;&nbsp;<\/div><div>(2) to suggest future visions for and aspirations of applied linguistics in Asia-Pacific contexts, and&nbsp;<\/div><div>(3) to foster closer friendships and networks among researchers and practitioners whose work involve applied linguistics relevant to Asia-Pacific contexts or students. The conference invites researchers, practitioners, and PhD students to bring the present functionalities, introspections, current trends, and anticipate future vision of applied linguistics in the Asia-Pacific region.<\/div><\/div>","ú":null,"ã":null,"ả":"325037","ụ":"[\"11696\",\"11702\"]","à":null,"ó":null,"ỏ":"[]","è":"[]","ị":null,"ế":null,"ứ":null,"v":null,"ở":"60944","ệ":null,"ờ":"1680238793","ấ":"1680238793","ậ":"1681177112","x":"124","_cậpNhật":1716407674,"dữLiệu":{"tậpTin":[]}},"119731":{"i":"119731","g":"0","p":"1","h":"0","k":"0","c":"0","ạ":"25","ê":"Instructions","r":null,"ô":"","ộ":"<div><div style=\"text-align: justify;\"><div><font size=\"3\">It is our pleasure to announce the Call for Papers for APCAL HANU Conference 2023. This year's conference theme is <i>Applied Linguistics – Transformation Trends in\nthe Asia-Pacific Region<\/i>. <\/font><\/div><div><font size=\"3\">Submissions are welcome from researchers (including emerging researchers) and practitioners. The formats are detailed below.<\/font><\/div><div><font size=\"3\">Each submission should include:<\/font><\/div><div><font size=\"3\">•  Title (15 words max.)<\/font><\/div><div><font size=\"3\">•  Complete abstract (250 words max.)<\/font><\/div><div><font size=\"3\">•  Author Biodata (50 words max.)<\/font><\/div><div><font size=\"3\">•  Affiliation<\/font><\/div><div><font size=\"3\">•  Presentation submission strand&nbsp; <\/font><\/div><div><b><font size=\"3\">&nbsp;<\/font><\/b><\/div><div><b><font size=\"3\">I. TYPE OF\nPRESENTATIONS<\/font><\/b><\/div><div><font size=\"3\"><b>Research&nbsp;<\/b><b>Papers\n<\/b><\/font><\/div><div><font size=\"3\">Research papers are 15 minutes followed by 5 minutes of discussion. This format is best suited to developed empirical research or theoretical work. Empirical papers should include the research objectives, methods, results, conclusions, and implications. Theoretical or conceptual papers should discuss an approach, a framework or a critical issue, and provide new insights. The proposal must not exceed 250 words.<\/font><\/div><div><font size=\"3\"><b><br><\/b><\/font><\/div><div><font size=\"3\"><b>Works-in-Progress<\/b><\/font><\/div><div><span style=\"color: inherit;\"><font size=\"3\">Work-in-Progress sessions are 15 minutes followed by 5 minutes of discussion. A Work-in-Progress session is an opportunity for the presenter(s) to&nbsp;seek feedback on research projects or practices&nbsp;which are in development. The presentation should include a brief overview of the project, their progress so far, issues arising and plans. The abstract must not exceed 250 words.<\/font><\/span><\/div><div><b><font size=\"3\">&nbsp;<\/font><\/b><\/div><div><b style=\"font-size: medium; color: inherit;\">Abstract submission\ndeadline:&nbsp;<\/b><b style=\"\"><font size=\"4\" style=\"\" color=\"#e92525\">June 30th,\n2023<\/font><\/b><\/div><div><b style=\"font-size: medium;\">Notification of\nabstract acceptance: <\/b><b style=\"\"><font color=\"#e92525\"><font size=\"4\">By<\/font><font size=\"3\">&nbsp;<\/font><\/font><\/b><b style=\"\"><font color=\"#e92525\" style=\"\" size=\"4\">July 10th, 2023<\/font><font size=\"3\"><\/font><\/b><\/div><div><b><font size=\"3\"><br><\/font><\/b><\/div><div><b><font size=\"3\">II. FULL PAPER\nPUBLICATION (optional)<\/font><\/b><\/div><div><font size=\"3\">Full papers submission for peer review and publication in the APCAL HANU Conference Proceedings with ISBN. <\/font><\/div><div><b><font size=\"3\">Deadline for\nsubmission of full text: <\/font><font size=\"4\" color=\"#e92525\">September 30th, 2023<\/font><font size=\"3\"><\/font><\/b><\/div><font size=\"3\">\n\nFull paper submission for peer review and\npublication in the special issue of&nbsp;the Journal of Foreign Language Sciences, Hanoi University (ISSN: 1859 – 2503)<br><\/font><\/div><\/div><div style=\"text-align: justify;\"><b style=\"\"><font size=\"3\">Deadline for submission of the full text: <\/font><font size=\"4\" color=\"#e92525\">October 30th, 2023<\/font><\/b><\/div>","ú":null,"ã":null,"ả":"","ụ":"[\"11690\",\"11681\"]","à":null,"ó":null,"ỏ":"[]","è":"[]","ị":null,"ế":null,"ứ":null,"v":null,"ở":"60944","ệ":null,"ờ":"1680238889","ấ":"1680238889","ậ":"1694924579","x":"122","_cậpNhật":1716407674,"dữLiệu":{"tậpTin":[]}},"1427613":{"558579":"{\"ậ\":[320460]}","558580":"","558581":"","558582":"l50_t50_tt","558583":"1","558659":"tac","558711":"","559906":"apcal","1218720":"w50","1602842":"{\"à\":[\"60944\"]}","2786632":"banner","i":"1427613","sởHữu":"60944","khởiTạo":"1680266675","_cậpNhật":1716407674},"1466389":{"558579":"{\"ậ\":[\"346709\"]}","558580":"","558581":"https:\/\/apcal.hanu.edu.vn\/","558582":"l50_t50_tt","558583":"1","558659":"tac","558711":"","559906":"apcal","1218720":"w50","1602842":"{\"à\":[\"60944\"]}","2786632":"banner","5272264":"","5479240":"","5479529":"","5479530":"","i":"1466389","sởHữu":"60944","khởiTạo":"1689304463","_cậpNhật":1716407674}},"idXửLý":["80f67c15d03f78d5f8d82396c9affda5","8178b8ab604823be5e779f46d16143b7","d2bf2b619b5b6a6dca5b0fbbc0ea2520","8c5fb530a70eebdb8c4c37b76210f8d5"],"phânLoại":{"a2662fb06842e1acd65bccbe40b85dfa":["1427613","1466389"],"bàiViết":["119730","119731"]},"xửLý":{"a2662fb06842e1acd65bccbe40b85dfa":["80f67c15d03f78d5f8d82396c9affda5"],"bàiViết":["8178b8ab604823be5e779f46d16143b7","d2bf2b619b5b6a6dca5b0fbbc0ea2520","8c5fb530a70eebdb8c4c37b76210f8d5"]},"time":1716407674})
+													CẦN.db(["chuyênMục."+ụTổng, "chuyênLực."+ụTổng, "bảng."+md5HT], function(){
+														dữLiệu.bỏQua(["bàiLực.0","bàiTrữ.0","tàiKhoản.0","địnhNghĩa.0"],!là("U"));
+														if($.isFunction(fn)){
+															fn();
+														} else if(là("U")){
+															tôi.tạoQuyền(true,vàoURL);
+														} else {
+															vàoURL();
+														}
+													})
+												})
+											},
+											đăngNhậpXong = function(fn){
+												lấyCache(function(){
+													$.isFunction(fn)?fn():là("U")?vàoQuảnTrị():vàoURL();
+												});
+											},
+											vàoQuảnTrị = function(D) {
+                                                if (!là("U"))
+                                                    return bốCục.khungĐăngNhập(D);
+												quảnTrị.bảng(428);
+											},
+											cacheTrangChủ = function(b){
+												!empty(data.xửLýCache)&&cache.xửLý("/createcache.php", data.xửLýCache, {
+													id:"dlBVCache",
+													reload:!!b, // TRUE → Reload lại trang
+												});
+											},
+											đăngKýTK = function(){
+												đăngKý.ngườiDùng();
+												// vàoURL("/register-account");
+											};
+	
+										// Mảng chứa các xử lý cần cache
+										data["xửLýCache"] = $.gộp([
+											// Cache slide banner
+											{
+												ố:md5Slide,
+												d:{thuộcTính:{558583:1,559906:"apcal",2786632:["!!","banner","|"]}},
+												ọ:"đốiTượng", // Loại tải -> đối tượng
+											},
+											{
+												ố:"bàiViết", // ID bảng
+												d:{thuộcTính:{ụ:[ụMĐ,"~|"],p:1},giớiHạn:1,sắpXếp:"ấ-"},  // Data tải đối tượng
+												ọ:"đốiTượng", // Loại tải -> đối tượng
+											},
+											{
+												ố:"bàiViết", // ID bảng
+												d:{thuộcTính:{ụ:[11681,"~|"],p:1},giớiHạn:1,sắpXếp:"ấ-"},  // Data tải đối tượng
+												ọ:"đốiTượng", // Loại tải -> đối tượng
+											},
+											{
+												ố:"bàiViết", // ID bảng
+												d:{thuộcTính:{ụ:[11690,"~|"],p:1},giớiHạn:1,sắpXếp:"ấ-"},  // Data tải đối tượng
+												ọ:"đốiTượng", // Loại tải -> đối tượng
+											},
+										],[11680,11689].map(function(á){
+											return (config("chuyênLực."+á)||[]).map(function(à){
+												return {
+													ố:"bàiViết", // ID bảng
+													d:{thuộcTính:{p:1,ụ:[à,"~|"]},sắpXếp:"ấ+"},  // Data tải đối tượng
+													ọ:"đốiTượng", // Loại tải -> đối tượng
+												}
+											})
+										}).lọc());
+										config({
+											ụTổng:ảụTổng,
+											lưuCache:function(){
+												khởiTạoCache(true);
+											},
+											cacheTrangChủ:cacheTrangChủ,
+											lấyCache:lấyCache,
+											đăngNhậpXong:đăngNhậpXong,
+											đăngKý:đăngKýTK
+										});
+										// Tạo cache xử lý trang chủ nếu chưa từng có cache
+										chưaCóCache&&cacheTrangChủ();
+	
+										// Tạo sự kiện bấm vào thẻ có class "logoChân" → Làm mới cache chuyên mục - chuyên lực
+										$(document).on("taphold", ".logoChân", function(){
+											chờ(true);
+											khởiTạoCache(true);
+										});
+	
+										// Tạo sự kiện bấm vào thẻ có class "logoĐầu" → Làm mới cache bài viết trang chủ
+										$(document).on("taphold", ".logoTrên", function(){
+											cacheTrangChủ(true);
+										});
+										var w;
+
+
+										// TẠO KHUNG CẤU TRÚC CHÍNH CHO WEB (Người code chủ động bố cục phù hợp với website)
+										W.empty().append(
+											// Bố cục mẫu
+
+											// Phần đầu  h1v
+											$("<div>", {class: "đầu"}).append(
+												// Header
+												w = $("<div>", {class: "thanhĐầu z5 w1 dbi tl0 cf"}).append(
+													$("<div>", {class: "container plr15 thanhMenu",classM:"-plr50"}).append(
+														$("<div>", {class: "col-xs-12"}).append(
+															
+															// Menu PC
+															!là("M")&&bốCục.thanhMenu({
+																ả:[logo, "/apcal_img/sponsor1.png", "/apcal_img/logo3.png"], // "/apcal_img/sponsor3.png", // logo, // Ảnh logo. Mặc định ảnh logo hệ thống
+																gạch: false,
+																container: false, // Bỏ class container
+																bo: "-bg1g1,-pf,-bg1,-bar1,-bb1,-b1sb,-bóng,-oh" + (là("W") ? "" : "-pr,ps,t0,ce"),
+																sửaLớp: {
+																	oh: "-oh",
+																	ov: "-plr10,-bgcf",
+																	ptb7: "-ptb7",
+																	trên: "ttu,-fwb,-fs08,cf,fs12",
+																	dưới: "-fwb,-ffb,-fs085,-ttu,cf",
+																	nút: "-wh1,-bg1,-cf,h1,z7,-z1,-w70",
+																	"pa.w50": "dn",
+																	"⁄": "dn",
+																	chứaNút: "ptb15 -plr15 df aic -jcfe jcsb h1",
+																	wh50: "logoTrên,mtb5,-wh64",
+																	logo: "-ml5 df aic",
+																	// logoTrên: "-mlr5",
+																	"logo_0": "-mr5",
+																	// "logoTrên": "w100 -mlr5 h50p,-wh50 dn-xs",
+																	"logo_1": "w100 -mlr5 h50p,-wh50",
+																	"logo_2": "-mlr5 -wh50 w50p h60",
+																	"logo div":"-shineh -bấmĐc"
+																},
+																tiêuĐề:false,
+																// {
+																// 	trên:"APCAL"
+																// },
+																menu: {
+																	id: menuChính,
+																	koĐổi:["register","ý"],
+																	// sẵn: ẵ,
+																	bọc: "ptb15 -fwb plr10 -dib",
+																	bo: "-fwb",
+																	boChọn: "gạchChân, c0, h2a, w0a, w50ha, l50a, b-5a, ttxa, bg2a, -fwb, ttu, -pa15, -fs08",
+																	chọn: "-w0a,w50a",
+																	linkKhác: linkKhác,
+																	tênKhác:tênKhác,
+																	// tip: data.tips,
+																	menuCon:{
+																		ý:["par","pre"]
+																	},
+																	iconHome: true,
+																	// Hiển thị icon home
+																	trangChủ: 0,
+																	// ID đại diện trang chủ				   
+																	sửaLớp: {
+																		chứa: "jcsb,-jcfe,aic,h1,"+(lÀ("ESLG",{ratio:1})?"fs075":"fs085"),
+																		menuChính:"-plr10, plr7",
+																		"menuChính .0":"-pa10",
+																		cyh: "-cyh,cl1h,c0",
+																		ngônNgữ:"pr0",
+																		// thôngTinTàiKhoản:"-pl10",
+																		// cyh: "-cyh,cl1h",
+																		// "menuChính .cl1h.0":"-cl1h"
+																	},
+																	// ngônNgữ:true
+																	// xong: f
+																},
+																đăngNhập:{
+																	thôngBáo:apcal.cấuHìnhThôngBáo(), // nút thông báo có sẵn sau khi login thành công
+																	tinNhắn:true, // nút tin nhắn có sẵn sau khi login thành công
+																	sửaLớp:{
+																		"đăngNhập": "-bg1a -ptb15 -plr10 -cl1 ttu -tduh bgph bc0 cfh bc2h bw1 bss ptb7 plr15 bra5 c0 wsn bấmĐc shineh",
+																		"đăngKý": "bgp -bgco ptb7 -pa5 -bra10 bra5 -ptb10 ptb7 bss bc2 bw1 plr15 bw1 bss bc2h"
+																	},
+
+																	// đăngKý:{
+																		// chọn: ["par", "pre", "reviewer"].map(function(á){
+																		// 	return {
+																		// 		ê:tênKhác[á],
+																		// 		i:"login",
+																		// 		// ô:"", // Ghi chú
+																		// 		f:function(){
+																		// 			vàoURL(linkKhác[á]);
+																		// 		}
+																		// 	}
+																		// }),
+																		// chọn: [
+																		// 	{
+																		// 		ê: tênKhác.par,
+																		// 		i: "login",
+																		// 		f: function(){
+																		// 			vàoURL(linkKhác.par)
+																		// 		}
+																		// 	}
+																		// ],
+																		// f: đăngKýTK,
+																	// },
+																	// đăngKý:{
+																	// 	f:function(){ // Bấm vào nút register
+																	// 		vàoURL(linkKhác.par);
+																	// 	},
+																	// 	tàiKhoản:true, // Chạy function đăngKý.ngườiDùng khi bấm vào nút signup trên khung đăng nhập
+																	// },
+
+																	nút: [ // Các nút cần hiển thị thêm sau khi đăng nhập thành công
+																		// {
+																		// 	i: "registration",
+																		// 	icon: "how_to_reg",
+																		// 	tip: dịch("registration"),
+																		// 	bo: "bgco bgcph",
+																		// 	f: function(){
+																		// 		// vàoURL("/participant")
+																		// 		// $(this).chọn(
+																		// 		// 	["par","pre","reviewer"].map(function(á){
+																		// 		// 		return {
+																		// 		// 			ê:tênKhác[á],
+																		// 		// 			i:"login",
+																		// 		// 			// ô:"", // Ghi chú
+																		// 		// 			f: function(){
+																		// 		// 				vàoURL(linkKhác[á])
+																		// 		// 			}
+																		// 		// 		}
+																		// 		// 	})
+																		// 		// )
+																		// 	}
+																		// 	// hiện: true,
+																		// 	// chọn:["par","pre"].map(function(á){
+																		// 	// 	return {
+																		// 	// 		ê:tênKhác[á],
+																		// 	// 		i:"login",
+																		// 	// 		// ô:"", // Ghi chú
+																		// 	// 		f: function(){
+																		// 	// 			vàoURL(linkKhác[á])
+																		// 	// 		}
+																		// 	// 	}
+																		// 	// })
+																		// },
+																		// {
+																		// 	i:"tinNhắn",
+																		// 	icon:"question_answer",
+																		// 	tip: dịch("message"),
+																		// 	bo: "bgcpl2 bgcph",
+																		// 	// hiện: false
+																		// 	hiện:function(){
+																		// 		return là("U")
+																		// 	},
+																		// },
+																		// {
+																		// 	i:"thôngBáo",
+																		// 	icon:"notifications",
+																		// 	tip: dịch("noti"),
+																		// 	bo: "bgco1 bgcph",
+																		// 	// hiện: false
+																		// 	hiện:function(){
+																		// 		return là("U")
+																		// 	},
+																		// },
+																	],
+																	// function(){
+																	// 	$(this).chọn(["par","pre"].map(function(á){
+																	// 		return {
+																	// 			ê:tênKhác[á],
+																	// 			i:"login",
+																	// 			ô:"", // Ghi chú
+																	// 			f:function(){
+																	// 				vàoURL(linkKhác[á])
+																	// 			}
+																	// 		}
+																	// 	}),{
+																	// 		tip:false
+																	// 	})
+																	// },
+																	quảnTrị: {
+																		bảng:428
+																	},
+																	// bo:""
+																},
+																menuGiả: {
+																	treo: false,
+																	e:w,
+																	// boCuộn: "-bgcf,c0", // +không cuộn, -khi cuộn
+																	cuộn: function(st, ã) {
+																		// if (st > 0) {
+																		// 	w.find("#0.menuChính").find(".iIcon").sửaLớp("-cl1h,cfh,cl1");
+																		// }
+
+																		// if (!st || st < 25) {
+																		// 	w.find("#0.menuChính").find(".iIcon").sửaLớp("cl1h,-cfh,-cl1");
+																		// }
+																	}
+																},
+																xong: function(){
+																	// cl("############# kkkkk", $(this))
+																	$(this).find(".thôngTinTàiKhoản .đăngNhập .đăngKý").click(function(){
+																		vàoURL("/participant")
+																	})
+																}
+															}),
+
+															// Menu Mobile
+															là("M")&&bốCục.thanhMenuM({
+																ê:false,
+																// { // Nếu giá trị FALSE → K hiển thị tên
+																// 	trên:"", // Tên ở trên. Nếu giá trị FALSE → K hiển thị tên trên
+																// 	dưới:"", // Tên ở dưới. Nếu giá trị FALSE → K hiển thị tên dưới
+																// },
+																// bo:"-dn-md -bg1 -ptb5 bgcf pf t0 l0 r0 z7",
+																bo:"-dn-md -bg1 -ptb5 bgcf",
+																logo:[logo, "/apcal_img/sponsor1.png", "/apcal_img/logo3.png"], // logo, // Link logo
+																sửaLớp: {
+																	"logo:last": "w60p h50p -ml5 -wh32",
+																	// "menuMobile": "-bg1 -ptb5 bóng bgcf",
+																	"điềuHướng div":"c0",
+																	"thanhChính": "bgcf -plr15",
+																	"thanhChính .logo:last": "-w50p -h60 wh30 -mlr5",
+																	"thanhChính .logo:nth-child(2)": "-mlr5",
+																	"thanhChính .logo:first": "wh28 -wh32",
+																	trangChủ:"df,aic,fs2,c0"
+																},
+																menuMobile:{ // Tạo danh sách menu mobile thì thêm key này, không tạo thì bỏ qua
+																	dsỤ:menuChính, // Danh sách chuyên mục menu chính
+																	// phụ:[], // Danh sách chuyên mục menu phụ
+																	// phụ1:{}, // Danh sách menu phụ cần hiển thị thay thế config("chuyênLực."+i) -> dạng object với key là id của chuyên mục cần đổi, value là object chứa ê là tên và u là url 
+																	linkKhác:linkKhác, // Object với keys là ID chuyên mục, value là url
+																	tênKhác:tênKhác,
+																	// ngônNgữ:true,
+																	// webKhác:{ // Tạo nút bấm vào trang web khác -> Có thể là object hoặc array chứa các object
+																	// 	ê:"", // Tên
+																	// 	u:"", // URL
+																	// 	icon:"public",
+																	// 	// bo:"", // Class sửa lớp
+																	// },
+																	// webKhác:["par","pre"].map(function(á){
+																	// 		return {
+																	// 			ê:tênKhác[á],
+																	// 			icon:"login",
+																	// 			// ô:"", // Ghi chú
+																	// 			u:linkKhác[á]
+																	// 		}
+																	// 	})
+																	// [
+																	//     { // Tạo nút bấm vào trang web khác -> Có thể là object hoặc array chứa các object
+																	//         ê:"", // Tên
+																	//         u:"", // URL
+																	//         icon:"public",
+																	//         // bo:"", // Class sửa lớp
+																	//     },
+																	// ]
+																},
+																
+																nút:[
+																	{
+																		bảng: 428,
+																		hiện:function(){
+																			return là("U")
+																		},
+																	},
+																	{
+																		i:"tinNhắn",
+																		icon:"question_answer",
+																		// hiện: false
+																		hiện:function(){
+																			return là("U")
+																		},
+																	},
+																	{
+																		i:"thôngBáo",
+																		icon:"notifications",
+																		ấ:apcal.cấuHìnhThôngBáo(), // Cấu hình nút thông báo
+																		// hiện: false
+																		hiện:function(){
+																			return là("U")
+																		},
+																	},
+																	{
+																		i: "đăngKý1",
+																		icon: "how_to_reg",
+																		hiện: true,
+																		tiêuĐề: "Registration",
+																		hiện: true,
+																		// hiện: function(){
+																		// 	return !là("U")
+																		// },
+																		chọn:["par","pre"].map(function(á){
+																			return {
+																				ê:tênKhác[á],
+																				// icon
+																				// i:"login",
+																				// ô:"", // Ghi chú
+																				f: function(){
+																					vàoURL(linkKhác[á])
+																				}
+																			}
+																		})
+																		// f: function(){
+																		// 	$(this).chọn(
+																		// 		["par","pre"].map(function(á){
+																		// 			return {
+																		// 				ê:tênKhác[á],
+																		// 				icon:"login",
+																		// 				// ô:"", // Ghi chú
+																		// 				// u:linkKhác[á]
+																		// 				f: function(){
+																		// 					vàoURL(linkKhác[á])
+																		// 				}
+																		// 			}
+																		// 		})
+																		// 	)
+																		// }
+																		// chọn:["par","pre"].map(function(á){
+																		// 	return {
+																		// 		ê:tênKhác[á],
+																		// 		icon:"login",
+																		// 		// ô:"", // Ghi chú
+																		// 		u:linkKhác[á]
+																		// 	}
+																		// })
+																	},
+																	{
+																		i: "đăngNhập",
+																		icon: "login",
+																		hiện:function(){
+																			return !là("U")
+																		},
+																	}
+																].lọc(),
+																// đăngNhập: {
+																// 	đăngXuất: đăngNhậpXong,
+																// 	sửaLớp:{
+																// 		"đăngNhập": "-bg1a -ptb15 -plr10 -cl1 ttu -tduh bgph bc0 cfh bc2h bw1 bss pa10 bra5 c0 wsn bấmĐc shineh"
+																// 	},
+																// 	đăngNhập:{
+																// 		đăngKý:đăngKýTK,
+																// 	},
+																// 	quảnTrị: {
+																// 		bảng:428
+																// 	},
+																// 	f: function(ả) {
+																// 		if (ả)
+																// 			đăngNhậpXong();
+																// 	}
+																// },
+																đăngNhập:{
+																	đăngKý:{
+																		chọn:["par","pre"].map(function(á){
+																			return {
+																				ê:tênKhác[á],
+																				icon:"login",
+																				// ô:"", // Ghi chú
+																				u:linkKhác[á]
+																			}
+																		}),
+																		f:đăngKýTK,
+																	},
+																	đăngXuất:đăngNhậpXong,
+																	f:function(ả){
+																		if(ả)
+																			đăngNhậpXong();
+																	},
+																	// hiện:true
+																	quảnTrị:{
+																		bảng: "428"
+																	},
+																},
+																
+																// tìmKiếm:{
+																// 	ụ:ụTổng, // Chuyên mục tìm kiếm (Truyền vào chuyên mục tổng nếu muốn tìm kiếm tất cả chuyên mục trên trang web, hoặc truyền vào mảng các chuyên mục cần tìm kiếm)
+																// 	// giớiHạn:20, // Với các website khác bỏ qua key này (Mặc định tìm kiếm giới hạn 20 bài viết → Giảm thiểu lượng bài viết phải tải dữ liệu → Tăng tốc độ hiển thị)
+																// 	// cộts:[], // TRUE → Tìm tất cả các thuộc tính OR chỉ tìm trong tiêu đề
+																// 	// từKhóa:false, // TRUE → Tìm theo key từKhóa trong data gửi lên | FALSE → Tìm kiếm trong tiêu đề có chứa từ khóa cần tìm theo dạng "~'%từ khóa%'"
+																// },
+																menuGiả: {
+																	treo:false,
+																	e:w,
+																	boCuộn: "", // +không cuộn, -khi cuộn
+																	cuộn: function(st, ã) {
+																		// if (st > 0) {
+																		// 	// w.find("#0.menuChính").find(".iIcon").sửaLớp("-cl1h,cfh,cl1");
+																		// }
+
+																		// if (!st || st < 25) {
+																		// 	// w.find("#0.menuChính").find(".iIcon").sửaLớp("cl1h,-cfh,-cl1");
+																		// }
+																	}
+																},
+																vịTrí:{
+																	"trái .df.jcfs":["trangChủ"]
+																},
+																xong:function(){
+																	var M = $(this);
+																	// w.find(".đăngKý1").after(M.find(".đăngNhập")),
+																	// w.find(".thanhChính div:first").append(M.find(".trangChủ"),/* M.find(".tìmKiếm")*/).sửaLớp("df aic fs2")
+
+																}
+															}),
+														),
+													),
+												),
+											),
+											// Thân  ptb25
+											thân = $("<div>", {id:"thân", class:"thân hmn5 oh"}).append(
+												sửLý.cheỘ(true)
+											),
+											// Chân
+											$("<div>", {class: "container ptb50 plr15 plr15-xs fs11 pr", classM:"-plr50,plr25"}).append(
+												$("<img>",{
+													src: "/apcal_img/răng-cưa.png",
+													class: "pa r20 t0"
+												}),
+												// Thông tin
+												$("<div>", {class: "df aic jcsb du fww-xs"}).append(
+													// !lÀ("XS")&&
+													$("<div>", {class: "menu df du tac-xs fww-x fs11"}).append(
+														bốCục.menu(menuChính.slice(1),{
+															cấp:1,
+															lớp:"-fwb",
+															sửaLớp:$.gộp({
+																ttu:"-ttu",
+																"menuChính a":"-pa15,pa10",
+															},lÀ("XS")?{
+																dfnc:"flex,jcsc,-dfnc,-jcsb",
+															}:{
+																"menuChính:first a":"pl0",
+															}),
+															linkKhác:linkKhác,
+															tênKhác:tênKhác,
+														})
+													),
+													$("<div>", {class:"tac-xs pt15-xs fsi df aic fs09"}).sửaLớp(lÀ("XS")&&"-df,-aic").append(
+														bốCục.copyright(2023).sửaLớp("logoChân"),
+														bốCục.power().sửaLớp("ml02,ma0-xs,pt5-xs"),
+													)
+												)
+											)
+										);
+	
+										// Tạo ngày giờ đếm ngược
+										// var endDate = new Date("11/28/2023 00:00:00").getTime();
+										function countdown(){
+											var endDate = new Date("11/28/2023")/1000; // 11/23/2023 = tháng/ngày/năm
+											// check = 
+											chờ(function(){
+												var n = now().u; // new Date(): lấy ra thời gian hiện tại, new Date(a): khi new Date() mà truyền vào trong Date() tham số a thì sẽ lấy ra ngày/giờ với giá trị = a
+													distance = endDate - n > 0 ? endDate - n : 0; 
+													day = Mf(distance / (24*60*60*1000));
+													hour = Mf((distance % (24*60*60*1000)) / (60* 60*1000));
+													minute = Mf((distance % (60* 60*1000)) / (60*1000));
+													seconds = Mf((distance % (60*1000)) / 1000);
+												// cl("khoảng cách", endDate, n, distance);
+												thân.find(".ngày").text(zeroPad(day||0, 2));
+												thân.find(".giờ").text(zeroPad(hour||0, 2));
+												thân.find(".phút").text(zeroPad(minute||0, 2));
+												thân.find(".giây").text(zeroPad(seconds||0, 2));
+												if(distance <= 1000){
+													chờ("hủy", "countdown");
+													return false;
+												}
+												// if(distance <= 1000){
+												// 	clearInterval(check);
+												// }
+											}, 1000, "countdown", true, true);
+										};
+										// countdown();
+										function chạySố(){
+											var chờHiện = function(){
+												var ờ = $(".chờHiện");
+												if (ờ.length) {
+													ờ.filter(function(){ // Tìm tất cả các element thỏa mãn vị trí cuộn xác định -> Gọi sự kiện hiện thị và đếm số
+														var x = $(this),
+															w = $(window),
+															á = x.offset().top, // Vị trí của thẻ cần hiện
+															à = w.scrollTop(), // vị trí cuộn
+															ả = w.height(), // Chiều cao window
+															ã = x.outerHeight() || x.parent().outerHeight(); // Chiều cao thẻ cần hiện
+														ã = ã*(ã>ả/2 ? .5 : 1.5);
+														return á-à<ả*.7 || á+ã<à+ả; // Điều kiện return các element thỏa mãn vị trí bắt đầu thực hiện hiển thị và đếm
+													}).sửaLớp("-chờHiện").chờGọi("chờHiện",345,function(){
+														$(this).off("chờHiện");
+													});
+												} else {
+													$(window).off("scroll",chờHiện);
+												}
+											};
+											$(window).off("scroll",chờHiện).on("scroll",chờHiện); // Tách sự kiện để off khi cần
+										}
+										// chạySố();
+										
+										// Scroll Gốc
+										function scroll1(){
+											$(window).scroll(function(){ //Kiểm tra sự kiện scroll trên window, khi window được sroll thì sẽ làm việc ở trong function
+												var toTop = $(".hộpSố").offset().top, //Lấy ra vị trí/chiều cao của thẻ Giới thiệu cách vị trí Top
+													cuộnĐc = $(document).scrollTop(), // Vd: nếu cuộn đến vị trí a, thì lấy ra vị trí tính từ top đến vị trí a ,,,,, (=window.scrollY)
+													cao = $(".menu").height(); //Lấy ra chiều cao của thẻ được chọn
+												// cl("#LOGGGGGGGGG", toTop, cuộnĐc);
+												if(cuộnĐc >= toTop){
+													var item = $(".item");
+													item.sửaLớp("speaker")
+												};
+											});
+										}
+										scroll1();
+										var trangChủ = function(){
+											var tàiTrợ = [
+													{
+														src: "/apcal_img/sponsor1.png",
+														class: "bgpl"
+													},
+													{
+														src: "/apcal_img/sponsor2.png",
+														class: "bgpc" 
+													},
+													{
+														src: "/apcal_img/logo_hanu.png",
+														class: "bgpr spon-sm" 
+													},
+													{
+														src: "/apcal_img/sponsor4.png",
+														class: "bgpr spon-sm" 
+													},
+													{
+														src: "/apcal_img/sponsor5.png",
+														class: "bgpl" 
+													},
+													{
+														src: "/apcal_img/sponsor6.png",
+														class: "bgpc" 
+													},
+													{
+														src: "/apcal_img/sponsor7.png",
+														class: "bgpr spon-sm" 
+													},
+													{
+														src: "/apcal_img/sponsor8.png",
+														class: "bgpr spon-sm" 
+													},
+												],
+												ngày;
+											CẦN.db(md5HT+"."+iHĐ, function(){
+												var hộiThảo = config(md5HT+"."+iHĐ)||{},
+													lịchTrình = Jd(config(md5HT+"."+iHĐ+".4974028")||[]),
+													cùngNgày = lịchTrình.nhóm("ngày"),
+													mảngNgày = Object.keys(cùngNgày);
+												if(hộiThảo[4836516])
+													endDate = số(hộiThảo[4836516])*1000;
+												// cl("#LOGGGGG Lịch", hộiThảo, lịchTrình);
+
+												// Code giao diện web trang chủ
+												dữLiệu.bỏQua(["địnhNghĩa.0"],false);
+												function noti(){
+													// phầnMềm.thôngBáo("đồngÝ",{
+													// 	đồngÝ: function(){
+													// 		vàoURL("/presenter")
+													// 	},
+													// 	từChối:function(){
+													// 		return bốCục.khungĐăngNhập(function (s) {
+													// 			if (s)
+													// 				$.isFunction(config("đăngNhậpXong")) ? config("đăngNhậpXong")(apcal.cậpNhật) : apcal.cậpNhật();
+													// 			// s&&R();
+													// 		});
+													// 	},
+													// 	dịch:[dịch("register"), dịch("login")],
+													// 	môTả: $("<div>", {class: "tac"}).append(
+													// 		$("<span>",{text: {
+													// 			en: "You are not logged in. Please ",
+													// 			vi: "Bạn chưa đăng nhập tài khoản. Vui lòng "
+													// 		}[ôữ], class: "tac"}),
+													// 		$("<span>", {class: "xanhc fwb mlr2", text: dịch("login")}),
+													// 		$("<span>", {class: "", text: {en:"or", vi: "hoặc"}[ôữ], class: "mlr2"}),
+													// 		$("<span>", {class: "cl2 fwb mlr2", text: dịch("register")}),
+													// 		$("<span>",{text: {
+													// 			en: " an account to submit your Abstract!",
+													// 			vi: " để gửi Tóm tắt!"
+													// 		}[ôữ], class: ""}),
+													// 	),
+													// 	màu: "cl2",
+													// 	icon: "notifications",
+													// 	nền: "bgcg3",
+													// 	tiêuĐề: dịch("noti"),
+													// 	nútTắt: true,
+													// 	hide: true,
+													// 	sửaLớp:{
+													// 		"nút": "-jcsb jcsc -mt25 mtb15",
+													// 		"nút div:first": "-bra15 -bgc9 bra5 xanh bóng fwb fs12 w25",
+													// 		"nút div:last": "-bra15 -bgcg3 bra5 bg2 bóng fwb fs12 w25"
+													// 	}
+													// })
+													phầnMềm.thôngBáo("lưuÝ", { 
+														tiêuĐề: "Notification",
+														icon: "notifications",
+														dịch: "Close",
+														màu: "cl2",
+														nền: "bg2",
+														môTả: "<span>Deadline for abstract submission is <span class='cl2 fwb'>June 30th, 2023</span> The abstract submission period has expired. If you are interested in the APCAL HANU Inernational Conference, please register for participation below!</span>",
+														đổi: function(){
+															// vàoURL("/participant")
+														}
+													})
+												};
+												thân.empty().append(
+													// Banner
+													$("<div>", {class:"pr"}).append( // style: "background-image: url('/apcal_img/banner.png')", 
+														$("<div>", {class: "bgsc bgpc pb31 pb169-xs pr bgcf"}).xờLai({
+															vi:[1427613],
+															en:[1466389],
+														}[ôữ],{
+															// w:"apcal",
+															cỡ:"pb31,pb169-xs",
+															// onCached:function(){
+															// 	cl("LOG ############# cache banner");
+															// 	chờ(cacheTrangChủ, 5000, "cacheTrangChủ");
+															// }
+														}),
+														// Đếm số
+														$("<div>", {class: "container pr"}).append(
+															$("<div>", {class: "pai t1 l50 tt df aic bóng ptb15 ptb5-xs bra25 jcsc col-xs-8 col-md-8 col-lg-5 z5 bgb cl3", classM: "-bgp bgcf -cl3 c0 -bra25 bra15"}).append( // bgcf c0
+																[
+																	{tên:"day", class: "ngày"},
+																	{tên:"hour", class: "giờ"},
+																	{tên:"minute", class: "phút"},
+																	{tên:"second", class: "giây"},
+																].map(function(á,à){
+																	return $("<div>", {class: "df"}).append(
+																		$("<div>", {class: "tac"}).append(
+																			$("<div>", {class: "fwb fs25 fs12-xs dib " + á.class, classM:""}),
+																			$("<div>", {class: "o1a ml0a", classM: "fs08", z:ôữ=="en"?"s":ud, text:dịch(á.tên).tênHoa()})
+																		),
+																		// !lÀ("XS")&&à<3&&
+																		$("<div>", {class: "fwb fs2 " + (à==3?"":"mlr25"), text:à==3?"":":", classM: (à==3?"":"mlr10") + " -mlr25 -fs2"})
+																	) 
+																})
+															)
+														)
+													),
+
+													// Thêm khung
+													// $("<a>", {class: "fwb fs14 tac mt100 bấmĐc pa25 bra15 dib cl2 bg1o1 pr l50 ttx bss bc2 bw2 o08h", classM: "-fs14 fs12 -pa25 pa15", href: "https://drive.google.com/file/d/1CuyiaxWrmaKDoJj4T5WDSnW4OPyk-qXX/view?usp=sharing", text: "APCAL-HANU 2023 Tentative Schedule"}),
+													$("<div>", {class:""}).append(
+														$("<div>", {class: "fwb fs13 tac mt100 bấmĐc plr25 ptb15 bra15 dib cl2 bg1o1 pr l50 ttx bss bc2 bw2 o08h", classM: "-fs13 -plr25 pa15 -mt100 mt50", text: "APCAL-HANU 2023 Official Schedule"}).click(function(){
+															CẦN.db("bàiViết.129194",{chờ:true},function(){
+																var á = (config("bàiViết.129194.ộ").isURL(true)||[])[0];
+																if(á)
+																	vàoURL(á);
+															})
+														}),
+													),
+													$("<div>", {class:""}).append(
+														$("<div>", {class: "fwb fs13 tac mt15 bấmĐc plr25 ptb15 bra15 dib cl2 bg1o1 pr l50 ttx bss bc2 bw2 o08h", classM: "-fs13 -plr25 pa15", text: "APCAL-HANU memorable moments"}).click(function(){
+															vàoURL("https://drive.google.com/drive/u/3/folders/16PGvvGial1iZfMgCFjmzv3BTTU3HUZhg");
+														}),
+													),
+
+													// Thêm dòng chữ
+													// $("<div>", {class: "clickMe fwb ttu fs15 w200 mla mra tac mt40 plr25 ptb15 bra15 bấmĐc bg1o2 bss bc2o2 bw2 o08h", classM: "-fs15 -plr25 plr15", text: "Registration"}).click(function(){
+													// 	// vàoURL("/participant")
+													// 	khung(
+													// 		$("<div>", {class: "cl1 pa25 tac", classM: "fs11"}).append(
+													// 			$("<div>", {class: "ttu fwb fs13 lh18", html: "<div>The first APCAL-HANU</div><div>International Conference on Applied Linguistics (APCAL HANU)</div>"}),
+													// 			$("<div>", {text: "Choose an option to continue", class: "mt25 mtb30 fs13 fwb cod"}),
+													// 			$("<div>", {class: "ptb25 df aic jcsc"}).append(
+													// 				[
+													// 					{icon: "apartment", màu: "cod", chữ: "Registration for Gala Dinner\nDeadline: November 15, 2023", f: function(){
+													// 						// quảnTrị.xemẢnh("https://apcal.hanu.edu.vn/apcal_img/Gif2.gif", { // Option của function khung
+													// 						quảnTrị.xemẢnh("https://apcal.hanu.edu.vn/apcal_img/register1.gif", { // Option của function khung
+													// 							// tiêuĐề: "Ảnh điểm danh",
+													// 							trong: "col-xs-10,col-sm-8,col-md-6,col-lg-5",
+													// 							gốc: true,
+													// 							// thanh: false, // Mặc định: FALSE
+													// 						})
+													// 					}},
+													// 					{icon: "school", màu: "cbf", chữ: "Registration for Conference Participation", 
+													// 						f: function(){
+													// 							// vàoURL("/participant")
+													// 							thôngBáo.lưuÝ("T")
+													// 						}
+													// 					}
+													// 				].map(function(á,à){
+													// 					return $("<div>", {class: "mlr30 tac o08h"}).append(
+													// 						$.icon(á.icon+"::vam,fs5,db,mla,mra,cpi,"+á.màu),
+													// 						$("<div>", {class: "fwb bấmĐc fs12 mt10 wspw", text: á.chữ})
+													// 					).click(á.f)
+													// 				})
+													// 			)
+													// 		)
+													// 	, "khungRegister", {
+													// 		// tiêuĐề: "Khung...",
+													// 		ngoài: "",
+													// 		trong: "col-xs-12,col-md-7",
+													// 		thanh: !là("M")?false:true,
+													// 		koTắt: true,
+													// 		onRender: function(){
+													// 			//Khi đang render khung
+													// 		},
+													// 		onShow: function(){
+													// 			//Lúc khung đã hiển thị
+													// 		},
+													// 		onHiding: function(){
+													// 			//Lúc khung đang tắt
+													// 		},
+													// 		onHide: function(){
+													// 			//Lúc đã tắt khung
+													// 		},
+													// 	})
+													// }),
+
+													// Giới thiệu
+													$("<div>", {class: "container plr15 plr15-xs pr pt50 mb50 mt25 pt25-xs ma0-xs", classM:"-plr50,plr25"}).append(
+														$("<img>",{
+															src: "/apcal_img/tam-giác.png",
+															class: "pa r0 t3",
+															classM: "tfs05"
+														}),
+														$("<img>",{
+															src: "/apcal_img/circle.png",
+															class: "pa l10 t20p",
+															classM: "tfs05 l10 t20p"
+														}),
+														// Phần 1
+														$("<div>",{class: "df fwwr-xs giớiThiệu mb50 pb50 pr", classM: "-mb50"}).append(
+															$("<img>",{
+																src: "/apcal_img/vuông.png",
+																class: "pa l0 b0",
+																classM: "-l0 b0 tfs07"
+															}),
+															//Ảnh, video
+															$("<div>",{class: "col-lg-6 col-md-6 col-xs-12"}).append(
+																$("<div>", {class: "pr col-lg-6 col-md-6 col-xs-12"}).append(
+																	$("<img>", {class: "w1 dn-xs", src: "/apcal_img/nền.png"}),
+																	$("<img>", {class: "w1 pa dn-xs", src: "/apcal_img/mic.jpg"}).css({
+																		"top": "15%",
+																		"left": "20%"
+																	}),
+																	$("<div>", {class: "w1 t60 l45 pa mb15", classM: "-t60 -l45 -pa"}).append(
+																		$("<img>", {class: "w1 bấmĐc", src: "/apcal_img/video.png"}),
+																		$("<div>", {class: "pa tròn1 bgp1 circle1 bra50 t50 l50 tt"}).append(
+																			$("<div>", {class: "pa bgp2 tròn2 circle2 bra50 t50 l50 tt"}).append(
+																				$("<div>", {class: "bgp tròn wh32 bra50 t50 l50 tt pa"}).append(
+																					$.icon("play_arrow::vam, cpi, fs18, pa, t50, l50, tt, cf")
+																				).tip("Bấm để xem video").click(function(){
+																					vàoURL("https://www.youtube.com/watch?v=jKKNDLAV0VA&t=66s");
+																					// vàoURL("https://youtu.be/GTWzt5hw0WA");
+																				})
+																			)
+																		)
+																	)
+																)
+															),
+															// Puspose
+															$("<div>",{class: "mt30 ma0-xs col-lg-6 df jcsc fdc pt50 pb25"}).append(
+																$("<div>", {class: ""}).append(
+																	$("<a>", {class: "fwb fs2 lh50 dib cph gạchChân h2a w0a w50ha l50a b5a ttxa bg2a pr", text:dữLiệu.tên(ụMĐ,"ụ"), href:dữLiệu.url(ụMĐ,"ụ")}),
+																	// $("<div>", {class: "mt10 fs11 mb30 lh13 taj", classM:"-mb30 mb15", text:dữLiệu.môTả(ụMĐ,"ụ")}),
+																	$("<div>", {class: "gtcontent lh15 fs11 taj"})
+																)
+															),
+														)
+													),
+
+													// Phần 2: Keynote-Speaker
+													$("<div>", {class: "container"}).append(
+														$("<div>",{class: "col-xs-12 pr dne diễnGiả pt50", classM: "-pt50"}).xửLý("đốiTượng.tải.bàiViết",{d:{thuộcTính:{p:1,ụ:[ụễ,"~|"]},sắpXếp:"ấ+"}},$.gộp({cache:true,onCached:true,bảng:"bàiViết"}),function(s){
+															this.new&&cl("LOG ############# cache diễnGiả",á);
+															this.new&&chờ(cacheTrangChủ,5000,"cacheTrangChủ");
+															var ảế = s||[],
+																ảề = ["bgp","bgb"];
+															// cl("#######LOGGGGGG", ảế)
+															empty(ảế)&&$(this).empty();
+															!empty(ảế)&&$(this).empty().append(
+																$("<img>",{
+																	src: "/apcal_img/circle.png",
+																	class: "pa t0 r0",
+																	classM: "r0 t3 tfs05 -t0 -r-10"
+																}),
+																$("<img>",{
+																	src: "/apcal_img/vuông.png",
+																	class: "pa b40p l-3 dn-xs"
+																}),
+																lÀ("XS") && $("<img>",{
+																	src: "/apcal_img/răng-cưa.png",
+																	class: "pa b40p l-3"
+																}),
+																$("<a>", {text: dữLiệu.tên(ụễ,"ụ"), class: "dib l50 lh50 mb50 ttx cph wsn fs2 fwb gạchChân h2a w0a w50ha l50a b5a ttxa bg2a pr", href: dữLiệu.url(ụễ,"ụ")}),
+																// $("<div>", {class: "mtb15", text: {vi:"Diễn giả tham gia Hội thảo",en:"Speakers of the Conference"}[ôữ]}),
+																// $("<div>", {class: "mt10 tac fs11", text:dữLiệu.môTả(á,"ụ")}),
+																$("<div>", {class: "mb50 pt25 flex jcsc mlr-15", classM: "-mtb50,-mb50 mt40 pb25 pt30 -pt25"}).append(
+																	ảế.map(function(é,è){
+																		lÀ("MD")&&!(è%2)&&!ảề[è]&&(ảề = ảề.reverse());
+																		return $("<div>",{class: "col-xs-6 col-sm-5 col-md-3 pt10 pb50 item t100p plr15", classM: ((è%2==0)?" pl15 pr10 ":" pr15 pl10 ") + "-plr15"})
+																		// .sửaLớp(lÀ("SM")&&!lÀ("XS")&&è>1&&"mb25").sửaLớp(lÀ("XS")&&"mb25,mb0lc")
+																		.append( // mb50 
+																			// $("<a>", {href:dữLiệu.url(é,"ế")}).append(
+																			$("<div>", {class: "bra3 pr bấmĐc bshd pb25 ta5 tfs11h h1 plr5 "+ảề[è%2], classM: ""}).append(
+																				$("<div>", {class: "df jcsc pr"}).append(
+																					$("<div>", {class:"bra50 w40 tty pr bw5 bss bcf", classM: "-w40 w50"}).append(
+																						// $("<div>", {class:"pa tl0 w1 z0 bgrn bgsc bgpc fb1 bra50 pb1"}).ảnh(é,"ế",true),
+																						// $("<div>", {class:"bgso bgpc bgrn bra50 pb1 pr"}).ảnh(é,"ế",true),
+																						$("<div>", {class:"bra50 w1 pb1 bgsc bgrn bgpc"}).ảnh(é,"ế",true),
+																					),
+																				),
+																				$("<div>",{class:"tac cf mt-10 pb10"}).append(
+																					$("<div>", {class:"mtb7 fwb fs12", classM: "-fs13 fs09", text:dữLiệu.tên(é,"ế")}),
+																					$("<div>", {class:"wspw lh15 fs09 plr10", classM: "-plr10 fs07 -fs09", text:dữLiệu.môTả(é,"ế")})
+																					// $("<div>", {text: á.tên, class: "mtb7 fwb fs15"}),
+																					// $("<div>", {class: "", text: á.university})
+																				)
+																			).on("click",function(){
+																				được("xem.bàiViết."+é,1);
+																				khôngGian.bàiViết.xem(é,{
+																					onShow:function(){
+																						$(this).find("#nộiDung").is(":empty")&&$(this).find("#bàiViết").trigger("hiểnThị");
+																					}
+																				});
+																				// cl("LOG #########",config("bàiViết."+é));
+																				// CẦN.db("bàiViết."+é,function(){
+																				// });
+																			})
+																		)
+																	})
+																)
+															)
+														})
+														// )
+													),
+
+													// Workshop
+													$("<div>", {class: "mb50 mt20 ptb25"}).append(
+														$("<div>", {class: "container"}).append(
+															// Tạo slide hiển thị danh sách bài viết
+															// Ví dụ có chuyên mục và danh sách bài viết sau
+															$("<div>", {text:dữLiệu.tên(11729,"ụ"), class: "mb25-xs lh50 dib l50 ttx cph wsn fwb fs2 bấmĐc gạchChân h2a w0a w50ha l50a b5a ttxa bg2a pr"}),
+															$("<div>",{class: "workshop"})
+														)
+													),
+	
+													// Call for proposals
+													$("<div>", {class: "pb50 bgsc bgpc"}).ảnh(config("chuyênMục."+ụẫ+".ì"),"i",1000).append(
+														$("<div>", {class: "container plr15 pt50 cf df fdc jcsc aic"}).append(
+															$("<div>", {text:dữLiệu.tên(ụẫ,"ụ"), class: "mb25-xs lh50 cph wsn fwb cf fs2 bấmĐc gạchChân h2a w0a w50ha l50a b5a ttxa bg2a pr ts01 mb30"}),
+															// $("<div>", {text:dữLiệu.môTả(ụẫ,"ụ"), class: "mt10 mb40 fs11 tac"}),
+															$("<div>", {class: "df jcsc w1 fww-xs mtb25", classM:"-mtb25"}).append(
+																[
+																	{
+																		// tên: "Chủ đề",
+																		tên:"topic",
+																		f: function(){
+																			cuộn(thân.find(".topics"),{
+																				trừ:100
+																			})
+																		}
+																	},
+																	{
+																		tên:"guide",
+																		f: function(){
+																			cuộn(thân.find(".instructions"),{
+																				trừ:100
+																			})
+																		}
+																	},
+																	{
+																		tên:"submission",
+																		f: function(){
+																			// là("U")&&vàoURL("/presenter");
+																			// !là("U")&&noti()
+																			noti()
+																		}
+																	},
+																].map(function(á,à){
+																	return $("<div>",{class: "col-lg-3 col-md-4 col-xs-10 df jcsc mb30"}).append(
+																		$("<div>", {class:  ((à%2==0) ? "bgp" : "bgb") + " dib bshd2 w90 fs09 mlr25 bra5 cf ptb10 fs12 tac bấmĐc shineh", dịch: á.tên}).click(á.f)
+																		// $("<div>", {class:  ((à%2==0) ? "bgp" : "bgb") + " dib bshd2 w90 fs09 mlr25 bra5 cf ptb15 tac bấmĐc shineh", text: á.tên}).click(á.f)
+																	)
+																})
+															)
+														)
+													),
+
+													// Chương trình hội thảo
+													// false&&$("<div>", {class: "container ptb25 plr50 plr15-xs pr", classM:"-plr50,plr25"}).append(
+													// 	$("<img>",{
+													// 		src: "/apcal_img/tam-giác.png",
+													// 		class: "pa l0 t10"
+													// 	}).css({
+													// 		"transform": "rotate(100deg)"
+													// 	}),
+													// 	$("<img>",{
+													// 		src: "/apcal_img/vuông-rỗng.png",
+													// 		class: "pa r0 t20"
+													// 	}).css({
+															
+													// 	}),
+													// 	$("<img>",{
+													// 		src: "/apcal_img/circle.png",
+													// 		class: "pa l0 b0"
+													// 	}).css({
+															
+													// 	}),
+													// 	$("<img>",{
+													// 		src: "/apcal_img/tam-giác.png",
+													// 		class: "pa r0 b0"
+													// 	}).css({
+															
+													// 	}),
+													// 	$("<div>", {class: "tac fs2 cph fwb dib l50 ttx lh50 gạchChân h2a w0a w50ha l50a b5a ttxa bg2a pr bấmĐc", text: {vi:"Chương trình Hội thảo",en:"Seminar program"}[ôữ]}),
+													// 	$("<div>", {class: "mtb15 tac", text: "Chương trình làm việc của Hội thảo"}),
+													// 	$("<div>", {class: "df jcsc aic fwb mtb30"}).append(
+													// 		$.icon("keyboard_arrow_left:vam,fwb,bấmĐc,prev,fs12"),
+													// 		$("<div>",{class: "fs12"}).append(
+													// 			mảngNgày.map(function(á,à){
+													// 				return $("<div>", {class: "mlr15 date dn", text: iDate(á,"DD/MM/YYYY")})
+													// 			})
+													// 		),
+													// 		// $("<div>", {class: "mlr15", text: "01/11/2023"}),
+													// 		$.icon("keyboard_arrow_right:vam,fwb,bấmĐc,next,fs12"),
+													// 	),
+													// 	$("<div>", {
+													// 		class: "df jcsc pr bgso bgrn bgpc hmn5",
+													// 		style: "background-image: url('/apcal_img/ht1.png'), url('/apcal_img/ht2.png')"
+													// 	}).append(
+													// 		$.map(cùngNgày, function(á,à){
+													// 			// cl("loggggg1",á)
+													// 			return $("<div>", {class: "col-lg-6 itemHT dn"}).append(
+													// 				// $("<div>", {text:"Ngày " + iDate(à, "DD/MM/YYYY"), class: "tac mtb15"}),
+													// 				á.map(function(á,à){
+													// 					// cl("loggggg2", á);
+													// 					return $("<div>",{class: "khối df aic jcsc fdc"}).append(
+													// 						$("<div>", {text: á.chủĐề, class: "fwb mtb15 tac"}),
+													// 						(á.lịchTrình).map(function(á,à){
+													// 							return $("<div>", {class: "col-lg-11 col-sm-10 col-md-10 col-xs-12"}).append(
+													// 								$("<div>",{class: "fwb df aic cf w1 pa25 mb25 bshd "+ ((à%2==0)?" bgb":" bgp")}).append(
+													// 									$("<div>", {class: "mr25", text: thờiGian.giờ([á.giờ[0], á.giờ[1]])}), //thờiGian.giờ(a): với a là số giây, fn thực hiện quy đổi giây sang giờ:phút | thờiGian.giờ([a, b]): trả về định dạng "a:00 - b:00"
+													// 									$("<div>", {class: "", text: á.tên})
+													// 								)
+													// 							)
+													// 						})
+													// 					)
+													// 				})
+													// 			)
+													// 		})
+													// 	),
+													// 	$("<div>", {class: "dib l50 ttx pr plr25 ptb7 bra5 bw1 bss bc0 bấmĐc bgph bc2h cfh fwb", text: "Xem thêm"}).click(function(){
+													// 		// $(".phầnHT") && $(".phầnHT").toggle("dn")
+													// 	})
+													// ),
+													// Topic
+													$("<div>", {class: "container pb25 pt50 plr15 plr15-xs pr topics", classM:"-plr50,plr25,-pb25"}).cần("địnhNghĩa.40028",function(){
+														$(this).cần("địnhNghĩa."+dữLiệu.quanHệ("sởHữu.địnhNghĩa","địnhNghĩa.40028"), function(){
+															$(this).empty().append(
+																$("<img>",{
+																	src: "/apcal_img/tam-giác.png",
+																	class: "pa l0 t10",
+																	classM: "tfs05 -t10 t7"
+																}),
+																$("<img>",{
+																	src: "/apcal_img/vuông-rỗng.png",
+																	class: "pa r0 t20",
+																	classM: "tfs05 -t20 t0" 
+																}),
+																$("<img>",{
+																	src: "/apcal_img/circle.png",
+																	class: "pa l0 b0",
+																	classM: "b-5 -b0 tfs05"
+																}),
+																$("<img>",{
+																	src: "/apcal_img/tam-giác.png",
+																	class: "pa r0 b0 dn-xs"
+																}).css({
+																	
+																}),
+																$("<div>", {class: "lh50 tac fs2 cph fwb dib l50 ttx gạchChân h2a w0a w50ha l50a b5a ttxa bg2a pr bấmĐc", text:dữLiệu.tên(40028,"ị")}),
+																// $("<div>", {class: "mt10 mb40 tac fs11", text:dữLiệu.môTả(40028,"ị")}),
+																$("<div>", {class: "df fdc pr bgso bgrn bgpc hmn5 mt30",style: "background-image: url('/apcal_img/ht1.png'), url('/apcal_img/ht2.png')"}).append(
+																	dữLiệu.quanHệ("sởHữu.địnhNghĩa","địnhNghĩa.40028").map(function(á,à){
+																		// cl("LOG", "!!!!!!!!!!!!!!!!", config("địnhNghĩa."+á))
+																		if(config("địnhNghĩa."+á+".loại")=="apcal")
+																		return $("<div>", {class:"col-lg-7 col-md-9 col-sm-10 col-xs-12 mlra fni"}).append(
+																				$("<div>",{class:"cf w1 pa25 mb25 bshd bra5 "+ (à%2?"bgp":"bgb")}).append(
+																					$("<div>", {class:"fwb tac fs11",text:dữLiệu.tên(á,"ị")}),
+																					// $("<div>", {class:"dne pt5",text:dữLiệu.môTả(á,"ị")}),
+																				)
+																			)
+																	})
+																),
+																// $("<div>", {class: "dib l50 ttx pr plr25 ptb7 bra5 bw1 bss bc0 bấmĐc bgph bc2h cfh fwb", text: "Xem thêm"}).click(function(){
+																// 	// $(".phầnHT") && $(".phầnHT").toggle("dn")
+																// })
+															)
+														})
+													}),
+
+													// Tin tức - sự kiện 
+													// false&&!ếẫ&&$("<div>", {class: "m100 mb50 container ptb25 plr50 plr15-xs pr", classM:"-plr50,plr25"}).append(
+													// 	$("<img>",{
+													// 		src: "/apcal_img/vuông.png",
+													// 		class: "pa l0 b0 tfs11"
+													// 	}),
+													// 	$("<img>",{
+													// 		src: "/apcal_img/vuông-rỗng.png",
+													// 		class: "pa r20 b40p tfs11"
+													// 	}),
+													// 	$("<a>", {class: "tac fs2 fwb lh50 cph dib l50 ttx tac gạchChân h2a w0a w50ha l50a b5a ttxa bg2a pr", text: "Tin tức - Sự kiện", href: dữLiệu.url({vi:"11683",en:"11692"}[ôữ], "ụ")}),
+													// 	$("<div>", {class: "mtb15 tac", text: {vi:"Tin tức, sự kiện về Hội thảo",en:"News and events about the Conference"}[ôữ]}),
+													// 	$("<div>", {class: "tb35 tt-sk pr h500 ", classM: "-h500"})
+													// ),
+
+													// Instructions
+													
+													$("<div>", {class:"container instructions ptb25 plr15 plr15-xs pr", classM:"-plr50,plr25,-pb25"}).xửLý("đốiTượng.tải.bàiViết",{d:{thuộcTính:{ụ:[ụẫ,"~|"],p:1},giớiHạn:1,sắpXếp:"ấ-"}}, {cache:true,onCached:true,bảng:"bàiViết"}, function(s){
+														var ếẫ = (s||[])[0];
+													// .cần("bàiViết."+ếẫ,function(){
+														!ếẫ&&$(this).empty();
+														ếẫ&&$(this).empty().append(
+															$("<img>",{
+																src: "/apcal_img/vuông.png",
+																class: "pa l0 t50 tfs11 dn-xs"
+															}),
+															$("<a>", {class: "tac fs2 fwb lh50 cph dib l50 ttx tac gạchChân h2a w0a w50ha l50a b5a ttxa bg2a pr", text:dữLiệu.tên(ếẫ,"ế"), href:dữLiệu.url(ếẫ,"ế")}),
+															// $("<div>", {class: "mt10 tac fs11", text:dữLiệu.môTả(ếẫ,"ế")}),
+															$("<div>", {class:"col-xs-12"}).append(
+																bốCục.bàiViết(ếẫ,{
+																	tiêuĐề:false,
+																	facebook:false,
+																	sửaLớp:{
+																		lh16:"-bb1,-bsda,-bcd"
+																	}
+																})
+															),
+															$("<div>",{class: "col-lg-3 col-md-4 col-xs-8 df jcsc mb30 mlra fni"}).append(
+																$("<div>", {class:"bgp dib bshd2 w90 fs09 mlr25 bra5 cf ptb10 fs12 tac bấmĐc shineh", DỊCH:"submission"}).click(function(){
+																	// vàoURL("/submit")
+																	noti()
+																	// là("U")&&vàoURL("/presenter");
+																	// !là("U")&&noti()
+																	// !là("U")&&khung(
+																	// 	$("<div>", {class: "df fdc aic jcsc"}).append(
+																	// 		$("<div>",{class: "bsdo bb1 bcc ptb15 w1 df jcsc"}).append(
+																	// 			$("<div>", {class: ""}).append(
+																	// 				$("<div>", {
+																	// 					class: "bgso bgrn bgpc wh100",
+																	// 					style: "background-image: url('/apcal_img/notification.png')"
+																	// 				}),
+																	// 				$("<div>",{class: "cl2 fwb fs15", text: dịch("noti")})
+																	// 			),
+																	// 		),
+																	// 		$("<div>",{class: "pa15"}).append(
+																	// 			$("<div>",{
+																	// 				text: {
+																	// 					en: "You are not logged in. Please Login or Register an account to submit your Abstract!",
+																	// 					vi: "Bạn chưa đăng nhập tài khoản. Vui lòng Đăng nhập hoặc Đăng ký tài khoản để gửi Tóm tắt!"
+																	// 				}[ôữ],
+																	// 				class: "ptb15 tac"
+																	// 			}),
+																	// 			$("<div>",{
+																	// 				class: "df aic jcsc"
+																	// 			}).append(
+																	// 				[
+																	// 					{
+																	// 						nút: dịch("login"),
+																	// 						màu: "bg5",
+																	// 						f: function(){
+																	// 							return bốCục.khungĐăngNhập(function (s) {
+																	// 								if (s)
+																	// 									$.isFunction(config("đăngNhậpXong")) ? config("đăngNhậpXong")(apcal.cậpNhật) : apcal.cậpNhật();
+																	// 								// s&&R();
+																	// 							});
+																	// 						}
+																	// 					},
+																	// 					{
+																	// 						nút: dịch("register"),
+																	// 						màu: "bg2",
+																	// 						f: function(){
+																	// 							vàoURL("/presenter")
+																	// 						}
+																	// 					}
+																	// 				].map(function(á,à){
+																	// 					return $("<div>",{class: "bra5 ptb10 plr15 bóng shineh cf fwb mlr10 tac w25 bấmĐc "+á.màu, text: á.nút}).click(á.f)
+																	// 				})
+																	// 			)
+																	// 		)
+																	// 	)
+																	// , "__khung", {
+																	// 	tiêuĐề: false,
+																	// 	ngoài: "",
+																	// 	thanh: false,
+																	// 	trong: "col-xs-12,col-md-4",
+																	// 	koTắt: true,
+																	// 	onRender: function(){
+																	// 		//Khi đang render khung
+																	// 	},
+																	// 	onShow: function(){
+																	// 		//Lúc khung đã hiển thị
+																	// 	},
+																	// 	onHiding: function(){
+																	// 		//Lúc khung đang tắt
+																	// 	},
+																	// 	onHide: function(){
+																	// 		//Lúc đã tắt khung
+																	// 	},
+																	// })
+																})
+															)
+														)
+													}),
+													
+													// Đơn vị tài trợ và đồng hành
+													// (ếẫ?"":"mt100 ")+
+													// $("<div>", {class:"container plr15 plr15-xs mt0-xs", classM:"-plr50,plr25"}).append(
+													// 	$("<div>", {class: "tac fs2 fwb dib ttx l50 cph lh50 gạchChân h2a w0a w50ha l50a b5a ttxa bg2a pr bấmĐc", text: {vi:"Đơn vị Tài trợ và Đồng hành",en:"Sponsors and Partners"}[ôữ]}),
+													// 	// $("<div>", {class: "mtb15", text:dữLiệu.môTả(,"ụ")}),
+													// 	// $("<div>", {class: "mt10 fs11 tac", text: {vi:"Đơn vị Tài trợ và Đồng hành của Hội thảo",en:"Sponsors and partners of the Conference"}[ôữ]}),
+													// 	!lÀ("XS") && $("<div>", {class: "df jcsb fww mt30"}).append(
+													// 		tàiTrợ.map(function(á,à){
+													// 			return $("<div>",{class: "col-xs-6 col-lg-3 mb50 df aic "}).append(
+													// 				// $("<img>", {src: á.src, class: "h60"})
+													// 				$("<div>", {class:"bgso bgrn h60 w1 "+á.class}).css({
+													// 					"background-image":"url("+á.src+")"
+													// 				}),
+													// 			)
+													// 		})
+													// 	),
+													// 	lÀ("XS") && $("<div>").sờLais(tàiTrợ.map(function(á,à){ // Render mảng các slide (Các slide nên sử dụng chung bố cục)
+													// 		return $("<div>",{class: "col-xs-6"}).append(
+													// 			// $("<img>", {src: á.src, class: "h60"})
+													// 			$("<div>", {class:"bgso bgrn h60 w1 bgpc"}).css({
+													// 				"background-image":"url("+á.src+")"
+													// 			}),
+													// 		)
+													// 	}), {
+													// 		bọc: "plr0, ptb15", // Thêm class bọc ngoài thẻ chứa slide (Thẻ có class chứaSờLai)
+													// 		// lớp: "plr15,pt15", // Thêm class thẻ bọc các slide
+													// 		// lặp: true, // Tự động chạy lặp (Chỉ nên sử dụng với dạng hiển thị mỗi ảnh)
+													// 		tựChạy: 8000, // Thời gian tự động chạy
+													// 		xong:function(){
+													// 			// Callback sau khi khởi tạo xong slide
+													// 		}
+													// 	})
+													// )
+												);
+												countdown();
+												// dữLiệu.bỏQua(["địnhNghĩa.0"],false);
+
+
+												// -------- TẢI BÀI VIẾT ------------ //
+
+												// Tải bài viết giới thiệu
+												xửLý("đốiTượng.tải.bàiViết",{
+													d:{
+														thuộcTính: {
+															ụ: [ụMĐ, "~|"],
+															p: 1
+														},
+														giớiHạn: 1,
+														sắpXếp: "ấ-"
+													}
+												}, {cache:true,onCached:true,bảng:"bàiViết"}, function(s){
+													this.new&&cl("LOG ############# cache mục đích");
+													this.new&&chờ(cacheTrangChủ,5000,"cacheTrangChủ");
+													var i = (s||[])[0];
+													// cl("LOG",i,$(".gtcontent"),config("bàiViết."+i+".ộ"))
+													// i&&$(".gtcontent").text(dữLiệu.môTả(i,"ế")).cắtDòng(2);
+													i&&thân.find(".gtcontent").append(
+														config("bàiViết."+i+".ộ")
+													);
+												});
+
+												// Tải bài viết workshop
+												xửLý("đốiTượng.tải.bàiViết",{
+													d: {
+														thuộcTính: {
+															ụ: [ụWS, "~|"],
+															p:1
+														},
+														giớiHạn: 5,
+														sắpXếp: "ấ+"
+													}
+												},{cache:true,onCached:true}, function(s){
+													CẦN.db("bàiViết."+s, function(){
+														$(".workshop").sờLais(s.map(function(i){ // Render mảng các slide (Các slide nên sử dụng chung bố cục)
+														var ữ = config("bàiViết." + i)||{},
+															ô = dữLiệu.môTảNgắn(i,"ế",true);
+														var iYT = ((((((ữ.ộ.toJSON()||{}).ộ||"").match(/\<mp4.+id=["][^\s]+["]/gi)||[])[0]||"").match(/id=["][^\s]+["]/)||[])[0]||"").replace(/id|=|"/g, "");
+														return $("<div>", {class: "col-xs-12"}).append(
+																$("<div>", {class: "h1 pa15 pr"}).append(
+																	$(iYT?"<div>":"<a>", {href: iYT?ud:dữLiệu.url(i,"ế"), class: "wh1 cl1h", title: dữLiệu.tên(i,"ế")}).append(
+																		$("<div>", {class: "pr h1 cb df aic jcsb"}).append(
+																			$("<div>", {class: "col-md-3 col-xs-3"}).append(
+																				$("<div>", {class: "w1 bgrn bgpt bgsc ả"}).each(function(){
+																					iYT ? $(this).sửaLớp("pb169,bra5,bấmĐc").ảnh("https://i.ytimg.com/vi/"+iYT+"/sddefault.jpg", ud, true).append(
+																						$("<div>", {class:"pa l50 t50 tt pa5 bra50 bsi fs16 tac bấmĐc df aic jcsc cf bgc05 transbs cl1l2h", icon:"play_arrow::vam,fs14"}),
+																					).click(function(){
+																						vàoURL("https://www.youtube.com/watch?v="+iYT);
+																					}) : $(this).sửaLớp("pb1,bra50").ảnh(i,"ế",true);
+																				}),
+																			),
+																			$("<div>", {class: "col-md-7 col-xs-7"}).append(
+																				$(iYT?"<a>":"<div>", {href:iYT?dữLiệu.url(i,"ế"):ud, class: "w1 ptb5 wspw"}).append(
+																					$("<div>", {class: "ma0-xs pb5 fwb fs11 mb10", text: dữLiệu.tên(i,"ế")}),
+																					ô&&$("<div>", {class: "fs08-xs lh14 pb10 pt5-xs", html: ô})
+																				)
+																			),
+																		)
+																	)
+																)
+															)
+													}), {
+														// ê: $("<div>", {class:"pr plr15"}).append($("<a>", {class: "fwb ttu", text: dữLiệu.tên(ụ, "ụ"), href: dữLiệu.url(ụ, "ụ")})), // Hiển thị tên chuyên mục
+														// bọc: "bóng,plr0", // Thêm class bọc ngoài thẻ chứa slide (Thẻ có class chứaSờLai)
+														// lớp: "plr15,pt15", // Thêm class thẻ bọc các slide
+														lặp: true, // Tự động chạy lặp (Chỉ nên sử dụng với dạng hiển thị mỗi ảnh)
+														tựChạy: 3000, // Thời gian tự động chạy
+														// thêm:ụ, // Thêm nút xem thêm chuyên mục (Truyền vào id chuyên mục)
+														xong:function(){
+															// Callback sau khi khởi tạo xong slide
+															$(this).find(".chứaSờLai").sửaLớp("-pa15")
+														}
+													})
+													})
+												});
+
+												// Slider Chương trình hội thảo
+												// function slider(){
+												// 	var date = $(".date"), // Lấy ra mảng các thẻ có class "date"
+												// 		itemHT = $(".itemHT"),
+												// 	 	index = 1; // Khai báo biến index ban đầu = 1 ==> hiển thị thẻ với ngày đầu tiên 
+												// 	showDivs(index); // 
+
+												// 	function plusDivs(n) {
+												// 		showDivs(index += n);
+												// 	}
+
+												// 	function showDivs(n) {
+												// 		if (n > date.length) {index = 1}; 
+												// 		if (n < 1) {index = date.length};
+												// 		for (var i = 0; i < date.length; i++) {
+												// 			$($(date)[i]).sửaLớp("-db dn");
+												// 			$($(itemHT)[i]).sửaLớp("-db dn")
+												// 		}
+												// 		$($(date)[index-1]).sửaLớp("db -dn");  
+												// 		$($(itemHT)[index-1]).sửaLớp("db -dn");  
+												// 	}
+
+												// 	$(".prev").click(function(){plusDivs(-1)});
+												// 	$(".next").click(function(){plusDivs(1)});
+												// }
+												// slider();
+
+												Chíp.dịch(ôữ,0,1);
+
+											})
+										};
+										// CẦU HÌNH CÁC ĐƯỜNG DẪN TRÊN WEBSITE
+										$.each({
+
+											// URL xử lý dữ liệu
+											xửLý:"https://cdn.inevn.com/xửLý",
+
+											// Trang chủ
+											0:function(){
+												trangChủ();
+											},
+
+											"presenter": function(){
+												// là("U");
+												!thân.children(":not(.chờHiệnỘ)").length&&trangChủ();
+												apcal.cậpNhật();
+											},
+
+											"participant": function(){
+												!thân.children(":not(.chờHiệnỘ)").length&&trangChủ();
+												đăngKý.hoạtĐộng({
+													hoạtĐộng:iHĐ, // ID hoạt động đăng ký. Sử dụng khi đăng ký mới. Khi xem lại phiếu đăng ký → Bỏ qua key này
+													// thuộcTính:{
+													// 	mở:"", // Ngày mở đăng ký (Timestamp)
+													// 	đóng:"", // Ngày hết hạn đăng ký (Timestamp)
+													// 	giớiHạn:"", // Số lượng đăng ký tối đa
+													// },
+													// đcĐăngKý:function(iạ){return true|false}
+													// cộts:[], // Danh sách các cột hiển thị trên form
+													cộtBỏ: ["4851122", "4839812", "4838449", "4837174"],
+													cấuHình:{ // Bỏ bắt buộc các thông tin mặc dịnh
+														4839811:{
+															bắtBuộc:false
+														},
+														4837175:{
+															bắtBuộc:false
+														},
+													},
+													trùng:{ // Check trùng thông tin
+														thôngBáo:{
+															tiêuĐề:{
+																en:"Registration Complete!"
+															}[$.đệm("ngônNgữ")]||""
+														},
+														môTả:function(á){
+															var I = md5ĐKýHoạtĐộng,
+																àử = config(I+"."+á+".khởiTạo")||now().u,
+																ả = iDate(àử),
+																m = mảng(ả.O.toString()," ")[1],
+																y = ả.f,
+																d = ả.j+({
+																	1:"st",
+																	31:"st",
+																	2:"nd",
+																	3:"rd",
+																}[parseInt(ả.j)]||"th");
+															return {
+																en:"Your APCAL 2023 registration is completed on "+m+" "+d+", "+y+", at "+iDate(àử,"{h}:{m}")
+															}[$.đệm("ngônNgữ")]||"Bạn đã hoàn thành đăng ký Hoạt động <b>"+dữLiệu.tên(iHĐ,md5HoạtĐộng)+"</b> vào lúc <b>"+iDate(àử,"{h}:{m}, {j}/{n}/{f}")+"</b>."
+														},
+													},
+													khung: {
+														bắtBuộc: ["4837170","4837176","4837177"],
+														// lọcData:function(á){
+														// 	// á: Data lấy từ form
+														// 	return á;
+														// },
+														href:"/participant",
+														ề: {en: "REGISTRATION", vi: "ĐĂNG KÝ THAM GIA"}[ôữ], // Tạo tiêu đề form // Có thể truyền theo dạng object với 2 key trên | dưới
+														// mail:function(){
+
+														// },
+														mail:function(D){
+															cl("#LOGGGGG Dữ liệu mail D", D);
+															var í = (có("ậ",Jd(D[4851122]))||[]).map(function(á){
+																	return dữLiệu.url(á,"ậ",true)
+																}),
+																// có("", )
+																// Kiểm tra dữ liệu dựa trên việc đăng ký có đang đăng nhập hay không?
+																// Nếu đăng nhập -> Thuộc tính họ tên trả về tag tài khoản. Lúc này các thuộc tính ngày sinh và giới tính sẽ được lấy qua thông tin của tài khoản
+																à = $.isPlainObject(Jd(D[4837170]))&&có("à.0",Jd(D[4837170])), // có("à.0",Jd(D[4837170])) trả về id tài khoản // có("à", Jd(D[4837170])) = ["id_tài_khoản"] --> trả về mảng chứa id tài khoản  
+																ê = à>0?dữLiệu.tên(à,"à"):D[4837170], // Họ tên
+																b = (à>0?config("tàiKhoản."+à+".b"):D[4839812])||"", // ngày sinh, b: ngày sinh (key b (born) là key lưu giá trị ngày sinh của 1 tài khoản)
+																gender = dữLiệu.giớiTính(à>0?config("tàiKhoản."+à+".ớ"):D[4839811]),
+																đv = $.isPlainObject(Jd(D[4837177])) ? dữLiệu.tên(Je(D[4837177])) : D[4837177]||"";
+																// dữLiệu.giớiTính(1/2/0) // nếu = 0 --> giời tính khác, 1: nam, 2:nữ 
+																// if(D[4839811] == "1"){
+																// 	gender = "Nam"
+																// }else if(D[4839811]=="2"){
+																// 	gender = "Nữ"
+																// }else{
+																// 	gender = "Khác"
+																// }
+															return {
+																ê:"APCAL", //Tên người gửi mail
+																subject:"[APCAL] REGISTRATION CONFIRMATION TO APCAL HANU CONFERENCE", //Tiêu đề gửi mail
+																body: "<div>Dear "+ê+",<o:p></o:p></div><div>Thank you for your interest in<b> APCAL HANU</b><b></b><b> International</b><b></b><b> Conference </b><b></b><b>“Applied\nLinguistics - Transformative Trends in the Asia-Pacific</b><b> Region</b><b>”.<o:p></o:p></b></div><div><b><o:p>&nbsp;</o:p></b></div><div>Your registration for participation in the Conference has been successfully completed.<o:p></o:p></div><div><o:p>&nbsp;</o:p></div><div>We hope you will have a wonderful time at the Conference!<o:p></o:p></div><div>Best regards,<o:p></o:p></div><div><o:p>&nbsp;</o:p></div><div>------------------------------------<o:p></o:p></div><div><b>APCAL HANU International Conference “Applied Linguistics - Transformative Trends in the Asia-Pacific Region”<o:p></o:p></b></div><div>Email: <a href=\"mailto:2023APCALsub@hanu.edu.vn\">2023APCALsub@hanu.edu.vn</a><o:p></o:p></div>\n\nWebsite: <a href="+ location.origin + ">"+ location.origin + "</a></div><div></div><div>This is an automated message. Please do not reply to this email.</div><div>If you have any further queries, contact us via email: 2023APCALsub@hanu.edu.vn for support.</div><div>Best regards!</div>",
+																eChữKý:"",
+																đínhKèm:í,
+																thuộcTính: 4837173
+																// ngườiNhận: D[4837170],
+																// mailNgườiNhận: D[4837176],
+															}
+														},
+														thôngBáoNhanh:{
+															// ok:{ // Thông báo gửi thành công
+															// 	môTả: $("<div>",{html: "Thank you for registering for our Conference . We've sent to <span class=\"fwb cg\">"+tôi.lấy("e")?tôi.lấy("e"):D[4837176]+"</span> a confirmation email. Please check your email for more details!"}), // Nội dung thông báo
+															// 	icon: "task_alt"
+															// },
+															ok: function(D,i){
+																return {
+																	môTả: $("<div>",{html: "Thank you for registering for our Conference. We've sent to <span class=\"fwb cg\">"+D[4837176]+"</span> a confirmation email. Please check your email for more details!"}), // Nội dung thông báo
+																	icon: "task_alt"
+																}
+															},
+															lỗi:{}, // Thông báo gửi không thành công
+															lỗiThôngTin:{} // Thông báo khi nhập sai hoặc thiếu thông tin trên form
+														},
+													},
+													
+													// thôngBáo:{}
+													// tiêuĐề:"Đăng ký tham gia", // Tiêu đề khung
+													nềnTrái: true,
+													nềnTrái:{
+														logo: logo,
+														nền: "url('/apcal_img/nền_abstract3.png')",
+														khốiVuông:false,
+														ảnh: false,
+														nềnChung: "#fff"
+													},
+													sửaLớp:{
+														// "dòngThôngTin":"col-md-6 col-xs-12",
+														"dòngThôngTin .ê":"-col-xs-2,col-xs-12,fwb",
+														"dòngThôngTin .ộ":"-col-xs-10,-pl15,col-xs-12",
+														"cậpNhật": "-pa -l50 -t50 -tt -fr",
+														"hủy": "-fr"
+													}
+												});
+											}, 
+
+											// Xem chuyên mục
+											c:function(i){
+												bốCục.kiểmTra.chuyênMục(i, ụTổng, {
+													ậ:max(ảậ)
+												}, function(d){
+													var ụ = d.ụ,
+														ứ = d.ứ,
+														g = d.g,
+														c = d.c,
+														cha = d.cha,
+														ù = d.ù,
+														điềuHướng = d.điềuHướng,
+														K = $("#khôngGian_"+ụTổng+":not(.gọn)").length||$("[id^=bảng]:not(.gọn)").length||!iA(g,config("chuyênLực."+ụTổng)||[]);
+													if(K){ // Hiện xem giao diện dạng khung
+														// Kiểm tra xem phần website đã có giao diện hay chưa?
+														// !thân.children(":not(.chờHiệnỘ)").length → Hiển thị giao diện nền website
+														khôngGian.chuyênMục.xem(i);
+													} else {
+														W.find("#menu").children(".chứa").trigger("chọnMenu",g);
+														// W.find(".nền").sửaLớp("dn -db");
+														thân.empty().append(
+															$("<div>", {class: "container bsbb hmn5 pt50 pb25 plr15", classM:"-pt50,-plr50,plr15,pt25"}).append(
+																// Vụn bánh mỳ
+																bốCục.vụnBánh(i, {
+																	làmMới:true,
+																	linkKhác:linkKhác,
+																	tênKhác:tênKhác,
+																	ụ:ụTổng,
+																	menuPhụ:".menuConChuyênMục",
+																	bo:"gạchChânDòng",
+																	idCache:"cache",
+																	tải:true,
+																}),
+																// Menu điều hướng phụ với màn bé hơn MD
+																lÀ("MD")&&bốCục.điềuHướng(i,{
+																	ụ:g,
+																	url:{}
+																}),
+																$("<div>", {class: "cb hmn5 pt25 grid", classM:"-pt25"}).append(
+																	// Nội dung chính
+																	$("<div>", {class: "bsbb col-xs-12 nộiDungChính"}).sửaLớp(!điềuHướng?"":"col-md-9").append(
+																		$("<div>", {class: "pb25 khungHiệnTin"}).append(
+																			$("<div>", {class: "pb15"}).append(
+																				$("<div>", {class: "flex hiểnThịBàiViết"}).append(
+																					$("<div>", {class: "pr hmn3"}).append(
+																						$("<div>", { class: "wh1 oh chờRỗng" })
+																					)
+																				)
+																			)
+																		)
+																	).chờ(function(){
+																		$(this).chuyênMục(i,$.gộp({
+																			ụKhác:{},
+																			cMND:ụTổng, // Chuyên mục tổng
+																			bọcImg:điềuHướng?"":"col-md-3",
+																			lớpỘ:điềuHướng?"":"col-md-9",
+																			sắpXếp: i=="11729"?"ê+":i=="11689"?"ấ+":"ấ-",
+																			nềnMờ:false, // K tạo nền mờ
+																			kín: false
+																			
+																			// loại:1
+																		},iA(i,[11687])&&{
+																			nềnMờ:false
+																		}));
+																	}, 56),
+																	// Menu điều hướng phụ với màn lớn hơn MD
+																	điềuHướng&&!lÀ("MD")&&bốCục.điềuHướng(i,{
+																		ụ:g,
+																		url:{}
+																	}),
+																)
+															)
+														);
+														cuộn(0);
+													}
+												})
+											},
+											// Xem bài viết
+											a:function(i){
+												bốCục.kiểmTra.bàiViết(i, ụTổng, {
+													ậ:max(ảậ)
+												}, function(d){
+													var ụBV = d.ụ, // Chuyên mục bài viết
+														chuyênMụcTrước = d.ứ, // Chuyên mục trước
+														g = d.g, // Chuyên mục gốc (Cấp 1)
+														c = d.c,
+														ếg = mảng(d.ế)[0],
+														K = $("div:chíp(bàiViết=="+i+")").length>0||ếg||$("#khôngGian_"+ụTổng+":not(.gọn)").length||$("[id^=bảng]:not(.gọn)").length||!iA(g,config("chuyênLực."+ụTổng)||[]),
+														làCV = d.ạ == "tuyểnDụng";
+													if(K){ // Mở bài viết xem ở dạng khung
+														// Kiểm tra xem phân website đã có giao diện hay chưa?
+														// !thân.children(":not(.chờHiệnỘ)").length → Hiển thị giao diện nền website
+														khôngGian.bàiViết.xem(i);
+													} else {
+														// $(".thanhMenu").find(".chứa:first").trigger("chọnMenu",g); // Bổ sung các class liên quan đến menu đang có nội dung xem 
+														W.find("#menu").children(".chứa").trigger("chọnMenu",g);
+														// W.find(".nền").sửaLớp("dn -db");
+														thân.empty().append(
+															$("<div>", {class: "container"}).append(
+																$("<div>", {class: "hmn5 bsbb pt50 pb25 plr15", classM:"-pt50,-plr50,plr15,pt25"}).append(
+																	bốCục.vụnBánh(i, {
+																		ọ:"ế",
+																		linkKhác:linkKhác,
+																		tênKhác:tênKhác,
+																		ụ:ụTổng,
+																		menuPhụ:".menuConChuyênMục",
+																		bo:"gạchChânDòng",
+																	}),
+																	!làCV&&lÀ("MD")&&bốCục.điềuHướng(ụBV,{
+																		ụ:g,
+																		url:{}
+																	}),
+																	$("<div>", {class: "cb hmn5 pt25 grid", classM:"-pt25"}).append(
+																		bốCục.bàiViết(i, {
+																			uCache:true,
+																			bo:làCV ? "col-md-8" : "col-md-9"+(!là("M")?",pr50":""),
+																			ụWeb:ụTổng, // Chuyên mục tổng
+																			tinKhác:((!lÀ("MD")&&!empty(c))||lÀ("MD"))&&ụBV, // Hiển thị tin liên quan hay không
+																		}),
+																		!lÀ("MD")&&!làCV&&bốCục.điềuHướng(ụBV,{
+																			a:i,
+																			ụ:g,
+																			url:{},
+																			bo:"psi,l0",
+																			xong:function(){
+																				$(this).css({
+																					top:100
+																				})
+																			}
+																		}),
+																		làCV&&bốCục.điềuHướng(ụBV,{
+																			a:i,
+																			ụ:g,
+																			bo:"col-xs-12,col-md-4,bsbb,pl40,pl0-xs",
+																			ạ:"tuyểnDụng",
+																		}),
+																	)
+																)
+															)
+														);
+														thân.find(".nộiDungBV div div.mtb15").sửaLớp("dn")
+														cuộn(0)
+													}
+												})
+											},
+											"c7270debfec737b7bd918f6700627b32":function(i,d){
+												var u = đọcURL(d.path),
+													data = this,
+													idBV = Jd(data.d)["bàiViết"];
+												cl("!!!!!!!!!!!!!!!!!!!!",data,idBV,u);
+												if(data&&!empty(Jd(data.d))){
+													vàoURL(idBV,"ế")
+												}else{
+													apcal.cậpNhật(i)
+												}
+												// if(u[0]){
+												// 	apcal.cậpNhật(i)
+												// }
+											},
+											t:function(i){
+												!thân.children(":not(.chờHiệnỘ)").length&&trangChủ();
+												if(là("U"))
+													quảnTrị.bảng(i,{
+														onHide:function(){
+															if(!thân.children(":not(.chờHiệnỘ)").length)
+																trangChủ();
+														},
+													});
+											},
+											// Các đường link không được cấu hình
+											404:function(){
+												vàoURL("/")
+											}
+										},function(á,à){
+											config("url."+á,à);
+										});
+	
+										// Tạo thanh menu mobile
+										// là("M")&&W.find(".chứaMenuMB").append(
+										// 	bốCục.thanhMenuM({
+										// 		ê:{ // Nếu giá trị FALSE → K hiển thị tên
+										// 			trên:"", // Tên ở trên. Nếu giá trị FALSE → K hiển thị tên trên
+										// 			dưới:"", // Tên ở dưới. Nếu giá trị FALSE → K hiển thị tên dưới
+										// 		},
+										// 		bo:"-dn-md",
+										// 		logo:logo, // Link logo
+										// 		menuMobile:{ // Tạo danh sách menu mobile thì thêm key này, không tạo thì bỏ qua
+										// 			dsỤ:menuChính, // Danh sách chuyên mục menu chính
+										// 			// phụ:[], // Danh sách chuyên mục menu phụ
+										// 			// phụ1:{}, // Danh sách menu phụ cần hiển thị thay thế config("chuyênLực."+i) -> dạng object với key là id của chuyên mục cần đổi, value là object chứa ê là tên và u là url 
+										// 			linkKhác:linkKhác, // Object với keys là ID chuyên mục, value là url
+										// 			tênKhác:data.tênKhác,
+										// 			// webKhác:{ // Tạo nút bấm vào trang web khác -> Có thể là object hoặc array chứa các object
+										// 			// 	ê:"", // Tên
+										// 			// 	u:"", // URL
+										// 			// 	icon:"public",
+										// 			// 	// bo:"", // Class sửa lớp
+										// 			// },
+										// 			// webKhác:[
+										// 			//     { // Tạo nút bấm vào trang web khác -> Có thể là object hoặc array chứa các object
+										// 			//         ê:"", // Tên
+										// 			//         u:"", // URL
+										// 			//         icon:"public",
+										// 			//         // bo:"", // Class sửa lớp
+										// 			//     },
+										// 			// ]
+										// 		},
+										// 		// tìmKiếm:{
+										// 		// 	ụ:ụTổng, // Chuyên mục tìm kiếm (Truyền vào chuyên mục tổng nếu muốn tìm kiếm tất cả chuyên mục trên trang web, hoặc truyền vào mảng các chuyên mục cần tìm kiếm)
+										// 		// 	// giớiHạn:20, // Với các website khác bỏ qua key này (Mặc định tìm kiếm giới hạn 20 bài viết → Giảm thiểu lượng bài viết phải tải dữ liệu → Tăng tốc độ hiển thị)
+										// 		// 	// cộts:[], // TRUE → Tìm tất cả các thuộc tính OR chỉ tìm trong tiêu đề
+										// 		// 	từKhóa:false, // TRUE → Tìm theo key từKhóa trong data gửi lên | FALSE → Tìm kiếm trong tiêu đề có chứa từ khóa cần tìm theo dạng "~'%từ khóa%'"
+										// 		// },
+										// 		xong:function(){
+													
+										// 		}
+										// 	}),
+										// );
+										
+										// Tạo thanh menu PC
+										// var chứaM = W.find(".chứaMenuPC"); // Thẻ chứa menu
+										// !là("M")&&bốCục.menu.call(chứaM, menuChính, {
+										// 	// phụ:[], // Menu ẩn sau khi ấn vào dấu 3 chấm "...". Bỏ qua key này nếu không muốn hiển thị dấu 3 chấm "..."
+										// 	// tìmKiếm:{ // Tạo icon tìm kiếm và ô tìm kiếm cùng thanh menu. Nếu không tạo chức năng tìm kiếm cùng thanh menu bỏ qua key này
+										// 	// 	ụ:ụTổng, // ID chuyên mục tổng của website
+										// 	// 	giớiHạn:20, // Giới hạn số lượng bài viết tải bài viết. Mặc định tìm kiếm 20 bài viết
+										// 	// 	bo:"-col-lg-5", // Class bo ô tìm kiếm
+										// 	// 	// cộts:[], // TRUE → Tìm tất cả các thuộc tính OR chỉ tìm trong tiêu đề
+										// 	// 	từKhóa:false, // TRUE → Tìm theo key từKhóa trong data gửi lên | FALSE → Tìm kiếm trong tiêu đề có chứa từ khóa cần tìm theo dạng "~'%từ khóa%'"
+										// 	// },
+										// 	// iconHome:true, // Hiển thị icon home
+										// 	// trangChủ:0, // ID của trang chủ. Nếu iconHome có giá trị TRUE và menu hiển thị có id trùng với id trang chủ => Hiển thị icon
+	
+										// 	bo: "mla, mra, -w1, cf, dn-xs", // Class sửa lớp thẻ chứa tất cả menu
+										// 	bọc: "", // Class sửa lớp của thẻ có class "menuChính"
+										// 	boChọn: "-ttu -fs08 -fwb alink pr cph", // Sửa lớp các lựa chọn trên thanh menu chính. Giá trị mặc định:"bgcfh,cl1h"
+										// 	linkKhác:linkKhác, // Object thay thế link url gốc (Thay thế dữLiệu.url(i,"ụ")) -> Định dạng {i:Url}
+										// 	tênKhác:tênKhác,  // Object thay thế tên gốc (Thay thế dữLiệu.tên(i,"ụ")) -> Định dạng {i:Tên}
+										// 	xong:function(){
+										// 		// Callback sau khi tạo xong menu
+										// 		$(".chứaMenuPC").children("div").sửaLớp("-fwb");
+	
+										// 		// var c = $(this).find(".chứa");
+										// 		// // Tạo giao diện đăng nhập (Nếu cần)
+										// 		// c.sửaLớp('df,aic,-dfnc').append(
+													// bốCục.đăngNhập({
+													// 	thôngBáo:false,
+													// 	đốiTượng:"tài khoản",
+													// 	bo:"pl15",
+													// 	gọn:true,
+													// 	chữ:"Đăng nhập",
+													// 	sửaLớp:{
+													// 		đăngNhập:"-bgpa,-gạchChân,bgcffa,wsn,shineh",
+													// 	},
+													// 	// icon:{
+													// 	// 	đăngNhập:"login::fs14,tty-1p,cf",
+													// 	// },
+													// 	đăngXuất:function(){
+													// 		khởiTạoCache();
+													// 		vàoURL("/");
+													// 	},
+													// 	đăngNhập:{
+													// 		gạchChân:false,
+													// 		f:function(ả){
+													// 			if(ả){
+													// 				khởiTạoCache();
+													// 				vàoURL("/");
+													// 			}
+													// 		},
+													// 	},
+													// },function(){
+													// 	$(this).children().sửaLớp("-ptb15,ptb10");
+													// }),
+										// 		// );
+										// 	}
+										// });
+	
+										// Vào ngay đường dẫn hiện tại
+										vàoURL();
+
+									})
+								})
+							})
+						});
+					}
+				});
+			});
+		</script>
+	</head>
+	<body class="fs14p lh13 oxh styleScroll ffN">
+		<div class="wrapper đangẲn" style="display:none"></div>
+		<!-- <div class="df jcsc">
+			<img class='wh64', src='https://anhdtp.thuctap.inevn.com/QR/img/s%E1%BB%9Bm.png'></img>
+			<div class="df aic jcsc fwb cgd mtb15 fs12">
+				<o class="ffi db">alarm_on</o>
+				<span class= ''>x</span>
+			</div>
+			<div class="tac w60">Chúc Anh/Chị một ngày làm việc hiệu quả và cố gắng giữ vững phong độ đi làm đúng giờ nha!</div>
+		</div> -->
+	
+</body></html>

@@ -31,10 +31,12 @@ Camera Ready Final Manuscript Due:
 Camera ready papers for workshops
 Deadline of Final paper submission
 Demo proposal submission deadline
+Final version of accepted papers
 Camera-ready submission deadline:
 Submission of camera-ready papers
 Camera-Ready Completion Deadline
 Full Paper Camera-ready copies:
+Workshop Camera-ready deadline
 camera ready papers submission
 Final Manuscript Submission
 Camera Ready and Registration:
@@ -89,7 +91,7 @@ Camera ready papers:
 Camera Ready Papers:
 Final manuscript due
 Camera-ready copies
-Camera-ready Papers:
+Camera-ready Papers
 Final Manuscript Due
 Camera-ready version
 Camera-ready papers:
@@ -112,8 +114,10 @@ Camera-Ready Due
 Camera Ready due
 Final papers due
 Final Paper Due
+Final paper due
 Final copy due:
 Final version:
+Final version
 Camera-Ready:
 Camera Ready:
 Camera ready:
@@ -123,4 +127,5 @@ Camera-ready
 Camera ready
 Camera-Ready
 Final paper
+Final Paper
 PROCEEDINGS
