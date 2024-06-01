@@ -11,6 +11,8 @@ const dataPineline = async (conferenceId) => {
             const organizations = [
                 {
                     name: conference.Location? conference.Location : "updating",
+                    location: conference.Location? conference.Location : "updating",
+                    // type: conference.Type? conference.Type : "updating",
                     start_date: conference.ConferenceDate[0]?.date,
                     end_date: conference.ConferenceDate[1]?.date
                 },
@@ -46,7 +48,7 @@ const dataPineline = async (conferenceId) => {
             };
 
             postConference(processedConf)
-            console.log(processedConf);
+            
             setTimeout(() => {
                 console.log("waiting ... ");
             }, 1000);

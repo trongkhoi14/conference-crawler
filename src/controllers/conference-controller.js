@@ -19,28 +19,34 @@ const { isContainsAnyException, handleConferenceException } = require("../except
 const crawlController = async (browserInstance) => {
     try {
         // Create browser
-        let browser = await browserInstance;
+        //let browser = await browserInstance;
 
-        /*
-        await crawlNewConferences(browser);
-
-        await crawlAllConferencesDetail(browser);
-
-        await processConferenceError(browser);
-        */
-        // await processConferenceHasWrongLink(browser);
-        // await crawlAllConferencesDetail(browser);
+        //await crawlAllConferencesDetail(browser);
         // await processConferenceError(browser);
-        // await getEvaluationDataset(browser)
-        // formatEvaluationDataset()
-        // updateFormattedConferences()
-        // updateCSVConferenceLinks(browser)
 
-        await savePageContent(browser)
+        await lastHope();
+        
     } catch (error) {
         console.log("Error in crawlController: " + error);
     }
 };
+
+const getConferenceType = async (browser) => {
+    const allConferences = await Conference.find({})
+
+    console.log(allConferences.length)
+    for(let i=0; i<100; i++) {
+        console.log(allConferences[i]._id + " " + i)
+        let confType = await webScraperService.getConferenceType(browser, allConferences[i])
+        if(confType !== '') {
+            await Conference.findByIdAndUpdate(allConferences[i]._id, {
+                Type: confType
+            })
+            console.log("Update conference type successfully")
+            await dataPineline(allConferences[i]._id);
+        }
+    }
+}
 
 const savePageContent = async (browser) => {
     const filePath = 'EvaluationDataset.csv';
@@ -279,6 +285,25 @@ const formatEvaluationDataset = () => {
     }
 };
 
+const lastHope = async () => {
+    let result = []
+    for (let i = 0; i < conferenceHasIncorrectLinks.length; i++) {
+        const currentConference = await Conference.findOne({_id: conferenceHasIncorrectLinks[i]})
+        result.push(currentConference)
+    }
+    // Convert result to JSON string
+    const jsonString = JSON.stringify(result, null, 2); // Pretty print with 2 spaces
+
+    // Save JSON to file
+    fs.writeFile('result.json', jsonString, (err) => {
+        if (err) {
+            console.error('Error writing to JSON file', err);
+        } else {
+            console.log('JSON file has been saved.');
+        }
+    });
+}
+
 const getEvaluationDataset = async (browser) => {
     const allConferences = await Conference.find({});
     console.log(allConferences.length);
@@ -416,12 +441,12 @@ const getLastUpdateTime = async () => {
 };
 
 const getConferencesToUpdate = async (lastUpdateTime, errorConferences) => {
-    // return await Conference.find({
-    //     updatedAt: { $lt: lastUpdateTime },
-    //     _id: { $nin: errorConferences },
-    // })
-    //     .sort({ updatedAt: 1 })
-    //     .limit(100);
+    return await Conference.find({
+        updatedAt: { $lt: lastUpdateTime },
+        _id: { $nin: errorConferences },
+    })
+        .sort({ updatedAt: 1 })
+        .limit(100);
     let result = []
     for (let i = 0; i < conferenceHasIncorrectLinks.length; i++) {
         const currentConference = await Conference.findById(conferenceHasIncorrectLinks[i])
@@ -441,23 +466,24 @@ const processConference = async (browser, conference) => {
     console.log(conference._id);
 
     let isCrawlSuccess = false
-    
-    // if(conference.Links.length === 1 && isContainsAnyException(conference.Links[0])) {
-    //     isCrawlSuccess = await handleConferenceException(browser, conference._id);
-    // }
-    // else {
-    //     let fullInformationPoint = conference.Links.length > 1 ? 3 : 2;
-    //     isCrawlSuccess = await webScraperService.getConferenceDetails(
-    //         browser,
-    //         conference,
-    //         fullInformationPoint
-    //     );
-    // }
 
-    await webScraperService.getLocation(browser, conference)
+    if(conference.Links.length === 1 && isContainsAnyException(conference.Links[0])) {
+        isCrawlSuccess = await handleConferenceException(browser, conference._id);
+    }
+    else {
+        let fullInformationPoint = conference.Links.length > 1 ? 3 : 2;
+        isCrawlSuccess = await webScraperService.getConferenceDetails(
+            browser,
+            conference,
+            fullInformationPoint
+        );
+    }
+    isCrawlSuccess = true;
 
+    // await webScraperService.getLocation(browser, conference)
+    // const isGetConferenceDate = await webScraperService.getConferenceDate(browser, conference)
     if (isCrawlSuccess) {
-        // await dataPineline(conference._id);
+        await dataPineline(conference._id);
     }
 
     await delay(Math.floor(Math.random() * 2000) + 1000);
@@ -476,10 +502,12 @@ const crawlAllConferencesDetail = async (browser) => {
 
         const lastUpdateTimeDoc = await LastUpdateTime.findOne();
         await updateLastUpdateTime(lastUpdateTimeDoc);
-
+        let i = 0;
         for (const conference of allConferences) {
             try {
                 await processConference(browser, conference);
+                console.log(i)
+                i++
             } catch (conferenceError) {
                 console.log(
                     `Error processing conference ${conference._id}:`,

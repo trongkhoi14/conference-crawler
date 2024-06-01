@@ -5,6 +5,10 @@ const ConferenceError = require("../models/conferenceError-model");
 const { readKeywordsFromFile } = require("../untils/handleFileDict");
 const { waitForRandomTime } = require("../untils/time");
 const { formatStringDate } = require("../untils/date");
+const {
+    extractDates,
+    extractDates2,
+} = require("../untils/date");
 
 const getConferenceList = (browser) =>
     new Promise(async (resolve, reject) => {
@@ -77,7 +81,7 @@ const searchConferenceLinks = async (browser, conference, maxLinks) => {
                     "aconf.org",
                     "myhuiban.com",
                     "call4paper.com",
-                    "portal.core"
+                    "portal.core",
                 ];
 
                 for (const el of els) {
@@ -130,9 +134,7 @@ const searchConferenceLinksByTitle = async (browser, conference, maxLinks) => {
         // Searching with keyword = Acronym + 2023
         await page.goto("https://www.google.com/");
         await page.waitForSelector("#APjFqb");
-        await page.keyboard.sendCharacter(
-            conference.Title + " 2023"
-        );
+        await page.keyboard.sendCharacter(conference.Title + " 2023");
         await page.keyboard.press("Enter");
         await page.waitForNavigation();
         await page.waitForSelector("#search");
@@ -156,7 +158,7 @@ const searchConferenceLinksByTitle = async (browser, conference, maxLinks) => {
                     "aconf.org",
                     "myhuiban.com",
                     "call4paper.com",
-                    "portal.core"
+                    "portal.core",
                 ];
                 for (const el of els) {
                     const href = el.href;
@@ -266,9 +268,9 @@ const getConferenceDetails = async (
                 cameraReady_keywords,
                 snapshotRange
             );
-
+            const core = process.env.CORE2023
             if (
-                conferenceLink.includes("23") &&
+                conferenceLink.includes(`${core[6]}${core[7]}`) &&
                 conferenceLink.includes(".org") &&
                 conferenceLink.includes(conference.Acronym.toLowerCase()) &&
                 (conferenceLink.includes("cfp") ||
@@ -277,7 +279,7 @@ const getConferenceDetails = async (
             ) {
                 fullInformationPoint = 0;
             } else if (
-                conferenceLink.includes("23") &&
+                conferenceLink.includes(`${core[6]}${core[7]}`) &&
                 conferenceLink.includes(conference.Acronym.toLowerCase()) &&
                 (conferenceLink.includes("cfp") ||
                     conferenceLink.includes("call") ||
@@ -401,6 +403,161 @@ const extractDatesFromBody = async (
     }
 };
 
+const getConferenceDate = async (browser, currentConference) => {
+    try {
+        console.log(">> Getting conference date ...");
+
+        let portalLink =
+            `${process.env.PORTAL}?` +
+            `search=` +
+            `${currentConference.Title.replace(" ", "+")}` +
+            `&by=all` +
+            `&source=${process.env.CORE2023}` +
+            `&sort=atitle&page=1`;
+
+        let page = await browser.newPage();
+
+        await page.goto(portalLink);
+        await page.waitForSelector("#search");
+
+        // Đi đến trang chi tiết của một hội nghị
+        const gotoConfDetail = await page.$eval(".evenrow", (el) => {
+            return el.click();
+        });
+
+        await page.waitForNavigation();
+        await page.waitForSelector(".detail");
+
+        let getDBLPSourceLink = await page.$$eval(".detail", (els) => {
+            return els
+                .map((el) =>
+                    el.innerText.includes("https://dblp") ? el.innerText : null
+                )
+                .filter((el) => el !== null);
+        });
+
+        page.close();
+
+        if (getDBLPSourceLink.length > 0) {
+            getDBLPSourceLink = getDBLPSourceLink[0]
+                .split(" ")
+                .filter((r) => r.includes("https://dblp"));
+
+            let conferenceYear;
+
+            if (currentConference.ConferenceDate.length > 0) {
+                conferenceYear = currentConference.ConferenceDate[0].date;
+                conferenceYear = new Date(conferenceYear)
+            } else {
+                conferenceYear = new Date("2023-01-01T00:00:00.000Z");
+            }
+            conferenceYear = conferenceYear.getUTCFullYear();
+
+            if (conferenceYear == "2024" || conferenceYear == "2021") {
+                conferenceYear = "2023";
+            }
+
+            const conferenceDate = await getConferenceDateOnDPLPPage(
+                browser,
+                getDBLPSourceLink[0],
+                conferenceYear,
+            );
+
+            if (conferenceDate.length > 0) {
+                console.log("Successfully")
+                await Conference.findByIdAndUpdate(currentConference._id, {
+                    ConferenceDate: conferenceDate,
+                });
+                return true
+            } else {
+                console.log(
+                    "Cannot find conference date of conference with id: " +
+                        currentConference._id
+                );
+                
+                await handleMissingInformationError(currentConference._id);
+                return false
+            }
+        } else {
+            console.log(
+                "Cannot find conference date of conference with id: " +
+                    currentConference._id
+            );
+            await handleMissingInformationError(currentConference._id);
+        }
+
+        await page.close();
+        return false
+    } catch (error) {
+        console.log("Error in getConferenceDate: " + error);
+        // await handleMissingInformationError(currentConference._id);
+        await page.close();
+        return false
+    }
+}
+
+const getConferenceDateOnDPLPPage = async (browser, DBLPLink, conferenceYear) => {
+    try {
+        let page = await browser.newPage();
+
+        await page.goto(DBLPLink);
+        await page.waitForSelector("#main");
+
+        let titleText = await page.$$eval("span.title", (els) => {
+            return els.map((el) => {
+                return el.innerText;
+            });
+        });
+        page.close()
+        titleText = titleText.filter(t => t.includes(`${conferenceYear}`))
+        // console.log(titleText)
+
+        if(titleText.length === 0) {
+            return []
+        }
+
+        let findDate = dateFinder(titleText[0])
+        let startDate;
+        let endDate;
+
+        if(findDate.length < 2) {
+            const extractDate = extractDates2(titleText[0]);
+            if(extractDate) {
+                startDate = extractDate.startDate;
+                endDate = extractDate.endDate;
+            } else {
+                return [
+                    {
+                        date: findDate[0].date,
+                        keyword: "Conference start",
+                        update_time: new Date(),
+                    },
+                ]
+            } 
+        } else if(findDate.length === 2) {
+            startDate = findDate[0].date;
+            endDate = findDate[1].date;
+        }
+        // console.log(startDate);
+        // console.log(endDate);
+        return [
+            {
+                date: startDate,
+                keyword: "Conference start",
+                update_time: new Date(),
+            },
+            {
+                date: endDate,
+                keyword: "Conference end",
+                update_time: new Date(),
+            }
+        ]
+    } catch (error) {
+        console.log("Error in getLocationOnDPLPPage: " + error);
+        page.close()
+    }
+}
+
 const shouldUpdateConference = (
     fullInformationPoint,
     submissionDate,
@@ -442,7 +599,7 @@ const updateConferenceInDatabase = async (
     await Conference.findByIdAndUpdate(
         conferenceId,
         {
-            ConferenceDate: conferenceDate,
+            // ConferenceDate: conferenceDate,
             SubmissonDate: submissionDate,
             NotificationDate: notificationDate,
             CameraReady: cameraReady,
@@ -457,6 +614,14 @@ const handleMissingInformationError = async (conferenceId) => {
         conferenceId,
         "MissingInformation",
         "Submission, conference, or notification date not found for any link."
+    );
+};
+
+const handleCannotFindLocationError = async (conferenceId) => {
+    await createOrUpdateError(
+        conferenceId,
+        "MissingInformation",
+        "Can not find location"
     );
 };
 
@@ -621,28 +786,161 @@ const getConferencesOnPage = (browser, currentLink) =>
     });
 
 const getLocation = async (browser, currentConference) => {
-    console.log(">> Getting location ...")
-    
-    let portalLink = 
-        `${process.env.PORTAL}?` +
-        `search=` +
-        `${currentConference.Title.replace(" ", "+")}` +
-        `&by=all`+
-        `&source=${process.env.CORE2023}`+
-        `&sort=atitle&page=1`
+    try {
+        console.log(">> Getting location ...");
 
-    
-    let page = await browser.newPage();
+        let portalLink =
+            `${process.env.PORTAL}?` +
+            `search=` +
+            `${currentConference.Title.replace(" ", "+")}` +
+            `&by=all` +
+            `&source=${process.env.CORE2023}` +
+            `&sort=atitle&page=1`;
 
-    await page.goto(portalLink);
+        let page = await browser.newPage();
 
-    await page.waitForSelector("#search");
+        await page.goto(portalLink);
+        await page.waitForSelector("#search");
 
-    //page.keyboard.sendCharacter('嗨');
-    const confRow = await page.$$eval(".evenrow", (els) => {
-        return els
-    })
-    console.log(confRow)
+        // Đi đến trang chi tiết của một hội nghị
+        const gotoConfDetail = await page.$eval(".evenrow", (el) => {
+            return el.click();
+        });
+
+        await page.waitForNavigation();
+        await page.waitForSelector(".detail");
+
+        let getDBLPSourceLink = await page.$$eval(".detail", (els) => {
+            return els
+                .map((el) =>
+                    el.innerText.includes("https://dblp") ? el.innerText : null
+                )
+                .filter((el) => el !== null);
+        });
+
+        if (getDBLPSourceLink.length > 0) {
+            getDBLPSourceLink = getDBLPSourceLink[0]
+                .split(" ")
+                .filter((r) => r.includes("https://dblp"));
+
+            let conferenceYear;
+
+            if (currentConference.ConferenceDate.length > 0) {
+                conferenceYear = currentConference.ConferenceDate[0].date;
+                conferenceYear = new Date(conferenceYear)
+            } else {
+                conferenceYear = new Date("2023-01-01T00:00:00.000Z");
+            }
+
+            conferenceYear = conferenceYear.getUTCFullYear();
+
+            if (conferenceYear == "2024") {
+                conferenceYear = "2023";
+            }
+
+            const location = await getLocationOnDPLPPage(
+                browser,
+                getDBLPSourceLink[0],
+                conferenceYear
+            );
+
+            if (location != "") {
+                await Conference.findByIdAndUpdate(currentConference._id, {
+                    Location: location,
+                });
+                console.log(
+                    currentConference._id +
+                        ": " +
+                        location +
+                        " in " +
+                        conferenceYear
+                );
+            } else {
+                console.log(
+                    "Cannot find location of conference with id: " +
+                        currentConference._id
+                );
+                await handleCannotFindLocationError(currentConference._id);
+            }
+        } else {
+            console.log(
+                "Cannot find location of conference with id: " +
+                    currentConference._id
+            );
+            await handleCannotFindLocationError(currentConference._id);
+        }
+
+        await page.close();
+    } catch (error) {
+        console.log("Error in getLocation: " + error);
+        await handleCannotFindLocationError(currentConference._id);
+        await page.close();
+    }
+};
+
+const getLocationOnDPLPPage = async (browser, DBLPLink, conferenceYear) => {
+    try {
+        let page = await browser.newPage();
+
+        await page.goto(DBLPLink);
+        await page.waitForSelector("#main");
+
+        let location = await page.$$eval("h2", (els) => {
+            return els.map((el) => {
+                return el.innerText;
+            });
+        });
+
+        location = location.filter((l) => l.includes(`${conferenceYear}`));
+
+        const extractLocation = (str) => {
+            const parts = str.split(": ");
+            return parts[1];
+        };
+
+        if (location.length > 0) {
+            location = extractLocation(location[0]);
+            page.close()
+            return location;
+        } else {
+            page.close()
+            return "";
+        }
+        
+    } catch (error) {
+        console.log("Error in getLocationOnDPLPPage: " + error);
+        page.close()
+    }
+};
+
+const getConferenceType = async (browser, currentConference) => {
+    try {
+        console.log(">> Getting conference type");
+        let page = await browser.newPage();
+
+        await page.goto(currentConference.Links[0], { waitUntil: "domcontentloaded" });
+        let bodyContent = await page.content();
+
+        bodyContent = bodyContent.toLowerCase();
+
+        let online = bodyContent.includes('online') || currentConference.Location.includes("Virtual");
+        let offline = bodyContent.includes('offline') || bodyContent.includes('onsite') || currentConference.Location;
+        let hybrid = bodyContent.includes('hybrid');
+        
+        await page.close()
+        
+        if ((online && offline) || hybrid) {
+            return 'Hybrid';
+        } else if (offline) {
+            return 'Offline';
+        } else if (online) {
+            return 'Online';
+        }  else {
+            return '';
+        }
+    } catch (error) {
+        console.log("Error in getConferenceType:" + error)
+    }
 }
 
 // Xử lý khi datefinder tìm được nhiều ngày
@@ -658,11 +956,9 @@ const findClosestDate = (dateResults, keywordIndex, keywordLength) => {
         if (result.startIndex < keywordIndex) {
             let dateIndex = result.endIndex;
             diff = Math.abs(keywordIndex - dateIndex);
-            //console.log('truoc: ' +diff)
         } else {
             let dateIndex = result.startIndex;
             diff = Math.abs(dateIndex - keywordIndex - keywordLength);
-            //console.log('sau: '+ diff)
         }
 
         if (closest === null || diff < closest.diff) {
@@ -699,5 +995,7 @@ module.exports = {
     searchConferenceLinksByTitle,
     extractDatesFromBody,
     readKeywordsFromDict,
-    getLocation
+    getLocation,
+    getConferenceType,
+    getConferenceDate
 };

@@ -44,6 +44,39 @@ const extractDates = (event) => {
     }
 };
 
+
+// Định dạng October 8-12, 2023
+const extractDates2 = (event) => {
+  // Sử dụng biểu thức chính quy để trích xuất các ngày tháng
+  const datePattern = /([A-Z][a-z]+ \d{1,2})-(\d{1,2}), (\d{4})/;
+  const match = event.match(datePattern);
+
+  if (match) {
+    const monthDayStart = match[1]; // Tháng và ngày bắt đầu
+    const dayEnd = match[2]; // Ngày kết thúc
+    const year = match[3]; // Năm
+
+    // Tạo chuỗi ngày tháng hoàn chỉnh cho startDate và endDate
+    const startDateString = `${monthDayStart}, ${year}`;
+    const endDateString = `${monthDayStart.split(' ')[0]} ${dayEnd}, ${year}`;
+
+    // Tạo các đối tượng Date
+    const startDate = new Date(startDateString);
+    const endDate = new Date(endDateString);
+
+    // Đảm bảo đúng múi giờ UTC
+    const startDateISO = new Date(startDate.getTime() - startDate.getTimezoneOffset() * 60000).toISOString();
+    const endDateISO = new Date(endDate.getTime() - endDate.getTimezoneOffset() * 60000).toISOString();
+
+    return {
+      startDate: startDateISO,
+      endDate: endDateISO
+    };
+  } else {
+    return null; // Trường hợp không khớp với biểu thức chính quy
+  }
+};
+
 // Định dạng 24th April, 2023
 const convertDateInString = (str) => {
     const dateRegex = /(\d+)(st|nd|rd|th)\s([A-Za-z]+),\s(\d{4})/;
@@ -78,6 +111,7 @@ module.exports = {
     formatDate,
     formatStringDate,
     extractDates,
+    extractDates2,
     convertDateInString,
     convertDateInString2,
     convertDateInString3
