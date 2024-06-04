@@ -1,0 +1,578 @@
+[
+  {
+    "_id": "6639d53e4fd45eb8c2e6709e",
+    "Title": "International Workshop on Soft Computing Applications",
+    "Acronym": "SOFA",
+    "Source": "CORE2023",
+    "Rank": "National: Romania",
+    "Note": "none",
+    "DBLP": "none",
+    "PrimaryFoR": "4601",
+    "Comments": "3",
+    "AverageRating": "5",
+    "Links": [
+      "https://www.sofa-framework.org/sofa-events/sofa-week-2023/"
+    ],
+    "createdAt": "2024-05-07T07:16:14.782Z",
+    "updatedAt": "2024-05-16T12:31:04.901Z",
+    "__v": 0,
+    "ConferenceDate": [
+      {
+        "date": "2022-06-20T22:04:04.000Z",
+        "keyword": "conference",
+        "update_time": "2024-05-16T12:31:04.882Z"
+      },
+      {
+        "date": "2023-10-31T00:00:00.000Z",
+        "keyword": "take place",
+        "update_time": "2024-05-16T12:31:04.882Z"
+      },
+      {
+        "date": "2020-04-30T00:00:00.000Z",
+        "keyword": "Symposium",
+        "update_time": "2024-05-16T12:31:04.882Z"
+      },
+      {
+        "date": "2024-09-30T00:00:00.000Z",
+        "keyword": "Dates",
+        "update_time": "2024-05-16T12:31:04.882Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-09-30T00:00:00.000Z",
+        "keyword": "notification",
+        "update_time": "2024-05-16T12:31:04.882Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-09-30T00:00:00.000Z",
+        "keyword": "submission deadline",
+        "update_time": "2024-05-16T12:31:04.882Z"
+      },
+      {
+        "date": "2023-09-30T00:00:00.000Z",
+        "keyword": "Submit",
+        "update_time": "2024-05-16T12:31:04.882Z"
+      }
+    ],
+    "CameraReady": []
+  },
+  {
+    "_id": "6639d54f4fd45eb8c2e670ac",
+    "Title": "Internet Measurement Conference",
+    "Acronym": "IMC",
+    "Source": "CONFHUB",
+    "Rank": "A",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4606",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://conferences.sigcomm.org/imc/2024/cfp/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-11-04T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:40:36.190Z"
+      },
+      {
+        "date": "2024-11-06T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:40:36.190Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-05-15T00:00:00.000Z",
+        "keyword": "Paper submission (including invited papers to Replicability Track)",
+        "update_time": "2024-05-16T10:39:27.270Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-03-08T00:00:00.000Z",
+        "keyword": "Notification for the Replicability Track Expression of Interest",
+        "update_time": "2024-05-16T10:39:27.271Z"
+      },
+      {
+        "date": "2024-06-28T00:00:00.000Z",
+        "keyword": "Early reject notification",
+        "update_time": "2024-05-16T10:39:27.271Z"
+      },
+      {
+        "date": "2024-07-31T00:00:00.000Z",
+        "keyword": "Notification",
+        "update_time": "2024-05-16T10:39:27.271Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:16:31.359Z",
+    "updatedAt": "2024-05-16T10:39:27.289Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2024-09-11T00:00:00.000Z",
+        "keyword": "Camera-ready due",
+        "update_time": "2024-05-16T10:39:27.271Z"
+      }
+    ],
+    "Location": "Madrid, Spain",
+    "Type": "offline",
+    "CallForPaper": "ACM IMC 2024\n\nThe Internet Measurement Conference (IMC) is a highly selective venue for the presentation of measurement-based research in data communications. As we are in the era of data-driven research, IMC 2024 will focus on improving the standard in the collection, usage, and sharing of network measurements for the research community. Despite the efforts in stimulating reproducibility of research as well as sharing of data, little progress has been made in our community to make research data open. Therefore, without fundamentally changing the topics in scope compared to previous years, our attention when assessing contributions will be particularly on the willingness of the authors to share their data and make their work reproducible.\n\nTo encourage data sharing and reproducibility, authors will be required to make a declaration on artifact availability (full, partial, or no availability) for the submitted work. Since legitimate reasons (such as proprietary and privacy reasons) may prevent authors from sharing artifacts, papers will be assessed based on whether the contributions warrant acceptance despite the lack of artifact availability. In the case of no availability of artifacts, the authors are expected to explain why this is the case in a specific section. Artifact submission is not required at the paper submission time. All papers accepted to the program will be shepherded to ensure that the artifacts promised have been made available.\n\nIMC takes a broad view of contributions that are considered in scope for improving the practice of network measurement, including, but not limited to:\n\ncollection and analysis of data that yield new insights about network structure and network performance (e.g., traffic, topology, routing, energy utilization, performance)\ncollection and analysis of data that yield new insights about application and end-user behavior (e.g., economics, privacy, security, application interaction with protocols)\nmeasurement-based modeling (e.g., workloads, scaling behavior, assessment of performance bottlenecks, causality)\nmethods and tools to monitor and visualize network-based phenomena\nsystems and algorithms that build on measurement-based findings\ntheoretical analysis and modeling of networked-systems and measurement techniques\nnovel methods for data collection, analysis, and storage (e.g., anonymization, querying, sharing)\nreappraisal of previous empirical network measurements and measurement-based conclusions\ndescriptions of challenges and future directions the measurement community should pursue\n\nNetworks of interest include:\n\nInternet transit networks\nedge networks, including home networks, broadband access networks (e.g., cable, fiber), and cellular networks\ndata center networks and cloud computing infrastructure\npeer-to-peer, overlay, and content distribution networks\nsoftware-defined networks\nonline social networks\nonline services, platforms, and content providers\nexperimental networks, prototype networks, and future internetworks\n\nReplicability Track:\n\nIMC 2024 will continue the Replicability Track for submissions that aim to reproduce or replicate results that have been previously published at IMC. Papers accepted to this track will be published in ACM SIGCOMM Computer Communication Review (CCR). Priority will be given to replicability studies, although reproducibility studies are also in scope. For the definitions, please see ACM’s site. The authors of outstanding replicability papers may receive an invitation to present at the main conference. In that case, the paper would also be included in IMC’s proceedings (rather than CCR).\n\nSubmissions to this track are two-phase. Prospective authors are invited to submit an Expression of Interest (EoI) via the submission system in the form of an abstract which must explain:\n\nWhich paper the authors aim to replicate\nWhether the paper will be replicated or reproduced\nWhat the IMC community stands to learn from the replication or reproduction\nChosen approach, and why it will lead to new insights\n\nA small committee will evaluate the EoIs and their potential to be of interest to the IMC community. The authors of strong abstracts will receive an invitation to a full submission.\n\nThe EoI serves to avoid misunderstandings and disappointment for authors as we acknowledge that replicating or reproducing a paper is a very significant effort to which potential authors would commit much time.\n\nFull submissions will then be assessed by the TPC. Full submissions must otherwise conform to the same criteria and rules as full submissions on the main track (see below).\n\nSee the Important Dates section for the EoI deadline. Full submissions have the same deadlines (abstract registration and full submission) as the IMC main deadline.\n\nReview process and criteria\n\nIMC 2024 invites two forms of submissions:\n\nFull papers (up to 13 pages for text and figures + unlimited pages for references and appendix) that describe original research, with succinctness appropriate to the topics and themes they discuss.\nShort papers (up to 6 pages for text and figures + unlimited pages for references and appendix) that convey work that is less mature but shows exciting promise, OR offer results that do not merit a full submission. Short papers could articulate a high-level vision and describe challenging future directions that the authors believe the community should tackle; validate, verify, or update important results; or present new ideas that challenge existing assumptions. Our plan is to assign a subset of the reviewers to the evaluation of short papers (only). These reviewers will be reminded of the specific expectations for short papers.\n\nAny submission exceeding the short paper page-length limit will be evaluated as a full paper.\n\nAuthors should submit only original work that has not been published before and is not under submission to any other venue. We will consider full paper submissions that extend previously published short, preliminary papers (including IMC short papers), in accordance with the SIGCOMM policy and the ACM Plagiarism Policy. The ACM policy on simultaneous submissions does not consider technical reports (including arXiv) to be concurrent publication or submission.\n\nThe review process will have several reviewing rounds. To allow authors time to improve their work and submit to other venues, authors of submissions for which there is a consensus on rejection will be notified early.\n\nIMC 2024 will bestow three awards on paper submissions, (1) a Best Paper award; (2) a Best Student Paper award; and (3) a Community Contribution award. All accepted papers are eligible for the best paper award; the best student paper award is limited to papers whose main author is a student at the time of submission. The community contribution award will recognize a paper with an outstanding contribution to the community in the form of a new dataset, source code distribution, open platform, or other noteworthy service to the community. To be eligible for the community award, the authors must make data or source code publicly available or have a software artifact that is accessible and usable by the public at the time of the camera-ready deadline. The authors indicate their eligibility on the submission form and are also encouraged to include a link to the contribution in the submitted paper.\n\nA few accepted papers may be forwarded for fast-track submission to IEEE/ACM Transactions on Networking.\n\nDetailed submission instructions\n\nFor all information about paper submission—including anonymity, ethics, use of generative AI, and paper formatting—please see the Detailed Submission Instructions page.\n\nDates\nExpression of Interest (papers for the Replicability Track)\tFeb 28th, 2024\nNotification for the Replicability Track Expression of Interest\tMar 8th, 2024\nPaper registration (with abstract, including invited papers to Replicability Track)\tMay 8th, 2024\nPaper submission (including invited papers to Replicability Track)\tMay 15th, 2024\nEarly reject notification\tJune 28th, 2024\nNotification\tJuly 31st, 2024\nCamera-ready due\tSep 11th, 2024\nConference\tNov 4th - 6th, 2024\nDiversity and Inclusiveness\n\nAs part of our efforts at fostering diversity and inclusiveness, we provide the following guidelines to assist you when preparing your paper submission and/or your conference presentation.\n\nInclusivity Guidelines: Good technical writing often requires pedagogical examples to explain complex ideas. These provide an opportunity to promote inclusiveness by challenging implicit biases and assumptions.\n\nAvoid gender-specific pronouns if possible. Where required, consider interspersing a balance of male (“he”, “his”), female (“she”, “her”), and gender-neutral (“they”, “their”) ones.\nUse gender-neutral names in examples. Instead of Alice and Bob, try Alex and Jun. Consider names that reflect a variety of cultural backgrounds: Esteban, Naveena, Sasha, Sergey, Tuan, Xin, and so on.\nRefrain from assuming binary gender. For instance, the “gender” column in a table of data should have more than just “male” and “female” values.\nBe mindful of people’s diverse backgrounds. Not everyone has two parents. Not every marriage involves “husband” and “wife”. Not everyone lives in a house, or has a car.\n\nAccessibility Guidelines: Color and hearing perception varies from person to person depending on age, color blindness, distance, visual acuity, etc. Make sure that the contents of your paper are accessible to all, by considering the following:\n\nUse patterns, symbols, and textures to emphasize and contrast visual elements in graphs and figures, rather than using colors alone. Graphs should be readable either in monochrome or color versions.\nUse a color palette that is designed for visually-impaired or color-blind people. Avoid poor color combinations such as green/red or blue/purple.\nSubmission Site\n\nPlease submit your paper at https://imc2024.hotcrp.com.\n\nPlease submit your Expression of Interest for the Replicability Track at https://imc2024-repro.hotcrp.com."
+  },
+  {
+    "_id": "6639d5694fd45eb8c2e670c2",
+    "Title": "Language, Data and Knowledge",
+    "Acronym": "LDK",
+    "Source": "CORE2023",
+    "Rank": "Unranked: NEW",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4602",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "http://2023.ldk-conf.org/call-for-papers/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-09-14T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:40:36.190Z"
+      },
+      {
+        "date": "2023-09-15T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:40:36.190Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-03-31T00:00:00.000Z",
+        "keyword": "New paper submission deadline",
+        "update_time": "2024-05-16T10:40:04.578Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-05-05T00:00:00.000Z",
+        "keyword": "Notification",
+        "update_time": "2024-05-16T10:40:04.579Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:16:57.374Z",
+    "updatedAt": "2024-05-16T10:40:04.609Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2023-06-02T00:00:00.000Z",
+        "keyword": "Camera-ready submission deadline",
+        "update_time": "2024-05-16T10:40:04.579Z"
+      }
+    ],
+    "Location":"Vienna, Austria", 
+    "Type": "hybrid",
+    "CallForPaper":  "Submission Deadline: extended to 27 March 2023; final extension: 31 March 2023\n\nWe invite submissions to the fourth biennial conference on Language, Data and Knowledge (LDK 2023) to be held in Vienna, Austria in September 2023. This conference aims to bring together researchers from across different disciplines concerned with the acquisition, treatment, curation and use of language data in the context of data science and knowledge-based applications. This edition builds upon the success of the inaugural event held in Galway, Ireland in 2017, the second LDK in Leipzig, Germany in 2019, and the third LDK in Zaragoza, Spain in 2021.\n\nInvited Speakers\n\nWe are happy to announce Diana Maynard (University of Sheffield), Ruben Verborgh (Ghent University), and Ruth Wodak (Lancaster University/University of Vienna), as keynote speakers for LDK 2023.\n\nPaper Submission\n\nWe welcome submissions of relevance to the topics listed below. Submissions can be in the form of:\n\nLong papers: 9–12 pages;\nShort papers: 4-6 pages.\n\nAll submission lengths are given including references. Accepted submissions will be published in an open-access conference proceedings volume, free of charge for authors, and included in the ACL Anthology. The ACL templates should therefore be used for all conference submissions.\n\nAs the reviewing process is single-blind, submissions should not be anonymised.\n\nPapers should be submitted via OpenReview at the following address:\n\nhttps://openreview.net/group?id=LDK/2023/Conference\n\nAll articles must represent original work: when submitted, the submission must not have been previously published*, and the material in it must not have been/be submitted for review at another journal or conference while under review at LDK 2023. \n\n*This excludes papers on preprint archives, such as arXiv, which we do not consider to have been previously published.\n\nThe conference will be hybrid (face-to-face and remote). Note that at least one author of each accepted paper must register to present the paper at the conference (either remotely or on-site). There will be no registration fee administered for participating in LDK 2023.\n\nPresentation format\n\nAccepted submissions will be selected for oral or poster presentation based on recommendations from the reviewers. This decision will not reflect any difference in the quality of the papers, and there will be no distinction between oral and poster presentations in the published proceedings. Authors of accepted short papers or posters are welcome to present their work as a demo in addition to the regular presentation. \n\nTopics\n\nRelevant topics for the conference include, but are not limited to, the following fields:\n\nLanguage Data\n\nLanguage data construction and acquisition\nLanguage data annotation\nFAIR data practices for language data \nLanguage data portals and metadata about language data\nOrganisational and infrastructural management of language data\nMultilingual, multimedia and multimodal language data\nEvaluation, provenance and quality of language data\nVisualisation of language data\nStandards and interoperability of language data\nLegal aspects of publishing language data\nUnder-resourced languages\ne-Lexicography\nSemantic processing\n\nKnowledge Graphs\n\nLinguistic linked data and the multilingual semantic web\nOntologies, terminologies, wordnets, framenets and related resources\nInformation and knowledge extraction (taxonomy extraction, ontology learning)\nData, information and knowledge integration across languages\n(cross-lingual) ontology alignment\nEntity linking and relatedness\nLinked data profiling\nKnowledge representation and reasoning\nKnowledge graphs for corpora processing and analysis\n\nApplications for Language, Data and Knowledge\n\nQuestion answering and semantic search\nText analytics on big data\nNLP for language documentation and preservation\nSpeech recognition and synthesis\nSpoken language processing\nSemantic content management\nComputer-aided language learning\nNatural language interfaces to big data\nKnowledge-based NLP\nDeep learning and machine learning for and on LLOD\nOther applications\n\nUse Cases in Language, Data and Knowledge\n\nContributions are welcome where the topics above – and others within the scope of Language, Data and Knowledge – are applied to domain-specific use cases, including but not limited to: social sciences and humanities, legal, life sciences, FinTech, cybersecurity.\n\nOrganising Committee\n\nConference Chairs\n\nJorge Gracia – University of Zaragoza\nJohn P. McCrae – University of Galway\n\nProgram Chairs:\n\nSara Carvalho – University of Aveiro | NOVA CLUNL\nAnas Fahad Khan – Institute for Computational Linguistics “A. Zampolli”\n\nWorkshop and Tutorial Chairs: \n\nAna Ostroški Anić – Institute of Croatian Language and Linguistics\nBlerina Spahiu – University of Milano-Bicocca\n\nLocal Organisers:\n\nDagmar Gromann – University of Vienna\nBarbara Heinisch – University of Vienna\n\nProceedings Chair: \n\nAna Salgado – NOVA CLUNL | Lisbon Academy of Sciences\nImportant Dates (Revised)\n27 March 2023 31 March 2023\tNew paper submission deadline\n28 April 2023 5 May 2023\tNotification\n26 May 2023 2 June 2023\tCamera-ready submission deadline\n12–13 September 2023\tPre-conference events\n14–15 September 2023\tMain conference\n\nAll deadlines refer to anywhere-on-earth time.\n\nProgram Committee\n\nhttp://2023.ldk-conf.org/program-committee/ \n\nWorkshops and Tutorials\n\nYou can check the list of accepted workshops and tutorials at http://2023.ldk-conf.org/workshops-tutorials/ "
+  },
+  {
+    "_id": "6639d57a4fd45eb8c2e670d0",
+    "Title": "Machine Vision Applications",
+    "Acronym": "MVA",
+    "Source": "CONFHUB",
+    "Rank": "National: japan",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4603",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://icmva.org/cfp.html"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-03-12T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:52:21.838Z"
+      },
+      {
+        "date": "2024-03-14T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:52:21.838Z"
+      }
+    ],
+    "SubmissonDate": [
+     
+    ],
+    "NotificationDate": [
+     
+    ],
+    "createdAt": "2024-05-07T07:17:14.920Z",
+    "updatedAt": "2024-06-01T03:52:21.839Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "Singapore",
+    "Type": "offline",
+    "CallForPaper":  "2024 The 7th International Conference on Machine Vision and Applications (ICMVA 2024) will be held in Singapore during March 12-14, 2024. This conference provides opportunities for the different areas delegates to exchange new ideas and application experiences face to face, to establish business or research relations and to find global partners for future collaboration. We hope that the conference results constituted significant contribution to the knowledge in these up to date scientific field. The organizing committee of conference is pleased to invite prospective authors to submit their original manuscripts to ICMVA 2024.\n\nThe conference will bring together leading researchers, engineers and scientists in the domain of interest from around the world. Topics of interest for submission include, but are not limited to:\n\nComputer Vision (scene reconstruction, video tracking, 3D pose estimation, action recognition,…)\n\nActive Vision (autonomous cameras, wearable and assistive computing, real-time 3D scene segmentation and reconstruction,…)\n\n3D-Vision (stereovision, laser triangulation, multi-cameras,…)\n\nMachine Learning (artificial intelligence, neural networks, big data & data mining......)\n\nDeep Learning (fundamental techniques and tools for deep learning model, deep learning data, deep learning model architectures, deep learning based data augmentation, transfer learning, transformers, confidence, bias and uncertainty in deep learning frameworks, applications of deep learning to real problems)\n\nImage Processing (analog, digital, electronic, optical, acoustical, hybrid)\n\nImage Processing Methods (pre-processing, image analysis, feature extraction, segmentation, classification, pattern recognition, coding, understanding, modeling, color, texture, shape, geometry, topology, SIMD, MIMD......)\n\nComputational Imaging (coherent diffractive imaging, coded-aperture imaging, super-resolution imaging,…)\n\nMachine Vision Systems and Components (hardware & software, sensor fusion......)\n\nMachine Vision (applications, industrial inspection, navigation, optical metrology, autonomous vehicles, remote sensing, astronomy and astronautics, bio-medical imaging, face and gesture recognition, data compression, security and coding, document processing......)\n\nImage Forensics and Identification (digital image forensics, image forgery detection, document forgery detection, ID forgery, document features identification, document processing......)\n\n "
+  },
+  {
+    "_id": "6639d57d4fd45eb8c2e670d2",
+    "Title": "Machines, Computations and Universality (was Universal Machines and Computations)",
+    "Acronym": "MCU",
+    "Source": "CONFHUB",
+    "Rank": "C",
+    "Note": "See note",
+    "DBLP": "view",
+    "PrimaryFoR": "4613",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://webusers.i3s.unice.fr/MCU2024/dates/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-06-05T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:52:21.838Z"
+      },
+      {
+        "date": "2024-06-07T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:52:21.838Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-04-17T00:00:00.000Z",
+        "keyword": "Submission deadline",
+        "update_time": "2024-05-16T10:40:46.381Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-05-14T00:00:00.000Z",
+        "keyword": "Notification deadline",
+        "update_time": "2024-05-16T10:40:46.382Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:17:17.084Z",
+    "updatedAt": "2024-05-16T10:40:46.405Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2024-05-20T00:00:00.000Z",
+        "keyword": "Camera ready deadline",
+        "update_time": "2024-05-16T10:40:46.382Z"
+      }
+    ],
+    "Location": "Nice, France",
+    "Type": "offline",
+    "CallForPaper":  "The International conference series MCU traces its roots back to the mid 1990's, and has always been concerned with gaining a deeper understanding of computation and universality through the study of models of general purpose computation. Last edition took place in Debrecen, Hungary (2022). The before last edition was canceled because of COVID-19 pandemic (2020).\n\nAims and scope\n\nThe scope of the conference topics includes, but is not limited to, computation in the setting of various discrete models (Turing machines, register machines, cellular automata, tile assembly systems, rewriting systems, molecular computing models, neural models...), analog and hybrid models (BSS machines, infinite time cellular automata, real machines, quantum computing...) and the meaning and implantation of universality in these contexts. Particular emphasis is given towards search for frontiers between decidability and undecidability in the various models, search for the simplest universal models, computational complexity of predicting the evolution of computations in the various models. Parallel computing models and their connections to decidability, complexity and universality.\nTopics of interest include, but are not limited to:\n   - Analog computation\n   - Automata theory\n   - Cellular automata\n   - Classical computability and degree structures\n   - Computability theoretic aspects of programs\n   - Computable analysis and real computation\n   - Computable structures and models\n   - Continuous computing\n   - Decidability of theories\n   - DNA computing, self-assembly and tiling\n   - Dynamical systems and computational models\n   - Emerging and non-standard models of computation\n   - Finite model theory\n   - Generalized recursion theory\n   - Higher type computability\n   - Hyper-computational models\n   - Infinite time Turing machines\n   - Membrane computing\n   - Molecular computation\n   - Morphogenesis and developmental biology\n   - Multi-agent systems\n   - Natural computation and Hybrid systems\n   - Neural nets and connectionist models\n   - Physics and computability\n   - Proof theory and computability\n   - Randomness and Kolmogorov complexity\n   - Relativistic computation\n   - Swarm intelligence and self-organisation\n   - Theory of Petri nets\n   - Turing, Counter, Register, Signal machines\n   - Universality of systems\n\nAnti-harassment policy\n\nWe believe that the advancement of research is best accomplished in an environment that is open, diverse and respectful to all participants. During the conference, we will follow the anti-harassment policy of ACM. Anyone witnessing or subject to unacceptable behaviour should notify the conference chairs."
+  },
+  {
+    "_id": "6639d5854fd45eb8c2e670da",
+    "Title": "Measurement and Modeling of Computer Systems",
+    "Acronym": "SIGMETRICS",
+    "Source": "CONFHUB",
+    "Rank": "A*",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4612",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://www.sigmetrics.org/sigmetrics2024/call_for_papers.html"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-06-10T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:52:27.161Z"
+      },
+      {
+        "date": "2024-06-14T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:52:27.161Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-08-09T00:00:00.000Z",
+        "keyword": "Summer - Paper submission",
+        "update_time": "2024-05-16T10:41:10.206Z"
+      },
+      {
+        "date": "2023-10-11T00:00:00.000Z",
+        "keyword": "Fall - Paper submission",
+        "update_time": "2024-05-16T10:41:10.206Z"
+      },
+      {
+        "date": "2024-01-31T00:00:00.000Z",
+        "keyword": "Winter - Paper submission",
+        "update_time": "2024-05-16T10:41:10.206Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-09-26T00:00:00.000Z",
+        "keyword": "Summer - Author notification",
+        "update_time": "2024-05-16T10:41:10.207Z"
+      },
+      {
+        "date": "2023-12-12T00:00:00.000Z",
+        "keyword": "Fall - Author notification",
+        "update_time": "2024-05-16T10:41:10.207Z"
+      },
+      {
+        "date": "2024-03-26T00:00:00.000Z",
+        "keyword": "Winter - Author notification",
+        "update_time": "2024-05-16T10:41:10.207Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:17:25.501Z",
+    "updatedAt": "2024-06-01T03:52:27.162Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "Venice, Italy",
+    "Type": "offline",
+    "CallForPaper":  "Overview\n\nThe 2024 ACM SIGMETRICS / IFIP Performance conference will be held in Venice, Italy, on June 10-14, 2024.\n\nWe solicit papers on the development and application of state-of-the-art, broadly applicable analytic, simulation and measurement-based performance evaluation techniques. The conference provides a high-quality forum for presenting results and discussing ideas that further our knowledge and understanding of the measurement, modeling, analysis, and design of computing systems and networks. Of particular interest is work that presents new performance evaluation methods, or that creatively applies previously developed methods to make predictions about, or gain insights into, key design trade-offs in a variety of computing, networked, and cyber-physical systems, ranging from mobile devices and Internet-of-Things (IoT) applications to large-scale cloud computing systems and the smart grid.\n\nThe conference presents papers that have been accepted to appear in the Proceedings of the ACM on Measurement and Analysis of Computing Systems (POMACS). There are multiple deadlines to submit your work in time for a presentation at the conference (see below). A panel of reviewers will consider all accepted and eligible papers for the Best Paper Award and the Stephen S. Lavenberg and Kenneth C. Sevcik Outstanding Student Paper Award. Additionally, a selection of the accepted papers, as identified by a panel of reviewers, may be nominated for publication as Research Highlights in the Communications of the ACM (CACM).\n\nTopics\n\nWe solicit papers describing original and previously unpublished research. Specific topics of interest include, but are not limited to, the following.\n\nQuantitative measurement, design and evaluation studies of:\n\nComputer and communication networks, protocols and algorithms\nWireless, mobile, ad-hoc and sensor networks, quantum networks, IoT applications, and blockchain networks\nComputer architectures, hardware accelerators, multi-core processors, memory systems and storage networks\nHigh Performance Computing\nOperating systems, file systems and databases\nVirtualization, data centers, distributed and cloud computing, fog and edge computing\nMobile and personal computing systems\nEnergy-efficient computing systems\nReal-time and fault-tolerant systems\nSecurity and privacy of computing and networked systems\nSoftware systems and services, and enterprise applications\nSocial networks, metaverse, multimedia systems, Web services\nCyber-physical systems, including the smart grid\n\nMethodologies, formalisms, metrics, solution techniques and algorithms for:\n\nAnalytical modeling techniques and model validation\nWorkload characterization and benchmarking\nPerformance, scalability, power and reliability analysis\nSustainability analysis and power management\nSystem measurement, performance monitoring and forecasting\nAnomaly detection, problem diagnosis and troubleshooting\nCapacity planning, resource allocation, run time management and scheduling\nExperimental design, statistical analysis, simulation\nGame theory, network economics, and platform design\nMachine learning, AI, Big data, data mining, graph analysis, optimization\nQuantum computing\nImportant Dates\n\nThere are three submission opportunities over the course of the year.\n\nSummer submission website: sigperf24summer.hotcrp.com\n\nRegistration of abstract: August 2, 2023\nPaper submission: August 9, 2023\nTPC Meeting: September 22, 2023 (Friday) or September 23, 2023\nAuthor notification: September 26, 2023\nFall submission website: sigperf24fall.hotcrp.com\n\nRegistration of abstract: October 4, 2023\nPaper submission: October 11, 2023\nTPC Meeting: December 8, 2023 (Friday) or December 9, 2023\nAuthor notification: December 12, 2023\nWinter submission website: sigperf24winter.hotcrp.com\n\nRegistration of abstract: January 24, 2024\nPaper submission: January 31, 2024\nTPC Meeting: March 22, 2024 (Friday) or March 23, 2024\nAuthor notification: March 26, 2024\n\nDeadlines are hard and at 23:59 AoE (Anywhere on Earth).\n\nPapers may be submitted to any deadline and, upon acceptance, papers will be scheduled for publication in the Proceedings of the ACM on Measurement and Analysis of Computing Systems (POMACS) and presentation at the ACM SIGMETRICS / IFIP Performance 2024 conference. The journal publication of accepted papers will appear in the issue of POMACS immediately following acceptance; i.e., papers that are accepted for the Summer and Fall deadlines will appear in POMACS before the conference.\n\nSubmission Instructions\n\nPapers must be submitted electronically in printable pdf form via the submission site posted on this page. All submissions should satisfy the following requirements:\n\nSoft tracking: SIGMETRICS / Performance uses “soft” tracking to better match reviewers with submitted papers and to more clearly define the scope of submissions. All submissions, regardless of the selected track, will be treated equally in terms of acceptance criteria and review guidelines. Authors must select a track from among the four listed on the submission website when submitting their paper. Optionally, a second track may be selected only for papers with a strong inter-disciplinary element. For authors who have difficulty selecting a track, the PC chairs will be available to provide advice. The four tracks adopted for SIGMETRICS / Performance 2024 (for all three deadlines) are:\nLearning. Papers in this track make progress on either (i) the design and analysis of machine learning and AI algorithms, broadly defined, or (ii) the application of tools from machine learning and AI, broadly defined, to the design, control, and optimization of computing, networked, social, or cyber-physical systems. The areas of interest include, but are not limited to, learning theory, online learning, reinforcement learning, deep learning, trustworthy learning (causality, fairness, privacy), distributed learning, as well as their applications to systems.\nMeasurement & Applied Modeling. Papers in this track make an empirical or applied contribution. They often either (i) draw significant insights from real or synthetic data through access to new data sources or experiments, or through novel analysis of existing data sources; and/or (ii) propose and apply a new model or simulation tool to capture real-world phenomena. Papers in this track may present general-purpose measurement or simulation methodologies, or may focus on a specific application domain, or a particular technology, and explain data obtained from measurements of that domain or technology.\nSystems. Papers in this track make a contribution to the design, implementation, and/or practical evaluation of computing, networked, social, or cyber-physical systems. The areas of interest include, but are not limited to networking, distributed systems, computer architecture, wireless networks, edge/IoT applications, high performance computing, cloud computing, energy efficiency, real-time and fault-tolerant computing, security and privacy, social networks, and cyber-physical systems, including the smart grid. System papers with a strong machine learning and AI focus are encouraged to apply to the Learning track.\nTheory. Papers in this track make progress on existing theoretical problems, propose new ones, or introduce significant new analysis techniques. The areas of interest include, but are not limited to, stochastic processes & applied probability, graph theory, scheduling & resource allocation, queueing theory, caching theory, algorithms, mathematical optimization, control theory, market design & game theory, privacy & security, network science, and algorithmic fairness.\nUp to 20 pages, in single-column acmsmall template format, for technical content (including all tables and figures), plus unlimited pages for references. No changes to margins, spacing, or font sizes are allowed from those specified by the style files. Papers violating the formatting guidelines will be returned without review. Additionally, authors may supplement their paper with an appendix, whose length is not constrained. However it may only be used for the purpose of justifying the technical correctness of their claims stated in the body of the paper, e.g., a subset of the proofs or additional experimental validation. Note that the novelty of the submission will be judged based on the technical content of the paper and the reviewers are not obliged to read the appendix.\nReviewing is double anonymous (also known as double blind); please do NOT include your name or affiliation on the submission. Please refer to the anonymity guidelines below in the Policies section.\nAuthors must truthfully declare all conflicts with program committee members on the submission page. If a paper is found to have undeclared conflicts or has listed false conflicts, the paper may be rejected. Conflicts include shared institutional affiliations, collaborations (joint research, authorship, or funding) that occurred in the last 24 months before the selected submission deadline or are expected in the near future, past or current PhD student/supervisor relationships, and close personal or family relationships.\nAuthors are encouraged to conform to the inclusivity guidelines provided in the Diversity and Inclusiveness section below.\nThe Reviewing Process\n\nPapers invited to present at the SIGMETRICS / Performance conference are journal papers accepted to the Proceedings of the ACM on Measurement and Analysis of Computing Systems (POMACS). The reviewing process for submissions is a hybrid of the traditional conference and journal models in computer science. There are three possible outcomes from the first round of submission:\n\nAccept with Shepherding: Every accepted paper will be shepherded in order to ensure that important suggestions from the reviewers are incorporated into the final version of the paper. This is similar to the “Minor Revision” outcome at a journal.\nOne-shot Revision: This is similar to the “Major Revision” outcome in a journal. In such cases, the authors will receive a list of issues that are required to be addressed before the paper can be accepted. Authors may then submit a revision of the paper during one of the next three submission deadlines (this may fall into ACM SIGMETRICS 2025 deadlines). The revision should include an author response to the issues raised by the reviewers as part of the appendix of the paper. In the submitted one-shot revision, authors may use one additional page (for a total of 21 pages in the main paper, plus unlimited appendices) to address the reviewers' requested changes. If the paper is not submitted within this time then any resubmission will be treated as a new paper. The outcome after resubmission of a “one-shot revision” will either be “Accept with Shepherding” or “Reject”. The one-shot revision may be rejected, for example, if the reviewers find that the issues they raised were not satisfactorily addressed in the revision. If the revision is accepted as a poster or rejected then any future revision of it may not be resubmitted to any SIGMETRICS deadline within 12 months following the initial submission of the paper.\nReject: If the paper is rejected it may not be resubmitted to any SIGMETRICS deadline within 12 months following the initial submission of the paper.\nPolicies\nAnonymity guidelines: ACM SIGMETRICS / IFIP Performance is double anonymous, meaning that authors should make a good faith effort to anonymize their papers. As an author, you should not identify yourself in the paper either explicitly or by implication (e.g., through the references or acknowledgments). However, only non-destructive anonymization is required. For example, system names may be left un-anonymized, if the system name is important for a reviewer to be able to evaluate the work. Specifically, please take the following steps when preparing your submission:\nRemove authors' names and affiliations from the title page.\nRemove acknowledgment of identifying names and funding sources.\nUse care in naming your files. Source file names, e.g., Joe.Smith.dvi, are often embedded in the final output as readily accessible comments.\nUse care in referring to related work, particularly your own. Do not omit references to provide anonymity, as this leaves the reviewer unable to grasp the context. Instead, a good solution is to reference your past work in the third person, just as you would any other piece of related work.\nIf you need to reference another submission at ACM SIGMETRICS / IFIP Performance 2024 on a related topic, reference it as follows: \"A related paper describes the design and implementation of our compiler [Anonymous 2024].\" with the corresponding citation: \"[Anonymous 2024] Under submission. Details omitted for double anonymous reviewing.\"\nIf you cite anonymous work, you should also send the deanonymized reference(s) to the PC chairs in a separate email.\nPublication of a pre-submission version of the submission on your personal website, institutional archive, or the arXiv is allowed. We encourage the authors to do so as far away as possible from the submission deadline, as potential reviewers may be automatically notified (e.g., if subscribed to receive updates on recently posted papers). In addition, authors should take care not to widely broadcast information about their arXiv submission, for example, on social media forums or a general press release or large mailing lists where PC members in the recipient list or audience can easily identify the authors.\nPC members and other reviewers are expected to not actively attempt to deanonymize papers. In either case, if there is a breach of double anonymous reviewing, the author and the reviewer should report it to the PC chairs.\nFor accepted papers, it is expected that the list of authors will not change between the last submission and the final camera-ready copy. However, papers undergoing a one-shot revision are allowed to add authors between the submissions.\nThe paper must have a substantive title and abstract. Placeholders are not allowed after the registration deadline. Any submission that does not have a substantive title and abstract by the registration deadline will be rejected without further notice.\nSubmissions must present original research. However, previous publication of preliminary work as an extended abstract at a workshop is acceptable as long as the submission includes substantial new material. Further, in such cases, authors should (i) acknowledge their own previous workshop publications with an anonymous citation, and (ii) explain the differences between the SIGMETRICS / Performance submission and the prior workshop paper. A rule of thumb is that a prior workshop publication should be at most 6 pages long, not including references.\nIt is ACM policy not to allow simultaneous submissions, where the same paper is concurrently submitted to more than one conference/journal. Any simultaneous submissions detected will be immediately rejected from all conferences/journals involved, and the authors may be blacklisted if multiple such violations are detected, including across conference editions. It is considered a simultaneous submission for a paper that is being considered for a one-shot revision to be submitted to another conference/journal before being withdrawn from the SIGMETRICS / Performance process. This applies to all papers, i.e., even authors who wish to opt out of POMACS can only submit to a journal after they have received a decision from SIGMETRICS / Performance.\nAll accepted papers will undergo a shepherding process. The camera-ready paper must be approved by the shepherd for final publication prior to any upload to the ACM camera-ready management system. No unauthorized changes to the body of the paper or references are allowed in between shepherd approval and camera-ready upload. Violations will be investigated by the conference leadership and may lead to sanctions.\nAuthors have the option to “opt out” of publication in the ACM POMACS journal if they would like to publish their work in some other journal. Authors who choose this option must still present their work at the conference and undergo shepherding under the same terms as papers that will appear in ACM POMACS. Additionally, a 1-2 page extended abstract of the work must be included in Performance Evaluation Review. This abstract must contain a link to an online version of the full paper that will be maintained for at least 2 years.\nFor papers that decide to “opt out”, an expedited review process of accepted papers will be provided by the following journals: ACM Transactions on Modeling and Performance Evaluation of Computer Systems, Elsevier Performance Evaluation, INFORMS Operations Research, Stochastic Models, and Stochastic Systems. In each case, after you have notified the TPC Chairs of your decision, you should prepare your manuscript using the same preparation guidelines as standard papers for the journals, indicate in the cover letter that the paper was published at SIGMETRICS / Performance, and submit the paper with an authors’ response to the SIGMETRICS / Performance reviews. Note that, in all cases, the paper will undergo a separate reviewing process within these journals, and acceptance at SIGMETRICS / Performance does not guarantee acceptance of the journal submission.\nPapers accompanied by nondisclosure agreement forms will not be considered. All submissions will be treated as confidential prior to publication. Rejected submissions will be permanently treated as confidential.\nTo avoid any potential bias, the core conference organizers, including the General Chairs and Program Chairs, will not submit papers to any of the SIGMETRICS / Performance submission deadlines in this call for papers. PC members and other Organizing Committee members, however, are allowed to submit their papers.\nEthical Considerations\n\nPapers describing experiments with users or user data (e.g., network traffic, passwords, social network information), should follow the basic principles of ethical research, e.g., beneficence (maximizing the benefits to an individual or to society while minimizing harm to the individual), minimal risk (appropriateness of the risk versus benefit ratio), voluntary consent, respect for privacy, and limited deception. When appropriate, authors are encouraged to include a subsection describing these issues. Authors may want to consult the Menlo Report for further information on ethical principles, or the Allman/Paxson IMC '07 paper for guidance on ethical data sharing.\n\nAuthors must, as part of the submission process, attest that their work complies with all applicable ethical standards of their home institution(s), including but not limited to privacy policies and policies on experiments involving humans. Note that submitting research for approval by one's institution's ethics review body is necessary, but not sufficient—in cases where the PC has concerns about the ethics of the work in a submission, the PC will have its own discussion of the ethics of that work. The PC’s review process may examine the ethical soundness of the paper just as it examines the technical soundness.\n\nAs a published ACM author, you and your co-authors are subject to all ACM Publications Policies, including ACM's new Publications Policy on Research Involving Human Participants and Subjects. In particular, authors must follow the basic research and publication principle outlined by the ACM Publication Board's Policies and Procedures and the ACM Code of Ethics and Professional Conduct. Relevant policies regarding the publication and review processes include ACM's policies (i) on the roles and responsibilities in ACM publishing, (ii) on the coercion and abuse in the ACM publications process, and on plagiarism, misrepresentation, and falsification.\n\nDiversity and Inclusiveness\n\nAs part of our efforts at fostering diversity and inclusiveness, we provide the following guidelines to assist you when preparing your paper submission and/or your conference presentation.\n\nInclusivity Guidelines: Good technical writing often requires pedagogical examples to explain complex ideas. These provide an opportunity to promote inclusiveness by challenging implicit biases and assumptions.\nAvoid gender-specific pronouns if possible. Where required, consider interspersing a balance of male (\"he\", \"his\"), female (“she”, “her”), and gender-neutral (“they”, “their”) ones.\nUse gender-neutral names in examples. Instead of Alice and Bob, try Alex and Jun. Consider names that reflect a variety of cultural backgrounds: Esteban, Naveena, Sasha, Sergey, Tuan, Xin, and so on.\nRefrain from assuming binary gender. For instance, the “gender” column in a table of data should have more than just “male” and “female” values.\nBe mindful of people's diverse backgrounds. Not everyone has two parents. Not every marriage involves \"husband\" and \"wife\". Not everyone lives in a house, or has a car.\nAccessibility Guidelines: Color and hearing perception varies from person to person depending on age, color blindness, distance, visual acuity, etc. Make sure that the contents of your paper are accessible to all, by considering the following:\nUse patterns, symbols, and textures to emphasize and contrast visual elements in graphs and figures, rather than using colors alone. Graphs should be readable either in monochrome or color versions.\nUse a color palette that is designed for visually-impaired or color-blind people. Avoid poor color combinations such as green/red or blue/purple.\n\n\nContact the SIGMETRICS / Performance 2024 PC chairs at sigperf24tpcchairs@sigmetrics.org in case of questions or concerns.\n\nCredits for the banner image"
+  },
+  {
+    "_id": "6639d5964fd45eb8c2e670e8",
+    "Title": "National Conference of The Australian Society for Operations Research",
+    "Acronym": "ASOR",
+    "Source": "CORE2023",
+    "Rank": "Australasian C",
+    "Note": "none",
+    "DBLP": "none",
+    "PrimaryFoR": "4602",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://www.asor.org/am/2023/call-for-papers-2023#:~:text=UPDATE%3A%20The%20extended%20deadline%20to,payable%20in%20the%20ASOR%20Portal."
+    ],
+    "createdAt": "2024-05-07T07:17:42.755Z",
+    "updatedAt": "2024-05-16T11:15:11.665Z",
+    "__v": 0,
+    "ConferenceDate": [
+      {
+        "date": "2024-10-31T00:00:00.000Z",
+        "keyword": "take place",
+        "update_time": "2024-05-16T11:15:11.624Z"
+      },
+      {
+        "date": "2024-04-30T00:00:00.000Z",
+        "keyword": "Workshops",
+        "update_time": "2024-05-16T11:15:11.625Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-04-30T00:00:00.000Z",
+        "keyword": "notification",
+        "update_time": "2024-05-16T11:15:11.625Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-02-29T00:00:00.000Z",
+        "keyword": "Abstract Submission",
+        "update_time": "2024-05-16T11:15:11.624Z"
+      },
+      {
+        "date": "2024-04-30T00:00:00.000Z",
+        "keyword": "submission deadline",
+        "update_time": "2024-05-16T11:15:11.624Z"
+      },
+      {
+        "date": "2023-04-01T00:00:00.000Z",
+        "keyword": "Abstracts",
+        "update_time": "2024-05-16T11:15:11.624Z"
+      }
+    ],
+    "CameraReady": []
+  },
+  {
+    "_id": "6639d5b14fd45eb8c2e670fa",
+    "Title": "Pacific Conference on Computer Graphics and Applications",
+    "Acronym": "PG",
+    "Source": "CONFHUB",
+    "Rank": "Journal Published",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4607",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://pg2024.hsu.edu.cn/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-10-13T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:52:27.161Z"
+      },
+      {
+        "date": "2024-10-16T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:52:27.161Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-05-31T00:00:00.000Z",
+        "keyword": "Abstract due",
+        "update_time": "2024-06-01T03:52:27.161Z"
+      },
+      {
+        "date": "2024-06-07T00:00:00.000Z",
+        "keyword": "Paper due",
+        "update_time": "2024-06-01T03:52:27.161Z"
+      },
+      {
+        "date": "2024-08-12T00:00:00.000Z",
+        "keyword": "Revision submission",
+        "update_time": "2024-06-01T03:52:27.161Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-07-29T00:00:00.000Z",
+        "keyword": "Decision notification",
+        "update_time": "2024-06-01T03:52:27.161Z"
+      },
+      {
+        "date": "2024-08-19T00:00:00.000Z",
+        "keyword": "Final acceptance notification",
+        "update_time": "2024-06-01T03:52:27.161Z"
+      }
+    ],
+    "CameraReady": [],
+    "createdAt": "2024-05-07T07:18:09.198Z",
+    "updatedAt": "2024-05-07T07:18:09.198Z",
+    "__v": 0,
+    "Location": "Huangshan (Yellow Mountain), China",
+    "Type": "offline",
+    "CallForPaper": "Introduction to the Conference\n\nThe 32th Pacific Conference on Computer Graphics and Applications (Pacific Graphics 2024) will be held in Huangshan (Yellow Mountain), China. Pacific Graphics is an annual flagship conference of the Asia Graphics Association. As a highly successful conference series, Pacific Graphics provides a premium forum for researchers, developers, practitioners in the Pacific Rim and around the world to present and discuss new problems, solutions, and technologies in computer graphics and related areas.\n\nWe welcome original unpublished submissions in all areas of computer graphics and its applications. The topics include (but are not limited to) modeling, rendering, animation, imaging, visualization, human-computer interaction, and graphics systems. Pacific Graphics 2024 will have two integrated paper tracks: Journal (Computer Graphics Forum) and Conference:\n\n\nJournal Papers containing high-quality original and unpublished results are solicited for the journal track, and will be published in a special issue of Computer Graphics Forum (CGF), the journal of the Eurographics Association, in print and online in 2024.\n\nConference Papers are expected to present novel research advancing computer graphics and applications. However, the evidence supporting these advances might not be as comprehensive as expected for Journal Papers. Papers accepted to this track will be published in the PG2024 proceedings in the EG digital library. Selected and promising Conference Papers will be invited to submit an extended full-paper version to Computers & Graphics.\n\n\nAll papers should be submitted through the SRM system (https://srmv2.eg.org/COMFy/Conference/PG_2024). A laTex-template is available at: LaTex-template. Each paper is recommended to be 7-12 pages in length. At submission time, authors can indicate if their submission should be considered for the Journal track only or for both tracks. The review process, deadline, and committee are the same for both tracks. The review process is doubly anonymous. Each paper receives reviews from the committee and external tertiary reviewers. Authors will have opportunities to address reviewers' concerns in a rebuttal period after the first cycle of reviewing before decisions are made.\n\nIn addition, the conference will also include poster sessions. The posters should be no more than 2 pages. The submission will be reviewed by the committee members and need to be anonymized.\n\nPacific Graphics 2024 will be colocated with Chinagraph 2024.\n\n\n\n\n\nIMPORTANT DATES\n\n\n\n\nPapers: (all times are AoE)\n\n\n\n\nAbstract due:  May 31\n\nPaper due:  June 7\n\nReview to authors:  July 15\n\nRebuttals due:  July 19\n\nDecision notification:  July 29\n\nRevision submission:  August 12\n\nFinal acceptance notification:  August 19\n\n\n\n\nPosters:\n\n\n\n\nSubmission due:  August 5\n\nDecision notification:  August 20\n\n\n\n\n\nPast Conferences\n\n\n\n\nPacific Graphics 2023 – Daejeon\n\nPacific Graphics 2022 – Kyoto\n\nPacific Graphics 2020+21 – Wellington\n\nPacific Graphics 2019 – Seoul\n\nPacific Graphics 2018 – Hong Kong\n\nPacific Graphics 2017 – Taipei\n\nPacific Graphics 2016 – Okinawa\n\nPacific Graphics 2015 – Beijing\n\nPacific Graphics 2014 – Seoul\n\nPacific Graphics 2013 – Singapore\n\nPacific Graphics 2012 – Hong Kong\n\nPacific Graphics 2011 – Kaohsiung\n\nPacific Graphics 2010 – Hangzhou\n\nPacific Graphics 2009 – Jeju\n\nPacific Graphics 2008 – Tokyo\n\nPacific Graphics 2007 – Maui\n\nPacific Graphics 2006 – Taipei\n\nPacific Graphics 2005 – Macau\n\nPacific Graphics 2004 – Seoul\n\nPacific Graphics 2003 – Canmore\n\nPacific Graphics 2002 – Beijing\n\nPacific Graphics 2001 – Tokyo\n\nPacific Graphics 2000 – Hong Kong\n\nPacific Graphics 1999 – Seoul\n\nPacific Graphics 1998 – Singapore\n\nPacific Graphics 1997 – Seoul\n\nPacific Graphics 1996 – Taipei\n\nPacific Graphics 1995 – Seoul\n\nPacific Graphics 1994 – Beijing\n\nPacific Graphics 1993 – Seoul"
+  },
+  {
+    "_id": "6639d682b9c725a1d3ed3d75",
+    "Title": "Practical Applications of Agents and Multiagent Systems",
+    "Acronym": "PAAMS",
+    "Source": "CORE2023",
+    "Rank": "National: Spain",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4602",
+    "Comments": "3",
+    "AverageRating": "4",
+    "Links": [
+      "https://www.paams.net/"
+    ],
+    "createdAt": "2024-05-07T07:21:38.118Z",
+    "updatedAt": "2024-06-01T04:22:40.626Z",
+    "__v": 0,
+    "ConferenceDate": [
+      {
+        "date": "2024-06-26T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:22:40.625Z"
+      },
+      {
+        "date": "2024-06-28T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:22:40.625Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-04-12T00:00:00.000Z",
+        "keyword": "General deadline",
+        "update_time": "2024-05-16T12:32:53.814Z"
+      },
+      {
+        "date": "2024-04-26T00:00:00.000Z",
+        "keyword": "Demonstrations deadline",
+        "update_time": "2024-05-16T12:32:53.814Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-05-10T00:00:00.000Z",
+        "keyword": "Notification of acceptance",
+        "update_time": "2024-05-16T12:32:53.814Z"
+      }
+    ],
+    "CameraReady": [
+      {
+        "date": "2024-05-24T00:00:00.000Z",
+        "keyword": "Camera-Ready papers",
+        "update_time": "2024-05-16T12:32:53.814Z"
+      }
+    ],
+    "Location": "Spain",
+    "Type": "offline",
+    "CallForPaper": ""
+  },
+  {
+    "_id": "6639d688b9c725a1d3ed3d7b",
+    "Title": "Prague Stringology Conference",
+    "Acronym": "PSC",
+    "Source": "CONFHUB",
+    "Rank": "National: Czech",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4613",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://www.stringology.org/event/2024/index.html"
+    ],
+    "createdAt": "2024-05-07T07:21:44.411Z",
+    "updatedAt": "2024-06-01T03:37:45.349Z",
+    "__v": 0,
+    "ConferenceDate": [
+      {
+        "date": "2024-08-26T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:37:45.348Z"
+      },
+      {
+        "date": "2024-08-28T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:37:45.348Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-05-16T00:00:00.000Z",
+        "keyword": "Submission of Abstracts",
+        "update_time": "2024-06-01T03:37:45.348Z"
+      },
+      {
+        "date": "2024-05-23T00:00:00.000Z",
+        "keyword": "Submission of Papers",
+        "update_time": "2024-06-01T03:37:45.348Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-06-23T00:00:00.000Z",
+        "keyword": "Notification of Acceptance",
+        "update_time": "2024-06-01T03:37:45.348Z"
+      }
+    ],
+    "CameraReady": [
+      {
+        "date": "2024-07-14T00:00:00.000Z",
+        "keyword": "Final Version Due",
+        "update_time": "2024-06-01T03:37:45.348Z"
+      }
+    ],
+    "Location": "Prague, Czech Republic",
+    "Type": "offline",
+    "CallForPaper": "PSC 2024 is the 27th Stringology conference. It is an international conference focusing on stringology and related areas. It is organized annually by the Prague Stringology Club, a research group in the Department of Theoretical Computer Science at the Faculty of Information Technology, Czech Technical University in Prague. The proceedings of recent conferences are indexed in DBLP, Scopus, and Web of Science of Clarivate.\n\nStringology is a part of algorithmic research that deals with the processing of text strings. It has existed for at least thirty years and developed into a respected subfield of its own. The last twenty years have produced an explosion of new results. This progress is due in part to the human genome effort, an area to which string algorithms can make important contributions. String processing extended into tree processing is called arbology.\n\nThe topics of the conference include but are not limited to:\nalgorithms for pattern matching in strings, images and trees\ndata structures (automata, trees etc.) for pattern matching in strings, images and trees\ncoding and data compression\nbioinformatics\ninformation retrieval\nstring processing algorithms in databases\nsearching for regularities\nnatural language processing\nImportant dates:\nSubmission of Abstracts: May 16, 2024\nSubmission of Papers: May 23, 2024\nNotification of Acceptance: June 23, 2024\nEarly Registration Due: July 14, 2024\nFinal Version Due: July 14, 2024\nConference: August 26–28, 2024\nSubmission:\n\nThe submission page (https://www.easychair.org/conferences/?conf=psc2024) is closed.\n\nAuthors are cordially invited to submit their full papers (in PDF format, 10–15 pages, A4 page format). To allow more time for paper completion, paper title, authors, and abstract should be submitted first by the first deadline (Submission of Abstracts) and the the paper in PDF format still can be updated till the next deadline (Submission of Papers).\n\nIf you have any problems/questions on submissions, please contact Jan Holub (pscᏍstringology.org).\n\nFor their final version the papers are required to be prepared using PSC LaTeX style available at http://www.stringology.org/pscproc2.\n\nInvited talk:\n\nIgor O. Zavadskyi\nThe Discreet Charm of Multi-Pattern Codes\n\nAccommodation:\n\nThere are several hotels in Dejvice quarter (Hotel Diplomat, Hotel DAP, Hotel Crowne Plaza just to mention a few).\n\nWe found out that our negotiated price cannot beat the prices available via some large booking servers. Please use your favourite one to make your hotel booking.\n\nHistory\n\nPSC 2024 was preceded by Prague Stringology Workshops in 1996-2000 and by Prague Stringology Conferences starting from 2001. Each year proceedings are prepared for the conference. They are published by Czech Technical University in Prague and are also available from the PSC web pages. Selected papers from the later workshops were also published in a special issue of the journal Kybernetika (IF in 2009 was 0.445). Selected papers from the 2002-2006, 2008 conferences were then published in the Nordic Journal of Computing, Journal of Automata, Languages and Combinatorics, International Journal of Foundations of Computer Science (IF in 2013 was 0.326), and Discrete Applied Mathematics (IF in 2013 was 0.677).\n\nProgram Committee:\nAmihood Amir, Bar-Ilan University, Israel, and Georgia Tech, USA\nGabriela Andrejková, Pavol Jozef Šafárik University, Slovakia\nSimone Faro, University of Catania, Italy\nFrantisek Franek, McMaster University, Canada\nJan Holub (chair), Czech Technical University in Prague, Czech Republic\nShmuel Tomi Klein, Bar Ilan University, Israel\nDominik Köppl (chair), Tokyo Medical and Dental University, Japan\nThierry Lecroq, University of Rouen, France\nRobert Mercas, Loughborough University, UK\nYuto Nakashima, Kyushu University, Japan\nSolon Pissis, CWI, The Netherlands\nWilliam F. Smyth, McMaster University, Canada\nBruce Watson, National Security Centre of Excellence, Canada\nJan Žďárek, Czech Technical University in Prague, Czech Republic\n\nOrganizing Committee:\nDominika Draesslerová, Czech Technical University in Prague, Czech Republic\nOndřej Guth (chair), Czech Technical University in Prague, Czech Republic\nJan Holub (chair), Czech Technical University in Prague, Czech Republic\nTomáš Pecka, Czech Technical University in Prague, Czech Republic\nJosef Erik Sedláček, Czech Technical University in Prague, Czech Republic\nRegina Šmídová, Czech Technical University in Prague, Czech Republic\nJan Trávníček, Czech Technical University in Prague, Czech Republic\nJan Žďárek, Czech Technical University in Prague, Czech Republic\n\nContact address:\nThe Prague Stringology Club\nDepartment of Theoretical Computer Science\nFaculty of Information Technology\nCzech Technical University in Prague\nThákurova 2700/9\n160 00 Prague 6\nCzech Republic\n\ne-mail: pscᏍstringology.org\n"
+  }
+]

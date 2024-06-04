@@ -1,0 +1,2038 @@
+[
+  {
+    "CameraReady": [],
+    "_id": "6639c28d4931f50e65517e55",
+    "Title": "Computer Animation, Information Visualisation, and Digital Effects",
+    "Acronym": "CAivDE",
+    "Source": "CORE2023",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "none",
+    "PrimaryFoR": "4607",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://asia.siggraph.org/2023/submissions/computer-animation-festival/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-07-31T00:00:00.000Z",
+        "keyword": "conference",
+        "update_time": "2024-05-15T12:37:35.263Z"
+      },
+      {
+        "date": "2024-06-30T00:00:00.000Z",
+        "keyword": "take place",
+        "update_time": "2024-05-15T12:37:35.265Z"
+      },
+      {
+        "date": "2022-10-31T00:00:00.000Z",
+        "keyword": "Symposium",
+        "update_time": "2024-05-15T12:37:35.266Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-07-12T23:59:00.000Z",
+        "keyword": "Submission Deadline",
+        "update_time": "2024-05-15T12:37:35.213Z"
+      },
+      {
+        "date": "2023-07-12T23:59:00.000Z",
+        "keyword": "Submissions",
+        "update_time": "2024-05-15T12:37:35.225Z"
+      },
+      {
+        "date": "2024-04-30T00:00:00.000Z",
+        "keyword": "Submit",
+        "update_time": "2024-05-15T12:37:35.232Z"
+      },
+      {
+        "date": "2024-07-12T00:00:00.000Z",
+        "keyword": "Close",
+        "update_time": "2024-05-15T12:37:35.233Z"
+      }
+    ],
+    "createdAt": "2024-05-07T05:56:29.167Z",
+    "updatedAt": "2024-05-15T12:37:35.337Z",
+    "__v": 0,
+    "NotificationDate": [
+      {
+        "date": "2023-07-31T00:00:00.000Z",
+        "keyword": "Acceptance Notification",
+        "update_time": "2024-05-15T12:37:35.290Z"
+      }
+    ]
+  },
+  {
+    "_id": "6639c2984931f50e65517e5f",
+    "Title": "Conference in Uncertainty in Artificial Intelligence",
+    "Acronym": "UAI",
+    "Source": "CORE2023",
+    "Rank": "A",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4602",
+    "Comments": "1",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://www.auai.org/uai2023/call_for_papers"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-07-31T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:08:48.631Z"
+      },
+      {
+        "date": "2023-08-04T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:08:48.631Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-04-20T00:00:00.000Z",
+        "keyword": "Paper submission deadline",
+        "update_time": "2024-05-16T11:27:00.418Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-05-08T00:00:00.000Z",
+        "keyword": "Author notification",
+        "update_time": "2024-05-16T11:27:00.418Z"
+      }
+    ],
+    "createdAt": "2024-05-07T05:56:40.963Z",
+    "updatedAt": "2024-06-01T04:08:48.631Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "Pittsburgh, PA, USA"
+  },
+  {
+    "_id": "6639c2934931f50e65517e5b",
+    "Title": "Computer Supported Collaborative Learning",
+    "Acronym": "CSCL",
+    "Source": "CORE2023",
+    "Rank": "B",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4608",
+    "Comments": "1",
+    "AverageRating": "5",
+    "Links": [
+      "https://tc.computer.org/tclt/icalt-2023-track-5-cscl/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-07-01T00:00:00.000Z",
+        "keyword": "Conference",
+        "update_time": "2024-05-22T15:55:08.685Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-01-13T00:00:00.000Z",
+        "keyword": "Deadline",
+        "update_time": "2024-05-22T15:55:08.676Z"
+      }
+    ],
+    "NotificationDate": [],
+    "createdAt": "2024-05-07T05:56:35.875Z",
+    "updatedAt": "2024-05-22T15:55:08.712Z",
+    "__v": 0,
+    "CameraReady": []
+  },
+  {
+    "_id": "6639c2914931f50e65517e59",
+    "Title": "Computer Sciences and Information Technologies",
+    "Acronym": "CSIT",
+    "Source": "CORE2023",
+    "Rank": "National",
+    "Note": "none",
+    "DBLP": "none",
+    "PrimaryFoR": "4602",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://csit2022.org/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-08-20T00:00:00.000Z",
+        "keyword": "Conference",
+        "update_time": "2024-05-16T11:26:48.503Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2022-02-26T00:00:00.000Z",
+        "keyword": "Submission Deadline",
+        "update_time": "2024-05-16T11:26:48.503Z"
+      },
+      {
+        "date": "2022-02-26T00:00:00.000Z",
+        "keyword": "Submissions",
+        "update_time": "2024-05-16T11:26:48.503Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2022-05-15T00:00:00.000Z",
+        "keyword": "Authors Notification",
+        "update_time": "2024-05-16T11:26:48.503Z"
+      }
+    ],
+    "createdAt": "2024-05-07T05:56:33.748Z",
+    "updatedAt": "2024-05-16T11:26:48.524Z",
+    "__v": 0,
+    "CameraReady": []
+  },
+  {
+    "_id": "6639c2a04931f50e65517e67",
+    "Title": "Conference of the European Society for Fuzzy Logic and Technologies",
+    "Acronym": "EUSFLAT",
+    "Source": "CORE2023",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4602",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://www.eusflat.org/events-eusflat-events.html#:~:text=13th%20Conference%20of%20the%20European,%2C%202023%2C%20Palma%2C%20Spain.",
+      "https://www.eusflat.org/",
+      "https://www.facebook.com/EUSFLAT2023/",
+      "https://sinbad2.ujaen.es/sites/default/files/publications/2023-Garc%C3%ADa-Zamora%20et%20al-EUSFLAT.pdf"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-06-30T00:00:00.000Z",
+        "keyword": "Conference",
+        "update_time": "2024-05-16T09:04:58.397Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-02-29T00:00:00.000Z",
+        "keyword": "Submission deadline",
+        "update_time": "2024-05-16T09:04:58.389Z"
+      }
+    ],
+    "createdAt": "2024-05-07T05:56:48.727Z",
+    "updatedAt": "2024-05-31T09:22:55.875Z",
+    "__v": 0,
+    "NotificationDate": [],
+    "CameraReady": [],
+    "Location": "Palma de Mallorca, Spain"
+  },
+  {
+    "_id": "6639c39ebf0a76d1ef717bc1",
+    "Title": "Conference on Security and Cryptography for Networks",
+    "Acronym": "SCN",
+    "Source": "CORE2023",
+    "Rank": "National: Italy",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4604",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://sulab-sever.u-aizu.ac.jp/acns2023/cfp.html#:~:text=The%2021st%20International%20Conference%20on,and%20computer%20security)%20and%20privacy."
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-06-22T00:00:00.000Z",
+        "keyword": "The 21st International Conference on Applied Cryptography and Network Security (ACNS 2023) will be held in Kyoto, Japan, on 19–22 June 2023.",
+        "update_time": "2024-05-16T13:30:51.280Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2022-09-08T23:59:00.000Z",
+        "keyword": "submission deadline",
+        "update_time": "2024-05-16T13:30:51.279Z"
+      },
+      {
+        "date": "2024-04-30T00:00:00.000Z",
+        "keyword": "Submissions",
+        "update_time": "2024-05-16T13:30:51.279Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2022-11-10T00:00:00.000Z",
+        "keyword": "Notification",
+        "update_time": "2024-05-16T13:30:51.280Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:01:02.418Z",
+    "updatedAt": "2024-05-16T13:30:51.299Z",
+    "__v": 0,
+    "CameraReady": []
+  },
+  {
+    "_id": "6639c3b5bf0a76d1ef717bd9",
+    "Title": "Designing Interactive Systems",
+    "Acronym": "DIS",
+    "Source": "CORE2023",
+    "Rank": "A",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4608",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://dis.acm.org/2023/call-for-papers-and-pictorials/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-07-10T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:09:39.982Z"
+      },
+      {
+        "date": "2023-07-14T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:09:39.982Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-02-02T00:00:00.000Z",
+        "keyword": "Title and Abstract deadline",
+        "update_time": "2024-05-16T11:34:12.195Z"
+      },
+      {
+        "date": "2023-02-02T00:00:00.000Z",
+        "keyword": "Submission deadline",
+        "update_time": "2024-05-16T11:34:12.196Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-04-28T00:00:00.000Z",
+        "keyword": "Notifications",
+        "update_time": "2024-05-16T11:34:12.196Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:01:25.953Z",
+    "updatedAt": "2024-06-01T04:09:39.983Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "Pittsburgh, PA, USA"
+  },
+  {
+    "_id": "6639c3bdbf0a76d1ef717be1",
+    "Title": "Digital Games Research Conference",
+    "Acronym": "DIGRA",
+    "Source": "CORE2023",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4607",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "http://www.digra.org/category/call-for-papers/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-06-23T00:00:00.000Z",
+        "keyword": "Conference dates:",
+        "update_time": "2024-05-16T11:34:51.683Z"
+      },
+      {
+        "date": "2024-07-05T00:00:00.000Z",
+        "keyword": "will be held",
+        "update_time": "2024-05-16T11:34:51.683Z"
+      },
+      {
+        "date": "2024-11-30T00:00:00.000Z",
+        "keyword": "Conference:",
+        "update_time": "2024-05-16T11:34:51.685Z"
+      },
+      {
+        "date": "2024-07-05T00:00:00.000Z",
+        "keyword": "take place",
+        "update_time": "2024-05-16T11:34:51.685Z"
+      },
+      {
+        "date": "2024-07-01T00:00:00.000Z",
+        "keyword": "Workshops",
+        "update_time": "2024-05-16T11:34:51.685Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2022-12-30T00:00:00.000Z",
+        "keyword": "Full papers, abstracts, and panels submission deadline",
+        "update_time": "2024-05-16T11:34:51.681Z"
+      },
+      {
+        "date": "2023-01-30T00:00:00.000Z",
+        "keyword": "Workshop proposals submission deadline",
+        "update_time": "2024-05-16T11:34:51.681Z"
+      },
+      {
+        "date": "2023-03-30T00:00:00.000Z",
+        "keyword": "Workshop submission deadline",
+        "update_time": "2024-05-16T11:34:51.682Z"
+      },
+      {
+        "date": "2019-06-30T00:00:00.000Z",
+        "keyword": "Abstract deadline",
+        "update_time": "2024-05-16T11:34:51.682Z"
+      },
+      {
+        "date": "2022-09-30T00:00:00.000Z",
+        "keyword": "Submissions",
+        "update_time": "2024-05-16T11:34:51.682Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-02-28T00:00:00.000Z",
+        "keyword": "Announcement of review results and workshop acceptance",
+        "update_time": "2024-05-16T11:34:51.685Z"
+      },
+      {
+        "date": "2019-12-20T00:00:00.000Z",
+        "keyword": "Notifications of acceptance",
+        "update_time": "2024-05-16T11:34:51.685Z"
+      },
+      {
+        "date": "2019-06-30T00:00:00.000Z",
+        "keyword": "Notification of acceptance",
+        "update_time": "2024-05-16T11:34:51.685Z"
+      },
+      {
+        "date": "2019-07-31T00:00:00.000Z",
+        "keyword": "Author notification",
+        "update_time": "2024-05-16T11:34:51.685Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:01:33.208Z",
+    "updatedAt": "2024-05-16T11:34:51.701Z",
+    "__v": 0,
+    "CameraReady": []
+  },
+  {
+    "_id": "6639c3c8bf0a76d1ef717bed",
+    "Title": "EMAS (merger of DALT, AOSE and PROMAS)",
+    "Acronym": "EMAS",
+    "Source": "CORE2023",
+    "Rank": "B",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4602",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://emas.in.tu-clausthal.de/2023/cfp.html"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-05-29T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:09:56.454Z"
+      },
+      {
+        "date": "2023-05-30T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:09:56.454Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-02-22T00:00:00.000Z",
+        "keyword": "Submission deadline",
+        "update_time": "2024-05-16T11:35:52.257Z"
+      },
+      {
+        "date": "2024-04-30T00:00:00.000Z",
+        "keyword": "Submissions",
+        "update_time": "2024-05-16T11:35:52.258Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-03-27T00:00:00.000Z",
+        "keyword": "Author notification",
+        "update_time": "2024-05-16T11:35:52.258Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:01:44.142Z",
+    "updatedAt": "2024-06-01T04:09:56.455Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "London, UK"
+  },
+  {
+    "_id": "6639c29a4931f50e65517e61",
+    "Title": "Conference of the Association for Machine Translation in the Americas",
+    "Acronym": "AMTA",
+    "Source": "CORE2023",
+    "Rank": "National/Regional",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4602",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://amtaweb.org/amta-2023-virtual-call-for-proposals/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-11-08T00:00:00.000Z",
+        "keyword": "A virtual one-day event under the auspices of AMTA",
+        "update_time": "2024-05-16T13:30:02.067Z"
+      },
+      {
+        "date": "2023-11-08T00:00:00.000Z",
+        "keyword": "Wednesday, 8 November 2023",
+        "update_time": "2024-05-16T13:30:02.067Z"
+      },
+      {
+        "date": "2023-11-08T00:00:00.000Z",
+        "keyword": "held",
+        "update_time": "2024-05-16T13:30:02.067Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-08-15T00:00:00.000Z",
+        "keyword": "Submission deadline",
+        "update_time": "2024-05-16T13:30:02.067Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-09-15T00:00:00.000Z",
+        "keyword": "Notification of acceptance",
+        "update_time": "2024-05-16T13:30:02.067Z"
+      }
+    ],
+    "createdAt": "2024-05-07T05:56:42.928Z",
+    "updatedAt": "2024-05-16T13:30:02.093Z",
+    "__v": 0,
+    "CameraReady": []
+  },
+  {
+    "_id": "6639c389bf0a76d1ef717bab",
+    "Title": "Conference on File and Storage Technologies",
+    "Acronym": "FAST",
+    "Source": "CORE2023",
+    "Rank": "A",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4605",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://www.usenix.org/conference/fast23/call-for-papers"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-02-21T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:09:02.803Z"
+      },
+      {
+        "date": "2023-02-23T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:09:02.803Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2022-09-22T11:59:00.000Z",
+        "keyword": "Paper submissions due",
+        "update_time": "2024-05-16T11:27:47.433Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2022-12-09T00:00:00.000Z",
+        "keyword": "Notification to authors",
+        "update_time": "2024-05-16T11:27:47.435Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:00:41.745Z",
+    "updatedAt": "2024-06-01T04:09:02.803Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "Santa Clara, CA, USA"
+  },
+  {
+    "CameraReady": [],
+    "_id": "6639c29e4931f50e65517e65",
+    "Title": "Conference of the European Association for Machine Translation",
+    "Acronym": "EAMT",
+    "Source": "CORE2023",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4602",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://eamt.org/category/latest/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-06-15T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:35:54.457Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-03-28T00:00:00.000Z",
+        "keyword": "Submission deadline for",
+        "update_time": "2024-05-15T10:06:57.313Z"
+      },
+      {
+        "date": "2022-04-01T00:00:00.000Z",
+        "keyword": "Submissions",
+        "update_time": "2024-05-15T10:06:57.314Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-10-27T23:59:00.000Z",
+        "keyword": "Acceptance notifications",
+        "update_time": "2024-05-15T10:06:57.314Z"
+      },
+      {
+        "date": "2022-04-26T00:00:00.000Z",
+        "keyword": "Notification to authors",
+        "update_time": "2024-05-15T10:06:57.314Z"
+      }
+    ],
+    "createdAt": "2024-05-07T05:56:46.730Z",
+    "updatedAt": "2024-06-01T03:35:54.458Z",
+    "__v": 0,
+    "Location": "Tampere, Finland"
+  },
+  {
+    "_id": "6639c380bf0a76d1ef717ba1",
+    "Title": "Conference on Algebra and Coalgebra in Computer Science",
+    "Acronym": "CALCO",
+    "Source": "CORE2023",
+    "Rank": "B",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4613",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://coalg.org/calco-mfps-2023/calco/cfp/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-05-31T00:00:00.000Z",
+        "keyword": "Conference",
+        "update_time": "2024-05-16T11:27:27.040Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-03-22T00:00:00.000Z",
+        "keyword": "Abstract submission",
+        "update_time": "2024-05-16T11:27:27.039Z"
+      },
+      {
+        "date": "2023-03-26T00:00:00.000Z",
+        "keyword": "Paper submission",
+        "update_time": "2024-05-16T11:27:27.039Z"
+      },
+      {
+        "date": "2024-04-30T00:00:00.000Z",
+        "keyword": "Submissions",
+        "update_time": "2024-05-16T11:27:27.040Z"
+      },
+      {
+        "date": "2023-03-22T00:00:00.000Z",
+        "keyword": "Full Paper",
+        "update_time": "2024-05-16T11:27:27.040Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-04-28T00:00:00.000Z",
+        "keyword": "Author notification",
+        "update_time": "2024-05-16T11:27:27.041Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:00:32.378Z",
+    "updatedAt": "2024-05-31T09:01:20.035Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "Bloomington, IN, USA"
+  },
+  {
+    "_id": "6639c382bf0a76d1ef717ba3",
+    "Title": "Conference on Algorithmic Aspects in Information and Management",
+    "Acronym": "AAIM",
+    "Source": "CORE2023",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4613",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://algo-conference.org/2023/algocloud/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-09-05T00:00:00.000Z",
+        "keyword": "Conference:",
+        "update_time": "2024-05-16T13:30:16.510Z"
+      },
+      {
+        "date": "2023-06-30T00:00:00.000Z",
+        "keyword": "Dates",
+        "update_time": "2024-05-16T13:30:16.510Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-06-30T00:00:00.000Z",
+        "keyword": "Paper submission deadline",
+        "update_time": "2024-05-16T13:30:16.510Z"
+      },
+      {
+        "date": "2024-04-30T00:00:00.000Z",
+        "keyword": "Short papers",
+        "update_time": "2024-05-16T13:30:16.510Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-08-01T00:00:00.000Z",
+        "keyword": "Notification to authors",
+        "update_time": "2024-05-16T13:30:16.510Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:00:34.539Z",
+    "updatedAt": "2024-05-16T13:30:16.527Z",
+    "__v": 0,
+    "CameraReady": []
+  },
+  {
+    "_id": "6639c387bf0a76d1ef717ba9",
+    "Title": "CONFERENCE ON COMPUTER SCIENCE AND INTELLIGENCE SYSTEMS",
+    "Acronym": "FedCSIS",
+    "Source": "CORE2023",
+    "Rank": "Multi-conference",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4602",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://2024.fedcsis.org/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-04-30T00:00:00.000Z",
+        "keyword": "Program",
+        "update_time": "2024-05-16T13:30:29.989Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-06-11T00:00:00.000Z",
+        "keyword": "Position paper submission",
+        "update_time": "2024-05-16T13:30:29.988Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-06-25T00:00:00.000Z",
+        "keyword": "Author notification",
+        "update_time": "2024-05-16T13:30:29.989Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:00:39.681Z",
+    "updatedAt": "2024-05-31T09:09:49.238Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "Warsaw, Poland"
+  },
+  {
+    "_id": "6639c391bf0a76d1ef717bb3",
+    "Title": "Conference on Innovation in Clouds, Internet and Networks",
+    "Acronym": "ICIN",
+    "Source": "CORE2023",
+    "Rank": "National: France",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4606",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://www.icin-conference.org/2023/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-03-06T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:37:55.729Z"
+      },
+      {
+        "date": "2023-03-09T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:37:55.729Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2022-11-21T00:00:00.000Z",
+        "keyword": "Paper Submission Due",
+        "update_time": "2024-05-22T02:16:20.067Z"
+      },
+      {
+        "date": "2023-01-30T00:00:00.000Z",
+        "keyword": "Papers due",
+        "update_time": "2024-05-22T02:16:20.067Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-01-11T00:00:00.000Z",
+        "keyword": "Notification of Acceptance",
+        "update_time": "2024-05-22T02:16:20.067Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:00:49.821Z",
+    "updatedAt": "2024-06-01T04:37:55.730Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2023-01-30T00:00:00.000Z",
+        "keyword": "Camera-Ready",
+        "update_time": "2024-05-22T02:16:20.067Z"
+      }
+    ],
+    "Location": "Paris, France"
+  },
+  {
+    "_id": "6639c395bf0a76d1ef717bb7",
+    "Title": "Conference on Integer Programming and Combinatorial Optimization",
+    "Acronym": "IPCO",
+    "Source": "CORE2023",
+    "Rank": "A",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4613",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://optimization.discovery.wisc.edu/ipco-2023-madison/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-06-21T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:09:17.738Z"
+      },
+      {
+        "date": "2023-06-23T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:09:17.738Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2022-11-06T23:59:00.000Z",
+        "keyword": "Submission deadline",
+        "update_time": "2024-05-16T11:28:18.952Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-01-20T00:00:00.000Z",
+        "keyword": "Notifications",
+        "update_time": "2024-05-16T11:28:18.952Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:00:53.284Z",
+    "updatedAt": "2024-06-01T04:09:17.739Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "Madison, WI, USA"
+  },
+  {
+    "_id": "6639c3acbf0a76d1ef717bcf",
+    "Title": "Current Trends in Theory and Practice of Computer Science",
+    "Acronym": "SOFSEM",
+    "Source": "CORE2023",
+    "Rank": "B",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "46",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://www.sofsem.cz/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-01-15T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:09:28.564Z"
+      },
+      {
+        "date": "2023-01-18T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:09:28.564Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-08-28T00:00:00.000Z",
+        "keyword": "submission deadline",
+        "update_time": "2024-05-16T11:29:01.323Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-11-17T00:00:00.000Z",
+        "keyword": "author notification",
+        "update_time": "2024-05-16T11:29:01.325Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:01:16.806Z",
+    "updatedAt": "2024-06-01T04:09:28.565Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "Nový Smokovec, Slovakia"
+  },
+  {
+    "CameraReady": [],
+    "_id": "6639c3b3bf0a76d1ef717bd7",
+    "Title": "Design, Automation and Test in Europe Conference",
+    "Acronym": "DATE",
+    "Source": "CORE2023",
+    "Rank": "B",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4612",
+    "Comments": "3",
+    "AverageRating": "5",
+    "Links": [
+      "https://www.date-conference.com/call-for-papers"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-04-17T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:34:44.530Z"
+      },
+      {
+        "date": "2023-04-19T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:34:44.530Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-11-11T00:00:00.000Z",
+        "keyword": "Full Paper Submission",
+        "update_time": "2024-05-07T08:06:18.302Z"
+      },
+      {
+        "date": "2023-12-31T00:00:00.000Z",
+        "keyword": "Application deadline",
+        "update_time": "2024-05-07T08:06:18.303Z"
+      },
+      {
+        "date": "2023-12-03T00:00:00.000Z",
+        "keyword": "Submission deadline",
+        "update_time": "2024-05-07T08:06:18.303Z"
+      },
+      {
+        "date": "2023-11-04T00:00:00.000Z",
+        "keyword": "Abstract Submission",
+        "update_time": "2024-05-07T08:06:18.303Z"
+      },
+      {
+        "date": "2023-12-03T00:00:00.000Z",
+        "keyword": "Submissions",
+        "update_time": "2024-05-07T08:06:18.306Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-11-14T00:00:00.000Z",
+        "keyword": "notification of acceptance",
+        "update_time": "2024-05-07T08:06:18.327Z"
+      },
+      {
+        "date": "2024-01-12T00:00:00.000Z",
+        "keyword": "Acceptance notification",
+        "update_time": "2024-05-07T08:06:18.328Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:01:23.970Z",
+    "updatedAt": "2024-06-01T03:34:44.530Z",
+    "__v": 0,
+    "Location": "Antwerp, Belgium"
+  },
+  {
+    "_id": "6639c3bbbf0a76d1ef717bdf",
+    "Title": "Digital Audio Effects Conference",
+    "Acronym": "DAFX",
+    "Source": "CORE2023",
+    "Rank": "C",
+    "Note": "See note",
+    "DBLP": "view",
+    "PrimaryFoR": "4603",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://dafx24.surrey.ac.uk/call-for-papers/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-04-30T00:00:00.000Z",
+        "keyword": "conference",
+        "update_time": "2024-05-16T11:34:24.660Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-02-29T00:00:00.000Z",
+        "keyword": "Submit",
+        "update_time": "2024-05-16T11:34:24.659Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-04-30T00:00:00.000Z",
+        "keyword": "Acceptance",
+        "update_time": "2024-05-16T11:34:24.660Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:01:31.280Z",
+    "updatedAt": "2024-05-16T11:34:24.680Z",
+    "__v": 0,
+    "CameraReady": []
+  },
+  {
+    "_id": "6639c3c4bf0a76d1ef717be9",
+    "Title": "Dynamic Languages Symposium",
+    "Acronym": "DLS",
+    "Source": "CORE2023",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4612",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://2023.splashcon.org/home/dls-2023"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-10-24T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:09:50.986Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-06-28T00:00:00.000Z",
+        "keyword": "Paper submission deadline",
+        "update_time": "2024-05-16T11:35:11.291Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-07-26T00:00:00.000Z",
+        "keyword": "Author notification",
+        "update_time": "2024-05-16T11:35:11.292Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:01:40.579Z",
+    "updatedAt": "2024-06-01T04:09:50.986Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "Cascais, Portugal"
+  },
+  {
+    "_id": "6639c3cdbf0a76d1ef717bf3",
+    "Title": "ETHICOMP Conference",
+    "Acronym": "ETHICOMP",
+    "Source": "CORE2023",
+    "Rank": "C",
+    "Note": "See note",
+    "DBLP": "none",
+    "PrimaryFoR": "4608",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://sites.utu.fi/ethicomp2022/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-06-30T00:00:00.000Z",
+        "keyword": "conference",
+        "update_time": "2024-05-16T10:54:41.634Z"
+      },
+      {
+        "date": "2024-06-30T00:00:00.000Z",
+        "keyword": "held",
+        "update_time": "2024-05-16T10:54:41.634Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2022-01-31T00:00:00.000Z",
+        "keyword": "Deadline",
+        "update_time": "2024-05-16T10:54:41.634Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:01:49.612Z",
+    "updatedAt": "2024-05-16T10:54:41.654Z",
+    "__v": 0,
+    "NotificationDate": [],
+    "CameraReady": []
+  },
+  {
+    "_id": "6639c2964931f50e65517e5d",
+    "Title": "Conference for the International Simulation and Gaming Association",
+    "Acronym": "ISAGA",
+    "Source": "CORE2023",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4607",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://isaga.com/our-activities/conferences/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-02-28T00:00:00.000Z",
+        "keyword": "Conference",
+        "update_time": "2024-05-16T11:26:54.995Z"
+      },
+      {
+        "date": "2012-01-31T00:00:00.000Z",
+        "keyword": "Symposium",
+        "update_time": "2024-05-16T11:26:54.995Z"
+      },
+      {
+        "date": "2024-08-31T00:00:00.000Z",
+        "keyword": "held",
+        "update_time": "2024-05-16T11:26:54.995Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-10-31T00:00:00.000Z",
+        "keyword": "Deadline",
+        "update_time": "2024-05-16T11:26:54.994Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-02-28T00:00:00.000Z",
+        "keyword": "Notification of acceptance",
+        "update_time": "2024-05-16T11:26:54.996Z"
+      }
+    ],
+    "createdAt": "2024-05-07T05:56:38.449Z",
+    "updatedAt": "2024-05-16T11:26:55.012Z",
+    "__v": 0,
+    "CameraReady": []
+  },
+  {
+    "_id": "6639c38dbf0a76d1ef717baf",
+    "Title": "Conference on Games (was Computational Intelligence and Games CIG)",
+    "Acronym": "COG",
+    "Source": "CORE2023",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4607",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://2023.ieee-cog.org/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-08-21T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:09:07.792Z"
+      },
+      {
+        "date": "2023-08-24T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:09:07.792Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-01-31T00:00:00.000Z",
+        "keyword": "Submission",
+        "update_time": "2024-05-16T11:27:56.502Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-02-28T00:00:00.000Z",
+        "keyword": "Notification of acceptance",
+        "update_time": "2024-05-16T11:27:56.503Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:00:45.637Z",
+    "updatedAt": "2024-06-01T04:09:07.792Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "Boston, MA, USA"
+  },
+  {
+    "_id": "6639c393bf0a76d1ef717bb5",
+    "Title": "Conference on Innovative Data Systems Research",
+    "Acronym": "CIDR",
+    "Source": "CORE2023",
+    "Rank": "A",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4605",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://www.cidrdb.org/cidr2023/cfp.html"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-01-08T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:09:12.790Z"
+      },
+      {
+        "date": "2023-01-11T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:09:12.790Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-09-30T00:00:00.000Z",
+        "keyword": "submission deadline",
+        "update_time": "2024-05-16T11:28:03.773Z"
+      },
+      {
+        "date": "2024-04-30T00:00:00.000Z",
+        "keyword": "Abstracts",
+        "update_time": "2024-05-16T11:28:03.773Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2022-12-09T00:00:00.000Z",
+        "keyword": "author notification for all contributions",
+        "update_time": "2024-05-16T11:28:03.774Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:00:51.582Z",
+    "updatedAt": "2024-06-01T04:09:12.790Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "Amsterdam, The Netherlands"
+  },
+  {
+    "_id": "6639c3c2bf0a76d1ef717be7",
+    "Title": "DNA Computing and Molecular Programming",
+    "Acronym": "DNA",
+    "Source": "CORE2023",
+    "Rank": "B",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4601",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://chemistry-europe.onlinelibrary.wiley.com/hub/journal/14397633/call-for-papers/si-2023-000164",
+      "https://www.sciencedirect.com/journal/cell-insight/about/call-for-papers",
+      "https://axial.acs.org/biology-and-biological-chemistry/call-for-papers-nucleic-acids",
+      "https://axial.acs.org/theoretical-and-computational-chemistry/call-for-papers-editing-dna-and-rna-through-computations"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-09-11T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:39:42.138Z"
+      },
+      {
+        "date": "2023-09-15T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:39:42.138Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-04-15T00:00:00.000Z",
+        "keyword": "Paper Submission Deadline",
+        "update_time": "2024-05-16T13:34:17.502Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:01:38.494Z",
+    "updatedAt": "2024-06-01T04:39:42.139Z",
+    "__v": 0,
+    "NotificationDate": [
+      {
+        "date": "2023-05-30T00:00:00.000Z",
+        "keyword": "Notification Date",
+        "update_time": "2024-05-16T13:34:17.503Z"
+      }
+    ],
+    "CameraReady": [],
+    "Location": "Sendai, Japan"
+  },
+  {
+    "_id": "6639c3d1bf0a76d1ef717bf7",
+    "Title": "Euro Virtual Reality",
+    "Acronym": "Euro VR",
+    "Source": "CORE2023",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4607",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://dsc2023.org/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-11-29T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:28:54.243Z"
+      },
+      {
+        "date": "2023-12-01T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:28:54.243Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-02-15T00:00:00.000Z",
+        "keyword": "submission deadline",
+        "update_time": "2024-05-16T13:19:39.263Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-04-15T00:00:00.000Z",
+        "keyword": "acceptance notification",
+        "update_time": "2024-05-16T13:19:39.291Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:01:53.519Z",
+    "updatedAt": "2024-06-01T04:28:54.243Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2023-09-08T00:00:00.000Z",
+        "keyword": "Final paper",
+        "update_time": "2024-05-16T13:19:39.303Z"
+      }
+    ],
+    "Location": "Rotterdam, The Netherlands"
+  },
+  {
+    "_id": "6639c384bf0a76d1ef717ba5",
+    "Title": "Conference on Combinatorial Optimization and Applications",
+    "Acronym": "COCOA",
+    "Source": "CORE2023",
+    "Rank": "C",
+    "Note": "See note",
+    "DBLP": "view",
+    "PrimaryFoR": "4602",
+    "Comments": "1",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://theory.utdallas.edu/COCOA2023/cfp.html"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-12-15T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:08:53.919Z"
+      },
+      {
+        "date": "2023-12-17T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:08:53.919Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-08-28T23:59:00.000Z",
+        "keyword": "Abstract Submission",
+        "update_time": "2024-05-16T11:27:33.657Z"
+      },
+      {
+        "date": "2023-09-04T23:59:00.000Z",
+        "keyword": "Submission Due Date",
+        "update_time": "2024-05-16T11:27:33.657Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-10-04T23:59:00.000Z",
+        "keyword": "Notification of Decision",
+        "update_time": "2024-05-16T11:27:33.658Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:00:36.344Z",
+    "updatedAt": "2024-06-01T04:08:53.920Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "Hawaii, HI, USA"
+  },
+  {
+    "CameraReady": [],
+    "_id": "6639c38fbf0a76d1ef717bb1",
+    "Title": "Conference on Information Sciences and Systems",
+    "Acronym": "CISS",
+    "Source": "CORE2023",
+    "Rank": "National: USA",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4606",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://ciss.org.pk/call-for-papers-ciss-insight-winter-2023/"
+    ],
+    "createdAt": "2024-05-07T06:00:47.483Z",
+    "updatedAt": "2024-06-01T03:36:38.478Z",
+    "__v": 0,
+    "ConferenceDate": [
+      {
+        "date": "2022-03-09T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:36:38.477Z"
+      },
+      {
+        "date": "2022-03-11T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:36:38.477Z"
+      }
+    ],
+    "NotificationDate": [],
+    "SubmissonDate": [],
+    "Location": "Princeton, NJ, USA"
+  },
+  {
+    "_id": "6639c399bf0a76d1ef717bbb",
+    "Title": "Conference on Interactive Theorem Proving (previously TPHOLs, changed in 2009)",
+    "Acronym": "ITP",
+    "Source": "CORE2023",
+    "Rank": "A",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4613",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://mizar.uwb.edu.pl/ITP2023/cfp.html"
+    ],
+    "createdAt": "2024-05-07T06:00:57.047Z",
+    "updatedAt": "2024-06-01T04:06:49.910Z",
+    "__v": 0,
+    "ConferenceDate": [
+      {
+        "date": "2024-07-31T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:06:49.910Z"
+      },
+      {
+        "date": "2023-08-04T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:06:49.910Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-02-20T00:00:00.000Z",
+        "keyword": "Author notification",
+        "update_time": "2024-05-16T11:13:00.198Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-02-13T00:00:00.000Z",
+        "keyword": "Abstract submission deadline",
+        "update_time": "2024-05-16T11:13:00.196Z"
+      },
+      {
+        "date": "2023-02-13T00:00:00.000Z",
+        "keyword": "Paper submission deadline",
+        "update_time": "2024-05-16T11:13:00.197Z"
+      }
+    ],
+    "CameraReady": [],
+    "Location": "Białystok, Poland"
+  },
+  {
+    "_id": "6639c3a2bf0a76d1ef717bc5",
+    "Title": "Conference on Software in Telecommunications and Computer Networks",
+    "Acronym": "SOFTCOM",
+    "Source": "CORE2023",
+    "Rank": "National: Croatia",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4606",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://www.comsoc.org/conferences-events/international-conference-software-telecommunications-and-computer-networks-2023"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2018-09-13T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:56:33.358Z"
+      },
+      {
+        "date": "2018-09-15T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:56:33.358Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-05-01T12:00:00.000Z",
+        "keyword": "Deadline",
+        "update_time": "2024-05-16T10:54:35.712Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:01:06.119Z",
+    "updatedAt": "2024-06-01T03:56:33.358Z",
+    "__v": 0,
+    "NotificationDate": [],
+    "CameraReady": [],
+    "Location": "Split, Croatia"
+  },
+  {
+    "_id": "6639c3a7bf0a76d1ef717bc9",
+    "Title": "Conference on Visualization and Data Analysis",
+    "Acronym": "VDA",
+    "Source": "CORE2023",
+    "Rank": "National: USA",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4608",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://www.iaria.org/conferences2023/DATAANALYTICS23.html"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-09-25T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-05-27T12:21:11.784Z"
+      },
+      {
+        "date": "2023-09-29T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-05-27T12:21:11.784Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-08-01T00:00:00.000Z",
+        "keyword": "Submission",
+        "update_time": "2024-05-27T12:21:11.821Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-08-20T00:00:00.000Z",
+        "keyword": "Notification",
+        "update_time": "2024-05-27T12:21:11.822Z"
+      },
+      {
+        "date": "2023-09-05T00:00:00.000Z",
+        "keyword": "Registration",
+        "update_time": "2024-05-27T12:21:11.822Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:01:11.441Z",
+    "updatedAt": "2024-05-30T07:12:49.540Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2023-09-05T00:00:00.000Z",
+        "keyword": "Camera ready",
+        "update_time": "2024-05-27T12:21:11.822Z"
+      }
+    ],
+    "CallForPaper": "DATA ANALYTICS 2023\nDue to multiple requests, the submission deadline has been moved.\nOnsite and Online Options: In order to accommodate a large number of situations, we are offering the option for either physical presence or virtual participation (pdf slides or pre-recorded videos).\n\nISSN: 2308-4464\nISBN: 978-1-68558-111-4\n\nRegistered: with the Library of Congress of the United States of America (ISSN)\nFree Access: in ThinkMind Digital Library\n\nDATA ANALYTICS 2023 is colocated with the following events as part of NexTech 2023 Congress:\n\nUBICOMM 2023, The Seventeenth International Conference on Mobile Ubiquitous Computing, Systems, Services and Technologies\nADVCOMP 2023, The Seventeenth International Conference on Advanced Engineering Computing and Applications in Sciences\nSEMAPRO 2023, The Seventeenth International Conference on Advances in Semantic Processing\nAMBIENT 2023, The Thirteenth International Conference on Ambient Computing, Applications, Services and Technologies\nEMERGING 2023, The Fifteenth International Conference on Emerging Networks and Systems Intelligence\nDATA ANALYTICS 2023, The Twelfth International Conference on Data Analytics\nGLOBAL HEALTH 2023, The Twelfth International Conference on Global Health Challenges\nCYBER 2023, The Eighth International Conference on Cyber-Technologies and Cyber-Systems\n\nDATA ANALYTICS 2023 Steering Committee\n\n\t\t\n\nWolfram Wöß\nInstitute for Application Oriented Knowledge Processing | Johannes Kepler University, Linz\nAustria\n\n\t\t\t\n\nKerstin Lemke-Rust\nHochschule Bonn-Rhein-Sieg\nGermany\n\t\t\n\nGeorge Tambouratzis\nInstitute for Language and Speech Processing, Athena R.C.\nGreece\n\n\t\t\t\n\nLes Sztandera\nThomas Jefferson University\nUSA\n\t\t\n\nIvana Semanjski\nGhent University\nBelgium\n\n\t\t\t\n\nSandjai Bhulai\nVrije Universiteit Amsterdam\nThe Netherlands\n\nDATA ANALYTICS 2023 conference tracks:\n\nFundamentals for data analytics\n\nTools, frameworks and mechanisms for data analytics; Open API for data analytics; In-database analytics; Pre-built analytics (pattern, time-series, clustering, graph, statistical analysis, etc.); Analytics visualization; Multi-modal support for data analytics; Google/FaceBook/Twitter/etc. analytics; High-performance data analytics\n\nAdvanced topics in Deep/Machine learning\n\nDistributed and parallel learning algorithms; Image and video coding; Deep learning and Internet of Things; Deep learning and Big data; Data preparation, feature selection, and feature extraction; Error resilient transmission of multimedia data; 3D video coding and analysis; Depth map applications; Machine learning programming models and abstractions; Programming languages for machine learning; Visualization of data, models, and predictions; Human behavioral predictions; Hardware-efficient machine learning methods; Model training, inference, and serving; Trust and security for machine learning applications; Testing, debugging, and monitoring of machine learning applications; Machine learning for systems.\n\nSpecific Machine Learning approaches and Data Processing\n\nMachine learning models (supervised, unsupervised, reinforcement, constrained, etc.); Generative modeling (Gaussian, HMM, GAN, Bayesian networks, autoencoders, etc.); Explainable AI (feature importance, LIME, SHAP, FACT, etc.); Bayesian learning models; Prediction uncertainty (approximation learning, similarity); Training of models (hyperparameter optimization, regularization, optimizers); Active learning (partially labels datasets, faulty labels, semi-supervised); Applications of machine learning (recommender systems, NLP, computer vision, etc.); Data in machine learning (no data, small data, big data, graph data, time series, sparse data, etc.)\n\nMechanisms and features\n\nScalable data analytics; Big data analytics; Deep data analytics; Mass data analytics; Storing, dropping and filtering data; Relevant/redundant/obsolete data analytics; Volume vs. semantics analytics; Nomad analytics; Predictive analytics; Trust in data analytics; Legal issues analytics; Failure on data analytics\n\nSentiment/opinion analysis\n\nArchitectures for generic sentiment analysis systems; Sentiment analysis techniques on social media; Document-level analysis; Sentence-level analysis; Aspect-based analysis; Comparative-sentiment analysis; Sentiment lexicon acquisition; Optimizing sentiment analysis algorithms; Applications of sentiment analysis.\n\nApplication-oriented analytics\n\nStatistical applications; Simulation applications; Crawling web services; Cross-database analytics; Forecast analytics; Financial risk management; ROI analytics\n\nTarget analytics\n\nBusiness analytics; Malware analytics; Cyber-threats analytics; Mining user logs; Reputation analytics; User choice analytics; Branding analytics; Utility proximity-search analytics; Survey-based online asset analytics; Online employment analytics; Geology analytics; Global climate analytics; Remote learning analytics; Homecare analytics; Population growth and migration analytics; Food-borne illness outbreaks analytics\n\nBig Data\n\nFoundational models for Big Data; Big Data Analytics and Metrics; Big Data processing and management; Big Data search and mining; Big Data platforms; Big Data persistence and preservation; Big Data and social networks; Big Data economics\n\nHuge data\n\nKnowledge Discovery from Huge Data; Computational Intelligence for Huge Data; Linked Huge Data; Security Intelligence with Huge Data\n\nDeadlines:\nSubmission\n\n\t\n\nAug 01, 2023\nNotification\n\n\t\n\nAug 20, 2023\nRegistration\n\n\t\n\nSep 05, 2023\nCamera ready\n\n\t\n\nSep 05, 2023\n\nDeadlines differ for special tracks. Please consult the conference home page for special tracks Call for Papers (if any).",
+    "Location": "San Francisco, CA, USA"
+  },
+  {
+    "CameraReady": [],
+    "_id": "6639c3b2bf0a76d1ef717bd5",
+    "Title": "Datenbanksysteme für Business, Technologie und Web",
+    "Acronym": "BTW",
+    "Source": "CORE2023",
+    "Rank": "National:Germany",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4605",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://saudaihoc.ulis.vnu.edu.vn/call-for-papers-2023-international-graduate-research-symposium-2023-igrs-at-the-university-of-languages-and-international-studies-vnu/",
+      "https://en.dut.udn.vn/call-for-papers-%7C-the-4th-international-conference-on-transportation-infrastructure-and-sustainable-development-tisdic-2023-205.html",
+      "https://openlivinglabdays.com/call-for-papers-2023/",
+      "https://www.facebook.com/photo/?fbid=622095883251583&set=a.140204318107411"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-10-29T00:00:00.000Z",
+        "keyword": "conference",
+        "update_time": "2024-05-10T15:08:23.760Z"
+      },
+      {
+        "date": "2022-11-30T00:00:00.000Z",
+        "keyword": "Symposium",
+        "update_time": "2024-05-10T15:08:23.760Z"
+      },
+      {
+        "date": "2024-09-30T00:00:00.000Z",
+        "keyword": "Dates:",
+        "update_time": "2024-05-10T15:08:23.760Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-07-31T00:00:00.000Z",
+        "keyword": "Deadline",
+        "update_time": "2024-05-10T15:08:23.760Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:01:22.115Z",
+    "updatedAt": "2024-05-31T09:20:47.088Z",
+    "__v": 0,
+    "NotificationDate": [],
+    "Location": "Dresden, Germany"
+  },
+  {
+    "_id": "6639c3c0bf0a76d1ef717be5",
+    "Title": "Discovery Science",
+    "Acronym": "DS",
+    "Source": "CORE2023",
+    "Rank": "B",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4611",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://step.ipb.pt/events/call-for-papers-ds-2023-discovery-science-conference/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-10-09T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:09:45.260Z"
+      },
+      {
+        "date": "2023-10-11T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:09:45.260Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-05-27T00:00:00.000Z",
+        "keyword": "Full paper submission (deadline)",
+        "update_time": "2024-05-16T11:35:04.549Z"
+      },
+      {
+        "date": "2023-05-27T00:00:00.000Z",
+        "keyword": "Abstract submission",
+        "update_time": "2024-05-16T11:35:04.549Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-06-03T00:00:00.000Z",
+        "keyword": "Notification of acceptance",
+        "update_time": "2024-05-16T11:35:04.552Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:01:36.748Z",
+    "updatedAt": "2024-06-01T04:09:45.261Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "Porto, Portugal"
+  },
+  {
+    "CameraReady": [],
+    "_id": "6639c3c6bf0a76d1ef717beb",
+    "Title": "Educational Data Mining",
+    "Acronym": "EDM",
+    "Source": "CORE2023",
+    "Rank": "B",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4601",
+    "Comments": "2",
+    "AverageRating": "4.5",
+    "Links": [
+      "https://educationaldatamining.org/edm2023/calls/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-07-11T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:35:48.661Z"
+      },
+      {
+        "date": "2023-07-14T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:35:48.661Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-01-20T00:00:00.000Z",
+        "keyword": "Full papers and short papers, Industry papers, Posters and demos, Doctoral consortium papers",
+        "update_time": "2024-05-15T09:53:08.741Z"
+      },
+      {
+        "date": "2023-01-13T00:00:00.000Z",
+        "keyword": "Abstracts for full and short papers",
+        "update_time": "2024-05-15T09:53:08.742Z"
+      },
+      {
+        "date": "2022-12-05T00:00:00.000Z",
+        "keyword": "Workshop and Tutorial proposals",
+        "update_time": "2024-05-15T09:53:08.744Z"
+      },
+      {
+        "date": "2023-01-20T00:00:00.000Z",
+        "keyword": "submission deadline",
+        "update_time": "2024-05-15T09:53:08.744Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-04-10T00:00:00.000Z",
+        "keyword": "Acceptance notifications for full and short papers, posters, demos, and doctoral consortium papers",
+        "update_time": "2024-05-15T09:53:08.749Z"
+      },
+      {
+        "date": "2023-05-01T00:00:00.000Z",
+        "keyword": "Due dates and acceptance notifications for workshop papers",
+        "update_time": "2024-05-15T09:53:08.749Z"
+      },
+      {
+        "date": "2023-01-09T00:00:00.000Z",
+        "keyword": "Acceptance notifications for workshops and tutorials",
+        "update_time": "2024-05-15T09:53:08.750Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:01:42.418Z",
+    "updatedAt": "2024-06-01T03:35:48.662Z",
+    "__v": 0,
+    "Location": "Bengaluru, India"
+  },
+  {
+    "_id": "6639c482078f0b3454c91b7e",
+    "Title": "Eurographics/IEEE Symposium on Visualization",
+    "Acronym": "EuroVis",
+    "Source": "CORE2023",
+    "Rank": "B",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4607",
+    "Comments": "1",
+    "AverageRating": "5",
+    "Links": [
+      "https://conferences.eg.org/eurovis2023/for-submitters/full-papers/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-06-12T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:10:13.130Z"
+      },
+      {
+        "date": "2023-06-16T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:10:13.130Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2022-12-02T00:00:00.000Z",
+        "keyword": "Full paper deadline",
+        "update_time": "2024-05-16T11:36:25.681Z"
+      },
+      {
+        "date": "2022-11-25T00:00:00.000Z",
+        "keyword": "Abstract deadline",
+        "update_time": "2024-05-16T11:36:25.682Z"
+      },
+      {
+        "date": "2023-03-17T00:00:00.000Z",
+        "keyword": "Submission",
+        "update_time": "2024-05-16T11:36:25.682Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-03-17T00:00:00.000Z",
+        "keyword": "Final Notification",
+        "update_time": "2024-05-16T11:36:25.689Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:04:50.517Z",
+    "updatedAt": "2024-06-01T04:10:13.131Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "Virtual Event"
+  },
+  {
+    "_id": "6639c484078f0b3454c91b80",
+    "Title": "Euromicro Conference on Real-Time Systems",
+    "Acronym": "ECRTS",
+    "Source": "CORE2023",
+    "Rank": "B",
+    "Note": "See note",
+    "DBLP": "view",
+    "PrimaryFoR": "4606",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://www.ecrts.org/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-07-11T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:29:09.772Z"
+      },
+      {
+        "date": "2023-07-14T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:29:09.772Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-02-29T00:00:00.000Z",
+        "keyword": "Submission deadline",
+        "update_time": "2024-05-16T13:31:09.244Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-04-19T00:00:00.000Z",
+        "keyword": "Notification",
+        "update_time": "2024-05-16T13:31:09.244Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:04:52.798Z",
+    "updatedAt": "2024-06-01T04:29:09.773Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "Vienna, Austria"
+  },
+  {
+    "_id": "6639c37bbf0a76d1ef717b9d",
+    "Title": "Conference of the Pacific Association for Computational Linguistics",
+    "Acronym": "PACLING",
+    "Source": "CORE2023",
+    "Rank": "C",
+    "Note": "See note",
+    "DBLP": "view",
+    "PrimaryFoR": "4602",
+    "Comments": "1",
+    "AverageRating": "5",
+    "Links": [
+      "https://paclic2023.github.io/calls/main_conference_papers/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-11-30T00:00:00.000Z",
+        "keyword": "Conference",
+        "update_time": "2024-05-16T13:33:46.197Z"
+      },
+      {
+        "date": "2023-07-30T00:00:00.000Z",
+        "keyword": "Dates",
+        "update_time": "2024-05-16T13:33:46.197Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-07-30T00:00:00.000Z",
+        "keyword": "Paper submission deadline",
+        "update_time": "2024-05-16T13:33:46.196Z"
+      },
+      {
+        "date": "2024-04-30T00:00:00.000Z",
+        "keyword": "Paper submissions",
+        "update_time": "2024-05-16T13:33:46.197Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-09-10T00:00:00.000Z",
+        "keyword": "Notification of acceptance",
+        "update_time": "2024-05-16T13:33:46.198Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:00:27.739Z",
+    "updatedAt": "2024-05-16T13:33:46.217Z",
+    "__v": 0,
+    "CameraReady": []
+  },
+  {
+    "_id": "6639c38bbf0a76d1ef717bad",
+    "Title": "Conference on Fun with Algorithms",
+    "Acronym": "FUN",
+    "Source": "CORE2023",
+    "Rank": "National: Italy",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4613",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "http://www.lix.polytechnique.fr/~hermann/conf.php"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-07-19T00:00:00.000Z",
+        "keyword": "Raleigh, North Carolina",
+        "update_time": "2024-05-22T15:56:02.557Z"
+      },
+      {
+        "date": "2024-08-25T00:00:00.000Z",
+        "keyword": "Shanghai, China",
+        "update_time": "2024-05-22T15:56:02.560Z"
+      },
+      {
+        "date": "2024-05-22T00:00:00.000Z",
+        "keyword": "conference in",
+        "update_time": "2024-05-22T15:56:02.561Z"
+      },
+      {
+        "date": "2024-05-21T00:00:00.000Z",
+        "keyword": "Symposium",
+        "update_time": "2024-05-22T15:56:02.587Z"
+      },
+      {
+        "date": "2024-09-22T00:00:00.000Z",
+        "keyword": "Workshops",
+        "update_time": "2024-05-22T15:56:02.587Z"
+      },
+      {
+        "date": "2024-05-22T00:00:00.000Z",
+        "keyword": "Program",
+        "update_time": "2024-05-22T15:56:02.590Z"
+      },
+      {
+        "date": "2020-08-06T16:21:00.000Z",
+        "keyword": "Date",
+        "update_time": "2024-05-22T15:56:02.590Z"
+      },
+      {
+        "date": "2024-08-16T00:00:00.000Z",
+        "keyword": "DLT",
+        "update_time": "2024-05-22T15:56:02.591Z"
+      }
+    ],
+    "SubmissonDate": [],
+    "NotificationDate": [
+      {
+        "date": "2024-07-03T00:00:00.000Z",
+        "keyword": "notification",
+        "update_time": "2024-05-22T15:56:02.599Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:00:43.466Z",
+    "updatedAt": "2024-05-22T15:56:02.621Z",
+    "__v": 0,
+    "CameraReady": []
+  },
+  {
+    "CameraReady": [],
+    "_id": "6639c397bf0a76d1ef717bb9",
+    "Title": "Conference on Intelligent Computer Mathematics",
+    "Acronym": "CICM",
+    "Source": "CORE2023",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4613",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://cicm2023.mist.ac.bd/",
+      "https://cicm2023.mist.ac.bd/",
+      "https://cicm-conference.org/2023/",
+      "https://cicm-conference.org/2023/cicm.php?event=&menu=cfp"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-07-28T00:00:00.000Z",
+        "keyword": "conference",
+        "update_time": "2024-05-11T01:59:07.012Z"
+      },
+      {
+        "date": "2024-03-15T00:00:00.000Z",
+        "keyword": "Date",
+        "update_time": "2024-05-11T01:59:07.014Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-03-15T00:00:00.000Z",
+        "keyword": "Abstract submission",
+        "update_time": "2024-05-11T01:59:07.009Z"
+      },
+      {
+        "date": "2023-06-04T00:00:00.000Z",
+        "keyword": "Paper submission",
+        "update_time": "2024-05-11T01:59:07.009Z"
+      },
+      {
+        "date": "2023-03-30T00:00:00.000Z",
+        "keyword": "Full-Paper",
+        "update_time": "2024-05-11T01:59:07.010Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-03-30T00:00:00.000Z",
+        "keyword": "Acceptance notification",
+        "update_time": "2024-05-11T01:59:07.014Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:00:55.137Z",
+    "updatedAt": "2024-05-31T09:20:41.096Z",
+    "__v": 0,
+    "Location": "Cambridge, UK"
+  }
+]

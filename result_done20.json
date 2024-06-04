@@ -1,0 +1,1147 @@
+[
+  {
+    "_id": "6639d112387369a8970585df",
+    "Title": "International Conference on Knowledge-Based and Intelligent Information and Engineering Systems",
+    "Acronym": "KES",
+    "Source": "CONFHUB",
+    "Rank": "B",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4602",
+    "Comments": "63",
+    "AverageRating": "4.7",
+    "Links": [
+      "http://kes2024.kesinternational.org/submission.php"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-09-11T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:51:21.636Z"
+      },
+      {
+        "date": "2024-09-13T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:51:21.636Z"
+      }
+    ],
+    "NotificationDate": [
+    ],
+    "createdAt": "2024-05-07T06:58:26.971Z",
+    "updatedAt": "2024-06-01T04:05:43.604Z",
+    "__v": 0,
+    "SubmissonDate": [],
+    "CameraReady": [],
+    "Location": "Seville, Spain", 
+    "Type": "offline",
+    "CallForPaper": "Papers are invited for KES2024 on topics lying within the scope of the conference. All contributions must be of high quality, original, and must not have been previously published elsewhere or intended for publication elsewhere.\n\nAll papers will be reviewed by members of the International Programme Committee and depending on their level and attributes, may be selected for oral or poster presentation, and publication in the conference proceedings.\n\nFull papers will be reviewed by the IPC and if accepted and presented, they will be published in Elsevier's Procedia Computer Science open access journal, available in ScienceDirect and submitted to be indexed/abstracted in CPCI (ISI conferences and part of Web of Science), Engineering Index, and Scopus.\n\nAuthors of selected papers may be invited to submit extended versions of their papers for publication as full journal papers, for example in the KES Journal or other journals.\n\nSubmission Instructions\n\nSubmissions for the conference must be made as complete papers (there is no abstract submission stage) submitted as PDF documents through the EasyChair online submission and review system.\n\nFull papers should be detailed academic articles in conventional format. The guide length for full papers is 8 to 10 pages (maximum).\n\nGuidance notes for the preparation of Full Papers is available .. here ..\n\nAn MS Word template is available (6Mbyte .zip archive) .. here ..\n\nA LaTeX template is available (5.7Mbyte .zip archive) .. here ..\n\nThe paper format as a PDF document is available .. here ..\n\nPlease consult important FAQs about document preparation to be found .. here ..\n\nFor a paper to be published in the Procedia proceedings\n\nno changes may be made to the Procedia template and the instructions must be followed exactly\nthe maximum length of 10 pages must not be exceeded\nthe paper must be presented at the conference\n\nIt is the author's responsibility to ensure that their paper does not contain any errors. Also, kindly note that Elsevier will publish what they receive so it is important that the authors submit the final version of their papers.\n\nProofs will not be sent to authors at any time during production.\n\nIf the above conditions are not adhered to, the paper will not be published in Procedia Energy, but we may be able to publish the paper elsewhere - contact us for details.\n\nCopyright\n\nElsevier has now automated the exclusive license transfer process. A copy of the online form will be directly sent to the Authors during production. All copyrights related queries can be sent to oxfordcopyrights@elsevier.com.\n\nSubmission Conditions\n\nAll oral and poster papers must be presented by one of the authors who must register for the conference and pay the fee.\n\nBy submitting a paper for the conference authors undertake that, if the paper is accepted, they will pay the fee, attend the conference, and present the paper.\n\nBy submitting a paper you also indicate that you accept the KES Terms and Conditions, available .. here .. on the conference web site, and that you agree to abide by them."
+  },
+  {
+    "_id": "6639d11a387369a8970585e7",
+    "Title": "International Conference on Legal Knowledge and Information Systems",
+    "Acronym": "JURIX",
+    "Source": "CORE2023",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4601",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://jurix23.maastrichtlawtech.eu/calls/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-12-19T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:51:21.636Z"
+      },
+      {
+        "date": "2023-12-20T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:51:21.636Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-09-08T00:00:00.000Z",
+        "keyword": "Submission of abstract",
+        "update_time": "2024-05-16T13:40:36.211Z"
+      },
+      {
+        "date": "2023-09-17T00:00:00.000Z",
+        "keyword": "Submission of long, short and demo papers",
+        "update_time": "2024-05-16T13:40:36.212Z"
+      },
+      {
+        "date": "2023-09-08T00:00:00.000Z",
+        "keyword": "Submission of proposals for workshops and tutorials",
+        "update_time": "2024-05-16T13:40:36.212Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-10-20T00:00:00.000Z",
+        "keyword": "Information about acceptance",
+        "update_time": "2024-05-16T13:40:36.213Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:58:34.840Z",
+    "updatedAt": "2024-06-01T04:36:09.791Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2023-10-27T00:00:00.000Z",
+        "keyword": "Upload of camera-ready papers",
+        "update_time": "2024-05-16T13:40:36.213Z"
+      }
+    ],
+    "Location": "Maastricht, the Netherlands",
+    "Type": "hybrid",
+    "CallForPaper": "For more than 30 years, the JURIX conference has provided an international forum for research on the intersection of Law, Artificial Intelligence, and Information Systems, under the auspices of the JURIX Foundation for Legal Knowledge Systems.\n\nThe purpose of the JURIX conference series is to foster scientific exchange between researchers, practitioners, students, dedicated to exploring recent advancements, challenges, and opportunities of technologies applied to legal and para-legal activities. We invite submissions of original papers on legal information, legal knowledge systems, artificial intelligence and law, computational and socio-technical approaches to law and other normative systems, covering foundations, methods, tools, systems, interfaces, and applications. Papers should demonstrate added value, novelty of contribution and/or analysis, significance of the work, (formal) validity and/or proper evaluation.\n\nTopics\n\nTopics include, but are not limited to:\n\nI - Logics and Normative Systems\nComputational theories of law\nComputational representations of legal rules and domain-specific languages (DSLs) for law\nFormal logics and computational models of legal reasoning and decision-making (e.g., argumentation, statutory, rule-based, case-based, evidential reasoning), including relevant concepts such as qualification, causation, responsibility\nFormal models of norms and norm-governed systems\nKnowledge representation, knowledge engineering, and ontologies in the legal domain\nSemantic web, open and linked data, mark-up languages for the legal domain\nNormative reasoning by autonomous agents; multi-agent systems: norm operationalization, norm emergence\nComputational methods for agent-based modelling for policy-making and norm-making\nComputational methods for negotiation, contract formation, dispute resolution\nComputational methods for preference aggregation and voting\nComputational methods for compliance-checking, authorization, auditing, and regulation\nComputational methods for AI and Data Governance\nII - Natural Language Processing and Machine Learning\nArgument mining on legal texts\nMachine learning methods and models for legal document classification, information retrieval, automatic summarization of legal text\nMachine learning methods and models in support to regulatory and contract drafting\nNatural language processing for legal text analysis, including law-specific standard NLP tasks (Named Entity Recognition, Semantic Role Labelling, Translation, etc.)\nInformation extraction, text understanding (e.g. entailment) from legal data and texts\nQuestion-answering systems, chatbots, and dialog systems in the legal domain\nNetwork analysis applied to legal documents (statutory law, case law, jurisprudence) and legal data.\nKnowledge discovery, Causal discovery, and Process mining in the legal domain\nRecommender systems in the legal domain\nIII - Cognitive and Socio-Technical Systems\nCognitive computing and AI-enabled information systems for legal knowledge management (legal research and case management), legal data visualization, and decision support.\nHybrid architectures (symbolic and sub-symbolic) in legal applications\nHuman-computer interaction in legal applications\nExplainable AI for legal applications\nFairness and bias mitigation in AI systems for legal practices\nTechnical regulation of AI, data-sharing, information processing, and computing systems\nAI-enabled information systems improving access to justice and equal opportunities\ne-government, e-democracy, and e-justice\nAI applications in legal education and training\nIntelligent legal tutoring systems, intelligent support systems for forensics\nSubmission and publication\n\nThe deadline for paper submission is September 8th, 2023 September 17th, 2023 (extended), all over the earth. Abstract submission (September 8st) is recommended. All submissions should be formatted using the styles and guidelines in the IOS Press Instructions for Authors (https://www.iospress.com/book-article-instructions) and prepared for single-blind peer review. Papers are to be submitted in PDF format through Easychair (https://easychair.org/conferences/?conf=jurix2023).\n\nThere are three categories of papers: long, short, and demo. Please indicate a category when you submit your paper.\n\nLong papers: reports of well-developed and original research. An accepted long paper scores well in terms of relevance, originality, technical quality, significance, literature review, presentation, reviewer’s confidence, and overall evaluation. These should not exceed 10 pages (including references). A paper which is not accepted as a long paper may be recommended by reviewers as a short paper.\nShort papers: (short) descriptions of preliminary results or an innovative idea. These papers should not exceed 6 pages (including references).\nDemo papers: (short) descriptions of a system. These papers should not exceed 4 pages (including references). Authors of demo papers should be willing to share (a screencast of) the demo privately with the reviewers, if so requested.\n\nAll papers must be original and not simultaneously submitted to another journal or conference. The conference proceedings will be published by IOS Press in their series Frontiers in Artificial Intelligence and Applications (FAIA) as gold open access."
+  },
+  {
+    "_id": "6639d133387369a8970585ff",
+    "Title": "International Conference on Mobile and Ubiquitous Systems: Networks and Services",
+    "Acronym": "Mobiquitous",
+    "Source": "CONFHUB",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4606",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://mobiquitous.eai-conferences.org/2024/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-11-12T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:51:21.636Z"
+      },
+      {
+        "date": "2024-11-15T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:51:21.636Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-06-15T00:00:00.000Z",
+        "keyword": "Full Paper Submission deadline",
+        "update_time": "2024-05-16T13:41:38.515Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-08-20T00:00:00.000Z",
+        "keyword": "Notification deadline",
+        "update_time": "2024-05-16T13:41:38.515Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:58:59.472Z",
+    "updatedAt": "2024-05-16T13:41:38.551Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2024-09-20T00:00:00.000Z",
+        "keyword": "Camera-ready deadline",
+        "update_time": "2024-05-16T13:41:38.515Z"
+      }
+    ],
+    "Location": "Oslo, Norway", 
+    "Type": "offline",
+    "CallForPaper": "Scope and Topics\n\nDespite the considerable research effort in the area of Mobile and Ubiquitous Computing over the nearly two decades, and the maturity of some of its base technologies, many challenges persist. The goal of the twenty-first annual International Conference on Mobile and Ubiquitous Systems: Computing, Networking and Services (MobiQuitous 2024) is to provide a forum for presenting and discussing high-quality research in the field, involving international practitioners and researchers from diverse backgrounds. MobiQuitous 2024 will thus foster research collaboration through focused discussions, interaction and exchange of experiences that will designate future research efforts and directions. Areas addressed by the conference include systems, applications, social networks, middleware, networking, sensing, data management, data processing and services, all with special focus on mobile and ubiquitous computing.\n\nTopics:\nAuthor’s kit – Instructions and Templates\n\nPapers must be formatted using the Springer LNICST Authors’ Kit.\n\nInstructions and templates are available from Springer’s LNICST homepage:\n\nLaTeX2e Proceedings Templates (zip)\nMicrosoft Word Proceedings Templates (zip)\n\nPlease make sure that your paper adheres to the format as specified in the instructions and templates.\n\nWhen uploading the camera-ready copy of your paper, please be sure to upload both:\n\na PDF copy of your paper formatted according to the above templates, and\nan archive file (e.g. zip, tar.gz) containing the both a PDF copy of your paper and LaTeX or Word source material prepared according to the above guidelines.\nPaper Submission\n\nPapers should be submitted through EAI ‘Confy+‘ system, and have to comply with the Springer format (see Author’s kit section below).\n\nHow do I submit a paper in Confy?\nGo to Confy+ website\nLogin or sign up as new user\nSelect your desired Track\nClick the ‘Submit Paper’ link within the track and follow the instructions\n\nAlternatively, go to home page of Confy+ and click on “Open conferences”.\n\nSubmission guidelines\nPapers should be in English.\nPreviously published work may not be submitted, nor may the work be concurrently submitted to any other conference or journal. Such papers will be rejected without review.\nThe paper submissions must follow the Springer formatting guidelines (see Author’s kit section below).\nRead the Publication Ethics and Malpractice Statement.\nEAI Copyright and Consent Form\nEAI Copyright and Consent Form – EXAMPLE"
+  },
+  {
+    "_id": "6639d137387369a897058603",
+    "Title": "International Conference on Mobile Systems and Pervasive Computing",
+    "Acronym": "MobiSPC",
+    "Source": "CONFHUB",
+    "Rank": "Unranked",
+    "Note": "none",
+    "DBLP": "none",
+    "PrimaryFoR": "4606",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://cs-conferences.acadiau.ca/mobispc-24/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-08-05T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:51:21.636Z"
+      },
+      {
+        "date": "2024-08-07T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:51:21.636Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-04-11T00:00:00.000Z",
+        "keyword": "Submission Deadline",
+        "update_time": "2024-05-16T13:41:45.450Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-05-06T00:00:00.000Z",
+        "keyword": "Author Notification",
+        "update_time": "2024-05-16T13:41:45.450Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:59:03.599Z",
+    "updatedAt": "2024-05-16T13:41:45.474Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2024-06-03T00:00:00.000Z",
+        "keyword": "Final Manuscript Due",
+        "update_time": "2024-05-16T13:41:45.450Z"
+      }
+    ],
+    "Location": "Marshall University, Huntington, WV, USA", 
+    "Type": "offline", 
+    "CallForPaper": "Mobile Systems and Pervasive Computing (MobiSPC) have evolved into an active area of research and development. This is due to the tremendous advances in a broad spectrum of technologies and topics, including wireless networking, mobile and distributed computing, sensor systems, RFID technology, and the ubiquitous mobile phone. MobiSPC-2024 solicits papers that focus on the theory, systems, practices and challenges of providing users with a successful mobile or wireless experience. This includes how mobile computing changes how people pervasively use their computers, computing resources and applications, as well the systems, services and technology enabling those applications.\n\nMobiSPC 2024 will provide a leading edge, scholarly forum for researchers, engineers, and students alike to share their state-of-the art research and developmental work in the broad areas of pervasive computing and communications."
+  },
+  {
+    "_id": "6639d154387369a897058621",
+    "Title": "International Conference on Network Softwarization",
+    "Acronym": "NetSoft",
+    "Source": "CONFHUB",
+    "Rank": "B",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4606",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://netsoft2024.ieee-netsoft.org/authors/call-technical-session-papers"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-06-24T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:51:21.636Z"
+      },
+      {
+        "date": "2024-06-28T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:51:21.636Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-02-16T00:00:00.000Z",
+        "keyword": "Paper submission deadlinee",
+        "update_time": "2024-05-16T13:43:25.720Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-03-31T00:00:00.000Z",
+        "keyword": "Acceptance notification",
+        "update_time": "2024-05-16T13:43:25.721Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:59:32.197Z",
+    "updatedAt": "2024-05-31T09:11:14.280Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2024-05-20T00:00:00.000Z",
+        "keyword": "Camera-ready paper",
+        "update_time": "2024-05-16T13:43:25.721Z"
+      }
+    ],
+    "Location": "Saint Louis, MO, USA",
+    "Type": "offline",
+    "CallForPaper": "IMPORTANT DATES\n\nPaper submission deadline: January 12, 2024  Extended to January 31, 2024 Extended to February 16, 2024 (Firm)\n\nAcceptance notification: March 31, 2024 \n\nCamera-ready paper: April 26, 2024; (Extended) May 20, 2024\n\nSCOPE\n\nIEEE NetSoft, the premier International Conference on Network Softwarization, addresses the advanced research challenges and opportunities raised by the overall transformation trend of network “softwarization”, which has been revolutionizing the networking field and has accelerated its convergence with adjacent industries.\n\nNetwork Softwarization refers to the transition of traditional network infrastructure and functionalities, provided via hardware appliances developed by equipment and service vendors, to new ones that have been propelled over the last 15 years by the maturity of widespread technologies such as network function virtualization, software-defined networking, and service function chaining. In particular, the ability to program, manage, and operate network and service infrastructures more freely makes it possible to reinvent network and cloud architectures, customize services, accelerate service deployment, and facilitate greater operational efficiencies with guarantees. The need for further advances in these topics is reflected in the overall theme of NetSoft 2024: “Softwarized Networks in the Age of Generative AI”. \n\nNetSoft 2024 will feature technical paper presentations, keynotes, tutorials, workshops, demos, posters,  and exhibitions from world-leading experts representing service providers, vendors, research institutes, open-source projects, and academia. \n\n \n\nTOPICS OF INTEREST\n\nThe conference is soliciting paper submissions with significant research contributions to network softwarization. The topics of interest include, but are not limited to:\n\nNetwork slicing and slice management  \n\nService Function Chaining (SFC)\n\nAI/ML techniques and network softwarization   \n\nApplications for Generative AI in softwarized networks\n\nSoftwarization in eXtended Reality  (AR/VR/ER and digital twins)   \n\nCooperative multi-domain, multi-tenant SDN/NFV environments \n\nFuture Internet and New IP architectures  \n\nSustainability in softwarized network\n\nHigh-precision communications and computing     \n\nNetwork softwarization for 5G/6G   \n\nQoS and QoE in softwarized infrastructures\n\nNetwork softwarization for deterministic Internet re-engineering   \n\nSoftwarization for Cognitive and autonomic networking   \n\nPolicy-based and Intent-based networking\n\nDynamic resource discovery and negotiation schemes \n\nAssurance and Measurements in softwarized networks \n\nResilience, reliability, and robustness of softwarized networks  \n\nSecurity, Safety, Trust, and Privacy in virtualized environments\n\nSustainability, energy efficiency, and carbon emissions in network softwarization   \n\nAbstractions and virtualization of resources, services, and functions\n\nProgrammable Networking Protocols   \n\nProgrammable SDN and NFV: languages and architectures (P4 and others)  \n\nOpen source and network softwarization\n\nHardware acceleration for programmable network functions  \n\nDevelopment methodologies for network softwarization (DevOps, NetOps, Verification)  \n\nDeployment and transition strategies\n\nExperience reports from experimental testbeds and deployments\n\nNew value chains and service models enabled by softwarization\n\nSocio-economic impact and regulations for softwarization\n\n \n\nPAPER SUBMISSION\n\nProspective authors are invited to submit high-quality original technical papers for presentation at the conference and publication in the NetSoft 2024 Proceedings. All submissions must be written in English and must use the standard IEEE two-column conference template that can be downloaded from https://www.ieee.org/conferences/publishing/templates.html.\n\nTechnical Papers can be of two types: Full or Short papers, up to 9 and 5 pages, respectively, including references and all other material. If accepted, a paper will be published in the category (long/short) of its submission. Long papers are the more traditional form for presenting technical work. Long papers should emphasize not only novelty and vision, but execution and thoroughness of the contribution (design, evaluation). Short papers are the preferred vehicle for visionary papers or traditional technical papers whose description fits within a smaller number of pages. Short papers may not yet be ‘fully baked’ in terms of execution and evaluation. In both Full and Short papers, author names and affiliations should be included after the title, as provided in the templates.\n\nPapers submitted should describe original, previously unpublished research results, not currently under review by another conference or journal. Papers not meeting the length and formatting requirements or violating IEEE’s guidelines on plagiarized content will be rejected without review. All other submitted papers will be reviewed. Selected papers for NetSoft 2024 may be conditionally accepted and subjected to shepherding before final acceptance. Only PDF files will be accepted for the review process, and all manuscripts must be electronically submitted through EDAS: https://edas.info/N31395. More specifically:\n\nLong paper: https://edas.info/newPaper.php?c=31395&track=119976\n\nShort paper: https://edas.info/newPaper.php?c=31395&track=119977\n\nImportant: NetSoft 2024 is enforcing a strict publication and no-show policy as stated by IEEE. By submitting a contribution, you agree with the terms of the publication and no-show policy. \n\nGENERAL CO-CHAIRS\n\nFlavio Esposito, Saint Louis University, USA.\n\nJanise McNair, University of Florida, USA.\n\nTPC CO-CHAIRS\n\nChiara Contoli, University of Urbino, Italy.\n\nReza Tourani, Saint Louis University, USA.\n\nAugusto J. Venancio Neto, Federal University of Rio Grande do Norte, Brazil."
+  },
+  {
+    "_id": "6639d158387369a897058625",
+    "Title": "International Conference on Operations Research and Enterprise Systems",
+    "Acronym": "ICORES",
+    "Source": "CORE2023",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4602",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://icores.scitevents.org/CallForPapers.aspx"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2025-02-23T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:37:08.919Z"
+      },
+      {
+        "date": "2025-02-25T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:37:08.919Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-10-02T00:00:00.000Z",
+        "keyword": "Regular Paper Submission",
+        "update_time": "2024-05-16T13:43:43.093Z"
+      },
+      {
+        "date": "2024-11-13T00:00:00.000Z",
+        "keyword": "Position Paper Submission",
+        "update_time": "2024-05-16T13:43:43.093Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-12-04T00:00:00.000Z",
+        "keyword": "Regular Authors Notification",
+        "update_time": "2024-05-16T13:43:43.093Z"
+      },
+      {
+        "date": "2024-12-20T00:00:00.000Z",
+        "keyword": "Position Authors Notification",
+        "update_time": "2024-05-16T13:43:43.093Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:59:36.356Z",
+    "updatedAt": "2024-06-01T04:37:08.921Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2024-12-20T00:00:00.000Z",
+        "keyword": "Regular Camera Ready and Registration",
+        "update_time": "2024-05-16T13:43:43.093Z"
+      },
+      {
+        "date": "2025-01-13T00:00:00.000Z",
+        "keyword": "Position Camera Ready and Registration",
+        "update_time": "2024-05-16T13:43:43.093Z"
+      }
+    ],
+    "Location": "Porto, Portugal",
+    "Type": "offline",
+    "CallForPaper": "SCOPE\n\nThe purpose of the International Conference on Operations Research and Enterprise Systems (ICORES) is to bring together researchers, engineers, faculty, and practitioners interested in both theoretical advances and practical applications in the field of operations research. Two simultaneous tracks will be held, covering on one side domain independent methodologies and technologies and on the other side practical work developed in specific application areas.\n\nICORES focuses on real world challenges; therefore authors should highlight the benefits of Operations Research Methodologies and Technologies for industry and services, either in general or for particular applications. Ideas on how to solve specific business problems as well as larger enterprise challenges, using operations research methodologies and technologies, will arise from the conference. Papers describing advanced prototypes, systems, case studies, tools and techniques and general survey papers indicating future directions are also encouraged. Papers describing original work are invited in any of the areas listed below. Accepted papers, presented at the conference by one of the authors, will be published in the Proceedings of ICORES. Acceptance will be based on quality, relevance and originality. Both full research reports and work-in-progress reports are welcome. There will be both formal oral presentations and informal poster sessions.\n\nSpecial sessions focused on case-studies and commercial presentations, as well as tutorials for technical/scientific topics and practical applications are also envisaged: companies interested in presenting their products/methodologies or researchers interested in offering a tutorial are invited to contact the conference secretariat.\n\nCONFERENCE AREAS\n\nEach of these topic areas is expanded below but the sub-topics list is not exhaustive. Papers may address one or more of the listed sub-topics, although authors should not feel limited by them. Unlisted but related sub-topics are also acceptable, provided they fit in one of the following main topic areas:\n\n1. METHODOLOGIES AND TECHNOLOGIES\n2. APPLICATIONS\n\n\n\n\nAREA 1: METHODOLOGIES AND TECHNOLOGIES\n\n\nBusiness Analytics/Management Sciences\nData Sciences\nDecision Analysis\nDesign, Analysis, and Innovation for Enterprise Systems\nDynamic Programming\nForecasting\nGame Theory\nIndustrial Engineering\nInformation Systems\nLinear Programming\nNetwork Optimization\nOptimization\nPredictive Analytics\nQueuing Theory\nSimulation\nStochastic Optimization\nStochastic Processes\nAREA 2: APPLICATIONS\n\n\nAI/ML Applications in OR\nDecision Support Systems\nEnvironment and Sustainability\nOptimization in Finance\nOR in Education\nOR in Emergency Management\nOR in Energy\nOR in Health\nOR in Logistics, Maintenance, and Supply\nOR in National Defense/International Security\nOR in Telecommunications\nOR in Transportation\nProject Management\nResource Allocation\nRisk Management\nRobotics/Autonomous Systems\nRouting\nScheduling\nSupply Chain Management\nSystems of Systems/Teams and Socio-Technical Systems\nKEYNOTE SPEAKER\nSamuel Moniz, Faculty of Sciences and Technology, University of Coimbra, Portugal\n\nPAPER SUBMISSION\n\nAuthors can submit their work in the form of a complete paper or an abstract, but please note that accepted abstracts are presented but not published in the proceedings of the conference. Complete papers can be submitted as a Regular Paper, representing completed and validated research, or as a Position Paper, portraying a short report of work in progress or an arguable opinion about an issue discussing ideas, facts, situations, methods, procedures or results of scientific research focused on one of the conference topic areas.\n\nAuthors should submit a paper in English, carefully checked for correct grammar and spelling, addressing one or several of the conference areas or topics. Each paper should clearly indicate the nature of its technical/scientific contribution, and the problems, domains or environments to which it is applicable. To facilitate the double-blind paper evaluation method, authors are kindly requested to produce and provide the paper WITHOUT any reference to any of the authors, including the authors’ personal details, the acknowledgments section of the paper and any other reference that may disclose the authors’ identity.\n\nWhen submitting a complete paper please note that only original papers should be submitted. Authors are advised to read INSTICC's ethical norms regarding plagiarism and self-plagiarism thoroughly before submitting and must make sure that their submissions do not substantially overlap work which has been published elsewhere or simultaneously submitted to a journal or another conference with proceedings. Papers that contain any form of plagiarism will be rejected without reviews.\n\nAll papers must be submitted through the online submission platform PRIMORIS and should follow the instructions and templates that can be found under Guidelines and Templates. After the paper submission has been successfully completed, authors will receive an automatic confirmation e-mail.\n\n\n\n \nPUBLICATIONS\n\nAll accepted complete papers will be published in the conference proceedings, under an ISBN reference, on paper and on digital support.\nSCITEPRESS is a member of CrossRef (http://www.crossref.org/) and every paper on our digital library is given a DOI (Digital Object Identifier).\nThe proceedings will be submitted for indexation by SCOPUS, Google Scholar, DBLP, Semantic Scholar, EI and Web of Science / Conference Proceedings Citation Index.\n\nIMPORTANT DATES\n\nConference Date: 23 - 25 February, 2025\n\n\nRegular Papers\nPaper Submission: October 2, 2024\nAuthors Notification: December 4, 2024\nCamera Ready and Registration: December 20, 2024\n\n\n\nPosition Papers\nPaper Submission: November 13, 2024\nAuthors Notification: December 20, 2024\nCamera Ready and Registration: January 13, 2025\n\n\nWorkshops\nWorkshop Proposal: October 17, 2024\n\n\nDoctoral Consortium\nPaper Submission: December 18, 2024\nAuthors Notification: January 14, 2025\nCamera Ready and Registration: January 22, 2025\n\n\nSpecial Sessions\nSpecial Session Proposal: October 17, 2024\n\n\nTutorials\nTutorial Proposal: January 17, 2025\n\n\nDemos\nDemo Proposal: January 17, 2025\n\n\nPanels\nPanel Proposal: January 17, 2025\n\n\nAbstracts\nAbstract Submission: January 7, 2025\nAuthors Notification: January 20, 2025\nCamera Ready and Registration: January 28, 2025\n\n\nSECRETARIAT\n\nICORES Secretariat\nAddress: Avenida de S. Francisco Xavier, Lote 7 Cv. C\n             2900-616 Setúbal - Portugal\nTel.: +351 265 520 185\nFax: +351 265 520 186\ne-mail: icores.secretariat@insticc.org\nWeb: https://icores.scitevents.org\n\nVENUE\nAvailable soon.\n\nCONFERENCE CHAIR\n\nGreg H. Parlier, GH Parlier Consulting, United States\n\n\nPROGRAM CO-CHAIRS\n\nRainer Schlosser, Hasso Plattner Institute, Germany\nSlawo Wesolkowski, Department of National Defence, Canada\n\n\nPROGRAM COMMITTEE MEMBERS\n\nBabak Abbasi, School of Mathematical and Geospatial Sciences, RMIT University, Australia\nUniversity of Victoria Adel Guitouni, Independent Researcher, Canada\nEl-Houssaine Aghezzaf, Department of Industrial Management, Ghent University, Faculty of Engineering and Architecture, Belgium\nAgostinho Miguel Agra, CIDMA, University of Aveiro, Portugal\nGülsen Akman, Industrial Engineering, Kocaeli Üniversity, Turkey\nEmel Aktas, Cranfield University, United Kingdom\nHaneen Algethami, Computer science, Taif University, Saudi Arabia\nLionel Amodeo, Industrial Systems Optimization Laboratory, University of Technology of Troyes, France\nAzmin Azliza Aziz, University of Malaya, Malaysia\nAmeni Azzouz, Tunis Business School, University of Tunis, Tunisia\nFarnaz Barzinpour, Industrial Enginieering, Iran University of Science and Technology, Iran, Islamic Republic of\nRachid Benmansour, Institut National de Statistique et d'Economie appliquée (INSEA), Morocco\nDavid Bergman, University of Connecticut, United States\nArijit Bhattacharya, Norwich Business School, University of East Anglia, United Kingdom\nGianpiero Bianchi, Italian National Institute of Statistics \"Istat\", Rome, Italy\nMehdi Bijari, Industrial and Systems Eng., Isfahan University of Technology, Iran, Islamic Republic of\nJaouad Boukachour, Universite Le Havre Normandie, France\nBurak Boyaci, Management Science Department, Lancaster University, United Kingdom\nKris Braekers, Hasselt University, Belgium\nNadjib Brahimi, Supply Chain Management and IS, Rennes School of Business, France\nMarcus Brandenburg, School of Business, Flensburg University of Applied Sciences, Germany\nMaria Elena Bruni, Department of Mechanical, Energy and Management, University of Calabria, Italy\nValentina Cacchiani, DEI, University of Bologna, Italy\nDragos Calitoiu, Department of National Defence, Canada\nFrancesco Carrabs, Mathematics, University of Salerno, Italy\nAlberto Ceselli, Università degli Studi di Milano, Italy\nBo Chen, Warwick Business School, University of Warwick, United Kingdom\nJohn Chinneck, Carleton University, Canada\nAdemir Constantino, Department of Informatics, Universidade Estadual de Maringá, Brazil\nRoberto Cordone, Computer Science Department, University of Milan, Italy\nLino Costa, Production and Systems Engineering, Universidade do Minho, Portugal\nFernando Luiz Cyrino Oliveira, Industrial Engineering, Pontifical Catholic University of Rio de Janeiro, Brazil\nPatrizia Daniele, Department of Mathematics and Computer Science, University of Catania, Italy\nTatjana Davidovic, Mathematical Institute, Serbian Academy of Sciences and Arts, Serbia\nClarisse Dhaenens, CRIStAL, University of Lille, France\nOmar El Beqqali, Université Sidi Mohamed Ben Abdellah de Fès, Morocco\nMohamed ElWakil, Tanta University, Faculty of Engineering, Egypt\nAlexander Engau, Management Science and Information Systems, Dalhousie University, Canada\nKurt J. Engemann, Center for Business Contintuity and Risk Management, Iona College, United States\nGunes Erdogan, University of Bath, United Kingdom\nNesim Erkip, Industrial Engineering, Bilkent University, Turkey\nLuis Miguel F. Ferreira, Department of Mechanical Engineering, Universidade de Coimbra, Portugal\nJose M. Framinan, Industrial Management, Universidad de Sevilla, Spain\nAntonio Fuduli, Mathematics and Computer Science, University of Calabria, Italy\nOlivier Gallay, Faculty of Business and Economics, Department of Operations, University of Lausanne, Switzerland\nRodrigo A Garrido, Diego Portales University, Chile\nMichel Gendreau, MAGI et CIRRELT, Polytechnique Montréal, Canada\nClaudio Gentile, Institute for System Analysis and Computer Science \"A. Ruberti\", CNR-IASI, Italy\nGiorgio Gnecco, IMT - School for Advanced Studies - Lucca, Italy\nHelder Gomes Costa, Production Engineering, Fluminense Federal University, Brazil\nOlivier Grunder, University of Technology of Belfort-Montbeliard, France\nFrancesca Guerriero, DIMEG, University of Calabria, Italy\nAldy Gunawan, Singapore Management University, Singapore\nZdenek Hanzálek, Industrial Informatics Department, CIIRC, CVUT, Czech Republic\nTakashi Hasuike, Waseda University, Japan\nKenji Hatano, Faculty of Culture and Information Science, Doshisha University, Japan\nPetri Helo, University Vaasa, Finland\nJillian A. Henderson, Defence Research and Development Canada, Canadian Department of National Defence, Canada\nHanno Hildmann, Intelligent Autonomous Systems, TNO, Netherlands\nSin C. Ho, Department of Systems Engineering and Engineering Management, The Chinese University of Hong Kong, Hong Kong\nHan Hoogeveen, Universiteit Utrecht, Netherlands\nLaurent Houssin, LAAS-CNRS, France\nChenyi Hu, Computer Science and Engineering, The University of Central Arkansas, United States\nJosef Jablonsky, Department of Econometrics, University of Economics, Czech Republic\nLisa Jackson, Loughborough University, United Kingdom\nAntonio Jiménez-Martín, Campus de Montegancedo S/N, Universidad Politécnica de Madrid, Spain\nImed Kacem, LCOMS, Université de Lorraine, France\nLevent Kandiller, Yasar University, Turkey\nSie Long Kek, Tun Hussein Onn University, Malaysia\nAthakorn Kengpol, Industrial Engineering, King Mongkut's University of Technology North Bangkok, Thailand\nPhilip Kilby, Independent Researcher, Australia\nJoanna Kolodziej, Independent Researcher, Poland\nGregory Koronakos, Informatics, University of Piraeus, Greece\nYong-Hong Kuo, Department of Industrial and Manufacturing Systems Engineering, The University of Hong Kong, Hong Kong\nPhilippe Lacomme, Université Clermont-Ferrand 2 Blaise Pascal, France\nSotiria Lampoudi, Mast Reforestation, United States\nRodrigo Linfati, University of Bio-Bio, Chile\nAbdel Lisser, Laboratory of Signals and Systems, The University Paris Saclay - CentraleSupelec, France\nAlberto Locatelli, Independent Researcher, Italy\nAndré Andrade Longaray, Federal Foundation University of Rio Grande, Brazil\nPierre Lopez, LAAS-CNRS, Toulouse, France, France\nAhmad Makui, Industrial Engineering, Iran University of Science and Technology, Iran, Islamic Republic of\nRenata Mansini, Department of Information Engineering, University of Brescia, Italy\nFabrizio Marinelli, Information Engineering, DII, Universita' Politecnica delle Marche, Italy\nConcepción Maroto, Applied Statistics, Operations Research and Quality, Universidad Politécnica de Valencia, Spain\nSara Mattia, IASI, CNR, Italy\nUmar M. Modibbo, Modibbo Adama University Yola Nigeria, Nigeria\nOwen Molloy, School of Computer Science, University of Galway, Ireland\nJairo R. Montoya-Torres, Facultad de Ingeniería, Universidad de La Sabana, Colombia\nPedro Munari, Production Engineering Department, Federal University of São Carlos, Brazil\nAmir Nakib, LISSI, Université de Paris Est Créteil, France\nDavid C. Novak, Grossman School of Business, University of Vermont, United States\nJosé Oliveira, Centre ALGORITMI, Universidade do Minho, Portugal\nÖzgür Özpeynirci, Logistics Management, Izmir University of Economics, Turkey\nSelin Özpeynirci, Industrial Engineering, Izmir University of Economics, Turkey\nVangelis Paschos, LAMSADE, University Paris-Dauphine, France\nMauro Passacantando, Department of Business and Law, University of Milan-Bicocca, Italy\nRavi Patnayakuni, Management, Marketing and IS, University of Alabama in Huntsville, United States\nMonalisha Pattnaik, Sambalpur University, India\nPuca Huachi V. Penna, UFOP, Brazil\nGuido Perboli, DAUIN, Politecnico di Torino, Italy\nStefan Pickl, Department of Computer Science, UniBw München, Germany\nShaligram Pokharel, Mechanical and Industrial Engineering, Qatar University, Qatar\nGhaith Rabadi, School of Modeling, Simulation and Training, University of Central Florida, United States\nArash Rafiey, Department of Math and Computer Science, Indiana State University, United States\nGünther Raidl, Institute of Logic and Computation, TU Wien, Austria\nCesar Rego, University of Mississippi, United States\nCelso Ribeiro, Universidade Federal Fluminense, Brazil\nHelena S. Rodrigues, Escola Superior de Ciências Empresariais, Instituto Politécnico de Viana do Castelo, Portugal\nFabrizio Rossi, University of L'Aquila, Italy\nMatteo Salani, IDSIA - USI/SUPSI, Switzerland\nMiguel A. Salido, Departamento De Sistemas Informáticos Y Computación, Universitat Politecnica de Valencia, Spain\nMarcello Sanguineti, DIBRIS, University of Genoa, Italy\nLaura Scrimali, Dipartimento di Matematica e Informatica, University of Catania, Italy\nAhmed Shaban, Fayoum University, Egypt\nMohd Rizaimy Shaharudin, Research Nexus UiTM, Universiti Teknologi MARA (UiTM), Malaysia\nAdibah Shuib, Mathematics Department, Universiti Teknologi MARA (UiTM), Malaysia\nGiuseppe Stecca, Institute of Systems Analysis and Computer Science CNR-IASI, Italy\nThomas Stützle, CoDE-IRIDIA, Université Libre de Bruxelles, Belgium\nWai Yuen Szeto, Civil Engineering Department, The University of Hong Kong, Hong Kong\nClaudio M. Toledo, Sistemas de Computação, São Paulo University, Brazil\nWeitian Tong, Computer Science, Georgia Southern University, United States\nChefi Triki, College if Sciences and Engineering, Hamad Bin Khalifa University, Qatar\nWa-Muzemba A. Tshibangu, 1701 E COLD SPRING LANE, BALTIMORE, MD 21251, USA, Morgan State University, United States\nTonguç Ünlüyurt, Sabanci University, Turkey\nMarjan van den Akker, Information and Computing Sciences, Utrecht University, Netherlands\nMaria Vlasiou, Electrical Engineering, Mathematics and Computer Science, University of Twente, Netherlands\nTomasz Wachowicz, University of Economics in Katowice, Poland\nCameron Walker, Engineering Science, University of Auckland, New Zealand\nYahaya Yusuf, University Central Lancashire, United Kingdom\nGuoqing Zhang, University Windsor, Canada\nYiqiang Q. Zhao, Mathematics and Statistics, Carleton University, Canada\n\n(list not yet complete)"
+  },
+  {
+    "_id": "6639d17e387369a897058647",
+    "Title": "International Conference on Principles of Security and Trust",
+    "Acronym": "POST",
+    "Source": "CORE2023",
+    "Rank": "Unranked",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4604",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://www.etaps.org/2019/call-for-papers.html  "
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2019-04-06T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:37:08.919Z"
+      },
+      {
+        "date": "2019-04-11T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:37:08.919Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2018-11-09T00:00:00.000Z",
+        "keyword": "Abstracts due",
+        "update_time": "2024-05-22T15:43:42.480Z"
+      },
+      {
+        "date": "2018-11-16T00:00:00.000Z",
+        "keyword": "Papers due",
+        "update_time": "2024-05-22T15:43:42.480Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2019-01-25T00:00:00.000Z",
+        "keyword": "Author notification",
+        "update_time": "2024-05-22T15:43:42.559Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:00:14.273Z",
+    "updatedAt": "2024-05-22T15:43:42.629Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2019-02-15T00:00:00.000Z",
+        "keyword": "Camera-ready versions",
+        "update_time": "2024-05-22T15:43:42.578Z"
+      }
+    ],
+    "Location": "Prague, Czech Republic",
+    "Type": "offline",
+    "CallForPaper":""
+  },
+  {
+    "_id": "6639d18b387369a897058655",
+    "Title": "International Conference on Relational and AlgebraicMethods in Computer Science (was International Conference on Relational Methods in Computer Science RelMiCS)",
+    "Acronym": "RAMiCS",
+    "Source": "CONFHUB",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4613",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://ramics-conf.github.io/2024/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-08-19T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:37:08.919Z"
+      },
+      {
+        "date": "2024-08-23T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:37:08.919Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-03-23T00:00:00.000Z",
+        "keyword": "Paper submission",
+        "update_time": "2024-05-16T13:47:02.377Z"
+      },
+      {
+        "date": "2024-06-14T00:00:00.000Z",
+        "keyword": "Submission of short contributions",
+        "update_time": "2024-05-16T13:47:02.378Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-05-21T00:00:00.000Z",
+        "keyword": "Author notification",
+        "update_time": "2024-05-16T13:47:02.382Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:00:27.983Z",
+    "updatedAt": "2024-05-16T13:47:02.407Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2024-06-22T00:00:00.000Z",
+        "keyword": "Final version due",
+        "update_time": "2024-05-16T13:47:02.382Z"
+      }
+    ],
+    "Location": "Prague", 
+    "Type": "offline",
+    "CallForPaper": "Call for short contributions/posters\n\nAdditionally to the standard CfP, RAMiCS is also calling for short contributions and posters. We are hence calling for presentations of original, unfinished, already published, or otherwise interesting work within the topics of the RAMiCS conferences. The submission can be in the form of a poster, an abstract, a paper submitted to or published at another conference, or any other format. Short contributions will not be published in the conference proceedings.\n\nPlease send your short submission as a single pdf file to ramics2024@easychair.org by 14 June 2024.\n\nImportant dates\nPaper submission: 23 March\nAuthor notification: 21 May 2024\nSubmission of short contributions: 14 June 2024\nFinal version due: 22 June 2024\nRegistration: 26 June 2024 (early) / 26 July 2024 (regular)\nConference dates: 19-23 August 2024\nRAMICS history\n\nRAMiCS has been taking place since 1994, first under the acronym of RelMiCS (\"Relational Methods in Computer Science\") and, after uniting with the AKA conferences (\"Applications of Kleene Algebra\") as RAMiCS since 2009. For more information, see https://ramics-conf.github.io/."
+  },
+  {
+    "_id": "6639d18d387369a897058657",
+    "Title": "International Conference on Reliable Software Technologies",
+    "Acronym": "Ada-Europe",
+    "Source": "CONFHUB",
+    "Rank": "Journal Published",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4612",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://www.ada-europe.org/conference2024/cfp.html"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-06-11T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:37:08.919Z"
+      },
+      {
+        "date": "2024-06-14T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:37:08.919Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-11-15T00:00:00.000Z",
+        "keyword": "Submission opening for journal track papers",
+        "update_time": "2024-05-16T13:47:10.954Z"
+      },
+      {
+        "date": "2024-01-31T00:00:00.000Z",
+        "keyword": "Submission deadline for journal track papers",
+        "update_time": "2024-05-16T13:47:10.954Z"
+      },
+      {
+        "date": "2024-02-26T00:00:00.000Z",
+        "keyword": "Submission deadline for tutorial and workshop proposals",
+        "update_time": "2024-05-16T13:47:10.954Z"
+      },
+      {
+        "date": "2024-03-04T00:00:00.000Z",
+        "keyword": "Submission deadline for industrial track papers, work-in-progress papers",
+        "update_time": "2024-05-16T13:47:10.954Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-03-22T00:00:00.000Z",
+        "keyword": "First round notification for journal-track papers, and notification of acceptance for all other types of submissions",
+        "update_time": "2024-05-16T13:47:10.954Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:00:29.927Z",
+    "updatedAt": "2024-05-16T13:47:10.971Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "Barcelona, Spain", 
+    "Type": "offline",
+    "CallForPaper": "General Information\n\nThe 28th Ada-Europe International Conference on Reliable Software Technologies (AEiC 2024), will take place in Barcelona, Spain.\n\nThe conference is a leading international forum for providers, practitioners, and researchers in reliable software technologies. The conference presentations will illustrate current work in the theory and practice of the design, development, and maintenance of long-lived, high-quality software systems for a challenging variety of application domains.\n\nThe topics of interest for the conference include but are not limited to:\n\nFormal and model-based engineering of critical systems\nHigh-Integrity Systems and Reliability\nAI for High-Integrity Systems Engineering\nReal-Time Systems\nAda Language\nApplications in relevant domains\n\nPlease see Scope and Topics for the a non-exclusive list of relevant topics to the conference.\n\nThe conference schedule comprises a journal track, an industrial track, a work-in-progress track, a vendor exhibition, parallel tutorials, and satellite workshops.\n\nJournal track papers present research advances supported by solid theoretical foundation and thorough evaluation.\nIndustrial track contributions contributions highlight industrial open challenges and/or the practitioners' side of a relevant case study or industrial project.\nWork-in-progress track papers illustrate novel research ideas that are still at an initial stage, between conception and first prototype.\nTutorials guide attenders through a hands-on familiarization with innovative developments or with useful features related to reliable software.\nWorkshops provide discussion forums on themes related to the conference topics.\nVendor presentations and exhibitions allow for companies to showcase their latest products and services.\n\nCall for Journal Track Submissions\n\nFollowing a journal-first model, this edition of the conference again includes a \"Journal Track\" which seeks original and high-quality papers that describe mature research work on the conference topics. Accepted journal track papers will be published in the \"Reliable Software Technologies (AEiC2024)\" Special Issue of JSA -- the Journal of Systems Architecture (Q1 ranked, CiteScore 8.5, impact factor 4.5). Accordingly, the conference is listed as “Journal Published” in the latest update of the CORE Conference Ranking released in August 2023.\n\nPlease note that the Ada-Europe organization will waive the Open Access fees for the first four accepted papers, which do not already enjoy OA from other agreements with the Publisher. Subsequent papers will follow JSA regular publishing track.\n\nSubmissions should be made online at https://www.editorialmanager.com/jsa/. Please select the \"Ada-Europe AEiC 2024\" option as article type of the paper (submission page open from 15 November 2023).\n\nGeneral information for submitting to the JSA can be found at the Journal of Systems Architecture website.\n\nJSA has adopted the Virtual Special Issue model to speed up the publication process, where Special Issue papers are published in regular issues, but marked as SI papers. Acceptance decisions are made on a rolling basis. Therefore, authors are encouraged to submit papers early, and need not wait until the submission deadline. Authors who have successfully passed the first round of review will be invited to present their work at the conference. The abstract of the accepted contributions will be included in the conference booklet.\n\nGuest Editors\n\nBjorn Andersson\nCarnegie Mellon University, USA\nE-mail: baandersson@sei.cmu.edu\n\nLuis Miguel Pinho\nISEP & INESC TEC, Portugal\nE-mail: lmp@isep.ipp.pt\n\nCall for Industrial Track Submissions\n\nThe conference seeks industrial practitioner presentations that deliver insight on the challenges of developing reliable software. Given their applied nature, such contributions will be subject to a dedicated practitioner‐peer review process.\n\nInterested authors shall submit a short (1‐to‐2 pages) abstract, via Easy Chair, strictly in PDF, following the Ada User Journal style.\n\nThe abstract of the accepted contributions will be included in the conference booklet. The corresponding authors will get a presentation slot in the prime‐time technical program of the conference, and will also be invited to expand their contributions into full‐fledged articles for publication in the Ada User Journal, which will form the proceedings of the Industrial track of the Conference.\n\nThe Industrial Track welcomes contributions that fit the general scope of the conference, and actively address the perspective of practitioners on the topic of interest. Especially welcome are submissions of the following kind:\n\nOpen challenges and future perspectives on the development of reliable software, high-integrity systems and cyber-physical systems.\nExperience with languages, tools, methodologies, and products for the achievement of safety and reliability in large or complex projects and systems.\nLessons learned in the design, implementation and deployment of reliable software, high-integrity systems, real-time and embedded systems, etc.\nInsights into language tools and libraries that incorporate or target reliability in software.\nReports and highlights from ongoing or completed challenging projects where software is a critical component of the system.\nPractical hands-on sharing of knowledge gained in the practice of building reliable software.\nUsage of Reliable Software Technologies in general.\n\nProspective authors may direct all enquiries regarding this track to the corresponding chairs Luciana Provenzano and Michael Pressler.\n\nCall for Work‐in‐Progress Track Submissions\n\nThe Work‐in‐Progress track seeks two kinds of submissions: (a) ongoing research and (b) early‐stage ideas. Ongoing research submissions are 4‐page papers describing research results that are not mature enough to be submitted to the journal track. Early‐stage ideas are 1‐page papers that pitch new research directions that fall within the scope of the conference.\n\nThe WIP track is expected to address emerging areas where reliability is a first-class requirement. WIP submissions may cover new application domains, new technologies, and new methods related to reliable software, such as autonomous systems, IoT, Industries 4.0, AI for critical systems, Cloud/Edge, security, energy management, etc.\n\nBoth kinds of submissions must be original and shall undergo anonymous peer review. Submissions by recent MSc graduates and PhD students are especially sought.\n\nAuthors shall submit their work via Easy Chair, strictly in PDF, following the Ada User Journal style.\n\nThe abstract of the accepted contributions will be included in the conference booklet. The corresponding authors will get a presentation slot in the prime‐time technical program of the conference and will also be offered the opportunity to expand their contributions into 4‐page articles for publication in the Ada User Journal, which will form the proceedings of the WiP track of the Conference.\n\nProspective authors may direct all enquiries regarding this track to the corresponding chairs Alejandro R. Mosteo and Ruben Martins.\n\nCall for Workshops\n\nThe conference welcomes satellite workshops centred on themes that fall within the conference scope. Proposals may be submitted for half‐ or full‐day events, to be scheduled at either end of the AEiC conference.\n\nWorkshop organizers shall also commit to producing the proceedings of the event, for publication in the  Ada User Journal.\n\nWorkshop proposals shall be submitted by e‐mail to the Workshop Chair,  Sergio Saez, with subject line: [AEiC 2024: workshop proposal].\n\nWorkshop proposals can be submitted from the 15 November 2023 to the deadline. Once submitted, each workshop proposal will be evaluated by the conference organizers as soon as possible. Decisions will by provided starting from January 1st, 2024.\n\nCall for Tutorials\n\nThe conference seeks tutorials in the form of educational seminars on themes falling within the scope of the conference, with hands‐on or practical elements, and a topical slant oriented to selected targets in the typical conference audience.\n\nThe conference audience includes professionals who work in critical systems or develop features for them, students in computer science or engineering education, academic researchers in the field of conference interest, or people who merely approach software development as a hobby.\n\nIf you have developed or learned of libraries, tools, compilers, methodologies or programming languages related with critical systems that may ease the software development job of others, you would be a natural candidate for offering a tutorial.\n\nTutorial proposals include:\n\nA title\nA short abstract (between 100 and 200 words)\nA bulleted-list outline of the presentation topics\nThe proposed duration (half day or full day)\nThe intended target and level of the contents (introductory, intermediate, or advanced)\nA statement motivating attendance.\n\nTutorials should be delivered in presence unless exceptional circumstances should dictate otherwise. Tutorial proposals should indicate whether additional audience might be remote.\n\nSubmissions shall be sent by e‐mail to the Tutorial Chair, Maria A. Serrano, with subject line: \"[AEiC 2024: tutorial proposal]\".\n\nTutorial proposals can be submitted from the 15 November 2023 to the deadline. Once submitted, each tutorial proposal will be evaluated by the conference organizers as soon as possible. Decisions will by provided starting from January 1st, 2024.\n\nThe authors of accepted full‐day tutorials will receive a complimentary conference registration, halved for half‐day tutorials. The Ada User Journal will offer space for the publication of summaries of the accepted tutorials.\n\nAcademic Listing\n\nThe Journal of Systems Architecture, publication venue of the journal‐track proceedings of the conference, is Q1 ranked, with CiteScore 8.5 and Impact Factor 4.5.\nThe Ada User Journal, venue of all other technical proceedings of the conference, is indexed by Scopus and by EBSCOhost in the Academic Search Ultimate database.\n\nAwards\n\nThe organization will offer an honorary award for the best technical presentation, to be announced in the closing session of the conference.\n\nCall for Exhibitors and Sponsors\n\nThe conference will include a vendor and technology exhibition, with the option of a 20 minutes presentation as part of the conference program. Interested providers should direct inquiries to the Exhibition & Sponsorship Chair, Ahlan Marriott."
+  },
+  {
+    "_id": "6639d1a6387369a89705866f",
+    "Title": "International Conference on Similarity Search and Applications",
+    "Acronym": "SISAP",
+    "Source": "CONFHUB",
+    "Rank": "B",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4605",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://www.sisap.org/2024/callforpapers.html"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-11-04T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:36:58.205Z"
+      },
+      {
+        "date": "2024-11-06T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:36:58.205Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-07-01T00:00:00.000Z",
+        "keyword": "Abstract deadline",
+        "update_time": "2024-05-16T03:57:50.441Z"
+      },
+      {
+        "date": "2024-07-07T00:00:00.000Z",
+        "keyword": "Paper deadline",
+        "update_time": "2024-05-16T03:57:50.441Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-08-04T00:00:00.000Z",
+        "keyword": "Paper notification",
+        "update_time": "2024-05-16T03:57:50.442Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:00:54.861Z",
+    "updatedAt": "2024-06-01T03:36:58.206Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2024-09-01T00:00:00.000Z",
+        "keyword": "Camera-ready due",
+        "update_time": "2024-05-16T03:57:50.442Z"
+      }
+    ],
+    "Location": "Providence, RI, USA",
+    "Type": "offline",
+    "CallForPaper": "Call for papers - SISAP 2024\n\n17th International Conference on Similarity Search and Applications\n\nProvidence, RI, USA, November 4-6, 2024\n\nScope\n\nThe International Conference on Similarity Search and Applications (SISAP) is an annual forum for researchers and application developers in the area of similarity data management. It aims at the technological problems shared by numerous application domains, such as data mining, information retrieval, multimedia retrieval, computer vision, pattern recognition, computational biology, geography, biometrics, machine learning, and many others that make use of similarity search as a necessary supporting service. From its roots in metric indexing, SISAP has expanded to become the only international conference entirely devoted to all issues surrounding the theory, design, analysis, practice, and application of content-based and feature-based similarity search. Since 2021, SISAP has been a CORE Rank B conference.\n\nSISAP traditionally allows for research papers (full and short), application papers (full and short), as well as demo (short), vision (short), and position (short) papers.\n\nThe conference proceedings will be published by Springer as a volume in the Lecture Notes in Computer Science (LNCS) series. Best papers will be awarded along with a monetary prize. A small selection of the best papers presented at the conference will be recommended for inclusion in a special issue of Information Systems. These extended versions will be subject to a second round of peer review at the journal.\n\nUPDATE APRIL 15th: SISAP 2024 will follow a double-blind review process, meaning reviewers will not know the names of the authors and the authors will not know the names of their reviewers. Author submission guidelines will be released soon.\n\nImportant Additional Scholarly Activities at SISAP\nSISAP Indexing Challenge\nInvited speakers\nWe will have three renowned invited speakers.\nTopics of interest\n\nThe specific topics include, but are not limited to:\n\nSimilarity\nSimilarity queries (k-NN, range, reverse NN, top-k, approximate, etc.)\nSimilarity measures (graph, structural, time series, complex data, tensors, secondary similarity, etc.)\nSimilarity operations (joins, ranking, classification, categorization, filtering, etc.)\nScalability\nIndexing and access methods for similarity-based processing\nHigh-performance/large-scale similarity search (distributed, parallel, etc.)\nData management (transaction support, dynamic maintenance, etc.)\nTheory\nLanguages for similarity databases\nModels of similarity\nIntrinsic dimensionality\nDiscriminability and contrast\nManifolds and subspaces\nAnalytics, Learning, Artificial Intelligence\nVisual analytics for similarity-based operations\nFeature selection and extraction for similarity search\nRepresentations learning for feature extraction\nMerging/combining multiple similarity modalities\nLearning/adaptive similarity measures\nSimilarity in learning and mining\nEvaluation\nEvaluation techniques for similarity queries and operations\nCost models and analysis for similarity data processing\nPerformance studies and comparisons\nTest collections and benchmarks\nApplications\nMultimedia retrieval systems\nApplications of similarity-based operations\nIndustrial applications and case studies\nSimilarity for forensics and security\nSimilarity search cloud services\nSecurity and privacy of in similarity search\nImportant Dates\nAbstract deadline: July 1, 2024\nPaper deadline: July 7, 2024\nPaper notification: August 4, 2024\nCamera-ready due: September 1, 2024\nConference: November 4-6, 2024\nOrganization\n\nSteering Committee\n\nGiuseppe Amato, ISTI-CNR, Italy\nEdgar Chávez, CICESE, México\nStéphane Marchand-Maillet, University of Geneva, Switzerland\nMarco Patella, University of Bologna, Italy\nIlaria Bartolini, University of Bologna, Italy\nOscar Pedreira, University of A Coruña, Spain\n\nGeneral Co-Chairs\n\nEdgar Chávez, CICESE, México\nBenjamin Kimia, Brown Unversity, USA\n\nProgram Committee Co-Chairs\n\nMarco Patella, University of Bologna, Italy\nJakub Lokoč, Charles University, Czech Republic\n\nPublications Chairs\n\nJan Sedmidubsky, Masaryk University, Czech Republic\n\nSISAP Indexing Challenge Chairs\n\nEric S. Tellez, CICESE-INFOTEC-CONACyT, Mexico\nMartin Aumüller, ITU Copenhagen, Denmark\nVladimir Mic, Aarhus University, Denmark\n\nPublicity Co-Chairs\n\nConrado Martinez, Universitat Politècnica de Catalunya, Spain\nCole Foster, Brown University, USA"
+  },
+  {
+    "_id": "6639d3328fb9939b82bceaf7",
+    "Title": "International Conference on Tools with Artificial Intelligence",
+    "Acronym": "ICTAI",
+    "Source": "CORE2023",
+    "Rank": "B",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4602",
+    "Comments": "1",
+    "AverageRating": "5",
+    "Links": [
+      "https://ictai.computer.org/2024/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-10-28T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:06:02.123Z"
+      },
+      {
+        "date": "2024-10-30T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:06:02.123Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-07-01T00:00:00.000Z",
+        "keyword": "Paper Submission",
+        "update_time": "2024-05-16T11:03:48.284Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-08-18T00:00:00.000Z",
+        "keyword": "Paper Notification",
+        "update_time": "2024-05-16T11:03:48.287Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:07:30.496Z",
+    "updatedAt": "2024-06-01T04:06:02.125Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2024-09-16T00:00:00.000Z",
+        "keyword": "Camera Ready",
+        "update_time": "2024-05-16T11:03:48.287Z"
+      }
+    ],
+    "Location": "Herndon, VA, USA",
+    "Type": "offline",
+    "CallForPaper": "The IEEE International Conference on Tools with Artificial Intelligence (ICTAI) is a leading IEEE-CS annual scientific meeting for three decades. It provides a major international forum where the creation and exchange of ideas related to artificial intelligence are fostered among academia, industry, and government agencies. The conference facilitates the cross-fertilization of these ideas and promotes their transfer into practical tools, for developing intelligent systems and pursuing artificial intelligence applications. The ICTAI encompasses all technical aspects of specifying, developing and evaluating the theoretical underpinnings and applied mechanisms of the AI-based components of computer tools such as algorithms, architectures and languages. This year’s ICTAI conference will be held in Herndon, Virginia, which is a suburb of Washington D.C. (26 miles away) and in close proximity to Dulles airport (2 miles away). In addition, there is a metro station available in close proximity for those that want to visit downtown Washington D.C.!"
+  },
+  {
+    "_id": "6639d3658fb9939b82bceb23",
+    "Title": "International Database Engineering and Applications Symposium",
+    "Acronym": "IDEAS",
+    "Source": "CONFHUB",
+    "Rank": "B",
+    "Note": "See note",
+    "DBLP": "view",
+    "PrimaryFoR": "4605",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://conferences.sigappfr.org/ideas2024/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-08-28T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:06:02.123Z"
+      },
+      {
+        "date": "2024-08-31T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:06:02.123Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-05-30T00:00:00.000Z",
+        "keyword": "Paper submission deadline",
+        "update_time": "2024-05-16T10:13:51.975Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-07-10T00:00:00.000Z",
+        "keyword": "Notification of acceptance",
+        "update_time": "2024-05-16T10:13:51.975Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:08:21.491Z",
+    "updatedAt": "2024-06-01T03:41:02.817Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2024-07-20T00:00:00.000Z",
+        "keyword": "Camera-ready papers",
+        "update_time": "2024-05-16T10:13:51.975Z"
+      }
+    ],
+    "Location": "Bayonne, France",
+    "Type": "offline",
+    "CallForPaper": "Topics\n\nThe annual IDEAS conference is a top international forum for data engineering researchers, practitioners, developers, and application users to explore revolutionary ideas and results, and to exchange techniques, tools, and experiences. We invite participation of all interested in this meeting, which provides an insight into original research contributions relating to all aspects of database engineering defined broadly, and particularly topics of emerging interest describing work on integrating new technologies into products and applications, on experiences with existing and novel techniques, and on the identification of unsolved challenges.\n\nFollowing is a list of non-exhaustive topics:\nBig Data Applications (e.g. Science, Engineering, Medicine, Healthcare, Finance, Business, Law, Education, Transportation, Retailing, Telecommunication)\nBig Data and Scalable Analytics\nBiomedical and Health Informatics\nBusiness Intelligence and Analytics\nData Analytics in Government, Public Sector and Society\nData Integration, Record Linkage and Data Fusion\nData Management in Grid and Cloud Systems\nData Mining and Knowledge Discovery Systems and Applications\nData Warehousing and OLAP\nData Sharing and Privacy\nData Quality, Cleaning and Provenance\nDigital Libraries\nElectronic Commerce and Web Technologies\nInformation Extraction and Unstructured Data\nLink and Graph Mining\nMobile and Web Data\nOpen and Linked Data\nPrivacy, Security and Trust in Social Media\nSemantic Web and Ontologies\nSensory Data and Internet of Things\nSmart Cities and Urban Data Analytics\nSocial Media and Social networks\nSocial Data Analytics\nStatistical and Scientific Data\nStream, Spatial and Temporal and Dimensional Data\nTrust, Privacy and Security in Digital Business and Society\nWeb and Cyber Security\nFollowing is a more detailed list:\nAdaptations of privacy engineering into specific software development processes\nBig data\nBusiness Intelligence\nCatalog databases\nConstraint Modelling and Processing\nDB Systems & Applications\nData Management in Grid and P2P Systems\nData Mining Algorithms\nData Mining Systems, Data Warehousing, OLAP\nData Structures and Data Management Algorithms\nData and Information Integration & Modelling\nData and Information Networks\nData and Information Privacy and Security\nData and Information Quality\nData and Information Semantics\nData and Information Streams\nData extraction and data integration\nData management in cloud computing\nData mining and knowledge discovery\nData warehouses and OLAP\nDatabase and Information System Architecture and Performance\nDatabases in bioinformatics and biomedicine\nDatabases in management and production\nDatabases in the Web\nDigital Libraries\nDistributed databases\nDistributed, Parallel, P2P, and Grid-based Databases\nElectronic Commerce and Web Technologies\nElectronic Government & eParticipation\nEngineering Privacy Enhancing Technologies\nExpert Systems and Decision Support Systems\nExpert Systems, Decision Support Systems & applications\nExpert systems and artificial intelligence\nFuzzy databases\nFuzzy sets and rough sets\nGeographic Information Systems (GIS)\nImage and music processing\nInformation Retrieval and Database Systems\nInformation Systems\nIntegration of law and policy compliance into the development process\nKnowledge Acquisition, discovery & Management\nKnowledge Modelling\nKnowledge Processing\nKnowledge and information processing\nKnowledge bases\nManagement of privacy requirements with other system requirements\nMetadata Management\nMetadata management\nMobile Data and Information\nMobile databases\nModels and approaches for the verification of privacy properties\nMulti-agent systems\nMulti-databases and Database Federation\nMultidimensional databases\nMultimedia, Object, Object Relational, and Deductive Databases\nNew applications, systems and usage areas\nObject-oriented databases\nOntologies\nOrganizational, legal, political and economic aspects of privacy engineering\nPerformance of data processing\nPervasive Data and Information\nPilots and real-world applications\nPrivacy architectures\nPrivacy breach recovery Methods\nPrivacy engineering and accountability\nPrivacy engineering and databases\nPrivacy engineering in technical standards\nPrivacy engineering in the context of interaction design and usability\nPrivacy engineering strategies and design patterns\nPrivacy impact assessment\nPrivacy requirements elicitation and analysis methods\nPrivacy requirements operationalization\nPrivacy risk management models\nPrivacy testing and evaluation methods\nProcess Modelling\nProcess Support and Automation\nProtocols, security and control of data integrity\nQuery Processing and Optimization\nQuery languages and optimization\nRelational databases\nSemantic Web and Ontologies\nSensor Data Management\nSocial networks\nStatistical and Scientific Databases\nStream databases\nTeaching and training privacy engineering\nTechnical standards, heuristics and best practices for privacy engineering\nTemporal and spatial databases\nTemporal, Spatial, and High Dimensional Databases\nTools supporting privacy engineering\nTrust, Privacy & Security in Digital Business\nUML in designing databases\nUser Interfaces to Databases and Information Systems\nUser privacy and data protection requirements\nValidation and verification of privacy requirements\nVery Large Data Bases\nWWW and Databases\nWorkflow Management and Databases\nXML and Databases\nXML and semi-structured data\n"
+  },
+  {
+    "_id": "6639d36e8fb9939b82bceb2b",
+    "Title": "International Joint Conference on Artificial Intelligence",
+    "Acronym": "IJCAI",
+    "Source": "CONFHUB",
+    "Rank": "A*",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4602",
+    "Comments": "1",
+    "AverageRating": "5",
+    "Links": [
+      "https://ijcai24.org/call-for-papers/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-08-03T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:06:02.123Z"
+      },
+      {
+        "date": "2024-08-09T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:06:02.123Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-01-10T00:00:00.000Z",
+        "keyword": "Abstract submission deadline",
+        "update_time": "2024-05-16T10:14:31.097Z"
+      },
+      {
+        "date": "2024-01-17T00:00:00.000Z",
+        "keyword": "Full paper submission deadline",
+        "update_time": "2024-05-16T10:14:31.098Z"
+      },
+      {
+        "date": "2024-01-24T00:00:00.000Z",
+        "keyword": "Appendix and resubmission information deadline",
+        "update_time": "2024-05-16T10:14:31.098Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-01-16T00:00:00.000Z",
+        "keyword": "Author information deadline",
+        "update_time": "2024-05-16T10:14:31.099Z"
+      },
+      {
+        "date": "2024-02-22T00:00:00.000Z",
+        "keyword": "Summary reject notification",
+        "update_time": "2024-05-16T10:14:31.099Z"
+      },
+      {
+        "date": "2024-04-16T00:00:00.000Z",
+        "keyword": "Paper notification",
+        "update_time": "2024-05-16T10:14:31.099Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:08:30.358Z",
+    "updatedAt": "2024-06-01T03:48:25.617Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "Jeju Island, South Korea",
+    "Type": "offline",
+    "CallForPaper": "Important Dates (all times are 23:59 Anywhere On Earth, UTC-12)\n\nAbstract submission deadline: January 10, 2024\nAuthor information deadline: January 16, 2024\nFull paper submission deadline: January 17, 2024\nAppendix and resubmission information deadline: January 24, 2024\nSummary reject notification: February 22, 2024\nAuthor response period: March 18-21, 2024\nPaper notification: April 16, 2024\nConference: Saturday, August 3rd to Friday, August 9th, 2024. \n\nSubmissions are invited for the 33rd International Joint Conference on Artificial Intelligence, which is planned to be held in Jeju Island, South Korea, from August 3rd to August 9th, 2024.  Since 1969, IJCAI has remained the premier conference bringing together the international AI community to communicate the advances and achievements of artificial intelligence research.\n\nIn addition to the main track, the authors will be able to submit papers to the three special tracks (AI for Good , AI the   Arts and Creativity, and Human-Centred AI), as well as the survey track; these tracks will post their calls for papers later this year, and their deadlines, procedures and policies may differ from what is described below.\n\nSubmissions to IJCAI 2024 should report significant, original, and previously unpublished results on any aspect of artificial intelligence. Papers on novel AI research problems, AI techniques for novel application domains, and papers that cross discipline boundaries within AI are especially encouraged.\n\nA selection of the best papers submitted to IJCAI 2024 will be invited for a fast track in the Artificial Intelligence Journal and/or the Journal of AI Research.\n\nContact for questions not answered in the call: pcchair@ijcai24.org \n\nSummary\n\nPapers must be no longer than 9 pages in total: 7 pages for the body of the paper and 2 pages for references.\nAll authors must provide author information. All authors are expected to be available to review.\nTwo-phase reviewing:  Every paper will receive two reviews in Phase 1. Papers not rejected in Phase 1 will receive additional reviews in Phase 2 and will be able to provide an author’s response. \nSupplementary material (e.g. appendices, data, source code, resubmission information) is due one week after the paper deadline.\nPaper resubmissions from other conferences are welcome but authors are required to provide resubmission information, as described below.\nNew in 2024\n\nGenerative AI models, including Chat-GPT, BARD,  LLaMA, or similar LLMs, do not satisfy the criteria for authorship of papers published in IJCAI 2024. If authors use an LLM  in any part of the paper-writing process they assume full responsibility for all content, including checking for plagiarism and correctness of all text. \n\nWe encourage papers that describe research on or involving LLMs. Text generated by an LLM as part of the paper’s methodology or experimental analysis is allowed but needs to be properly documented and described in the paper. \n\nGeneral Information\n\nPage limit:  Papers must be no longer than 9 pages in total: 7 pages for the body of the paper and 2 pages for references; an optional ethics statement can be placed either in the body of the paper or in the reference pages.  For accepted papers, the last two pages can also contain acknowledgements and an optional contribution statement.\n\nAuthors commit to reviewing: By submitting to the conference, each author volunteers to be entered into the pool of potential PC members/reviewers for IJCAI 2024 and may be asked to review papers for the conference. This does not apply to authors who have already agreed to contribute to IJCAI 2024 in some capacity (e.g., as PC/SPC members of the main conference or special tracks, area chairs, or members of the organizing committee) and authors who are not qualified to be IJCAI PC members (e.g., undergraduate students, junior graduate students, or researchers with a limited track record in AI). This requirement may be waived in a limited range of exceptional circumstances (researchers leaving academia, parental leave, etc.)\n\nSeparate deadline for technical appendix and resubmission information: Authors are given one week after the submission deadline to update their technical appendix and resubmission information.\n\nSimplified procedure for resubmission information: Authors must declare whether their paper has been rejected from another peer-reviewed conference in the last 12 months before the submission. They will be requested to upload the latest rejected version (anonymized if necessary) with the reviewer’s comments; a cover letter responding to the reviews is optional. To avoid bias, the resubmission information will only be made available to reviewers after they submit their reviews. The program committee reserves the right to reject papers that fail to report resubmission information. Further, reviewers will be encouraged to check whether the resubmission addresses factual issues pointed out in the reviews of the previous version (e.g., typos, incorrect attribution of results, etc.) and to reject submissions that fail to do so.\n\nContribution statement: For accepted papers, the authors can include contribution information, explicitly indicating the contribution of each co-author to the paper.\n\nSelection Process\n\nSelection criteria:  Selection criteria include the novelty and originality of ideas, correctness, clarity, the significance of results, potential impact and quality of the presentation.\n\nSummary rejects: The reviewing process will proceed in two phases. In Phase 1, every paper will be reviewed by two PC members. If a paper receives two good-quality reviews that are not sufficiently positive in Phase 1, it will be rejected without any opportunity to submit an author response.  By submitting a paper, the authors acknowledge that they are aware of the possibility of receiving a summary rejection notification.\n\nFull paper review: Papers passing the summary reject step will go through the full reviewing process. Each paper will be reviewed by a group of PC members (PCs), and a Senior PC member (SPC) will coordinate the PC review process and write a meta-review with a recommendation cross-checked by an Area Chair (AC).\n\nAuthor response: The full paper review process will allow authors to respond to the reviews. Author responses should be concise and are not intended to create a dialogue between reviewers and authors. Author responses will be visible to AC, SPC, and PCs.\n\nParticipation in the conference.  At least one author of each accepted paper must participate in the conference and present the work. We are looking forward to the community meeting in person. \n\nEthics policy and ethics statement: Similar to the 2022 and 2023 editions of the conference, we will employ a lightweight ethics review policy for IJCAI 2024. Reviewers will be asked to flag glaring violations of ethical principles. Such flagged submissions will be reviewed by the Ethics Chair. In rare situations, the Program Chair, advised by the Ethics Chair, reserves the right to reject a submission on ethical grounds. However, we expect that the primary response to ethical concerns will require authors to revise their submissions to include a discussion that identifies these ethical concerns and suggestions on how they might be mitigated.\n\nAuthors can include in the main body of their paper, or on the reference pages, an ethics statement that addresses both ethical issues regarding the research being reported and the broader ethical impact of the work. Note that such an ethics statement is not required, but we recommend that papers working with sensitive data or on sensitive tasks include such discussion. The IJCAI review form will include a section asking reviewers and ACs to flag any serious ethical concerns. \n\nConflict of interest policy: All individuals involved in the IJCAI 2024 review process must adhere to the IJCAI conflict of interest policy. Details can be found at https://www.ijcai.org/IJCAI_Conflict_of_Interest_Policy.pdf. All authors of papers submitted to IJCAI 2024 agree to be bound by the conditions outlined in this call for papers (w.r.t. multiple submissions, authorship, resubmission policy, submission limit, etc.). Authors and reviewers acknowledge that IJCAI may take action against individuals in breach of the conflict of interest and call for papers policy, including – but not limited to – rejecting their submissions without further review and banning individuals from submitting their work to a limited number of IJCAI conferences in the future.\n\nConfidentiality policy: All submissions will be treated in strict confidence until the publication date.\n\nSubmission Process\n\nFormatting guidelines: The updated LaTeX styles and Word template will be available at https://www.ijcai.org/authors_kit in December 2023.\n\nSubmission site: https://cmt3.research.microsoft.com/IJCAI2024\n\nMandatory abstract submission: The paper title, author names, contact details, and a brief abstract must be submitted electronically through the IJCAI 2024 paper submission site (link above) by the abstract submission deadline. It will be possible to make minor edits to the title and abstract until the full paper submission deadline. However, submissions with “placeholder” abstracts may be removed without consideration.\n\nAuthor Information: Full papers must be submitted through the same site by the paper submission deadline. The list of author names provided at the Author Information Deadline is final. Authors may not be added to or removed from papers following submission. (The author’s ordering may still be changed during the camera-ready period.)  All authors must fill out the author information form in the submission site by the Author Information deadline. The author’s information is important to control the COIs in the review process. A submission may be rejected without review if any co-author does not register and enter the necessary information.\n\nSubmission limit: IJCAI 2024 will enforce a strict submission limit. Each author is limited to no more than 8 submissions to IJCAI 2024.\n\nKeywords: When submitting abstracts, authors must choose up to three content area keywords (called “subject areas” in CMT). General categories should be used only if specific categories do not apply or do not accurately reflect the main contributions. The full list of keywords will be available on the submission site.\n\nCopyright:  IJCAI 2024 is a conference held under the IJCAI rules. The papers published there will be solely IJCAI publications with IJCAI as the copyright holder.\n\nSubmission Requirements\n\nPaper format: Papers submitted to  IJCAI 2024 must be formatted according to the IJCAI 2024 guidelines (link above). Submissions must be self-contained. Authors are required to submit their electronic papers in PDF format. Submissions that violate the  IJCAI 2024 style (e.g., by decreasing margins or font sizes) may be rejected without review.\n\nPaper length: Papers must be no longer than 9 pages in total: 7 pages for the body of the paper (including all figures/tables), plus up to 2 additional pages with references; the optional ethics statement can be placed either in the body of the paper or in the reference pages. Acknowledgments and the contribution statement can be included in the two reference pages for accepted papers. Moreover, for accepted papers, up to two additional pages may be purchased at an additional cost per page. Overlength papers will be rejected without review.\n\nSupplementary material: Authors may submit up to 50MB of supplementary material, such as appendices, proofs, derivations, data, or source code; all supplementary material must be in PDF or ZIP format. Supplementary material should be created by the authors that directly support the submission content. Like submissions, supplementary material must be anonymized. There are two entries for supplementary files in the CMT system: one is “TechnicalAppendix”, and the other one is “ResubmissionFile”. The latter should be used for providing resubmission information only. Looking at the technical appendix is at the discretion of the reviewers.\n\nAnonymity: From the authors’ perspective, reviewing for  IJCAI 2024 is double-blind. As an author, you are responsible for anonymizing your submission. In particular, you should not include author names or affiliations in your submission and should avoid providing any other identifying information (even in the supplementary material). Acknowledgements of funding or assistance should also be omitted at the submission stage. When referring to one’s work, use the third person rather than the first person. For example, say, “Previously, Kwok et al. [8] have shown that…” rather than “In our previous work [8], we have shown that…”. All identifying information can be added to the final camera-ready version of accepted papers. Supplementary material (including the resubmission information) and code should also be anonymized (including, for instance, hardcoded paths or URLs that may give away login identifiers or institutions). In case of resubmissions, if the previous version of the paper was non-anonymous, the authors are asked to remove/cover their names, affiliations and acknowledgements in the resubmission PDF but not to alter the previous version or the reviews in any other way. The authors should also remove identifying information from the PDF metadata. Submissions that violate anonymity will be rejected without further review.\n\nPreprints: The existence of non-anonymous preprints (on arXiv, social media, websites, etc.) and prior publication in non-archival venues will not result in rejection. Note that the submission to CMT must always be anonymized regardless of whether a preprint has been released. Reviewers will be instructed not to look for such preprints actively, but encountering them will not constitute a conflict of interest.\n\nReproducibility: Authors must follow the reproducibility guidelines (available here) and checklist at the time of paper submission.\n\nEthics Statement: Authors may include a statement of the potential broader impact of their work, including its ethical aspects and future societal consequences. This part can be put in either the main body of the paper or on the reference pages. It is optional but is highly recommended for papers working with sensitive data or on sensitive tasks.\n\nDual submissions: IJCAI 2024 will not accept any paper that, at the time of full paper submission, is under review for, has already been published in or has already been accepted for publication in a journal or another venue with formally published proceedings.  Authors of IJCAI 2024 submissions are also not permitted to submit their paper to a journal or another venue with formally published proceedings during the IJCAI 2024 review period. (As a guideline, authors should regard publications with a DOI, ISBN, or ISSN as formal publications. Questions about submission eligibility should be referred to the program chair before the deadline.)  These restrictions do not apply to workshops and similar specialized presentations without formally published proceedings.  \n\nNote that papers that had been submitted to ICLR 2024 are eligible for submission to IJCAI 2024 since the ICLR 2024 notifications are before the IJCAI 2024 full paper deadline. Authors of ICLR 2024 submissions who are considering resubmitting to IJCAI 2024 must provide resubmission information as described above. We strongly encourage authors to provide a cover letter explaining how they addressed concerns raised in earlier reviews."
+  },
+  {
+    "_id": "6639d3748fb9939b82bceb31",
+    "Title": "International Joint Conference on Biometrics",
+    "Acronym": "IJCB",
+    "Source": "CORE2023",
+    "Rank": "B",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4603",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://ijcb2024.ieee-biometrics.org/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-09-15T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:06:20.537Z"
+      },
+      {
+        "date": "2024-09-18T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:06:20.537Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-04-30T00:00:00.000Z",
+        "keyword": "Abstract and paper submission deadline",
+        "update_time": "2024-05-16T11:04:15.287Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:08:36.793Z",
+    "updatedAt": "2024-06-01T04:06:20.537Z",
+    "__v": 0,
+    "NotificationDate": [
+      {
+        "date": "2024-06-15T00:00:00.000Z",
+        "keyword": "Decisions to authors",
+        "update_time": "2024-05-16T11:04:15.287Z"
+      }
+    ],
+    "CameraReady": [
+      {
+        "date": "2024-06-30T00:00:00.000Z",
+        "keyword": "Camera-ready submission",
+        "update_time": "2024-05-16T11:04:15.287Z"
+      }
+    ],
+    "Location": "Buffalo, New York, USA",
+    "Type": "offline",
+    "CallForPaper": "About IJCB 2024\n\nThe IEEE International Joint Conference on Biometrics (IJCB) is the premier international forum for research in biometrics and related technologies. It combines two major biometrics conferences, the IEEE Biometrics Theory, Applications, and Systems (BTAS) conference and the International Conference on Biometrics (ICB), and is made possible through a special agreement between the IEEE Biometrics Council and the IAPR TC-4. IJCB 2024 is the 8th iteration of this major joint event and will be held in USA, in Buffalo, New York between 15-18 September 2024 as an in-person conference.\n\nCall for Contributions\n\nIJCB 2024 is intended to have a broad scope and invites papers that advance biometric technologies, sensor design, feature extraction and matching algorithms, security and privacy, and social impact of biometrics technology. Topics of interest include, but are not limited to:\n\nFace, Iris, Fingerprint, Palmprint\nPeriocular, Ear, Vein, Speech\nGait, Gesture and Action Recognition\nMulti-modal and Multi-Spectral Biometrics\nMobile-based Biometrics\nTemplate Protection and Cryptosystems\nPrivacy, Demographic Bias, Fairness\nBiometrics Explainability and Interpretability\nTemplate Design, Selection and Update\nDatasets, Evaluation, Benchmarking\nPerformance Modelling and Prediction\nLarge scale ID Management\nAnti-spoofing, Presentation Attack Detection\nBiometric DeepFakes, Digital Data Forensics\nBiometric-related Law Enforcement and Forensics\nBiometrics in Healthcare, Banking, IoT\nBiometric-related Synthetic Realities\nEthical, Social and Legal Issues\nPaper Submission\n\nSubmitted papers may not be accepted or under review elsewhere. Submissions may be up to eight pages, plus additional references, in conference format. Please visit the submission page for additional details on paper formatting. Accepted papers will be submitted for inclusion into IEEE Xplore subject to meeting IEEE Xplore’s scope and quality requirements.\n\nSubmission is through CMT and the system will be opened on 15 February, 2024.\n\nAwards and TBIOM Special Issue\n\nSeveral awards will be given out to the best papers from IJCB 2024, including (1) the best paper award, (2) the best student paper award, (3) daily best poster awards. The awards will consist of a commemorative plaque as well as award money.\n\nAdditionally, the authors of the best-reviewed papers will be invited to submit an extended version of their paper to a special issue of the IEEE Transactions on Biometrics, Behavior, and Identity Science (IEEE-TBIOM).\n\nContact PC: ijcb2024-pcchairs@googlegroups.com"
+  },
+  {
+    "_id": "6639d3798fb9939b82bceb35",
+    "Title": "International Joint Conference on Knowledge Discovery, Knowledge Engineering and Knowledge Management",
+    "Acronym": "IC3K",
+    "Source": "CONFHUB",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4605",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://ic3k.scitevents.org/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-11-17T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:06:28.765Z"
+      },
+      {
+        "date": "2024-11-19T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:06:28.765Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-06-24T00:00:00.000Z",
+        "keyword": "Regular Paper Submission",
+        "update_time": "2024-05-16T11:04:22.307Z"
+      },
+      {
+        "date": "2024-07-17T00:00:00.000Z",
+        "keyword": "Position Paper Submission",
+        "update_time": "2024-05-16T11:04:22.307Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:08:41.928Z",
+    "updatedAt": "2024-06-01T04:06:28.766Z",
+    "__v": 0,
+    "NotificationDate": [
+      {
+        "date": "2024-07-31T00:00:00.000Z",
+        "keyword": "Regular Authors Notification",
+        "update_time": "2024-05-16T11:04:22.307Z"
+      },
+      {
+        "date": "2024-09-12T00:00:00.000Z",
+        "keyword": "Position Authors Notification",
+        "update_time": "2024-05-16T11:04:22.307Z"
+      }
+    ],
+    "CameraReady": [
+      {
+        "date": "2024-09-13T00:00:00.000Z",
+        "keyword": "Regular Camera Ready and Registration",
+        "update_time": "2024-05-16T11:04:22.307Z"
+      },
+      {
+        "date": "2024-09-25T00:00:00.000Z",
+        "keyword": "Position Camera Ready and Registration",
+        "update_time": "2024-05-16T11:04:22.307Z"
+      }
+    ],
+    "Location": "Porto, Portugal",
+    "Type": "offline",
+    "CallForPaper": "SCOPE\n\nThe purpose of the IC3K is to bring together researchers, engineers and practitioners on the areas of Knowledge Discovery, Knowledge Engineering and Knowledge Management. IC3K is composed of three co-located conferences, each specialized in at least one of the aforementioned main knowledge areas.\n\nCONFERENCE AREAS\n\nAvaliable soon.\n\nKEYNOTE SPEAKERS\nCarlo Sansone, Dipartimento di Ingegneria Elettrica e delle Tecnologie dell'Informazione, University of Naples Federico II, Italy\nNirmalie Wiratunga, RGU's School of Computing, United Kingdom\nJoão Gama, University of Porto, Portugal\n\nPAPER SUBMISSION\n\nAuthors should submit a paper in English, carefully checked for correct grammar and spelling, addressing one or several of the conference areas or topics. Each paper should clearly indicate the nature of its technical/scientific contribution, and the problems, domains or environments to which it is applicable. To facilitate the double-blind paper evaluation method, authors are kindly requested to produce and provide the paper WITHOUT any reference to any of the authors, including the authors’ personal details, the acknowledgments section of the paper and any other reference that may disclose the authors’ identity.\n\nOnly original papers should be submitted. Authors are advised to read INSTICC's ethical norms regarding plagiarism and self-plagiarism thoroughly before submitting and must make sure that their submissions do not substantially overlap work which has been published elsewhere or simultaneously submitted to a journal or another conference with proceedings. Papers that contain any form of plagiarism will be rejected without reviews.\n\nAuthors can submit their work in the form of a Regular Paper, representing completed and validated research, or as a Position Paper, portraying a short report of work in progress or an arguable opinion about an issue discussing ideas, facts, situations, methods, procedures or results of scientific research focused on one of the conference topic areas. All papers must be submitted through the online submission platform PRIMORIS and should follow the instructions and templates that can be found under Guidelines and Templates. After the paper submission has been successfully completed, authors will receive an automatic confirmation e-mail.\n\n\n\nPUBLICATIONS\n\nAll accepted papers will be published in the conference proceedings, under an ISBN reference, on paper and on digital support.\nSCITEPRESS is a member of CrossRef (http://www.crossref.org/) and every paper on our digital library is given a DOI (Digital Object Identifier).\nThe proceedings will be submitted for indexation by SCOPUS, Google Scholar, DBLP, Semantic Scholar, EI and Web of Science / Conference Proceedings Citation Index.\n\nIMPORTANT DATES\n\nConference Date: 17 - 19 November, 2024\n\n\nRegular Papers\nPaper Submission: June 24, 2024 (extended) (extended)\nAuthors Notification: July 31, 2024\nCamera Ready and Registration: September 13, 2024\n\n\n\nPosition Papers\nPaper Submission: July 17, 2024\nAuthors Notification: September 12, 2024\nCamera Ready and Registration: September 25, 2024\n\n\nWorkshops\nWorkshop Proposal: June 26, 2024\n\n\nDoctoral Consortium\nPaper Submission: October 1, 2024\nAuthors Notification: October 14, 2024\nCamera Ready and Registration: October 22, 2024\n\n\nSpecial Sessions\nSpecial Session Proposal: June 26, 2024\n\n\nTutorials\nTutorial Proposal: October 9, 2024\n\n\nDemos\nDemo Proposal: October 9, 2024\n\n\nPanels\nPanel Proposal: October 9, 2024\n\n\nAbstracts\nAbstract Submission: October 1, 2024\nAuthors Notification: October 14, 2024\nCamera Ready and Registration: October 22, 2024\n\n\nSECRETARIAT\n\nIC3K Secretariat\nAddress: Avenida de S. Francisco Xavier, Lote 7 Cv. C\n             2900-616 Setúbal - Portugal\nTel.: +351 265 520 185\nFax: +351 265 520 186\ne-mail: ic3k.secretariat@insticc.org\nWeb: https://ic3k.scitevents.org\n\nVENUE\n\nThe conference will take place at the Vila Galé Porto hotel which is located in the beautiful and historical city of Porto in Portugal. Porto is considered to be one of the most beautiful historical towns in Portugal, with its remarkable architectural heritage shaped by history.\n\n\nCONFERENCE CHAIR\n\nJorge Bernardino, DEIS, Polytechnic of Coimbra - ISEC, Portugal\n\n\nPROGRAM CHAIR\nAvailable soon.\nPROGRAM COMMITTEE MEMBERS\n\nAvailable soon."
+  },
+  {
+    "_id": "6639d3aa8fb9939b82bceb5d",
+    "Title": "International Symposium on Automation and Robotics in Construction",
+    "Acronym": "ISARC",
+    "Source": "CORE2023",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "none",
+    "PrimaryFoR": "4602",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://www.iaarc.org/isarc-2024"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-06-03T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:06:28.765Z"
+      },
+      {
+        "date": "2024-06-05T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:06:28.765Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-12-26T00:00:00.000Z",
+        "keyword": "Full Paper Submission Deadline",
+        "update_time": "2024-05-16T11:04:42.727Z"
+      },
+      {
+        "date": "2024-03-14T00:00:00.000Z",
+        "keyword": "Revised Versions Due",
+        "update_time": "2024-05-16T11:04:42.727Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:09:30.162Z",
+    "updatedAt": "2024-05-22T13:01:13.858Z",
+    "__v": 0,
+    "NotificationDate": [
+      {
+        "date": "2024-03-25T00:00:00.000Z",
+        "keyword": "Final Notification",
+        "update_time": "2024-05-16T11:04:42.727Z"
+      }
+    ],
+    "CameraReady": [
+      {
+        "date": "2024-04-15T00:00:00.000Z",
+        "keyword": "Camera-ready Papers Upload",
+        "update_time": "2024-05-16T11:04:42.727Z"
+      }
+    ],
+    "Location": "Lille, France", 
+    "Type": "offline",
+    "CallForPaper": ""
+  },
+  {
+    "_id": "6639d3cb8fb9939b82bceb79",
+    "Title": "International Symposium on Grids and Clouds (was International Symposium on Grid Computing)",
+    "Acronym": "ISGC",
+    "Source": "CONFHUB",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "none",
+    "PrimaryFoR": "4606",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://indico4.twgrid.org/event/33/page/65-call-for-full-paper-submission"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-03-24T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:06:28.765Z"
+      },
+      {
+        "date": "2024-03-29T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:06:28.765Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-04-15T00:00:00.000Z",
+        "keyword": "Submission Deadline",
+        "update_time": "2024-06-01T04:06:28.765Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-06-15T00:00:00.000Z",
+        "keyword": "Review Result Notification",
+        "update_time": "2024-06-01T04:06:28.765Z"
+      }
+    ],
+    "CameraReady": [
+      {
+        "date": "2024-08-01T00:00:00.000Z",
+        "keyword": "On-line publication available",
+        "update_time": "2024-06-01T04:06:28.765Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:10:03.192Z",
+    "updatedAt": "2024-05-07T07:10:03.192Z",
+    "__v": 0,
+    "Location": "BHSS, Academia Sinica", 
+    "Type": "offline",
+    "CallForPaper": "" 
+  },
+  {
+    "_id": "6639d3cf8fb9939b82bceb7d",
+    "Title": "International Symposium on Information Assurance and Security",
+    "Acronym": "IAS",
+    "Source": "CORE2023",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "none",
+    "PrimaryFoR": "4604",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://www.mirlabs.org/ias23/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-12-12T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:06:28.765Z"
+      },
+      {
+        "date": "2023-12-14T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:06:28.765Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-10-20T00:00:00.000Z",
+        "keyword": "Paper submission due",
+        "update_time": "2024-05-16T10:19:00.596Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-10-31T00:00:00.000Z",
+        "keyword": "Notification of paper acceptance",
+        "update_time": "2024-05-16T10:19:00.601Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:10:07.328Z",
+    "updatedAt": "2024-05-16T10:19:00.774Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2023-11-15T00:00:00.000Z",
+        "keyword": "Registration and Final manuscript due",
+        "update_time": "2024-05-16T10:19:00.601Z"
+      }
+    ],
+    "Location": "Olten, Switzerland; Porto, Portugal; Vilnius, Lithuania and Kochi, India", 
+    "Type": "hybrid",
+    "CallForPaper": "Theme: 'Innovative Cyber Security: Protecting Nations Beyond Borders'\n\nInformation assurance and security has become an important research issue in networked and distributed information sharing environments. Finding effective ways to protect information systems, networks and sensitive data within the critical information infrastructure is challenging even with the most advanced technology and trained professionals.\n\nThe International Symposium on Information Assurance and Security (IAS) aims to bring together researchers, practitioners, developers, and policy makers involved in multiple disciplines of information security and assurance to exchange ideas and to learn the latest development in this important field.\n\nInformation Assurance, Security Mechanisms, Methodologies and Models\n\nAuthentication and Identity\nManagement Authorization and Access Control\nTrust Negotiation, Establishment and Management\nAnonymity and User Privacy\nData Integrity and Privacy\nNetwork Security\nOperating System Security\nDatabase Security\nIntrusion Detection\nSecurity Attacks\nSecurity Oriented System Design\nSecurity and Performance trade-off\nSecurity Management and Strategy\nSecurity Verification, Evaluations and Measurements\nSecure Software Technologies\nNew Ideas and Paradigms for Security\nCryptography\nCryptographic Protocols\nKey Management and Recovery\n\nSecure System Architectures and Security Application\n\nWeb Services Security\nGrid Security\nUbiquitous Computing Security\nMobile Agent Security\nInternet Security\nIntellectual Property Protection\nE-Commerce Security\nE-Government Security\nE-Health Security\nHome System Security\nSensor Network Security\nAd hoc network security\nBiometrics Security and Applications\nSecure Hardware and Smartcards\n\nImage Engineering, Multimedia Signal Processing and Communication Security\n\nMultimedia Security\nMultimedia Forensic\nDigital Watermarking and DRM\nCommunication Security\nBiometrics\nInformation Fusion\nImage Registration\nImage Mosaic\nImage Indexing and Retrieval\nImage and Video Coding\nMultiscale Geometric Analysis\nMotion Detection and Tracing\nFeature Extraction\n3G Communication\nEmbedded System Design\n\n\nAuthor guidelines:\n\n\n\nProceedings will be published by Springer in the Lecture Notes in Networks and Systems\", which is currently indexed by SCOPUS, INSPEC, WTI Frankfurt eG, zbMATH, SCImago and are submitted for consideration in Web of Science.\nSeries URL: https://www.springer.com/series/15179\nPaper preparation templates: https://www.springer.com/de/authors-editors/book-authors-editors/manuscript-preparation/5636#c3324\n\nPapers maximum length is 10 pages.\n- Papers must be formatted according to Springer format."
+  },
+  {
+    "_id": "6639d3ed8fb9939b82bceb97",
+    "Title": "International Symposium on Parallel and Distributed Computing",
+    "Acronym": "ISPDC",
+    "Source": "CORE2023",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4606",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://ispdc2023.hpc.pub.ro/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-07-10T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:50:09.637Z"
+      },
+      {
+        "date": "2023-07-12T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:50:09.637Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-04-08T00:00:00.000Z",
+        "keyword": "Abstracts",
+        "update_time": "2024-05-16T10:20:13.475Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-05-30T00:00:00.000Z",
+        "keyword": "Notification",
+        "update_time": "2024-05-16T10:20:13.475Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:10:37.872Z",
+    "updatedAt": "2024-06-01T03:50:09.638Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2023-06-28T00:00:00.000Z",
+        "keyword": "Camera-ready",
+        "update_time": "2024-05-16T10:20:13.475Z"
+      }
+    ],
+    "Location": "Bucharest, Romania",
+    "Type": "offline",
+    "CallForPaper": "Authors are invited to submit manuscripts in the form or short (5 pages) or full papers (8 pages) that present original and unpublished research as well oral communications (1-4 pages description) about previously published work, position papers, and results from R&D projects in all areas of parallel and distributed computing and applications. The IEEE ISPDC 2023 conference scope is focused on, but not limited to, the following topics:\n\nEfficient Support for the Computing Continuum (combining HPC, Cloud and Edge Computing)\nCloud Resource Provisioning and Allocation\nPricing of Cloud Resources\nCloud Performance and Capacity Management\nGreen Cloud Computing\nCloud Computing Techniques for Big Data\nStorage Architectures for Clouds and Big Data Processing\nDistributed Data Centers\nFog Computing and Networking architectures\nEdge-Cloud Interactions and Enabling Protocols\nEdge Resource Management\nIoT\nEdge Data Analytics\nEdge Caching\nCollaborative Computing\nWeb Services and Internet Computing\nMulti-agent Systems\nReal-time and Reactive Distributed and Parallel Systems\nSystem and Service Management\nAlgorithms and Models for Large Scale Applications\nAlgorithms, Models and Formal Verification\nModel Checking for Parallel Computing\nAlgorithms for Data Science, Data Exploration and Graph Analytics\nParallel Programming Paradigms and APIs\nGPU Programming\nBio-Inspired and Nature-Inspired Parallel Algorithms\nParallel and Distributed Algorithms for Deep Learning\nSocial Networks\nScalable Algorithms and Applications\nUrban Networks and Applications\nVehicular Networks\nParallel, Distributed Big-Data Management\nSmart Applications\nVisualization of Massively Parallel Data\nDecentralized Artificial Intelligence\nArchitectures and Environments for Parallel and Distributed Computing\nMethods and Tools for Parallel and Distributed Programming Design and Analysis\nMulti-Cores, Clusters and Grid Computing\nArchitectures and Software for In-Memory Computing\nSystems Architectures for Graph Computing/Processing\nInnovative Systems Architectures for Big Data Processing\nVirtualization\nNetwork Architectures for HPC and Data Centers\nPerformance Modeling, Analysis and Evaluation for Parallel and Distributed Systems\nScheduling and Load Balancing\nResource Management\nExecution Control Optimization\nPerformance Modeling, Management and Optimization\nQoS in Distributed Systems\nEnergy Efficiency\nGreen and Sustainable Computing\nSecurity and Privacy in Parallel and Distributed Systems\nCloud Security and Privacy\nVirtualization-based Security\nOperating System Level Security\nData Security and Privacy in Social Networks\nSecurity of Distributed IoT Systems\nPenetration Testing of Distributed Applications\nSecurity Tools for Distributed Applications (Programming Languages, Compilers, Analysis Tools etc.)\nSecurity and Privacy of Distributed Mobile Applications\nNetwork Security and Isolation\nAdversary Emulation\nApplied Cryptography\nIsolation Techniques\nApplications of Machine Learning in Distributed Systems Security\nMachine Learning Models for Malware Detection\nBig Data Techniques for Security Reasoning\nData Anonymity and Privacy\nSoftware Defined Networks\nBlockchain and Distributed Ledgers\nDistributed Consensus\nTransaction Throughput and Scalability Issues\nDecentralized Application Development using Smart Contracts\nAsset Tracking and Financial Services\nBlockchain and Energy Systems\nMobile and Embedded Computing\nParallel Embedded Systems Programming\nHighly Embedded Parallel Systems Support for Programming\nFPGA and SoC/NoC Solutions\nEmbedded, Mobile and Network Environments\nMobile and Ubiquitous Distributed Computing\nMobile Data Management\nMobile Clouds"
+  },
+  {
+    "_id": "6639d3f48fb9939b82bceb9d",
+    "Title": "International Symposium on Robotics Research",
+    "Acronym": "ISRR",
+    "Source": "CONFHUB",
+    "Rank": "C",
+    "Note": "See note",
+    "DBLP": "view",
+    "PrimaryFoR": "4602",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://isrr2024.su.domains/"
+    ],
+    "createdAt": "2024-05-07T07:10:44.365Z",
+    "updatedAt": "2024-05-22T14:57:43.833Z",
+    "__v": 0,
+    "ConferenceDate": [
+      {
+        "date": "2024-12-08T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:50:09.637Z"
+      },
+      {
+        "date": "2024-12-12T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:50:09.637Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-07-31T00:00:00.000Z",
+        "keyword": "Paper Submission",
+        "update_time": "2024-05-22T03:01:13.036Z"
+      },
+      {
+        "date": "2024-10-31T00:00:00.000Z",
+        "keyword": "Final Submission",
+        "update_time": "2024-05-22T03:01:13.036Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-09-30T00:00:00.000Z",
+        "keyword": "Decision",
+        "update_time": "2024-05-22T03:01:13.036Z"
+      }
+    ],
+    "CameraReady": [],
+    "Location": "Long Beach, California, USA", 
+    "Type": "offline", 
+    "CallForPaper": "Papers representing authoritative reviews of established research areas and papers reporting on new areas and pioneering work are sought for presentation at the Symposium. In addition to the open call, a selected number of leading researchers will be solicited to contribute by personal invitation. Each submission will be reviewed by members of the Symposium Program Committee. The quality of the papers and the related presentations are a central priority for ISRR. Authors new to ISRR are particularly encouraged to submit."
+  }
+]

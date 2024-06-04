@@ -19,12 +19,13 @@ const { isContainsAnyException, handleConferenceException } = require("../except
 const crawlController = async (browserInstance) => {
     try {
         // Create browser
-        //let browser = await browserInstance;
+        let browser = await browserInstance;
 
         //await crawlAllConferencesDetail(browser);
         // await processConferenceError(browser);
 
-        await lastHope();
+        // await lastHope();
+        await getCallForPaper(browser);
         
     } catch (error) {
         console.log("Error in crawlController: " + error);
@@ -286,6 +287,7 @@ const formatEvaluationDataset = () => {
 };
 
 const lastHope = async () => {
+    
     let result = []
     for (let i = 0; i < conferenceHasIncorrectLinks.length; i++) {
         const currentConference = await Conference.findOne({_id: conferenceHasIncorrectLinks[i]})
@@ -293,9 +295,49 @@ const lastHope = async () => {
     }
     // Convert result to JSON string
     const jsonString = JSON.stringify(result, null, 2); // Pretty print with 2 spaces
-
     // Save JSON to file
     fs.writeFile('result.json', jsonString, (err) => {
+        if (err) {
+            console.error('Error writing to JSON file', err);
+        } else {
+            console.log('JSON file has been saved.');
+        }
+    });
+    
+    
+    // const data = fs.readFileSync('result.json', 'utf-8');
+    // const conferences = JSON.parse(data);
+    // console.log(conferences.length)
+    // for (let conference of conferences) {
+    //     await Conference.updateOne(
+    //       { _id: conference._id }, // Match by the _id field
+    //       { $set: conference },
+    //       { upsert: false } // Insert if not found
+    //     );
+    // }
+    // console.log('Database update complete.');
+    
+}
+
+const getCallForPaper = async (browser) => {
+    const link = "https://lrec-coling-2024.org/1st-call-for-papers/"
+    const page = await browser.newPage();
+    await page.goto(link, { waitUntil: "domcontentloaded" });
+    await page.waitForSelector("#content");
+
+    let data = await page.$$eval("#content", (els) => {
+        return els.map((el) => {
+            return el.innerText;
+        });
+    });
+    
+    console.log(data)
+    console.log(data.length)
+    // Convert the data array to a CSV format
+    const jsonString = JSON.stringify(data, null, 2); // Pretty print with 2 spaces
+
+    // Save the JSON to a file
+    fs.writeFile('callforpaper.json', jsonString, (err) => {
         if (err) {
             console.error('Error writing to JSON file', err);
         } else {

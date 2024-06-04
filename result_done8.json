@@ -1,0 +1,365 @@
+[
+  {
+    "_id": "6639c72b4c771c093141cc18",
+    "Title": "IEEE/IFIP International Conference on Dependable Systems and Networks",
+    "Acronym": "DSN",
+    "Source": "CONFHUB",
+    "Rank": "A",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4606",
+    "Comments": "1",
+    "AverageRating": "5",
+    "Links": [
+      "https://dsn2024uq.github.io/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-06-24T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:21:20.331Z"
+      },
+      {
+        "date": "2024-06-27T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:21:20.331Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-11-29T00:00:00.000Z",
+        "keyword": "Abstract Submission Deadline",
+        "update_time": "2024-05-16T12:25:14.994Z"
+      },
+      {
+        "date": "2023-12-06T00:00:00.000Z",
+        "keyword": "Paper Submission Deadline",
+        "update_time": "2024-05-16T12:25:14.994Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-01-28T00:00:00.000Z",
+        "keyword": "Early Reject Notification",
+        "update_time": "2024-05-16T12:25:14.995Z"
+      },
+      {
+        "date": "2024-03-20T00:00:00.000Z",
+        "keyword": "Notification to Authors",
+        "update_time": "2024-05-16T12:25:14.995Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:16:11.705Z",
+    "updatedAt": "2024-06-01T04:21:20.332Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2024-04-26T00:00:00.000Z",
+        "keyword": "Notification to Authors",
+        "update_time": "2024-05-16T12:25:14.995Z"
+      }
+    ],
+    "Location": "Brisbane, Queensland, Australia",
+    "Type": "offline",
+    "CallForPaper": "DSN-2024: Research Track Call For Contributions\n\nSociety is increasingly dependent on the robust functioning of all types of computing systems. These systems include mobile/edge devices, networks, personal computers, and large-scale systems that provide services we use in our everyday lives for many applications and problems. Failure, incorrect operation or compromise of computing systems and networks can have dire implications on safety and security of human and other lives as well as the environment.\n\nThe Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN) is devoted to the mission of ensuring that the computing systems and networks on which society relies are robust, i.e., dependable and secure.\n\nDSN, one of the longest running IEEE conferences organizing its 54th edition in 2024, has pioneered the fusion between dependability and security research under a common body of knowledge, understanding the need to simultaneously fight against accidental faults, intentional (malicious) attacks, design errors, and unexpected operating conditions. Its distinctive approach to both accidental faults and malicious attacks has made DSN the most prestigious international forum for presenting research that pushes the boundaries in robustness and resilience of a wide spectrum of computing systems and networks.\n\nAll aspects of research and practice of computer system robustness (i.e., dependability and security) are within the scope of DSN. Relevant topics include but are not limited to: 1) innovative systems, architectures, protocols, and algorithms for preventing, detecting, diagnosing, eliminating or recovering from accidental and malicious threats as well as 2) practical experimentation with and assessment of the robustness (dependability and security) of all types of computing systems and networks.\n\nAuthors are invited to submit original papers on all topics within this broad scope. Example topical areas include but are not limited to the following:\n\nHardware (e.g., microprocessors, memory systems, systems on chip, I/O devices, storage systems,Trusted Execution Environments (TEEs), edge and mobile devices, data center infrastructure, hardware accelerators, emerging technologies, emerging paradigms like processing in memory & quantum computing)\nSoftware (e.g., applications, middleware, distributed algorithms, operating systems, software security, dependable software design)\nNetworked systems and clouds (e.g., wireless networks, mobility, software-defined networking, edge computing, cloud computing/storage, networks on chip, network security)\nAutonomous systems (e.g., self-driving vehicles, autonomous robots, assured autonomy, explainable decision making, acceptability, privacy issues)\nCyber-physical systems (e.g., embedded systems, real-time control of critical systems, internet of things, smart grid, automotive, aerospace, railway, medical systems, security and safety of cyber-physical systems)\nDistributed ledgers/Blockchain (e.g., BFT/consensus algorithms, cryptocurrencies, decentralized storage, zero knowledge proofs)\nAI/Machine Learning for resilient systems (e.g., robust, resilient, secure, and explainable AI/Machine Learning techniques; applications of AI/ML techniques for dependability and security, robustness issues in AI/ML systems)\nModels and methodologies for programming, evaluating, verifying, and assessing robust (dependable and secure) systems (e.g., performance and dependability evaluation, analytical and numerical methods, simulation, experimentation, benchmarking, verification, field data analysis)\nEmerging technologies and computing paradigms (e.g., robustness, security, dependability issues of emerging memory and storage systems, emerging computing paradigms like quantum computing, processing in memory/sensors/storage/network, 3-dimensional architectures, new hardware/software cooperative paradigms, emerging programming and system paradigms)\n\nImportant dates (tentative):\n\nNov. 29, 2023: Abstract Submission Deadline\n\nDec. 6, 2023: Paper Submission Deadline\n\nJan. 28, 2024: Early Reject Notification\n\nFeb. 15 - 28, 2024: Author Rebuttal & Revision Period\n\nMar. 20, 2024: Notification to Authors\n\nApr. 26, 2024: Camera Ready Materials\n\n* All dates refer to AoE time (Anywhere on Earth) *\n\nInformation to authors:\n\nInnovative papers in all areas of robust (dependable and secure) systems and networks will be considered. Papers will be assessed with criteria appropriate to each category. The conference broadly and inclusively favors innovative and insightful research that explores new territory, continues a significant research dialogue, or reflects on experience with (or measurements of) state-of-the-art systems. Submissions will be judged on insight, originality, significance, correctness and potential impact.\n\nResearch Papers, Practical Experience Reports, and Tool Descriptions will be refereed and included in the Proceedings of the DSN 2024, if accepted.\n\nAll contributions must be written in English. IEEE Computer Society will publish accepted contributions.\n\nAt least one author of every accepted paper is expected to register (as a regular registration) for the conference and present the work.\n\nPaper Categories:\n\nWhen submitting, authors have to select one of the following categories:\n\nRegular papers (11 pages): full paper describing a research contribution, including experimental work focused on implementation and evaluation of existing techniques in the DSN thematic areas. Papers should clearly describe a novel scientific contribution and a significant advancement of the state of knowledge in DSN relevant topics. The paper should address a significant problem with a compelling solution whose validity and practical applicability are clearly discussed.\n\nPractical experience reports (7 pages): a shorter paper describing practitioner experiences or lessons learned applying tools and techniques to real-world problems and systems, or based on the empirical analysis of field data using a rigorous scientific approach. A paper in this category is expected to show new insights and experiences informing the research and practice of robust computing system design. Contributions reporting on industry practical experiences and lessons learned are highly encouraged, including studies reporting negative results or challenges about the practical applicability or scalability of research results in industry.\n\nTool descriptions/demonstrations (7 pages): descriptions of the architecture, implementation and usage of substantive tools to aid the research and practice of dependability. A tool paper is expected to describe and demonstrate the value that the tool brings to the dependability community. Making the tool publicly available, whenever possible, is strongly encouraged.\n\nThe number of pages indicated above includes everything: title page, text, figures, appendices, etc. Only references are not included in the page limit. Papers that exceed the number of pages for that submission category will be rejected without review.\n\nIndependently of the paper category, we expect all papers to provide enough detail to enable reproducibility of their experimental results and encourage authors, whenever possible, to make both the artifacts and datasets related to the paper publicly available.\n\nArtifacts\n\nDSN supports open science, where authors of accepted papers are encouraged to make their code and datasets publicly available to ensure reproducibility and replicability by other researchers. New this year, DSN 2024 will offer a separate artifact evaluation track that is open to all accepted papers from all three categories of the research track. The goals of the artifact track are to (1) increase confidence in a paper’s claims and results, and (2) facilitate future research via publicly available datasets and tools.\n\nAt the time of the submission, authors must indicate (1) whether they intend to submit an artifact for their submission, (2) the type of artifact (code, dataset, or both), (3) a DOI reserved for the artifact on an open-access repository (Zenodo or Figshare), and (4) the badge(s) they are applying for. For more information about how to reserve a DOI and about the three choices available for the badges, see the call for artifacts at https://dsn2024uq.github.io/cfartifacts.html.\n\nInformation about the artifact submission will not be shared with the PC.The artifact does not need to be submitted at the same time of the paper. The artifact can be uploaded at the reserved DOI after the paper submission deadline, and can be updated until the artifact submission deadline.\n\nThe artifacts will be evaluated by a dedicated Artifacts Evaluation (AE) committee through a single-blind review process, where authors should be available to respond quickly during the artifact evaluation. All artifacts submitted will compete for a “Distinguished Artifact Award” to be decided by that committee.\n\nAnonymization Rules:\n\nAuthors must make a good faith effort to anonymize their paper. An author should always refer to their own related work in the third person, just like they would refer to any other related work. As an author, you should not identify yourself in the paper either explicitly or by implication (e.g., through references or acknowledgments).\n\nAnonymization should not be done in a way to hurt the review process. For example, omitting published references or anonymizing them for the purposes of double-blind process can significantly hurt the review process. As such, only non-destructive anonymization is required. For example, system names may be left un-anonymized, if the system name is important for a reviewer to be able to evaluate the work. For example, a paper on experiences with the design of .NET should not be re-written to be about \"an anonymous but widely used commercial distributed systems platform.\"\n\nAdditionally, please take the following steps when preparing your submission:\n\nRemove authors' names and affiliations from the title page.\nRemove acknowledgement of identifying names and funding sources.\nUse care in naming your files. Source file names, e.g., Joe.Smith.dvi, are often embedded in the final output as readily accessible comments. Avoid names that could in any way be interpreted as being derived from the name of an author or identifying an author’s location or affiliation.\nUse care in referring to related work, particularly your own previously published work. Do not omit references to provide anonymity, as this leaves the reviewer unable to grasp the context. Instead, a good solution is to reference your past work in the third person, just as you would any other piece of related work.\nIf you have a concurrent submission, reference it as follows: “Closely related work describes a microkernel implementation [Anonymous 2021].” with the corresponding citation: “[Anonymous 2021] Under submission. Details omitted for double-blind reviewing.” This is, for example, the case for extended versions of the paper available online.\nIf you cite anonymous work, you must also send the deanonymized reference(s) to the PC chair in a separate email.\n\nAuthors should also avoid broadly advertising their work in a way that reaches the reviewers even if they are not searching for it (for example, presentations in small meetings or seminars are allowed). It is unacceptable to discuss the work with program committee members. Posting the work on ArXiV or a similar site is within the authors’ rights; however, the authors should use a different title than the submission and they should avoid specifying that the work is under submission to DSN. In particular, please ensure that there are not older versions of the paper on ArXiV that have the same title as the submission.\n\nSubmissions that do not conform to the above submission deadline, anonymization and formatting guidelines (e.g., are too long, use fonts or line spacing smaller than what is indicated) or are unoriginal, previously published, or under submission to multiple venues, will be disregarded.\n\nFormatting Rules:\n\nSubmissions must adhere to the IEEE Computer Society camera-ready 8.5″x11″ two-column camera-ready format (using a 10-point font on 12-point single-spaced leading) as implemented by the LaTeX/Word templates available at the IEEE conference template page (last updated in 2019):\n\nLaTex Package (ZIP)\n\nWord Template (DOC)\n\nEach paper must be submitted as a single Portable Document Format (PDF) file. All fonts must be embedded in the file. We also strongly recommend you print the file and review it for integrity (fonts, symbols, equations etc.) before submitting it. A defective printing of your paper can undermine its chance of acceptance. Please take a note of the following:\n\nSubmissions should be anonymous.\nThe page limit includes everything except references.\nThe first page must include the title of the paper, the type of the paper (Regular / Practical Experience / Tool), and a maximum 150-word abstract.\nPlease take into account that the abstract will be used by the reviewers to bid on papers: describe the paper goals clearly, as well as the means used to achieve them. If the title and abstract are not sufficiently descriptive at the time of the abstract deadline, the submission may be rejected without review.\nThe first page is not a separate page, but is a part of the paper (and thus has technical material in it). Thus, this page counts toward the total page budget for the paper.\nThere is no page limit for references - however, authors must not put any text or figures on the pages for the references - if so, those pages will be included in the page limits above (it is acceptable for the references to start on the last page of the paper as long as it is within the page limit).\nPages should be numbered.\nThe use of color for figures and graphs is encouraged, but the paper should be easily readable if printed in grayscale.\nSymbols and labels used in the graphs should be readable as printed, without requiring on-screen magnification.\nTry to limit the file size to less than 15 MB.\n\nPaper Submissions:\n\nPapers are submitted via the submission website: https://dsn2024.hotcrp.com/.\n\nThe program committee will perform double-blind reviewing of all submissions, with help from outside referees. Papers will be held in full confidence during the reviewing process, but papers accompanied by nondisclosure agreement forms are not acceptable and will be rejected without review.\n\nAuthors must anonymize their submissions (see Anonymization Rules). Submissions violating the formatting and anonymization rules will be rejected without review. There will be no extensions for reformatting.\n\nAwards:\n\nDSN gives three Best Paper Awards and one of them, based on the quality of the oral presentation, will also receive a Distinguished Best Paper Award. All of them will be presented in a special Best Paper Session at the conference.\n\nThe selection of the candidate papers for the awards is carried out as a three-step process. First, the Program Committee picks 6-7 of the accepted papers based on the review and revision process & committee discussion. Second, the Steering Committee (in consultation with the Program Chairs) chooses among these papers the 3 Best Papers that are to be presented in the Best Paper Session at the conference (all these papers receive the Best Paper Award). Third, and finally, the audience at the conference votes among these Best Papers to select the one that should receive the Distinguished Best Paper Award. Attendees are strongly encouraged to read the Best Papers as well as carefully listen to their presentations, and make their Distinguished Best Paper Award choice based on all information they have about the finalized Best Papers and their presentations at the conference.\n\nDSN also attributes a group of awards based on nominations. These awards are the William C. Carter Ph.D. Dissertation Award in Dependability, the Rising Star in Dependability Award, the Test-of-Time Award, and the Jean-Claude Laprie Award. Please check the relevant page on the DSN website for additional details.\n\nAs noted above, there will also be a Distinguished Artifact Award.\n\nReview Process and Author Response:\n\nThis year, as initiated in DSN 2023, in addition to the rebuttal process, DSN is following a Paper Revision Process. For papers that are not early rejects, the authors will be invited to submit a revised paper (as well as a rebuttal) after receiving their reviews. The major goal of the revision process is twofold:\n\n1. to strengthen the papers by making sure reviewer comments are properly addressed in a revised version.\n2. to enable the reviewers to see how their comments are addressed in a revised version (which is especially useful in cases where rebuttal may not have the same effect).\n\nThrough this process, we give the authors the ability to submit both a revised paper (based on the received reviews) and a rebuttal. These two serve different purposes. In particular, the rebuttal remains useful for at least three purposes that cannot be easily accomplished with a revised paper:\n\n1. to clarify misunderstandings (and point out any other issues) in the reviews\n2. to describe a plan for revisions the author would like to make but they need more time for than the revision timeframe allows\n3. to provide a summary of changes that helps the authors to describe how they addressed the reviewer comments in the revised paper\n\nThe authors of all papers that are invited for revision will be allowed one extra page to properly address reviewer comments. In other words, the revised (and, if accepted, the final) versions of papers will be allowed 12 pages for regular papers and 8 pages for practical experience reports or tool descriptions/demonstrations. The authors will be asked to mark and describe all the changes they made to the submission during the revision process. More information will be provided to authors of papers who are asked to provide a revision as to how to prepare, format and submit the revised version of the submission. Note that submitting a revised paper does not guarantee acceptance of the paper to the conference and all revised papers will be reviewed and discussed by the Program Committee.\n\nTo limit the load on the reviewers, the rebuttal will be strictly limited to 750 words. Any attempt to provide extra information, for example by including images in the rebuttal, will cause the rebuttal material to be discarded.\n\nDSN will continue to employ the Early Rejection Notification Policy. Papers that are rejected in the first reviewing round will receive their rejection notification and reviews by January 28, 2024. As such, the authors may get started earlier on improving their manuscript for a future submission, if they wish to do so.\n\nAll accepted papers will be subject to the revision and approval of a PC member acting as shepherd.\n\nOpen Science Policy\n\nAfter papers are accepted, the authors are encouraged to make all research results accessible to the public and ensure, if possible, that empirical studies are reproducible. In particular, DSN actively supports the adoption of open source and open data principles, and encourages all authors to make their prototypes available to the research community and disclose collected data to increase reproducibility and replicability. Note that sharing research data is not mandatory for submission or acceptance. Accepted papers can participate in the artifact evaluation process described above.\n\nEthical considerations:\n\nSubmissions describing experiments with data derived from human subjects or presenting results that might have ethical considerations should discuss how ethical and potential legal concerns were addressed and disclose if an ethics review was conducted (e.g. by the author’s institutional ethics review boards if applicable). Also, if the paper reports a potentially high-impact vulnerability, the authors should discuss the steps they have taken or plan to address these vulnerabilities (e.g., by contacting the vendors/manufacturers). The same applies if the submission deals with personal identifiable information or other kinds of sensitive data (e.g., by following applicable privacy protection regulations and rules). The PC’s review process may examine the ethical soundness of the paper just as it examines the technical soundness. The Program Committee reserves the right to reject a submission if insufficient evidence was presented that significant ethical or relevant legal concerns were appropriately addressed.\n\nContact the program co-chairs dsn24chairs@kaust.edu.sa if you have any questions.\n\nConflicts of Interest:\n\nAuthors and PC members are asked to declare potential conflicts during the paper submission and reviewing process. In particular, a conflict of interest must be declared under any of the following conditions: (1) anyone who shares an institutional affiliation with an author at the time of submission, (2) anyone the author has collaborated or published within the last two years, (3) anyone who was the advisor or advisee of an author, or (4) is a relative or close personal friend of the authors. For other forms of conflict and related questions, authors must explain the perceived conflict to the PC chairs.\n\nProgram committee members who have conflicts of interest with a paper, including program co-chairs, will be excluded from any discussion concerning the paper.\n\nSubmission policy for Program chairs and Organizing committee members:\n\nTo avoid potential bias, the DSN Program Committee Co-Chairs are not allowed to (co-)author any submission to the conference. There are no such restrictions for the PC members and other organizing committee members including the General chairs since double blind anonymization rules and conflict of interest declaration and resolution procedures are enforced. We should emphasize that the DSN General chairs are not involved in any of the processes related to the technical program including the selection of the PC chairs and PC committee and the submission, reviewing and acceptance of papers.\n\nContacts:\n\nProgram Committee Co-Chairs\nMarc C. Dacier & Julia Lawall\ndsn24chairs@kaust.edu.sa"
+  },
+  {
+    "_id": "6639c7434c771c093141cc2e",
+    "Title": "IFIP Joint International Conference on Formal Description Techniques and Protocol Specification, Testing, And Verification",
+    "Acronym": "FORTE",
+    "Source": "CORE2023",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "none",
+    "PrimaryFoR": "4612",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+    ],
+    "ConferenceDate": [
+      
+    ],
+    "SubmissonDate": [
+      
+    ],
+    "NotificationDate": [
+     
+    ],
+    "createdAt": "2024-05-07T06:16:35.099Z",
+    "updatedAt": "2024-05-16T12:26:49.766Z",
+    "__v": 0,
+    "CameraReady": []
+  },
+  {
+    "_id": "6639cebec521b3f2ad611473",
+    "Title": "IMA International Conference on Cryptography and Coding",
+    "Acronym": "IMACC",
+    "Source": "CONFHUB",
+    "Rank": "C",
+    "Note": "See note",
+    "DBLP": "view",
+    "PrimaryFoR": "4604",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://ima.org.uk/21435/19th-ima-international-conference-on-cryptography-and-coding/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-12-12T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:40:19.206Z"
+      },
+      {
+        "date": "2023-12-14T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:40:19.206Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-07-12T00:00:00.000Z",
+        "keyword": "Submission Deadline",
+        "update_time": "2024-05-16T10:10:42.852Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-09-06T00:00:00.000Z",
+        "keyword": " Author Notification",
+        "update_time": "2024-05-16T10:10:42.857Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:48:30.676Z",
+    "updatedAt": "2024-06-01T03:40:19.207Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "London, UK",
+    "Type": "offline",
+    "CallForPaper": ""
+  },
+  {
+    "_id": "6639cec1c521b3f2ad611475",
+    "Title": "Image and Vision Computing Conference",
+    "Acronym": "IVCNZ",
+    "Source": "CORE2023",
+    "Rank": "Australasian C",
+    "Note": "See note",
+    "DBLP": "view",
+    "PrimaryFoR": "4603",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://ivcnz2023.massey.ac.nz/"
+    ],
+    "ConferenceDate": [
+     
+    ],
+    "SubmissonDate": [
+     
+    ],
+    "NotificationDate": [
+     
+    ],
+    "createdAt": "2024-05-07T06:48:33.240Z",
+    "updatedAt": "2024-06-01T04:21:45.042Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "",
+    "Type": "",
+    "CallForPaper": ""
+  },
+  {
+    "_id": "6639cee1c521b3f2ad611493",
+    "Title": "Innovative Applications in AI",
+    "Acronym": "IAAI",
+    "Source": "CONFHUB",
+    "Rank": "C",
+    "Note": "See note",
+    "DBLP": "none",
+    "PrimaryFoR": "4602",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://aaai.org/aaai-conference/iaai-24-call-for-participation/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-02-20T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-05-16T12:27:49.165Z"
+      },
+      {
+        "date": "2024-02-27T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-05-16T12:27:49.165Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-08-15T00:00:00.000Z",
+        "keyword": "Electronic papers due",
+        "update_time": "2024-05-16T12:27:49.164Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-10-23T00:00:00.000Z",
+        "keyword": "Notification of acceptance or rejection",
+        "update_time": "2024-05-16T12:27:49.166Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:49:05.945Z",
+    "updatedAt": "2024-05-16T12:27:49.192Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2023-11-30T00:00:00.000Z",
+        "keyword": "Camera-ready copy due",
+        "update_time": "2024-05-16T12:27:49.166Z"
+      }
+    ],
+    "Location": "Vancouver, Canada",
+    "Type": "offline",
+    "CallForPaper": "Collocated with AAAI-24 | February 20-27, 2024 | Vancouver, Canada \n\nThe Thirty-Sixth Annual Conference on Innovative Applications of Artificial Intelligence (IAAI-24) is a venue for papers describing highly innovative realizations of AI technology. The objective of the conference is to showcase successful applications and novel uses of AI. The conference will use technical papers, best practice papers, invited talks, and panel discussions to explore issues, methods, and lessons learned in the development and deployment of AI applications; and to promote an interchange of ideas between basic and applied AI and the discourse on the actual deployment of AI in practice. The general goal of the conference is to teach people the challenges and solutions to accomplishing something useful in the real world, as opposed to describing a new algorithm. Papers focusing on algorithmic descriptions, rather than applications, are more appropriate for AAAI-24. All submissions must be original. \n\nIAAI-24 will consider: (1) papers that showcase novel, deployed applications of AI; (2) applications on a trajectory to deployment; (3) papers that present deployed tools for faster AI solutions development and deployment; (4) papers that showcase original ways of integrating methodologies from different areas of AI for practical realization and future deployment; and (5) papers that analyze the factors related to AI incidents and the best practices for preventing or mitigating their recurrence.\n\nTracks and Topics \n\n1. Deployed Highly Innovative Applications of AI​ \n\nPapers submitted to this track must describe *deployed* applications with measurable benefits that include an innovative use of AI technology. Applications are defined as deployed once they are in production use by their final end-users and the in-use experience can be meaningfully collected and reported. The study may evaluate either a stand-alone application or a component of a complex system.  \n\nPapers will be judged by the quality of: the task or problem description; the application description; the innovative use of AI technology; the measurable application use and payoff; and the lessons learned during application development, deployment and maintenance. In-depth descriptions of the algorithm are generally more appropriate for AAAI than for IAAI. Each accepted deployed application paper will receive the IAAI ‘Innovative Application’ Award. \n\nPapers in this track may have up to 8 pages in the prescribed AAAI style, plus at most one more page which may only contain references. \n\n2. Emerging Applications of AI \n\nEmerging applications papers ‘bridge the gap’ between basic AI research and case studies of deployed AI applications, by discussing efforts to apply AI tools, techniques, or methods to real-world problems in novel ways. Emerging applications focus on aspects of AI applications that are not yet sufficiently deployed to be submitted as case studies in the Deployed track. \n\nThis track is distinguished from reports of purely scientific AI research appropriate for AAAI in that the objective of the efforts reported at IAAI should be the potential application of AI technologies, including engineering considerations. A key requirement for papers is to discuss the path forward for achieving deployment of the technology. \n\nPapers will be judged primarily by the following criteria: significance (of the problem, and the tool or methodology); relevance of AI technology to the problem; innovation; path to deployment; content; evaluation; technical quality; and clarity. Authors are advised to bear these questions in mind while writing their papers. Authors are also advised to consider the novelty of applying AI to the particular problem domain. \n\nPapers in this track may have up to 6 pages in the prescribed AAAI style, plus at most one more page which may only contain references. \n\n3. Deployed Innovative Tools for Enabling AI Applications \n\nWithin this track, we solicit papers describing *deployed* tools for improving applied AI innovation and deployment of AI systems. Areas of interest include, but are not limited to: \n\nProcess organization: Tools that help manage and assure the development, evaluation or deployment of AI systems. \nData cleaning: Tools to ease the pain point of processing raw data for its use in AI systems. \nModelling: Tools that facilitate AI modelling, for example approaches to facilitate deriving models from examples or demonstrations. \nMeta-algorithmics: Tools to improve AI systems, algorithm configurators, algorithm portfolios, and hyper-parameter tuners. \nPlatforms: Tools in the form of platforms designed for AI research, especially those with connections to real world systems and domains. \nNovel computational models: Tools to exploit new computational hardware, for example neuromorphic co-processors, quantum computers, and chips approximating quantum computation. \nInteraction: Tools that facilitate the interaction design of or user experience with AI systems, or improve user evaluations. \nTrusted AI: Tools that generate explanations, justifications, and persuasions for data-driven models. \n\nPapers will be judged primarily by the following criteria: the extent to which the tool presented yields solutions with demonstrated improved quality; lower development, deployment and maintenance costs; better productivity; fewer errors; and higher ability to scale. Reviewers will pay attention to how well designed is the tool, how easy is it to use and how well is it documented, and how many users it has. Note the focus is on the tool, not on foundational research. \n\nPapers in this track may have up to 6 pages in the prescribed AAAI style, plus at most one more page which may only contain references. \n\n4. Innovative Inter-disciplinary AI Integration \n\nThis track is devoted to the integration of AI components with the focus on how the orchestration of methods from different AI silos requires the adaptation of existing technologies to allow them to work together well for application of AI in practice. Papers must pay attention to engineering considerations and, where relevant, to human–computer interaction. \n\nExamples for such orchestrated new capabilities and applications include but are not limited to: \n\nLearning search algorithms: Implementations of systematic and heuristic search algorithms that are capable to improve their performance by learning from experience or during search. \nDecision support under uncertainty: Implementations that combine statistical and deterministic reasoning to provide scalable decision support under uncertainty for applications that are inherently stochastic. \nKnowledge representation: Representations that work effectively for downstream analytics, e.g., the innovative use of a knowledge graph for feature generation of a downstream machine learning model. \nAuto-configuration: The adaptation of search methods from combinatorial optimization to optimize knowledge bases or to design superior forecasting algorithms. \nOther research prototypes that integrate algorithms and methods from traditionally different AI sub-communities. \n\nA clear, transparent, and reproducible case must be presented that allows the community to judge objectively the value of the innovation of the integration when compared to existing or ad-hoc approaches. Computational experiments on benchmarks (that either already are or will be made public) and in comparison with existing state-of-the-art baseline methods are expected. At least a portion of the experiments is expected to consider real-world (not synthetic generated) benchmarks to demonstrate the practical importance of the problem studied. \n\nPapers in this track may have up to 6 pages in the prescribed AAAI style, plus at most one more page which may only contain references. \n\n5. AI Incidents and Best Practices \n\nIn this final short paper track, we encourage papers analyzing the factors related to AI incidents and the best practices for preventing or mitigating their recurrence. These papers will be reviewed based on different criteria than the longer papers of the main IAAI tracks. The papers must (a) analyze the development and deployment processes and artifacts in relation to harms realized in the real world for one or more AI incidents, (b) analyze AI incident trends to understand where there are open problems in the deployment of AI systems, and/or (c) detail best practices in producing and deploying systems to prevent or mitigate AI incidents. \n\nPapers will be reviewed by a program committee of AI, human factors, safety, and ethics researchers with a particular focus on whether the paper informs the safe practice of deploying intelligent systems in the world.  All papers will be added to the AI Incident Database for the referenced AI incidents.   \n\nPapers in this track may be between four (4) pages and (6) pages long, including references, in the prescribed AAAI style. Papers of at most two (2) pages may also be submitted and considered exclusively for presentation as a poster. \n\nSubmission Instructions \n\nElectronic submissions are required. Papers must be in trouble-free, high resolution PDF format and formatted for United States letter (8.5” x 11”) paper. Submissions need to be in AAAI two-column format (use the CameraReady templates in the AAAI 2024 Author Kit). Deployed papers can be up to eight (8) pages plus one more page containing only references. Emerging, Tools and Integration papers can be up to six (6) pages plus one more page containing only references. Best practice, Challenge and Training papers may be between four (4) pages and (6) pages long, including references.  \n\nSubmissions to IAAI-24 should contain identifying information of the authors and their affiliations: reviewing is single-blind.  \n\nAuthors should register on the IAAI-24 CMT paper submission site. The IAAI-24 CMT site will be open for paper submission on July 4, 2023. Authors must then submit a formatted electronic version of their paper through CMT no later than August 15, 2022. We cannot accept papers submitted by email or fax. Submissions received after the deadline, or that do not meet the length or formatting requirements detailed above, will not be accepted for review. Notification of receipt of the electronic paper will be emailed to the first author (or designated contact author) soon after receipt. By submitting a paper to IAAI, the authors agree that the Program Chairs have the final decision on the acceptance of publication at the conference. Papers will be reviewed by the Program Committee and notification of acceptance or rejection will be emailed to the contact author on October 23, 2023. PDFs of accepted papers will be due on November 30, 2023. Authors will be required to transfer copyright at that time. \n\nAll submissions must be original. IAAI-24 will not consider any paper that, at the time of submission, is under review for or has already been published or accepted for publication in a journal or another conference. Once submitted to IAAI-24, authors may not submit the paper elsewhere during IAAI’s review period. These restrictions apply only to refereed journals and conferences, not to preliminary versions that are posted as preprints to arXiv.org or other unrefereed forums, or to workshops with a limited audience and without archival proceedings. Authors must confirm that their submissions to IAAI conform to these requirements at the time of submission. \n\nPaper Awards\n\nThis year, we are excited to announce two IAAI paper awards: \n\nFesto Best use of AI in Industrial Engineering \nThe Festo Best use of AI in Industrial Engineering award recognizes the most innovative use of AI in designing, building, and programming automation solutions. An example could be the use of large language models in these processes. The award reflects the profound impact AI is making on industrial engineering, from automation operations to human-machine interactions​​. \n\nThe top paper will receive a $2000 prize plus $1000 travel support, while the runner-up will receive $500 sponsored by Festo. Both awardees will have a chance to attend the exclusive Festo.IO conference and may be offered an internship. Submissions should demonstrate creative AI applications in areas such as deep learning, big data analysis, and smart manufacturing​​.  \nCASMI AI Incidents and Best Practices Paper Award \nThe CASMI AI Incidents and Best Practices Paper Award recognizes outstanding contributions in analyzing AI incidents and showcasing best practices for preventing or mitigating their recurrence. This award acknowledges research that deepens our understanding of the factors related to AI incidents, identifies open problems in AI system deployment, and offers valuable insights and guidelines for producing and deploying systems that prioritize safety and mitigate potential harms. \n\nThe top paper in the AI Incidents and Best Practices track will receive a $1000 prize plus $1000 travel support sponsored by the Center for Advancing Safety of Machine Intelligence. \nOrganization \n\nCorrespondence may be sent to IAAI at iaai24chairs@aaai.org. \n\nIAAI-24 Co-Chairs: \nAlex Wong (University of Waterloo, Canada) \nYuHao Chen (University of Waterloo, Canada) \nJan R. Seyler (Festo, Germany) "
+  },
+  {
+    "_id": "6639cee8c521b3f2ad611499",
+    "Title": "Intelligent Data Analysis",
+    "Acronym": "IDA",
+    "Source": "CONFHUB",
+    "Rank": "B",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4605",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://ida2024.org/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-04-22T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:39:55.897Z"
+      },
+      {
+        "date": "2024-04-26T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:39:55.897Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-11-24T00:00:00.000Z",
+        "keyword": "Paper submission deadline",
+        "update_time": "2024-05-16T12:36:54.495Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-01-23T00:00:00.000Z",
+        "keyword": "Notification of acceptance",
+        "update_time": "2024-05-16T12:36:54.497Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:49:12.034Z",
+    "updatedAt": "2024-06-01T04:39:55.898Z",
+    "__v": 0,
+    "CameraReady": [
+    ],
+    "Location": "Stockholm, Sweden",
+    "Type": "offline",
+    "CallForPaper": ""
+  },
+  {
+    "_id": "6639cef1c521b3f2ad6114a1",
+    "Title": "Intelligent Virtual Agents",
+    "Acronym": "IVA",
+    "Source": "CONFHUB",
+    "Rank": "B",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4602",
+    "Comments": "1",
+    "AverageRating": "4",
+    "Links": [
+      "https://iva.acm.org/2023/call-for-papers/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-09-16T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:23:19.545Z"
+      },
+      {
+        "date": "2024-09-19T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:23:19.545Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-04-08T00:00:00.000Z",
+        "keyword": "Preliminary abstract submissions (mandatory, to assign reviewers)",
+        "update_time": "2024-05-16T12:37:35.514Z"
+      },
+      {
+        "date": "2024-04-16T00:00:00.000Z",
+        "keyword": "Papers and Extended Abstracts Submission",
+        "update_time": "2024-05-16T12:37:35.514Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-06-07T00:00:00.000Z",
+        "keyword": "Notification of acceptance",
+        "update_time": "2024-05-16T12:37:35.515Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:49:21.415Z",
+    "updatedAt": "2024-06-01T04:23:19.546Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2024-07-07T00:00:00.000Z",
+        "keyword": "Notification of acceptance",
+        "update_time": "2024-05-16T12:37:35.515Z"
+      }
+    ],
+    "Location": "Glasgow, Scotland",
+    "Type": "offline",
+    "CallForPaper": "Intelligent Virtual Agents (IVA) Annual Conference is the premier international event for interdisciplinary research on the design, application, and evaluation of Intelligent Virtual Agents (IVAs) with a specific focus on the ability to socially interact.\n\nIVA 2024, the 24th Annual Conference, will be held in Glasgow, Scotland, September 16-19, 2024.  \n\nNote IVA 2024 will be co-located with the conference on Affective Computing and Intelligent Interaction (ACII), with select joint sessions and social events and the ability to attend ACII paper sessions. \n\nIVAs are interactive characters that exhibit human-like capabilities including communicating using natural human modalities such as facial expressions, speech and gesture. IVAs are also capable of real-time perception, cognition, emotion and action that allows them to participate in dynamic social interactions. \n\nIVA 2024 aims to showcase cutting-edge research on the design, application, and evaluation of IVAs, as well as the basic research underlying the technology that supports human-agent interaction such as social perception, dialog modeling, and social behavior planning. We also welcome submissions on central theoretical issues, uses of virtual agents in psychological research and showcases of working applications.\n\nIVA 2024 offers two submission tracks: Papers (8 pages, not including references) and Extended Abstracts (3 pages, not including references).\n\nAll submissions will be double-blind peer-reviewed by expert reviewers. All accepted full paper submissions will be presented orally and published in the proceedings. Accepted extended abstracts will be presented as a talk or a poster, depending on the outcome of the review process. Accepted extended abstracts will also be published in the proceedings, unless the authors do not want it published.\n\nInterdisciplinary Format\n\nIVA is traditionally a highly interdisciplinary conference. As part of ensuring that, IVA 2024 will account for different publication norms across disciplines. For example, conference publication is a norm in Computer Science whereas journal publications are the norm in Psychology. To accommodate these differences while fostering trans-disciplinary interaction, accepted extended abstracts may be selected for oral presentation in addition to the standard of a poster presentation. Also, authors of extended abstracts will have the option of whether their abstract publication is archival.\n\nSCOPE AND LIST OF TOPICS\n\nIVA invites submissions on a broad range of topics, including but not limited to:\n\nAgent design and modeling of:\n\nCognition\nEmotion (including personality and cultural differences)\nSocially communicative behavior (e.g., of emotions, personality traits)\nConversational behavior\nSocial perception\nMachine learning approaches to agent modeling\nApproaches to realizing adaptive behavior \nModels informed by theoretical and empirical research in psychology\n\nMultimodal interaction:\n\nVerbal and nonverbal behavior coordination\nFace-to-face communication skills\nEngagement\nManaging co-presence and interpersonal relation\nMulti-party interaction\nData driven multimodal modeling\n\nSocial agent architectures:\n\nDesign criteria and design methodologies\nEngineering of real-time human-agent interaction\nStandards / measures to support interoperability\nPortability and reuse\nSpecialized tools, toolkits and tool chains\n\nEvaluation methods and studies:\n\nEvaluation methodologies and user studies\nEthical considerations and societal impact\nApplicable lessons across fields (e.g. between robotics and virtual agents)\nSocial agents as a means to study and model human behavior\n\nApplications:\n\nApplications in education, skills training, health, counseling, games, art, etc.\nVirtual agents in games and simulations\nSocial agents as tools in psychology\nMigration of agents between platforms\n\nSpecial Theme\n\nA special theme this year at IVA will be on the use of multimodal machine learning and large language/foundation models in agent design and implementation, as well as comparison of these techniques to alternative approaches. These advances promise to make virtual agents more robust, human-like and capable of autonomous open-ended interaction. At the same time these advances can raise critical ramifications for the design process’s ability to ensure the behavior of the agent is appropriately circumscribed for an application. \n\nNote: IVA 2024 will as usual have a doctoral consortium, workshops and demos.\n\nINSTRUCTIONS FOR AUTHORS\n\nIVA2024 uses Easychair for receiving submissions:\n\nhttps://easychair.org/conferences/?conf=iva24\n\nPaper and extended abstract submissions should be anonymous and prepared in the “ACM Standard” format, more specifically the “SigConf” format.\n\nThe LaTeX template for the “ACM Standard”/”SigConf” format can be found inside the official 2017 ACM Master article template package. Please use the most recent version (1.65) available at: \nhttps://www.acm.org/publications/proceedings-template\nPlease use: \\documentclass[sigconf]{acmart}, 2-column format\nThe “ACM Standard” Microsoft Word template is currently not part of the downloadable package as the ACM is currently revising it to improve accessibility of resulting PDF-documents. Please use the “Interim Word Template” instead: https://www.acm.org/binaries/content/assets/publications/word_style/interim-template-style/interim-layout-.docx\nBy submitting your article to an ACM Publication, you are hereby acknowledging that you and your co-authors are subject to all ACM Publications Policies, including ACM’s new Publications Policy on Research Involving Human Participants and Subjects. Alleged violations of this policy or any ACM Publications Policy will be investigated by ACM and may result in a full retraction of your paper, in addition to other potential penalties, as per ACM Publications Policy.\nPlease ensure that you and your co-authors obtain an ORCID ID, so you can complete the publishing process for your accepted paper.  ACM has been involved in ORCID from the start and we have recently made a commitment to collect ORCID IDs from all of our published authors.  The collection process has started and will roll out as a requirement throughout 2022.  We are committed to improve author discoverability, ensure proper attribution and contribute to ongoing community efforts around name normalization; your ORCID ID will help in these efforts.\n\nIVA 2024 accepts two types of submissions:\n\nFull papers: 8 pages (plus references)\nExtended abstracts: 3 pages (plus references)\n\nAll submissions should be in PDF-format.\n\nADDITIONAL MATERIAL: Authors may refer to additional (anonymized) material in their paper. We recommend the use of the Open Science Framework. OSF is a free, open platform to support your research and enable collaboration. Authors can upload different types of material in their project, anonymized for the review process. Once a paper is published, the OSF project can be linked to the authors and their publication."
+  },
+  {
+    "_id": "6639ceffc521b3f2ad6114ad",
+    "Title": "International Baltic Conference on Databases and Information Systems",
+    "Acronym": "DB&IS",
+    "Source": "CORE2023",
+    "Rank": "Regional - Baltic",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4605",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://dbis2024.vu.lt/"
+    ],
+    "createdAt": "2024-05-07T06:49:35.244Z",
+    "updatedAt": "2024-06-01T03:39:13.736Z",
+    "__v": 0,
+    "ConferenceDate": [
+      
+    ],
+    "NotificationDate": [
+     
+    ],
+    "SubmissonDate": [
+     
+    ],
+    "CameraReady": [],
+    "Location": "",
+    "Type": "",
+    "CallForPaper": ""
+  }
+]

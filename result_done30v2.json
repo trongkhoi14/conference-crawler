@@ -1,0 +1,1426 @@
+[
+  {
+    "_id": "6639d5ad4fd45eb8c2e670f8",
+    "Title": "Pacific Asia Conference on Language, Information and Computation",
+    "Acronym": "PACLIC",
+    "Source": "CONFHUB",
+    "Rank": "C",
+    "Note": "See note",
+    "DBLP": "view",
+    "PrimaryFoR": "4602",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://paclic2023.github.io/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-12-02T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:52:52.875Z"
+      },
+      {
+        "date": "2023-12-05T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-05-16T10:42:23.610Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-07-30T00:00:00.000Z",
+        "keyword": "Submission deadline",
+        "update_time": "2024-05-16T10:42:23.610Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-09-10T00:00:00.000Z",
+        "keyword": "Notification of acceptance",
+        "update_time": "2024-05-16T10:42:23.611Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:18:05.347Z",
+    "updatedAt": "2024-06-01T03:52:52.875Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2023-10-01T00:00:00.000Z",
+        "keyword": "Camera-ready papers due",
+        "update_time": "2024-05-16T10:42:23.611Z"
+      }
+    ],
+    "Location": "Hong Kong",
+    "Type": "hybrid",
+    "CallForPaper": "Welcome!\n\nThe 37th Pacific Asia Conference on Language, Information and Computation (PACLIC 37) will be in Hong Kong, from December 2-5, 2023, at The Hong Kong Polytechnic University. This will be a hybrid (in-person with virtual presentation accomodations) event.\n\nThe main conference will take place from December 2-4 and the associated events will be held on December 5.\n\nPACLIC 37 emphasizes the synergy of theoretical frameworks and processing of natural language, providing a forum for researchers from different fields to share and discuss progress in scientific studies, development and application of the topics related to the study of languages.\n\nNews\n2024-1-1\tThe conference proceedings are posted.\n2023-12-1\tThe workshop program on South Asian Linguistics is posted.\n2023-11-30\tThe roundtable information is added.\n2023-11-27\tThe program is attached here in PDF\n2023-11-13\tWorkshops are announced\n2023-10-13\tFor registration, go to this link to register. Early registration deadline is November 17.\n2023-10-13\tInformation regarding the invited talks is posted.\n2023-10-9\tInformation regarding the program is posted.\n2023-10-4\tInformation regarding keynotes is posted.\n2023-9-18\tInformation regarding registration and accomodation is posted.\n2023-4-30\tThe official PACLIC 2023 website is launched.\nBlog Posts and Announcements\n2023-3-17\tVisa Information\nImportant Dates\n\nAll deadlines are 11.59 pm UTC -12h (“anywhere on Earth”).\n\nSubmission deadline (long & short papers)\tJuly 30, 2023\nNotification of acceptance (long & short papers)\tSeptember 10, 2023\nCamera-ready papers due (long & short papers)\tOctober 1, 2023\nMain Conference\tDecember 2-4, 2023\nAssociated workshops and events\tDecember 5, 2023"
+  },
+  {
+    "_id": "6639d684b9c725a1d3ed3d77",
+    "Title": "Practical Aspects of Declarative Languages",
+    "Acronym": "PADL",
+    "Source": "CONFHUB",
+    "Rank": "C",
+    "Note": "See note",
+    "DBLP": "view",
+    "PrimaryFoR": "4612",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://popl24.sigplan.org/home/PADL-2024#Call-for-Papers  "
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-01-15T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:53:44.950Z"
+      },
+      {
+        "date": "2024-01-16T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:53:44.950Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-10-12T00:00:00.000Z",
+        "keyword": "Paper submission",
+        "update_time": "2024-05-16T10:43:47.777Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-11-16T00:00:00.000Z",
+        "keyword": "Notification of acceptance",
+        "update_time": "2024-05-16T10:43:47.779Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:21:40.319Z",
+    "updatedAt": "2024-06-01T03:53:44.950Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "London, United Kingdom",
+    "Type": "offline",
+    "CallForPaper": "PADL is a well-established forum for researchers and practitioners to present original work emphasizing novel applications and implementation techniques for all forms of declarative programming, including functional and logic programming, databases and constraint programming, and theorem proving.\n\nTopics of interest include, but are not limited to:\n\nInnovative applications of declarative languages\nDeclarative domain-specific languages and applications\nPractical applications of theoretical results\nNew language developments and their impact on applications\nDeclarative languages and software engineering\nEvaluation of implementation techniques on practical applications\nPractical experiences and industrial applications\nNovel uses of declarative languages in the classroom\nPractical extensions such as constraint-based, probabilistic, and reactive languages\n\nPADL 2024 especially welcomes new ideas and approaches related to applications, design and implementation of declarative languages going beyond the scope of the past PADL symposia, for example, advanced database languages and contract languages, as well as verification and theorem proving methods that rely on declarative languages.\n\nSubmissions\n\nPADL 2024 welcomes three kinds of submission:\n\nTechnical papers (max. 15 pages): Technical papers must describe original, previously unpublished research results.\n\nApplication papers (max. 8 pages): Application papers are a mechanism to present important practical applications of declarative languages that occur in industry or in areas of research other than Computer Science. Application papers are expected to describe complex and/or real-world applications that rely on an innovative use of declarative languages. Application descriptions, engineering solutions and real-world experiences (both positive and negative) are solicited.\n\nExtended abstracts (max. 3 pages): Describing new ideas, a new perspective on already published work, or work-in-progress that is not yet ready for a full publication. Extended abstracts will be posted on the symposium website but will not be published in the formal proceedings.\n\nAll page limits exclude references. Submissions must be written in English and formatted according to the standard Springer LNCS style, see https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines\n\nThe review process of PADL 2024 is double-anonymous. In your submission, please, omit your names and institutions; refer to your prior work in the third person, just as you refer to prior work by others; do not include acknowledgements that might identify you.\n\nAdditional material intended for reviewers but not for publication in the final version - for example, details of proofs - may be placed in a clearly marked appendix that is not included in the page limit. Reviewers are at liberty to ignore appendices and papers must be understandable without them.\n\nPage numbers (and, if possible, line numbers) should appear on the manuscript to help the reviewers in writing their reports. So, for LaTeX, we recommend that authors use:\n\n\\pagestyle{plain}\n\\usepackage{lineno}\n\\linenumbers \n\n\nThe conference proceedings of PADL 2024 will be published by Springer-Verlag in the Lecture Notes in Computer Science series. Work that already appeared in unpublished or informally published workshops proceedings may be submitted but the authors should notify the program chairs where it has previously appeared.\n\nPapers should be submitted electronically at https://padl2024.hotcrp.com\n\nDistinguished Papers\n\nThe authors of a small number of distinguished papers will be invited to submit a longer version for journal publication after the symposium. For papers related to logic programming, that will be in the journal Theory and Practice of Logic Programming (TPLP), and for papers related to functional programming, in Journal of Functional Programming (JFP). The extended journal submissions should be substantially (roughly 30%) extended: explanations for which there was no space, illuminating examples and proofs, additional definitions and theorems, further experimental results, implementational details and feedback from practical/engineering use, extended discussion of related work, and so on. These submissions will then be subject to the usual peer review process by the journal, although with the aim of a swifter review process by reusing original reviews from PADL."
+  },
+  {
+    "_id": "6639d686b9c725a1d3ed3d79",
+    "Title": "Practice and Theory of Automated Timetabling",
+    "Acronym": "PATAT",
+    "Source": "CONFHUB",
+    "Rank": "C",
+    "Note": "See note",
+    "DBLP": "none",
+    "PrimaryFoR": "4601",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://patatconference2024.dtu.dk/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-08-27T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:53:44.950Z"
+      },
+      {
+        "date": "2024-08-30T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:53:44.950Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-04-02T00:00:00.000Z",
+        "keyword": "Paper Submission Deadline",
+        "update_time": "2024-05-16T10:43:58.430Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-05-24T00:00:00.000Z",
+        "keyword": "Notification of Acceptance",
+        "update_time": "2024-05-16T10:43:58.435Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:21:42.181Z",
+    "updatedAt": "2024-05-16T10:43:58.450Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2024-06-24T00:00:00.000Z",
+        "keyword": "Camera Ready",
+        "update_time": "2024-05-16T10:43:58.435Z"
+      }
+    ],
+    "Location": "Technical University of Denmark", 
+    "Type": "offline",
+    "CallForPaper": "The biennial conference on Practice and Theory of Automated Timetabling (PATAT) has been a forum for over 20 years welcoming both researchers and practitioners of timetabling to exchange ideas. PATAT 2024 will be the thirteenth edition in this international series."
+  },
+  {
+    "_id": "6639d691b9c725a1d3ed3d83",
+    "Title": "Product Focused Software Process Improvement",
+    "Acronym": "PROFES",
+    "Source": "CONFHUB",
+    "Rank": "B",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4612",
+    "Comments": "11",
+    "AverageRating": "4.2",
+    "Links": [
+      "https://conf.researchr.org/track/profes-2024/profes-2024-Research-Papers-1"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-12-02T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:33:49.462Z"
+      },
+      {
+        "date": "2024-12-04T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:33:49.462Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-07-15T00:00:00.000Z",
+        "keyword": "Abstract",
+        "update_time": "2024-05-29T08:33:06.394Z"
+      },
+      {
+        "date": "2024-08-01T00:00:00.000Z",
+        "keyword": "Submission",
+        "update_time": "2024-05-29T08:33:06.394Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-09-09T00:00:00.000Z",
+        "keyword": "Notification",
+        "update_time": "2024-05-29T08:33:06.394Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:21:53.872Z",
+    "updatedAt": "2024-06-01T03:33:49.463Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2024-09-21T00:00:00.000Z",
+        "keyword": "Camera ready",
+        "update_time": "2024-05-29T08:33:06.394Z"
+      }
+    ],
+    "Location": "Tartu, Estonia", 
+    "Type": "offline",
+    "CallForPaper": "PROFES conferences encourage the exchange of ideas that help explore, understand, and model phenomena in software engineering from the point of view of process-product relationships. Traditionally, PROFES provides topics, which are up-to-date, important, and interesting to both practitioners and researchers. To ensure that PROFES will retain its high standards and that it will keep focusing on the most relevant research issues, we are looking for original research on current trends in software engineering aspects addressing products and services. Further, PROFES particularly encourages the submission of studies reporting on the application of respective methods or technologies in real settings.\n\nPROFES encourages the submission of industrial experience reports as well as of empirical studies reporting, e.g., on the application of respective methods or technologies in real settings.\n\nThe topics of interest include, but are not restricted to, the following:\n\nProcess modeling, management, assessment and improvement\nValue- and feedback-driven software development, agile and lean methods and processes\nProcesses for (digital) software product innovation\nSoftware analytics with actionable insights on software products and processes\nPredictive models for software engineering tasks\nInfrastructure and processes for iterative or incremental software delivery\nContinuous deployment and release planning\nProduct quality models for software, systems, and services\nProject management techniques, global and/or distributed software development\nSoftware Engineering processes for AI-enabled systems, including MLOps.\nAI and Data-Driven Techniques as tools for Software Process Improvement (AI4SE)\nMethods for developing cloud-based systems and services, incl. monolithic to cloud-native migration\nSoftware development for Cyber-Physical Systems\nProcesses and methods for COTS and open-source development\nService engineering processes and software business models\n\nWe invite submissions of full papers (max. 16 pages) related to all the topics of interest of the conference. Full papers that address collaborations between industry and academia, case studies as well as experience reports on any of the conference themes are particularly welcome. We also encourage the submission of secondary studies on topics of interest with the condition that the submissions should contain a synthesis of findings. All submitted papers will undergo a rigorous peer review process. Papers will be selected based on originality, quality, soundness and relevance. All contributions must be original, not published, accepted or submitted for publication elsewhere.\n\nImportant Dates\n\nAbstract (optional): July 15th\nSubmission: August 1st\nNotification: September 9th\nCamera ready: September 21st\n\nSubmission\n\nSubmitted papers must conform to the Springer LNCS author guidelines. All papers must be submitted in PDF format according to the Submission Procedure. The submission Web page for all contributions in PROFES 2024 is: https://easychair.org/my/conference?conf=profes2024\n\nConference Attendance Expectation\n\nPROFES 2024 will be organized in presence. If a submission is accepted, at least one author must register to the conference and present the paper."
+  },
+  {
+    "_id": "6639d6b0b9c725a1d3ed3d9f",
+    "Title": "Smart Card Research and Advanced Application Conference",
+    "Acronym": "CARDIS",
+    "Source": "CORE2023",
+    "Rank": "C",
+    "Note": "See note",
+    "DBLP": "view",
+    "PrimaryFoR": "4604",
+    "Comments": "1",
+    "AverageRating": "4",
+    "Links": [
+      "https://sbd-research.nl/cardis-2023/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2023-11-15T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:54:11.976Z"
+      },
+      {
+        "date": "2023-11-16T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:54:11.976Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-07-10T00:00:00.000Z",
+        "keyword": "Submission deadline",
+        "update_time": "2024-05-16T10:45:18.221Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-09-16T00:00:00.000Z",
+        "keyword": "Notification of acceptance",
+        "update_time": "2024-05-16T10:45:18.221Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:22:24.104Z",
+    "updatedAt": "2024-06-01T03:54:11.976Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2023-11-30T00:00:00.000Z",
+        "keyword": "Final version due",
+        "update_time": "2024-05-16T10:45:18.221Z"
+      }
+    ],
+    "Location": "Amsterdam, The Netherlands",
+    "Type": "hybrid",
+    "CallForPaper": "Scope\n\nCARDIS has been the venue for security experts from industry and academia to exchange on security of smart cards and related applications since 1994. Smart cards play an increasingly important role in our day-to-day life through their use in banking cards, SIM cards, electronic passports, and IoT devices. It is thus naturally of utmost importance to understand their security features and to develop sound protocols and countermeasures while keeping reasonable performance. In this respect, CARDIS aims to gather security experts from industry, academia, and standardization bodies to make steps forward in the field of embedded security.\n\nThe 22nd edition of CARDIS is organized by the Complex Cyber Infrastructure group of the University of Amsterdam in Amsterdam, NL. CARDIS 2023 will be an in-person event, with the possibility to attend talks remotely (presenters are required to participate to the conference in presence).\n\nTopics\n\nThe program committee is seeking original papers on the design, development, deployment, evaluation, penetration testing and application of smart cards and secure embedded systems. Submissions across a broad range of the development phase are encouraged, from exploratory research and proof-of-concept studies to practical applications and deployment. Topics of interest include, but are not limited to:\n\nSecurity and applications of:\nSmart cards: identification, access control, pay TV\nIoT devices: automotive, medical, mobile payment, mobile connected devices\nTrusted computing: mobile TPM, Trusted Execution Environments\nEmbedded systems: operating systems, memory, virtual machines\nMachine learning for embedded systems implementations\nCryptographic implementations of:\nLightweight cryptographic algorithms\nPost-quantum cryptographic algorithms\nRandom number generators, PUFs\nWhite-box cryptography\nAttacks and countermeasures:\nSide-channel (timing, power, cache) attacks and countermeasures\nFault and combined attacks and countermeasures\nReverse engineering, (anti-)cloning, (anti-)tampering, (anti-)counterfeiting\nTools:\nAutomated analysis\nFormal verification and secure design\nMachine learning analysis\nPaper Submission\n\nAuthors are invited to submit papers electronically in PDF format using the submission form available on https://easychair.org/conferences/?conf=cardis2023. Submissions must be original, unpublished, anonymous and not submitted to journals or other conferences with proceedings. Submissions must be written in English and should be at most 20 pages in total (including references and appendices). Papers not meeting these guidelines risk rejection without consideration. All submissions will be blind-refereed. Submission implies the willingness of at least one of the authors to register and present the paper. The proceedings will be published in the Springer Lecture Notes in Computer Science (LNCS) series. Both submissions and accepted papers must follow the LNCS default author instructions accessible on the Springer webpage: https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines.\n\nImportant Dates\nSubmission deadline:\t\tJune 30, 2023 Submission site\nNotification of acceptance:\t\tSeptember 16, 2023\nPre-proceedings paper due:\t\tOctober 2, 2023\nConference dates:\t\tNovember 15-16, 2023\nFinal version due:\t\tNovember 30, 2023\n\nAll deadlines are 23:59:59 Anywhere on Earth (AoE).\n\nOrganization\n\nGeneral Chair: Francesco Regazzoni, University of Amsterdam, NL\n\nProgram Chairs: Shivam Bhasin, Nanyang Technological University, SG, and Thomas Roche, NinjaLab, FR\n\nLocal Arrangements Co-Chairs: Kostas Papagiannopoulos, University of Amsterdam, NL, and Marco Brohet, University of Amsterdam, NL"
+  },
+  {
+    "_id": "6639d6b9b9c725a1d3ed3da9",
+    "Title": "Structural and Syntactical Pattern Recognition",
+    "Acronym": "SSPR",
+    "Source": "CONFHUB",
+    "Rank": "B",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4603",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://sites.google.com/view/s-sspr-2024/"
+    ],
+    "createdAt": "2024-05-07T07:22:33.727Z",
+    "updatedAt": "2024-05-16T12:33:35.356Z",
+    "__v": 0,
+    "ConferenceDate": [
+      {
+        "date": "2024-09-09T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:54:11.976Z"
+      },
+      {
+        "date": "2024-09-11T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:54:11.976Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-06-23T00:00:00.000Z",
+        "keyword": "Paper submission",
+        "update_time": "2024-05-16T12:33:35.340Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-07-21T00:00:00.000Z",
+        "keyword": "Notification of acceptance",
+        "update_time": "2024-05-16T12:33:35.340Z"
+      }
+    ],
+    "CameraReady": [
+      {
+        "date": "2024-08-04T00:00:00.000Z",
+        "keyword": "Camera-ready",
+        "update_time": "2024-05-16T12:33:35.340Z"
+      }
+    ],
+    "Location": "Venice, Italy", 
+    "Type": "offline", 
+    "CallForPaper": "Authors are invited to submit papers addressing any topic in statistical, structural or syntactic pattern recognition and their applications. Possible topics of interest include, but are not limited to:\n\nSPR Topics\n\nClassification; Prediction; Gaussian Processes\n\nRandomized Algorithms; Multiple Classifiers;\n\nEnsemble Methods; Model Selection; Feature Selection\n\nDimensionality Reduction; Dissimilarity Representations\n\nMetric Learning; Representation Learning;\n\nMultiple Instance Learning; Clustering; \n\nSemi Supervised learning; Weakly Supervised Learning \n\nActive Learning; Novelty Detection; Deep Learning\n\nGenerative Models; Adversarial Learning\n\nReinforcement Learning; Transfer Learning;\n\nDomain Adaptation; Data Complexity; Data Modeling\n\nSSPR Topics\n\nStructural Matching; Structural Complexity\n\nSyntactic Pattern Recognition\n\nGraph-theoretic Methods; Graph Neural Networks\n\nGraphical Models; Structural Kernels\n\nSpectral Methods\n\nSpatio-Temporal Pattern Recognition\n\nStructured Text Analysis\n\nIntelligent Sensing Systems\n\nMultimedia Analysis; Multimedia Retrieval\n\nImage Document Analysis; Image Understanding\n\nShape Analysis"
+  },
+  {
+    "_id": "6639d6d8b9c725a1d3ed3dc7",
+    "Title": "The International Conference on Future Networks and Communications",
+    "Acronym": "FNC",
+    "Source": "CONFHUB",
+    "Rank": "Unranked",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4606",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://cs-conferences.acadiau.ca/fnc-24/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-08-05T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:54:11.976Z"
+      },
+      {
+        "date": "2024-08-07T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:54:11.976Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-04-11T00:00:00.000Z",
+        "keyword": "Submission Deadline",
+        "update_time": "2024-05-16T10:47:26.962Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-05-06T00:00:00.000Z",
+        "keyword": "Author Notification",
+        "update_time": "2024-05-16T10:47:26.962Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:23:04.237Z",
+    "updatedAt": "2024-05-16T10:47:26.985Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2024-06-03T00:00:00.000Z",
+        "keyword": "Final Manuscript Due",
+        "update_time": "2024-05-16T10:47:26.962Z"
+      }
+    ],
+    "Location": "Marshall University, Huntington, WV, USA", 
+    "Type": "offline",
+    "CallForPaper": "Target Audience: International Conference on Future Networks and Communications (FNC) is designed for practitioners, researchers, scientists and administrators, in the development arenas. FNC will become the new \"system blood\" as it aims to provide discussions and simulations in the communication technology at the broad level and broadcasting technology and related technologies at the micro level. Through a set of research papers, using innovative and interactive approach, participants can expect to share a set of research that will prepare them to apply new technologies to their work in teaching, research and educational development amid this rapidly evolving landscape.\n\nThere will be opportunities to attend interactive, high quality, peer reviewed sessions, which will provide detailed insights from forward thinkers working in the themes of the conference. The conference will include a number of specialized workshops as well. Additionally there will be an exhibition for both international businesses and markets to display their latest products and services and to undertake a range of networking opportunities.\n\nScope of FNC: FNC research effort will help achieving a major promise of the emerging technologies such as, ubiquitous access to broadband, supporting vital applications in our daily lives such as health, energy consumption, environment transport, entertainment or education. The scope of FNC is the development of energy-efficient future network infrastructures that support the convergence and interoperability of heterogeneous mobile, wired and wireless broadband network technologies as enablers of the future Internet. This includes but not limited to ubiquitous fast broadband access and ultra-high speed end-to-end optical connectivity, supporting open services and innovative ambient applications. Scope also embraces novel and evolutionary approaches to tackle network architectures, taking due consideration of users and societal needs for success.\n\nPublication: All FNC 2024 accepted papers will be published by Elsevier Science in the open-access Procedia Computer Science series on-line. Procedia Computer Science is hosted by Elsevier on www.Elsevier.com and on Elsevier content platform ScienceDirect (www.sciencedirect.com), and will be freely available worldwide. All papers in Procedia will be indexed by Scopus (www.scopus.com) and by Thomson Reuters' Conference Proceeding Citation Index (http://thomsonreuters.com/conference-proceedings-citation-index/). All papers in Procedia will also be indexed by Scopus (www.scopus.com) and Engineering Village (Ei) (www.engineeringvillage.com). This includes EI Compendex (www.ei.org/compendex). Moreover, all accepted papers will be indexed in DBLP (http://dblp.uni-trier.de/). The papers will contain linked references, XML versions and citable DOI numbers. You will be able to provide a hyperlink to all delegates and direct your conference website visitors to your proceedings.\n\n===================================================================\n\nIn Conjunction with\n\n\n\n\nThe 21th International Conference on\nMobile Systems and Pervasive Computing (MobiSPC)\n\nThe 14th International Conference on\nSustainable Energy Information Technology (SEIT 2024)"
+  },
+  {
+    "_id": "6639d6f7b9c725a1d3ed3de1",
+    "Title": "Usenix Symposium on Operating Systems Design and Implementation",
+    "Acronym": "OSDI",
+    "Source": "CONFHUB",
+    "Rank": "A*",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4606",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://www.usenix.org/conference/osdi24/call-for-papers"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-07-10T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:55:44.023Z"
+      },
+      {
+        "date": "2024-07-12T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:55:44.023Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-12-07T05:59:00.000Z",
+        "keyword": "Complete paper submissions due",
+        "update_time": "2024-05-16T10:49:05.032Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-03-21T00:00:00.000Z",
+        "keyword": "Notification to authors",
+        "update_time": "2024-05-16T10:49:05.040Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:23:35.534Z",
+    "updatedAt": "2024-06-01T03:55:44.023Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2024-06-04T00:00:00.000Z",
+        "keyword": "Final paper files due",
+        "update_time": "2024-05-16T10:49:05.040Z"
+      }
+    ],
+    "Location": "Santa Clara, CA, USA",
+    "Type": "offline",
+    "CallForPaper": "https://www.usenix.org/sites/default/files/osdi24_cfp_120423.pdf"
+  },
+  {
+    "_id": "6639d703b9c725a1d3ed3ded",
+    "Title": "Visualization In Science and Education",
+    "Acronym": "GRC",
+    "Source": "CONFHUB",
+    "Rank": "National: USA",
+    "Note": "none",
+    "DBLP": "none",
+    "PrimaryFoR": "4608",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://www.grc.org/visualization-in-science-and-education-conference/2025/"
+    ],
+    "createdAt": "2024-05-07T07:23:47.412Z",
+    "updatedAt": "2024-05-16T12:34:47.795Z",
+    "__v": 0,
+    "ConferenceDate": [
+      {
+        "date": "2025-07-13T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-05-16T12:34:47.760Z"
+      },
+      {
+        "date": "2025-07-18T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-05-16T12:34:47.760Z"
+      }
+    ],
+    "NotificationDate": [],
+    "SubmissonDate": [
+    ],
+    "CameraReady": [],
+    "Location": "2 Andrews Road Lewiston, Maine, United States", 
+    "Type": "offline",
+    "CallForPaper": ""
+  },
+  {
+    "_id": "6639d70fb9c725a1d3ed3df9",
+    "Title": "Workshop on Algorithmic Approaches for Transportation Modelling, Optimization, and Systems",
+    "Acronym": "ATMOS",
+    "Source": "CONFHUB",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4613",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://algo-conference.org/2024/atmos/#:~:text=The%2024th%20Symposium%20on%20Algorithmic,on%205%2D6%20September%202024."
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-09-05T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:56:04.458Z"
+      },
+      {
+        "date": "2024-09-06T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:56:04.458Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-06-30T00:00:00.000Z",
+        "keyword": "Submission deadline",
+        "update_time": "2024-05-16T10:52:46.699Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-07-31T00:00:00.000Z",
+        "keyword": "Notification to authors",
+        "update_time": "2024-05-16T10:52:46.703Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:23:59.151Z",
+    "updatedAt": "2024-06-01T03:56:04.459Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2024-08-07T00:00:00.000Z",
+        "keyword": "Camera ready submission",
+        "update_time": "2024-05-16T10:52:46.703Z"
+      }
+    ],
+    "Location": "Royal Holloway, University of London in Egham, United Kingdom",
+    "Type": "offline",
+    "CallForPaper": "SCOPE\n\nThe 24th Symposium on Algorithmic Approaches for Transportation Modelling, Optimization, and Systems (ATMOS 2024) will be part of ALGO 2024, which will take place at the Royal Holloway, University of London in Egham, United Kingdom. ATMOS is scheduled on 5-6 September 2024.\n\nSince 2000, ATMOS brings together researchers and practitioners who are interested in all aspects of algorithmic methods and models for transport optimization. The symposium provides a forum for the exchange and dissemination of new ideas and techniques. The aim of making transportation better gives rise to very complex and large-scale optimization problems requiring innovative solution techniques and ideas from algorithms, mathematical optimization, theoretical computer science, and operations research.\n\nINVITED SPEAKER\n\nTo be announced later…\n\nIMPORTANT DATES\nSubmission deadline:\tSunday June 30, 2024 (AoE)\nNotification to authors:\tJuly 31, 2024\nCamera ready submission:\tAugust 7, 2024\nSymposium:\tSeptember 5-6, 2024\nTOPICS\n\nThe symposium welcomes but is not limited to papers addressing the following topics:\n\nCongestion Modelling and Reduction\nCrew and Duty Scheduling\nDemand Forecasting\nDelay Management\nDesign of Pricing Systems\nElectromobility\nInfrastructure Planning\nIntelligent Transportation Systems\nModels for User Behaviour\nLine Planning\nMobile Applications for Transport\nMobility-as-a-Service\nMulti-modal Transport Optimization\nRouting and Platform Assignment\nRoute Planning in Road and Public Transit Networks\nRostering\nTimetable Generation\nTourist Tour Planning\nTraffic Guidance\nVehicle Routing\nVehicle Scheduling\n\nThe symposium welcomes but is not limited to papers applying and advancing the following techniques: Algorithmic Game Theory, Approximation Algorithms, Combinatorial Optimization, Graph and Network Algorithms, Heuristics and Meta-heuristics, Mathematical Programming, Methods for the Integration of Planning Stages, Online and Real-time Algorithms, Simulation Tools, Stochastic and Robust Optimization.\n\nSUBMISSIONS\n\nAuthors are invited to submit high-quality manuscripts reporting original unpublished research in the topics related to the symposium. Simultaneous submission to other journals or conferences with published proceedings is not allowed. By submitting a paper the authors acknowledge that, in case of acceptance, at least one of the authors will register at ALGO/ATMOS 2024, attend the conference on-site, and present the paper.\n\nSubmissions must be in the form of a single PDF file prepared using the LaTeX OASIcs style file and must be submitted electronically via the EasyChair submission system.\n\nATMOS 2024 accepts two types of submissions, both of which will be reviewed with the same quality standards by the Program Committee.\n\n(a) REGULAR PAPER SUBMISSIONS: A regular paper submission should clearly motivate the importance of the problem being addressed, discuss prior work and its relationship to the paper, explicitly and precisely state its key contributions, and outline the key technical ideas and methods used to achieve the main results. A regular paper submission should not exceed 12 pages including title page and abstract, but excluding references and an optional appendix. Authors should include all necessary details in their submission so that the Program Committee can judge the correctness, importance and originality of their work. Any material (e.g., proofs or experimental results) omitted (from the main part of 12 pages) due to space limitations can be put into the optional appendix, which will be read at the Program Committee’s discretion. Regular papers will be allotted up to 20 pages in the proceedings.\n\n(b) SHORT PAPER SUBMISSIONS: A short paper submission may present preliminary results or work-in-progress on a specific topic. Authors should clearly motivate the importance of the problem being addressed, discuss prior work and its relationship to the paper, explicitly and precisely state the paper’s key contributions, and outline the key technical ideas and methods used to achieve the main claims. A short paper submission should have at least 4 and at most 6 pages. Authors should provide sufficient details in their submission so that the Program Committee can judge the correctness, importance and originality of their work. Short papers will be allotted upto 6 pages in the proceedings.\n\nPROCEEDINGS\n\nThe proceedings will be published on the Dagstuhl Open Access Seriesin Informatics (OASIcs) publication service.\n\nPROGRAM COMMITTEE\nPaul Bouman (co-chair), Erasmus University Rotterdam, Netherlands\nDavid Coudert, INRIA and Université Côte d’Azur, France\nMattia D’Emidio, University of L’Aquila, Italy\nTwan Dollevoet, Erasmus University Rotterdam, The Netherlands\nDaniele Frigioni, University of Aquila, Italy\nLoukas Georgiadis, University of Ioannina, Greece\nMarc Goerigk, University of Passau, Germany\nAndrew Goldberg, Amazon, USA\nVera Grafe, TU Kaiserslautern, Germany\nIrene Heinrich, TU Darmstadt, Germany\nSpyros Kontogiannis (co-chair), University of Patras, Greece\nJesper Larsen, Technical Universtity of Denmark, Denmark\nNiels Lindner, Zuse Institute Berlin, Germany\nPhiline Schiewe, Aalto University, Finland\nSabine Storandt, University of Konstanz, Germany\nRolf van Lieshout, Eindhoven University of Technology, The Netherlands\nSTEERING COMMITTEE\nAlberto Marchetti-Spaccamela, Sapienza Università di Roma, Italy\nMarie Schmidt, Universität Würzburg, Germany\nAnita Schöbel, University of Kaiserslautern-Landau, Germany\nChristos Zaroliagis, University of Patras, Greece (Chair)\nCONTACT\n\nAll questions about submissions should be emailed to the PC co-chairs:\n\nPaul Bouman: bouman _A T_ ese.eur.nl\nSpyros Kontogiannis: spyridon.kontogiannis _A T_ upatras.gr"
+  },
+  {
+    "_id": "6639d715b9c725a1d3ed3dff",
+    "Title": "Workshop on Analytic Algorithmics and Combinatorics",
+    "Acronym": "ANALCO",
+    "Source": "CORE2023",
+    "Rank": "B",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4613",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://www.siam.org/conferences/cm/conference/analco19"
+    ],
+    "ConferenceDate": [],
+    "SubmissonDate": [],
+    "NotificationDate": [],
+    "CameraReady": [],
+    "createdAt": "2024-05-07T07:24:05.880Z",
+    "updatedAt": "2024-05-07T07:24:05.880Z",
+    "__v": 0,
+    "Location": "", 
+    "Type": "offline",
+    "CallForPaper": ""
+  },
+  {
+    "_id": "6639d727b9c725a1d3ed3e0f",
+    "Title": "Workshop on Fault Diagnosis and Tolerance in Cryptography",
+    "Acronym": "FDTC",
+    "Source": "CONFHUB",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4604",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://fdtc.deib.polimi.it/FDTC24/index.html"
+    ],
+    "createdAt": "2024-05-07T07:24:23.357Z",
+    "updatedAt": "2024-06-01T04:07:16.178Z",
+    "__v": 0,
+    "ConferenceDate": [
+      {
+        "date": "2024-09-04T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:07:16.178Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-06-17T00:00:00.000Z",
+        "keyword": "SUBMISSION deadline",
+        "update_time": "2024-05-16T11:16:17.428Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-07-12T00:00:00.000Z",
+        "keyword": "Notification of final acceptance",
+        "update_time": "2024-05-16T11:16:17.428Z"
+      }
+    ],
+    "CameraReady": [
+      {
+        "date": "2024-07-26T00:00:00.000Z",
+        "keyword": "Final version deadline",
+        "update_time": "2024-05-16T11:16:17.428Z"
+      }
+    ],
+    "Location": "Halifax, Nova Scotia, Canada",
+    "Type": "offline",
+    "CallForPaper": "https://fdtc.deib.polimi.it/FDTC24/cfp.pdf"
+  },
+  {
+    "_id": "6639d72bb9c725a1d3ed3e13",
+    "Title": "Workshop on Job Scheduling Strategies for Parallel Processing",
+    "Acronym": "JSSPP",
+    "Source": "CONFHUB",
+    "Rank": "C",
+    "Note": "See note",
+    "DBLP": "view",
+    "PrimaryFoR": "4606",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://jsspp.org/"
+    ],
+    "createdAt": "2024-05-07T07:24:27.400Z",
+    "updatedAt": "2024-06-01T04:07:22.359Z",
+    "__v": 0,
+    "ConferenceDate": [
+      {
+        "date": "2024-05-31T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:07:22.358Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-02-25T00:00:00.000Z",
+        "keyword": "Paper Submission Deadline",
+        "update_time": "2024-05-16T11:16:38.980Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-03-10T00:00:00.000Z",
+        "keyword": "Author Notification",
+        "update_time": "2024-05-16T11:16:38.981Z"
+      }
+    ],
+    "CameraReady": [
+      {
+        "date": "2024-06-15T00:00:00.000Z",
+        "keyword": "Camera-Ready Paper",
+        "update_time": "2024-05-16T11:16:38.981Z"
+      }
+    ],
+    "Location": "San Francisco, California USA",
+    "Type": "offline",
+    "CallForPaper": "JSSPP welcomes Regular Papers (RP) as well as descriptions of Open Scheduling Problems (OSP) and Workload Traces (WT) coming from interesting scheduling domains (see below). Our goal with the OSP papers is to build a bridge between the production and research worlds, enhancing mutual understanding and reproducibility to facilitate direct collaborations and impact. Our goal with the WT papers is to tackle the lack of real-world data that often hampers the ability of the research community to engage with scheduling problems in a way that has a real-world impact."
+  },
+  {
+    "_id": "6639d730b9c725a1d3ed3e19",
+    "Title": "Workshop on Programming Languages and Operating Systems",
+    "Acronym": "PLOS",
+    "Source": "CONFHUB",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "none",
+    "PrimaryFoR": "4606",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://www.asplos-conference.org/asplos2024/calls-workshop/"
+    ],
+    "createdAt": "2024-05-07T07:24:32.933Z",
+    "updatedAt": "2024-05-16T12:35:32.393Z",
+    "__v": 0,
+    "ConferenceDate": [
+      {
+        "date": "2024-04-27T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:56:04.458Z"
+      },
+      {
+        "date": "2024-04-28T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:56:04.458Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-12-15T00:00:00.000Z",
+        "keyword": "Workshop Submission Deadline",
+        "update_time": "2024-05-16T12:35:32.379Z"
+      },
+      {
+        "date": "2023-12-15T00:00:00.000Z",
+        "keyword": "Tutorial Submission Deadline",
+        "update_time": "2024-05-16T12:35:32.379Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-01-15T00:00:00.000Z",
+        "keyword": "Latest Workshop Notification",
+        "update_time": "2024-05-16T12:35:32.379Z"
+      },
+      {
+        "date": "2024-01-15T00:00:00.000Z",
+        "keyword": "Latest Tutorial Notification",
+        "update_time": "2024-05-16T12:35:32.379Z"
+      }
+    ],
+    "CameraReady": [],
+    "Location": "San Diego, California", 
+    "Type": "offline", 
+    "CallForPaper": "CALL FOR WORKSHOPS AND TUTORIALS\n\nSubmission Form\n\nWe solicit workshop and tutorial proposals for ASPLOS 2024 in San Diego, California. Workshops and tutorials will be held on April 27th (Saturday) and 28th (Sunday) 2024.\n\nWorkshops: We encourage proposals in the interplay between programming languages, computer architecture, operating systems, and user interfaces to deal with challenges such as power, performance, resilience, and programmer productivity in emerging areas (e.g., datacenter/cloud computing, systems based on non-volatile memory technologies, large-scale data analysis, smart infrastructure, extreme-scale computing, and large language model (LLM) applications).\n\nTutorials: We solicit proposals for both half- and full-day tutorials on any topic that is relevant to the ASPLOS audience. In previous years, tutorials seeking to achieve either of the following goals have been particularly successful:\n\n– Describe an important piece of research infrastructure.\n\n– Educate the community on an emerging topic.\n\nImportant Dates\n\nWorkshop Submission Deadline: December 15th 2023\n\nTutorial Submission Deadline: December 15th 2023\n\nNotification\n\nWe will evaluate proposals as they come in and give notification as soon as possible.\n\nLatest Workshop Notification: January 15th, 2024\n\nLatest Tutorial Notification: January 15th, 2024\n\nFeel free to reach out to Zhijia Zhao at zhijia@cs.ucr.edu and Xu Liu at xliu88@ncsu.edu with any questions."
+  },
+  {
+    "_id": "6639d737b9c725a1d3ed3e1f",
+    "Title": "World Conference on Information Systems and Technologies",
+    "Acronym": "WorldCIST",
+    "Source": "CONFHUB",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "46",
+    "Comments": "11",
+    "AverageRating": "4.9",
+    "Links": [
+      "https://worldcist.org/index.php/call-for-papers"
+    ],
+    "createdAt": "2024-05-07T07:24:39.784Z",
+    "updatedAt": "2024-06-01T03:35:43.298Z",
+    "__v": 0,
+    "ConferenceDate": [
+      {
+        "date": "2024-03-26T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:35:43.297Z"
+      },
+      {
+        "date": "2024-03-28T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:35:43.297Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2023-11-30T00:00:00.000Z",
+        "keyword": "Paper Submission",
+        "update_time": "2024-05-15T09:35:42.060Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2023-12-25T00:00:00.000Z",
+        "keyword": "Notification of Acceptance",
+        "update_time": "2024-05-15T09:35:42.060Z"
+      }
+    ],
+    "CameraReady" : [
+      {
+        "date": "2024-01-05T00:00:00.000Z",
+        "keyword": "Camera-ready Submission",
+        "update_time": "2024-05-15T09:35:42.060Z"
+      }
+    ],
+    "Location": "Lodz, at Lodz University of Technology, Poland",
+    "Type": "offline",
+    "CallForPaper": "Scope\n\nThe WorldCist'24 - 12nd World Conference on Information Systems and Technologies, to be held in Lodz, at Lodz University of Technology, Poland, 26 - 28 March 2024, is a global forum for researchers and practitioners to present and discuss the most recent innovations, trends, results, experiences and concerns in the several perspectives of Information Systems and Technologies.\n\nWe are pleased to invite you to submit your original papers to WorldCist'24. All submissions will be reviewed on the basis of relevance, originality, importance and clarity.\n\nThemes\n\nSubmitted papers should be related with one or more of the main themes proposed for the Conference:\n\nA) Information and Knowledge Management (IKM);\nB) Organizational Models and Information Systems (OMIS);\nC) Software and Systems Modeling (SSM);\nD) Software Systems, Architectures, Applications and Tools (SSAAT);\nE) Multimedia Systems and Applications (MSA);\nF) Computer Networks, Mobility and Pervasive Systems (CNMPS);\nG) Intelligent and Decision Support Systems (IDSS);\nH) Big Data Analytics and Applications (BDAA);\nI) Human-Computer Interaction (HCI);\nJ) Ethics, Computers and Security (ECS);\nK) Health Informatics (HIS);\nL) Information Technologies in Education (ITE);\nM) Technologies for Biomedical Applications (TBA);\nN) Information Technologies in Radiocommunications (ITR);\n\nTypes of Submissions and Decisions\n\nFour types of original papers can be submitted:\n\nFull paper: Finished or consolidated R&D works, to be included in one of the Conference themes. These papers are assigned a 10-page limit.\nShort paper: Ongoing works with relevant preliminary results, open to discussion. These papers are assigned a 7-page limit.\nPoster paper: Initial work with relevant ideas, open to discussion. These papers are assigned to a 4-page limit.\nCompany paper: Companies' papers that show practical experience, R & D, tools, etc., focused on some topics of the conference. These papers are assigned to a 4-page limit.\n\nSubmitted papers must comply with the format of Lecture Notes in Networks and Systems series (see Instructions for Authors at Springer Website), be written in English, must not have been published before, not be under review for any other conference or publication and not include any information leading to the authors’ identification. Therefore, the authors’ names, affiliations and bibliographic references should not be included in the version for evaluation by the Program Committee. This information should only be included in the camera-ready version, saved in Word or Latex format and also in PDF format. These files must be accompanied by the Consent to Publish form filled out, in a ZIP file, and uploaded at the conference management system.\n\nAll papers will be subjected to a “double-blind review” by at least two members of the Program Committee.\n\nBased on Program Committee evaluation, a paper can be rejected or accepted by the Conference Chairs. In the later case, it can be accepted as the type originally submitted or as another type. Thus, full papers can be accepted as short papers or poster papers only. Similarly, short papers can be accepted as poster papers only.\n\nPoster papers and Company papers are not published in the Conference Proceedings, being only presented and discussed. The authors of accepted poster papers should build and print a poster to be exhibited during the Conference. This poster must follow an A1 or A2 vertical format. The Conference includes Work Sessions where these posters are presented and orally discussed, with a 7 minute limit per poster.\n\nThe authors of accepted Full papers will have 15 minutes to present their work in a Conference Work Session; approximately 5 minutes of discussion will follow each presentation. The authors of accepted Short papers and Company papers will have 11 minutes to present their work in a Conference Work Session; approximately 4 minutes of discussion will follow each presentation.\n\nPublication and Indexing\n\nTo ensure that a full paper or short paper is published and presented, poster paper or company paper is presented, at least one of the authors must be fully registered by the 5th of January 2024, and the paper must comply with the suggested layout and page-limit. Additionally, all recommended changes must be addressed by the authors before they submit the camera-ready version.\n\nNo more than one paper per registration will be published. An extra fee must be paid for publication of additional papers, with a maximum of one additional paper per registration. One registration permits only the participation of one author in the conference.\n\nFull and Short papers will be published in Proceedings by Springer, in several books of of the Lecture Notes in Networks and Systems series. Poster and company papers will not be published, just presented in the conference.\n\nPublished Full and Short papers will be submitted for indexation by WoS, SCOPUS, DBLP and Google Scholar, among others, and will be available in the SpringerLink Digital Library.\n\nThe authors of the best selected papers will be invited to extend them for publication in international journals indexed by WoS/SCI, SCOPUS and DBLP, among others, such as:\n\nInternational Journal of Neural Systems (IF: 8.0 / Q1)\nIntegrated Computer-Aided Engineering (IF: 6.5 / Q1)\nNeural Computing and Applications (IF: 6.0 / Q1)\nComputers & Security (IF. 5.6 / Q1)\nInformatica (IF: 2.9 / Q1)\nExpert Systems (IF: 3.3 / Q2)\nManagement Decision (IF: 4.6 / Q3)\nInternational Journal of Computers Communications & Control (IF: 2.7 / Q3)\nJournal of Computer Languages (IF: 2.2 / Q3)\nData Technologies and Applications (IF: 1.6 / Q4)\nComputer Science and Information Systems (IF: 1.4 / Q4)\nJournal of Engineering Research (IF: 1.1 / Q4)\n\nImportant Dates\n\nPaper Submission: November 17 30, 2023\nNotification of Acceptance: December 25, 2023\nPayment of Registration, to ensure the inclusion of an accepted paper in the conference proceedings: January 5, 2024.\nCamera-ready Submission: January 5, 2024"
+  },
+  {
+    "_id": "6639d0c02aa97d8b888060d5",
+    "Title": "International Conference on Internet Technologies and Applications",
+    "Acronym": "ITA",
+    "Source": "CORE2023",
+    "Rank": "National: USA",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "46",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://www.icita.world/#/"
+    ],
+    "createdAt": "2024-05-07T06:57:04.081Z",
+    "updatedAt": "2024-05-16T13:32:21.289Z",
+    "__v": 0,
+    "ConferenceDate": [
+      {
+        "date": "2024-10-18T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-05-16T13:32:21.258Z"
+      },
+      {
+        "date": "2024-10-20T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-05-16T13:32:21.258Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-06-20T00:00:00.000Z",
+        "keyword": "Conference paper/ submission deadline",
+        "update_time": "2024-05-16T13:32:21.258Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-08-20T00:00:00.000Z",
+        "keyword": "Conference paper notification",
+        "update_time": "2024-05-16T13:32:21.258Z"
+      }
+    ],
+    "CameraReady": [
+      {
+        "date": "2024-08-25T00:00:00.000Z",
+        "keyword": "Camera Ready Submission",
+        "update_time": "2024-05-16T13:32:21.258Z"
+      }
+    ],
+    "Location": "Sydney, Australia", 
+    "Type": "hybrid",
+    "CallForPaper": ""
+  },
+  {
+    "_id": "6639d0b92aa97d8b888060cf",
+    "Title": "International Conference on Internet Computing in Science and Engineering",
+    "Acronym": "ICICSE",
+    "Source": "CONFHUB",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "none",
+    "PrimaryFoR": "4606",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+    ],
+    "ConferenceDate": [
+    ],
+    "SubmissonDate": [
+    ],
+    "NotificationDate": [
+    ],
+    "createdAt": "2024-05-07T06:56:57.711Z",
+    "updatedAt": "2024-05-16T07:44:33.239Z",
+    "__v": 0,
+    "CameraReady": []
+  },
+  {
+    "_id": "6639d111387369a8970585dd",
+    "Title": "International Conference on Knowledge Science, Engineering and Management",
+    "Acronym": "KSEM",
+    "Source": "CONFHUB",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4602",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://ai-edge.net/index.html"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-08-16T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:30:20.610Z"
+      },
+      {
+        "date": "2024-08-18T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:30:20.610Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-04-15T00:00:00.000Z",
+        "keyword": "Paper submission",
+        "update_time": "2024-05-16T13:39:48.429Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-05-15T00:00:00.000Z",
+        "keyword": "Author notification",
+        "update_time": "2024-05-16T13:39:48.430Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:58:25.180Z",
+    "updatedAt": "2024-06-01T04:30:20.611Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2024-06-05T00:00:00.000Z",
+        "keyword": "Camera-Ready",
+        "update_time": "2024-05-16T13:39:48.430Z"
+      }
+    ],
+    "Location": "Birmingham",
+    "Type": "offline",
+    "CallForPaper": "The conference committee invites submissions of both applied and theoretical research, as well as application-oriented papers on all topics related to KSEM. For KSEM 2024, we are particularly focused on the theme of applied knowledge science and engineering in networking and cybersecurity, which includes the use of large language models (LLM). Submissions are not limited to these topics, and we welcome contributions across a broad range of areas, as detailed below:\n\nKnowledge Science\n\n• Knowledge representation and reasoning\n• Formal analysis of knowledge; reasoning about knowledge\n• Knowledge complexity and knowledge metrics\n• Uncertainty in knowledge (randomness, fuzziness, roughness, vagueness)\n• Knowledge fusion for decision making\n• Formal ontologies\n• Reasoning about knowledge in the presence of inconsistency, incompleteness and context-dependency\n• Belief propagation, revision and aggregation\n• Cognitive foundations of knowledge\n• Integration of machine learning and knowledge representation\n• Knowledge-driven learning\n• Knowledge for cognitive robotics\n• Knowledge for cognitive analytics\n• Knowledge in complex systems (e.g. manufacture assembling, economical and quantum systems)\n• Game-theoretical aspects of knowledge; knowledge in multi-agent systems\n\n\nKnowledge Engineering\n\n• Knowledge modeling\n• Knowledge acquisition, such as knowledge modules, temporal knowledge, etc.\n• Knowledge extraction from texts/videos, big data/Web\n• Knowledge discovery from very large databases\n• Knowledge integration\n• Knowledge-based software engineering\n• Knowledge-based systems in life sciences\n• Knowledge-based systems for smart homes\n• Conceptual modeling in knowledge-based systems\n• Semantic database systems\n• Semantic Web: Content and ontological engineering\n• Knowledge engineering applications\n• Knowledge modeling for digital twins\n• Knowledge-based system for Chatbot\n• Knowledge-based system and Large Language Models (LLMs)\n\n\nKnowledge Management\n\n• Knowledge management best practices and applications\n• Knowledge verification and validation (e.g. Blockchain)\n• Knowledge protection and attack detection\n• Knowledge-Based Systems in Cybersecurity Threat Detection and Intelligent Decision-Making\n• Smart knowledge and resource optimization\n• Knowledge dissemination\n• Knowledge management systems\n• Knowledge and data integration\n• Knowledge adaptation\n\n\nKnowledge Graphs\n\n• Knowledge graph storage and management\n• Probabilistic knowledge graphs\n• Knowledge graph construction\n• Knowledge graph query\n• Learning on knowledge graphs\n• Knowledge graph embedding\n• Knowledge graph completion\n• Multi-modal knowledge graphs\n• Knowledge graph applications\n• Deep graph neural networks\n\n\nSpecial Sessions\n\nTBC\n\nJoint Event: Doctoral Colloquium\n\nThe host university also hosts a Doctoral Colloquium (DC) in conjunction with the main KSEM 2024 conference. Calling all promising Ph.D. candidates! Showcase your groundbreaking research and join us at the Ph.D. Colloquium to exchange ideas, gain valuable insights, and network with peers and experts in your field. For more details, please visit the website: https://sites.google.com/view/ksem-doctoral-colloquium/home or phd24.ai-edge.net.\n\nPlease submit your paper via EasyChair Submission Link\n\nPlease refer to the paper submission page for more information about the manuscript submission."
+  },
+  {
+    "_id": "6639d124387369a8970585f1",
+    "Title": "International Conference on Machine Learning and Cybernetics",
+    "Acronym": "ICMLC",
+    "Source": "CONFHUB",
+    "Rank": "National: China",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4611",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://www.icmlc.com/ICMLC/cfp.html"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-09-20T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:36:24.800Z"
+      },
+      {
+        "date": "2024-09-23T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:36:24.800Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-06-10T00:00:00.000Z",
+        "keyword": "Submission Due",
+        "update_time": "2024-05-16T13:41:05.059Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-07-20T00:00:00.000Z",
+        "keyword": "Notification of Acceptance",
+        "update_time": "2024-05-16T13:41:05.059Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:58:44.735Z",
+    "updatedAt": "2024-06-01T04:36:24.801Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "Miyazaki, Japan",
+    "Type": "offline",
+    "CallForPaper": "The International Conference on Machine Learning and Cybernetics (ICMLC) is entering its 23th year, we are all excited and committed to our vision: organizing good quality international conferences that provide valuable educational services to young researchers in the Asia region, particularly researchers in China. The conferences will be held on 20-23 September 2024 in Miyazaki, Japan.\n\nReview and Publication\nThe manuscripts should be between 4 to 6 pages in the IEEE conference format. Additional pages will be charged. Please check the website for the details. All submissions will be peer-reviewed by at least TWO reviewers.\nAll papers will be:\nSubmitted for consideration for inclusion and indexing by IEEE Xplore (http://ieeexplore.ieee.org/)\nSubmitted for indexing to EI Compendex\nSelected papers will be recommended for publication in special issues of SCI indexed journals.\nSpecial Features\nFree Tutorial\nLotfi Zadeh Best Paper Awards\nKeynote Speakers\nTopics of Interest\n\nOriginal research involving machine learning and cybernetics ranging from theoretical investigation to real world applications. Examples include but are not limited to the following\n\nStatistical Machine Learning\nIntelligent and Fuzzy Control\nPattern Recognition\nEnsemble Method\nEvolutionary Computation\nFuzzy and Rough Set\nData and Web Mining\nInformation Retrieval\nBioinformatics\nBiometrics\nAdversarial Learning\nWeb Intelligence and Technology\nSemantics and Ontology Engineering\nIntelligent Business Computing\nCybersecurity\nMulticriteria Decision Making\nSoft Computing\nIntelligent Systems\nSpeech, Image and Video Processing\nDecision Support Systems\nSocial Networks and Ubiquitous Intelligence\nGenerative Adversarial Network"
+  },
+  {
+    "_id": "6639d14e387369a89705861b",
+    "Title": "International Conference on Network and Service Management (amalgamation of DSOM and related workshops from 2010)",
+    "Acronym": "CNSM",
+    "Source": "CONFHUB",
+    "Rank": "B",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4606",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "http://www.cnsm-conf.org/2024/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-10-28T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:36:52.729Z"
+      },
+      {
+        "date": "2024-10-31T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:36:52.729Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-07-01T00:00:00.000Z",
+        "keyword": "Paper Submission",
+        "update_time": "2024-05-16T13:43:07.287Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-08-30T00:00:00.000Z",
+        "keyword": "Notification of Acceptance",
+        "update_time": "2024-05-16T13:43:07.287Z"
+      }
+    ],
+    "createdAt": "2024-05-07T06:59:26.463Z",
+    "updatedAt": "2024-06-01T04:36:52.731Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2024-09-13T00:00:00.000Z",
+        "keyword": "Camera Ready Due",
+        "update_time": "2024-05-16T13:43:07.287Z"
+      }
+    ],
+    "Location": "Prague, Czech Republic",
+    "Type": "offline",
+    "CallForPaper": "The 20th International Conference on Network and Service Management (CNSM) is inviting authors to submit original contributions in network and service management research. CNSM is a selective single-track conference, covering all aspects of the management of networks and services, pervasive systems, enterprises, and cloud computing environments. In particular, CNSM 2024 will focus on AI-Powered Network and Service Management for Tomorrow's Digital World.\n\nPapers accepted and presented at CNSM 2024 will be published as open access on the conference website and will be submitted for possible publication in IEEE Xplore. Authors of selected papers accepted for publication in the CNSM 2024 proceedings will be invited to submit an extended version of their papers to the IEEE Transactions on Network and Service Management journal.\n\nTopics of Interest (but not limited to)\nTECHNOLOGIES\nCommunication Protocols\nMiddleware\nOverlay Networks\nPeer-to-Peer Networks\nCloud and Storage in the Cloud Continuum\nGenerative AI and Large Language Models\nInformation Visualization\nSoftware-Defined Networking\nNetwork Function Virtualization\nOrchestration\nOperations and Business Support Systems\nControl and Data Plane Programmability\nDistributed Ledger Technology\nDigital Twins for Networks and Services\nReinforcement Learning\nSERVICE MANAGEMENT\nMultimedia Services\nContent Delivery Services\nCloud Computing Services\nInternet Connectivity and Internet Access Services\nInternet of Things Services\nSecurity Services\nContext-aware Services\nInformation Technology Services\nService Assurance\nFUNCTIONAL AREAS\nFault Management\nConfiguration Management\nAccounting Management\nPerformance Management\nSecurity Management\nMANAGEMENT PARADIGMS\nCentralized Management\nHierarchical Management\nDistributed Management\nFederated Management\nAutonomic and Cognitive Management\nPolicy- and Intent-based Management\nModel-Driven Management\nPro-active Management\nEnergy-aware Management\nQoE-centric Management\nMETHODS\nArtificial Intelligence and Machine Learning\nMathematical Logic and Automated Reasoning\nOptimization Theories\nControl Theory\nProbability Theory, Stochastic Processes, and Queuing Theory\nEvolutionary Algorithms\nEconomic Theory and Game Theory\nMonitoring and Measurements\nData Mining and (Big) Data Analysis\nComputer Simulation Experiments\nTestbed Experimentation and Field Trials\nSoftware Engineering Methodologies\nPaper Submission\n\nAuthors are invited to submit original contributions that have not been published or submitted for publication elsewhere. Papers should be prepared using the IEEE 2-column conference style and are limited to 9 pages including references (full papers) or 5 pages including references (short papers). Papers must be submitted electronically in PDF format through EDAS.\n\nPapers exceeding page limits, multiple submissions, and self-plagiarized papers will be rejected without further review. All other papers will get a thorough single-blind review process, followed by a rebuttal phase.\n\nTechnical Program Co-Chairs\nMauro Tortonesi, University of Ferrara, Italy\nTim Wauters, Ghent University - imec, Belgium\n\nGeneral Co-Chairs\nPál Varga, Budapest University of Technology and Economics, Hungary\nPavel Celeda, Masaryk University, Czech Republic"
+  },
+  {
+    "_id": "6639d160387369a89705862d",
+    "Title": "International Conference on Parallel and Distributed Processing Techniques and Applications",
+    "Acronym": "PDPTA",
+    "Source": "CORE2023",
+    "Rank": "National: USA",
+    "Note": "none",
+    "DBLP": "none",
+    "PrimaryFoR": "4606",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://www.american-cse.org/csce2024/conferences-PDPTA"
+    ],
+    "ConferenceDate": [
+      
+    ],
+    "SubmissonDate": [
+    
+    ],
+    "NotificationDate": [
+     
+    ],
+    "createdAt": "2024-05-07T06:59:44.742Z",
+    "updatedAt": "2024-05-22T13:56:55.136Z",
+    "__v": 0,
+    "CameraReady": []
+  },
+  {
+    "_id": "6639d177387369a897058641",
+    "Title": "International Conference on Principles and Practice of Declarative Programming",
+    "Acronym": "PPDP",
+    "Source": "CONFHUB",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4613",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://ppdp2024.github.io/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-09-09T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T04:37:33.608Z"
+      },
+      {
+        "date": "2024-09-11T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T04:37:33.608Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-05-22T00:00:00.000Z",
+        "keyword": "Paper submission",
+        "update_time": "2024-05-16T13:45:49.122Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-07-05T00:00:00.000Z",
+        "keyword": "Author notification",
+        "update_time": "2024-05-16T13:45:49.123Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:00:07.988Z",
+    "updatedAt": "2024-06-01T04:37:33.609Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2024-07-24T00:00:00.000Z",
+        "keyword": "Final paper version",
+        "update_time": "2024-05-16T13:45:49.123Z"
+      }
+    ],
+    "Location": "Politecnico di Milano, Italy",
+    "Type": "offline",
+    "CallForPaper": "Scope\n\nThe PPDP 2024 symposium brings together researchers from the declarative programming communities, including those working in the functional, logic, answer-set, and constraint handling programming paradigms. The goal is to stimulate research in the use of logical formalisms and methods for analyzing, performing, specifying, and reasoning about computations, including mechanisms for concurrency, security, static analysis, and verification.\n\nSubmissions are invited on all topics related to declarative programming, from principles to practice, from foundations to applications. Topics of interest include, but are not limited to:\n\nLanguage Design: domain-specific languages; interoperability; concurrency, parallelism and distribution; modules; functional languages; reactive languages; languages with objects; languages for quantum computing; languages inspired by biological and chemical computation; metaprogramming.\n\nDeclarative languages in artificial intelligence: logic programming; database languages; knowledge representation languages; probabilistic languages; differentiable languages.\n\nImplementations: abstract machines; interpreters; compilation; compile-time and run-time optimization; memory management.\n\nFoundations: types; logical frameworks; monads and effects; semantics.\n\nAnalysis and Transformation: partial evaluation; abstract interpretation; control flow; data flow; information flow; termination analysis; resource analysis; type inference and type checking; verification; validation; debugging; testing.\n\nTools and Applications: programming and proof environments; verification tools; case studies in proof assistants or interactive theorem provers; certification; novel applications of declarative programming inside and outside of CS; declarative programming pearls; practical experience reports and industrial application; education.\n\nThe PC chairs will be happy to advise on the appropriateness of a topic.\n\nPPDP will take place 9-11 September 2024 at the Politecnico di Milano, Italy, co-located with the 34th Int’l Symp. on Logic-Based Program Synthesis and Transformation (LOPSTR 2024) within the umbrella of FM 2024\n\nSubmission\n\nVia EasyChair at this link\n\nSubmission Categories\n\nSubmissions can be made in three categories:\n\nRegular Research Papers,\nSystem Descriptions, and\nExperience Reports.\n\nSubmissions of Research Papers must present original research which is unpublished and not submitted elsewhere. They must not exceed 12 pages ACM style 2-column (including figures, but excluding bibliography). Work that already appeared in unpublished or informally published workshop proceedings may be submitted (please contact the PC chair in case of questions). Research papers will be judged on originality, significance, correctness, clarity, and readability.\n\nSubmission of System Descriptions must describe a working system whose description has not been published or submitted elsewhere. They must not exceed 10 pages and should contain a link to a working system. System Descriptions must be marked as such at the time of submission and will be judged on originality, significance, usefulness, clarity, and readability.\n\nSubmissions of Experience Reports are meant to help create a body of published, refereed, citable evidence where declarative programming such as functional, logic, answer-set, constraint programming, etc., is used in practice. They must not exceed 5 pages including references. Experience Reports must be marked as such at the time of submission and need not report original research results. They will be judged on significance, usefulness, clarity, and readability.\n\nPossible topics for an Experience Report include, but are not limited to:\n\ninsights gained from real-world projects using declarative programming\n\ncomparison of declarative programming with conventional programming in the context of an industrial project or a university curriculum\n\ncurricular issues encountered when using declarative programming in education\n\nreal-world constraints that created special challenges for an implementation of a declarative language or for declarative programming in general\n\nnovel use of declarative programming in the classroom\n\nprogramming pearl that illustrates a nifty new data structure or programming technique.\n\nSupplementary material may be provided via a link to an extended version of the submission (recommended), or in a clearly marked appendix beyond the above-mentioned page limits. Reviewers are not required to study extended versions or any material beyond the respective page limit. Material beyond the page limit will not be included in the final published version.\n\nProceedings\n\nThe PPDP 2024 proceedings, ISBN 979-8-4007-0969-2, will published in the ACM Digital Library within the ACM International Conference Proceedings Series.\n\nImportant note to authors about the new ACM open access publishing model\n\nACM has introduced a new open access publishing model for the International Conference Proceedings Series (ICPS). Authors based at institutions that are not yet part of the ACM Open program and do not qualify for a waiver will be required to pay an article processing charge (APC) to publish their ICPS article in the ACM Digital Library. To determine whether or not an APC will be applicable to your article, please follow the detailed guidance here.\n\nFurther information may be found on the ACM website, as follows:\n\nFull details of the new ICPS publishing model\nFull details of the ACM Open program. Please direct all questions about the new model here.\nFormat of a submission\n\nFor each paper category, you must use the most recent version of the Current ACM Master Template, at the time of writing being 2.01. You must use the LaTeX sigconf proceedings template, as the conference organizers are unable to process final submissions in other formats. In case of problems with the templates, contact ACM’s TeX support team at Aptara.\n\nAuthors should note ACM’s statement on author’s rights which apply to final papers. Submitted papers should meet the requirements of ACM’s plagiarism policy.\n\nRequirements for publication\n\nAt least one author of each accepted submission will be expected to attend and present the work at the conference. The PC chair may retract a paper that is not presented. The PC chair may also retract a paper if complaints about the paper’s correctness are raised which cannot be resolved by the final paper deadline.\n\nReview process\n\nThe reviewing is single-blind, with a two-days rebuttal phase."
+  },
+  {
+    "_id": "6639d1a9387369a897058671",
+    "Title": "International Conference on Smart homes and health Telematics",
+    "Acronym": "ICOST",
+    "Source": "CORE2023",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4601",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://icost-society.org/"
+    ],
+    "ConferenceDate": [
+     
+    ],
+    "SubmissonDate": [
+    
+    ],
+    "NotificationDate": [
+     
+    ],
+    "createdAt": "2024-05-07T07:00:57.009Z",
+    "updatedAt": "2024-05-16T03:57:55.984Z",
+    "__v": 0,
+    "CameraReady": []
+  },
+  {
+    "_id": "6639d1b3387369a89705867b",
+    "Title": "International Conference on Software Engineering Advances",
+    "Acronym": "ICSEA",
+    "Source": "CORE2023",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "none",
+    "PrimaryFoR": "4612",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://www.iaria.org/conferences2024/CfPICSEA24.html"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-09-29T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-05-31T14:07:14.459Z"
+      },
+      {
+        "date": "2024-10-03T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-05-31T14:07:14.459Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-06-28T00:00:00.000Z",
+        "keyword": "Submission",
+        "update_time": "2024-05-31T14:07:14.484Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-08-04T00:00:00.000Z",
+        "keyword": "Notification",
+        "update_time": "2024-05-31T14:07:14.484Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:01:07.375Z",
+    "updatedAt": "2024-05-31T14:07:14.485Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2024-08-29T00:00:00.000Z",
+        "keyword": "Camera ready",
+        "update_time": "2024-05-31T14:07:14.484Z"
+      }
+    ],
+    "Location": "Venice, Italy",
+    "Type": "hybrid",
+    "CallForPaper": "ICSEA 2024: Call for Papers\nOnsite and Online Options: In order to accommodate a large number of situations, we are offering the option for either physical presence or virtual participation (pdf slides or pre-recorded videos).\n\nThe International Conference on Software Engineering Advances (ICSEA 2024) continues a series of events covering a broad spectrum of software-related topics. The conference covers fundamentals on designing, implementing, testing, validating and maintaining various kinds of software. Several tracks are proposed to treat the topics from theory to practice, in terms of methodologies, design, implementation, testing, use cases, tools, and lessons learned. The conference topics cover classical and advanced methodologies, open source, agile software, as well as software deployment and software economics and education.\n\nOther advanced aspects are related to on-time practical aspects, such as run-time vulnerability checking, rejuvenation process, updates partial or temporary feature deprecation, software deployment and configuration, and on-line software updates. These aspects trigger implications related to patenting, licensing, engineering education, new ways for software adoption and improvement, and ultimately, to software knowledge management.\n\nThere are many advanced applications requiring robust, safe, and secure software: disaster recovery applications, vehicular systems, biomedical-related software, biometrics related software, mission critical software, E-health related software, crisis-situation software. These applications require appropriate software engineering techniques, metrics and formalisms, such as, software reuse, appropriate software quality metrics, composition and integration, consistency checking, model checking, provers and reasoning.\n\nThe nature of research in software varies slightly with the specific discipline researchers work in, yet there is much common ground and room for a sharing of best practice, frameworks, tools, languages and methodologies. Despite the number of experts we have available, little work is done at the meta level, that is examining how we go about our research, and how this process can be improved. There are questions related to the choice of programming language, IDEs and documentation styles and standard. Reuse can be of great benefit to research projects, yet reuse of prior research projects introduces special problems that need to be mitigated. The research environment is a mix of creativity and systematic approach which leads to a creative tension that needs to be managed or at least monitored. Much of the coding in any university is undertaken by research students or young researchers. Issues of skills training, development and quality control can have significant effects on an entire department. In an industrial research setting the environment is not quite that of industry as a whole, nor does it follow the pattern set by the university. The unique approaches and issues of industrial research may hold lessons for researchers in other domains.\n\nWe solicit both academic, research, and industrial contributions. We welcome technical papers presenting research and practical results, position papers addressing the pros and cons of specific proposals, such as those being discussed in the standard fora or in industry consortia, survey papers addressing the key problems and solutions on any of the above topics short papers on work in progress, and panel proposals.\n\nIndustrial presentations are not subject to the format and content constraints of regular submissions. We expect short and long presentations that express industrial position and status.\n\nTutorials on specific related topics and panels on challenging areas are encouraged.\n\nThe topics suggested by the conference can be discussed in term of concepts, state of the art, research, standards, implementations, running experiments, applications, and industrial case studies. Authors are invited to submit complete unpublished papers, which are not under review in any other conference or journal in the following, but not limited to, topic areas.\n\nAll topics and submission formats are open to both research and industry contributions.\n\nICSEA 2024 conference tracks:\n\nTrends and achievements\n\nAdvanced agile software development; Machine learning-oriented software; Fast data-pressing algorithms; Special software for Industry 4.0 applications; Advances on software product line engineering; Software for Cyber-physical systems; Internet-of-Things (IoT)-oriented software; Software for high speed sensing data; Special software for smart cities and urban computation; Deep-software for data analytics; Software for pervasive systems; Software for (self)-configurable systems; Search-based software; Green-oriented software engineering; Symbolic analysis; Software for automated energy optimization; Mobile applications-oriented software; Interactive Big data processing; Crowd-Sourcing Programming; Open source challenges; Emphasizing non-functional requirements; Cognitive software; Accessibility requirements\n\nAdvances in fundamentals for software development\n\nFundamentals in software development; Software architecture, patterns, frameworks; Software analysis and model checking; Software architectural scalability; Requirements engineering and design; Software design (methodologies, patterns, experiences, views, design by contract, design by responsibilities, etc.); Software modeling (OO, non-OO, MDA, SOA, patterns, UML, etc.); Software process and workflow; Software validation and verification; Software testing and testing tools; Software implementation; Software project management (risk analysis, dependencies, etc.); Component-based software development; Service-oriented software development; Software security-based development; Aspect-oriented software development\n\nAdvanced mechanisms for software development\n\nSoftware composition; Process composition and refactoring; Co-design and codeplay; Software dependencies; Plug&play software; Adaptive software; Context-sensitive software; Policy-driven software design; Software rejuvenation; Feature interaction detection and resolution; Embedded software; Parallel and distributed software\n\nAdvanced design tools for developing software\n\nFormal specifications in software; Programming mechanisms (real-time, multi-threads, etc.); Programming techniques (feature-oriented, aspects-oriented, generative programming, agents-oriented, contextual-oriented, incremental, stratified, etc.); Requirement specification languages; Programming languages; Automation of software design and implementation; Software design with highly distributed resources (GRID); Web service based software; Scenario-based model synthesis; Merging partial behavioral models; Partial goal/requirement satisfaction\n\nSoftware engineering for service computing (SOA and Cloud)\n\nRequirements engineering methods and techniques for service computing; Design methods and techniques for service computing; Service-oriented architecture methods and techniques; Service computing technologies; Service level reuse paradigm; Cloud computing development methods; SaaS development methods and techniques; Service computing paradigm; QoS models for service computing; Testing methods for service computing; Approaches to service process improvement; Approaches to Big Data Software Engineering; Approaches to Software Engineering Analytics; Approaches to IoT Software Engineering\n\nAdvanced facilities for accessing software\n\nInformation modeling; GUI related software; Computer-aided software design; Hierarchical APIs; APIs roles in software development; Ontology support for Web Services; Rapid prototyping tools; Embedded software quality; Thread modeling; Flexible Objects; Use cases; Visual Modeling\n\nSoftware performance\n\nSoftware performance modeling; Software performance engineering (UML diagrams, Process algebra, Petri nets, etc.); Software performance requirements; Performance forecast for specific applications; Performance testing; Web-service based software performance; Performance of rule-based software; Methods for performance improvements; Software performance experience reports; Program failures experiences; Error ranking via correlation; Empirical evaluation of defects\n\nSoftware security, privacy, safeness\n\nSecurity requirements, design, and engineering; Software safety and security; Security, privacy and safeness in software; Software vulnerabilities; Assessing risks in software; Software for online banking and transactions; Software trace analysis; Software uncertainties; Dynamic detection of likely invariants; Human trust in interactive software; Memory safety; Safety software reuse; High confidence software; Trusted computing; Next generation secure computing\n\nAdvances in software testing\n\nFormal approaches for test specifications; Advanced testing methodologies; Static and dynamic analysis; Strategies for testing nondeterministic systems; Testing software releases; Generating tests suites; Evolutionary testing of embedded systems; Algorithmic testing; Exhaustive testing; Black-box testing; Testing at the design level; Testing reactive software; Empirical evaluation\n\nSpecialized software advanced applications\n\nDatabase related software; Software for disaster recovery applications; Software for mobile vehicles; Biomedical-related software; Biometrics related software; Mission critical software; Real-time software; E-health related software; Military software; Crisis-situation software; Software for Bluetooth and mobile phones; Multimedia software applications\n\nWeb Accessibility\n\nDesign approaches, techniques, and tools to support Web accessibility; Best practices for evaluation, testing reviews and repair techniques; Accessibility across the entire system lifecycle; Accessibility within e-organizations: good practices and experiences; Industry and research collaboration, learning from practice, and technology transfer; Mobile Internet-Web Accessibility; Developing user interfaces for different devices; Dealing with different interaction modalities; Web authoring guidelines and tools; Accessibility and other core areas related to the Web user experience; (UX): Usability, Findability, Valuability, Credibility, etc.; Innovations in assistive technologies for the Web; Accessible graphic formats and tools for their creation; Adaptive Web accessibility; Accessibility and information architecture; Universally accessible graphical design approaches; User Profiling; Cognitive and behavioral psychology of end user experiences and scenarios\n\nOpen source software\n\nOpen source software (OSS) methodologies; OSS development and debugging; Security in OSS; Performance of OSS; OSS roles and responsibilities; OSS incremental development; Division of labor and coordination mechanisms; Distribution of decision-making; Operational boundaries; Experience reports and lessons learned; Versioning management; Towards generalizing the OSS methodologies and practices; Open source licensing; Industrial movement towards open source\n\nAgile and Lean approaches in software engineering\n\nAgile software methodologies and practices (extreme programming, scrum, feature-driven, etc.); Agile modeling (serial in the large, iterative in the small); Agile model driven design; Agile methodologies for embedded software; Software metrics for agile projects; Lifecycle for agile software development; Agile user experience design; Agility via program automation; Testing into an agile environment; Agile project planning; Agile unified process\n\nSoftware deployment and maintenance\n\nSoftware in small and large organizations; Deploying and maintaining open source software; Software maintenance; Software assurance; Patching; Run-time vulnerability checking; Software rejuvenation; Software updates; Partial or temporary feature deprecation; Multi-point software deployment and configuration; On-line software updates\n\nSoftware engineering techniques, metrics, and formalisms\n\nSoftware reuse; Software quality metrics (complexity, empiric metrics, etc.); Software re-engineering (reverse engineering); Software composition; Software integration; Consistency checking; Real-time software development; Temporal specification; Model checking; Theorem provers; Modular reasoning; Petri Nets; Formalisms for behavior specification; Advanced techniques for autonomic components and systems\n\nBusiness technology\n\nEnterprise Content Managements (ECMs); Business Intelligence (BI); Enterprise Portals; Business Process Management (BPM); Corporate Performance Management (CPM); Enterprise Data Warehouse; Web Publishing; Cloud Computing; Virtualisation; Data Mining; Workflows; Business Rules Management (BRM); Data Capturing\n\nSoftware economics, adoption, and education\n\nPatenting software; Software licensing; Software economics; Software engineering education; Academic and industrial views on software adoption and education; Good-to-great in software adoption and improvement; Software knowledge management\n\nImproving productivity in research on software engineering\n\nDeveloping frameworks to support research; Methods and tools to improving the research environment; Supporting domain specific research needs; Teaching research skills in Computer Science; Experience reports on well developed research processes; Experience reports on empirical approaches to software engineering research; Approaches to supporting higher degree students in their research; Approaches to enlarge the research / teaching nexus to improve academics productivity; Approaches to integration between university research and industry research; Tools to support the research process; Software process improvement framework (CMMI, etc.); Quality improvement framework; Process simulation and measurement; Test improvement framework\n\nDeadlines:\n\n\nSubmission\n\n\t\n\nJun 28, 2024\n\n\n\n\nNotification\n\n\t\n\nAug 04, 2024\n\n\n\n\nRegistration\n\n\t\n\nAug 19, 2024\n\n\n\n\nCamera ready\n\n\t\n\nAug 29, 2024\n\nDeadlines differ for special tracks. Please consult the conference home page for special tracks Call for Papers (if any).\n\n \n\nINSTRUCTION FOR THE AUTHORS\n\nAuthors of selected papers will be invited to submit extended versions to one of the IARIA Journals.\n\nPublisher: XPS (Xpert Publishing Services)\nArchived: ThinkMindTM Digital Library (free access)\nPrints available at Curran Associates, Inc.\nHow to submit to appropriate indexes.\n\nOnly .pdf or .doc files will be accepted for paper submission. All received submissions will be acknowledged via an automated system.\n\nContribution types\n\nregular papers [in the proceedings, digital library]\nshort papers (work in progress) [in the proceedings, digital library]\nideas: two pages [in the proceedings, digital library]\nextended abstracts: two pages [in the proceedings, digital library]\nposters: two pages [in the proceedings, digital library]\nposters: slide only [slide-deck posted on www.iaria.org]\npresentations: slide only [slide-deck posted on www.iaria.org]\ndemos: two pages [posted on www.iaria.org]\n\nFORMATS\n\nOnly .pdf or .doc files will be accepted for paper submission. All received submissions will be acknowledged via an automated system.\n\nFinal author manuscripts will be 8.5\" x 11\", not exceeding 6 pages; max 4 extra pages allowed at additional cost.\n\nHelpful information for paper formatting for MS Word can be found here.\n\nThere is a community provided LaTeX template: the CTAN package iaria (with full IARIA formatting rules, including IARIA citation style, but for providing citation style it is tightly bound to pdflatex+biblatex+biber). In addition, there is also iaria-lite (not bound to pdflatex+biblatex+biber, but compatible with any TeX stack; thus, it cannot provide the IARIA citation formattings, but only the titlepage and content-related IARIA formatting rules). Based on the iaria package, there is a minimal working example as Overleaf template. When you are using the LaTeX templates, please still adhere to the additional editorial rules.\n\nSlides-based contributions can use the corporate/university format and style.\n\nYour paper should also comply with the additional editorial rules.\n\nOnce you receive the notification of contribution acceptance, you will be provided by the publisher an online author kit with all the steps an author needs to follow to submit the final version. The author kits URL will be included in the letter of acceptance.\n\nWe would recommend that you should not use too many extra pages, even if you can afford the extra fees. No more than 2 contributions per event are recommended, as each contribution must be separately registered and paid for. At least one author of each accepted paper must register to ensure that the paper will be included in the conference proceedings and in the digital library, or posted on the www.iaria.org (for slide-based contributions).\n\nCONTRIBUTION TYPE\n\nRegular Papers (up to 6-10 page article -6 pages covered the by regular registration; max 4 extra pages allowed at additional cost- ) (oral presentation)\nThese contributions could be academic or industrial research, survey, white, implementation-oriented, architecture-oriented, white papers, etc. They will be included in the proceedings, posted in the free-access ThinkMind digital library and sent for indexing. Please submit the contributions following the instructions for the regular submissions using the \"Submit a Paper\" button and selecting the appropriate contribution type. 12-14 presentation slides are suggested.\n\nShort papers (work in progress) (up to 4 pages long) (oral presentation)\nWork-in-progress contributions are welcome. These contributions represent partial achievements of longer-term projects. They could be academic or industrial research, survey, white, implementation-oriented, architecture-oriented, white papers, etc. Please submit the contributions following the instructions for the regular submissions using the \"Submit a Paper\" button and selecting the contribution type as work in progress. Contributors must follow the conference deadlines, describing early research and novel skeleton ideas in the areas of the conference topics. The work will be published in the conference proceedings, posted in the free-access ThinkMind digital library and sent for indexing. For more details, see the Work in Progress explanation page. 12-14 presentation slides are suggested.\n\nIdeas contributions (2 pages long) (oral presentation)\nThis category is dedicated to new ideas in their very early stage. Idea contributions are expression of yet to be developed approaches, with pros/cons, not yet consolidated. Ideas contributions are intended for a debate and audience feedback. Please submit the contributions following the instructions for the regular submissions using the \"Submit a Paper\" button and selecting the contribution type as Idea. Contributors must follow the conference deadlines, describing early research and novel skeleton ideas in the areas of the conference topics. The work will be published in the conference proceedings, posted in the free-access ThinkMind digital library and sent for indexing. For more details, see the Ideas explanation page. 12-14 presentation slides are suggested.\n\nExtended abstracts (2 pages long) (oral presentation)\nExtended abstracts summarize a long potential publication with noticeable results. It is intended for sharing yet to be written, or further on intended for a journal publication. Please submit the contributions following the instructions for the regular submissions using the \"Submit a Paper\" button and selecting the contribution type as Extended abstract. Contributors must follow the conference deadlines, describing early research and novel skeleton ideas in the areas of the conference topics. The work will be published in the conference proceedings, posted in the free-access ThinkMind digital library and sent for indexing. 12-14 presentation slides are suggested.\n\nPosters (paper-based, two pages long) (oral presentation)\nPosters are intended for ongoing research projects, concrete realizations, or industrial applications/projects presentations. The poster may be presented during sessions reserved for posters, or mixed with presentation of articles of similar topic. A two-page paper summarizes a presentation intended to be a POSTER. This allows an author to summarize a series of results and expose them via a big number of figures, graphics and tables. Please submit the contributions following the instructions for the regular submissions using the \"Submit a Paper\" button and selecting the contribution type as Poster Two Pages. Contributors must follow the conference deadlines, describing early research and novel skeleton ideas in the areas of the conference topics. The work will be published in the conference proceedings, posted in the free-access ThinkMind digital library and sent for indexing. 8-10 presentation slides are suggested. Also a big Poster is suitable, used for live discussions with the attendees, in addition to the oral presentation.\n\nPosters (slide-based, only) (oral presentation)\nPosters are intended for ongoing research projects, concrete realizations, or industrial applications/projects presentations. The poster may be presented during sessions reserved for posters, or mixed with presentation of articles of similar topic. The slides must have comprehensive comments. This type of contribution only requires a 8-10 slide-deck. Please submit the contributions following the instructions for the regular submissions using the \"Submit a Paper\" button and selecting the contribution type as Poster (slide-only). The slide-deck will be posted, post-event, on www.iaria.org.\n8-10 presentation slides are suggested. Also a big Poster is suitable, used for live discussions with the attendees, additionally to the oral presentation.\n\nPresentations (slide-based, only) (oral presentation)\nThese contributions represent technical marketing/industrial/business/positioning presentations. This type of contribution only requires a 12-14 slide-deck. Please submit the contributions following the submission instructions by using the \"Submit a Paper\" button and selecting the contribution type as Presentation (slide-only). The slide-deck will be posted, post-event, on www.iaria.org.\n12-14 presentation slides are suggested.\n\nDemos (two pages) [posted on www.iaria.org]\nDemos represent special contributions where a tool, an implementation of an application, or a freshly implemented system is presented in its alfa/beta version. It might also be intended for thsoe new application to gather the attendee opinion. A two-page summary for a demo is intended to be. It would be scheduled in special time spots, to ensure a maximum attendance from the participants. Please submit the contributions following the submission instructions by using the \"Submit a Paper\" button and selecting the contribution type as Demos. The Demos paper will be posted, post-event, on www.iaria.org.\n\nTutorial proposals\nTutorials provide overviews of current high interest topics. Proposals should be for 2-3 hour long. Proposals must contain the title, the summary of the content, and the biography of the presenter(s). The tutorial slide decks will be posted on the IARIA site.\nPlease send your proposals to tutorial proposal\n\nPanel proposals\nThe organizers encourage scientists and industry leaders to organize dedicated panels dealing with controversial and challenging topics and paradigms. Panel moderators are asked to identify their guests and manage that their appropriate talk supports timely reach our deadlines. Moderators must specifically submit an official proposal, indicating their background, panelist names, their affiliation, the topic of the panel, as well as short biographies. The panel slide deck will be posted on the IARIA site.\nPlease send your proposals to panel proposal"
+  },
+  {
+    "_id": "6639d1b9387369a897058681",
+    "Title": "International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing",
+    "Acronym": "SNPD",
+    "Source": "CONFHUB",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4612",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://acisinternational.org/conferences/snpd-2024/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-07-05T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:37:12.545Z"
+      },
+      {
+        "date": "2024-07-07T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:37:12.545Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-05-20T00:00:00.000Z",
+        "keyword": "Submission Deadline",
+        "update_time": "2024-05-16T03:58:36.843Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-05-31T00:00:00.000Z",
+        "keyword": "Acceptance Notification",
+        "update_time": "2024-05-16T03:58:36.844Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:01:13.084Z",
+    "updatedAt": "2024-06-01T03:37:12.545Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2024-06-10T00:00:00.000Z",
+        "keyword": "Registration/Camera Ready Paper",
+        "update_time": "2024-05-16T03:58:36.844Z"
+      }
+    ],
+    "Location": "Beijing, China",
+    "Type": "offline",
+    "CallForPaper": "https://acisinternational.org/wp-content/uploads/2024/05/SNPD2024CFP_V4.0.pdf"
+  },
+  {
+    "_id": "6639d33e8fb9939b82bceb01",
+    "Title": "International Conference on User Modelling, Adaptation, and Personalization (was AH and UM)",
+    "Acronym": "UMAP",
+    "Source": "CONFHUB",
+    "Rank": "B",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4608",
+    "Comments": "2",
+    "AverageRating": "5",
+    "Links": [
+      "https://www.um.org/umap2024/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-07-01T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:40:47.975Z"
+      },
+      {
+        "date": "2024-07-04T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:40:47.975Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-01-22T00:00:00.000Z",
+        "keyword": "Paper Abstract Submission",
+        "update_time": "2024-05-16T10:12:38.425Z"
+      },
+      {
+        "date": "2024-01-29T00:00:00.000Z",
+        "keyword": "Paper Abstract Submission",
+        "update_time": "2024-05-16T10:12:38.425Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-03-28T00:00:00.000Z",
+        "keyword": "Notification",
+        "update_time": "2024-05-16T10:12:38.425Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:07:42.700Z",
+    "updatedAt": "2024-06-01T03:40:47.975Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2024-05-09T00:00:00.000Z",
+        "keyword": "Camera-ready Submission",
+        "update_time": "2024-05-16T10:12:38.425Z"
+      }
+    ],
+    "Location": "Cagliari, Sardinia, Italy",
+    "Type": "offline",
+    "CallForPaper": "UMAP 2024 will adopt registration and presentation policies that must be followed by the authors of each accepted contribution. We invite prospective authors to carefully check them in the call before submitting. Any inquiries can be directed to umap2024-chair@um.org.\n\nThe 32nd International Conference on User Modeling, Adaptation, and Personalization (ACM UMAP 2024) is the premier international conference for researchers and practitioners working on systems that adapt to individual users or groups of users, and that collect, represent, and model user information. ACM UMAP 2024 is sponsored by ACM SIGCHI and SIGWEB. User Modeling Inc., as the core Steering Committee, oversees the conference organization. ACM UMAP operates under the ACM Conference Code of Conduct. The main conference proceedings, published by ACM, will be part of the ACM Digital Library.\n\nThe theme of ACM UMAP 2024 is “Collaboration and Cooperation for the Greater Good“. Specifically, we welcome submissions that highlight the impact that working together and synergy (such as between academia, industry, influential policy making bodies, committees and communities) can have on solving the world’s biggest problems; the focus is on investigations that capture how user modeling, personalization, and adaptation of (intelligent) systems, also with the use of large language models and generative AI, may influence user behavior, trustful processes and whether new models are required, for building sustainable and inclusive services and solutions that can address critical challenges of our world.\n\nWhile we encourage submissions related to this theme, the scope of the conference is not limited to the theme only. As always, contributions from academia, industry, and other organizations discussing open challenges or novel research approaches are expected to be supported by rigorous evidence appropriate to claims (e.g., user study, system evaluation, computational analysis).\n\nImportant Dates \nPaper Abstract Submission:\n\nJanuary 22, 2024 (mandatory)\n\nPaper Submission:\n\nJanuary 29, 2024\n\nNotification:\n\nMarch 28, 2024\n\nCamera-ready Submission (TAPS system):\n\nMay 9, 2024\n\nConference:\n\nJuly 1 – 4, 2024\n\nNote: the submissions deadlines are at 11:59 pm AoE (Anywhere on Earth) time.\n\nConference Tracks \n\nBelow you will find a detailed description of the focus of each conference track, as well as possible topics of interest associated with each track.\n\nPersonalized Recommender Systems\nCataldo Musto\n\nUniversity of Bari “Aldo Moro”, Italy\n\nDimitris Sacharidis\n\nUniversité Libre de Bruxelles, Belgium\n\nEva Zangerle\n\nUniversity of Innsbruck, Austria\n\nPersonalized, computer-generated recommendations have become a pervasive feature of today’s online world. From the traditional book and movie recommendations to suggestions of what we should eat and wear or where we should travel, recommender systems are seamlessly embedded in our daily lives. The underlying recommender systems are designed to help users and providers in a number of ways. From a user’s viewpoint, these systems assist humans by identifying relevant items or options (e.g., products, services, news articles, connections) within large collections. From a provider’s perspective, recommender systems have shown to be powerful tools to help users sift through massive information and steer consumer behavior. Regardless of who are the main stakeholders, the design of recommender systems requires careful consideration of various aspects, including the choice of the user modeling approach, the recommendation algorithm itself, and the user interface.\n\nRead More\nKnowledge Graphs, Semantics, Social and Adaptive Web\nDanilo Dessì\n\nKTS – GESIS Leibniz Institute for the Social Science, Germany\n\nElisabeth Lex\n\nGraz University of Technology, Austria\n\nPasquale Lops\n\nUniversity of Bari “Aldo Moro”, Italy\n\nThe use of graphs recently emerged as a natural and straightforward fashion to effectively model a broad range of phenomena and scenarios, ranging from the relationships in a social network to the elements encoded in a knowledge base, without forgetting their applications related to bioinformatics, web page searching, transportation, and navigation. \n\nResearch in the area of graphs typically includes: (i) schema design to represent data which will be modeled in the form of a graph; (ii) adding semantics to properties to the schema types and edges to make data meaningful and transform it into information (iii) reasoning over a graph to produce new information hidden behind the data; (iv) exploiting the information encoded in the graph for specific applications and use cases. All these aspects have triggered several heterogeneous research lines, that in turn significantly impacted user modeling, adaptation, and personalization.\n\nAs an example, the recent rise of knowledge graphs such as DBpedia and Wikidata has fueled the research in the area of adaptive web and personalized applications (e.g., recommender systems) by providing new and meaningful data points to model and represent all the actors (items, users, etc.) involved in the personalization process.\n\nRead More\nIntelligent User Interfaces\nAntonija Tanja Mitrovic\n\nUniversity of Canterbury, New Zealand\n\nLadislav Peška\n\nCharles University, Czechia\n\nBen Steichen\n\nCalifornia State Polytechnic University, USA\n\nUser modeling allows systems to provide personalized support to humans, unlocking a potential to accomplish a wider range of tasks and/or make their existing tasks more efficient and/or convenient. While such systems are envisioned to seamlessly complement human abilities, research shows that humans do not always make the best possible decisions when working together with computer systems. Intelligent user interfaces aim to make the interaction between computer systems and humans smarter, more usable, more efficient, and more effective.\n\nTypically, papers in this track explore the design, implementation, and evaluation of personalized/intelligent user-facing systems, interfaces, and interaction mechanisms. By designing and deploying improved forms of support for interactive collaboration between human decision makers and personalized systems, intelligent user interfaces enable decision making processes that better leverage the strengths of both collaborators. Beyond user modeling and personalization, papers in this track are encouraged to leverage solutions from human-computer interaction, data mining, natural language processing, information visualization, and/or knowledge representation and reasoning.\n\nRead More\nPersonalizing Learning Experiences through User Modeling\nElla Haig\n\nUniversity of Portsmouth, UK\n\nRoberto Martinez-Maldonado\n\nMonash University, Australia\n\nSherry Sahebi\n\nUniversity at Albany-SUNY, USA\n\nTechnology has become an integral aspect of the everyday practices of learning. Navigating the streams of information, acquiring new skills and competences, and developing knowledge ‘on the go’ in formal education, personal study, workplaces, personal development, and health, are increasingly valued and necessary. In fact, technological innovations bring new opportunities to support learners’ needs, to orchestrate and enable personalized learning solutions, feedback processes, learner-learner collaboration, social learning, and learner-algorithm interaction, with and without the involvement of the teacher. This opens up opportunities for innovation by modeling the cognitive, metacognitive, motivational, affective, social, and psychomotor aspects of learning that can improve the effectiveness of personalized learning experiences for learning progress and learner/teacher satisfaction.\n\nRead More\nFairness, Transparency, Accountability, and Privacy\nVito Walter Anelli\n\nPolytechnic University of Bari, Italy\n\nMaria Bielikova\n\nKempelen Institute of Intelligent Technologies, Slovakia\n\nDietmar Jannach\n\nUniversity of Klagenfurt, Austria\n\nResearchers and developers have a social responsibility to care about the impact of their technologies on individual people (users, providers, and other stakeholders) and on society. This involves building, maintaining, evaluating, and studying adaptive systems that are fair, ethical, beneficial to society, and in line with universal human rights. The importance of these topics is highlighted by their presence in ethical guidelines such as the ACM Code of Ethics, policy guidelines such as UNESCO’s Recommendation on the Ethics of Artificial Intelligence, as well as their influence on law and regulation such as the EU’s GDPR and the proposed AI Act.\n\nFollowing these developments, the track on “Fairness, Transparency, Accountability, and Privacy” seeks contributions dealing with ethical and social matters of adaptive and recommendation systems, such as fairness and privacy, as well as works addressing compliance with policies and regulations, such as requirements for transparency, accountability, and protection of sensitive data. The research trends in Generative AI, e.g. in Large Language Models (LLM), frequently overlook aspects related to Fairness and Trust. The track seeks studies that delve into the transparency, trustworthiness, fairness, and privacy of these systems, and those aimed at developing methods for LLMs to selectively forget certain information to respect the user/stakeholders needs.\n\nRead More\nPersonalization for Persuasive and Behavior Change Systems\nFederica Cena\n\nUniversity of Turin, Italy\n\nAlain Starke\n\nUniversity of Amsterdam, Netherlands\n\nJulita Vassileva\n\nUniversity of Saskatchewan, Canada\n\nTo address various societal problems, changing human behavior is crucial. Persuasive and Behaviour change systems are intentionally designed to support people to achieve behavior change objectives. Research in this area has advanced over the years attracting interest from both practitioners and researchers due to the increasing realization of the important role interactive technologies can play in assisting and motivating people to achieve their various goals and objectives.\n\nPersuasive and behavior change systems have applications in various domains including health and wellness, safety and security, environmental sustainability, education, and politics. For their personalization, persuasive and behavior change systems adapt and tailor the presented content or the decision context to increase their relevance, motivational appeal, or to enhance the user experience. The overall aim is to empower or assist people to achieve their goals, by exploiting user models and adapting systems. However, the persuasive use of personalizations on today’s large platforms or digital technologies is causing increasing concerns about behavior engineering that may harm users’ digital wellbeing, privacy  or autonomy. Personalized persuasive technology can be used to change user behaviour for unethical and exploitative purposes, for example, to achieve higher monetization in game design. Despite the recent advances, research in this area, where technology and theory should meet, is generally still in its infancy. \n\nRead More\nVirtual Assistants, Conversational Interactions, and Personalized Human-Robot Interaction\nBerardina Nadja De Carolis\n\nUniversity of Bari “Aldo Moro”, Italy\n\nFedelucio Narducci\n\nPolytechnic University of Bari, Italy\n\nSilvia Rossi\n\nUniversity of Naples Federico II, Italy\n\nVirtual assistants and conversational agents are being employed to support information search and exploration, as well as to mediate interaction with users. Human-robot interaction is also increasingly attracting attention as a new model to support user activity and empowerment, with particular attention to people with physical impairments, who can benefit from assistance during the execution of tasks. People may also be able to benefit from companionship provided by virtual assistants and robots. In both contexts, personalization is a key element to support the adaptation of an agent to personal interests, idiosyncrasies, and needs.\n\nRead More\nResearch Methods and Reproducibility\nAlejandro Bellogin\n\nUniversidad Autónoma de Madrid, Spain\n\nHui Fang\n\nShanghai University of Finance and Economics, China\n\nAlan Said\n\nUniversity of Gothenburg, Sweden\n\nResearch on user modeling and adaptive systems has greatly evolved during the last decades, but important challenges remain regarding the systematic comparison of different systems, the development of universally accepted and applied methodologies, and the use of standardized metrics to evaluate the acceptability and usefulness of systems to the user.\n\nThis track invites submissions on how research methods should be applied to personalized systems, in particular, when running benchmarks and measurement scales, with particular attention to the reproducibility of results and techniques. Furthermore, the track looks for submissions reporting new insights from reproducing and/or replicating existing works.\n\nRead More\nSubmission \n\nAll submissions must be written in English. Papers should be submitted electronically, in a PDF format, through the EasyChair submission system, https://easychair.org/conferences/?conf=umap24, by selecting the “UMAP24 Full and Short Papers” track.\n\nLength and Formatting \n\nFormat. We encourage two types of submissions (reviewers will comment on whether the size is appropriate for each contribution), in the ACM new single-column format.\n\nLong papers (14 pages at most plus additional pages for references; figures, tables, proofs, appendixes, acknowledgments, and any other content count toward the page limit) should report on substantial contributions of lasting value. They should reflect more complex innovations or studies and should have a more thorough discussion of related work. Each accepted long paper will be included in the main conference proceedings and presented in a plenary session as part of the main conference program.\nShort papers (7 pages at most plus additional pages for references; figures, tables, proofs, appendixes, acknowledgments, and any other content count toward the page limit) typically discuss exciting new work that is not yet mature enough for a long paper – they are not “work-in-progress” reports but rather complete reports on a smaller or simpler-to-describe but complete research work on advances that can be described, set into context, and evaluated concisely. In particular, novel but significant proposals will be considered for acceptance to this category despite not having gone through sufficient experimental validation or lacking strong theoretical foundation. Each accepted short paper will be included in the main conference proceedings and presented either as an oral presentation or at a poster session as part of the main conference program.\n\nWe recommend that supplementary material is linked to an external source using an anonymized link.\n\nAnonymity. Submissions must be anonymous, given that ACM UMAP uses a double-blind review process. Authors must omit their names and affiliations from submissions, and avoid obvious identifying statements. For instance, citations to the authors’ own prior work should be made in the third person. Failure to anonymize your submission could result in desk rejection.\n\nTemplates. Following the ACM Publication Workflow, all authors should submit manuscripts for review in the new ACM single-column format. Instructions for authors are given below:\n\nLaTeX (use \\documentclass[manuscript, review, anonymous]{acmart} in the sample-authordraft.tex file for single-column). Please carefully follow the ACM’s instructions for preparing your article with LaTeX.\nOverleaf (use \\documentclass[manuscript,review,anonymous]{acmart} for single-column). Please carefully follow the ACM’s instructions for preparing your article with Overleaf.\nWord. Please carefully follow the ACM’s instructions for preparing your article with Microsoft Word\n\nShould you have any questions or issues going through the instructions above, please contact support at acmtexsupport@aptaracorp.com for LaTeX and Microsoft Word inquiries.\n\nAccessibility. Authors are strongly encouraged to provide “alt text” (alternative text) for floats (images, tables, etc.) in their content so that readers with disabilities can be given descriptive information for these floats that are important to the work. The descriptive text will be displayed in place of a float if the float cannot be loaded. This benefits the author and it broadens the reader base for the author’s work. Moreover, the alt text provides in-depth float descriptions to search engine crawlers, which helps to properly index these floats. Additionally, authors should follow the ACM Accessibility Recommendations for Publishing in Color and SIG ACCESS guidelines on describing figures.\n\nSubmission Policy. All submissions and reviews will be handled electronically. ACM UMAP has a no dual submission policy, which is why submitted manuscripts should not be currently under review at another publication venue. Particularly, please consider the following ACM’s publication policies:\n\n“By submitting your article to an ACM Publication, you are hereby acknowledging that you and your co-authors are subject to all ACM Publications Policies, including ACM’s new Publications Policy on Research Involving Human Participants and Subjects. Alleged violations of this policy or any ACM Publications Policy will be investigated by ACM and may result in a full retraction of your paper, in addition to other potential penalties, as per ACM Publications Policy.”\n“Please ensure that you and your co-authors obtain an ORCID ID, so you can complete the publishing process for your accepted paper. ACM has been involved in ORCID from the start and we have recently made a commitment to collect ORCID IDs from all of our published authors. The collection process has started and will roll out as a requirement throughout 2022. We are committed to improve author discoverability, ensure proper attribution and contribute to ongoing community efforts around name normalization; your ORCID ID will help in these efforts.”\nContent Expectations \n\nOriginality and Significance. Papers should report on original and substantial contributions of lasting value. Described work should concern the theory and/or practice of UMAP. Moreover, papers showcasing the innovative use of UMAP and exploring the benefits and challenges of applying UMAP technology in real-life applications and contexts are welcome.\n\nCommisurated evaluation. Evaluations of proposed solutions/applications must be commensurate with the claims made in the paper. Depending on the intended contribution, this may include simulation studies, offline evaluations, A/B tests, or controlled user experiments.\n\nReproducibility. Research procedures and technical methods should be presented in sufficient detail to ensure scrutiny and reproducibility. We recognize that user data may be proprietary or confidential, but we encourage the sharing of (anonymized, cleaned) data sets, data collection procedures, and code.\n\nDiscussion and Implications. Results should be clearly communicated and implications of the contributions/findings for UMAP and beyond should be explicitly discussed.\n\nEthical & Human Subjects Considerations \n\nACM UMAP expects papers to include a discussion of the ethical considerations, as well as the impact of the presented work and/or its intended application, where appropriate. ACM UMAP further expects all authors to comply with ethical standards and regulatory guidelines associated with human subjects research, including research involving human participants and research using personally identifiable data. Papers reporting on such human subjects research must include a statement identifying any regulatory review the research is subject to (and identifying the form of approval provided), or explaining the lack of required review.\n\nReview Process & Camera-ready Submission \n\nReview. ACM UMAP uses a double-blind review process. Authors must omit their names and affiliations from their submissions; they should also avoid obvious identifying statements. For instance, citations to the authors’ prior work should be in the third person. Submissions not abiding by anonymity requirements will be desk rejected.\n\nReviewers will evaluate papers based on their significance, originality, rigor, and contribution to the field. Papers that are out of scope, incomplete, or lack sufficient evidence to support the basic claims, may be rejected without full review. Furthermore, reviewers will be asked to comment on whether the length is appropriate for the contribution. In addition, ACM UMAP 2024 will introduce a new “Raise Your Voice” stage during evaluation, offering a small window to authors to optionally discuss the initial decision of their submission, enhancing the transparency and quality of the reviewing process.\n\nThe ACM Code of Ethics gives the ACM UMAP program committee the right to (desk-)reject papers that perpetuate harmful stereotypes, employ unethical research practices, or uncritically present outcomes/implications that disadvantage minority communities. Further, reviewers will be explicitly asked to consider whether the research was conducted in compliance with professional ethical standards and applicable regulatory guidelines. Failure to do so could lead to a (desk-)rejection.\n\nCamera-ready Information. Accepted papers will be subject to further revision to meet the requirements of the camera-ready format required by ACM. We strongly recommend the usage of LaTeX/Overleaf for the camera-ready papers to minimize the extent of reformatting. Users of the Word template must use either the version for Microsoft Word for Windows, Macintosh Office 2011, or Macintosh Office 2016 (other formats such as Open Office, etc., are not admitted) for the camera-ready submission to avoid incompatibility issues.\n\nInstructions for preparing the camera-ready versions of accepted papers will be provided after acceptance. This might include instructions to prepare a video of the accepted contribution. Camera-ready versions of accepted papers will be later submitted using ACM’s new production platform where authors will be able to review PDF and HTML output formats before publication.\n\nRegistration and Presentation Policy \n\nEach accepted paper must be accompanied by a distinct full author registration, completed by the early registration date cut-off. Each accepted paper must be presented in person to be included in the conference proceedings, published by ACM and available via the ACM Digital Library. The official publication date is when the proceedings are made available in the ACM Digital Library. This date may be up to two weeks before the first day of UMAP 2024. The official publication date affects the deadline for any patent filings related to published work.\n\nProgram Chairs \nPanagiotis Germanakos, SAP SE, Germany\nElvira Popescu, University of Craiova, Romania\n\nContact information: umap2024-program at um.org"
+  },
+  {
+    "_id": "6639d35c8fb9939b82bceb1b",
+    "Title": "International Congress on Computational and Applied Mathematics",
+    "Acronym": "ICCAM",
+    "Source": "CONFHUB",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "none",
+    "PrimaryFoR": "4613",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://waset.org/computational-and-applied-mathematics-conference-in-december-2024-in-paris"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-12-30T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-05-22T13:59:36.441Z"
+      },
+      {
+        "date": "2024-12-31T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-05-22T13:59:36.446Z"
+      }
+    ],
+    "SubmissonDate": [
+      {
+        "date": "2024-06-13T00:00:00.000Z",
+        "keyword": "Abstracts/Full-Text Paper Submission Deadline",
+        "update_time": "2024-05-22T13:59:36.387Z"
+      }
+    ],
+    "NotificationDate": [
+      {
+        "date": "2024-07-01T13:59:36.492Z",
+        "keyword": "Notification of Acceptance/Rejection",
+        "update_time": "2024-05-22T13:59:36.492Z"
+      }
+    ],
+    "createdAt": "2024-05-07T07:08:12.710Z",
+    "updatedAt": "2024-05-22T13:59:36.569Z",
+    "__v": 0,
+    "CameraReady": [
+      {
+        "date": "2024-11-29T13:59:36.492Z",
+        "keyword": "Final Paper (Camera Ready) Submission & Early Bird Registration Deadline",
+        "update_time": "2024-05-22T13:59:36.492Z"
+      }
+    ],
+    "Location": "Paris, France", 
+    "Type": "online",  
+    "CallForPaper":  "Complex analysis and special functions\nComputational physics and chemistry\nComputational techniques in engineering \nConstructive techniques for solving ordinary and partial differential equations\nHigh Performance Computational Science and Engineering\nMathematical and Computational Methods in Science and Engineering\nMathematical finance\nMathematical programming and optimization\nNonlinear equations\nNumerical approximation and interpolation\nNumerical complex analysis\nNumerical linear algebra\nNumerical quadrature and integral equations\nNumerical software\nOperational research and optimization\nOrdinary differential equations\nParallel and high performance computing\nPartial differential equations\nQuadrature and integral equations\nApplications of Computational and Applied Mathematics\n\n          "
+  },
+  {
+    "_id": "6639d3698fb9939b82bceb27",
+    "Title": "International FLINS Conference on Robotics and Artificial Intelligence (was International Fuzzy Logic and Intelligent technologies in Nuclear Science Conference)",
+    "Acronym": "FLINS",
+    "Source": "CONFHUB",
+    "Rank": "C",
+    "Note": "none",
+    "DBLP": "none",
+    "PrimaryFoR": "4602",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://eventos.ucm.es/96182/detail/flins-iske-2024.html"
+    ],
+    "ConferenceDate": [
+     
+    ],
+    "SubmissonDate": [
+     
+    ],
+    "NotificationDate": [
+     
+    ],
+    "createdAt": "2024-05-07T07:08:25.786Z",
+    "updatedAt": "2024-05-22T14:57:27.020Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "", 
+    "Type": "offline",
+    "CallForPaper": ""
+  },
+  {
+    "_id": "6639d36b8fb9939b82bceb29",
+    "Title": "International Frontiers of Algorithmics Workshop",
+    "Acronym": "FAW",
+    "Source": "CONFHUB",
+    "Rank": "National: China",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4613",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "https://ijtcs2024.comp.polyu.edu.hk/"
+    ],
+    "ConferenceDate": [
+      {
+        "date": "2024-07-29T00:00:00.000Z",
+        "keyword": "Conference start",
+        "update_time": "2024-06-01T03:48:19.282Z"
+      },
+      {
+        "date": "2024-07-31T00:00:00.000Z",
+        "keyword": "Conference end",
+        "update_time": "2024-06-01T03:48:19.282Z"
+      }
+    ],
+    "SubmissonDate": [
+      
+    ],
+    "NotificationDate": [
+     
+    ],
+    "createdAt": "2024-05-07T07:08:27.939Z",
+    "updatedAt": "2024-06-01T03:48:19.283Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "The Hong Kong Polytechnic University, Hong Kong SAR, China",
+    "Type": "offline",
+    "CallForPaper": ""
+  },
+  {
+    "_id": "6639d37c8fb9939b82bceb37",
+    "Title": "International Joint Conference on Natural Language Processing",
+    "Acronym": "IJCNLP",
+    "Source": "CORE2023",
+    "Rank": "B",
+    "Note": "none",
+    "DBLP": "view",
+    "PrimaryFoR": "4602",
+    "Comments": "0",
+    "AverageRating": "N/A",
+    "Links": [
+      "http://www.ijcnlp-aacl2023.org/"
+    ],
+    "ConferenceDate": [
+     
+    ],
+    "SubmissonDate": [
+     
+    ],
+    "NotificationDate": [
+      
+    ],
+    "createdAt": "2024-05-07T07:08:44.926Z",
+    "updatedAt": "2024-06-01T03:48:37.395Z",
+    "__v": 0,
+    "CameraReady": [],
+    "Location": "",
+    "Type": "",
+    "CallForPaper": ""
+  }
+]
