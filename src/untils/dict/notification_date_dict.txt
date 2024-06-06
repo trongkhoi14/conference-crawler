@@ -1,220 +1,439 @@
-Acceptances announced for Full and Short Papers, Posters, Practice-oriented contributions, Technology Innovation, Symposia
-Acceptance notifications for full and short papers, posters, demos, and doctoral consortium papers
-First notification of acceptance/rejectionFinal notification after rebuttal phase
-Acceptance Notification DeadlineSpecial Session Acceptance Notification Deadline
-Notification of acceptance or rejection by the respective technical committees.
-Acceptance notifications for posters, demos, and doctoral consortium papers
-Notification of acceptance Revised versions of conditionally accepted papers
-Notification of Acceptance Papers for Regular, Demo, and Special Sessions
-Authors will be notified of acceptance no later than January 30, 2023
-On review list but no submission, no DBLP, no data, rerank to C Note
-Authors will be notified of acceptance on or before July 21, 2023.
-Decisions sent to authors (conditional acceptance or rejection)
+First round notification for journal-track papers, and notification of acceptance for all other types of submissions
+Research paper second submission round - Notification of accept/reject for revised submission
+SECOND RESEARCH TRACK CYCLE (SPRING/SUMMER) - Notifications of Decisions of Shepherded Papers
+Research paper first submission round - Notification of accept/reject for revised submission
+Research paper third submission round - Notification of accept/reject for revised submission
+FIRST RESEARCH TRACK CYCLE (FALL/WINTER) - Notifications of Decisions of Shepherded Papers
+Acceptance Notification of Regular, Special Session, Industrial and BMI Workshop Papers
+Research paper second submission round - Notification of accept/revise/reject
+Notifications given (accept with minor revisions/revise and resubmit/reject)
+Research paper third submission round - Notification of accept/revise/reject
+Research paper first submission round - Notification of accept/revise/reject
+Review by International Programme Committee and Notification of Acceptance
+Notification of acceptance for special sessions, workshops and tutorials
+Paper Notification (Full, Applied, Short, Demo and Resource papers)
+Paper acceptance cut-off date for inclusion in ECSCW 2024 Program
+SECOND RESEARCH TRACK CYCLE (SPRING/SUMMER) - Author Notification
+1st notification for papers submitted in the rebuttal procedure
+Notification for the Replicability Track Expression of Interest
 Authors will be notified of the decision and get final reviews
-Notification of authors about acceptance/rejection of workshop papers
-Asia Pacific Symposium on Intelligent and Evolutionary Systems
+FIRST RESEARCH TRACK CYCLE (FALL/WINTER) - Author Notification
 Acceptance notifications for full, short, and industry papers
-1st round review results (accept, minor revision, or reject)
+Second Wave Submissions - 1st Round Reviews and Notifications
+Final notification for all papers (with or without Rebuttal)
+Notification of review outcomes for second round submissions
+Second Review Cycle - Notification of early-rejection papers
+Final notification of Acceptance or Rejection after Rebuttal
 Paper, invited session and mini-course decision notification
-Notification of Reviewing Result – acceptance  or rejection
-Due dates and acceptance notifications for workshop papers
+First Wave Submissions - 1st Round Reviews and Notifications
+Notification of review outcomes for first round submissions
+Notification of acceptance for paper and extended abstracts
+First Review Cycle - Notification of early-rejection papers
+Notification of Acceptance: Tutorial and Workshop Proposal
+Research Papers 2nd Round Revision - Author Notification
+Decisions sent to authors (conditional accept or reject)
+Research Papers 1st Round Revision - Author Notification
+Notification Round 2 (Short + Journal First Papers only)
+Notification of pre-acceptance, peer reviewers’ comments
 Notification of acceptance/rejection of track proposals
+Work-in-Progress and Late Breaking Tracks: Notification
+Final Author Notification for Papers, Posters and Demos
+(Conditional) Acceptance notification for proceedings*
 Announcement of review results and workshop acceptance
-Acceptance notifications for workshops and tutorials
-Notification of acceptance of full technical papers
-Industry Expert Session Notifications of Acceptance
-Paper notification for all tracks of the conference
-Final decisions to authors - July Round (tentative)
-Final notifications for all Scientific submissions
-Notification to authors for all related categories
-The list of accepted papers is now available here
-Notifications to authors - July Round (tentative)
+Summer cycle - Author notification for Major Revision
+Notifications (Research, In-Use, and Resource Tracks)
+Short Papers & Application Notes - acceptance notice
+ROUND 1 - Notification of accept/reject/review again
+ROUND 4 - Notification of accept/reject/review again
+“Conditional Accept” revisions approval notification
+ROUND 2 - Notification of accept/reject/review again
+ROUND 3 - Notification of accept/reject/review again
+Short and Demo/Hybrid experience Papers Notification
+notification to Authors and opening of registrations
+Technical Paper acceptance decisions sent to authors
+Review release for full, short, and industry papers
+Main Conference Papers - Notification of Acceptance
+Paper Acceptance Notification (including workshops)
+Authors’ Notification on the review process results
+Fall cycle - Author notification for Major Revision
+Conference track - Final notifications (2nd round)
+Authors notified of decision regarding submission
+Second-round reviews sent to authors for feedback
+SECOND SUBMISSION CYCLE - Reviews sent to authors
 Notification of acceptance for extended abstracts
-Artifact notification ESOP, FASE, FoSSaCS, TACAS
-Authors are notified w.r.t. acceptance/rejection
-Notifications of Decisions of Shepherded Papers
-Notification of acceptance of auxiliary papers
-Regular/Short Paper Notification of Acceptance
-Notification to authors (Accept/Revise/Reject)
+1st Round: Notification (Accept/Revision/Reject)
+Notification of acceptance (long & short papers)
+FIRST SUBMISSION CYCLE - Reviews sent to authors
+Workshop, Fast Abstract, SRS papers notification
+February Round - Final Decisions Sent to Authors
+Cycle 1 - Notification (accept/reject/revision)
+Research Papers 2nd Round - Author Notification
+Research Papers 1st Round - Author Notification
+Cycle 2 - Notification (accept/reject/revision)
+Regular and Special Session Paper Notification
+Final decision notifications (Accept / Reject)
+Final acceptance notification for proceedings*
+ROUND 4 -  Final notification of accept/reject
 Notification of acceptance for standard papers
-Shifted to 21st March (submissions are closed)
-Final Author Notifications for All Categories
-14th March 2023 – Notification of acceptance
-Ph.D. Colloquium Notification of Acceptance
-Review Notification, Rebuttal Period Begins
-Talk and/or Poster Acceptance Notifications
+Second Wave Submissions - 2nd Round Decisions
+Notification of Acceptance for Regular Papers
+Notification of final acceptance or rejection
+Notification of Acceptance for Recent Results
+Notification of results of first review cycle
+ROUND 1 - Final notification of accept/reject
+ROUND 2 - Final notification of accept/reject
+ROUND 3 - Final notification of accept/reject
+Notifications for Late Breaking Short Papers
+Notification to Authors (1st CFP – new date)
+Acceptance notification for the second round
+Paper acceptance/rejection notification date
+Notification of acceptance for the 1st round
+February Round Notifications Sent to Authors
+Main Track (round 2) - Notification deadline
+Main Track (round 1) - Notification deadline
+Winter deadline - Notification of acceptance
+First Wave Submissions - 2nd Round Decisions
+Conference track - Notifications (1st round)
+Summer deadline - Notification of acceptance
+Acceptance notification for the first round
+November cycle - Notification of Acceptance
+Acceptance notification (all but workshops)
+Authors notifications and courses selection
+Notification Round 1 (Full and Short Paper)
+Doctoral Consortium Acceptance Notification
+Notification of Special Session Acceptance
+Notification of acceptance for Full Papers
+Notification (Round 2 and Major Revisions)
+November cycle - Early reject notification
 Notification of paper acceptance/rejection
-Notification of accept/reject/review again
-Workshop Proposal Acceptance Notification
+Notification of acceptance will be sent by
+Author Notification of Acceptance Decision
+First notification of acceptance/rejection
+Notification of acceptance for shepherding
+Final notification (artifact submissions)
+Paper notification (Full, Short, BNI, DS)
+Second Review Cycle - Author notification
+Conference papers acceptance notification
+2nd Round Deadline - Author Notification​
+Second Deadline - Acceptance notification
+Second submission deadline - Notification
+Notification of Regular Papers Acceptance
+Second Deadline - Acceptance Notification
+Artifact notification ESOP, FASE, FoSSaCS
+1st Round Deadline - Author Notification​
 author notification for all contributions
-Asia Pacific Conference on Communications
-Conference paper acceptance notification
-Author Notification of Revisions Round 1
-Technology Track Acceptance Notification
+Spring Deadline - Notification to authors
+First Review Cycle - Author notification
+First Deadline - Acceptance notification
+Third Deadline - Acceptance notification
 Notification of SRC acceptance/rejection
-Author Notification of Revisions Round 2
+First submission deadline - Notification
+Second call - Notification of acceptance
+First Deadline - Acceptance Notification
+Long papers - Notification of acceptance
+Final notification after rebuttal phase
+Notification of acceptance (Main Track)
+Fall Deadline - Notification to authors
+Journal track: First Round Notification
+The 2nd Round - Acceptance Notification
+The 1st Round - Acceptance Notification
+June cycle - Notification of Acceptance
+Announcement of Accepted Manuscript IDs
+Second submission - Author Notification
+First call - Notification of acceptance
+Notification of acceptance or rejection
 Notification of provisional acceptance
-Notification of Conditional Acceptance
+Notification of Acceptance or Rebuttal
+First submission - Author Notification
+1st Round - Notification of Acceptance
+June cycle - Early reject notification
+2nd Round - Notification of Acceptance
+Position Papers - Authors Notification
+Reviews completed and Authors notified
+Full papers notification of acceptance
+Second cycle - Notification to authors
+Second round reviews and notifications
+SECOND SUBMISSION CYCLE - Notification
+1st Call - Notifications of acceptance
 Notifications of Acceptance to Authors
-(Notification of Acceptance April 15)
-NotificationEarly reject notification
-Regular Paper Acceptance Notification
-Reviews available for author response
-Late Poster Acceptance Notifications
-Final Notification of Revised Papers
+Notification of acceptance/shepherding
+2nd Call - Notifications of acceptance
+Paper notification for the main track
+Regular Papers - Authors Notification
+Full Paper notification of acceptance
+Second Cycle: Acceptance Notification
+LNAI Acceptance notification EXTENDED
+First-round decisions sent to authors
+First round reviews and notifications
+FIRST SUBMISSION CYCLE - Notification
+Special Session Proposal Notification
+First cycle - Notification to authors
+Second deadline - Author Notification
+Workshop Paper Decision Notification
+Research Paper - Author Notification
+Notification of acceptance/rejection
+Round 1 - Notification of acceptance
+2nd Round Deadline - Early Rejection
+Research Track - Author notification
+1st Round Deadline - Early Rejection
+First deadline - Author Notification
 Notification of Acceptance/Rejection
-Notification to Workshop Organizers
-Notification to Tutorial Organizers
-Tutorial notification of acceptance
-Final notification of accept/reject
-Full papers acceptance notification
+First Cycle: Acceptance Notification
+Main Conference Author Notification
+2nd phase - Notification to authors
+Late Breaking Abstract Notification
+Notification of acceptance deadline
 Preliminary Notification to Authors
-Full Paper First Round Notification
+Short paper notification to authors
+Short paper acceptance notification
+R1 Author Notification of Revisions
 Conditional Acceptance Notification
-Notification of Paper's Acceptance
-Notification of reviews to authors
-Full Paper Acceptance Notification
-Full Paper Acceptance notification
-Notifications to Authors 1st round
-Notifications to Authors 2nd round
-Regular Paper Authors Notification
+Notification of Acceptance of Paper
+R2 Author Notification of Revisions
+Acceptance / Rejection Notification
+Full papers acceptance notification
+1st phase - Notification to authors
+TCHES Volume 2024/4 - Notification
+Winter cycle - author notification
+TCHES Volume 2024/1 - Notification
+Notification of Phase 1 rejections
+First stage decision notifications
+Round 1 - Notifications to authors
 Acceptance/rejection notifications
-Full and Short Paper Notification
-WiP / LB First Round Notification
-Notification – Research/ADS paper
-The notifications will be sent on
+Round 2 - Notifications to authors
+TCHES Volume 2024/2 - Notification
+TCHES Volume 2024/3 - Notification
+Tech track acceptance notification
+Full paper notification to authors
+Full paper acceptance notification
+Round One Notification to Authors*
+Summer cycle - Author notification
+Summer - Early reject notification
+Winter - Early reject notification
+Spring cycle - author notification
+Notifications to Authors 2nd round
+Notifications to Authors 1st round
+Author notification of acceptance
+Long and Short paper notification
+Notification of selection results
 Notification of poster acceptance
-Round Two Notification to Authors
-Acceptance/rejection notification
 Paper accept/reject notifications
-Notification of Paper Acceptance
-Abstract Acceptance Notification
-Tutorial Acceptance Notification
-Workshop Notification of authors
-Notification of Final Acceptance
-Workshop Acceptance Notification
+Presenters notified of acceptance
+Acceptance/Rejection Notification
+Second Notification of Acceptance
+Paper Notification (Second Round)
+Round Two Notification to Authors
+Spring - Notification to authors
 Notification of paper acceptance
-Round One Notification to Author
+Fall cycle - author notification
+USB-only acceptance notification
+Notification of Paper Acceptance
 Notification of Reviewing Result
-Notification – Workshop proposal
-Tutorial acceptance notification
+First Notification of Acceptance
+Notification of Paper acceptance
+Fall cycle - Author notification
+Summer - Notification to authors
 Workshop acceptance notification
-Notification Revised submission
-Doctoral Consortium Notiﬁcation
-Notification – KDD Cup proposal
-Notification of Acceptance Date
+Papers (Full/Short) Notification
+Workshop Acceptance Notification
+Paper Notification (First Round)
+Notification for major revisions
+Winter - Notification to authors
+Fall - Early reject notification
+second review cycle notification
+Abstract Acceptance Notification
+Short presentations notification
+Notification of final acceptance
+Preliminary author notification
+Reviews are released to authors
+Notification to authors - Paper
+Final decisions sent to authors
+Notification of Paper Decisions
+first review cycle notification
+Position - Authors Notification
+Full Papers - acceptance notice
+Notification of papers accepted
 Initial reviews sent to authors
+Notification of acceptance date
+Regular Paper Reviews to Author
+Decisions submitted to authors
+Poster acceptance notification
 Author Notification for Papers
-Workshop proposal notification
-Notifications of Decision Sent
-Notification of acceptance for
-Final notifications to authors
-Final reviews sent to authors
-CAMDA Acceptance Notification
-Workshop Authors Notification
-Final Acceptance Notification
-Paper Acceptance Notification
-Final notification to authors
-Tutorial/Workshop Notiﬁcation
+Papers Acceptance Notification
+Acceptance decision (expected)
+Regular - Authors Notification
+Fall - Notification to authors
+Paper Acceptance Notificatione
 Conference paper notification
 Paper acceptance notification
-Paper Submission Notification
+Final notification to authors
+Final Acceptance Notification
 Early rejection if applicable
-Demo acceptance notification
-Acceptance Notification Date
-Early Rejection Notification
+Issue 3 - Author notification
+Position Authors Notification
 Author Notification (Round 1)
+Final acceptance notification
+Workshop Authors Notification
+Issue 1 - Author notification
+Issue 2 - Author notification
+Notification of Accept/Reject
+Submitted Papers Notification
 Author Notification (Round 2)
-Author Notification (Round 2 - Final)
-Author Notification Round 1
+Conference Track Notification
+Issue 4 - Author notification
+Final reviews sent to authors
+Paper Acceptance Notification
+Paper decision notifications
+Acceptance Notification Date
+Winter - Author notification
+Information about acceptance
+Notification for Full Papers
+Summer - Author notification
+Early Rejection Notification
+Special Session notification
+Latest Tutorial Notification
+Latest Workshop Notification
+Main Track Notification Date
+Regular Authors Notification
+Author notification Deadline
+Final notification Round 3.
+Artifact final notification
+Reviews Released to Authors
+Paper decision notification
+Initial Author Notification
 Reviews released to authors
-Author Notification Round 2
-Notifications of acceptance
+Regular Papers Notification
 Final Decision Notification
-Final decisions to authors
-notification of acceptance
-NOTIFICATION OF ACCEPTANCE
+Paper Decision notification
+Summary reject notification
+Artifact notification TACAS
+Final notification Round 1.
+First Call Authors Notified
+Final Call Authors Notified
+[SHORT] Author notification
+Early Decision Notification
+Journal Track: Notification
+Author information deadline
+PhD Colloquium Notification
 Notification of Acceptance
+Fall - Author notification
 Notification of acceptance
+Acceptance Communicated by
+Review Result Notification
+[FULL] Author Notification
+notification of acceptance
+Notice of Paper Acceptance
 Expected notification date
-Final acceptance decision
+Nofitication of Acceptance
+Final notification Round 2
+Final notifications given
+Notification of decisions
 Early Reject Notification
 First review notification
-First round notification
-Acceptance notifications
-Scholarship Notification
-Paper Decisions Released
+Conference paper decision
+Review release to authors
+Early reject notification
+Final Author Notification
+Paper author notification
+Early Author Notification
+Final acceptance decision
 Notification of Decision
-Notifications to authors
-Full paper notifications
+Full Papers Notification
+First round notification
+Notifications (extended)
+Full papers notification
 Notification of decision
-Participant notification
-Notification to Authors*
-Notification to Authors
-List of accepted papers
-Reviews sent to authors
-Notification to authors
-acceptance notification
-ACCEPTANCE NOTIFICATION
-PACM final notification
-Paper Notification Date
+Acceptance Notifications
+Acceptance notifications
+2nd Round: Notification
+Announcement of Results
 Acceptance notification
+ACCEPTANCE NOTIFICATION
+acceptance notification
+notification of authors
+Notification to Authors
+Presenter notifications
 Acceptance Notification
 Full paper notification
-Decision Notification
+Reviews sent to authors
+Notification to authors
+Paper Notification Date
+Notification of authors
+Notification (Round 1)
+Notifications sent out
+R2 Author Notification
+Notification (cycle 1)
+R1 Author Notification
+Decision notifications
 Notification deadline
-Full Paper Acceptance
+R2 Author notifcation
+spring - notification
+Paper Review Feedback
+Decision notification
+Authors' Notification
 Authors' notification
+Decision Notification
+R1 Author notifcation
 Authors Notifications
-Earliest resubmission
+Camera-ready deadline
+Artifact notification
+Artifact Notification
+summer - notification
+Notification Deadline
+Preliminary Feedback
 Authors Notification
-Authors notification
-author notifications
-Results notification
-Authors are notified
-Author notifications
-Papers Notifications
-Round 2 notification
-Round 1 notification
+Journal notification
 Author Notifications
-Author notification
-Final reviews due
-Author Notification
-First notifications
-Abstract Acceptance
-Decisions announced
-author notification
-Latest resubmission
-Final Notifications
-Paper notifications
-Presenters notified
+author notifications
+Decisions to authors
+Authors notification
+Papers Notifications
+Notice of Acceptance
+Results notification
+Author notifications
+Notice of acceptance
 Final notifications
-ABSTRACT ACCEPTANCE
+Submission deadline
+Submission Deadline
+1st round decisions
+author notification
+Author Notification
+fall - notification
+Paper notifications
+Final Notifications
+Paper Notifications
+Decisions announced
+Author notification
+First notification
 Final Notification
 Author Notiﬁcation
-Author Notificatio
-Final notification
-Paper notification
-Notifications Sent
-Notifications sent
 Early Notification
+Paper notification
+Notifications Date
 Paper Notification
-Acceptance Notice
-Notification Date
-acceptance notice
+Final notification
+1st - Notification
+3rd - Notification
+Notifications Sent
+2nd - Notification
+Acceptance notice
 Notification date
+Notification Date
+All notifications
+Notifications on
 Notification Due
-Paper acceptance
 Paper Acceptance
-Early Rejection
-can't find info
-Author feedback
+Notification Day
+Paper acceptance
+Reviews Released
+Final acceptance
+Final decisions
 Final Decisions
 Notification of
 Notifications
-NOTIFICATIONS
-Notification
-NOTIFICATION
+Registration
 notification
+Notification
 Acceptance
 Decisions
+Decision

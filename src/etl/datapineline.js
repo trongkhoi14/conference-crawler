@@ -10,9 +10,9 @@ const dataPineline = async (conferenceId) => {
         if (conference.Links.length == 1) {
             const organizations = [
                 {
-                    name: conference.Location? conference.Location : "updating",
+                    name: "default",
                     location: conference.Location? conference.Location : "updating",
-                    // type: conference.Type? conference.Type : "updating",
+                    type: conference.Type? conference.Type : "updating",
                     start_date: conference.ConferenceDate[0]?.date,
                     end_date: conference.ConferenceDate[1]?.date
                 },
@@ -45,9 +45,31 @@ const dataPineline = async (conferenceId) => {
                 nkey: conference._id.toString(),
                 organizations: organizations? organizations : [""],
                 source: "CORE2023"
-            };
+            };  
+            console.log(processedConf)
 
-            postConference(processedConf)
+            await postConference(processedConf)
+            
+            setTimeout(() => {
+                console.log("waiting ... ");
+            }, 1000);
+        } else if (conference.Links.length == 0) {
+            
+            const processedConf = {
+                conf_name: conference.Title,
+                acronym: conference.Acronym,
+                callForPaper: "Not found",
+                link: "Not found",
+                rank: conference.Rank,
+                fieldsOfResearch: getFieldOfRearchName(conference.PrimaryFoR)
+                    ? [getFieldOfRearchName(conference.PrimaryFoR)]
+                    : ["none"],
+                nkey: conference._id.toString(),
+                source: "CORE2023"
+            };  
+            // console.log(processedConf)
+
+            await postConference(processedConf)
             
             setTimeout(() => {
                 console.log("waiting ... ");
@@ -64,6 +86,83 @@ const getFieldOfRearchName = (forCode) => {
         }
     }
     return null;
+};
+
+const dataPinelineAPI = async (conferenceId) => {
+    const allConference = await Conference.find({
+        _id: conferenceId,
+    });
+
+    for (const conference of allConference) {
+        if (conference.Links.length == 1) {
+            const organizations = [
+                {
+                    name: "default",
+                    location: conference.Location? conference.Location : "updating",
+                    type: conference.Type? conference.Type : "updating",
+                    start_date: conference.ConferenceDate[0]?.date,
+                    end_date: conference.ConferenceDate[1]?.date
+                },
+            ];
+            const importantDates = [
+                ...conference.SubmissonDate.map((item) => ({
+                    date_value: item.date,
+                    date_type: item.keyword,
+                })),
+                ...conference.NotificationDate.map((item) => ({
+                    date_value: item.date,
+                    date_type: item.keyword,
+                })),
+                ...conference.CameraReady.map((item) => ({
+                    date_value: item.date,
+                    date_type: item.keyword,
+                })),
+            ];
+
+            const processedConf = {
+                conf_name: conference.Title,
+                acronym: conference.Acronym,
+                callForPaper: conference.CallForPaper? conference.CallForPaper : "Not found",
+                link: conference.Links[0],
+                rank: conference.Rank,
+                fieldsOfResearch: getFieldOfRearchName(conference.PrimaryFoR)
+                    ? [getFieldOfRearchName(conference.PrimaryFoR)]
+                    : ["none"],
+                importantDates: importantDates? importantDates : [""],
+                nkey: conference._id.toString(),
+                organizations: organizations? organizations : [""],
+                source: "CORE2023"
+            };  
+            console.log(processedConf)
+
+            return await postConference(processedConf)
+            
+            setTimeout(() => {
+                console.log("waiting ... ");
+            }, 1000);
+        } else if (conference.Links.length == 0) {
+            
+            const processedConf = {
+                conf_name: conference.Title,
+                acronym: conference.Acronym,
+                callForPaper: "Not found",
+                link: "Not found",
+                rank: conference.Rank,
+                fieldsOfResearch: getFieldOfRearchName(conference.PrimaryFoR)
+                    ? [getFieldOfRearchName(conference.PrimaryFoR)]
+                    : ["none"],
+                nkey: conference._id.toString(),
+                source: "CORE2023"
+            };  
+            // console.log(processedConf)
+
+            return await postConference(processedConf)
+            
+            setTimeout(() => {
+                console.log("waiting ... ");
+            }, 1000);
+        }
+    }
 };
 
 const fieldOfRearchCategories = [
@@ -107,4 +206,5 @@ const fieldOfRearchCategories = [
 
 module.exports = {
     dataPineline,
+    dataPinelineAPI
 };

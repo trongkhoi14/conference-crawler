@@ -369,20 +369,80 @@ const scrapeConferencePage = async (
     return { submissionDate, conferenceDate, notificationDate, cameraReady };
 };
 
+const getIndexOfKeywordNearKeyround = (content, keyround, keyword) => {
+    // Hàm tìm tất cả các vị trí xuất hiện của một từ trong nội dung
+    const getAllIndexes = (str, subStr) => {
+        const indexes = [];
+        let index = str.indexOf(subStr);
+        while (index !== -1) {
+            if(str[index-1] != '/') {
+                indexes.push(index);
+            }
+            index = str.indexOf(subStr, index + subStr.length);
+        }
+        return indexes;
+    };
+
+    // Tìm tất cả các vị trí của keyword và keyround
+    const keywordIndexes = getAllIndexes(content, keyword);
+    const keyroundIndexes = getAllIndexes(content, keyround);
+
+    // Nếu không tìm thấy keyword hoặc keyround, trả về -1
+    if (keywordIndexes.length === 0 || keyroundIndexes.length === 0) {
+        return -1;
+    }
+
+    let closestKeywordIndex = -1;
+    let smallestDistance = Infinity;
+
+    // Tìm cặp keyword và keyround có khoảng cách gần nhau nhất
+    for (const keywordIndex of keywordIndexes) {
+        for (const keyroundIndex of keyroundIndexes) {
+            const distance = keywordIndex - keyroundIndex;
+            if (distance > 0 && distance < smallestDistance) {
+                smallestDistance = distance;
+                closestKeywordIndex = keywordIndex;
+            }
+        }
+    }
+
+    return closestKeywordIndex;
+};
+
 const extractDatesFromBody = async (
     keywords,
     bodyContent,
     dateArray,
     snapshotRange
 ) => {
-    for (const keyword of keywords) {
+    for (let keyword of keywords) {
+        let rootKeyword = keyword
+        let keyRound;
+        if(keyword.includes(" - ")) {
+            keyword = rootKeyword.split(" - ")[1]
+            keyRound = rootKeyword.split(" - ")[0]
+        }
         let index = bodyContent.indexOf(keyword);
-        while (index !== -1 && index < bodyContent.length) {
-            const snapshot = bodyContent.substring(
-                Math.max(0, index - snapshotRange),
-                index + keyword.length + snapshotRange * 2
-            );
+        let subBodyContent = bodyContent;
+        if(keyRound) {
+            index = getIndexOfKeywordNearKeyround(subBodyContent,keyRound, keyword)
+        }
+        while (index !== -1 && index < subBodyContent.length) {
+            let snapshot;
+            if(subBodyContent[index+keyword.length] == ':') {
+                snapshot = subBodyContent.substring(
+                    index,
+                    index + keyword.length + snapshotRange * 2
+                );
+            } else {
+                snapshot = subBodyContent.substring(
+                    Math.max(0, index - snapshotRange),
+                    index + keyword.length + snapshotRange * 2
+                );
+            }
+            
             const dateFinderResult = dateFinder(formatStringDate(snapshot));
+            /*
             if (
                 dateFinderResult.length > 0 &&
                 !isFakeNews(dateArray, keyword)
@@ -393,12 +453,28 @@ const extractDatesFromBody = async (
                         snapshot.indexOf(keyword),
                         keyword.length
                     ),
-                    keyword: keyword,
+                    keyword: rootKeyword,
                     update_time: new Date(),
                 });
                 break;
             }
-            index = bodyContent.indexOf(keyword, index + 1);
+            */
+            if (
+                dateFinderResult.length > 0
+            ) {
+                dateArray.push({
+                    date: findClosestDate(
+                        dateFinderResult,
+                        snapshot.indexOf(keyword),
+                        keyword.length
+                    ),
+                    index: index,
+                    keyword: rootKeyword,
+                    update_time: new Date(),
+                });
+                break;
+            }
+            index = subBodyContent.indexOf(keyword, index + 1);
         }
     }
 };

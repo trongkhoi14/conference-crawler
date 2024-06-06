@@ -162,26 +162,11 @@ const conferenceHasIncorrectLinks = [
 // ];
 
 const conferenceHasIncorrectLinks = [
-    "6639cf01c521b3f2ad6114af",
-    "6639cf26c521b3f2ad6114cf",
-    "6639cf34c521b3f2ad6114db",
-    "6639cf41c521b3f2ad6114e7",
-    "6639cf4cc521b3f2ad6114f1",
-    "6639cf5cc521b3f2ad611501",
-    "6639cf73c521b3f2ad611517",
-    "6639cf75c521b3f2ad611519",
-    "6639cf79c521b3f2ad61151d",
-    "6639cf7dc521b3f2ad611521",
-    "6639d0182aa97d8b88806035",
-    "6639d0232aa97d8b8880603f",
-    "6639c6d04c771c093141cbc2",
-    "6639c6d24c771c093141cbc4",
-    "6639c6db4c771c093141cbcc",
-    "6639c6e64c771c093141cbd6",
-    "6639c6f24c771c093141cbe2",
-    "6639c7014c771c093141cbf2",
-    "6639c7164c771c093141cc04",
-    "6639c71c4c771c093141cc0a",
+    "6639cebac521b3f2ad61146f",
+    "6639ced9c521b3f2ad61148b",
+    "6639cf0ac521b3f2ad6114b7",
+    "6639cf11c521b3f2ad6114bd",
+    "6639cf14c521b3f2ad6114bf",
 ];
 
 module.exports = conferenceHasIncorrectLinks;

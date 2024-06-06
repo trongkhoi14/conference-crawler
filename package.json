@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "engines": {
     "node": "20.10.0"
@@ -27,6 +27,7 @@
     "datefinder": "^1.0.4",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "form-data": "^4.0.0",
     "fs": "^0.0.1-security",
     "google-auth-library": "^9.6.3",
     "json2csv": "^6.0.0-alpha.2",
@@ -35,9 +36,15 @@
     "node-schedule": "^2.1.1",
     "nodemailer": "^6.9.10",
     "nodemon": "^3.0.2",
+    "ocr-space-api-alt2": "^2.0.1",
+    "ocr-space-api-wrapper": "^2.3.1",
     "puppeteer": "^21.6.1",
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-stealth": "^2.11.2",
-    "typescript": "^5.3.3"
+    "sharp": "^0.33.4",
+    "tesseract.js": "^4.1.1",
+    "text-from-image": "^1.1.1",
+    "typescript": "^5.3.3",
+    "webp-converter": "^2.3.3"
   }
 }

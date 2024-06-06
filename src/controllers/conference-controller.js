@@ -14,52 +14,185 @@ const conferenceHasIncorrectLinks = require("../config/IncorrectLink");
 const fs = require("fs");
 const { parse } = require("json2csv");
 const { parse: csvParse } = require("csv-parse/sync");
-const { isContainsAnyException, handleConferenceException } = require("../exceptions/conference-exception")
+const { parse: json2csv } = require("json2csv");
+const {
+    isContainsAnyException,
+    handleConferenceException,
+} = require("../exceptions/conference-exception");
+const { getImportantDates } = require("../rule/extractImportantDate-rule");
+const { getConferenceDates } = require("../rule/extractConferenceDate-rule");
 
 const crawlController = async (browserInstance) => {
     try {
         // Create browser
-        let browser = await browserInstance;
+        // let browser = await browserInstance;
 
         //await crawlAllConferencesDetail(browser);
         // await processConferenceError(browser);
 
         // await lastHope();
-        await getCallForPaper(browser);
+        // await getCallForPaper(browser);
+
+        // ETL dữ liệu vừa cào sang postgre
+        // await etlDataToPostgre()
+
+        // const importantDate = await getImportantDates(browser,"https://keod.scitevents.org/")
+        // console.log(importantDate)
+        // const conferenceDate = await getConferenceDates(browser,"https://ic3k.scitevents.org/")
+        // const conferenceDate = await getConferenceDates(browser,"https://keod.scitevents.org/")
         
+        // console.log(conferenceDate)
+        // filterInvalidConferences()
+
+        await dataPineline("6639d5594fd45eb8c2e670b4");
+
     } catch (error) {
         console.log("Error in crawlController: " + error);
     }
 };
 
-const getConferenceType = async (browser) => {
-    const allConferences = await Conference.find({})
+const saveKeywordsToFile = async () => {
+    try {
+        const conferences = await Conference.find();
 
-    console.log(allConferences.length)
-    for(let i=0; i<100; i++) {
-        console.log(allConferences[i]._id + " " + i)
-        let confType = await webScraperService.getConferenceType(browser, allConferences[i])
-        if(confType !== '') {
+        let submissionDateKeywords = new Set();
+        let notificationDateKeywords = new Set();
+        let cameraReadyKeywords = new Set();
+
+        conferences.forEach(conference => {
+            conference.SubmissonDate.forEach(item => {
+                submissionDateKeywords.add(item.keyword);
+            });
+            conference.NotificationDate.forEach(item => {
+                notificationDateKeywords.add(item.keyword);
+            });
+            conference.CameraReady.forEach(item => {
+                cameraReadyKeywords.add(item.keyword);
+            });
+        });
+
+        // Convert sets to arrays and join them into strings
+        submissionDateKeywords = Array.from(submissionDateKeywords).join('\n');
+        notificationDateKeywords = Array.from(notificationDateKeywords).join('\n');
+        cameraReadyKeywords = Array.from(cameraReadyKeywords).join('\n');
+
+        // Write the keywords to files
+        fs.writeFileSync('./submission_date_keywords.txt', submissionDateKeywords);
+        fs.writeFileSync('./notification_date_keywords.txt', notificationDateKeywords);
+        fs.writeFileSync('./camera_ready_keywords.txt', cameraReadyKeywords);
+
+        console.log('Keywords saved to files successfully.');
+    } catch (error) {
+        console.error('Error saving keywords to files: ', error);
+    }
+};
+
+const isKeywordInvalid = (keyword) => {
+    if (!keyword) return false;  // Kiểm tra keyword không phải là undefined hoặc null
+    const hasColon = keyword.includes(':');
+    const hasInvalidDash = keyword.includes('-') && !keyword.includes(' - ');
+    
+    return keyword.includes("+")
+    return hasColon || hasInvalidDash;
+};
+
+const filterInvalidConferences = async () => {
+    try {
+        const conferences = await Conference.find();
+        let invalidConferenceIds = [];
+
+        conferences.forEach(conference => {
+            let hasInvalidKeyword = false;
+
+            conference.SubmissonDate.forEach(item => {
+                if (isKeywordInvalid(item.keyword)) {
+                    hasInvalidKeyword = true;
+                }
+            });
+            conference.NotificationDate.forEach(item => {
+                if (isKeywordInvalid(item.keyword)) {
+                    hasInvalidKeyword = true;
+                }
+            });
+            conference.CameraReady.forEach(item => {
+                if (isKeywordInvalid(item.keyword)) {
+                    hasInvalidKeyword = true;
+                }
+            });
+
+            if (hasInvalidKeyword) {
+                invalidConferenceIds.push(conference._id.toString());
+            }
+        });
+
+        // Write invalid conference IDs to a file
+        fs.writeFileSync('./invalid_conference_ids.txt', invalidConferenceIds.join('\n'));
+
+        console.log('Invalid conference IDs saved to file successfully.');
+    } catch (error) {
+        console.error('Error saving invalid conference IDs to file: ', error);
+    }
+};
+
+
+
+
+const etlDataToPostgre = async () => {
+    let conferenceIds = [];
+
+    const fileContent = fs.readFileSync("LastHope.csv", "utf8");
+    const existingData = csvParse(fileContent, { columns: true });
+
+    for (const row of existingData) {
+        conferenceIds.push(row.conference_id);
+    }
+    console.log(conferenceIds.length);
+    for (let i = 800; i < 968; i++) {
+        console.log(i);
+        await dataPineline(conferenceIds[i]);
+
+        setTimeout(() => {}, 1000);
+    }
+    console.log("okeeeeee");
+
+    // await dataPineline(conferenceIds[966]);
+};
+
+const getConferenceType = async (browser) => {
+    const allConferences = await Conference.find({});
+
+    console.log(allConferences.length);
+    for (let i = 0; i < 100; i++) {
+        console.log(allConferences[i]._id + " " + i);
+        let confType = await webScraperService.getConferenceType(
+            browser,
+            allConferences[i]
+        );
+        if (confType !== "") {
             await Conference.findByIdAndUpdate(allConferences[i]._id, {
-                Type: confType
-            })
-            console.log("Update conference type successfully")
+                Type: confType,
+            });
+            console.log("Update conference type successfully");
             await dataPineline(allConferences[i]._id);
         }
     }
-}
+};
 
 const savePageContent = async (browser) => {
-    const filePath = 'EvaluationDataset.csv';
-    const fileContent = fs.readFileSync(filePath, 'utf8');
+    const filePath = "EvaluationDataset.csv";
+    const fileContent = fs.readFileSync(filePath, "utf8");
     const existingData = csvParse(fileContent, { columns: true });
 
     // Filter rows where machine equals human
-    const filteredData = existingData.filter(row => row.machine === row.human && row.machine !== 'link 5');
+    const filteredData = existingData.filter(
+        (row) => row.machine === row.human && row.machine !== "link 5"
+    );
 
     for (let i = 98; i < 100; i++) {
         console.log(i);
-        const currentConference = await Conference.findOne({ _id: filteredData[i].conference_id });
+        const currentConference = await Conference.findOne({
+            _id: filteredData[i].conference_id,
+        });
 
         const dirPath = `./dataset/${currentConference.Acronym}`;
         // Ensure the directory exists
@@ -69,60 +202,68 @@ const savePageContent = async (browser) => {
 
         // link 1
         let page = await browser.newPage();
-        await page.goto(filteredData[i].link1, { waitUntil: "domcontentloaded" });
+        await page.goto(filteredData[i].link1, {
+            waitUntil: "domcontentloaded",
+        });
         let bodyContent = await page.content();
         let fileSavePath = `${dirPath}/${currentConference.Acronym}_link1.html`;
 
         fs.writeFile(fileSavePath, bodyContent, (err) => {
             if (err) {
-                console.error('Error writing file:', err);
+                console.error("Error writing file:", err);
             } else {
-                console.log('File saved successfully!');
+                console.log("File saved successfully!");
             }
         });
         await page.close();
 
         // link 2
         page = await browser.newPage();
-        await page.goto(filteredData[i].link2, { waitUntil: "domcontentloaded" });
+        await page.goto(filteredData[i].link2, {
+            waitUntil: "domcontentloaded",
+        });
         bodyContent = await page.content();
         fileSavePath = `${dirPath}/${currentConference.Acronym}_link2.html`;
 
         fs.writeFile(fileSavePath, bodyContent, (err) => {
             if (err) {
-                console.error('Error writing file:', err);
+                console.error("Error writing file:", err);
             } else {
-                console.log('File saved successfully!');
+                console.log("File saved successfully!");
             }
         });
         await page.close();
 
         // link 3
         page = await browser.newPage();
-        await page.goto(filteredData[i].link3, { waitUntil: "domcontentloaded" });
+        await page.goto(filteredData[i].link3, {
+            waitUntil: "domcontentloaded",
+        });
         bodyContent = await page.content();
         fileSavePath = `${dirPath}/${currentConference.Acronym}_link3.html`;
 
         fs.writeFile(fileSavePath, bodyContent, (err) => {
             if (err) {
-                console.error('Error writing file:', err);
+                console.error("Error writing file:", err);
             } else {
-                console.log('File saved successfully!');
+                console.log("File saved successfully!");
             }
         });
         await page.close();
 
         // link 4
         page = await browser.newPage();
-        await page.goto(filteredData[i].link4, { waitUntil: "domcontentloaded" });
+        await page.goto(filteredData[i].link4, {
+            waitUntil: "domcontentloaded",
+        });
         bodyContent = await page.content();
         fileSavePath = `${dirPath}/${currentConference.Acronym}_link4.html`;
 
         fs.writeFile(fileSavePath, bodyContent, (err) => {
             if (err) {
-                console.error('Error writing file:', err);
+                console.error("Error writing file:", err);
             } else {
-                console.log('File saved successfully!');
+                console.log("File saved successfully!");
             }
         });
         await page.close();
@@ -130,7 +271,7 @@ const savePageContent = async (browser) => {
 };
 
 const updateCSVConferenceLinks = async (browser) => {
-    const filePath = 'formatted_conferences.csv';
+    const filePath = "formatted_conferences.csv";
 
     // Read existing CSV data
     if (!fs.existsSync(filePath)) {
@@ -138,32 +279,42 @@ const updateCSVConferenceLinks = async (browser) => {
         return;
     }
 
-    const fileContent = fs.readFileSync(filePath, 'utf8');
+    const fileContent = fs.readFileSync(filePath, "utf8");
     const existingData = csvParse(fileContent, { columns: true });
 
     // Iterate through each row to update links if newColumn is 'link 5'
     for (const row of existingData) {
-        if (row.newColumn === 'link 5') {
+        if (row.newColumn === "link 5") {
             try {
                 const conference = await Conference.findOne({ _id: row.j_id });
                 if (!conference) {
-                    console.error(`Conference with j_id ${row.j_id} not found.`);
+                    console.error(
+                        `Conference with j_id ${row.j_id} not found.`
+                    );
                     continue;
                 }
 
-                const conferenceLinks = await webScraperService.searchConferenceLinks(browser, conference, 8);
+                const conferenceLinks =
+                    await webScraperService.searchConferenceLinks(
+                        browser,
+                        conference,
+                        8
+                    );
                 if (conferenceLinks.length === 8) {
-                    row.link5 = conferenceLinks[4] || '';
-                    row.link6 = conferenceLinks[5] || '';
-                    row.link7 = conferenceLinks[6] || '';
-                    row.link8 = conferenceLinks[7] || '';
+                    row.link5 = conferenceLinks[4] || "";
+                    row.link6 = conferenceLinks[5] || "";
+                    row.link7 = conferenceLinks[6] || "";
+                    row.link8 = conferenceLinks[7] || "";
                 }
             } catch (error) {
-                console.error(`Error updating conference with j_id ${row.j_id}:`, error);
-                row.link5 = '';
-                row.link6 = '';
-                row.link7 = '';
-                row.link8 = '';
+                console.error(
+                    `Error updating conference with j_id ${row.j_id}:`,
+                    error
+                );
+                row.link5 = "";
+                row.link6 = "";
+                row.link7 = "";
+                row.link8 = "";
             }
         }
     }
@@ -175,7 +326,7 @@ const updateCSVConferenceLinks = async (browser) => {
     try {
         const csv = parse(existingData, opts);
         fs.writeFileSync(filePath, csv);
-        console.log('CSV file has been updated successfully.');
+        console.log("CSV file has been updated successfully.");
     } catch (err) {
         console.error(err);
     }
@@ -287,64 +438,63 @@ const formatEvaluationDataset = () => {
 };
 
 const lastHope = async () => {
-    
-    let result = []
-    for (let i = 0; i < conferenceHasIncorrectLinks.length; i++) {
-        const currentConference = await Conference.findOne({_id: conferenceHasIncorrectLinks[i]})
-        result.push(currentConference)
-    }
-    // Convert result to JSON string
-    const jsonString = JSON.stringify(result, null, 2); // Pretty print with 2 spaces
-    // Save JSON to file
-    fs.writeFile('result.json', jsonString, (err) => {
-        if (err) {
-            console.error('Error writing to JSON file', err);
-        } else {
-            console.log('JSON file has been saved.');
-        }
-    });
-    
-    
-    // const data = fs.readFileSync('result.json', 'utf-8');
-    // const conferences = JSON.parse(data);
-    // console.log(conferences.length)
-    // for (let conference of conferences) {
-    //     await Conference.updateOne(
-    //       { _id: conference._id }, // Match by the _id field
-    //       { $set: conference },
-    //       { upsert: false } // Insert if not found
-    //     );
+    // let result = []
+    // for (let i = 0; i < conferenceHasIncorrectLinks.length; i++) {
+    //     const currentConference = await Conference.findOne({_id: conferenceHasIncorrectLinks[i]})
+    //     result.push(currentConference)
     // }
-    // console.log('Database update complete.');
+    // // Convert result to JSON string
+    // const jsonString = JSON.stringify(result, null, 2); // Pretty print with 2 spaces
+    // // Save JSON to file
+    // fs.writeFile('result.json', jsonString, (err) => {
+    //     if (err) {
+    //         console.error('Error writing to JSON file', err);
+    //     } else {
+    //         console.log('JSON file has been saved.');
+    //     }
+    // });
+
+    const data = fs.readFileSync("result.json", "utf-8");
+    const conferences = JSON.parse(data);
+    console.log(conferences.length);
+    for (let conference of conferences) {
+        // await Conference.updateOne(
+        //     { _id: conference._id }, // Match by the _id field
+        //     { $set: conference },
+        //     { upsert: false } // Insert if not found
+        // );
+        await dataPineline(conference._id);
+    }
     
-}
+    console.log("Database update complete.");
+};
 
 const getCallForPaper = async (browser) => {
-    const link = "https://lrec-coling-2024.org/1st-call-for-papers/"
+    const link = "https://sighpc.ipsj.or.jp/HPCAsia2024/cfp.html";
     const page = await browser.newPage();
     await page.goto(link, { waitUntil: "domcontentloaded" });
-    await page.waitForSelector("#content");
+    await page.waitForSelector("main");
 
-    let data = await page.$$eval("#content", (els) => {
+    let data = await page.$$eval("main", (els) => {
         return els.map((el) => {
             return el.innerText;
         });
     });
-    
-    console.log(data)
-    console.log(data.length)
+
+    console.log(data);
+    console.log(data.length);
     // Convert the data array to a CSV format
     const jsonString = JSON.stringify(data, null, 2); // Pretty print with 2 spaces
 
     // Save the JSON to a file
-    fs.writeFile('callforpaper.json', jsonString, (err) => {
+    fs.writeFile("callforpaper.json", jsonString, (err) => {
         if (err) {
-            console.error('Error writing to JSON file', err);
+            console.error("Error writing to JSON file", err);
         } else {
-            console.log('JSON file has been saved.');
+            console.log("JSON file has been saved.");
         }
     });
-}
+};
 
 const getEvaluationDataset = async (browser) => {
     const allConferences = await Conference.find({});
@@ -489,12 +639,14 @@ const getConferencesToUpdate = async (lastUpdateTime, errorConferences) => {
     })
         .sort({ updatedAt: 1 })
         .limit(100);
-    let result = []
+    let result = [];
     for (let i = 0; i < conferenceHasIncorrectLinks.length; i++) {
-        const currentConference = await Conference.findById(conferenceHasIncorrectLinks[i])
-        result.push(currentConference)
+        const currentConference = await Conference.findById(
+            conferenceHasIncorrectLinks[i]
+        );
+        result.push(currentConference);
     }
-    return result
+    return result;
 };
 
 const updateLastUpdateTime = async (lastUpdateTimeDoc) => {
@@ -507,12 +659,17 @@ const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const processConference = async (browser, conference) => {
     console.log(conference._id);
 
-    let isCrawlSuccess = false
+    let isCrawlSuccess = false;
 
-    if(conference.Links.length === 1 && isContainsAnyException(conference.Links[0])) {
-        isCrawlSuccess = await handleConferenceException(browser, conference._id);
-    }
-    else {
+    if (
+        conference.Links.length === 1 &&
+        isContainsAnyException(conference.Links[0])
+    ) {
+        isCrawlSuccess = await handleConferenceException(
+            browser,
+            conference._id
+        );
+    } else {
         let fullInformationPoint = conference.Links.length > 1 ? 3 : 2;
         isCrawlSuccess = await webScraperService.getConferenceDetails(
             browser,
@@ -522,7 +679,7 @@ const processConference = async (browser, conference) => {
     }
     isCrawlSuccess = true;
 
-    // await webScraperService.getLocation(browser, conference)
+    await webScraperService.getLocation(browser, conference)
     // const isGetConferenceDate = await webScraperService.getConferenceDate(browser, conference)
     if (isCrawlSuccess) {
         await dataPineline(conference._id);
@@ -548,8 +705,8 @@ const crawlAllConferencesDetail = async (browser) => {
         for (const conference of allConferences) {
             try {
                 await processConference(browser, conference);
-                console.log(i)
-                i++
+                console.log(i);
+                i++;
             } catch (conferenceError) {
                 console.log(
                     `Error processing conference ${conference._id}:`,
