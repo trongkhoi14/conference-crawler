@@ -9,11 +9,14 @@ const startBrowser = async () => {
                 ? process.env.PUPPETEER_EXECUTABLE_PATH
                 : puppeteer.executablePath(),
             //Không hiển thị GUI lên
-            headless: false,
+            headless: "new",
             defaultViewport: false,
-            args: ["--disable-setuid-sandbox"],
+            args: [
+                "--disable-setuid-sandbox",
+                "--no-sandbox",
+                "--no-zygote",
+              ],
             'ignoreHTTPSErrors': true,
-            product: 'chrome'
         })
         
     } catch (error) {
