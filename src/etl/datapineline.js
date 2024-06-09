@@ -118,7 +118,6 @@ const dataPinelineAPI = async (conferenceId) => {
                     date_type: item.keyword,
                 })),
             ];
-
             const processedConf = {
                 conf_name: conference.Title,
                 acronym: conference.Acronym,
@@ -133,13 +132,9 @@ const dataPinelineAPI = async (conferenceId) => {
                 organizations: organizations? organizations : [""],
                 source: "CORE2023"
             };  
-            console.log(processedConf)
 
             return await postConference(processedConf)
-            
-            setTimeout(() => {
-                console.log("waiting ... ");
-            }, 1000);
+
         } else if (conference.Links.length == 0) {
             
             const processedConf = {
@@ -154,13 +149,8 @@ const dataPinelineAPI = async (conferenceId) => {
                 nkey: conference._id.toString(),
                 source: "CORE2023"
             };  
-            // console.log(processedConf)
 
             return await postConference(processedConf)
-            
-            setTimeout(() => {
-                console.log("waiting ... ");
-            }, 1000);
         }
     }
 };

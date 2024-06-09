@@ -37,9 +37,25 @@ const crawlController = async (browserInstance) => {
         // ETL dữ liệu vừa cào sang postgre
         // await etlDataToPostgre()
 
-        // const importantDate = await getImportantDates(
-        //     browser,"http://amsta-24.kesinternational.org/index.php")
-        // console.log(importantDate)
+        const importantDate = await getImportantDates(
+            browser,"http://amsta-24.kesinternational.org/index.php")
+        
+        const dateArr = [
+            ...importantDate.submissionDate.map((item) => ({
+                date_value: item.date,
+                date_type: item.keyword,
+            })),
+            ...importantDate.notificationDate.map((item) => ({
+                date_value: item.date,
+                date_type: item.keyword,
+            })),
+            ...importantDate.cameraReady.map((item) => ({
+                date_value: item.date,
+                date_type: item.keyword,
+            })),
+        ];
+
+        // console.log(dateArr)
         // const conferenceDate = await getConferenceDates(browser,"https://ic3k.scitevents.org/")
         // const conferenceDate = await getConferenceDates(browser,"https://ic3k.scitevents.org/")
 
@@ -54,7 +70,9 @@ const crawlController = async (browserInstance) => {
 
         // await saveEvaluationDataset(browser)
 
-        await savePageContent(browser)
+        // await savePageContent(browser)
+
+       
 
     } catch (error) {
         console.log("Error in crawlController: " + error);
@@ -74,7 +92,7 @@ const saveEvaluationDataset = async (browser) => {
 
     const results = [];
 
-    for (let i=0; i<100; i++) {
+    for (let i=900; i<967; i++) {
         console.log(i)
         const conference = await Conference.findOne({ _id: conferenceIds[i] });
 

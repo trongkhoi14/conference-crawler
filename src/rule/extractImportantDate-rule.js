@@ -3,7 +3,7 @@ const webScraperService = require("../services/web-scraper-service");
 const { convertImageToText } = require("../untils/convert")
 
 const unwantedSelectors = [
-    // "s", "del", "strike", "button",
+    "s", "del", "strike", "button",
     ".cancel", ".title",
     "*[style*='text-decoration: line-through']",
 ];

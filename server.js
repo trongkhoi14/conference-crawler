@@ -3,8 +3,10 @@ const { crawlController, crawlAllConferencesDetail } = require('./src/controller
 const { notificationController } = require('./src/controllers/notification-controller')
 const { dataPinelineAPI } = require('./src/etl/datapineline')
 const dbConnect = require('./src/config/dbconnect');
+const { scrapeConference } = require('./src/controllers/pineline-controller')
 var cron = require('node-cron');
 const express = require('express');
+const cookieParser = require('cookie-parser')
 
 const main = async () => {
     // Connect to database
@@ -14,7 +16,7 @@ const main = async () => {
     let browser = startBrowser();
 
     // Crawl data
-    crawlController(browser);
+    await crawlController(browser);
     // notificationController();
     // Notification
     // notificationController();
@@ -25,12 +27,17 @@ const main = async () => {
     // }, {
     //     timezone: "Asia/Ho_Chi_Minh" // Đặt múi giờ cho lịch
     // });
+};  
 
-};
-
-main();
+// main();
 
 const app = express()
+const port = process.env.PORT || 8081
+
+app.use(cookieParser())
+
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
 
 // app.get('/', async (req, res) => {
 //     await dbConnect()
@@ -40,16 +47,7 @@ const app = express()
 //     })
 // })
 
-app.get('/pineline/:id', async (req, res) => {
-    const confid = req.params;
-    await dbConnect();
-
-    const result = await dataPinelineAPI(confid)
-
-    res.status(200).json({
-        message: result
-    })
-})
+app.get('/api/scrape/conference/:id', scrapeConference)
 
 app.listen(process.env.PORT, ()=> {
     console.log(`Server was running on port ${process.env.PORT}`)
