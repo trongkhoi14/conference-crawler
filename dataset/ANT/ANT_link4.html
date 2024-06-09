@@ -1,715 +1,256 @@
-<!DOCTYPE html><html class="zh_CN"><head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Site description here">  <meta name="keywords" content="keyword1,keyword2">  <title>[CALL FOR PAPERS] 2023 East Asian Anthropological Association Annual Meeting at CUHK | 香港中文大學人類學系</title>
-  <link rel="shortcut icon" href="https://www.arts.cuhk.edu.hk/~ant/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="https://www.arts.cuhk.edu.hk/~ant/favicon.ico" type="image/x-icon">
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-<link rel="dns-prefetch" href="//s.w.org">
-		<!-- This site uses the Google Analytics by ExactMetrics plugin v7.18.1 - Using Analytics tracking - https://www.exactmetrics.com/ -->
-							<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=AW-677555576&amp;l=dataLayer&amp;cx=c"></script><script src="//www.googletagmanager.com/gtag/js?id=G-1TY5BV9M1P" data-cfasync="false" data-wpfc-render="false" type="text/javascript" async=""></script>
-			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
-				var em_version = '7.18.1';
-				var em_track_user = true;
-				var em_no_track_reason = '';
-				
-								var disableStrs = [
-										'ga-disable-G-1TY5BV9M1P',
-									];
-
-				/* Function to detect opted out users */
-				function __gtagTrackerIsOptedOut() {
-					for (var index = 0; index < disableStrs.length; index++) {
-						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
-							return true;
-						}
-					}
-
-					return false;
-				}
-
-				/* Disable tracking if the opt-out cookie exists. */
-				if (__gtagTrackerIsOptedOut()) {
-					for (var index = 0; index < disableStrs.length; index++) {
-						window[disableStrs[index]] = true;
-					}
-				}
-
-				/* Opt-out function */
-				function __gtagTrackerOptout() {
-					for (var index = 0; index < disableStrs.length; index++) {
-						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
-						window[disableStrs[index]] = true;
-					}
-				}
-
-				if ('undefined' === typeof gaOptout) {
-					function gaOptout() {
-						__gtagTrackerOptout();
-					}
-				}
-								window.dataLayer = window.dataLayer || [];
-
-				window.ExactMetricsDualTracker = {
-					helpers: {},
-					trackers: {},
-				};
-				if (em_track_user) {
-					function __gtagDataLayer() {
-						dataLayer.push(arguments);
-					}
-
-					function __gtagTracker(type, name, parameters) {
-						if (!parameters) {
-							parameters = {};
-						}
-
-						if (parameters.send_to) {
-							__gtagDataLayer.apply(null, arguments);
-							return;
-						}
-
-						if (type === 'event') {
-														parameters.send_to = exactmetrics_frontend.v4_id;
-							var hookName = name;
-							if (typeof parameters['event_category'] !== 'undefined') {
-								hookName = parameters['event_category'] + ':' + name;
-							}
-
-							if (typeof ExactMetricsDualTracker.trackers[hookName] !== 'undefined') {
-								ExactMetricsDualTracker.trackers[hookName](parameters);
-							} else {
-								__gtagDataLayer('event', name, parameters);
-							}
-							
-						} else {
-							__gtagDataLayer.apply(null, arguments);
-						}
-					}
-
-					__gtagTracker('js', new Date());
-					__gtagTracker('set', {
-						'developer_id.dNDMyYj': true,
-											});
-										__gtagTracker('config', 'G-1TY5BV9M1P', {"forceSSL":"true"} );
-															window.gtag = __gtagTracker;										(function () {
-						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
-						/* ga and __gaTracker compatibility shim. */
-						var noopfn = function () {
-							return null;
-						};
-						var newtracker = function () {
-							return new Tracker();
-						};
-						var Tracker = function () {
-							return null;
-						};
-						var p = Tracker.prototype;
-						p.get = noopfn;
-						p.set = noopfn;
-						p.send = function () {
-							var args = Array.prototype.slice.call(arguments);
-							args.unshift('send');
-							__gaTracker.apply(null, args);
-						};
-						var __gaTracker = function () {
-							var len = arguments.length;
-							if (len === 0) {
-								return;
-							}
-							var f = arguments[len - 1];
-							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
-								if ('send' === arguments[0]) {
-									var hitConverted, hitObject = false, action;
-									if ('event' === arguments[1]) {
-										if ('undefined' !== typeof arguments[3]) {
-											hitObject = {
-												'eventAction': arguments[3],
-												'eventCategory': arguments[2],
-												'eventLabel': arguments[4],
-												'value': arguments[5] ? arguments[5] : 1,
-											}
-										}
-									}
-									if ('pageview' === arguments[1]) {
-										if ('undefined' !== typeof arguments[2]) {
-											hitObject = {
-												'eventAction': 'page_view',
-												'page_path': arguments[2],
-											}
-										}
-									}
-									if (typeof arguments[2] === 'object') {
-										hitObject = arguments[2];
-									}
-									if (typeof arguments[5] === 'object') {
-										Object.assign(hitObject, arguments[5]);
-									}
-									if ('undefined' !== typeof arguments[1].hitType) {
-										hitObject = arguments[1];
-										if ('pageview' === hitObject.hitType) {
-											hitObject.eventAction = 'page_view';
-										}
-									}
-									if (hitObject) {
-										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
-										hitConverted = mapArgs(hitObject);
-										__gtagTracker('event', action, hitConverted);
-									}
-								}
-								return;
-							}
-
-							function mapArgs(args) {
-								var arg, hit = {};
-								var gaMap = {
-									'eventCategory': 'event_category',
-									'eventAction': 'event_action',
-									'eventLabel': 'event_label',
-									'eventValue': 'event_value',
-									'nonInteraction': 'non_interaction',
-									'timingCategory': 'event_category',
-									'timingVar': 'name',
-									'timingValue': 'value',
-									'timingLabel': 'event_label',
-									'page': 'page_path',
-									'location': 'page_location',
-									'title': 'page_title',
-								};
-								for (arg in args) {
-																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
-										hit[gaMap[arg]] = args[arg];
-									} else {
-										hit[arg] = args[arg];
-									}
-								}
-								return hit;
-							}
-
-							try {
-								f.hitCallback();
-							} catch (ex) {
-							}
-						};
-						__gaTracker.create = newtracker;
-						__gaTracker.getByName = newtracker;
-						__gaTracker.getAll = function () {
-							return [];
-						};
-						__gaTracker.remove = noopfn;
-						__gaTracker.loaded = true;
-						window['__gaTracker'] = __gaTracker;
-					})();
-									} else {
-										console.log("");
-					(function () {
-						function __gtagTracker() {
-							return null;
-						}
-
-						window['__gtagTracker'] = __gtagTracker;
-						window['gtag'] = __gtagTracker;
-					})();
-									}
-			</script>
-				<!-- / Google Analytics by ExactMetrics -->
-				<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.arts.cuhk.edu.hk\/~ant\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.5"}};
-			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script><script src="https://www.arts.cuhk.edu.hk/~ant/wp-includes/js/wp-emoji-release.min.js?ver=5.2.5" type="text/javascript" defer=""></script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-	<link rel="stylesheet" id="sbi_styles-css" href="https://www.arts.cuhk.edu.hk/~ant/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=6.2.10" type="text/css" media="all">
-<link rel="stylesheet" id="wp-block-library-css" href="https://www.arts.cuhk.edu.hk/~ant/wp-includes/css/dist/block-library/style.min.css?ver=5.2.5" type="text/css" media="all">
-<link rel="stylesheet" id="contact-form-7-css" href="https://www.arts.cuhk.edu.hk/~ant/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.6" type="text/css" media="all">
-<link rel="stylesheet" id="page-list-style-css" href="https://www.arts.cuhk.edu.hk/~ant/wp-content/plugins/page-list/css/page-list.css?ver=5.6" type="text/css" media="all">
-<link rel="stylesheet" id="reset_css-css" href="https://www.arts.cuhk.edu.hk/~ant/wp-content/themes/customtheme/css/reset.css?ver=5.2.5" type="text/css" media="all">
-<link rel="stylesheet" id="default_css-css" href="https://www.arts.cuhk.edu.hk/~ant/wp-content/themes/customtheme/css/default.css?ver=5.2.5" type="text/css" media="all">
-<link rel="stylesheet" id="font_css-css" href="https://fonts.googleapis.com/css?family=Merriweather%3A300%2C400%2C700%2C900&amp;ver=5.2.5" type="text/css" media="all">
-<link rel="stylesheet" id="sc_css-css" href="https://www.arts.cuhk.edu.hk/~ant/wp-content/themes/customtheme/css/font-notosanssc.css?ver=5.2.5" type="text/css" media="all">
-<link rel="stylesheet" id="main_css-css" href="https://www.arts.cuhk.edu.hk/~ant/wp-content/themes/customtheme/style.css?ver=1716979055" type="text/css" media="all">
-<link rel="stylesheet" id="mobile_css-css" href="https://www.arts.cuhk.edu.hk/~ant/wp-content/themes/customtheme/mobile.css?ver=1716979055" type="text/css" media="all">
-<script type="text/javascript" src="https://www.arts.cuhk.edu.hk/~ant/wp-content/plugins/google-analytics-dashboard-for-wp/assets/js/frontend-gtag.js?ver=7.18.1"></script>
-<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id="exactmetrics-frontend-script-js-extra">/* <![CDATA[ */
-var exactmetrics_frontend = {"js_events_tracking":"true","download_extensions":"zip,mp3,mpeg,pdf,docx,pptx,xlsx,rar","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/www.arts.cuhk.edu.hk\/~ant\/sc","hash_tracking":"false","v4_id":"G-1TY5BV9M1P"};/* ]]> */
-</script>
-<script type="text/javascript" src="https://www.arts.cuhk.edu.hk/~ant/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp"></script>
-<script type="text/javascript" src="https://www.arts.cuhk.edu.hk/~ant/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
-<script type="text/javascript">
-/* <![CDATA[ */
-var cfe_object = {"ajaxurl":"https:\/\/www.arts.cuhk.edu.hk\/~ant\/wp-admin\/admin-ajax.php"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://www.arts.cuhk.edu.hk/~ant/wp-content/plugins/cloak-front-end-email/cloakfrontendemail.js?ver=1"></script>
-<link rel="https://api.w.org/" href="https://www.arts.cuhk.edu.hk/~ant/sc/wp-json/">
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.arts.cuhk.edu.hk/~ant/xmlrpc.php?rsd">
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.arts.cuhk.edu.hk/~ant/wp-includes/wlwmanifest.xml"> 
-<link rel="prev" title="2023 Anthropology Methods Summer Workshop" href="https://www.arts.cuhk.edu.hk/~ant/sc/announcement/2023-anthropology-methods-summer-workshop/">
-<link rel="next" title="[Book Talk] Two New Anthropology Books about Death by Andrew Kipnis and Gordon Mathews" href="https://www.arts.cuhk.edu.hk/~ant/sc/announcement/book-talk-two-new-anthropology-books-about-death-by-andrew-kipnis-and-gordon-mathews/">
-
-<link rel="canonical" href="https://www.arts.cuhk.edu.hk/~ant/sc/announcement/eaaa2023/">
-<link rel="shortlink" href="https://www.arts.cuhk.edu.hk/~ant/sc/?p=8211">
-<link rel="alternate" type="application/json+oembed" href="https://www.arts.cuhk.edu.hk/~ant/sc/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.arts.cuhk.edu.hk%2F%7Eant%2Fsc%2Fannouncement%2Feaaa2023%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://www.arts.cuhk.edu.hk/~ant/sc/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.arts.cuhk.edu.hk%2F%7Eant%2Fsc%2Fannouncement%2Feaaa2023%2F&amp;format=xml">
-<script type="text/javascript">//<![CDATA[
-  function external_links_in_new_windows_loop() {
-    if (!document.links) {
-      document.links = document.getElementsByTagName('a');
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="36 people interested. Check out who is attending ✭ exhibiting ✭ speaking ✭ schedule &amp; agenda ✭ reviews ✭ timing ✭ entry ticket fees. 2024 edition of International Conference on Ambient Systems, Networks and Technologies will be held at Hasselt starting on 23rd April. It is a 3 day event organised by Acadia University and will conclude on 25-Apr-2024."><meta name="author" content="@10times"><meta name="google-site-verification" content="vi6iVMSg9zahLUcLxXPWVLL5LxOBJh-9nqpwij0F49Q"><meta name="robots" content="max-image-preview:large"><link rel="canonical" href="https://10times.com/ant"><meta property="fb:admins" content="10timesevents"><meta property="fb:app_id" content="172404889604820"><meta name="apple-itunes-app" content="app-id=820954054"><meta name="alexaVerifyID" content="oVPq3cQghEqqmgxd41Kl40VX_9M"><meta name="baidu-site-verification" content="PTaC1hvbTm"><meta property="og:title" content="International Conference on Ambient Systems, Networks and Technologies | 10times"><meta property="og:description" content="36 people interested. Check out who is attending ✭ exhibiting ✭ speaking ✭ schedule &amp; agenda ✭ reviews ✭ timing ✭ entry ticket fees. 2024 edition of International Conference on Ambient Systems, Networks and Technologies will be held at Hasselt starting on 23rd April. It is a 3 day event organised by Acadia University and will conclude on 25-Apr-2024."><meta property="og:type" content="website"><meta property="og:url" content="https://10times.com/ant"><meta property="og:image" content="https://c1.10times.com/images/category/156.png"><meta property="og:image:width" content="1920"><meta property="og:image:height" content="1280"><meta name="twitter:title" content="International Conference on Ambient Systems, Networks and Technologies | 10times"><meta name="twitter:description" content="36 people interested. Check out who is attending ✭ exhibiting ✭ speaking ✭ schedule &amp; agenda ✭ reviews ✭ timing ✭ entry ticket fees. 2024 edition of International Conference on Ambient Systems, Networks and Technologies will be held at Hasselt starting on 23rd April. It is a 3 day event organised by Acadia University and will conclude on 25-Apr-2024."><meta name="twitter:site" content="@10_times"><meta name="twitter:image" content="https://c1.10times.com/images/category/156.png"><meta name="twitter:card" content="summary_large_image"><link rel="image_src" href="https://c1.10times.com/images/category/156.png"><title>ANT (Apr 2024), International Conference on Ambient Systems, Networks and Technologies, Hasselt Belgium - Conference</title><link rel="preconnect" href="https://img.10times.com"><link rel="preconnect" href="https://c1.10times.com"><link rel="preconnect" href="https://www.google.com"><link rel="preconnect" href="https://accounts.google.com"><link rel="preconnect" href="https://www.google.co.in"><link rel="preconnect" href="https://apis.google.com"><link rel="preconnect" href="https://www.google-analytics.com"><link rel="preconnect" href="https://www.googletagservices.com"><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="preconnect" href="https://adservice.google.com"><link rel="preconnect" href="https://adservice.google.co.in"><link rel="preconnect" href="https://pagead2.googlesyndication.com"><link rel="preconnect" href="https://tpc.googlesyndication.com"><link rel="preconnect" href="https://securepubads.g.doubleclick.net"><link rel="preconnect" href="https://stats.g.doubleclick.net"><link rel="preconnect" href="https://firebasestorage.googleapis.com"><link rel="preconnect" href="https://connect.facebook.net"><link rel="preconnect" href="https://www.facebook.com"><link rel="preconnect" href="https://cdn.ampproject.org"><link rel="preconnect" href="https://cdn.onesignal.com"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap"><link rel="stylesheet" href="https://c1.10times.com/css/bootstrap-5.1.3.min.css?ver=cnNfMjAyNDA2MDQwNF9jb21wdXRlcg=="><link rel="stylesheet" href="https://c1.10times.com/css/common_new.css?ver=cnNfMjAyNDA2MDQwNF9jb21wdXRlcg=="><style>.loaders .loaders-bodys{z-index:100001;left:50%;top:5px;-webkit-transform: translate(-50%,0%);}.loaders-overlay{background:#333;z-index:100000;opacity:.5;filter:alpha(opactiy=50);-ms-filter:"alpha(opacity=50)";-moz-opacity:.5;-khtml-opacity:.5}.loaders-elem-overlay,.loaders-overlay{height:100%;left:0;position:fixed;top:0;width:100%}.loaders .mediums .msgs{background: var(--bs-yellow);font-size:12px;padding:2px 8px;font-weight: 700;}</style><link rel="stylesheet" href="https://c1.10times.com/css/10t_detail_dsk_new.css"><link rel="stylesheet" href="https://c1.10times.com/css/listing_common_floorVideos.css"><noscript><link rel="stylesheet" href="https://c1.10times.com/css/10t_detail_dsk_new.css"></noscript><noscript><link rel="stylesheet" href="https://c1.10times.com/css/listing_common_floorVideos.css"></noscript><style>.dis-non{display:none!important}.onlydisbled{cursor:not-allowed;filter:alpha(opacity=65);-webkit-box-shadow:none;box-shadow:none;opacity:.65;pointer-events:none}.m-t5{margin-top:5px}.m-t10{margin-top:10px}.m-t15{margin-top:15px}.m-t30{margin-top:30px}.m-l5{margin-left:5px}.c-blue{color:#335aa1}.c-grey{color:grey}.c-black,.tag1{color:#4d4d4d}.line-space{line-height:20px}.p10{padding:10px}.activeDsk{color: rgba(234, 17, 6, 1)}.text-d{text-decoration:none}.md-checkbox{position:relative;margin-right:10px;text-align:left}.md-checkbox.md-checkbox-inline{display:inline-block}.md-checkbox label{cursor:pointer;display:inline;vertical-align:top;clear:both;padding-left:1px}.md-checkbox input[type=checkbox]{outline:0;visibility:hidden;width:1.25em;margin:0;display:block;float:left;font-size:inherit}.md-checkbox label:after,.md-checkbox label:before{content:"";position:absolute;left:0;top:5px}.md-checkbox label:before{width:0.8em;height:0.8em;background:#fff;border:1px solid rgba(0,0,0,.54);border-radius:.125em;cursor:pointer;transition:background .3s}.md-checkbox input[type=checkbox]:checked+label:before{border: 1px solid rgba(227, 16, 6, 1);}.md-checkbox input[type=checkbox]:checked+label:after{transform:translate(.25em,.3365384615em) rotate(-45deg);width:.4em;height:.2em;top: 4px;left: -1px;border:.125em solid rgba(227, 16, 6, 1);border-top-style:none;border-right-style:none}.md-checkbox input[type=checkbox]:disabled+label:before{border-color:rgba(0,0,0,.26)}.md-checkbox input[type=checkbox]:disabled:checked+label:before{background:rgba(0,0,0,.26)}*,:after,:before{box-sizing:border-box}label{font-weight:400}.tag1{font-size:11px;background-color:#b3dbff;padding: 3px 5px;
+    border-radius: 1px;}.tag4{border:1px solid #d3d3d3;padding-left:5px;padding-right:5px;border-radius:1px}.scroller-hide::-webkit-scrollbar {width: 0px;background: transparent;}.date-time-selected{background-color:rgba(234, 17, 6, 1)!important;color:#fff;border-color:rgba(234, 17, 6, 1)!important;cursor:unset!important}.alpha{color:#fc8600!important}.tt-svg-md::after{width:17px!important;height:17px!important;vertical-align:baseline}.exhibitorName::first-letter{text-transform:uppercase}#alphaFilter{display:inline-flex;list-style-type:none;font-weight:500;padding:unset;cursor:pointer;margin-top:10px;margin-bottom:unset}#alphaFilter>li{margin-right:10px}#resetallfilters>span{width:auto;border:1px solid #6579ab;border-radius:20px;padding:5px 10px 5px 10px;margin:3px 3px 3px 3px;font-weight:500;color:#fff;background-color:#6579ab;font-size:10px;float:left;opacity:1}#sortBy .activeDsk:after{font-family:'Zapf Dingbats';content:'\296F';margin-left:.1rem}
+</style><style>.dis-non{display:none!important}.sm-x{font-size:12px}.text-b{font-weight:700}.suggestion-tag{margin-top:2px;font-size:14px;color:rgba(0,0,0,.7);padding:0 12px;width:100%;line-height:30px;display:inline-block;-webkit-box-sizing:border-box}.suggestion-tag{border:1px solid rgba(0,0,0,.2);background-color:#fff;border-radius:16px}.helpul-btn{display:inline-block;border:1px solid #e8e8e8;padding:5px 10px;border-radius:3px;text-decoration:none!important;color:rgba(0,0,0,.7);font-size:12px;position:relative}.helpul-btn:hover{background-color:#eff2f6}a.disabled{pointer-events:none;cursor:default}.h-scroll-box{margin:5px;border-radius:4px;padding:10px}.h-scroll-box:first-child{margin-left:0!important}.h-scroll-box:last-child{margin-right:0!important}.h-scroll-boxe{margin:5px;border-radius:4px;padding:10px}.h-scroll-boxe:first-child{margin-left:0!important}.h-scroll-boxe:last-child{margin-right:0!important}.not-slct{opacity: 0.4;}.page-wrapper a{padding:0!important}.box{border-radius:4px!important}.tt-tabs{margin-bottom:1.3em}.tt-tabs>tbody>tr>td>a:hover{color: #000; text-decoration: none;}.tt-tabs>tbody>tr>td>*.disabled{color: #666;}#tt-tabs-wrapper{line-height:3.143em}#tt-tabs-wrapper .btn{padding:.714em 1.429em;font-size:12px;margin-right:10px}#tt-tabs-wrapper .btn.btn-lg{font-size:18px}#tt-tabs-wrapper li{display:inline-block}#tt-tabs-wrapper .btn.btn-default{background:#f2f2f2;padding:.6em 1em;border-radius:4px}.mt-25{margin-top: 25px;}.btn-g{background-color: #d3af37 !important;border-color: #d3af37 !important;}.m-mins_lft{margin-left:-1.5px;}</style><style>.tt-tabs>tbody>tr>td>*{display:block;font-weight:500;background:#fff;padding:16px 8px;text-align:center;color:#555;font-size: 85%;margin-left: -1px;}.tt-tabs>tbody>tr>td>.active{-moz-box-shadow:inset 0 -3px 0 rgba(234, 17, 6, 1);-webkit-box-shadow:inset 0 -3px 0 rgba(234, 17, 6, 1);box-shadow:inset 0 -3px 0 rgba(234, 17, 6, 1);color:rgba(234, 17, 6, 1);border-radius: 0;}.h-scroll-boxe{border-radius:4px;padding:10px}.h-scroll-boxe:first-child{margin-left:0!important}.h-scroll-boxe:last-child{margin-right:0!important}.tt-tabs-first {border: 1px solid #e7e7e7 !important;}.tt-tabs-other {border-top: 1px solid #e7e7e7 !important;border-bottom: 1px solid #e7e7e7 !important;}.tt-tabs-last {border: 1px solid #e7e7e7 !important;border-left: 0px !important;}</style><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MMVJS3"></script><script defer="" src="https://c1.10times.com/js/jquery-3.6.0.min.js"></script><script defer="" src="https://c1.10times.com/js/bootstrap-5.1.3.bundle.min.js"></script><script>dataLayer=[{"Page Type":"Event Detail | About","Event Type":"Conference","ts":"1717456053","Device":"Desktop","Country":"Belgium","City":"Hasselt","Industry":"Computer & Gadgets","Event Membership":"Freelist","Event Status":"Past","Event Month":"Apr","Event Year":"2024","Event Visitors":"11-100","Event Editions":"1-4","Event Ranking Score":"51-100"}]</script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MMVJS3');</script><script>var customEventGA=(a,b,c,d)=>{d||(d=0),dataLayer.push({event:"customEventGA",customEventCategory:a,customEventAction:b,customEventLabel:c,eventNonInteractive:d})};document.addEventListener("load",a=>{if("IMG"==a.target.nodeName){let b=a.target;if(b.dataset.color){let a=["#0d6efd","#0dcaf0","#20c997","#0dcaf0"];b.style.backgroundColor=a[Math.floor(Math.random()*a.length)],delete b.dataset.color}b.dataset.src&&b.src==b.dataset.src&&delete b.dataset.src}},!0),document.addEventListener("error",a=>{switch(a.target.nodeName){case"IMG":let b=a.target,c="https://c1.10times.com/images/usr-image-default.jpg";b.dataset.src&&delete b.dataset.src,b.dataset.error&&(c=b.dataset.error,delete b.dataset.error),b.src=c;break;case"SCRIPT":let d=`ERROR | ${a.target.nodeName}`,e=a.target.src.split("?")[0],f=location.href;customEventGA(d,e,f);}},!0);</script><script async="" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script><link rel="preload" as="image" href="https://img.10times.com/images/default.png"><link rel="manifest" href="/pwa-assets/manifest.json?start_url=/ant"><link rel="apple-touch-icon" sizes="57x57" href="https://img.10times.com/icons/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="https://img.10times.com/icons/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="https://img.10times.com/icons/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="https://img.10times.com/icons/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="https://img.10times.com/icons/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="https://img.10times.com/icons/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="https://img.10times.com/icons/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="https://img.10times.com/icons/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="https://img.10times.com/icons/apple-touch-icon-180x180.png"><link rel="apple-touch-icon" href="https://img.10times.com/images/pwa-icons/ic_launcher_192.png"><link rel="icon" type="image/png" sizes="192x192" href="https://img.10times.com/icons/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="https://img.10times.com/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="https://img.10times.com/icons/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="https://img.10times.com/icons/favicon-16x16.png"><link rel="mask-icon" href="https://img.10times.com/icons/safari-pinned-tab.svg" color="#5bbad5"><link rel="shortcut icon" href="https://img.10times.com/icons/favicon.ico"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="apple-mobile-web-app-title" content="10times"><meta name="msapplication-TileColor" content="#343a40"><meta name="msapplication-TileImage" content="https://img.10times.com/icons/ms-icon-144x144.png"><meta name="msapplication-navbutton-color" content="#343a40"><meta name="msapplication-config" content="https://c1.10times.com/icons/browserconfig.xml"><meta name="theme-color" content="#343a40"><meta name="application-name" content="10times"><link rel="stylesheet" type="text/css" href="https://c1.10times.com/css/daterangepicker.css"><script src="https://c1.10times.com/js/daterangepicker.js?_=1717917752897"></script><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A/ERL66fN363FkXxgDc6F1+ucRUkAhjEca9W3la6xaLnD2Y1lABsqmdaJmPNaUKPKVBRpyMKEhXYl7rSvrQw+AkAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A6OdGH3fVf4eKRDbXb4thXA4InNqDJDRhZ8U533U/roYjp4Yau0T3YSuc63vmAs/8ga1cD0E3A7LEq6AXk1uXgsAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202406040101/pubads_impl.js" async=""></script></head><body data-theme="light"><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MMVJS3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><style>
+    .nav-tab-links{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 0px;
+      font-size:12px;
     }
-    var change_link = false;
-    var force = '';
-    var ignore = '';
+    .nav-tab-links > svg{
+      height:22px !important;
+      width : 22px !important;
+    }
+    .nav-left-brdr{
+      border-left: 1px solid rgb(0 0 0 / 37%);
+    }
+    /* .nav-tab-links.active{
+      border-bottom:2px solid rgba(235, 102, 60, 1);
+    } */
+    .nav-tab-links.active > div{
+      border-bottom: 3px solid rgba(235, 102, 60, 1);
+      width: 110%;
+      text-align: center;
+    }
+    .location-link:hover{
+      color: rgba(0,0,0,.7) !important;
+    }
+    .log-svg{
+      margin: 3px 5px 0px 0px;
+    }
+    .log-in-btn{
+      margin-top: 12px !important;
+      font-weight:bolder;
+    }
+    .hover-orange-nav-ling{
+      transition:.5 ease all; 
+    }
+    .hover-orange-nav-ling:hover{
+      color: var(--orange-light) !important;
+      cursor: pointer;
+    }
+    .hover-orange-nav-ling.active:hover{
+      color: rgba(0,0,0,.9) !important;
+    }
+    .con-msg sup{
+      position: absolute;
+      top: -2px;
+      right: -7px;
+    }
+  
+    #loc_name span{
+      font-size:12px !important;
+      /* max-width: 64px; */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .setPosDrp{
+      right: 48px !important;width: 100px;
+    }
+    .t-fnav:hover{
+      color: rgba(0,0,0,.55) !important;
+    }
+    .t-fnav svg{
+      color: rgba(0,0,0,.55) !important;
+    }
 
-    for (var t=0; t<document.links.length; t++) {
-      var all_links = document.links[t];
-      change_link = false;
-      
-      if(document.links[t].hasAttribute('onClick') == false) {
-        // forced if the address starts with http (or also https), but does not link to the current domain
-        if(all_links.href.search(/^http/) != -1 && all_links.href.search('www.arts.cuhk.edu.hk') == -1 && all_links.href.search(/^#/) == -1) {
-          // console.log('Changed ' + all_links.href);
-          change_link = true;
-        }
-          
-        if(force != '' && all_links.href.search(force) != -1) {
-          // forced
-          // console.log('force ' + all_links.href);
-          change_link = true;
-        }
-        
-        if(ignore != '' && all_links.href.search(ignore) != -1) {
-          // console.log('ignore ' + all_links.href);
-          // ignored
-          change_link = false;
-        }
-
-        if(change_link == true) {
-          // console.log('Changed ' + all_links.href);
-          document.links[t].setAttribute('onClick', 'javascript:window.open(\'' + all_links.href.replace(/'/g, '') + '\', \'_blank\', \'noopener\'); return false;');
-          document.links[t].removeAttribute('target');
-        }
+    .notifi-par{
+      height: 28px;
+      width: 28px;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 8px;
+      cursor: pointer;
+      position:relative;
+      box-shadow: 0 1px 10px 0 rgb(0 0 0 / 41%);
+    }
+    .userNotifiCnt {
+      position: absolute;
+      top: 7px;
+      right: 11px;
+      color: white;
+      background: red;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      border-radius: 50%;
+      height: 14px;
+      width: 14px;
+      font-size: 10px;
+      font-weight: bolder;
+    }
+    .notification-drop-down{
+      right:0px;
+      width: 330px;
+    }
+    .notification-drop-down .notifi-head .heading{margin: 12px 0px 9px 17px;}.notification-drop-down .notifi-body .notifi-item{cursor:pointer;}.notification-drop-down .notifi-item .dot{color: var(--orange-light);font-size: 20px;}.notification-drop-down .notifi-body .notifi-item:hover {background: #e7e7e7 !important;}.notification-drop-down .notifi-body > div:nth-child(odd){background: #eeeeee;}.notification-drop-down hr{color: #c6c6c6;}.mw-27{min-width: 27px;}
+  </style><nav id="navbar-primary" class="navbar navbar-expand-lg navbar-light bg-white sticky-top" style="z-index: 1031;box-shadow: 0px 0px 8px 0px #c7c7c7;"><div class="container-fluid small px-3 mx-3"><a class="navbar-brand c-ga" href="/" role="button" data-ga-category="Header" data-ga-action="Home" aria-label="10Times" style="width: 92px; height: 29px; background-image: url('https://img.10times.com/images/bootlogo_1.png?imgeng=/w_90/h_30/m_stretch/cmpr_60'); background-repeat: no-repeat; background-position: center;"></a><button class="navbar-toggler c-ga" type="button" data-bs-toggle="collapse" data-bs-target="#primary-nav" data-ga-category="Header" data-ga-action="Toggle Nav Primary" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div id="primary-nav" class="collapse navbar-collapse"><div class="nav-item c-ga" data-ga-category="Header" data-ga-action="Search | Click" style="width: 280px;"><div id="search-box-area" class="search-box-area" style="z-index: 3 !important;"><form class="d-flex w-100" onsubmit="return false;" style="padding-right: 0.75rem;"><div class="input-group bg-light rounded-pill"><input type="search" id="explore-keywords" class="form-control fs-12 bg-transparent border-0 search-js search-input" placeholder="Search for Topic, Event or Location" data-parent="#search-box-area" data-target="#search-box-area #explore-keywords-dropdown" autocomplete="off" aria-label="explore keywords"><span class="input-group-text ps-0 bg-transparent border-0"><svg class="svg-inline--fa fa-search fa-w-16 fa-sm" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></span></div></form><div id="explore-keywords-container" class="position-fixed w-100 start-0 mt-2" style="display: none; height: calc(100vh - 51px); background-color: rgba(0,0,0,0.5); z-index: 999;"><div id="explore-keywords-dropdown" class="position-fixed w-100 rounded-bottom-3 shadow scroll-y search-suggestion new"><button id="close-explore-keywords-dropdown" class="btn btn-sm btn-outline-dark" style="z-index: 1; position: fixed; top: 70px; right: 46px;">Close</button><div class="d-flex flex-md-row flex-column gap-3 w-100 mt-2"><div id="suggest-by" class="w-100 w-md-50 text-start p-0 m-0 search-group" style="display: none;"></div><div class="d-flex flex-column gap-3 w-100"><div id="explore-by" class="w-100 w-md-50 text-start p-0 m-0 search-group" style="display: none;"></div><div id="activity-by" class="w-100 w-md-50 text-start p-0 m-0 search-group" style="display: none;"></div></div></div><div id="industry-by" class="p-0 m-0" style="display: none;"></div><div id="location-by" class="p-0 m-0" style="display: none;"></div><div id="keywords-by" class="p-0 m-0" style="display: none;"></div></div></div></div></div><span id="loc_name" class="fs-12 ps-0 pe-3 location-link d-flex align-items-center gap-1 nav-link border-0 bg-transparent hover-orange-nav-ling" role="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Find events happening near your location" style="color: rgba(0,0,0,.55);"><svg class="svg-inline--fa fa-location fa-w-16" aria-hidden="true" focusable="false" data-prefix="far" data-icon="location" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="" style="width: 16px; height: 16px;"><path d="M256 168c-48.6 0-88 39.4-88 88s39.4 88 88 88 88-39.4 88-88-39.4-88-88-88zm0 128c-22.06 0-40-17.94-40-40s17.94-40 40-40 40 17.94 40 40-17.94 40-40 40zm240-64h-49.66C435.49 145.19 366.81 76.51 280 65.66V16c0-8.84-7.16-16-16-16h-16c-8.84 0-16 7.16-16 16v49.66C145.19 76.51 76.51 145.19 65.66 232H16c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h49.66C76.51 366.81 145.19 435.49 232 446.34V496c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16v-49.66C366.81 435.49 435.49 366.8 446.34 280H496c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16zM256 400c-79.4 0-144-64.6-144-144s64.6-144 144-144 144 64.6 144 144-64.6 144-144 144z"></path></svg><span>Nearby Events</span></span><a id="create-my-list" style="color: rgba(0,0,0,.55);" class="hover-orange-nav-ling f-navtlnk fs-12 d-flex align-items-center  nav-link create-list c-ga ps-0 pe-2" href="/dashboard/following" data-ga-category="Header" data-ga-action="Create List" data-ga-label="header_nlogin"><svg class="svg-inline--fa fa-plus fa-w-12 fa-sm" aria-hidden="true" focusable="false" data-prefix="far" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="" data-icon="plus" style="width: 16px; height: 16px;margin-right: 2px;"><path d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"></path></svg><span>Create Filter</span></a><span id="created-list"></span><div class="navbar-nav ms-auto"><a class="hover-orange-nav-ling nav-link mx-2 c-ga nav-tab-links   " href="/events" data-ga-category="Header" data-ga-action="Events" aria-current="page"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M160 16c0-8.8-7.2-16-16-16s-16 7.2-16 16V64H96c-35.3 0-64 28.7-64 64v32 32V448c0 35.3 28.7 64 64 64H416c35.3 0 64-28.7 64-64V192 160 128c0-35.3-28.7-64-64-64H384V16c0-8.8-7.2-16-16-16s-16 7.2-16 16V64H160V16zM64 192H448V448c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V192zM96 96H416c17.7 0 32 14.3 32 32v32H64V128c0-17.7 14.3-32 32-32zM277.5 231.5c-8.8-17.8-34.2-17.8-43 0l-22 44.6-49.2 7.2c-19.7 2.9-27.5 27.1-13.3 40.9l35.6 34.7-8.4 49c-3.4 19.6 17.2 34.6 34.8 25.3l44-23.2 44 23.2c17.6 9.3 38.2-5.7 34.8-25.3l-8.4-49 35.6-34.7c14.2-13.9 6.4-38.1-13.3-40.9l-49.2-7.2-22-44.6zm-40.1 66.3L256 260.2l18.6 37.6 3.7 7.5 8.3 1.2 41.5 6-30 29.3-6 5.9 1.4 8.3 7.1 41.4-37.1-19.5-7.4-3.9-7.4 3.9-37.1 19.5 7.1-41.4 1.4-8.3-6-5.9-30-29.3 41.5-6 8.3-1.2 3.7-7.5z"></path></svg><div>Events</div></a><a class="hover-orange-nav-ling nav-link mx-2 c-ga nav-tab-links  " href="/top100" data-ga-category="Header" data-ga-action="Top 100 Events"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><path d="M300.5 77.2l-3.7 7.5-8.3 1.2L245 92.2 276.6 123l6 5.9-1.4 8.3-7.4 43.3 39-20.6 7.4-3.9 7.5 3.9 38.7 20.3-7.4-43.3-1.4-8.3 6.1-5.9 31.4-30.3-43.4-6.3-8.3-1.2-3.7-7.5L320 37.8 300.5 77.2zm-5-62c10.3-20.6 39.4-19.9 49.1 .1l19.9 40.2 44 6.3 .2 0 0 0c22.1 3.4 31.5 30.6 15.3 46.9l-.2 .2 0 0-31.9 30.8 7.5 43.7 0 .3 0 0c3.4 22-19.5 39.1-39.8 28.9l-.3-.1 0 0L320.2 192l-39.5 20.9-.3 .2 0 0c-20.3 10.2-43.2-6.9-39.8-28.9l0-.3 0 0 7.5-43.8-31.9-31.1-.2-.2 0 0c-16.2-16.2-6.7-43.5 15.3-46.9l.2 0 0 0 44-6.3 19.9-40.2 0 0zM192 368v96c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V368c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48zm224 64v32c0 26.5-21.5 48-48 48H272c-26.5 0-48-21.5-48-48V368 304c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48V432zM256 304V464c0 8.8 7.2 16 16 16h96c8.8 0 16-7.2 16-16V304c0-8.8-7.2-16-16-16H272c-8.8 0-16 7.2-16 16zM32 368v96c0 8.8 7.2 16 16 16h96c8.8 0 16-7.2 16-16V368c0-8.8-7.2-16-16-16H48c-8.8 0-16 7.2-16 16zm448 64v32c0 8.8 7.2 16 16 16h96c8.8 0 16-7.2 16-16V432c0-8.8-7.2-16-16-16H496c-8.8 0-16 7.2-16 16zm16-48h96c26.5 0 48 21.5 48 48v32c0 26.5-21.5 48-48 48H496c-26.5 0-48-21.5-48-48V432c0-26.5 21.5-48 48-48z"></path></svg><div class="text-nowrap">Top 100</div></a><a class="hover-orange-nav-ling nav-link mx-2 c-ga nav-tab-links  " href="/venues" data-ga-category="Header" data-ga-action="Venues"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><path d="M366.6 155c6.7-15.9 9.4-27.6 9.4-35c0-48.6-39.4-88-88-88s-88 39.4-88 88c0 7.4 2.7 19 9.4 35c6.5 15.4 15.7 32.4 26.4 49.7c17.1 27.8 36.9 54.7 52.2 74.4c15.3-19.7 35.1-46.6 52.2-74.4c10.7-17.3 19.9-34.3 26.4-49.7zM302.8 312c-7.7 9.6-22 9.6-29.6 0C241.1 271.9 168 174.6 168 120C168 53.7 221.7 0 288 0s120 53.7 120 120c0 54.6-73.1 151.9-105.2 192zm103.1-89.1c-.8 .3-1.7 .6-2.5 .8c8.2-14.2 15.7-28.7 21.8-42.9l117.9-47.2c15.8-6.3 32.9 5.3 32.9 22.3V426.6c0 9.8-6 18.6-15.1 22.3l-155 62c-3.3 1.3-6.9 1.5-10.3 .5L176.9 448.9l-144 57.6C17.1 512.8 0 501.2 0 484.2V213.4c0-9.8 6-18.6 15.1-22.3l123.2-49.3c2.1 10.4 5.4 20.8 9.2 30.8L32 218.8V472.4l128-51.2V304c0-8.8 7.2-16 16-16s16 7.2 16 16V419.9l192 54.9V304c0-8.8 7.2-16 16-16s16 7.2 16 16V472.4l128-51.2V167.6L405.9 222.9zM288 88a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"></path></svg><div>Venues</div></a><a class="hover-orange-nav-ling nav-link mx-2 c-ga nav-tab-links  " href="/company" data-ga-category="Header" data-ga-action="Companies"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><path d="M64 32C46.3 32 32 46.3 32 64V448c0 17.7 14.3 32 32 32h64V416c0-35.3 28.7-64 64-64s64 28.7 64 64v64h64c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H64zM224 416c0-17.7-14.3-32-32-32s-32 14.3-32 32v64h64V416zm-96 96H64c-35.3 0-64-28.7-64-64V64C0 28.7 28.7 0 64 0H320c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H256 224 160 128zM64 120c0-13.3 10.7-24 24-24h48c13.3 0 24 10.7 24 24v48c0 13.3-10.7 24-24 24H88c-13.3 0-24-10.7-24-24V120zm32 8v32h32V128H96zM248 96h48c13.3 0 24 10.7 24 24v48c0 13.3-10.7 24-24 24H248c-13.3 0-24-10.7-24-24V120c0-13.3 10.7-24 24-24zm8 64h32V128H256v32zM64 248c0-13.3 10.7-24 24-24h48c13.3 0 24 10.7 24 24v48c0 13.3-10.7 24-24 24H88c-13.3 0-24-10.7-24-24V248zm32 8v32h32V256H96zm152-32h48c13.3 0 24 10.7 24 24v48c0 13.3-10.7 24-24 24H248c-13.3 0-24-10.7-24-24V248c0-13.3 10.7-24 24-24zm8 64h32V256H256v32z"></path></svg><div>Companies</div></a><div class="hover-orange-nav-ling nav-link mx-2 c-ga me-3 nav-tab-links  border-0 rounded-0 link c-ga" data-link="hub" data-btn-group="options" data-ga-category="Listing Filter" data-ga-action="Tabs" data-ga-label="Community" style="max-width: 14rem; "><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M80 128a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm80-48c0 38.7-27.5 71-64 78.4V273.6c20.3-20.7 48.7-33.6 80-33.6h96c44.2 0 80-35.8 80-80v-1.6c-36.5-7.4-64-39.7-64-78.4c0-44.2 35.8-80 80-80s80 35.8 80 80c0 38.7-27.5 71-64 78.4V160c0 61.9-50.1 112-112 112H176c-44.2 0-80 35.8-80 80v1.6c36.5 7.4 64 39.7 64 78.4c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-38.7 27.5-71 64-78.4V352 158.4C27.5 151 0 118.7 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm208 48a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM80 480a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"></path></svg><div>Hubs</div></div><div class="nav-left-brdr"></div><a href="https://login.10times.com/addevent?utm_source=10times_header" class="hover-orange-nav-ling nav-link c-ga xn nav-tab-links px-3 text-nowrap" style="padding-top: 9.5px;" data-ga-category="Header" data-ga-action="Add Event" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M240 64c0-8.8-7.2-16-16-16s-16 7.2-16 16V240H32c-8.8 0-16 7.2-16 16s7.2 16 16 16H208V448c0 8.8 7.2 16 16 16s16-7.2 16-16V272H416c8.8 0 16-7.2 16-16s-7.2-16-16-16H240V64z"></path></svg>Add Event</a><div id="SecondaryNavRight" class="navbar-nav gap-3 ms-auto me-3"><div id="user-notify" onclick="customEventGA('Events', 'Header', 'Notification');"></div><div id="user-profile"><button id="loginHide" class="btn btn-orange fs-12  c-ga server-login d-flex log-in-btn" data-ga-category="Header" data-ga-action="Login / Sign up"><svg class="log-svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path fill="#fffffc" d="M352 96l64 0c17.7 0 32 14.3 32 32l0 256c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0c53 0 96-43 96-96l0-256c0-53-43-96-96-96l-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32zm-9.4 182.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L242.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l210.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"></path></svg><div>
+                  Login
+                  </div></button></div></div></div></div></div></nav><header></header><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><div class="page-background"><section class="page-wrapper mb-0 background-cover" style="background-image:url(https://img.10times.com/industry/10.jpg?imgeng=/w_1024/h_150/m_stretch/cmpr_60);"><img class="lazyload float-end" src="https://im.10times.com/0.png" data-src="https://im.10times.com/1.png?c=web&amp;s=eventdetail-about&amp;p=pageview&amp;e=2046434&amp;k=559290d279ee3c253eb489c7c168b086" width="0" height="0" alt="10times"></section><div class="container text-left"><div class="row main-header fs-14 position-relative fix-header-cta"><div id="online-header-left" class="position-relative col-md-8 pe-3"><div class="d-flex"><div class="w-100"><div><div id="myreview_rating" class="d-none"></div><span class="text-decoration-none fs-14 text-muted cursor engageAction mx-2 fw-bold float-end" data-settle="review" data-action="verifiedReview" onclick="customEventGA('Event Detail','Reviews','Add Your Review Top')" id="tab-add-review"><i class="fa fa-star me-1" style="width:15.75px;height: 14px;vertical-align: text-top;"></i>Add a review </span></div><div class="header_date position-relative text-orange me-5 "><span content="2024-04-23" data-localizer="ignore">23 - 25 Apr 2024</span></div><div><h1 class="mb-0">
+                                    International Conference on Ambient Systems, Networks and Technologies 									</h1></div><div class="mt-1 text-muted"><span><i class="fas fa-check fa-fw text-orange me-1" style="width: 17.5px;height: 14px;"></i>                               Conference</span></div><div class="mt-1 text-muted m-mins_lft"><span><i class="fas fa-map-marker-alt text-orange fa-fw" aria-hidden="true" style="width: 17.5px;height: 14px;margin-right: 3px;"></i></span><a href="/hasselt-be" class="bld text-decoration-none text-muted">Hasselt</a>, <a href="/belgium/conferences" class="text-decoration-none text-muted">Belgium</a><span class="ms-2"></span></div><div class="mt-25"><p><a href="https://10times.com/ant/visitors" class="text-decoration-none"><img class="lazyload rounded-circle position-relative img-32" src="https://img.10times.com/images/usr-image-default.jpg" data-src="https://img.10times.com/user_pic%2FvZUWtyv%2B7Txw3fx602ZrkQpkFD3Ut6xAEocxyHclA91Pvmi30Fi9RX2clguEd1oZ8tggVN5mGi0pL3m9cZ44wA%3D%3D.jpg?imgeng=/w_32/h_32/m_stretch/cmpr_60" alt="Jyrki Liesivuori" data-toggle="tooltip" data-placement="right" title="Jyrki Liesivuori" style="border: 2px solid #fff;"><img class="lazyload rounded-circle position-relative img-32" src="https://img.10times.com/images/usr-image-default.jpg" data-src="https://img.10times.com/user_pic%2Fjb4k4rHlupIHq8fnKrXlzEw5EnHXU74PkpOJZh5IXQNFYyYZJF9BtjvGHF5hrvxr0ZezSt6q8EXnUJmA3mt9w%3D%3D.jpg?imgeng=/w_32/h_32/m_stretch/cmpr_60" alt="Stefaan Maes" data-toggle="tooltip" data-placement="right" title="Stefaan Maes" style="border: 2px solid #fff;"><img class="lazyload rounded-circle position-relative img-32" src="https://img.10times.com/images/usr-image-default.jpg" data-src="https://img.10times.com/abc/images/9/4/4/27918944_1542954809.jpeg?imgeng=/w_32/h_32/m_stretch/cmpr_60" alt="Ahmadou Mbodji" data-toggle="tooltip" data-placement="right" title="Ahmadou Mbodji" style="border: 2px solid #fff;"><img class="lazyload rounded-circle position-relative img-32" src="https://img.10times.com/images/usr-image-default.jpg" data-src="https://img.10times.com/user/images/0/7/9/19789079.jpg?imgeng=/w_32/h_32/m_stretch/cmpr_60" alt="Desantoine" data-toggle="tooltip" data-placement="right" title="Desantoine" style="border: 2px solid #fff;"><img class="lazyload rounded-circle position-relative img-32" src="https://img.10times.com/images/usr-image-default.jpg" data-src="https://img.10times.com/user/images/6/1/4/22709614.png?imgeng=/w_32/h_32/m_stretch/cmpr_60" alt="Prince Opoku" data-toggle="tooltip" data-placement="right" title="Prince Opoku" style="border: 2px solid #fff;"><img class="lazyload rounded-circle position-relative img-32" src="https://img.10times.com/images/usr-image-default.jpg" data-src="https://img.10times.com/abc/images/1/6/5/33124165_1552027174.jpeg?imgeng=/w_32/h_32/m_stretch/cmpr_60" alt="Reza Bajelan" data-toggle="tooltip" data-placement="right" title="Reza Bajelan" style="border: 2px solid #fff;"><img class="lazyload rounded-circle position-relative img-32" src="https://img.10times.com/images/usr-image-default.jpg" data-src="https://img.10times.com/abc/images/7/5/1/29374751_1547101876.jpeg?imgeng=/w_32/h_32/m_stretch/cmpr_60" alt="TARIQ ABDULMAGEED MOHAMED" data-toggle="tooltip" data-placement="right" title="TARIQ ABDULMAGEED MOHAMED" style="border: 2px solid #fff;"><span class="ms-1 fw-bold"><span>36</span> Followers</span></a></p></div></div></div></div><div class="d-flex justify-content-between col-md-4 ps-0"><div class="d-flex flex-column justify-content-between align-items-center me-4" style="margin: -15px 0px -15px 0px;"><span id="sep-circle-top" class="d-inline-block semi-circle-top"></span><span id="sep-lines" class="d-block" style="height: calc(100% - 50px); border-left: 4px solid #eee;"></span><span id="sep-circle-bottom" class="d-inline-block semi-circle-bottom"></span></div><div class="d-flex flex-column justify-content-between w-100"><div class="d-flex justify-content-end gap-3"><span tabindex="0" role="button" class="d-none add-existing float-end p-0 text-muted" data-bs-html="true" data-bs-toggle="popover" data-bs-placement="top" data-bs-custom-class="list-tooltip" data-bs-trigger="focus" data-bs-content="<div class=&quot;selectEvent&quot;><span><i class=&quot;fa fa-plus me-1 mt-1 float-start&quot; aria-hidden=&quot;true&quot;></i></span><span class=&quot;float-start&quot;>Create new list</span></div><br><div class=&quot;selectExistingList mt-2&quot; id=&quot;107533&quot;><span><i class=&quot;fa fa-edit me-1 mt-1&quot; aria-hidden=&quot;true&quot;></i></span>Add to existing list</div>" data-bs-original-title="" title=""><i class="fak fa-list-add ms-2 fs-22" style="cursor: pointer;" aria-hidden="true"></i>Select</span><span class="selectEvent add-new-listing float-end p-0 text-muted d-flex" data-bs-toggle="popover" data-bs-content="Select event" data-bs-placement="top" data-bs-custom-class="list-tooltip" data-bs-trigger="hover" data-bs-original-title="" title=""><i class="fak fa-list-add ms-2 fs-22" style="cursor: pointer;" aria-hidden="true"></i>Select</span><span class="text-muted action-save onlinesave x-bk-t engageAction text-decoration-none cursor" data-param="bookmark" data-url="ant" data-followsettings="0"><i class="fa fa-bookmark fa-fw text-muted me-1" style="width: 17.5px !important; height: 14px !important;"></i>Save</span><span class="text-muted text-decoration-none cursor" onclick="getInviteModal(107533);customEventGA('Event Visitor','Invite Widget','about')"><i class="fa fa-share me-1" aria-hidden="true" style="width: 14px !important; height: 14px !important;"></i>Share</span></div><div><div class="d-flex justify-content-between w-100 gap-3"><button class="common-interest text-decoration-none btn btn-default btn-orange fw-bold w-100  fw-bold fs-16 onlineinterestfollow x-int-r action-in  engageAction" data-param="interest" style="border-color: rgba(235, 102, 60, 1);">Follow</button><button class="text-decoration-none w-50 btn btn-lg x-rabb fw-bold fs-16 bg-gray-dark" style="color: #fff;padding-left: 5px; padding-right: 5px" id="action-attended" onclick="openAttended(this,'2046434','0','','0','','1');">Attended?</button></div></div></div></div></div></div></div><input type="hidden" id="flag" value="0"><div class="barBefore"></div><div id="main-wrapper" class="pdb"><div id="main" class="container"><div class="row"><div class="col-md-8 col-sm-12 about"><div id="content" class="row11"><table id="tt-tabs" class="tt-tabs w-100"><tbody><tr><td id="about" data-count="0"><span class="active text-decoration-none  text-orange tt-tabs-first">About</span></td><td id="exhibitors"><span class="text-decoration-none cursor" style="color: #666;" onclick="disabledTab(this,'exhibitors','0','0','0');"><span class="tab-desc">Exhibitors</span></span></td><td id="speakers"><span class="text-decoration-none cursor" style="color: #666;" onclick="disabledTab(this,'speakers','0','0','0');"><span class="tab-desc">Speakers</span></span></td><td id="reviews" data-count="0"><span class=" disabled text-decoration-none  tt-tabs-other">Reviews</span></td><td id="deals" data-count="0"><span class=" disabled text-decoration-none  tt-tabs-last">Deals</span></td><td id="extra-cta" class="d-none" style="width: 320px;"><table style="padding: 9px 10px;height: 53px;"><tbody><tr><td class="ps-1 pe-2"><span class="pay-fixRegister cursor btn btn-orange fw-bold bg-orange-l x-int-r pull-left action-fix-in " onclick="attendNew(this,'interested_attend');" style="border-color:rgba(235, 102, 60, 1);width: 100%;border-top-left-radius:0px;border-bottom-left-radius:0px;white-space:nowrap;">Follow</span></td><td class="ps-2 text-muted" style="border-top-right-radius:0px;border-bottom-right-radius:0px">
+                                    International C...</td></tr></tbody></table></td></tr></tbody></table><style>.interestedContent div:first-child>span{padding:4px;border-radius:50%;position:absolute;color:#fff;font-size:10px;padding-left:5px;padding-right:5px}.intrestNumbers{color:rgba(9, 79, 183, 1)}.tab{overflow:hidden;border:1px solid #ccc;background-color:#f1f1f1}#myModalDismiss:hover{background-color:#fff;outline:0}.tab button{background-color:inherit;float:left;border:none;outline:0;cursor:pointer;padding:5px 16px;transition:.3s;font-size:15px}.exhibitorInterest{width:60%;margin-left:auto;margin-right:auto;border-radius:3px!important;margin-bottom:5px;height:29px;background:#fff;font-weight:500;padding:0;color:rgba(9, 79, 183, 1)!important}.exhibitorInterest:hover{background:#e2e2e2!important}.tab button:hover{background-color:#ddd}.tab button.active{background-color:#ccc}.tabcontent{display:none;padding:6px 12px;border:1px solid #ccc;border-top:none}.tab-content::-webkit-scrollbar{width:5px}.tab-content::-webkit-scrollbar-track{box-shadow:inset 0 0 5px grey;border-radius:10px}.tab-content::-webkit-scrollbar-thumb{background:#c7c7c7;border-radius:10px}.tab-content::-webkit-scrollbar-thumb:hover{background:#999}.exhibitorInterest:focus{background: #fff;}#myModal .tab-content{padding: 5px;padding-top: 10px; max-height:29em;overflow-y: auto;}.circleLeft{border-radius: 50%;margin-left: 10px;}.bod-bottom{border-bottom: 1px solid #ebedf0;}.h-95{height:95% !important;}</style><style>
+    @media only screen and (max-width: 1024px) {
+      #myModal .modal-dialog{
+        width: 45%!important;
       }
     }
-  }
-  
-  // Load
-  function external_links_in_new_windows_load(func)
-  {  
-    var oldonload = window.onload;
-    if (typeof window.onload != 'function'){
-      window.onload = func;
-    } else {
-      window.onload = function(){
-        oldonload();
-        func();
-      }
-    }
-  }
-
-  external_links_in_new_windows_load(external_links_in_new_windows_loop);
-  //]]></script>
-
-<script type="text/javascript">
-	window._se_plugin_version = '8.1.9';
-</script>
-<style type="text/css">
-.qtranxs_flag_tc {background-image: url(https://www.arts.cuhk.edu.hk/~ant/wp-content/plugins/qtranslate-xt-master/flags/hk.png); background-repeat: no-repeat;}
-.qtranxs_flag_en {background-image: url(https://www.arts.cuhk.edu.hk/~ant/wp-content/plugins/qtranslate-xt-master/flags/gb.png); background-repeat: no-repeat;}
-.qtranxs_flag_sc {background-image: url(https://www.arts.cuhk.edu.hk/~ant/wp-content/plugins/qtranslate-xt-master/flags/cn.png); background-repeat: no-repeat;}
-</style>
-<link hreflang="tc" href="https://www.arts.cuhk.edu.hk/~ant/tc/announcement/eaaa2023/" rel="alternate">
-<link hreflang="en" href="https://www.arts.cuhk.edu.hk/~ant/en/announcement/eaaa2023/" rel="alternate">
-<link hreflang="sc" href="https://www.arts.cuhk.edu.hk/~ant/sc/announcement/eaaa2023/" rel="alternate">
-<link hreflang="x-default" href="https://www.arts.cuhk.edu.hk/~ant/announcement/eaaa2023/" rel="alternate">
-<meta name="generator" content="qTranslate-XT 3.6.1">
-		<style type="text/css" id="wp-custom-css">
-			html.en_US body {
-    font-family: 'Nunito', 'Merriweather', sans-serif;
-}
-
-.pb-first .podcast-content{
-max-height:120px;}		</style>
-		  <!-- Global site tag (gtag.js) - Google Ads: 677555576 --> <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-677555576"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-677555576'); </script>
-<script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/677555576/?random=1716979056426&amp;cv=11&amp;fst=1716979056426&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be45m0za200zb9137289154&amp;gcd=13l3l3l3l1&amp;dma=0&amp;u_w=1536&amp;u_h=864&amp;url=https%3A%2F%2Fwww.arts.cuhk.edu.hk%2F~ant%2Fsc%2Fannouncement%2Feaaa2023%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=%5BCALL%20FOR%20PAPERS%5D%202023%20East%20Asian%20Anthropological%20Association%20Annual%20Meeting%20at%20CUHK%20%7C%20%E9%A6%99%E6%B8%AF%E4%B8%AD%E6%96%87%E5%A4%A7%E5%AD%B8%E4%BA%BA%E9%A1%9E%E5%AD%B8%E7%B3%BB&amp;did=dNDMyYj&amp;gdid=dNDMyYj&amp;npa=0&amp;pscdl=noapi&amp;auid=350643259.1716979056&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B119.0.6045.105%7CNot%253FA_Brand%3B24.0.0.0&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;fdr=QA&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script></head>
-<body id="0" class="announcement-template-default single single-announcement postid-8211 locale-zh-cn medium">
-    <div class="container">
-    <div class="main-menu-mask"></div>    
-    <div class="header">
-      <div class="main-menu-button">☰</div>
-      
-                  <style> .header{background-image:url('https://www.arts.cuhk.edu.hk/~ant/wp-content/uploads/P_20180223_084954_vHDR_Auto.jpg');}</style>
-
-        
-            <div class="logos">
-                  <a class="logo logo-1" href="http://www.cuhk.edu.hk/english/index.html" target=""><img src="https://www.arts.cuhk.edu.hk/~ant/wp-content/uploads/2019/02/logo-cuhk.gif" alt="The Chinese University of Hong Kong"></a>
-                          <a class="logo logo-2" href="https://www.arts.cuhk.edu.hk/~ant"><img src="https://www.arts.cuhk.edu.hk/~ant/wp-content/uploads/2019/02/logo-ant.png" alt="Department of Anthropology"></a>
-              </div><!-- end of logos -->
-      <div class="header-corner">
-        <div class="header-corner-top">
-          <a class="header-search" href="https://www.arts.cuhk.edu.hk/~ant/search"></a>
-          <div class="fontsize-container">
-            <div class="fontsize small">A</div><div class="fontsize medium active">A</div><div class="fontsize large">A</div>
-          </div>
-          <style type="text/css">
-.qtranxs_widget ul { margin: 0; }
-.qtranxs_widget ul li
+  </style><section id="detail_hub" class="box d-none"><div><h2 class="fw-bold fs-16">Average post reach is 127233 users. Start networking today!</h2><div id="pg_clive" class="d-flex w-100 rounded-3  align-items-baseline bg-white mb-3 p-0"><div id="c_intro" class="cc_intro"><img id="com_vid" class=" rounded-circle me-2 profile-pic  " src="https://img.10times.com/images/no-pic.jpg" width="42" height="42" alt="profile_pic" loading="lazy"></div><div id="com_divp" class="w-100"><div class="position-relative"><div id="com_place" onclick="showpostsharemodal('main')" class="text-muted border px-3 py-3 w-100 position-relative link" style="border-radius:1.3rem;">Write a post here...
+    </div></div><div class="ms-2 justify-content-end"><p id="pro_vid_post" class="btn btn-sm btn-orange c-ga d-none" onclick="pro_vid_postf();" data-ga-category="Home" data-ga-action="Add Event" data-ga-label="Featured Events" target="_blank" rel="noreferrer" style="margin-top: 30%;">Post</p></div></div></div></div></section><section class="box fs-14"><p class="mng text-break fs-14" style="line-height:24px;">The 15th International Conference on Ambient Systems, Networks and Technologies (ANT) will be held in Hasselt, Belgium.    </p><div><h2 class="fw-bold fs-14">Highlights</h2><ul class="mb-1" style="padding-left: 15px"><li class="fs-14">Popular among visitors for</li></ul><div class="quicklink-wrap text-muted" style="margin-left: 15px"><span class="quicklinks1 d-inline"><span class="text-decoration-none text-muted-new" data-val="https://10times.com/top100/technology">Top 100 in IT &amp; Technology in Belgium</span></span></div></div><div class="fs-14 position-relative mt-3"><h2 class="fs-14 fw-bold">Listed In</h2><div id="nav_btn"><div class="quicklink-wrap text-muted"><span class="quicklinks1 d-inline"><i class="fa fa-desktop fa-fw fs-12" style="width:1.25em !important;"></i><a href="/technology" target="_blank" class="text-decoration-none text-muted-new"> IT &amp; Technology</a></span><span class="quicklinks1 d-inline"><a href="/computer" target="_blank" class="text-decoration-none text-muted-new">
+                #Computer &amp; Gadgets
+              </a></span><span class="quicklinks1 d-inline"><a href="/instrumentation" target="_blank" class="text-decoration-none text-muted-new">
+                #Instrumentation
+              </a></span></div></div></div></section><section class="box adr_ad_12 px-0" style="height:100px;min-height:100px;"><ins class="adsbygoogle" style="display:inline-block;width:100%;height:100%;" data-ad-client="ca-pub-8525015516580200" data-ad-slot="6573447683" data-override-format="true"></ins></section><section id="detail_hubnon" class="box"><div><h2 class="fw-bold fs-16">Average post reach is 127233 users. Start networking today!</h2><div id="pg_clive" class="d-flex w-100 rounded-3  align-items-baseline bg-white mb-3 p-0"><div id="c_intro" class="cc_intro"><img id="com_vid" class=" rounded-circle me-2 profile-pic  " src="https://img.10times.com/images/no-pic.jpg" width="42" height="42" alt="profile_pic" loading="lazy"></div><div id="com_divp" class="w-100"><div class="position-relative"><div id="com_place" onclick="showpostsharemodal('main')" class="text-muted border px-3 py-3 w-100 position-relative link" style="border-radius:1.3rem;">Write a post here...
+    </div></div><div class="ms-2 justify-content-end"><p id="pro_vid_post" class="btn btn-sm btn-orange c-ga d-none" onclick="pro_vid_postf();" data-ga-category="Home" data-ga-action="Add Event" data-ga-label="Featured Events" target="_blank" rel="noreferrer" style="margin-top: 30%;">Post</p></div></div></div></div></section><section class="box fs-14"><table class="table noBorder mng w-100 trBorder mb-0"><tbody><tr id="hvrout1"><td style="width: 50%;"><h2 class="fw-bold">Timings</h2> 09:00 AM-06:00 PM (expected)<br><small class="d-block text-danger"> Not Verified</small></td><td style="width:50%;"><h2 class="fw-bold">Entry Fees</h2><span data-settle="website" onclick="attendNew(this ,'orgdetailswebsite_bookmark');" class="x-ob-ow text-muted text-decoration-none cursor"><small>Check Official Website</small></span></td></tr><tr><td><h2 class="fw-bold">Estimated Turnout
+</h2><a class="text-decoration-none fw-bold" href="https://10times.com/ant/visitors">500 - 1000 </a><div id="name_vis" style="display:inline-block;"> Delegates</div><small class="text-danger d-block ">Based on previous editions</small></td><td id="hvrout2"><h2 class="fw-bold">Event Type</h2><i class="fas fa-check fa-fw text-success me-1" style="width:1.25em !important;"></i>Conference<br></td></tr><tr id="hvrout3"><td><h2 class="fw-bold">Editions</h2> 
+                
+                                    
+                  Apr 2024<br><span class="text-decoration-underline text-muted fs-12 cursor" onclick="openEditions(this,'2046434','0','','0');">
+                                                      +3 more editions
+                                                    </span><br><br><small class="d-block text-muted">Frequency</small>
+            Annual<br><span class="d-flex"><small class="text-success d-block me-1">Next edition likely in Apr 2025</small></span></td><td><h2 class="fw-bold">Official Links</h2><span data-settle="website" onclick="attendNew(this ,'orgdetailswebsite_bookmark');" class="btn btn-sm btn-default x-ob-ow text-decoration-none fs-12 cursor">Website</span><span onclick="contactOrgModal(this);" style="margin-left:3px;" class="btn btn-sm btn-default x-ob-cd text-decoration-none fs-12 cntct_orgnzr cursor">Contacts </span><br><br><br><small><span class="text-muted x-rtl text-decoration-none cursor" onclick="showReport();">Report Error</span><br><a href="https://login.10times.com/login?eventId=ant&amp;utm_source=10times&amp;utm_medium=claim&amp;utm_campaign=event_claim" class="text-muted claim engageAction text-decoration-none" target="_blank" rel="noreferrer" data-action="callGaEvent" data-param="claim">Claim this event</a></small></td></tr><tr><td colspan="2"></td></tr><tr><td colspan="2"><small class="d-block text-muted">Different Located Editions</small><div class="row"><div class="col-md-4" style="padding-right:0px;"><div style="border: 1px solid rgb(238, 238, 238); padding: 5px 10px; margin: 5px 10px 5px 0px; background: rgb(245, 245, 245);"><a href="/ant-sao-joao-da-madeira" class="text-decoration-none text-muted"><strong class="d-block" style="white-space: nowrap; overflow: hidden;text-overflow:ellipsis;" data-bs-toggle="tooltip" title="Fradelos, Portugal">Fradelos, Portugal</strong></a><small class="brands_date d-block" data-status="" data-start-date="2022-03-22" data-end-date="2022-03-25" data-localizer="ignore">22 - 25 Mar 2022<i class="text-danger"> ended</i></small><div style="text-align:right;"><i style="cursor:pointer;" class="fas fa-bookmark  brand_event" data-settle="concurrent" onclick="attendNew(this,'bookmark');" data-id="309228" data-url="ant-sao-joao-da-madeira" data-name="International Conference on Ambient Systems, Networks and Technologies" data-date="2022-03-25"></i><small class="text-success float-start"> 16 Followers</small></div></div></div><div class="col-md-4" style="padding:0px;"><div style="border: 1px solid rgb(238, 238, 238); padding: 5px 10px; margin: 5px 10px 5px 0px; background: rgb(245, 245, 245);"><a href="/ant-warsaw" class="text-decoration-none text-muted"><strong class="d-block" style="white-space: nowrap; overflow: hidden;text-overflow:ellipsis;" data-bs-toggle="tooltip" title="Warsaw, Poland">Warsaw, Poland</strong></a><small class="brands_date d-block" data-status="" data-start-date="2021-03-23" data-end-date="2021-03-26" data-localizer="ignore">23 - 26 Mar 2021<i class="text-danger"> ended</i></small><div style="text-align:right;"><i style="cursor:pointer;" class="fas fa-bookmark  brand_event" data-settle="concurrent" onclick="attendNew(this,'bookmark');" data-id="436988" data-url="ant-warsaw" data-name="International Conference on Ambient Systems, Networks and Technologies" data-date="2021-03-26"></i><small class="text-success float-start"> 2 Followers</small></div></div></div><div class="col-md-4" style="padding-left:0px;"><div style="border: 1px solid rgb(238, 238, 238); padding: 5px 10px; margin: 5px 10px 5px 0px; background: rgb(245, 245, 245);"><a href="/ant-madrid" class="text-decoration-none text-muted"><strong class="d-block" style="white-space: nowrap; overflow: hidden;text-overflow:ellipsis;" data-bs-toggle="tooltip" title="Madrid, Spain">Madrid, Spain</strong></a><small class="brands_date d-block" data-status="" data-start-date="2016-05-23" data-end-date="2016-05-26" data-localizer="ignore">23 - 26 May 2016<i class="text-danger"> ended</i></small><div style="text-align:right;"><i style="cursor:pointer;" class="fas fa-bookmark  brand_event" data-settle="concurrent" onclick="attendNew(this,'bookmark');" data-id="261988" data-url="ant-madrid" data-name="International Conference on Ambient Systems, Networks and Technologies" data-date="2016-05-26"></i><small class="text-success float-start"> 3 Followers</small></div></div></div></div><div id="brand_events_with_ajax"></div><a class="d-block collapsedid text-decoration-none" id="colatedid" onclick="brand_events_open(this);" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target=".brand_events4" style="text-align:center;margin-top:10px;"><strong>1 more event</strong></a></td></tr><tr id="organzr"><td colspan="2" class="p-0" style="border-bottom-color:transparent!important;"><hr style="margin-top: 10px!important;"><h2 class="myPrfl fw-bold">Organizer</h2><img class="img-thumbnail lazyload float-start me-2" src="https://img.10times.com/images/usr-image-default.jpg" data-src="https://img.10times.com/userimages/a.jpg?imgeng=/w_80/h_80/m_stretch/cmpr_60" alt="Logo" width="65" height="65"><div class="float-end"><button class="engageAction float-end btn-orange btn followingMe eventCompany text-decoration-none fs-14 ms-3 fw-bold cursor" data-settle="organizer" data-action="organizerSplitFollow" data-param="920419#organizer"> Follow Company </button><br><div class="fs-12 float-end mt-2"><span class="text-muted">Queries about the event?</span><span><span onclick="contactOrgModal(this);" class="x-ob-cd text-decoration-none cntct_orgnzr cursor text-blue">
+                      Ask Organizer
+            </span></span></div></div><div style="display: inherit;"><strong class="fs-16" style="margin-bottom:1px;margin-top:-3px;"><a href="https://10times.com/company/acadia-university-woodstock" id="org-name" class="text-decoration-none">Acadia University</a></strong><small class="text-muted d-block"> Canada</small><small class="d-block" style="margin-top:0px;margin-bottom:-3px;"><span class="text-muted fw-bold">12</span><span class="text-muted"> Total Events</span></small></div></td></tr></tbody></table></section><section class="box fs-14 text-center pb-0"><div class="d-inline-block w-100"><span id="user-profile-pic"><i class="far fa-user float-start border-2 rounded-circle" aria-hidden="true" style="font-size: 40px;padding: 8px;color: #646c74;background-color: rgba(197, 197, 197, 0.2);"></i></span><select class="float-end btn btn-default fs-14 text-muted" style="pointer-events: auto;background: #fff;" onchange="changeEdition(this);"><option id="event_ed" value="2046434" selected="">Apr 2024</option><option value="1639724">Mar 2023</option><option value="769407">Apr 2019</option><option value="79684">Jun 2014</option></select><span class="text-muted float-end position-relative me-2" style="top:5px;">Edition</span></div><div><h2 class="fw-bold">How did you participate in this event?</h2></div><div class="col-md-12 p-2 d-flex pb-0"><div class="col-md-4 p-2"><span class="action-attended prtcpt_as fs-14 me-2 text-decoration-none as_visitor cursor" data-edition="2046434" data-settle="edition" data-source="editiondetails_interest" onclick="attendNew(this,'editiondetails_interest');customEventGA('Event','Interested','Event Detail | Visitor');"><i class="fas fa-users rounded-2" aria-hidden="true" style="font-size:50px;padding: .12em .12em;background-color:rgba(197, 197, 197, 0.2);color: #646c74;width: 45px;"></i><span class="d-block mt-1 text-muted">Visitor</span></span></div><div class="col-md-4 p-2"><span id="requestBooth" href="javascript:void(0);" data-settle="booth" data-edition="2046434" data-source="editiondetails_stall_attend" onclick="attendNew(this,'editiondetails_stall_attend');customEventGA('Event','Interested','Event Detail | Exhibitor');" class="action-attended prtcpt_as x-rabb me-2 fs-14 text-decoration-none as_exhibitor"><i class="far fa-address-book rounded-2" aria-hidden="true" style="font-size:50px;padding: .12em .12em;background-color: rgba(197, 197, 197, 0.2);color: #646c74;"></i><span class="d-block mt-1 text-muted">Exhibitor</span></span></div><div class="col-md-4 p-2"><span class="action-attended prtcpt_as fs-14 text-decoration-none as_speaker cursor" data-edition="2046434" data-settle="edition" data-source="editiondetails_attend" onclick="attendNew(this,'editiondetails_attend');customEventGA('Event','Interested','Event Detail | Speaker');"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="45" height="50" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet" class="rounded-2" style="background-color:rgba(197, 197, 197, 0.2);padding: 5px;"><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#646c74" stroke="none"><path d="M2405 5105 c-195 -37 -369 -139 -497 -290 -66 -77 -148 -234 -174
+        -330 -25 -93 -30 -285 -9 -386 64 -319 308 -574 630 -660 61 -16 109 -21 205
+        -21 155 0 242 21 387 92 226 111 397 337 448 589 23 111 16 294 -14 399 -122
+        422 -549 688 -976 607z m274 -320 c173 -41 323 -174 383 -340 26 -73 35 -209
+        19 -287 -38 -181 -184 -343 -360 -399 -91 -29 -231 -29 -321 0 -177 56 -323
+        219 -361 399 -16 78 -7 214 19 287 91 252 363 400 621 340z"></path><path d="M3842 3822 c-94 -34 -178 -123 -203 -215 -16 -61 -7 -173 20 -225 76
+        -148 236 -215 390 -163 l63 22 41 -28 c60 -41 184 -167 245 -248 110 -146 209
+        -389 228 -557 l7 -59 -163 3 -163 3 -17 73 c-73 308 -310 581 -611 700 -174
+        69 -138 67 -1119 67 -826 0 -890 -1 -965 -19 -375 -86 -679 -384 -765 -748
+        l-17 -73 -349 -5 c-329 -5 -351 -6 -384 -26 -42 -24 -80 -87 -80 -132 0 -19
+        97 -301 222 -645 241 -665 240 -663 323 -686 26 -7 181 -11 440 -11 l401 0 57
+        -371 c62 -409 67 -423 140 -460 100 -52 227 24 227 136 0 22 -40 304 -90 625
+        -49 321 -90 590 -90 597 0 11 170 13 930 13 760 0 930 -2 930 -13 0 -7 -40
+        -276 -90 -597 -49 -321 -90 -603 -90 -625 0 -46 27 -95 70 -127 64 -47 171
+        -27 216 41 21 32 32 87 81 409 l57 372 401 0 c259 0 414 4 440 11 83 23 82 21
+        323 686 122 336 222 625 222 643 0 33 -29 99 -54 119 -8 7 -37 20 -63 30 l-48
+        17 -8 69 c-44 399 -282 809 -609 1049 -61 45 -68 54 -77 98 -17 76 -36 114
+        -86 167 -83 89 -220 123 -333 83z m-327 -974 c227 -78 388 -244 459 -475 l7
+        -23 -1421 0 -1421 0 7 23 c80 259 268 434 529 492 48 11 231 13 910 12 l850
+        -2 80 -27z m1211 -836 c-3 -9 -73 -201 -155 -427 l-149 -410 -316 -3 c-313 -2
+        -316 -2 -316 18 0 12 12 98 26 191 23 146 25 176 14 211 -15 53 -56 94 -108
+        107 -28 8 -377 11 -1184 9 -1133 -3 -1143 -3 -1178 -24 -40 -23 -80 -86 -80
+        -126 0 -14 11 -98 25 -185 14 -87 25 -168 25 -181 l0 -22 -316 2 -316 3 -149
+        410 c-82 226 -152 418 -155 427 -5 17 106 18 2166 18 2060 0 2171 -1 2166 -18z"></path></g></svg><span class="d-block mt-1 text-muted">Speaker</span></span></div></div><div></div></section><section id="go" class="box visitors-block fs-14"><h2 class="visitors fw-bold" style="display: flex;align-items: baseline;">
+      Followers
+      <strong class="text-muted fs-14 fw-500 ms-1">
+        [ Users who have shown interest for this Event ]
+      </strong><span style="display: flex; margin-left: auto;"><span id="interestdetails" class="btn btn-sm btn-orange x-iai join-comm text-decoration-none fs-12 cursor" data-settle="community" onclick="attendNew(this,'interested_attend');">Join Community</span><span class="btn btn-sm btn-default x-rabb ms-2 text-decoration-none fs-12 cursor" onclick="getInviteModal(107533);"><i class="fas fa-user-plus"></i> Invite</span></span></h2><div class="row my-3"><div class="col-md-12" style="display: flex;"><div style=""><select id="visitor_designation" class="btn btn-default text-muted selOpt fs-14" aria-label="visitor_designation" style="width: 120px;margin-right: 5px;" onchange="visitorFilterRedirect(this);"><option value="">All Profiles</option><option value="149">Engineer [2] </option><option value="797">Network Engineer [1] </option><option value="1066">IT Manager [1] </option><option value="588">Electrical Engineer [1] </option><option value="171">Professor [1] </option><option value="824">Public Relations Officer [1] </option><option value="218">Businessman [1] </option><option value="8">Proprietor [1] </option><option value="232">Executive Director [1] </option><option value="618">Marketing Executive [1] </option><option value="280">Assistant Professor [1] </option><option value="799">Journalist [1] </option><option value="345">Lecturer [1] </option><option value="977">Business Manager [1] </option><option value="485">Technical Manager [1] </option><option value="1069">Pastor [1] </option></select><select id="visitor_intent_Country" style="margin:5px;border-radius: 5px;background:#fff;" class="btn btn-default text-muted fs-14" aria-label="visitor_intent" onchange="visitorFilterRedirect(this)"><option value="">All Countries</option><option value="BE">Belgium</option><option value="NG">Nigeria</option><option value="GH">Ghana</option><option value="TR">Turkey</option><option value="UG">Uganda</option><option value="IN">India</option><option value="IR">Iran</option><option value="ZA">South Africa</option><option value="BW">Botswana</option><option value="SN">Senegal</option><option value="KR">South Korea</option><option value="ES">Spain</option><option value="TN">Tunisia</option><option value="FI">Finland</option><option value="PK">Pakistan</option><option value="TZ">Tanzania</option><option value="BD">Bangladesh</option><option value="RW">Rwanda</option><option value="IE">Ireland</option><option value="SD">Sudan</option></select></div><div style="display: flex; justify-content: center; margin-left: auto; align-items: center;"><span class="text-muted fs-12">Sort By</span><select id="visitor_sortBy" class="cursor" aria-label="visitorSortBy_filter" style="padding-left:5px;border:none;background: #fff;outline: none;-webkit-appearance:none;appearance:auto;" onchange="visitorFilterRedirect(this);"><option value="Top_Profiles">Top Profiles</option><option value="Recommended">Recommended</option></select></div></div></div><div class="visitor clearfix d-flex flex-wrap"><div class="col-md-3"><div class="box box-210 text-center bx-hl position-relative"><div class="scroll no-scroller navbar-nav-scroll" style="height:155px;"><span class="follow text-muted position-absolute fs-14" data-user-id="67946577" data-name="Jyrki Liesivuori" data-src="https://img.10times.com/user_pic%2FvZUWtyv%2B7Txw3fx602ZrkQpkFD3Ut6xAEocxyHclA91Pvmi30Fi9RX2clguEd1oZ8tggVN5mGi0pL3m9cZ44wA%3D%3D.jpg?imgeng=/w_48/h_48/m_stretch/cmpr_60" data-settle="speaker" onclick="followSpeakerNew(this,67946577,'speaker');" data-bs-toggle="tooltip" data-bs-placement="left" title="Follow" style="top: 0px;right: 0px;height: 20px;width: 20px;"><i class="fas fa-heart float-end heart x-vs-trh"></i></span><a class="text-decoration-none" href="https://10times.com/profile/jyrki-liesivuori-67946577" target="_blank" rel="noreferrer noindex nofollow"><div style="display:flex;justify-content: center;"><div><img class="lazyload rounded-2 img-48" src="https://img.10times.com/images/usr-image-default.jpg" data-src="https://img.10times.com/user_pic%2FvZUWtyv%2B7Txw3fx602ZrkQpkFD3Ut6xAEocxyHclA91Pvmi30Fi9RX2clguEd1oZ8tggVN5mGi0pL3m9cZ44wA%3D%3D.jpg?imgeng=/w_48/h_48/m_stretch/cmpr_60" alt="pic" onerror="this.onerror=null;this.src='https://img.10times.com/userimages/j.jpg?imgeng=/w_48/h_48/m_stretch/cmpr_60';"></div></div><div class="color-333 mt-2 visitor_name">Jyrki Liesivuori</div></a><p class="fs-12 text-muted" style="margin-top: 5px;margin-bottom: 10px;line-height: 14px;">
+                  Tech Manager at UtU
+                </p><small class="d-block text-muted fs-12"><i class="fas fa-map-marker-alt me-1" aria-hidden="true"></i>Turku,          Finland
+              </small></div><div class="row action-button"><button data-user-id="67946577" data-settle="connect" onclick="connectNew(this,67946577,'Jyrki Liesivuori','107533');" class="sugg_button btn btn-block fw-bold fs-14 x-vs-cb">Connect</button></div></div></div><div class="col-md-3"><div class="box box-210 text-center bx-hl position-relative"><div class="scroll no-scroller navbar-nav-scroll" style="height:155px;"><span class="follow text-muted position-absolute fs-14" data-user-id="66027075" data-name="Stefaan Maes" data-src="https://img.10times.com/user_pic%2Fjb4k4rHlupIHq8fnKrXlzEw5EnHXU74PkpOJZh5IXQNFYyYZJF9BtjvGHF5hrvxr0ZezSt6q8EXnUJmA3mt9w%3D%3D.jpg?imgeng=/w_48/h_48/m_stretch/cmpr_60" data-settle="speaker" onclick="followSpeakerNew(this,66027075,'speaker');" data-bs-toggle="tooltip" data-bs-placement="left" title="Follow" style="top: 0px;right: 0px;height: 20px;width: 20px;"><i class="fas fa-heart float-end heart x-vs-trh"></i></span><a class="text-decoration-none" href="https://10times.com/profile/stefaan-maes-66027075" target="_blank" rel="noreferrer noindex nofollow"><div style="display:flex;justify-content: center;"><div><img class="lazyload rounded-2 img-48" src="https://img.10times.com/images/usr-image-default.jpg" data-src="https://img.10times.com/user_pic%2Fjb4k4rHlupIHq8fnKrXlzEw5EnHXU74PkpOJZh5IXQNFYyYZJF9BtjvGHF5hrvxr0ZezSt6q8EXnUJmA3mt9w%3D%3D.jpg?imgeng=/w_48/h_48/m_stretch/cmpr_60" alt="pic" onerror="this.onerror=null;this.src='https://img.10times.com/userimages/s.jpg?imgeng=/w_48/h_48/m_stretch/cmpr_60';"></div></div><div class="color-333 mt-2 visitor_name">Stefaan Maes</div></a><p class="fs-12 text-muted" style="margin-top: 5px;margin-bottom: 10px;line-height: 14px;">
+                  ERP Specialist at BARRY CALLEBAUT
+                </p><small class="d-block text-muted fs-12"><i class="fas fa-map-marker-alt me-1" aria-hidden="true"></i>Aalst,          Belgium
+              </small></div><div class="row action-button"><button data-user-id="66027075" data-settle="connect" onclick="connectNew(this,66027075,'Stefaan Maes','107533');" class="sugg_button btn btn-block fw-bold fs-14 x-vs-cb">Connect</button></div></div></div><div class="col-md-3"><div class="box box-210 text-center bx-hl position-relative"><div class="scroll no-scroller navbar-nav-scroll" style="height:155px;"><span class="follow text-muted position-absolute fs-14" data-user-id="27918944" data-name="Ahmadou Mbodji" data-src="https://img.10times.com/abc/images/9/4/4/27918944_1542954809.jpeg?imgeng=/w_48/h_48/m_stretch/cmpr_60" data-settle="speaker" onclick="followSpeakerNew(this,27918944,'speaker');" data-bs-toggle="tooltip" data-bs-placement="left" title="Follow" style="top: 0px;right: 0px;height: 20px;width: 20px;"><i class="fas fa-heart float-end heart x-vs-trh"></i></span><a class="text-decoration-none" href="https://10times.com/profile/ahmadou-mbodji-27918944" target="_blank" rel="noreferrer "><div style="display:flex;justify-content: center;"><div><img class="lazyload rounded-2 img-48" src="https://img.10times.com/images/usr-image-default.jpg" data-src="https://img.10times.com/abc/images/9/4/4/27918944_1542954809.jpeg?imgeng=/w_48/h_48/m_stretch/cmpr_60" alt="pic" onerror="this.onerror=null;this.src='https://img.10times.com/userimages/a.jpg?imgeng=/w_48/h_48/m_stretch/cmpr_60';"></div></div><div class="color-333 mt-2 visitor_name">Ahmadou Mbodji</div></a><p class="fs-12 text-muted" style="margin-top: 5px;margin-bottom: 10px;line-height: 14px;">
+                  Electrical Engineer at Sentech
+                </p><small class="d-block text-muted fs-12"><i class="fas fa-map-marker-alt me-1" aria-hidden="true"></i>Dakar,          Senegal
+              </small></div><div class="row action-button"><button data-user-id="27918944" data-settle="connect" onclick="connectNew(this,27918944,'Ahmadou Mbodji','107533');" class="sugg_button btn btn-block fw-bold fs-14 x-vs-cb">Connect</button></div></div></div><div class="col-md-3"><div class="box box-210 text-center bx-hl position-relative"><div class="scroll no-scroller navbar-nav-scroll" style="height:155px;"><span class="follow text-muted position-absolute fs-14" data-user-id="19789079" data-name="Desantoine" data-src="https://img.10times.com/user/images/0/7/9/19789079.jpg?imgeng=/w_48/h_48/m_stretch/cmpr_60" data-settle="speaker" onclick="followSpeakerNew(this,19789079,'speaker');" data-bs-toggle="tooltip" data-bs-placement="left" title="Follow" style="top: 0px;right: 0px;height: 20px;width: 20px;"><i class="fas fa-heart float-end heart x-vs-trh"></i></span><a class="text-decoration-none" href="https://10times.com/profile/desantoine-19789079" target="_blank" rel="noreferrer noindex nofollow"><div style="display:flex;justify-content: center;"><div><img class="lazyload rounded-2 img-48" src="https://img.10times.com/images/usr-image-default.jpg" data-src="https://img.10times.com/user/images/0/7/9/19789079.jpg?imgeng=/w_48/h_48/m_stretch/cmpr_60" alt="pic" onerror="this.onerror=null;this.src='https://img.10times.com/userimages/d.jpg?imgeng=/w_48/h_48/m_stretch/cmpr_60';"></div></div><div class="color-333 mt-2 visitor_name">Desantoine</div></a><p class="fs-12 text-muted" style="margin-top: 5px;margin-bottom: 10px;line-height: 14px;">
+                  Trader Investing at Yannisisabelle slu
+                </p><small class="d-block text-muted fs-12"><i class="fas fa-map-marker-alt me-1" aria-hidden="true"></i>Alcossebre,          Spain
+              </small></div><div class="row action-button"><button data-user-id="19789079" data-settle="connect" onclick="connectNew(this,19789079,'Desantoine','107533');" class="sugg_button btn btn-block fw-bold fs-14 x-vs-cb">Connect</button></div></div></div><div class="col-md-3"><div class="box box-210 text-center bx-hl position-relative"><div class="scroll no-scroller navbar-nav-scroll" style="height:155px;"><span class="follow text-muted position-absolute fs-14" data-user-id="22709614" data-name="Prince Opoku" data-src="https://img.10times.com/user/images/6/1/4/22709614.png?imgeng=/w_48/h_48/m_stretch/cmpr_60" data-settle="speaker" onclick="followSpeakerNew(this,22709614,'speaker');" data-bs-toggle="tooltip" data-bs-placement="left" title="Follow" style="top: 0px;right: 0px;height: 20px;width: 20px;"><i class="fas fa-heart float-end heart x-vs-trh"></i></span><a class="text-decoration-none" href="https://10times.com/profile/prince-opoku-22709614" target="_blank" rel="noreferrer "><div style="display:flex;justify-content: center;"><div><img class="lazyload rounded-2 img-48" src="https://img.10times.com/images/usr-image-default.jpg" data-src="https://img.10times.com/user/images/6/1/4/22709614.png?imgeng=/w_48/h_48/m_stretch/cmpr_60" alt="pic" onerror="this.onerror=null;this.src='https://img.10times.com/userimages/p.jpg?imgeng=/w_48/h_48/m_stretch/cmpr_60';"></div></div><div class="color-333 mt-2 visitor_name">Prince Opoku</div></a><p class="fs-12 text-muted" style="margin-top: 5px;margin-bottom: 10px;line-height: 14px;">
+                  Businessman at omega enterprise
+                </p><small class="d-block text-muted fs-12"><i class="fas fa-map-marker-alt me-1" aria-hidden="true"></i>Kumasi,          Ghana
+              </small></div><div class="row action-button"><button data-user-id="22709614" data-settle="connect" onclick="connectNew(this,22709614,'Prince Opoku','107533');" class="sugg_button btn btn-block fw-bold fs-14 x-vs-cb">Connect</button></div></div></div><div class="col-md-3"><div class="box box-210 text-center bx-hl position-relative"><div class="scroll no-scroller navbar-nav-scroll" style="height:155px;"><span class="follow text-muted position-absolute fs-14" data-user-id="33124165" data-name="Reza Bajelan" data-src="https://img.10times.com/abc/images/1/6/5/33124165_1552027174.jpeg?imgeng=/w_48/h_48/m_stretch/cmpr_60" data-settle="speaker" onclick="followSpeakerNew(this,33124165,'speaker');" data-bs-toggle="tooltip" data-bs-placement="left" title="Follow" style="top: 0px;right: 0px;height: 20px;width: 20px;"><i class="fas fa-heart float-end heart x-vs-trh"></i></span><a class="text-decoration-none" href="https://10times.com/profile/reza-bajelan-33124165" target="_blank" rel="noreferrer noindex nofollow"><div style="display:flex;justify-content: center;"><div><img class="lazyload rounded-2 img-48" src="https://img.10times.com/images/usr-image-default.jpg" data-src="https://img.10times.com/abc/images/1/6/5/33124165_1552027174.jpeg?imgeng=/w_48/h_48/m_stretch/cmpr_60" alt="pic" onerror="this.onerror=null;this.src='https://img.10times.com/userimages/r.jpg?imgeng=/w_48/h_48/m_stretch/cmpr_60';"></div></div><div class="color-333 mt-2 visitor_name">Reza Bajelan</div></a><p class="fs-12 text-muted" style="margin-top: 5px;margin-bottom: 10px;line-height: 14px;">
+                  Network Engineer at Remis.co
+                </p><small class="d-block text-muted fs-12"><i class="fas fa-map-marker-alt me-1" aria-hidden="true"></i>Istanbul,          Turkey
+              </small></div><div class="row action-button"><button data-user-id="33124165" data-settle="connect" onclick="connectNew(this,33124165,'Reza Bajelan','107533');" class="sugg_button btn btn-block fw-bold fs-14 x-vs-cb">Connect</button></div></div></div><div class="col-md-3"><div class="box box-210 text-center bx-hl position-relative"><div class="scroll no-scroller navbar-nav-scroll" style="height:155px;"><span class="follow text-muted position-absolute fs-14" data-user-id="29374751" data-name="TARIQ ABDULMAGEED MOHAMED" data-src="https://img.10times.com/abc/images/7/5/1/29374751_1547101876.jpeg?imgeng=/w_48/h_48/m_stretch/cmpr_60" data-settle="speaker" onclick="followSpeakerNew(this,29374751,'speaker');" data-bs-toggle="tooltip" data-bs-placement="left" title="Follow" style="top: 0px;right: 0px;height: 20px;width: 20px;"><i class="fas fa-heart float-end heart x-vs-trh"></i></span><a class="text-decoration-none" href="https://10times.com/profile/tariq-abdulmageed-29374751" target="_blank" rel="noreferrer noindex nofollow"><div style="display:flex;justify-content: center;"><div><img class="lazyload rounded-2 img-48" src="https://img.10times.com/images/usr-image-default.jpg" data-src="https://img.10times.com/abc/images/7/5/1/29374751_1547101876.jpeg?imgeng=/w_48/h_48/m_stretch/cmpr_60" alt="pic" onerror="this.onerror=null;this.src='https://img.10times.com/userimages/t.jpg?imgeng=/w_48/h_48/m_stretch/cmpr_60';"></div></div><div class="color-333 mt-2 visitor_name">TARIQ ABDULMAGEED MOHAMED</div></a><p class="fs-12 text-muted" style="margin-top: 5px;margin-bottom: 10px;line-height: 14px;">
+                  Excutive Manager at Master Solutions Integrated SolutionsCo.LTD
+                </p><small class="d-block text-muted fs-12"><i class="fas fa-map-marker-alt me-1" aria-hidden="true"></i>Khartoum,          Sudan
+              </small></div><div class="row action-button"><button data-user-id="29374751" data-settle="connect" onclick="connectNew(this,29374751,'TARIQ ABDULMAGEED MOHAMED','107533');" class="sugg_button btn btn-block fw-bold fs-14 x-vs-cb">Connect</button></div></div></div><div class="col-md-3"><div class="box text-center box-210"><br><span id="action3" rel="nofollow" data-param="interest" class="btn  btn-orange d-block x-va-brob text-decoration-none fs-14 engageAction action-in fw-bold cursor">Add Profile</span><br><a href="https://10times.com/ant/visitors" class="btn btn-default d-block text-decoration-none fs-14">View More</a></div></div></div></section><section class="box fs-14" id="Q_A"><div class="row"><div class="col-md-12" style="position:relative;"><h2 class="fw-bold" style="display: flex;align-items: baseline;">Frequently Asked Questions
+        <span onclick="contact_organizer_detail(this);" data-event_id="107533" data-event_name="International Conference on Ambient Systems, Networks and Technologies" data-event_url="ant" style="margin-left:auto;" class="btn btn-orange x-ob-cd text-decoration-none fs-12 cntct_orgnzr cursor faq_contact">Contact Organizer</span></h2><hr class="mt-3 mb-3"><div class="faq_block"><div class="d-flex" onclick="OpenAnswer(this,'answer_0','open_answer_0');"><div id="question_0" class="fs-14">
+              What type of products / services will be showcased in the event?
+            </div><span class="float-end fs-14" style="margin-left:auto;"><i id="open_answer_0" class="fas fa-caret-up"></i></span></div><div id="answer_0" class="mt-2 question_answer_block "><span class="text-muted">Computer &amp; Gadgets,Instrumentation etc. are some of the products / services to be showcased in International Conference on Ambient Systems, Networks and Technologies.</span><br><div class="cursor helpul-btn text-muted engageAction text-decoration-none mt-3" data-action="questionresponse" data-settle="feedback" data-param="like" data-response="2281065"><i class="helpful-check tt-svg-xs position-relative" style="bottom:2px;"></i>
+              Helpful
+              <strong class="text-muted response-stats"></strong></div></div></div><hr class="mt-3 mb-3"><div class="faq_block"><div class="d-flex" onclick="OpenAnswer(this,'answer_1','open_answer_1');"><div id="question_1" class="fs-14">
+              Can I get a list of speakers participating in the event?
+            </div><span class="float-end fs-14" style="margin-left:auto;"><i id="open_answer_1" class="fas fa-caret-down"></i></span></div><div id="answer_1" class="mt-2 question_answer_block  d-none "><span class="text-muted">To get the speaker list on mail register at the <a href="https://10times.com/ant/interested" target="_blank" rel="noopener noreferrer">link</a> .</span><br><div class="cursor helpul-btn text-muted engageAction text-decoration-none mt-3" data-action="questionresponse" data-settle="feedback" data-param="like" data-response="2281064"><i class="helpful-check tt-svg-xs position-relative" style="bottom:2px;"></i>
+              Helpful
+              <strong class="text-muted response-stats"></strong></div></div></div><hr class="mt-3 mb-3"><div class="faq_block"><div class="d-flex" onclick="OpenAnswer(this,'answer_2','open_answer_2');"><div id="question_2" class="fs-14">
+              Can I get a list of exhibitors participating in the event?
+            </div><span class="float-end fs-14" style="margin-left:auto;"><i id="open_answer_2" class="fas fa-caret-down"></i></span></div><div id="answer_2" class="mt-2 question_answer_block  d-none "><span class="text-muted">To get the exhibitor list on mail register at the <a href="https://10times.com/ant/interested" target="_blank" rel="noopener noreferrer">link</a> .</span><br><div class="cursor helpul-btn text-muted engageAction text-decoration-none mt-3" data-action="questionresponse" data-settle="feedback" data-param="like" data-response="2281063"><i class="helpful-check tt-svg-xs position-relative" style="bottom:2px;"></i>
+              Helpful
+              <strong class="text-muted response-stats"></strong></div></div></div><div id="more_ques_data"></div><hr><div id="ask_faq_question" class="text-center margin more_questions "><a onclick="contact_organizer_detail(this);" data-event_id="107533" data-event_name="International Conference on Ambient Systems, Networks and Technologies" data-event_url="ant" class="btn btn-blue text-decoration-none fs-14 faq_ask_contact">Ask More Questions</a></div></div></div></section><section class="box fs-14" id="verified-review"><div class="row"><div class="col-md-12" style="position:relative;"><h2 class="fw-bold">Write a Review</h2><input type="text" name="verifiedReview" class="engageAction form-control bg-white text-muted fs-14 cursor" data-action="verifiedReview" data-settle="review" style="padding-left:30px;" value="Help other visitors by sharing your review." aria-label="verified review" readonly=""><i class="fas fa-pencil position-absolute text-muted fs-12" style="bottom:55px;left: 25px;"></i><span data-settle="review" data-action="verifiedReview" class="engageAction btn btn-orange mt-2 text-decoration-none fs-14 fw-bold cursor">Add Your Review</span></div></div></section><div class="row fs-14 box p-0" style="background: transparent; border: none; margin-top: 1.3em"><div class="col-md-6"><span id="event_latitude" class="d-none">50.931000</span><span id="event_longude" class="d-none">5.332000</span><section id="map_dirr" class="box map_dir" style="height:100%;"><h2 class="mng fw-bold">Venue Map &amp; Directions</h2><span onclick="map_open(50.931000,5.332000, 1);"><img width="324" height="324" src="https://img.10times.com/images/no-map1.jpg" class="lazyload mb-2 cursor w-100" data-src="https://img.10times.com/map/city/79789.png?imgeng=/w_324/h_324/m_stretch/cmpr_60" alt="google-map"></span><div class="mb-1">Venue to be announced</div><p><span>Hasselt</span>,
+                                                  <span>Belgium</span></p><a href="javascript:void(0)" onclick="addVenue(this);" class="text-decoration-none btn btn-default fs-14">Add Venue</a></section></div><div class="col-md-6"><section class="box more_event fs-14 h-100"><h2 class="fw-bold">More Events Around Hasselt</h2><table class="tb-list w-100"><tbody><tr class="box-link" onclick="fullBlockClick(this)"><td class="text-end text-muted" style="width: 70px;vertical-align: top;"><img height="0" width="0" class="lazyload" src="https://im.10times.com/0.png" data-src="https://im.10times.com/1.png?c=web&amp;s=eventdetail&amp;p=moreevents&amp;e=2507372,1868510,2440096&amp;k=5f9c77211a74dbf0d1fba0752c631932" alt="moreevents">            Jun 20<small class="d-block">2024</small></td><td><i style="cursor:pointer" class="fa fa-bookmark brand_event float-end ms-4" data-settle="more" onclick="eventFollow(this,'bookmark')" data-id="39181" data-name="Media &amp; Learning" data-url="media-and-learning"></i><a href="/media-and-learning" id="moreve_0" class="text-decoration-none">Media &amp; Learning</a><br><span class="d-block text-muted">Leuven, Belgium</span></td></tr><tr class="box-link" onclick="fullBlockClick(this)"><td class="text-end text-muted" style="width: 70px;vertical-align: top;">            Sep 09<small class="d-block">2024</small></td><td><i style="cursor:pointer" class="fa fa-bookmark brand_event float-end ms-4" data-settle="more" onclick="eventFollow(this,'bookmark')" data-id="75447" data-name="Conference on Noise and Vibration Engineering" data-url="isma"></i><a href="/isma" id="moreve_1" class="text-decoration-none">Conference on Noise and Vibration Engineering</a><br><span class="d-block text-muted">Leuven, Belgium</span></td></tr><tr class="box-link" onclick="fullBlockClick(this)"><td class="text-end text-muted" style="width: 70px;vertical-align: top;">            Nov 22<small class="d-block">2024</small></td><td><i style="cursor:pointer" class="fa fa-bookmark brand_event float-end ms-4" data-settle="more" onclick="eventFollow(this,'bookmark')" data-id="446733" data-name="Annual Congress of Physical &amp; Rehabilitation Medicine" data-url="prm-annual-congress"></i><a href="/prm-annual-congress" id="moreve_2" class="text-decoration-none">Annual Congress of Physical &amp; Rehabilitation Medicine</a><br><span class="d-block text-muted">Leuven, Belgium</span></td></tr></tbody></table><br><p><a class="text-decoration-none fs-14 me-2" href="https://10times.com/hasselt-be"><i class="fa fa-hashtag"></i>Hasselt</a><a class="text-decoration-none fs-14 me-2" href="https://10times.com/maastricht-nl"><i class="fa fa-hashtag"></i>Maastricht</a><a class="text-decoration-none fs-14 me-2" href="https://10times.com/liege-be"><i class="fa fa-hashtag"></i>Liège</a></p></section></div><div class="modal fade in" id="myModal_map"></div></div><div id="redirect_link" class="d-none">https://10times.com/hub/technology-hub</div><div class="desktop fs-14 p-2 pt-0 pb-0"></div></div></div><div id="sidebar" class="col-md-4 col-sm-12"><section class="fs-14 box d-none" id="inc_prfl" style="background-color: #e7e7e7;"><span><span class="text-blue fw-bold d-block cursor" onclick="attendNew(this,'interested_attend');customEventGA('Event','Interested','Event Detail | Next step - Complete your profile');">Next step - <span>Complete your profile</span></span><span class="d-block mt-2">To mark your interest in  International Conference on Ambient Systems, Networks and Technologies</span></span></section><section class="fs-14 box p-0 " id="intrstBox" style="background-color: #e7e7e7;"><div class="text-center"><div class="link" aria-label="10times_gold_banner" onclick="aboutToHub('main','https://10times.com/hub/technology-hub'); customEventGA('Event Detail | About','Banner tap','Without User journey');"><div class="d-flex flex-column justify-content-evenly" style="height: 110px;
+    width: 100%;
+    background-image: url(https://img.10times.com/images/community/community_detail_bg_updated.png?imgeng=/w_354/h_110/m_stretch/cmpr_60);background-repeat: no-repeat;background-size: cover;"><div class="fs-20" style="color:white;">Reach over 2M+ audience with 1 post!</div><div class=""><button class="btn btn-orange btn-sm fs-13">Talk About Event</button><button class="btn btn-orange btn-sm fs-13 mx-1">Ask Questions</button><button class="btn btn-orange btn-sm fs-13">Share Success</button></div></div></div></div></section><section class="fs-14 d-none box" id="intrstBox2" style="background-color: #e7e7e7;"><div style="font-weight: bolder;">
+      Complete your event journey
+    </div><div style="display: flex;justify-content: left;"><div style="width: 100%; display: flex; justify-content: center;"><div class="activity-line"></div></div><div id="EventJourneyLvl" class="activity-lvl-main" style=""><span class="activity-lvl-sub cursor" title="Connect with 36 followers"><div class="activity-lvl-icon act-network" data-follows="36"><i class="fas fa-user"></i></div><div style="margin-top: 1em;">
+            Network
+          </div></span><a class="activity-lvl-sub cursor" href="https://10times.com/hub/technology-hub" onclick="customEventGA('Event Detail | About','Banner tap','User journey');"><div class="activity-lvl-icon"><i class="fas fa-bullhorn"></i></div><div style="margin-top: 1em;">
+            Broadcast
+          </div></a><span class="activity-lvl-sub cursor"><div class="activity-lvl-icon act-travel"><i class="fas fa-briefcase"></i></div><div style="margin-top: 1em;">
+            Plan
+          </div></span><span class="activity-lvl-sub"><div class="activity-lvl-icon act-attend"><i class="fas fa-street-view"></i></div><div style="margin-top: 1em;">
+            Attend
+          </div></span><span class="activity-lvl-sub"><div class="activity-lvl-icon act-review"><i class="fas fa-star"></i></div><div style="margin-top: 1em;">
+            Feedback
+          </div></span></div></div></section><div id="live-now" class="" data-enddate="2024-04-25" data-curdate="2024-06-04" style="display: none;font-size: 14px;"></div><div id="pltm-carousel" class="" data-bs-ride="carousel" data-bs-interval="3000" style="border-bottom:none;font-size: 14px;"></div><section class="box box-ads adr_ad_12"><ins data-r="3" class="adsbygoogle" style="display:inline-block;width:100%;height:280px;" data-ad-client="ca-pub-8525015516580200" data-ad-slot="5877793283" data-override-format="true"></ins></section><section class="box othr_rel_evt fs-14"><h2 class="fw-bold">Related Events</h2><table class="tb-list w-100"><tbody><tr class="box-link" onclick="fullBlockClick(this)"><td class="text-end text-muted" style="width: 70px;vertical-align: top;"><img class="lazyload" src="https://im.10times.com/0.png" data-src="https://im.10times.com/1.png?c=web&amp;s=eventdetail&amp;p=similarevents&amp;e=2427402,2071641,1877520,2413011,2402185&amp;k=de089e488f62f19f956548247b541cfd" width="0" height="0" alt="related_event">         Jun 21<small class="d-block">2024</small></td><td><i style="cursor:pointer" class="fa fa-bookmark brand_event float-end ms-4" data-settle="related" onclick="eventFollow(this,'bookmark')" data-id="1161770" data-name="Test Automation Summit" data-url="e1dd-4zd0-r00r-f"></i><a href="/e1dd-4zd0-r00r-f" id="releve_0" class="text-decoration-none">Test Automation Summit</a><br><span class="d-block text-muted">Tokyo, Japan</span></td></tr><tr class="box-link" onclick="fullBlockClick(this)"><td class="text-end text-muted" style="width: 70px;vertical-align: top;">         Jun 24<small class="d-block">2024</small></td><td><i style="cursor:pointer" class="fa fa-bookmark brand_event float-end ms-4" data-settle="related" onclick="eventFollow(this,'bookmark')" data-id="899512" data-name="Enterprise Content Management" data-url="e1k0-849x-xsdh"></i><a href="/e1k0-849x-xsdh" id="releve_1" class="text-decoration-none">Enterprise Content Management</a><br><span class="d-block text-muted">London, UK</span></td></tr><tr class="box-link" onclick="fullBlockClick(this)"><td class="text-end text-muted" style="width: 70px;vertical-align: top;">         Jun 30<small class="d-block">2024</small></td><td><i style="cursor:pointer" class="fa fa-bookmark brand_event float-end ms-4" data-settle="related" onclick="eventFollow(this,'bookmark')" data-id="874130" data-name="International Conference on Use of Generative Pre-trained Transformer Models and Beyond" data-url="e14k-rpdg-2f57"></i><a href="/e14k-rpdg-2f57" id="releve_2" class="text-decoration-none">International Conference on Use of Generative Pre-trained Transformer Models and Beyond</a><br><span class="d-block text-muted">Vila Nova de Gaia, Portugal</span></td></tr><tr class="box-link pre" onclick="fullBlockClick(this)"><td class="text-end text-muted" style="width: 70px;vertical-align: top;"><img class="lazyload" src="https://im.10times.com/0.png" data-src="https://im.10times.com/1.png?c=web&amp;s=eventdetail&amp;p=similarevents&amp;e=2045186,2274315,2111100,1887421,2480278&amp;k=035f975fc3ac579c60e9a5314184c384" width="0" height="0" alt="related_event">         Oct 12<small class="d-block">2024</small></td><td><i style="cursor:pointer" class="fa fa-bookmark brand_event float-end ms-4" data-settle="related" onclick="eventFollow(this,'bookmark')" data-id="120631" data-name="China International Medical Equipment Fair" data-url="https://10times.com/cmef"></i><a href="https://10times.com/cmef" id="releve1_0" class="text-decoration-none">China International Medical Equipment Fair</a><i class="fa fa-fw fa-star text-orange ms-1"></i><br><span class="d-block text-muted">Shenzhen, China</span></td></tr><tr class="box-link pre" onclick="fullBlockClick(this)"><td class="text-end text-muted" style="width: 70px;vertical-align: top;">         Jun 05<small class="d-block">2024</small></td><td><i style="cursor:pointer" class="fa fa-bookmark brand_event float-end ms-4" data-settle="related" onclick="eventFollow(this,'bookmark')" data-id="47250" data-name="Digital Healthcare Innovation Summit East" data-url="https://10times.com/healthcare-innovation-summit"></i><a href="https://10times.com/healthcare-innovation-summit" id="releve1_1" class="text-decoration-none">Digital Healthcare Innovation Summit East</a><i class="fa fa-fw fa-star text-orange ms-1"></i><br><span class="d-block text-muted">Boston, USA</span></td></tr></tbody></table></section><section class="box hotl_blk fs-14 pb-0" style="padding-bottom: 13px !important;"><h2 class="fw-bold">Featured Hotels in Hasselt</h2><table class="tb-list w-100"><tbody><tr class="box-link" data-checkin="2024-06-10" data-checkout="2024-06-11"><td style="width: 60px;vertical-align: top;"><img src="https://img.10times.com/images/usr-image-default.jpg" data-src="https://q-xx.bstatic.com/xdata/images/hotel/square60/38715230.jpg?k=c2e8d38af9157275120600a3be092ae27b805bf1118b390d5f8a24dfd623d6c0&amp;o=" class="lazyload" alt="B&amp;B Noord-Zuid" style="height: 60px;width: 60px;"></td><td><p class="text-blue cursor m-0" id="htleve_0"><a href="https://www.booking.com/searchresults.en-gb.html?ss=Hasselt%20Belgium&amp;aid=337796;label=wb_event_detail_107533;checkin=2024-04-23;checkout=2024-04-25;highlighted_hotels=1233107;source=hotel&amp;" target="_blank">B&amp;B Noord-Zuid</a></p><span class="d-block"><i class="fas fa-star text-orange fs-12"></i><i class="fas fa-star text-orange fs-12"></i><i class="fas fa-star text-orange fs-12"></i><i class="fas fa-star text-orange fs-12"></i><small class="text-muted-new"> from EUR 125</small></span></td></tr><tr class="box-link" data-checkin="2024-06-10" data-checkout="2024-06-11"><td style="width: 60px;vertical-align: top;"><img src="https://img.10times.com/images/usr-image-default.jpg" data-src="https://q-xx.bstatic.com/xdata/images/hotel/square60/48705802.jpg?k=5720c944713b072af86ca72749b35c9bdff3ea811495c847f24b13d6ed7ee6c5&amp;o=" class="lazyload" alt="Guesthouse 't Goed Leven" style="height: 60px;width: 60px;"></td><td><p class="text-blue cursor m-0" id="htleve_1"><a href="https://www.booking.com/searchresults.en-gb.html?ss=Hasselt%20Belgium&amp;aid=337796;label=wb_event_detail_107533;checkin=2024-04-23;checkout=2024-04-25;highlighted_hotels=1405069;source=hotel&amp;" target="_blank">Guesthouse 't Goed Leven</a></p><span class="d-block"><i class="fas fa-star text-orange fs-12"></i><i class="fas fa-star text-orange fs-12"></i><small class="text-muted-new"> from EUR 120</small></span></td></tr><tr class="box-link" data-checkin="2024-06-10" data-checkout="2024-06-11"><td style="width: 60px;vertical-align: top;"><img src="https://img.10times.com/images/usr-image-default.jpg" data-src="https://q-xx.bstatic.com/xdata/images/hotel/square60/207594322.jpg?k=da96e0c921c12c2f4a43d120d8c84d10a83094a2128213bc4a0942ab89c1251e&amp;o=" class="lazyload" alt="Hotel Beila" style="height: 60px;width: 60px;"></td><td><p class="text-blue cursor m-0" id="htleve_2"><a href="https://www.booking.com/searchresults.en-gb.html?ss=Hasselt%20Belgium&amp;aid=337796;label=wb_event_detail_107533;checkin=2024-04-23;checkout=2024-04-25;highlighted_hotels=4671413;source=hotel&amp;" target="_blank">Hotel Beila</a></p><span class="d-block"><i class="fas fa-star text-orange fs-12"></i><i class="fas fa-star text-orange fs-12"></i><small class="text-muted-new"> from EUR 127.53</small></span></td></tr><tr class="box-link" data-checkin="2024-06-10" data-checkout="2024-06-11"><td style="width: 60px;vertical-align: top;"><img src="https://img.10times.com/images/usr-image-default.jpg" data-src="https://q-xx.bstatic.com/xdata/images/hotel/square60/15878353.jpg?k=4089cc825a39d7d66a9b65e6705d0bce293fee741e1ce0eaae48cc10aa26f50b&amp;o=" class="lazyload" alt="B&amp;B Le Refuge" style="height: 60px;width: 60px;"></td><td><p class="text-blue cursor m-0" id="htleve_3"><a href="https://www.booking.com/searchresults.en-gb.html?ss=Hasselt%20Belgium&amp;aid=337796;label=wb_event_detail_107533;checkin=2024-04-23;checkout=2024-04-25;highlighted_hotels=506377;source=hotel&amp;" target="_blank">B&amp;B Le Refuge</a></p><span class="d-block"><i class="fas fa-star text-orange fs-12"></i><i class="fas fa-star text-orange fs-12"></i><i class="fas fa-star text-orange fs-12"></i><i class="fas fa-star text-orange fs-12"></i><small class="text-muted-new"> from EUR 125</small></span></td></tr></tbody></table><div class="mt-2"><span data-url="https://www.booking.com/searchresults.html?ss=Hasselt%20Belgium&amp;aid=337796;checkin=2024-06-10;checkout=2024-06-11" data-label="wb_event_detail_107533" rel="nofollow" class="btn btn-blue margin text-decoration-none fs-14 cursor" onclick="return hotelDetail(this , 1)">More Hotels</span></div></section><section class="box box-ads adr_ad_12"><ins data-r="3" class="adsbygoogle" style="display:inline-block;width:100%;height:280px;" data-ad-client="ca-pub-8525015516580200" data-ad-slot="5877793283" data-override-format="true"></ins></section><section class="box fs-14 d-none"><a href="//10times.com/app" target="_blank" rel="noreferrer"><img class="lazyload" src="https://img.10times.com/images/usr-image-default.jpg?imgeng=/w_350/h_290/m_stretch/cmpr_60" data-src="https://img.10times.com/images/gif_banner_app.gif?imgeng=/w_350/h_290/m_stretch/cmpr_60" width="100%" height="270" alt="10times app"></a><div id="ct-container__parallax__057d5fdf841f-1" class="clicktripz-parallax" style="max-height: 600px !important; padding-top: 15px;"></div></section><a href="/e1dd-4zd0-r00r-f" id="popup_image" class="next_event" aria-label="next event"><img id="image" class="lazyload d-none" src="https://img.10times.com/images/usr-image-default.jpg" data-src="https://img.10times.com/images/next.png" alt="10times"></a><section class="tentimesAds"></section></div></div><input type="hidden" id="country_code"><input type="hidden" value="23 Apr 2024,24 Apr 2024,25 Apr 2024" id="dateList"><ol itemscope="" itemtype="https://schema.org/BreadcrumbList" class="breadcrumb mb-1 fs-14"><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a itemprop="item" href="/events" class="text-decoration-none"><span itemprop="name">All Events</span></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a class="text-decoration-none" itemprop="item" href="/conferences"><span itemprop="name">Conferences</span></a><meta itemprop="position" content="2"></li><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a class="text-decoration-none" itemprop="item" href="/computer/conferences"><span itemprop="name">Computer &amp; Gadgets Conferences</span></a><meta itemprop="position" content="3"></li><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a class="text-decoration-none" itemprop="item" href="/belgium/computer/conferences"><span itemprop="name">Computer &amp; Gadgets               Conferences in 
+               Belgium</span></a><meta itemprop="position" content="4"></li><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a class="text-decoration-none" itemprop="item" href="/hasselt-be"><span itemprop="name">Computer &amp; Gadgets Events in Hasselt</span></a><meta itemprop="position" content="5"></li></ol></div></div><script>var not_about_page=0;</script><input type="hidden" id="main_page" value="about"><form><input type="hidden" id="device" value="computer"><input type="hidden" id="pageUrl" value="/ant"><input type="hidden" id="deviceType" value="1"><div class="modal fade" id="myModalinvite"></div><div id="modalData"></div><div id="bounceModalData"></div><div id="reportModalData"></div><input type="hidden" id="pageType" value="about"><input type="hidden" id="pageCategory" value="Event"><input type="hidden" id="companyId" value="920419"><input type="hidden" id="eventEdition" value="2046434"><input type="hidden" id="strt_end_date" value="1713810600,1713983400"><input type="hidden" id="event_url" value="ant"><input type="hidden" id="deviceType" value="1"><input type="hidden" id="evt_status" value=""><input type="hidden" id="venueName"><input type="hidden" id="cityName" value="Hasselt"><input type="hidden" id="countryName" value="Belgium"><input type="hidden" id="geoLatLng" value="50.931000,5.332000"><input type="hidden" id="eventID" value="107533"><input type="hidden" id="event_name" value="International Conference on Ambient Systems, Networks and Technologies"><input type="hidden" id="venueId" value=""><input type="hidden" id="cityId" value="79789"><input type="hidden" id="eventType" value="2"><input type="hidden" id="br_id" value=""><input type="hidden" id="country_id" value="BE"><input type="hidden" id="future_edition" value=""><input type="hidden" id="live_page" value="0"><input type="hidden" id="badgeEnabled" value="0"><input type="hidden" id="rsvpInt" value="0"><input type="hidden" id="event_date" value="23-25 Apr "><input type="hidden" id="end_date" value="2024-04-25"><input type="hidden" id="spkr_cnt" value="0"><input type="hidden" id="exh_cnt" value="0"><input type="hidden" id="Industry_id" value="10"><input type="hidden" id="Industry_url" value="computer"><input type="hidden" id="adpushup_event" value="0"><input type="hidden" id="countrymap" value="Y"><input type="hidden" id="CountryId" value="BE"><input type="hidden" id="chartData" value="0"><input type="hidden" id="exhibitorNewPage"><input type="hidden" id="custom_question" value="0"><input type="hidden" id="industry" value="156"><input type="hidden" id="industry_name" value="IT &amp; Technology"><input type="hidden" id="industry_url" value="technology"><input type="hidden" id="isGroup" value="1"><script type="application/ld+json">
 {
-display: inline; /* horizontal list, use "list-item" or other appropriate value for vertical list */
-list-style-type: none; /* use "initial" or other to enable bullets */
-margin: 0 5px 0 0; /* adjust spacing between items */
-opacity: 0.5;
--o-transition: 1s ease opacity;
--moz-transition: 1s ease opacity;
--webkit-transition: 1s ease opacity;
-transition: 1s ease opacity;
-}
-/* .qtranxs_widget ul li span { margin: 0 5px 0 0; } */ /* other way to control spacing */
-.qtranxs_widget ul li.active { opacity: 0.8; }
-.qtranxs_widget ul li:hover { opacity: 1; }
-.qtranxs_widget img { box-shadow: none; vertical-align: middle; display: initial; }
-.qtranxs_flag { height:12px; width:18px; display:block; }
-.qtranxs_flag_and_text { padding-left:20px; }
-.qtranxs_flag span { display:none; }
-</style>
-<div class="widget widget-ls-desktop">
-<ul class="language-chooser language-chooser-text qtranxs_language_chooser" id="qtranslate-2-chooser" style="display: block;"><li class="lang-en"><a href="https://www.arts.cuhk.edu.hk/~ant/en/announcement/eaaa2023/" hreflang="en" title="Eng (en)" class="qtranxs_text qtranxs_text_en"><span>Eng</span></a></li>
-<li class="lang-tc"><a href="https://www.arts.cuhk.edu.hk/~ant/tc/announcement/eaaa2023/" hreflang="tc" title="繁 (tc)" class="qtranxs_text qtranxs_text_tc"><span>繁</span></a></li>
-
-<li class="lang-sc active"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/announcement/eaaa2023/" hreflang="sc" title="简 (sc)" class="qtranxs_text qtranxs_text_sc"><span>简</span></a></li>
-</ul><div class="qtranxs_widget_end"></div>
-</div>        </div><!-- end of header-corner -->
-        <div class="header-corner-bottom">
-                                    <a class="social-icons" href="https://www.facebook.com/anthrocuhk" target="_blank" alt="Facebook" style="background-image: url('https://www.arts.cuhk.edu.hk/~ant/wp-content/uploads/2019/02/sns-facebook@2x.png');"></a>
-                                                <a class="social-icons" href="https://www.instagram.com/anthrocu/" target="_blank" alt="Instagram" style="background-image: url('https://www.arts.cuhk.edu.hk/~ant/wp-content/uploads/2019/02/sns-instagram@2x.png');"></a>
-                                                <a class="social-icons" href="http://www.arts.cuhk.edu.hk/~ant/newweb/wechat-public-account/" target="_blank" alt="WeChat" style="background-image: url('https://www.arts.cuhk.edu.hk/~ant/wp-content/uploads/2019/02/sns-wechat@2x.png');"></a>
-                                                <a class="social-icons" href="https://www.weibo.com/anthrocuhk" target="_blank" alt="Weibo" style="background-image: url('https://www.arts.cuhk.edu.hk/~ant/wp-content/uploads/2019/02/sns-weibo@2x.png');"></a>
-                                                <a class="social-icons" href="https://site.douban.com/146468/" target="_blank" alt="Douban" style="background-image: url('https://www.arts.cuhk.edu.hk/~ant/wp-content/uploads/2019/02/sns-douban@2x.png');"></a>
-                                                <a class="social-icons" href="http://anthrocuhk.blogspot.com/" target="_blank" alt="Blogspot" style="background-image: url('https://www.arts.cuhk.edu.hk/~ant/wp-content/uploads/2019/02/sns-blogspot@2x.png');"></a>
-                              </div><!-- end of header-corner-bottom -->
-      </div><!-- end of header-corner -->
-      <div class="main-menu">
-        <div class="main-menu-close"></div>
-        <div class="header-corner mobile-header-corner">
-          <div class="header-corner-top mobile-header-corner-top">
-            <a class="header-search mobile-header-search" href="https://www.arts.cuhk.edu.hk/~ant/search"></a>
-            <div class="fontsize-container">
-              <div class="fontsize large">A</div><div class="fontsize medium active">A</div><div class="fontsize small">A</div>
-            </div>
-            <style type="text/css">
-.qtranxs_widget ul { margin: 0; }
-.qtranxs_widget ul li
-{
-display: inline; /* horizontal list, use "list-item" or other appropriate value for vertical list */
-list-style-type: none; /* use "initial" or other to enable bullets */
-margin: 0 5px 0 0; /* adjust spacing between items */
-opacity: 0.5;
--o-transition: 1s ease opacity;
--moz-transition: 1s ease opacity;
--webkit-transition: 1s ease opacity;
-transition: 1s ease opacity;
-}
-/* .qtranxs_widget ul li span { margin: 0 5px 0 0; } */ /* other way to control spacing */
-.qtranxs_widget ul li.active { opacity: 0.8; }
-.qtranxs_widget ul li:hover { opacity: 1; }
-.qtranxs_widget img { box-shadow: none; vertical-align: middle; display: initial; }
-.qtranxs_flag { height:12px; width:18px; display:block; }
-.qtranxs_flag_and_text { padding-left:20px; }
-.qtranxs_flag span { display:none; }
-</style>
-<div class="widget widget-ls-mobile">
-<ul class="language-chooser language-chooser-text qtranxs_language_chooser" id="qtranslate-3-chooser" style="display: block;"><li class="lang-en"><a href="https://www.arts.cuhk.edu.hk/~ant/en/announcement/eaaa2023/" hreflang="en" title="Eng (en)" class="qtranxs_text qtranxs_text_en"><span>Eng</span></a></li>
-<li class="lang-tc"><a href="https://www.arts.cuhk.edu.hk/~ant/tc/announcement/eaaa2023/" hreflang="tc" title="繁 (tc)" class="qtranxs_text qtranxs_text_tc"><span>繁</span></a></li>
-
-<li class="lang-sc active"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/announcement/eaaa2023/" hreflang="sc" title="简 (sc)" class="qtranxs_text qtranxs_text_sc"><span>简</span></a></li>
-</ul><div class="qtranxs_widget_end"></div>
-</div>          </div><!-- end of header-corner -->
-        </div><!-- end of header-corner -->
-        <ul id="menu-main-menu" class="menu"><li id="menu-item-3091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-3091"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/">主页</a></li>
-<li id="menu-item-2591" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2591"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/about/">关于我们</a>
-<ul class="sub-menu">
-	<li id="menu-item-2592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2592"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/about/what-is-anthropology/">人类学是什么？</a></li>
-	<li id="menu-item-3951" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3951"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/about/anthropologists-in-motion/">人类学家动态</a></li>
-	<li id="menu-item-4534" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4534"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/about/blog/">学系日志</a></li>
-	<li id="menu-item-7032" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7032"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/about/podcast/">学系播客</a></li>
-	<li id="menu-item-2593" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2593"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/about/history/">学系历史</a></li>
-	<li id="menu-item-6235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6235"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/about/social-impact/">社会影响</a></li>
-	<li id="menu-item-2594" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2594"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/about/study-environment/">学习环境</a></li>
-	<li id="menu-item-3039" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3039"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/about/contact-us/">联络我们</a></li>
-</ul>
-</li>
-<li id="menu-item-2595" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2595"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/">课程</a>
-<ul class="sub-menu">
-	<li id="menu-item-2596" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2596"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/undergraduate-programmes/">本科生</a>
-	<ul class="sub-menu">
-		<li id="menu-item-2597" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2597"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/undergraduate-programmes/undergraduate-programmes/">课程介绍</a></li>
-		<li id="menu-item-2667" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2667"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/undergraduate-programmes/ug-course-list/">时间表</a></li>
-		<li id="menu-item-2669" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2669"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/undergraduate-programmes/ug-course-syllabus/">科目概览</a></li>
-		<li id="menu-item-2611" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2611"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/undergraduate-programmes/minor/">副修</a>
-		<ul class="sub-menu">
-			<li id="menu-item-2612" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2612"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/undergraduate-programmes/minor/minor-in-anthropology/">人类学副修课程</a></li>
-			<li id="menu-item-2613" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2613"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/undergraduate-programmes/minor/minor-in-archaeology/">考古学副修课程</a></li>
-			<li id="menu-item-2701" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2701"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/undergraduate-programmes/minor/minor-in-cultural-heritage-studies/">文化承传学副修课程</a></li>
-		</ul>
-</li>
-		<li id="menu-item-2599" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2599"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/undergraduate-programmes/future-students/">准备入读</a>
-		<ul class="sub-menu">
-			<li id="menu-item-2600" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2600"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/undergraduate-programmes/future-students/application-procedure/">申请须知</a></li>
-			<li id="menu-item-2601" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2601"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/undergraduate-programmes/future-students/transfer-in-students/">转主修人类学</a></li>
-			<li id="menu-item-2602" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2602"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/undergraduate-programmes/future-students/student-life-in-the-department/">学生生活</a></li>
-			<li id="menu-item-2603" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2603"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/undergraduate-programmes/future-students/summer-field-trips/">暑期田野考察</a></li>
-			<li id="menu-item-2604" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2604"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/undergraduate-programmes/future-students/internships/">暑期实习</a></li>
-			<li id="menu-item-2605" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2605"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/undergraduate-programmes/future-students/recommended-readings/">建议读物</a></li>
-			<li id="menu-item-2606" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2606"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/undergraduate-programmes/future-students/faq/">常见问题</a></li>
-		</ul>
-</li>
-		<li id="menu-item-2607" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2607"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/undergraduate-programmes/current-students/">现有学生</a>
-		<ul class="sub-menu">
-			<li id="menu-item-2608" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2608"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/undergraduate-programmes/current-students/message-from-the-academic-advisor-department-of-anthropology/">学术辅导员的话</a></li>
-			<li id="menu-item-2609" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2609"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/undergraduate-programmes/current-students/study-scheme-and-concentrations/">修读规定及专修范围</a></li>
-			<li id="menu-item-2610" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2610"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/undergraduate-programmes/current-students/final-year-field-project/">毕业习作</a></li>
-		</ul>
-</li>
-	</ul>
-</li>
-	<li id="menu-item-2615" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2615"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/postgraduate/">研究生</a>
-	<ul class="sub-menu">
-		<li id="menu-item-2706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2706"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/postgraduate/postgraduate-programmes/">课程简介</a></li>
-		<li id="menu-item-2617" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2617"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/postgraduate/ma/ma-programme/">人类学文学硕士</a>
-		<ul class="sub-menu">
-			<li id="menu-item-2966" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2966"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/postgraduate/ma/ma-programme/">课程简介</a></li>
-			<li id="menu-item-2618" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2618"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/postgraduate/ma/ma-application-information/">申请须知</a></li>
-			<li id="menu-item-2619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2619"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/postgraduate/ma/ma-programme-curriculum/">课程大纲</a></li>
-			<li id="menu-item-2620" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2620"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/postgraduate/ma/ma-course-schedule-and-syllabi/">科目概览及时间表</a></li>
-			<li id="menu-item-2621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2621"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/postgraduate/ma/continuing-education-fund-cef-reimbursable-courses/">持续进修基金 (CEF) 资助课程</a></li>
-		</ul>
-</li>
-		<li id="menu-item-4035" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4035"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/postgraduate/mphil/">人类学哲学硕士</a>
-		<ul class="sub-menu">
-			<li id="menu-item-4036" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4036"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/postgraduate/mphil/mphil-programme/">课程简介</a></li>
-			<li id="menu-item-2624" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2624"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/postgraduate/mphil/mphil-application-procedure/">申请须知</a></li>
-			<li id="menu-item-2625" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2625"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/postgraduate/mphil/mphil-programme-curriculum-course-schedule-and-syllabi/">课程大纲、科目概览及时间表</a></li>
-			<li id="menu-item-2626" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2626"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/postgraduate/mphil/past-mphil-theses/">过往论文题目</a></li>
-		</ul>
-</li>
-		<li id="menu-item-2627" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2627"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/postgraduate/phd/">人类学哲学博士</a>
-		<ul class="sub-menu">
-			<li id="menu-item-2628" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2628"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/postgraduate/phd/phd-programme/">课程简介</a></li>
-			<li id="menu-item-2629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2629"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/postgraduate/phd/phd-application-procedure/">申请须知</a></li>
-			<li id="menu-item-2630" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2630"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/postgraduate/phd/phd-programme-curriculum-course-schedule-and-syllabi/">课程大纲、科目概览及时间表</a></li>
-			<li id="menu-item-2631" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2631"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/postgraduate/phd/hong-kong-phd-fellowship-scheme/">香港哲学博士奖学金计划</a></li>
-			<li id="menu-item-2632" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2632"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/postgraduate/phd/past-phd-theses/">过往论文题目</a></li>
-		</ul>
-</li>
-		<li id="menu-item-3462" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3462"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/postgraduate/postgraduate-programme-faqs/">常见问题</a></li>
-		<li id="menu-item-3463" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3463"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/programmes/postgraduate/recommended-background-readings/">建议读物</a></li>
-	</ul>
-</li>
-</ul>
-</li>
-<li id="menu-item-2633" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2633"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/people/">人类学人</a>
-<ul class="sub-menu">
-	<li id="menu-item-2634" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2634"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/people/teachers-and-staff/">教师及职员</a>
-	<ul class="sub-menu">
-		<li id="menu-item-2635" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2635"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/people/teachers-and-staff/full-time-academic-staff/">全职教学人员</a></li>
-		<li id="menu-item-2636" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2636"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/people/teachers-and-staff/adjunct-academic-staff/">兼任教学人员</a></li>
-		<li id="menu-item-7807" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7807"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/people/teachers-and-staff/full-time-research-staff/">全职研究人员</a></li>
-		<li id="menu-item-2637" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2637"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/people/teachers-and-staff/general-support-staff/">职员</a></li>
-		<li id="menu-item-2638" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2638"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/people/teachers-and-staff/other-connections/">其他联系</a></li>
-		<li id="menu-item-2639" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2639"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/people/teachers-and-staff/honorary-advisors/">荣誉顾问</a></li>
-	</ul>
-</li>
-	<li id="menu-item-2640" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2640"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/people/current-students/">在读研究式硕士及博士</a></li>
-	<li id="menu-item-2641" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2641"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/people/students-and-alumni-sharing/">学生及系友分享</a></li>
-	<li id="menu-item-2642" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2642"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/people/keeping-in-touch/">保持联系</a></li>
-</ul>
-</li>
-<li id="menu-item-2643" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2643"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/activities/">活动</a>
-<ul class="sub-menu">
-	<li id="menu-item-2704" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2704"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/activities/activities-calendar/">活动日历</a></li>
-	<li id="menu-item-2705" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2705"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/activities/activities-recap/">活动回顾</a></li>
-	<li id="menu-item-2645" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2645"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/activities/talk-seminar/">星期五研讨会</a>
-	<ul class="sub-menu">
-		<li id="menu-item-8678" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8678"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/activities/talk-seminar/spring-2024/">2024年春季</a></li>
-		<li id="menu-item-8497" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8497"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/activities/talk-seminar/fall-2023/">2023年秋季</a></li>
-		<li id="menu-item-8049" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8049"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/activities/talk-seminar/spring-2023/">2023年春季</a></li>
-		<li id="menu-item-7755" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7755"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/activities/talk-seminar/fall-2022/">2022年秋季</a></li>
-		<li id="menu-item-6794" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6794"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/activities/talk-seminar/spring-2022/">2022年春季</a></li>
-	</ul>
-</li>
-	<li id="menu-item-2654" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2654"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/activities/student-forum/">学生论坛</a>
-	<ul class="sub-menu">
-		<li id="menu-item-2655" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2655"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/activities/student-forum/final-year-project-forum/">本科生毕业习作论坛</a></li>
-		<li id="menu-item-2656" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2656"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/activities/student-forum/postgraduate-student-forum/">研究生论坛</a></li>
-	</ul>
-</li>
-	<li id="menu-item-2657" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2657"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/activities/conference-workshop/">会议及工作坊</a></li>
-</ul>
-</li>
-<li id="menu-item-2702" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2702"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/publications/">出版物</a>
-<ul class="sub-menu">
-	<li id="menu-item-5542" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5542"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/publications/research-projects/">研究项目</a></li>
-	<li id="menu-item-5471" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5471"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/publications/hong-kong-anthropologist/">香港人类学</a></li>
-	<li id="menu-item-2660" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2660"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/publications/asian-anthropology/">亚洲人类学</a></li>
-	<li id="menu-item-2777" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2777"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/publications/newsletter/">学系通讯</a></li>
-</ul>
-</li>
-<li id="menu-item-2703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2703"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/department-in-the-news/">传媒报导</a>
-<ul class="sub-menu">
-	<li id="menu-item-8120" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8120"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/department-in-the-news/year-2023/">2023年</a></li>
-	<li id="menu-item-8099" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8099"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/department-in-the-news/year-2022/">2022年</a></li>
-	<li id="menu-item-6071" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6071"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/department-in-the-news/year-2021/">2021年</a></li>
-	<li id="menu-item-3899" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3899"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/department-in-the-news/year-2020/">2020年</a></li>
-	<li id="menu-item-2662" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2662"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/department-in-the-news/year-2019/">2019年</a></li>
-	<li id="menu-item-2670" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2670"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/department-in-the-news/year-2018/">2018年</a></li>
-	<li id="menu-item-2671" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2671"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/department-in-the-news/year-2017/">2017年</a></li>
-	<li id="menu-item-2672" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2672"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/department-in-the-news/year-2016-before/">2016 年及之前</a></li>
-</ul>
-</li>
-<li id="menu-item-2707" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2707"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/announcements/">最新消息</a></li>
-<li id="menu-item-2708" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2708"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/links/">信息及链接</a>
-<ul class="sub-menu">
-	<li id="menu-item-2709" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2709"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/links/virtual-museum/">虚拟博物馆</a></li>
-	<li id="menu-item-2710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2710"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/links/centre-for-cultural-heritage-studies/">文化遗产研究中心</a></li>
-	<li id="menu-item-2711" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2711"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/links/academic-honesty/">学术著作诚信</a></li>
-	<li id="menu-item-2797" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2797"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/links/department-thesis-style/">论文格式</a></li>
-	<li id="menu-item-5428" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5428"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/links/internship-opportunity/">实习机会</a></li>
-	<li id="menu-item-6298" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6298"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/links/hong-kong-anthropological-society/">香港人类学会</a></li>
-	<li id="menu-item-2798" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2798"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/links/other-resources/">其他信息</a></li>
-	<li id="menu-item-2799" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2799"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/links/links/">链接</a></li>
-</ul>
-</li>
-</ul>        <div class="header-corner-bottom mobile-header-corner-bottom">
-                                    <a class="social-icons mobile-social-icons" href="https://www.facebook.com/anthrocuhk" target="" alt="Facebook" style="background-image: url('https://www.arts.cuhk.edu.hk/~ant/wp-content/uploads/2019/02/sns-facebook@2x.png');"></a>
-                                                <a class="social-icons mobile-social-icons" href="https://www.instagram.com/anthrocu/" target="" alt="Instagram" style="background-image: url('https://www.arts.cuhk.edu.hk/~ant/wp-content/uploads/2019/02/sns-instagram@2x.png');"></a>
-                                                <a class="social-icons mobile-social-icons" href="http://www.arts.cuhk.edu.hk/~ant/newweb/wechat-public-account/" target="_blank" alt="WeChat" style="background-image: url('https://www.arts.cuhk.edu.hk/~ant/wp-content/uploads/2019/02/sns-wechat@2x.png');"></a>
-                                                <a class="social-icons mobile-social-icons" href="https://www.weibo.com/anthrocuhk" target="" alt="Weibo" style="background-image: url('https://www.arts.cuhk.edu.hk/~ant/wp-content/uploads/2019/02/sns-weibo@2x.png');"></a>
-                                                <a class="social-icons mobile-social-icons" href="https://site.douban.com/146468/" target="" alt="Douban" style="background-image: url('https://www.arts.cuhk.edu.hk/~ant/wp-content/uploads/2019/02/sns-douban@2x.png');"></a>
-                                                <a class="social-icons mobile-social-icons" href="http://anthrocuhk.blogspot.com/" target="" alt="Blogspot" style="background-image: url('https://www.arts.cuhk.edu.hk/~ant/wp-content/uploads/2019/02/sns-blogspot@2x.png');"></a>
-                              </div><!-- end of header-corner-bottom -->
-      </div><!-- end of main-menu -->
-
-            
-              <div class="section-title">
-          <div class="section-title-container">
-            <div class="section-title-cell">
-              <span>最新消息</span>
-            </div>
-          </div>
-        </div>
-          </div><!-- end of header -->
-
-          <div class="breadcrumb-container">
-          <div class="breadcrumb"><a href="https://www.arts.cuhk.edu.hk/~ant/sc/" rel="v:url" property="v:title">主页</a><span class="delimiter">&gt;</span><a href="https://www.arts.cuhk.edu.hk/~ant/announcements/">最新消息</a><span class="delimiter">&gt;</span><span class="current">[CALL FOR PAPERS] 2023 East Asian Anthropological Association Annual Meeting at CUHK</span></div><!-- .breadcrumbs -->      </div>
-    
-<div class="main">
-	<div class="content-top">
-		<div class="content-top-wrapper default-page wrapper">
-			<div class="horizontal-menu">
-							</div>
-		</div>
-	</div>
-	<div class="content content-two-col">
-		<div class="content-left-orange">
-			<div class="content-left-title">
-				<span>[CALL FOR PAPERS] 2023 East Asian Anthropological Association Annual Meeting at CUHK</span>
-			</div>
-		</div>
-
-		<div class="content-right">
-
-			
-
-			<div class="content-right-text">
-
-				
-					
-						<p></p><p>CALL FOR PAPERS</p>
-<p><strong>&nbsp;</strong></p>
-<p><strong>East Asian Anthropological Association </strong></p>
-<p><strong>Annual Meeting</strong></p>
-<p><strong>“East Asian Anthropology in a Roiling World: Pandemics, Politics, Potentials”</strong></p>
-<p><strong>&nbsp;</strong></p>
-<p>The Chinese University of Hong Kong</p>
-<p>6-8 October 2023</p>
-<p>&nbsp;</p>
-<p>The East Asian Anthropological Association is a scholarly association of teachers and students of anthropology based in East Asia and engaged in anthropological work on East Asia.&nbsp; Its upcoming meeting will be in Hong Kong 6-8 October 2023. We hope that you will propose a panel or an individual paper for this conference. You do not need to be a member of EAAA at present in order to submit a panel or paper; you become a member automatically by attending this conference.&nbsp;&nbsp;&nbsp;&nbsp;</p>
-<p>&nbsp;</p>
-<p>Please fill out an <u><a href="https://cloud.itsc.cuhk.edu.hk/webform/view.php?id=13665171">EAAA panel proposal</a></u> or <u><a href="https://cloud.itsc.cuhk.edu.hk/webform/view.php?id=13665173">EAAA individual paper proposal</a></u>, which will require an abstract from you in English.&nbsp; You can submit either a panel proposal, which should have 3-4 participants speaking on a common topic, or an individual paper proposal, which is your paper alone.&nbsp; Individual paper proposals we will subsequently organize into panels.&nbsp; Submitted panels have a somewhat better chance of being accepted for the conference than individual papers. This conference will be in-person, but if a given panel would like to be on-line rather than in-person, this can be accepted; however, there will be limited links to the conference as a whole.&nbsp; It is very much recommended that you attend in person.</p>
-<p>&nbsp;</p>
-<p>Please submit your proposal on-line to the hyperlinks supplied above by <strong>15 May 2023.</strong> The program committee will make its decisions by 30 May, and will then send out acceptance notices, registration forms, and lodging information to all participants.&nbsp; If you have any queries, please write to <a href="mailto:eaaa.2023.hk@gmail.com">eaaa.2023.hk@gmail.com</a>.</p>
-<p>&nbsp;</p>
-<p>The conference will be held on 6-7 October at The Chinese University of Hong Kong, followed on 8 October by a tour of interesting Hong Kong places.&nbsp; Registration will be US$100, and participants will pay for their own lodging. We will provide information about the nearby Hyatt hotel, Hong Kong’s famous Chungking Mansions, and other guesthouses; you will need to make your own bookings.&nbsp; We will provide lunches and dinners and refreshments at the conference and on the tour.</p>
-<p>&nbsp;</p>
-<p>We look forward to seeing you in Hong Kong in October!</p>
-<p></p>
-
-								
-				
-			</div>
-
-
-		</div>
-
-	</div><!-- end of content -->
-</div><!-- end of main -->
-
-  
-      </div><!-- content-wrapper -->
-    <!-- content -->
-  <!-- main -->
-          <div class="footer" style="background-color:#eaeaea;">
-        <div class="footer-container">
-          <div class="footer-heading"><span>联络我们</span></div>
-          <div class="footer-content">
-            <p>香港中文大学<br>
-新亚书院<br>
-人文馆407室            <br>
-            <br>
-            电话：(852) 3943-7670, (852) 3943-7677<br>
-            传真：(852) 2603-5218<br>
-            电邮：anthropology@cuhk.edu.hk</p>
-          </div>
-        </div>
-      </div><!-- end of footer -->
-        <div class="footnote">
-              <div class="footnote-left">
-                      <a class="site-map" href="" target="">私隐政策</a>
-                      <a class="site-map" href="" target="">免责声明</a>
-                  </div>
-            <div class="footnote-right">香港中文大学人类学系 @2024.  版权所有</div>
-      </div>
-    <!-- end of footnote -->
-  <!-- end of container -->
-  <!-- Instagram Feed JS -->
-<script type="text/javascript">
-var sbiajaxurl = "https://www.arts.cuhk.edu.hk/~ant/wp-admin/admin-ajax.php";
-</script>
-<script type="text/javascript">
-/* <![CDATA[ */
-var wpcf7 = {"apiSettings":{"root":"https:\/\/www.arts.cuhk.edu.hk\/~ant\/sc\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://www.arts.cuhk.edu.hk/~ant/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.6"></script>
-<script type="text/javascript" src="https://www.arts.cuhk.edu.hk/~ant/wp-content/themes/customtheme/js/custom.js?v=1716979055&amp;ver=5.2.5"></script>
-<script type="text/javascript" src="https://www.arts.cuhk.edu.hk/~ant/wp-content/themes/customtheme/js/custom-accordion.js?ver=5.2.5"></script>
-<script type="text/javascript" src="https://www.arts.cuhk.edu.hk/~ant/wp-content/themes/customtheme/js/tw_cn_no_cookies.js?ver=5.2.5"></script>
-<script type="text/javascript" src="https://www.arts.cuhk.edu.hk/~ant/wp-content/themes/customtheme/js/custom-sc.js?ver=5.2.5"></script>
-<script type="text/javascript" src="https://www.arts.cuhk.edu.hk/~ant/wp-content/themes/customtheme/js/jquery.hashchange.min.js?ver=5.2.5"></script>
-<script type="text/javascript" src="https://www.arts.cuhk.edu.hk/~ant/wp-content/themes/customtheme/js/jquery.easytabs.min.js?ver=5.2.5"></script>
-<script type="text/javascript" src="https://www.arts.cuhk.edu.hk/~ant/wp-content/themes/customtheme/js/custom-tabs.js?ver=5.2.5"></script>
-<script type="text/javascript" src="https://www.arts.cuhk.edu.hk/~ant/wp-includes/js/wp-embed.min.js?ver=5.2.5"></script>
-  
-
-</body></html>
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "International Conference on Ambient Systems, Networks and Technologies",
+    "url": "https://10times.com/ant",
+        "startDate": "2024-04-23",
+        "endDate": "2024-04-25",
+        "eventStatus": "EventScheduled"    ,            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+             
+            "location": {
+                        "@type": "Place",
+                        "name": "Hasselt",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "addressLocality": "Hasselt",
+                            "addressRegion": "Flanders",
+                            "addressCountry": "BE"}},
+           "organizer": {
+            "@type": "Organization","name": "Acadia University",
+            "url": "https://10times.com/company/acadia-university-woodstock"}             
+                        ,
+  "image": ["https://c1.10times.com/industry/10.jpg","https://c1.10times.com/industry/156-wrapper.jpg"],
+  "description": "The 15th International Conference on Ambient Systems, Networks and Technologies (ANT) will be held in Hasselt, Belgium."}
+</script><script></script><script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+                                    {
+            "@type": "Question",
+            "name": "What type of products / services will be showcased in the event?",
+            "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Computer &amp; Gadgets,Instrumentation etc. are some of the products / services to be showcased in International Conference on Ambient Systems, Networks and Technologies."
+            }
+        }                    ,            {
+            "@type": "Question",
+            "name": "Can I get a list of speakers participating in the event?",
+            "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To get the speaker list on mail register at the https://10times.com/ant/interested ."
+            }
+        }                    ,            {
+            "@type": "Question",
+            "name": "Can I get a list of exhibitors participating in the event?",
+            "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To get the exhibitor list on mail register at the https://10times.com/ant/interested ."
+            }
+        }                                    ]
+        }
+        </script><input type="hidden" id="back-url" value="[&quot;https:\/\/10times.com\/hasselt-be\/computer&quot;,&quot;https:\/\/10times.com\/belgium\/computer&quot;,&quot;https:\/\/10times.com\/computer&quot;,&quot;&quot;]"></form><div id="loadingContent"><div class="loaders" id="loading" style=""><div class="position-fixed loaders-bodys large mediums"><div class="msgs">Loading...</div></div></div></div><div id="snackbar" class="position-fixed text-white px-3 py-2 rounded-pill d-none" style="right: 30px; bottom: 30px; z-index: 100009;"></div><div id="snackbarhub" class="position-fixed text-white px-3 py-2 d-none" style="left: 30px; bottom: 30px; z-index: 100009;"></div><button class="btn add-to-home" style="display: none; visibility: hidden; opacity: 0;" aria-label="add to home screen"></button><div class="event-list-select-button"><div class="btn btn-sm btn-orange rounded-pill d-none box-shadow fs-16 bouncing-ball" onclick="showEventList()" type="button" id="eventCountButton" style="bottom: 0; position: fixed; margin: 4em; right: 0; z-index: 998; width: 140px; padding: 12px;">Selected  <span class="eventCountValue ms-1"></span></div></div><footer><div class="py-3 g-white"><div class="container"><div class="d-flex flex-column flex-lg-row justify-content-between align-items-center"><div class="d-flex flex-column flex-lg-row justify-content-center align-items-center"><a class="text-decoration-none" href="/" role="button"><img class="lazyload" src="https://img.10times.com/images/default.png" data-src="https://img.10times.com/images/bootlogo_1.png?imgeng=/w_90/h_30/m_stretch" width="86" height="27" alt="10Times" loading="lazy"></a><div class="d-flex"><a class="text-decoration-none" rel="noreferrer" target="_blank" href="https://play.google.com/store/apps/details?id=com.tentimes&amp;utm_source=app_link_block&amp;utm_campaign=app_download&amp;utm_source=app_link_block&amp;utm_campaign=app_download&amp;pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img class="lazyload" src="https://img.10times.com/images/default.png" data-src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="155" height="60" alt="Get it on Google Play" style="padding: 0px 10px;" loading="lazy"></a><a class="text-decoration-none" rel="noreferrer" target="_blank" href="https://apps.apple.com/in/app/10times-find-event-network/id820954054?itsct=apps_box_badge&amp;itscg=30200&amp;utm_source=app_link_block&amp;utm_campaign=app_download"><img class="lazyload" src="https://img.10times.com/images/default.png" data-src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1393372800&amp;h=664a085501fe5166fbc3b0a6384d4c54" width="155" height="60" alt="Download on the App Store" style="padding: 10px 0px;" loading="lazy"></a></div></div><div class="d-flex justify-content-evenly"><a class="text-decoration-none bg-dark mx-2 rounded-circle" href="https://www.facebook.com/10timesonline" target="_blank" rel="noreferrer" aria-label="10times @facebook" style="padding: 2px 4px;"><svg class="d-block text-white" style="width: 36px; height: 36px; fill: currentColor;" data-tag="fac" data-name="Facebook" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"></path></svg></a><a class="text-decoration-none bg-dark mx-2 rounded-circle" href="https://twitter.com/10_times" target="_blank" rel="noreferrer" aria-label="10times @twitter" style="padding: 2px 4px;"><svg class="d-block text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 36px; height: 26px; fill: currentColor; margin-top:4px;" data-tag="twi" data-name="Twitter" preserveAspectRatio="xMidYMid meet"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg></a><a class="text-decoration-none bg-dark mx-2 rounded-circle" href="https://www.linkedin.com/company/10times-events" target="_blank" rel="noreferrer" aria-label="10times @linkedin" style="padding: 2px 4px;"><svg class="d-block text-white" style="width: 36px; height: 36px; fill: currentColor;" data-donate="true" data-tag="lin" data-name="LinkedIn" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"></path></svg></a><a class="text-decoration-none bg-dark mx-2 rounded-circle" href="https://www.youtube.com/channel/UCT6xh8nBLVRha6VISjfEKnA" target="_blank" rel="noreferrer" aria-label="10times @youtube" style="padding: 2px 4px;"><svg class="d-block text-white" style="width: 36px; height: 36px; fill: currentColor;" data-donate="true" data-tag="you" data-name="YouTube" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M422.6 193.6c-5.3-45.3-23.3-51.6-59-54 -50.8-3.5-164.3-3.5-215.1 0 -35.7 2.4-53.7 8.7-59 54 -4 33.6-4 91.1 0 124.8 5.3 45.3 23.3 51.6 59 54 50.9 3.5 164.3 3.5 215.1 0 35.7-2.4 53.7-8.7 59-54C426.6 284.8 426.6 227.3 422.6 193.6zM222.2 303.4v-94.6l90.7 47.3L222.2 303.4z"></path></svg></a></div></div><hr><div class="list-group list-group-horizontal"><a class="list-group-item-action text-decoration-none" href="/about">About Us</a><span class="list-group-item-action fw-bold">FOR PARTNERS</span><a class="list-group-item-action text-decoration-none" href="/eventeli">Event Data Intelligence</a><span class="list-group-item-action fw-bold">BROWSE</span></div><div class="list-group list-group-horizontal"><a class="list-group-item-action text-decoration-none" href="/career">Career | Join us</a><a class="list-group-item-action text-decoration-none" href="https://floor.bz" target="_blank" rel="noreferrer">FLOOR - Virtual Event Platform</a><a class="list-group-item-action text-decoration-none" href="https://login.10times.com/login" target="_blank" rel="noreferrer">List Event | Partner Login</a><span class="list-group-item-action"><a class="text-dark text-decoration-none" href="/events">All Events</a> - <a class="list-group-item-action text-decoration-none" href="https://10times.com/events/by-country">by Country</a> | <a class="list-group-item-action text-decoration-none" href="https://10times.com/events/by-industry">by Industry</a></span></div><div class="list-group list-group-horizontal"><a class="list-group-item-action text-decoration-none" href="https://10times.com/media">Media &amp; Press Releases</a><a class="list-group-item-action text-decoration-none" href="https://login.10times.com" target="_blank" rel="noreferrer">Event Management Software</a><a class="list-group-item-action text-decoration-none" href="https://login.10times.com/eventmarketing" target="_blank" rel="noreferrer">Event Marketing</a><span class="list-group-item-action"><a class="text-dark text-decoration-none" href="https://10times.com/tradeshows">Trade Shows</a> - <a class="list-group-item-action text-decoration-none" href="https://10times.com/tradeshows/by-country">by Country</a> | <a class="list-group-item-action text-decoration-none" href="https://10times.com/tradeshows/by-industry">by Industry</a></span></div><div class="list-group list-group-horizontal"><a class="list-group-item-action text-decoration-none" href="https://help.10times.com" target="_blank" rel="nofollow noreferrer">Help Center | FAQ</a><a class="list-group-item-action text-decoration-none" href="https://login.10times.com/eventapp" target="_blank" rel="noreferrer">Event Apps</a><a class="list-group-item-action text-decoration-none" href="https://login.10times.com/casestudy">Testimonials</a><span class="list-group-item-action"><a class="text-dark text-decoration-none" href="https://10times.com/conferences">Conferences</a> - <a class="list-group-item-action text-decoration-none" href="https://10times.com/conferences/by-country">by Country</a> | <a class="list-group-item-action text-decoration-none" href="https://10times.com/conferences/by-industry">by Industry</a></span></div><div class="list-group list-group-horizontal"><a class="list-group-item-action text-decoration-none" href="https://10times.com/feedback" target="_blank" rel="nofollow noreferrer">Feedback</a><a class="list-group-item-action text-decoration-none" href="https://login.10times.com/eventwebsite" target="_blank" rel="noreferrer">Event Website</a><a class="list-group-item-action text-decoration-none" href="https://blog.10times.com" target="_blank" rel="noreferrer">Blog</a><a class="list-group-item-action text-decoration-none" href="https://10times.com/company">Companies</a></div><hr><div>By continuing past this page, you agree to our <a class="text-decoration-none fw-bold" href="https://10times.com/terms-of-service">Terms of Service</a>, Cookie Policy, <a class="text-decoration-none fw-bold" href="https://10times.com/privacy-policy">Privacy Policy</a> and Content Policies. All trademarks are properties of their respective owners</div><small>© 2014-2024 - Ten Times Online Private Limited. All rights reserved.</small></div></div></footer><script defer="" src="https://c1.10times.com/js/utility.js?ver=cnNfMjAyNDA2MDQwNF9jb21wdXRlcg=="></script><script defer="" src="https://c1.10times.com/js/common.js?ver=cnNfMjAyNDA2MDQwNF9jb21wdXRlcg=="></script><script defer="" src="https://c1.10times.com/js/engage.js?ver=cnNfMjAyNDA2MDQwNF9jb21wdXRlcg=="></script><script defer="" src="https://c1.10times.com/js/10t_moment.js"></script><script defer="" src="https://c1.10times.com/js/10t_event_detail_dsk_new.js"></script><script defer="" src="https://c1.10times.com/js/rating_modal.js"></script><input type="hidden" id="city_name" value="Hasselt"><input type="hidden" id="state_name" value="Flanders"><input type="hidden" id="country" value="BE"><input type="hidden" id="country_name" value="Belgium"><input type="hidden" id="datefrom" value="07/04/2024"><input type="hidden" id="dateto" value="07/05/2024"><input type="hidden" id="temp_design" value="1"><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'890f5efdd8658532',t:'MTcxNzkxNzc1Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe><script charset="UTF-8" data-publisher="797e42cde3fe405ab7908abfa225b4ab" src="https://compare-static.10times.com/tag.js"></script><script type="text/javascript" src="https://kit.fontawesome.com/c7af9ddb4e.js?ver=cnNfMjAyNDA2MDkxNF91bmRlZmluZWQ=" crossorigin="anonymous"></script></body></html>

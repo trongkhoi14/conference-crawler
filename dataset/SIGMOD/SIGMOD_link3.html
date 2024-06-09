@@ -1,225 +1,932 @@
-<!DOCTYPE html><html lang="en"><head>
-    <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-N3MEKR193Y"></script>
-    <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
-     gtag('config', 'G-N3MEKR193Y');
-    </script>
-    <title>ACM SIGMOD 2023 Programming Contest</title>
-    <meta name="description" content="Annual SIGMOD programming contest, open to students from degree-granting institutions.">
-    <meta name="author" content="Chair for Database Systems, Technical University of Munich">
-    <meta name="keywords" content="programming contest,sigmod,sigmod 2018,contest,database">
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <!-- Bootstrap core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
-    <!-- Custom styles for this template -->
-    <link href="css/custom.css" rel="stylesheet">
-  </head>
-  <body style="">
-    <!-- Wrap all page content here -->
-    <div id="wrap">
-      <!-- Fixed navbar -->
-      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle Navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">
-              <img src="images/sigmod.png" alt="ACM SIGMOD logo">
-              <span>Programming<br>Contest 2023</span>
-            </a>
-          </div>
-          <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="index.html">&nbsp;Home&nbsp;</a></li>
-              <li><a href="task-description.html">&nbsp;Task&nbsp;</a></li>
-              <li><a href="leader2023_final.html">&nbsp;Leaderboard&nbsp;</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">&nbsp;Links <b class="caret"></b>&nbsp;</a>
-                <ul class="dropdown-menu">
-                  <li><a href="https://2023.sigmod.org/" target="__blank">ACM SIGMOD/PODS 2023 Conference</a></li>
-                  <li><a href="http://www.sigmod.org" target="__blank">SIGMOD.org</a></li>
-                  <!-- Sponsors -->
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Contest Sponsors</li>
-                  <li><a href="http://www.microsoft.com" target="__blank">Microsoft</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    <div class="container page-content">
-      <!--Panel 1: News and Twitter -->
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          <h3 class="panel-title">News</h3>
-        </div>
-        <div class="panel-body">
-          <div class="row">
-            <div class="col-md-7 col-lg-8">
-              <table class="table table-striped">
-                <tbody><tr>
-                  <td style="width:20%;"><b>10 March 2023</b></td><td><b>Using 10M dataset to evaluate. Leaderboard cleaned up.</b></td>
-                </tr>
-                <tr>
-                  <td style="width:20%;">20 February 2023</td><td>Registartion is open. Leaderboard available.</td> 
-                </tr>
-                <tr>
-                  <td style="width:20%;">15 February 2023</td><td>The new contest page is up!</td>
-                </tr>
-              </tbody></table>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>The 2024 ACM SIGMOD/PODS Conference:Santiago, Chile - Call for Papers: SIGMOD Research</title>
+    
+<style type="text/css" media="screen">
+#logoFentonMalloy {
+	text-align: right;
+	clear: both;
+	margin-top: 20px;
+}
 
-            </div>
-            <div class="col-md-auto">
-              <center>
-                <a class="twitter-timeline" data-lang="en" data-width="350" data-height="300" href="https://twitter.com/sigmodconf?lang=en">Tweets by SIGMOD_2023</a> <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </center>
-            </div>
-          </div>
-        </div>
-      </div>
+</style>
+<link href="sigmod_css.css" rel="stylesheet" type="text/css" media="screen">
 
-      <!--Panel 2: Contest Overview -->
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          <h3 class="panel-title"><a id="contest_overview">Contest Overview</a></h3>
-        </div>
-        <div class="panel-body">
-          <p> 
-            Student teams from degree-granting institutions are invited to compete in the annual SIGMOD Programming Contest. This year, the subject of the contest is <b><i>Approximate K-nearest-neighbor Graph Construction</i></b> in high dimensional space. Teams' submissions will be judged on their performance on a multi-million-scale dataset.
-          </p>
-          <p><b>
-            The winning team will be awarded a prize of $2,000 (USD), and there will be an additional prize of $1,000 (USD) for the runner-up. Each group in the Finalists has one member eligible to receive a travel grant to attend the SIGMOD 2023 Conference. Prize money is donated by <a href="http://www.microsoft.com">Microsoft</a>.
-          </b></p>
-          <p>
-            This year's contest is brought to you by the <a href="https://people.cs.rutgers.edu/~dd903/"> DB Group </a> at <a href="https://www.cs.rutgers.edu/">Rutgers University</a> and the <a href="https://chu-data-lab.cc.gatech.edu/">Chu Data Lab</a> at <a href="https://www.gatech.edu/">Georgia Tech</a>. The organizing team is made up of <a href="https://people.cs.rutgers.edu/~dd903/" style="color: black">Dong Deng</a> (co-chair), <a href="https://chu-data-lab.cc.gatech.edu/" style="color: black">Xu Chu</a> (co-chair), <a href="https://ciuji.me/" style="color: black">Chaoji Zuo</a>, Zhizhi Wang, and Zhencan Peng.
-          </p>
-        </div>
-      </div>
+<script language="JavaScript">
 
-      <!--Panel 3: Task Overview -->
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          <h3 class="panel-title">Task Overview</h3>
-        </div>
-        <div class="panel-body">
-          <p>
-            For this year's contest, the task is to build an approximate K-NN Graph for a set of vectors. The approximate K-NN Graph is a directed graph with vertex set <b><i>V</i></b> and for each vertex <b><i>v</i></b>, it is connected to its approximate k nearest neighbor under one given similarity measure, such as Euclidean distance.    
-          </p>
-          <p>
-            For this task, you are asked to construct one approximate K-NN Graph for one dataset, which contains a set of high-dimensional vectors and the distance between vectors are measured by Euclidean distance. The challenge here is to design one efficient algorithm to construct the approximate K-NN graph in a limited time.
-          </p>
-          <p>
-            More details about this year's task can be found on the <a href="task.shtml?content=description">Task</a> page.
-          </p>
-        </div>
-      </div>
 
-      <!--Panel 4: Important Dates -->
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          <h3 class="panel-title">Important Dates</h3>
-        </div>
-        <div class="panel-body">
-          <table class="table table-striped">
-            <tbody><tr>
-              <td style="width:20%;">15 February 2023</td>
-              <td>New site up. Contest requirements specification and datasets available.</td>
-            </tr>
-            <tr>
-              <td>20 February 2023<br></td>
-              <td>Team registration begins. Leaderboard available.</td>
-            </tr>
-            <tr>
-              <td>10 March 2023<br></td>
-              <td>Submissions will be evaluated by 10M dataset.</td>
-            </tr>
-            <tr>
-              <td>15 April 2023<br></td>
-              <td>Final submission deadline (Eastern Standard Time).</td>
-            </tr>
-            <tr>
-              <td>20 April 2023</td>
-              <td>Finalists notified.</td>
-            </tr>
-            <tr>
-              <td>18-23 June 2023</td>
-              <td><a href="https://2023.sigmod.org">ACM SIGMOD/PODS 2023 Conference.</a></td>
-            </tr> 
 
-          </tbody></table>
-        </div>
-      </div>
 
-      <!--Panel 5: Sponsors -->
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          <h3 class="panel-title">Sponsors</h3>
-        </div>
-        <div class="panel-body">
-          <table>
-            <tbody>
-              <tr>
-                <td>
-                  <a href="http://www.microsoft.com" target="__blank"> <img src="images/mslogo_new.png" alt="Microsoft logo" height="100"></a>
-                </td>
-      <!--           <td>&emsp;&emsp;&emsp;</td>
-                <td>
-                  <a href="http://www.sequoiadb.com/en/" target="__blank"><img src="images/sequoiadblogo.jpg" alt="SequoiaDB logo" height="60"></a>
-                </td>
-                <td>&emsp;&emsp;&emsp;&emsp;&emsp;</td>
-                <td>
-                  <a href="https://www.huawei.com" target="__blank"><img src="images/huaweilogo.png" alt="Huawei logo" height="125"></a>
-                </td> -->
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+<!-- Begin
 
-      <!--Panel 6: Contacts -->
-      <div class="panel panel-primary">
-      <div class="panel-heading">
-      <h3 class="panel-title">Contacts</h3>
-      </div>
-      <div class="panel-body">
-      Ask questions and stay up to date by joining the 
-      <a href="https://groups.google.com/g/sigmod23contest">ACM SIGMOD 2023 Programming Contest Google Group</a> 
-      or contact us at <b>sigmodcontest23@outlook.com</b>.
+// Set up the image files to be used.
 
-      <div id="footer">
-        <div class="container">
-          <p class="text-muted text-center">
-             ACM SIGMOD 2023 Programming Contest
-             <!-- &nbsp;&nbsp;|&nbsp;&nbsp; -->
-             <br>
-             Brought to you by the <a href="https://people.cs.rutgers.edu/~dd903/">DB Group</a> at 
-             <a href="https://www.cs.rutgers.edu/">Rutgers University</a> and
-             the <a href="https://chu-data-lab.cc.gatech.edu/">Chu Data Lab</a> 
-       at <a href="https://www.gatech.edu/">Georgia Tech</a> 
-       
-          </p>
-        </div>
-      </div>
+var theImages = new Array() // do not change this
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+var theImageDescriptions = new Array() // do not change this
+
+var theImageURLs = new Array() // do not change this
+
+// To add more image files, continue with the
+
+// pattern below, adding to the array.
+
+
+
+theImages[0] = 'images/Santiago/santiago-2.jpg' 
+//theImages[1] = 'images/Santiago/santiago-3.jpg'
+//theImages[2] = 'images/Santiago/santiago-4.jpg'
+//theImages[3] = 'images/Santiago/santiago-5.jpg'
+
+
+
+//theImages[1] = 'images/Philadelphia/LibertyBell.jpeg'
+
+
+
+
+theImageDescriptions[0] ='Skyline of Santiago, with Costanera Center, the tallest building in the region.' 
+//theImageDescriptions[1] ='Vineyards of Pirque, Santiago, Chile.' 
+//theImageDescriptions[2] ='Santiago Cable Car of Cerro San Cristóbal, Santiago, Chile.' 
+//theImageDescriptions[3] ='Night view of Santiago, Chile.' 
+
+
+//theImageDescriptions[1] =  'Skyline of Santiago, with Costanera Center, the tallest building in the region'
+
+
+theImageURLs[0] = 'https://www.chile.travel/en/'
+//theImageURLs[1] = '#'
+//theImageURLs[2] = '#'
+//theImageURLs[3] = '#'
+
+
+
+//theImageURLs[1] = 'https://2024.sigmod.org/'
+
+
+
+// do not edit anything below this line
+
+
+
+//var j = 0
+
+var p = theImages.length;
+
+//var preBuffer = new Array()
+
+//for (i = 0; i < p; i++){
+
+//   preBuffer[i] = new Image()
+
+//   preBuffer[i].src = theImages[i]
+
+//}
+
+var whichImage = Math.round(Math.random()*(p-1));
+
+
+function showImage(){
+
+
+//document.write('<div id="masthead"><img src="images/indy500_sigmod.jpg" alt="top banner" width="742" height="330" /></div>');
+
+
+document.write('<link href="sigmod_css.css?v=20201213" rel="stylesheet" type="text/css" media="screen" />')
+document.write('<div id="masthead">');
+
+document.write('<a href="' + theImageURLs[whichImage] + '" target="_blank"><img src="' + theImages[whichImage] + '" alt="' + theImageDescriptions[whichImage] + '" width="742" height="350" /></a>');
+
+document.write("<img src='images/Santiago/info-conference-santiago.jpeg' alt='ACM SIGMOD, Santiago, 2024, Chile' width='742'/>");
+//document.write("<img src='images/Shaanxi/notice-1.jpg' alt='XXXX XX - XXXX XX, 2021, Xi'an, Shaanxi, China' width='742'/>");
+document.write('</div>');
+
+
+//<a href="' + theImageURLs[whichImage] + '" target="_blank">
+
+
+//document.write('<div id="masthead"><img src="' + theImages[whichImage] + '" alt="' + theImageDescriptions[whichImage] + '" width="742" height="330" /></div>');
+
+
+
+}
+
+
+
+//  End -->
+
+
+
+
+
+</script>
+
+</head>
+<body>
+
+<!-- <div id="masthead" style="height:auto"><img src="images/2020-SIGMOD-WebBanner.png" alt="top banner" width="750"/></div> -->
+
+<!-- <div style="font-size:0.8em;text-align:center;color: #485b81;font-weight: bold;"><p style="margin:0">ACM SIGMOD/PODS International Conference on Management of Data&nbsp&nbsp&nbsp&nbsp June 14 - June 19, 2020&nbsp&nbsp&nbsp Portland, OR, USA</p>
+</div> <br> June 14 - June 19, 2020   Portland, OR, USA-->
+
+
+
+ <div id="logoACMSIGMOD" style="margin:0px;height:120px;float:left"><a href="index.shtml">
+<img src="images/Logo-SCL.png" alt="SIGMOD Santiago, Chile, 2024" width="125" height="120" style="float:left;"></a>
+</div> 
+<div id="logoACMSIGMOD2" style="margin:0px;height:90px;float:right;"><a href="index.shtml">
+<img src="images/logo-sigmod.png" alt="Sigmod-Logo" width="155" height="90" style="float:right;" ;=""></a>
+</div>
+<!--endlogoNeil -->
+
+<!--div id="linksHomeContact" style="margin:0px;height:90px" ><img src="images/logo-sigmod.png" alt="sigmod pods logo" width="155" height="90" /></div-->
+<!--linksHomeContactmastheadEnd -->
+
+<script language="JavaScript">
+
+showImage();
+
+</script><link href="sigmod_css.css?v=20201213" rel="stylesheet" type="text/css" media="screen"><div id="masthead"><a href="https://www.chile.travel/en/" target="_blank"><img src="images/Santiago/santiago-2.jpg" alt="Skyline of Santiago, with Costanera Center, the tallest building in the region." width="742" height="350"></a><img src="images/Santiago/info-conference-santiago.jpeg" alt="ACM SIGMOD, Santiago, 2024, Chile" width="742"></div>
+
+
+
+<!--	<div id="masthead"><img src="images/indy500_sigmod.jpg" alt="top banner" width="742" height="330" /></div>
+-->
+
+<div id="wrap">
+
+<!-- the ssi code needs to stay here - do not delete or move -->
+<style type="text/css">
+
+.disabled {
+
+        pointer-events: none;
+
+        cursor: default;
+
+        opacity: 0.8;
+
+    }
+   #venue-map {
+   	  background-color: #ff8f00;
+	  color: #FFF !important;
+	  text-align: center !important;
+	  padding: 10px !important;
+	  margin-bottom: 20px !important;
+	  margin-left: 8px !important;
+	  margin-right: 8px !important;
+  }
+  #venue-map :hover {
+  	background-color: orange;
+  }
+  #venue-map  a {
+ 	text-decoration:none !important;
+ 	color:#FFFFFF !important;
+  }
+  #venue-map  a:hover {
+ 	text-decoration:none;
+ 	color:#FFFFFF !important;
+  }
+</style>
+
+
+
+<div id="sidebar">
+
+
+<h3 class="navheading" id="venue-map"><a href="/docs/Venue-Maps-SIGMOD.pdf" target="_blank">VENUE MAPS</a></h3> 
+<h3>Welcome</h3>
+
+
+
+<ul class="navbar">
+
+
+
+  <li><a href="index.shtml" title="Homepage">Homepage</a></li>
+
+  <li><a href="http://reproducibility.sigmod.org/" title="Reproducibility">Reproducibility</a></li>
+
+  <li><a href="calls_papers_inclusion_and_diversity.shtml" title="Inclusion and Diversity">Inclusion and Diversity</a></li>
+
+  <li><a href="http://sigmod2020.org/rss.xml"><img src="images/rss.jpg" align="left" width="14" height="14" alt="rss"></a>  <a href="https://twitter.com/SIGMODConf" title="News and Site Updates">&nbsp; News</a> </li>
+
+  <!--
+
+  <li><a href="info-coming-soon.shtml" title="Conference Booklet">Conference Booklet</li>
+
+  <li><a href="info-coming-soon.shtml" title="FAQ-Attendees">FAQ-Attendees</a></li>
+
+  <li><a href="info-coming-soon.shtml" title="FAQ-Sponsors & Exhibitors">FAQ-Sponsors & Exhibitors</a></li>
+
+  -->
+
+</ul>
+
+<h3 class="navheading">Special Events</h3>
+
+<ul class="navbar">
+
+	<li><a href="sigmod_workshops.shtml" title="Workshops">Affiliated Workshops</a></li>
+    <li><a href="sigmod_new_researchers.shtml" title="New Researcher Symposium">New Researcher Symposium</a></li>
+    <li><a href="http://sigmodcontest2024.eastus.cloudapp.azure.com/dashboard.shtml" title="SIGMOD Programming Contest">SIGMOD Programming Contest</a></li>
+    <li><a href="https://2024.sigmod.org/program_sigmod.shtml#dei" title="DEI Events">DEI Events</a></li>
+    <li><a href="https://2024.sigmod.org/pods_special.shtml" title="PODS Special Event">PODS Special Event</a></li>
+    <li><a href="https://2024.sigmod.org/sponsor_talks.shtml" title="Sponsor Talks">Sponsor Talks</a></li>
+  </ul>
+
+
+
+<h3 class="navheading">Organization</h3>
+
+<ul class="navbar">
+
+  <li><a href="org_conference_officers.shtml" title="Organization">Organization</a></li>
+
+  <li><a href="org_sigmod_pc.shtml" title="Program Committee">SIGMOD PC </a></li>
+
+  <!--<li><a href="http://reproducibility.sigmod.org/#Committee" title="Reproducibility Committee">SIGMOD ARC </a></li>-->
+
+  <li><a href="org_pods_pc.shtml" title="Program Committee">PODS PC </a></li>
+
+  <li><a href="org_industrial_pc.shtml" title="Program Committee">SIGMOD Industry PC </a></li>
+
+  <li><a href="org_demo_pc.shtml" title="Program Committee">SIGMOD Demo PC </a></li>
+
+  <li><a href="comingsoon.shtml" title="Program Committee">SIGMOD Tutorial PC </a></li>
+
+  <li><a href="org_sponsor_opportunities.shtml" title="SponsorOpportunities">Sponsor Opportunities</a></li>
+
+   <!--
+
+  <li><a href="info-coming-soon.shtml" title="Conference Volunteers">Conference Volunteers </a></li>
+
+  <li><a href="info-coming-soon.shtml" title="SponsorOpportunities">Sponsor Opportunities</a></li>
+
+  <li><a href="info-coming-soon.shtml" title="Sponsors">Sponsors/Exhibitors</a></li>
+
+  <li><a href="http://www.sigmod.org/sigmod-pods-conferences" title="Past Conferences" target="_blank">Past Conferences</a></li>
+
+   -->
+
+  <li><a href="http://www.sigmod.org/" title="SIGMOD" target="_blank">ACM SIGMOD Online</a></li>
+
+
+
+<!--
+
+  <li><a href="" title="External Reviewers">SIGMOD
+
+  External Reviewers </a></li>
+
+-->
+
+ <!-- REMOVED <li><a href="org_publications.shtml" title="Publications">Publications </a></li>  -->
+
+
+
+  <!-- temporarily REMOVED <li><a href="reproducibility.shtml">SIGMOD Experimental
+
+  Reproducibility Effort</a> -->
+
+
+
+  <!-- <li><a href="exhibitors.shtml" title="Exhibits">Industrial
+
+  Exhibits</a></li> -->
+
+<br>
+<br>
+<h3>Participant Information</h3>
+<ul class="navbar">
+
+	<li><a href="registrations.shtml" title="Registrations">Registrations</a></li>
+	<li><a href="venue.shtml" title="Venue">Conference Venue</a></li>
+	<li><a href="poster_instructions.shtml" title="Poster Instructions">Poster Instructions</a></li>
+	<li><a href="session_chair_and_presenter_instructions.shtml" title="Session Chair &amp; Presenter Instructions">Session Chair &amp; Presenter Instructions</a></li>
+	<li><a href="student_support.shtml" title="Venue">Student Support Scholarships</a></li>
+	<li><a href="accomodations.shtml" title="Accomodation">Accomodation</a></li>
+  	<li><a href="visa_chile.shtml" title="chilean-visa">Chilean Visa</a></li>
+  	<li><a href="about-chile.shtml" title="about-chile">About Chile</a></li>
+  	<li><a href="chile-tourism.shtml" title="chile-tourism">Chile Tourism</a></li>
+  	<li><a href="child-care.shtml" title="child-care">Child Care</a></li>
+  	<li><a href="arrival_in_chile.shtml" title="child-care">Arrival in Chile</a></li>
+  	<li><a href="banquet.shtml" title="child-care">Banquet</a></li>
+</ul>
+</ul></div>
+
+
+<!-- the ssi code needs to stay here - do not delete move -->
+<style type="text/css">
+.disabled {
+        pointer-events: none;
+        cursor: default;
+        opacity: 0.8;
+    }
+       #program-overview-menu {
+   	  background-color: #299bd5;
+	  color: #FFF !important;
+	  text-align: center !important;
+	  padding: 10px !important;
+	  margin-bottom: 20px !important;
+	  margin-left: 8px !important;
+	  margin-right: 8px !important;
+  }
+  #program-overview-menu:hover {
+  	background-color: #105b82;
+  }
+  #program-overview-menu a {
+ 	text-decoration:none !important;
+ 	color:#FFFFFF !important;
+  }
+  #program-overview-menu a:hover {
+ 	text-decoration:none;
+ 	color:#FFFFFF !important;
+  }
+ aside#twitter iframe {
+ margin-left: 20px;
+}
+
+</style>
+
+<div id="sidebarRight">
+ <h3 class="navheading" id="program-overview-menu"><a href="2024-program.shtml" title="Program Overview">PROGRAM OVERVIEW</a></h3>   
+<h3 class="navheading">SIGMOD Program</h3>
+<ul class="navbar">
+<li><a href="program_sigmod.shtml" title="Detailed Program">Detailed Program</a></li>
+ <li><a href="industrial-list.shtml" title="Industrial Papers">Industrial Papers</a></li>
+ <li><a href="sigmod_keynote.shtml" title="Keynote Talks">Keynote Talks</a></li>
+ <li><a href="sigmod_tutorials.shtml" title="Tutorials">Tutorials</a></li>
+ <li><a href="sigmod_demos.shtml" title="Demo Papers">Demo Papers</a></li>
+ <li><a href="sigmod_panel.shtml" title="Panel Discussions">Panel Discussions</a></li>
+ <li><a href="sigmod_awards.shtml" title="Awards">Awards</a></li>
+ <li><a href="panel_poster_distribution.shtml" title="Poster Allocation">Poster Allocation</a></li>
+ <li><a href="sigmod_proceedings.shtml" title="SIGMOD Proceedings">SIGMOD Proceedings</a></li>
+  <!--
+  <li><a href="info-coming-soon.shtml" title="Undergraduate Competition">Undergraduate Competition Posters</a></li>
+  <li><a href="info-coming-soon.shtml" title="TODS Posters">TODS Posters</a></li>
+   -->
+</ul>
+
+
+<!--
+<p><font color="red">&nbsp; &nbsp; Undergraduate poster<br /> &nbsp; &nbsp; competition deadline:<br /> &nbsp; &nbsp; March 15, 2016</font></p>
+-->  
   
+    
+<h3 class="navheading">PODS Program</h3>
+<ul class="navbar">
+ <li><a href="program_pods.shtml" title="Detailed Program">Detailed Program</a></li>
+ <li><a href="pods_list.shtml" title="Research Papers">Research Papers</a></li>
+ <li><a href="pods_keynote.shtml" title="Keynote Talk">Keynote Talk</a></li>
+ <li><a href="pods_tutorial.shtml" title="Invited Tutorials">Invited Tutorials</a></li>
+ <li><a href="pods_awards.shtml" title="Awards">Awards</a></li>
+ <li><a href="pods_gems.shtml" title="Gems of PODS">Gems of PODS</a></li>
+ <li><a href="pods_special.shtml" title="PODS Special Event">PODS Special Event</a></li>
+ <li><a href="panel_poster_distribution.shtml" title="Poster Allocation">Poster Allocation</a></li>
+ <li><a href="https://dl.acm.org/toc/pacmmod/2024/2/2" title="PODS Proceedings">PODS Proceedings</a></li>
+  <!--
+  <li><a href="info-coming-soon.shtml" title="Undergraduate Competition">Undergraduate Competition Posters</a></li>
+  <li><a href="info-coming-soon.shtml" title="TODS Posters">TODS Posters</a></li>
+   -->
+</ul>
+
+<h3 class="navheading">Calls For Submissions</h3>
+
+<!--
+<p><font color="red">&nbsp; &nbsp; Undergraduate poster<br /> &nbsp; &nbsp; competition deadline:<br /> &nbsp; &nbsp; March 15, 2016</font></p>
+-->
+
+<ul class="navbar">
+  <li><a href="calls_papers_important_dates.shtml" title="Important Dates and Submission"><font color="red">Important Dates</font></a></li>
+  <li><a href="calls_papers_sigmod_research.shtml" title="SIGMOD Calls for Submissions">SIGMOD Call for Research Papers</a></li>
+  <li><a href="calls_papers_pods_research.shtml" title="PODS Calls for Submissions">PODS Call for Research Papers</a></li>
+  <li><a href="calls_sigmod_tutorials.shtml" title="SIGMOD Call for Tutorial Proposals">SIGMOD Call for Tutorial Proposals</a></li>
+  <li><a href="calls_industrial_track_papers.shtml" title="SIGMOD Call for Industrial Track Papers">SIGMOD Call for Industrial Track Papers</a></li>
+  <li><a href="calls_workshops.shtml" title="SIGMOD Call for Workshop Proposals">SIGMOD Call for Workshop Proposals</a></li>
+  <li><a href="calls_sigmod_demos.shtml" title="SIGMOD Call for Demonstration Proposals">SIGMOD Call for Demonstration Proposals</a></li>
+  <li><a href="calls_awards.docx" title="SIGMOD Call for Awards Nomination">SIGMOD Call for Awards Nomination</a></li>
+    <li><a href="https://sigmod.org/sigmod-awards/doctoral-dissertation-award/" title="SIGMOD Dissertation Award">SIGMOD Call for Dissertation Award</a></li>
+
+        <li><a href="
+http://sigmodcontest2024.eastus.cloudapp.azure.com/index.shtml" title="SIGMOD Programming Contest">SIGMOD Programming Contest</a></li>
+ <!--<li><a href="calls.shtml" title="Calls for Submissions">Calls for Submissions</font></a></li>-->
+</ul>
+
+
+<br>
+
+<br>
+
+<aside id="twitter" style="text-align: center; margin: 20px;">
+  <h2 style="color:#00ADE1;">Follow us on X</h2>
+  <p style="margin-bottom:30px;font-size:14px;line-height: 20px;">to stay updated on what's happening at <span style="color:#000000;">SIGMOD/PODS 2024</span></p>
+<a href="https://twitter.com/SIGMODConf?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @SIGMODConf</a><script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</aside>
+
+
+
+<!--<aside id="twitter_timeline-2" class="widget widget_twitter_timeline">-->
+<!-- <h1 class="widget-title">Follow me on Twitter</h1> -->
+<!--<a class="twitter-timeline" href="https://twitter.com/sigmod2021">Tweets by sigmod2021</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script>!function(d,s,id){var
+js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</aside>-->
+
+<br> <br>
+<!--
+<aside id="facebook-likebox-2" class="widget widget_facebook_likebox">
+<!-- <h2 class="widget-title"><a href="https://www.facebook.com/sigmod2016">SIGMOD 2015</a></h2> -->
+<!--<iframe src="http://www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/sigmod2016&#038;width=155&#038;height=350&#038;colorscheme=light&#038;show_faces=true&#038;stream=false&#038;show_border=false&#038;header=false&#038;force_wall=false"  scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 155px;  height: 302px; background: #fff"></iframe></aside>
+-->
+<br>
+
+<!--
+<aside id="twitter_timeline-2" class="widget widget_twitter_timeline">
+ <h1 class="widget-title">Follow me on Twitter</h1>
+<a class="twitter-timeline" data-widget-id="492844173880348673" data-theme="light" data-link-color="#f96e5b" data-border-color="#e8e8e8" data-chrome="noborders" width="225" height="400" lang="EN">My Tweets</a></aside>
+
+-->
+
+
+<!--
+<h3 class="navheading">Workshops Program</h3>
+<ul class="navbar">
+  <li><a href="schedglance.shtml" title="Schedule at a Glance" >Schedule at a Glance</a></li>
+  <li><a href="workshop_program.shtml" title="Workshop Program">Program</a></li>
+</ul>
+-->
+
+<!--  Chopped for aesthetics
+    <li><a href="pods_formatting.shtml" title="PODS Paper Formatting">PODS: Paper Formatting</a></li>
+    <li><a href="sigmod_formatting.shtml" title="SIGMOD Paper Formatting">SIGMOD: Paper Formatting</a></li>
+</ul>
+-->
+
+
+</div>
 
 
 
 
 
-</div></div></div></div><iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.2f70fb173b9000da126c79afe2098f02.html?origin=https%3A%2F%2Fpeople.cs.rutgers.edu" title="Twitter settings iframe" style="display: none;"></iframe></body></html>
+<div id="maincontent">
+  <h1>SIGMOD 2024 CALL FOR RESEARCH PAPERS</h1>
+
+
+<p>
+Santiago, Chile, June 11-16, 2024,<a style="color:
+#CC6600; text-decoration: none;" href="https://2024.sigmod.org">
+https://2024.sigmod.org</a> </p>
+<p>
+    
+
+</p>
+
+<p align="justify">
+The PACMMOD issues of SIGMOD 2024 seek contributions in all aspects of data management research.  Authors of papers published in the PACMMOD issues of SIGMOD 2024 will be invited to present their work at the SIGMOD conference in June 2024.  The annual ACM SIGMOD conference is a leading international forum for data management researchers, practitioners, developers, and users to explore cutting-edge ideas and results, and to exchange techniques, tools, and experiences.
+</p>
+
+<h3>NEW IN 2024</h3>
+
+<p align="justify">
+  </p><ul>
+  <li style="color:Red;"><b> All authors are required to have a registered account with the submission site (CMT).</b><br>
+  The submission system will not allow submission of papers that do not satisfy this requirement. </li>
+  <li>Four paper submission deadlines:
+January 15 (Round 1), April 15 (Round 2), July 15 (Round 3), October 15 (Round 4)
+</li>
+  <li>Submission website: <a style="color:
+#CC6600; text-decoration: none;" href="https://cmt3.research.microsoft.com/SIGMOD2024">https://cmt3.research.microsoft.com/SIGMOD2024</a>
+</li>
+  <li>All Research Track submissions, including the special tracks, must be anonymized and at most 12 pages in length, plus an unlimited number of pages for citations.
+</li>
+  <li>Special Track submissions must include the special track name as a subtitle of the title, in parentheses.
+</li>
+  <li>Updated conflict of interest policy and conflict declaration on CMT. Note that each author is now required to enter individual domain and PC conflicts on the submission site.
+</li>
+  <li>Updated submission eligibility rules: Any rejected submissions to the final round of SIGMOD 2023 (October round) are not allowed to be resubmitted to Round 1 (January round) of SIGMOD 2024. However, such papers may be submitted to subsequent rounds (Rounds 2, 3, and 4).
+</li>
+</ul>
+<p align="justify">
+For all tracks, after the first review, one extra content page is allowed to accommodate the requested revision items. The revised submission should include a cover letter (up
+to 4 pages) to summarize how the authors have addressed the requested revisions.</p>
+
+
+<h3>TABLE OF CONTENTS</h3>
+<p align="justify">
+  </p>
+ <ol>
+  <li><a href="https://2024.sigmod.org/calls_papers_sigmod_research.shtml#tracks">Tracks</a></li>
+  <li><a href="https://2024.sigmod.org/calls_papers_sigmod_research.shtml#topics">Topics of Interest</a></li>
+  <li><a href="https://2024.sigmod.org/calls_papers_sigmod_research.shtml#dates">Importand Dates</a></li>
+<li><a href="https://2024.sigmod.org/calls_papers_sigmod_research.shtml#presentation">Presentation and Dissemination</a></li>
+<li><a href="https://2024.sigmod.org/calls_papers_sigmod_research.shtml#proceedings">Proceedings Availability</a></li>
+<li><a href="https://2024.sigmod.org/calls_papers_sigmod_research.shtml#submission">Submission Guidelines</a></li>
+<li><a href="https://2024.sigmod.org/calls_papers_sigmod_research.shtml#anonymity">Anonymity Requirements</a></li>
+<li><a href="https://2024.sigmod.org/calls_papers_sigmod_research.shtml#artifacts">Artifacts and Reproducibility</a></li>
+<li><a href="https://2024.sigmod.org/calls_papers_sigmod_research.shtml#conflicts">Conflict of Interest (updated in 2024)</a></li>
+<li><a href="https://2024.sigmod.org/calls_papers_sigmod_research.shtml#review">Reviewing Process and Revisions</a></li>
+</ol> 
+
+<h3 id="tracks">TRACKS</h3>
+<p align="justify">
+ There are three research tracks in PACMMOD issues of SIGMOD 2024:
+  </p><ul>
+    <li><b>Regular Track</b><br>We invite the submission of original research contributions relating to all aspects of data management.</li>
+    <li><b>Data Management for Data Science (DMDS) Special Track</b><br>We invite the submission of original data science research targeting the data life cycle of real applications, studying phenomena at scales, complexities, and granularities never before possible. This data life cycle encompasses databases/data management/data systems/data engineering often leveraging statistical, machine learning, and artificial intelligence methods and, in many instances, using massive and heterogeneous collections of potentially noisy datasets. Such papers are expected to focus on data-intensive components of data science pipelines; and solve problems in areas of interest to our community (e.g., data curation, optimization, performance, storage, systems). Submissions are expected to describe (a) deployed solutions to data science pipelines and/or (b) fundamental experiences and insights from evaluating real-world data science problems. We expect that the related systems and/or datasets (including possibly query logs) will be accessible for the data management research community in order to promote future research directions.</li>
+    <li><b>Data-intensive Applications (DIA) Special Track</b><br>We invite the submission of papers describing applications, systems, and datasets (e.g. content, creation, quality), along with the underlying practical data management problems and related research challenges. These applications may stem from outside the core data management community (e.g., computer graphics, computer networking) or even from outside computer science (e.g., astronomy, genomics, healthcare), but have clearly demonstrated non-trivial data-centric challenges necessitating novel systems and technologies. Submissions may describe fundamental experiences and insights gained from deployment or detailed evaluation of data-intensive systems in particular application domains. We expect that the related systems and/or datasets (including possibly query logs) will be accessible for the data management research community in order to promote future research directions. </li>
+  </ul> 
+<p></p>
+<p align="justify">
+All research track papers
+(including special track papers) are subject to double-anonymity requirement.</p>
+<h3 id="topics">TOPICS OF INTEREST</h3>
+<p align="justify">
+Topics of interest include but are not limited to the following:</p>
+
+<p align="justify">
+  </p><ul>
+<li>Benchmarking, database monitoring, performance tuning, and self-driving databases</li>
+<li>Blockchains and distributed ledgers</li>
+<li>Cloud data management and HPC</li>
+<li>Crowdsourced and collaborative data management</li>
+<li>Data exploration, visualization, query languages, and user interfaces</li>
+<li>Data integration, information extraction, and schema matching</li>
+<li>Data models and semantics</li>
+<li>Data provenance and workflows</li>
+<li>Data quality, data cleaning, and database usability</li>
+<li>Data security, privacy, and access control</li>
+<li>Data sparsity, boosting, simulated data, and digital twins</li>
+<li>Data systems for knowledge discovery, data mining, machine learning, and artificial intelligence</li>
+<li>Data warehousing, OLAP, SQL analytics</li>
+<li>Distributed, decentralized, and parallel data management</li>
+<li>Embedded databases, IoT and Sensor networks</li>
+<li>Emerging hardware for data management</li>
+<li>Graphs, social networks, web data, and semantic web</li>
+<li>Machine learning and artificial intelligence for data management and data systems</li>
+<li>Multimedia and information retrieval</li>
+<li>Natural language processing for databases</li>
+<li>Query processing and optimization</li>
+<li>Responsible data management and data fairness</li>
+<li>Semistructured, partially structured, and unstructured data</li>
+<li>Spatial  and temporal data management</li>
+<li>Storage, indexing, and physical database design</li>
+<li>Streams and complex event processing</li>
+<li>Transaction processing</li>
+<li>Uncertain, probabilistic, and approximate databases</li>
+<li>User-centric and human-in-the-loop data management</li>
+
+
+</ul>
+<p></p>
+
+<p align="justify">
+SIGMOD welcomes submissions on inter-disciplinary work, as long as there are clear contributions to management of data.
+
+</p><h3 id="dates">IMPORTANT DATES </h3>
+<p align="justify">
+New development for SIGMOD 2024: There are 4 submission rounds (January, April, July, and October). Authors of submissions with a revision decision will be given approximately one month to submit a revised version. While we strive to adhere to the published timeline, we note that author feedback and notification dates may vary slightly.  Submission deadlines are not expected to be altered.
+</p>
+<p align="justify">
+As we have moved to quarterly deadlines, maintaining consistency is important, both to avoid confusion, and to better manage and plan the workload of the PC. We realize that deadlines may occasionally fall on holidays or weekends.  However, we note that holidays are not common across different countries and cultures, and there is variability in which days of the week are considered workdays.  We encourage authors to plan ahead and aim to submit a few days early if they wish to avoid a particular holiday or weekend.
+</p>
+
+<p align="justify">
+<b>IMPORTANT NOTE ON RESUBMISSION ELIGIBILITY:</b> Papers rejected in one round of SIGMOD 2024 are not allowed to be re-submitted in subsequent rounds of the same year.  Further, any rejected submissions to the final round of SIGMOD 2023 (October round) are not allowed to be resubmitted to Round 1 (January round) of SIGMOD 2024.  However, such papers may be submitted to subsequent rounds (Rounds 2, 3, and 4).
+</p>
+
+
+<p align="justify">
+<b>RESEARCH PAPER SUBMISSION ROUND 1 (All Deadlines are 11:59 PM Pacific Time) </b><br>
+
+January 15, 2023: Paper submission<br>
+February 26-28, 2023: Author feedback phase<br>
+March 20, 2023: Notification of accept/reject/review again<br>
+April 20, 2023: Revised paper submission<br>
+May 23, 2023: Final notification of accept/reject<br>
+
+</p>
+
+<p align="justify">
+<b>RESEARCH PAPER SUBMISSION ROUND 2 (All Deadlines are 11:59 PM Pacific Time) </b><br>
+
+April 15, 2023: Paper submission<br>
+May 26-30, 2023: Author feedback phase<br>
+June 20, 2023: Notification of accept/reject/review again<br>
+July 20, 2023: Revised paper submission<br>
+August 23, 2023: Final notification of accept/reject<br>
+
+</p>
+
+<p align="justify">
+<b>RESEARCH PAPER SUBMISSION ROUND 3 (All Deadlines are 11:59 PM Pacific Time) </b><br>
+
+July 15, 2023: Paper submission<br>
+August 26-30, 2023: Author feedback phase<br>
+September 20, 2023: Notification of accept/reject/review again<br>
+October 20, 2023: Revised paper submission<br>
+November 23, 2023: Final notification of accept/reject<br>
+
+</p>
+
+<p align="justify">
+<b>RESEARCH PAPER SUBMISSION ROUND 4 (All Deadlines are 11:59 PM Pacific Time) </b><br>
+
+October 15, 2023: Paper submission<br>
+November 26-30, 2023: Author feedback phase<br>
+December 20, 2023: Notification of accept/reject/review again<br>
+January 20, 2024: Revised paper submission<br>
+February 23, 2024: Final notification of accept/reject<br>
+
+</p>
+
+
+<p></p><h3 id="presentation">PRESENTATION AND DISSEMINATION</h3>
+<p align="justify">
+All accepted papers will be treated equally in the conference proceedings, which are the persistent record of the conference. Authors of all accepted papers will have an opportunity to disseminate their works in person as part of the conference program.
+</p>
+<p align="justify">
+The rights of all ACM published authors are detailed at:<br>
+<a style="color:
+#CC6600; text-decoration: none;" href="https://authors.acm.org/author-services/author-rights">https://authors.acm.org/author-services/author-rights</a>
+</p>
+
+<h3 id="proceedings">PROCEEDINGS AVAILABILITY</h3>
+<p align="justify"> In addition to moving to a quarterly rolling submission and review process, the SIGMOD Executive Committee has decided to move to a model where accepted papers are published in a timely manner in an archival journal.</p>
+ 
+<p align="justify">As a result, all accepted research and industrial track papers in SIGMOD, from SIGMOD 2023 onwards, will appear in the Proceedings of the ACM on Management of Data (PACMMOD), whose URL is <a style="color:
+#CC6600; text-decoration: none;" href="https://dl.acm.org/journal/pacmmod">https://dl.acm.org/journal/pacmmod</a>. Other conference-related publications such as keynote talk abstracts, demonstration papers, tutorial abstracts, and invited industrial papers will also appear in the companion volume of PACMMOD. </p>
+
+<p align="justify">We will provide more information on publication dates once the publication processes are ironed out.</p>
+
+
+
+<!--
+The official publication date is the date the proceedings are made available in the ACM Digital Library.  SIGMOD is working on the possibility of early publication of papers to avoid long delays between acceptance in the early rounds and the official publication. We will update this section in the future, as new information on this topic becomes available.
+-->
+<p></p>
+<!--
+<br> Note that the official publication date affects the deadline for any patent filings related to published work.
+-->
+<p></p>
+
+<h3 id="submission">SUBMISSION GUIDELINES</h3>
+<p align="justify">
+  All aspects of the submission
+and notification process will be handled electronically. Submissions must
+adhere to the paper formatting instructions. All papers will be judged for
+quality and relevance. Submissions should be uploaded at:<br>
+  <a style="color:
+#CC6600; text-decoration: none;" href="https://cmt3.research.microsoft.com/SIGMOD2024">
+https://cmt3.research.microsoft.com/SIGMOD2024</a>
+</p>
+<p align="justify">
+Once the paper is submitted,
+SIGMOD does not accept any changes in the title and/or authorship list, with
+the rare exception of title changes requested as part of the revision request
+by the Associate Editor.
+</p>
+
+<h3><a name="submissionpolicy">DUPLICATE SUBMISSIONS AND NOVELTY REQUIREMENT</a></h3>
+
+<p align="justify">Following the <a style="color:
+#CC6600; text-decoration: none;" href="https://www.acm.org/publications/policies/simultaneous-submissions"> ACM guidelines</a> a research paper submitted to SIGMOD 2024 cannot be
+under review for any other publishing forum or presentation venue, including
+conferences, workshops, and journals, during the time it is being considered
+for SIGMOD. Furthermore, after you submit a research paper to SIGMOD, you must
+await the response from SIGMOD and only re-submit elsewhere if your paper is
+rejected—or withdrawn at your request—from SIGMOD. This restriction
+applies not only to identical papers but also to papers with a substantial
+overlap in scientific content and results.</p>
+
+<p align="justify">To enforce this requirement, the high-level metadata of
+submissions (title, abstract, list of authors), may be shared with the Program
+Chairs / Editors of other conferences and journals.</p>
+
+<p align="justify">Every research paper submitted to SIGMOD 2024 must present
+substantial novel research not described in any prior publication. In this
+context, a prior publication is (a) a paper of five pages or more, presented,
+or accepted for presentation, at a refereed conference or workshop with
+proceedings; or (b) an article published, or accepted for publication, in a
+refereed journal. If a SIGMOD 2024 submission has overlap with a prior
+publication, the submission must cite the prior publication (respecting the double
+anonymity requirement), and clearly indicate which parts of the work appeared
+in prior publications and which parts are novel to the current submission.</p>
+
+<p align="justify"><i>Any violation of this policy will result in the immediate rejection of the submission, as well as in notification to the members of the SIGMOD Executive Committee, the members of the SIGMOD PC, and the editors or chairs of any other forums involved.   </i>
+</p>
+
+ <h3><a name="humanpart">    ACM PUBLICATIONS POLICY ON RESEARCH INVOLVING HUMAN PARTICIPANTS
+AND SUBJECTS</a></h3>
+    
+<p align="justify">
+    As a published ACM author, you and your co-authors are subject to all <a style="color:
+#CC6600; text-decoration: none;" href="https://www.acm.org/publications/policies/toc"> ACM Publications Policies</a>, including ACM's new <a style="color:
+#CC6600; text-decoration: none;" href="https://www.acm.org/publications/policies/research-involving-human-participants-and-subjects"> Publications Policy on Research Involving Human Participants and Subjects</a>.</p>
+
+    
+
+<h3><a name="formatting">LENGTH, FILE TYPE, AND FORMATTING</a></h3>
+
+<p></p><p align="justify">
+Length for submitted papers: All submitted research papers must be formatted according to the instructions below. The main content of the paper must be no more than 12 pages in length for all Research Track papers, although we allow an unlimited number of pages for the bibliography. No appendix will be allowed.    </p><p align="justify">
+    Length for revised and camera ready papers: For all SIGMOD Research track papers, authors are allowed one extra page to help address reviewer comments in the revised version. Therefore, the length of camera ready papers can be up to 13 pages (+ unlimited references).</p>
+<p align="justify">
+File type: Each research paper is to be
+submitted as a single PDF file, formatted for 8.5" x 11" paper and no
+more than 10 MB in file size. (Larger files will be rejected by the submission
+site.) Submitted papers must print without difficulty on a variety of printers,
+using Adobe Acrobat Reader. It is the responsibility of the authors to ensure
+that their submitted PDF file will print easily on simple default
+configurations.
+</p>
+
+<p align="justify">
+Formatting: Research papers must follow the 2-column ACM Proceedings Format, using either the <b>sample-sigconf.tex</b> or <b>Interim layout.docx</b> template provided at <a style="color: #CC6600; text-decoration: none;" href="https://www.acm.org/publications/proceedings-template">https://www.acm.org/publications/proceedings-template</a> for LaTeX (version 2e) or Word, respectively. If you plan to use ACM's official Overleaf template, please
+use the 2-column template available at <a style="color: #CC6600; text-decoration: none;" href="https://www.overleaf.com/latex/templates/association-for-computing-machinery-acm-sig-proceedings-template/bmvfhcdnxfty">https://www.overleaf.com/latex/templates/association-for-computing-machinery-acm-sig-proceedings-template/bmvfhcdnxfty</a>
+
+</p><p align="justify"><i>Please make sure you are using
+the latest version of the ACM template.</i> The font size, margins, inter-column spacing,
+and line spacing in the templates must be kept unchanged. <i>Any submitted paper violating the length, file type, or formatting
+requirements will be rejected without review.</i>
+
+</p><p align="justify">
+<b>Additional requirements for the Special Track papers: </b>The PDF submission needs
+to contain the special track name as a subtitle of the title, in parentheses.</p>
+
+<p align="justify">
+<b>PACMMOD format:</b>
+We note that accepted papers will need to be ported into the PACMMOD format for final publication.  
+However, please do not use the PACMMOD format for submission.  
+Submissions will continue to follow the ACM Proceedings Format for the remaining cycles of this year to maintain consistency.
+</p>
+
+<h3 id="inclusionanddiversity"> INCLUSION AND DIVERSITY IN WRITING
+</h3>
+<p align="justify">We value Diversity and Inclusion in our community and
+professions. Both are important in our writing as well. Diversity of
+representation in writing is a simple but visible avenue to celebrate and
+ultimately help improve our community's diversity. Be mindful in your writing
+of not using language or examples that further the marginalization,
+stereotyping, or erasure of any group of people, especially historically
+marginalized and/or under-represented groups (URGs) in computing. Be vigilant
+and guard against unintentionally exclusionary examples.</p>
+
+<p align="justify">Please visit this page for many examples of both exclusionary
+writing to avoid and inclusive writing that celebrates diversity to consider
+adopting: <a style="color:
+#CC6600; text-decoration: none;" href="https://dbdni.github.io/pages/inclusivewriting.html">https://dbdni.github.io/pages/inclusivewriting.html</a>. Authors are further encouraged to follow the tips and
+guidelines provided at: <a style="color:
+#CC6600; text-decoration: none;" href="https://dbdni.github.io/#materials">https://dbdni.github.io/#materials.</a> Reviewers will be empowered to monitor
+and demand changes if such issues arise. Going further, also consider actively
+raising the representation of URGs in writing. * Please see <a style="color:
+#CC6600; text-decoration: none;" href="https://www.acm.org/diversity-inclusion/words-matter">https://www.acm.org/diversity-inclusion/words-matter</a> for inclusive alternatives for some of the terms commonly used in
+the computing profession.</p>
+
+<h3><a name="chatgpt"> ACM POLICY ON AUTHORSHIP REQUIREMENTS</a></h3>
+    <p align="justify">We follow the <a href="https://www.acm.org/publications/policies/new-acm-policy-on-authorship">ACM policy on authorship requirements</a>.  Specifically on the use of generative AI tools and technologies, the guidelines note that: "Generative AI tools and technologies, such as ChatGPT, may not be listed as authors of an ACM published Work. The use of generative AI tools and technologies to create content is permitted but must be fully disclosed in the Work. For example, the authors could include the following statement in the Acknowledgements section of the Work: ChatGPT was utilized to generate sections of this Work, including text, tables, graphs, code, data, citations, etc.). If you are uncertain ­about the need to disclose the use of a particular tool, err on the side of caution, and include a disclosure in the acknowledgements section of the Work."
+    </p>
+
+<h3 id="anonymity"> ANONYMITY REQUIREMENTS FOR ALL RESEARCH TRACK SUBMISSIONS
+</h3>
+<p align="justify">
+Research track submissions (including special track submissions) are subject to the double-anonymity requirement.</p><ul>
+<p align="justify">Every research track paper submitted to SIGMOD 2024 will undergo a double-anonymous reviewing process, following the three principles put forward in <a style="color:
+#CC6600; text-decoration: none;" href="https://arxiv.org/abs/2007.00177">(Snodgrass 2007)</a>: authors should not be required to go to great lengths to anonymize their submissions; comprehensiveness of the review trumps anonymizing efficacy. AEs retain flexibility and authority in managing the reviewing process. </p>
+
+<p align="justify">PC members and referees, except the Associate Editors, who review the submission will not know the identity of the authors. To ensure anonymity of authorship from the PC members and referees, authors must at least do the following: </p>
+
+
+<li> Authors' names and
+affiliations must not appear on the title page or elsewhere in the submission.
+</li><li> Funding sources must not be
+acknowledged anywhere in the submission.
+</li><li> Research group members, or
+other colleagues or collaborators, must not be acknowledged anywhere in the
+submission.
+</li><li> The paper’s file name must not identify
+the authors of the submission.
+</li><li> Source file naming must also be done with care, to avoid identifying the authors' names in the submission's associated metadata. For
+example, if your name is Jane Smith and you submit a PDF file generated from a
+.dvi file called Jane-Smith.dvi, your authorship
+could be inferred by looking into the PDF file.
+</li></ul>
+
+<p align="justify">To avoid compromising the double-anonymity requirement, we request that the authors refrain from publicizing and uploading versions of their submitted manuscripts to pre-publication servers, such as arXiv, and other online forums during the reviewing period. If a version of a submission already resides on a pre-publication server, such as arXiv, the authors do not need to remove it before submitting to SIGMOD.</p>
+
+
+<p align="justify">
+You must also use care in referring to related past work, particularly your own, in the paper. For example, if you are Jane Smith, the following text gives away the authorship of the submitted paper:
+</p><blockquote>
+<i>
+In our previous work [1, 2], we presented two algorithms for ... In this paper, we build on that work by ...
+</i>
+</blockquote>
+<blockquote>
+<b>Bibliography</b><br>
+<i>
+[1] Jane Smith, "A Simple Algorithm for ...," Proceedings of ACM SIGMOD
+1997, pp. 1 - 10. <br>
+[2] Jane Smith, "A More Complicated Algorithm for ...," Proceedings of
+ACM SIGMOD 1998, pp. 34 - 44.<br>
+</i></blockquote>
+
+<p align="justify">
+The solution is to reference one's past work in the third
+person. This allows setting the context for your submission, while at the same
+time preserving anonymity:
+</p><blockquote><i>
+In previous work [1, 2], algorithms were presented for ... In this
+paper, we build on that work by ...
+</i></blockquote>
+<blockquote>
+<b>Bibliography</b><br>
+<i>
+[1] Jane Smith, "A Simple Algorithm for ...," Proceedings of ACM SIGMOD
+1997, pp. 1 - 10.<br>
+[2] Jane Smith, "A More Complicated Algorithm for ...," Proceedings of
+ACM SIGMOD 1998, pp. 34 - 44.<br>
+</i></blockquote>
+
+<p align="justify">
+Despite the anonymity requirements, you should still include all relevant work of your own in the references, using the above style; omitting them could potentially reveal your identity by negation. However, self-references should be limited to the essential ones, and extended versions of the submitted paper (e.g., technical reports or URLs for downloadable versions) must not be referenced.
+</p><p align="justify">
+Common sense and careful writing can go a long way toward preserving anonymity without diminishing the quality or impact of a paper. The goal is to preserve anonymity while still allowing the reader to fully grasp the context (related past work, including your own) of the submitted paper. In past years, this goal has been achieved successfully by thousands of papers.
+</p><p align="justify">
+<i>It is the responsibility of authors to do their very best to preserve anonymity. Papers that do not follow the guidelines here, or otherwise potentially reveal the identity of the authors, are subject to immediate rejection.  </i>
+
+</p><p align="justify">
+<i>No exceptions will be made to
+the double anonymity requirement for Research Track papers. If the authors of a submission feel that
+double anonymity needs to be violated, for example to reveal the identity of a
+system, they may consider submission to a SIGMOD track that does not impose a
+double anonymity requirement, such as the Industry Track.</i></p>
+
+<h3 id="artifacts">ARTIFACTS and REPRODUCIBILITY</h3>
+<p align="justify">
+SIGMOD strives to establish a culture where sharing research artifacts (data, results, code, and scripts) is the norm rather than an exception. SIGMOD reproducibility has three goals: (a) Highlighting the impact of database research papers; (b) enabling easy dissemination of research results; and (c) enabling easy sharing of code and experimentation set-ups. In this context, we expect all papers to make their code, data, scripts, and notebooks available if this is possible. Although it is not mandatory for acceptance, providing this extra material can help reviewers evaluate your work more thoroughly. Papers published at SIGMOD which have been successfully reproduced are also recognized and highlighted as such in the ACM Digital Library.</p>
+
+<p align="justify">
+Please include a link with your materials in the text box provided in the submission form at the time of submission. For all Research Track submissions, the link and materials should preserve anonymity. For example this may be an anonymous GitHub repository. You may want to make sure that the link you provide is not indexed by search engines. On GitHub, you can do so by adding the following to the page head:</p>
+
+<p align="center"> </p><center><xmp><meta name="robots" content="noindex"></xmp></center><p></p>
+
+<p align="justify">
+We recognize that at the time of submission authors focus on fine-tuning the paper, and so we expect this link to be live within two weeks from submission. Reviewers that may need to look at the materials will not do so earlier than that. We do not expect a fully polished submission in terms of automatically reproducing results, but rather a reasonably clean version of the state of the code when submitting the paper. Please, do not use a shortened link which traces who accesses it.</p>
+
+<p align="justify">
+In the event that you are not able to submit your code, data, scripts, and notebooks please explain in the text box provided in the submission form why this is the case.
+</p>
+
+
+
+
+<h3 id="conflicts">CONFLICTS OF INTEREST (Updated in 2024)</h3>
+<p align="justify">During submission of a research paper, the submission site will request information about conflicts of interest of the paper’s authors with program committee (PC) members. It is the full responsibility of all authors of a paper to identify all and only their potential conflict-of-interest PC members, according to the definition below. Papers with incorrect or incomplete conflict of interest information as of the submission closing time are subject to immediate rejection.
+</p>
+
+<p align="justify">
+<b>Definition of Conflict of Interest:</b><i> A paper author has a conflict of interest with a PC member when, and only when, one or more of the following conditions holds:
+</i></p><ul><i>
+<li>The PC member is a co-author of the paper.</li>
+<li>The PC member has been a co-worker in the same company or university within the past five years.<sup>1</sup></li>
+<li>The PC member has been a collaborator within the past five years.<sup>2</sup></li>
+<li>The PC member is or was the author's primary thesis advisor, or post-doctoral advisor, no matter how long ago.</li>
+<li>The author is or was the PC member's primary thesis advisor, or post-doctoral advisor, no matter how long ago.</li>
+<li>The PC member is a relative or close personal friend of the author.</li>
+</i></ul>
+
+<p align="justify">
+<i><sup>1</sup>Short-term associations, such as summer internships do not constitute institutional COIs.  E.g., a student who interned at Microsoft should declare as conflicts any individuals in the group they worked with and other collaborators on their projects, but they should not declare a domain conflict with microsoft.com.
+</i>
+</p>
+<p align="justify">
+<i><sup>2</sup>Collaborations are indicated by prior co-authorships, shared grant funding, and close research relationships, even if those have not yet resulted in common publications. Publications (typically with a large set of authors) that fall outside the traditional sense of research collaborations (e.g., “The Seattle Report on Database Research”, “ Diversity and Inclusion Activities in Database Conferences: A 2021 Report”, etc.) do not in themselves constitute a COI.
+</i>
+</p>
+
+<p align="justify">To identify any potentially spurious conflicts, PC members may be asked to confirm declared conflicts with submitting authors.
+</p>
+
+
+<p align="justify"><b>Conflict declaration on CMT:</b>
+Conflicts will no longer be declared per submission.  Rather, each author is now responsible for entering their own individual domain and PC conflicts on CMT.  You can mark your conflicts by clicking on your name (upper right-hand side on CMT) and selecting ''Domain Conflicts'' and ''Individual Conflicts''.  An author's declared conflicts will be automatically applied to all of their submissions.
+</p>
+
+
+
+
+<h3 id="review">REVIEWING PROCESS AND REVISIONS</h3>
+<p align="justify">
+<b>Number of reviews:</b> Each submission will first receive at least three reviews.  At the discretion of the AE and the PC chairs, additional reviews may be procured. </p>
+
+<p align="justify"><b>Author Feedbacks:</b> Before the discussion phase starts between reviewers and decisions are made, authors will have a few days to read the reviews and submit optional brief feedback. The sole purpose of the author feedback is to clarify misunderstandings and factual errors through pointers to specific text in the submitted paper. As an example, a reviewer may have overlooked a part of the discussion in the paper and state that the paper fails to compare with a certain method; an example feedback will be of the form "see Section 2.4, paragraph 3". If no factual errors exist in the reviews, author feedback is not needed.</p>
+
+<p align="justify"><b>Revisions:</b> Some authors will be invited to submit a revised version of their paper. Authors will have one month to implement the revision items. The revision process is intended to be a constructive partnership between reviewers and authors. To this end, reviewers will be instructed to request revisions only in constructive scenarios with specific requests. In turn, authors bear the responsibility of attempting to meet those requests within the stated time frame, or of withdrawing the paper from submission. Common revision requests can include ''justify a crucial assumption'', ''present a real(istic) scenario where the defined problem occurs'', ''clean up notation'', ''tighten presentation'', ''compare against some relevant previous system'', ''show experimental results with better data, such as at larger scale or from a real system''. Revisions will not be requested to address lack of technical depth or novelty or where the revised paper will address a substantially different problem from the original. </p>
+
+<p align="justify">
+For all tracks, one extra content page is allowed after the first review to accommodate the requested revision items. The revised submission should include a cover letter (up to 4 pages) to summarize how the authors have addressed the requested revisions.  Authors are encouraged to highlight parts of their revised manuscripts that are edited in a different color to ease their identification by the reviewers.  </p>
+
+
+</div></div></body></html>

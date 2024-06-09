@@ -168,6 +168,7 @@ First cycle - Camera ready due
 Registration & Final Paper Due
 Summer - Final paper files due
 Upload Final Publication Files
+Upload of Final Publication Files
 Winter - Final paper files due
 Camera ready and copyright due
 Camera-ready Paper Submissions
@@ -213,7 +214,6 @@ Camera-Ready Paper Deadline
 Camera Ready Copy Deadline
 Deadline for Final Version
 Submission of camera-ready
-Notification of acceptance
 Publication-Ready deadline
 Camera-ready Papers Upload
 Final Manuscript Deadline
@@ -347,7 +347,6 @@ Final copy due
 Final versions
 Final Versions
 Final Version
-Camera Ready:
 FINAL VERSION
 Camera-ready:
 Final version

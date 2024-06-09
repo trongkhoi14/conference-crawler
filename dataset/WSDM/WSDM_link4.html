@@ -1,1036 +1,482 @@
-<!DOCTYPE html><html lang="en-us"><head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="x-ua-compatible" content="IE=edge">
-<meta name="generator" content="Wowchemy 5.3.0 for Hugo">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;family=Roboto+Mono&amp;family=Roboto:wght@400;700&amp;display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;family=Roboto+Mono&amp;family=Roboto:wght@400;700&amp;display=swap" media="all" onload="this.media='all'">
-<meta name="author" content="Yuta Saito">
-<meta name="description" content="">
-<link rel="alternate" hreflang="ja" href="https://usait0.com/ja/publications/">
-<link rel="alternate" hreflang="en-us" href="https://usait0.com/en/publications/">
-<meta name="theme-color" content="#1565c0">
-<link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="all" onload="this.media='all'">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="all" onload="this.media='all'">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="all" onload="this.media='all'">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled="">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="all" onload="this.media='all'">
-<link rel="stylesheet" href="/css/wowchemy.7fa18a541b489204d14a3f8fd75bb3b5.css">
-<link rel="manifest" href="/en/manifest.webmanifest">
-<link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
-<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png">
-<link rel="canonical" href="https://usait0.com/en/publications/">
-<meta property="twitter:card" content="summary">
-<meta property="og:site_name" content="Yuta Saito">
-<meta property="og:url" content="https://usait0.com/en/publications/">
-<meta property="og:title" content="Yuta Saito">
-<meta property="og:description" content=""><meta property="og:image" content="https://usait0.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-<meta property="twitter:image" content="https://usait0.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
-<meta property="article:modified_time" content="2022-01-10T16:07:08-05:00">
-<title>Yuta Saito</title>
-<style type="text/css">.medium-zoom-overlay{position:fixed;top:0;right:0;bottom:0;left:0;opacity:0;transition:opacity .3s;will-change:opacity}.medium-zoom--opened .medium-zoom-overlay{cursor:pointer;cursor:zoom-out;opacity:1}.medium-zoom-image{cursor:pointer;cursor:zoom-in;transition:transform .3s cubic-bezier(.2,0,.2,1)!important}.medium-zoom-image--hidden{visibility:hidden}.medium-zoom-image--opened{position:relative;cursor:pointer;cursor:zoom-out;will-change:transform}</style></head>
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper" data-wc-page-id="23d1e75f872528fc12f5f2b142375ff7">
-<script src="/js/wowchemy-init.min.2da3b1fa37e894630bf6de39b1b694b3.js"></script>
-<aside class="search-modal" id="search">
-<div class="container">
-<section class="search-header">
-<div class="row no-gutters justify-content-between mb-3">
-<div class="col-6">
-<h1>Search</h1>
-</div>
-<div class="col-6 col-search-close">
-<a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-</div>
-</div>
-<div id="search-box">
-<input name="q" id="search-query" placeholder="Search..." autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control" aria-label="Search...">
-</div>
-</section>
-<section class="section-search-results">
-<div id="search-hits">
-</div>
-</section>
-</div>
-</aside>
-<div class="page-header">
-<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-<div class="container-xl">
-<div class="d-none d-lg-inline-flex">
-<a class="navbar-brand" href="/en/">Yuta Saito</a>
-</div>
-<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-<span><i class="fas fa-bars"></i></span>
-</button>
-<div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-<a class="navbar-brand" href="/en/">Yuta Saito</a>
-</div>
-<div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
-<ul class="navbar-nav d-md-inline-flex">
-<li class="nav-item">
-<a class="nav-link" href="/en/#about"><span>Home</span></a>
-</li>
-<li class="nav-item">
-<a class="nav-link active" href="/en/publications" data-target="[]"><span>Publications</span></a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="/en/#contact"><span>Contact</span></a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="/uploads/cv.pdf"><span>CV</span></a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="/ja"><span>日本語</span></a>
-</li>
+<!DOCTYPE html><html lang="en-US"><head>
+
+		        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="profile" href="//gmpg.org/xfn/11">
+        <title>Schedule – The 17th ACM International WSDM Conference</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="alternate" type="application/rss+xml" title="The 17th ACM International WSDM Conference » Feed" href="https://www.wsdm-conference.org/2024/feed/">
+<link rel="alternate" type="application/rss+xml" title="The 17th ACM International WSDM Conference » Comments Feed" href="https://www.wsdm-conference.org/2024/comments/feed/">
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.wsdm-conference.org\/2024\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.5.4"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="https://www.wsdm-conference.org/2024/wp-includes/css/dist/block-library/style.min.css?ver=6.5.4" type="text/css" media="all">
+<style id="wp-block-library-theme-inline-css" type="text/css">
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:#ffffffa6}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:#ffffffa6}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:#ffffffa6}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:#ffffffa6}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:#ffffffa6}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:#ffffffa6}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<link rel="stylesheet" id="magnific-popup-css" href="https://www.wsdm-conference.org/2024/wp-content/plugins/gutentor/assets/library/magnific-popup/magnific-popup.min.css?ver=1.8.0" type="text/css" media="all">
+<link rel="stylesheet" id="slick-css" href="https://www.wsdm-conference.org/2024/wp-content/plugins/gutentor/assets/library/slick/slick.min.css?ver=1.8.1" type="text/css" media="all">
+<link rel="stylesheet" id="fontawesome-css" href="https://www.wsdm-conference.org/2024/wp-content/plugins/gutentor/assets/library/fontawesome/css/all.min.css?ver=5.12.0" type="text/css" media="all">
+<link rel="stylesheet" id="wpness-grid-css" href="https://www.wsdm-conference.org/2024/wp-content/plugins/gutentor/assets/library/wpness-grid/wpness-grid.css?ver=1.0.0" type="text/css" media="all">
+<link rel="stylesheet" id="animate-css" href="https://www.wsdm-conference.org/2024/wp-content/plugins/gutentor/assets/library/animatecss/animate.min.css?ver=3.7.2" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="contact-form-7-css" href="https://www.wsdm-conference.org/2024/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="ctf_styles-css" href="https://www.wsdm-conference.org/2024/wp-content/plugins/custom-twitter-feeds/css/ctf-styles.min.css?ver=2.2" type="text/css" media="all">
+<link rel="stylesheet" id="event-star-googleapis-css" href="//fonts.googleapis.com/css?family=Open+Sans:400,700|Lato:400,700" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-css" href="https://www.wsdm-conference.org/2024/wp-content/themes/event-star/assets/library/bootstrap/css/bootstrap.min.css?ver=3.3.6" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="https://www.wsdm-conference.org/2024/wp-content/themes/event-star/assets/library/Font-Awesome/css/font-awesome.min.css?ver=4.7.0" type="text/css" media="all">
+<link rel="stylesheet" id="event-star-style-css" href="https://www.wsdm-conference.org/2024/wp-content/themes/event-star/style.css?ver=6.5.4" type="text/css" media="all">
+<style id="event-star-style-inline-css" type="text/css">
+
+              .inner-main-title {
+                background-image:url('https://www.wsdm-conference.org/2024/wp-content/uploads/2023/06/cropped-wsdm002-1.jpg');
+                background-repeat:no-repeat;
+                background-size:cover;
+                background-attachment:fixed;
+                background-position: center; 
+                height: 300px;
+            }
+            .top-header{
+                background-color: #ffc600;
+            }
+            .site-footer{
+                background-color: #a23900;
+            }
+            .copy-right{
+                background-color: #0D1D31;
+            }
+	        .site-title,
+	        .site-title a,
+	        .site-description,
+	        .site-description a,
+            a:hover,
+            a:active,
+            a:focus,
+             .main-navigation .acme-normal-page .current_page_item a,
+            .main-navigation .acme-normal-page .current-menu-item a,
+            .main-navigation .active a,
+            .single-item .fa,
+			 .at-social .socials li a,
+			 .primary-color,
+			 article.post .entry-header .cat-links a,
+			 .woocommerce .star-rating, 
+            .woocommerce ul.products li.product .star-rating,
+            .woocommerce p.stars a,
+            .woocommerce ul.products li.product .price,
+            .woocommerce ul.products li.product .price ins .amount,
+            .widget li a:hover,
+            .posted-on a:hover,
+            .author.vcard a:hover,
+            .cat-links a:hover,
+            .comments-link a:hover,
+            .edit-link a:hover,
+            .tags-links a:hover,
+            .byline a:hover,
+            .main-navigation .navbar-nav >li a:hover,
+            .team-item h3 a:hover,
+            .news-notice-content .news-content a:hover,
+             #event-star-breadcrumbs a:hover,
+            .woocommerce a.button.add_to_cart_button:hover,
+            .woocommerce a.added_to_cart:hover,
+            .woocommerce a.button.product_type_grouped:hover,
+            .woocommerce a.button.product_type_external:hover,
+            .woocommerce .cart .button:hover,
+            .woocommerce .cart input.button:hover,
+            .woocommerce #respond input#submit.alt:hover,
+			.woocommerce a.button.alt:hover,
+			.woocommerce button.button.alt:hover,
+			.woocommerce input.button.alt:hover,
+			.woocommerce .woocommerce-info .button:hover,
+			.woocommerce .widget_shopping_cart_content .buttons a.button:hover,
+			.widget li a:focus,
+            .posted-on a:focus,
+            .author.vcard a:focus,
+            .cat-links a:focus,
+            .comments-link a:focus,
+            .edit-link a:focus,
+            .tags-links a:focus,
+            .byline a:focus,
+            .main-navigation .navbar-nav >li a:focus,
+            .team-item h3 a:focus,
+            .news-notice-content .news-content a:focus,
+             #event-star-breadcrumbs a:focus,
+            .woocommerce a.button.add_to_cart_button:focus,
+            .woocommerce a.added_to_cart:focus,
+            .woocommerce a.button.product_type_grouped:focus,
+            .woocommerce a.button.product_type_external:focus,
+            .woocommerce .cart .button:focus,
+            .woocommerce .cart input.button:focus,
+            .woocommerce #respond input#submit.alt:focus,
+			.woocommerce a.button.alt:focus,
+			.woocommerce button.button.alt:focus,
+			.woocommerce input.button.alt:focus,
+			.woocommerce .woocommerce-info .button:focus,
+			.woocommerce .widget_shopping_cart_content .buttons a.button:focus,
+			.woocommerce div.product .woocommerce-tabs ul.tabs li a,
+			.woocommerce-message::before{
+                color: #00326a;
+            }
+            .navbar .navbar-toggle:hover,
+            .main-navigation .current_page_ancestor > a:before,
+            .comment-form .form-submit input,
+            .btn-primary,
+            .wpcf7-form input.wpcf7-submit,
+            .wpcf7-form input.wpcf7-submit:hover,
+            i.slick-arrow:hover,
+            .sm-up-container,
+            .btn-primary.btn-reverse:before,
+            #at-shortcode-bootstrap-modal .modal-header,
+            .primary-bg,
+            .schedule-title-wrapper .schedule-title.active a,
+			.schedule-title-wrapper .schedule-title.active a i,
+			.schedule-title-wrapper .schedule-title:hover a,
+			.team-item:hover,
+			.at-event-count-down,
+			.navigation.pagination .nav-links .page-numbers.current,
+			.navigation.pagination .nav-links a.page-numbers:hover,
+			.widget-title::after,
+			.woocommerce .product .onsale,
+			.woocommerce a.button.add_to_cart_button,
+			.woocommerce a.added_to_cart,
+			.woocommerce a.button.product_type_grouped,
+			.woocommerce a.button.product_type_external,
+			.woocommerce .single-product #respond input#submit.alt,
+			.woocommerce .single-product a.button.alt,
+			.woocommerce .single-product button.button.alt,
+			.woocommerce .single-product input.button.alt,
+			.woocommerce #respond input#submit.alt,
+			.woocommerce a.button.alt,
+			.woocommerce button.button.alt,
+			.woocommerce input.button.alt,
+			.woocommerce .widget_shopping_cart_content .buttons a.button,
+			.woocommerce div.product .woocommerce-tabs ul.tabs li:hover,
+			.woocommerce div.product .woocommerce-tabs ul.tabs li.active,
+			.woocommerce .cart .button,
+			.woocommerce .cart input.button,
+			.woocommerce input.button:disabled, 
+			.woocommerce input.button:disabled[disabled],
+			.woocommerce input.button:disabled:hover, 
+			.woocommerce input.button:disabled[disabled]:hover,
+			 .woocommerce nav.woocommerce-pagination ul li a:focus, 
+			 .woocommerce nav.woocommerce-pagination ul li a:hover, 
+			 .woocommerce nav.woocommerce-pagination ul li span.current,
+			 .woocommerce a.button.wc-forward,
+			 .woocommerce .widget_price_filter .ui-slider .ui-slider-range,
+			 .woocommerce .widget_price_filter .ui-slider .ui-slider-handle,
+			 .navbar .cart-wrap .acme-cart-views a span{
+                background-color: #00326a;
+                color:#fff;
+            }
+            .woocommerce .cart .button, 
+            .woocommerce .cart input.button,
+            .woocommerce a.button.add_to_cart_button,
+            .woocommerce a.added_to_cart,
+            .woocommerce a.button.product_type_grouped,
+            .woocommerce a.button.product_type_external,
+            .woocommerce .cart .button,
+            .woocommerce .cart input.button
+            .woocommerce .single-product #respond input#submit.alt,
+			.woocommerce .single-product a.button.alt,
+			.woocommerce .single-product button.button.alt,
+			.woocommerce .single-product input.button.alt,
+			.woocommerce #respond input#submit.alt,
+			.woocommerce a.button.alt,
+			.woocommerce button.button.alt,
+			.woocommerce input.button.alt,
+			.woocommerce .widget_shopping_cart_content .buttons a.button,
+			.woocommerce div.product .woocommerce-tabs ul.tabs:before{
+                border: 1px solid #00326a;
+            }
+            .blog article.sticky{
+                border-bottom: 2px solid #00326a;
+            }
+</style>
+<link rel="stylesheet" id="event-star-block-front-styles-css" href="https://www.wsdm-conference.org/2024/wp-content/themes/event-star/acmethemes/gutenberg/gutenberg-front.css?ver=1.0" type="text/css" media="all">
+<script type="text/javascript" src="https://www.wsdm-conference.org/2024/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.wsdm-conference.org/2024/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="https://www.wsdm-conference.org/2024/wp-content/themes/event-star/assets/library/html5shiv/html5shiv.min.js?ver=3.7.3" id="html5-js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="https://www.wsdm-conference.org/2024/wp-content/themes/event-star/assets/library/respond/respond.min.js?ver=1.1.2" id="respond-js"></script>
+<![endif]-->
+
+<!-- Google tag (gtag.js) snippet added by Site Kit -->
+
+<!-- Google Analytics snippet added by Site Kit -->
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=GT-NCLMF3N" id="google_gtagjs-js" async=""></script>
+<script type="text/javascript" id="google_gtagjs-js-after">
+/* <![CDATA[ */
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["www.wsdm-conference.org"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-NCLMF3N");
+/* ]]> */
+</script>
+
+<!-- End Google tag (gtag.js) snippet added by Site Kit -->
+<link rel="https://api.w.org/" href="https://www.wsdm-conference.org/2024/wp-json/"><link rel="alternate" type="application/json" href="https://www.wsdm-conference.org/2024/wp-json/wp/v2/pages/715"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.wsdm-conference.org/2024/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.5.4">
+<link rel="canonical" href="https://www.wsdm-conference.org/2024/schedule/">
+<link rel="shortlink" href="https://www.wsdm-conference.org/2024/?p=715">
+<link rel="alternate" type="application/json+oembed" href="https://www.wsdm-conference.org/2024/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.wsdm-conference.org%2F2024%2Fschedule%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.wsdm-conference.org/2024/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.wsdm-conference.org%2F2024%2Fschedule%2F&amp;format=xml">
+<meta name="generator" content="Site Kit by Google 1.128.0"><meta name="google-site-verification" content="aodfFWBfieVYE9TPyXOKKulWTOgw63x46HcJbUNdA9I"><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+	<script src="https://www.wsdm-conference.org/2024/wp-includes/js/wp-emoji-release.min.js?ver=6.5.4" defer=""></script></head>
+<body class="page-template-default page page-id-715 wp-custom-logo gutentor-active acme-animate no-sidebar">
+
+        <div class="site" id="page">
+                <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+                <div class="navbar at-navbar event-star-sticky" id="navbar" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
+                    <a href="https://www.wsdm-conference.org/2024/" class="custom-logo-link" rel="home"><img width="200" height="75" src="https://www.wsdm-conference.org/2024/wp-content/uploads/2023/06/cropped-wsdm_logo-1.png" class="custom-logo" alt="WSDM logo" decoding="async"></a>                                <p class="site-description">The 17th ACM International Conference on Web Search and Data Mining</p>
+                                            </div>
+                <div class="search-woo desktop-only">
+                                    </div>
+
+                <div class="main-navigation navbar-collapse collapse">
+                    <ul id="primary-menu" class="nav navbar-nav navbar-right acme-normal-page"><li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-139"><a href="https://www.wsdm-conference.org/2024/">Home</a></li>
+<li id="menu-item-631" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-631"><a href="https://www.wsdm-conference.org/2024/accepted-papers/">Program</a>
+<ul class="sub-menu">
+	<li id="menu-item-632" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-632"><a href="https://www.wsdm-conference.org/2024/accepted-papers/">Accepted Papers</a></li>
+	<li id="menu-item-1213" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1213"><a href="https://www.wsdm-conference.org/2024/acm-proceedings/">ACM Proceedings</a></li>
+	<li id="menu-item-807" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-807"><a href="https://www.wsdm-conference.org/2024/demonstrations/">Demonstrations</a></li>
+	<li id="menu-item-1154" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1154"><a href="https://www.wsdm-conference.org/2024/whova/">Detailed Program</a></li>
+	<li id="menu-item-944" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-944"><a href="https://www.wsdm-conference.org/2024/industry-day/">Industry day</a></li>
+	<li id="menu-item-933" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-933"><a href="https://www.wsdm-conference.org/2024/keynote/">Keynotes</a></li>
+	<li id="menu-item-730" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-730"><a href="https://www.wsdm-conference.org/2024/schedule/" aria-current="page">Program Overview</a></li>
+	<li id="menu-item-819" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-819"><a href="https://www.wsdm-conference.org/2024/tutorials/">Tutorials</a></li>
+	<li id="menu-item-781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-781"><a href="https://www.wsdm-conference.org/2024/workshops/">Workshops</a></li>
+	<li id="menu-item-870" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-870"><a href="https://www.wsdm-conference.org/2024/wsdm-cup/">WSDM Cup</a></li>
+	<li id="menu-item-985" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-985"><a href="https://www.wsdm-conference.org/2024/wsdm-day/">WSDM Day</a></li>
+	<li id="menu-item-995" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-995"><a href="https://www.wsdm-conference.org/2024/virtual-program/">Virtual Program</a></li>
 </ul>
-</div>
-<ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-<li class="nav-item">
-<a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
 </li>
-<li class="nav-item dropdown theme-dropdown">
-<a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
-<i class="fas fa-moon" aria-hidden="true"></i>
-</a>
-<div class="dropdown-menu">
-<a href="#" class="dropdown-item js-set-theme-light">
-<span>Light</span>
-</a>
-<a href="#" class="dropdown-item js-set-theme-dark">
-<span>Dark</span>
-</a>
-<a href="#" class="dropdown-item js-set-theme-auto dropdown-item-active">
-<span>Automatic</span>
-</a>
-</div>
-</li>
-<li class="nav-item dropdown i18n-dropdown">
-<a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Languages">
-<i class="fas fa-globe mr-1" aria-hidden="true"></i></a>
-<div class="dropdown-menu">
-<div class="dropdown-item dropdown-item-active">
-<span>English</span>
-</div>
-<a class="dropdown-item" href="https://usait0.com/ja/publications/">
-<span>日本語</span>
-</a>
-</div>
-</li>
+<li id="menu-item-665" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-665"><a href="https://www.wsdm-conference.org/2024/registration/">Attending</a>
+<ul class="sub-menu">
+	<li id="menu-item-1170" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1170"><a href="https://www.wsdm-conference.org/2024/poster-printing/">Poster Printing</a></li>
+	<li id="menu-item-666" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-666"><a href="https://www.wsdm-conference.org/2024/registration/">Registration</a></li>
+	<li id="menu-item-725" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-725"><a href="https://www.wsdm-conference.org/2024/visa-support-letter/">Visa Support Letter</a></li>
+	<li id="menu-item-980" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-980"><a href="https://www.wsdm-conference.org/2024/call-for-academic-volunteers/">Volunteer</a></li>
 </ul>
-</div>
-</nav>
-</div>
-<div class="page-body">
-<span class="js-widget-page d-none"></span>
-<section id="preprint" class="home-section wg-pages">
-<div class="home-section-bg">
-</div>
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-12 col-lg-8">
-<div class="alert alert-note">
-<div>
-For the most up to date list of my publications, see my <a href="https://scholar.google.com/citations?user=pw4hwS8AAAAJ&amp;hl=en">Google Scholar profile</a>.
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="2024" class="home-section wg-pages">
-<div class="home-section-bg">
-</div>
-<div class="container">
-<div class="row">
-<div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-<h1 class="mb-0">2024</h1>
-</div>
-<div class="col-12 col-lg-8">
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span class="author-highlighted">
-Yuta Saito</span>, <span>
-Masahiro Nomura</span>
-</span>
-(2024).
-<a href="/en/publication/2024/ijcai2024/">Hyperparameter Optimization Can Even be Harmful in Off-Policy Learning and How to Deal with It</a>.
-In <em>Proceedings of the 33rd International Joint Conference on Artificial Intelligence (IJCAI)</em> (Acceptance rate=15%).
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/2024/ijcai2024/cite.bib">
-Cite
-</a>
-</p>
-</div>
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span class="author-highlighted">
-Yuta Saito</span>, <span>
-Himan Abdollahpouri</span>, <span>
-Jesse Anderton</span>, <span>
-Ben Carterette</span>, <span>
-Mounia Lalmas</span>
-</span>
-(2024).
-<a href="/en/publication/2024/www2024-1/">Long-term Off-Policy Evaluation and Learning</a>.
-In <em>Proceedings of the ACM Web Conference 2024 (TheWebConf)</em> (Acceptance Rate=20.2%).
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/2024/www2024-1/cite.bib">
-Cite
-</a>
-</p>
-</div>
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span>
-Haruka Kiyohara</span>, <span>
-Masahiro Nomura</span>, <span class="author-highlighted">
-Yuta Saito</span>
-</span>
-(2024).
-<a href="/en/publication/2024/www2024-3/">Off-Policy Evaluation of Slate Bandit Policies via Optimizing Abstraction</a>.
-In <em>Proceedings of the ACM Web Conference 2024 (TheWebConf)</em> (Acceptance Rate=20.2%).
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/2024/www2024-3/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2402.02171" target="_blank" rel="noopener">
-arXiv</a>
-</p>
-</div>
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span>
-Riku Togashi</span>, <span>
-Kenshi Abe</span>, <span class="author-highlighted">
-Yuta Saito</span>
-</span>
-(2024).
-<a href="/en/publication/2024/www2024-2/">Scalable and Provably Fair Exposure Control for Large-Scale Recommender Systems</a>.
-In <em>Proceedings of the ACM Web Conference 2024 (TheWebConf)</em> (Acceptance Rate=20.2%).
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/2024/www2024-2/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2402.14369" target="_blank" rel="noopener">
-arXiv</a>
-</p>
-</div>
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span>
-Haruka Kiyohara</span>, <span>
-Ren Kishimoto</span>, <span>
-Kosuke Kawakami</span>, <span>
-Ken Kobayashi</span>, <span>
-Kazuhide Nakata</span>, <span class="author-highlighted">
-Yuta Saito</span>
-</span>
-(2024).
-<a href="/en/publication/2024/iclr2024/">Towards Assessing and Benchmarking Risk-Return Tradeoff of Off-Policy Evaluation</a>.
-In <em>Proceedings of the Twelfth International Conference on Learning Representations (ICLR)</em> (Acceptance Rate=31%).
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/2024/iclr2024/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/hakuhodo-technologies/scope-rl" target="_blank" rel="noopener">
-Code
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2311.18207" target="_blank" rel="noopener">
-arXiv</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="2023" class="home-section wg-pages">
-<div class="home-section-bg">
-</div>
-<div class="container">
-<div class="row">
-<div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-<h1 class="mb-0">2023</h1>
-</div>
-<div class="col-12 col-lg-8">
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span>
-Haruka Kiyohara</span>, <span>
-Tatsuya Matsuhiro</span>, <span>
-Yusuke Narita</span>, <span>
-Nobuyuki Shimizu</span>, <span>
-Yasuo Yamamoto</span>, <span class="author-highlighted">
-Yuta Saito</span>
-</span>
-(2023).
-<a href="/en/publication/2023/kdd2023/">Off-Policy Evaluation of Ranking Policies under Diverse User Behavior</a>.
-In <em>Proceedings of the 29th SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD)</em> (Acceptance rate=22.3%).
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/2023/kdd2023/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/aiueola/kdd2023-aips" target="_blank" rel="noopener">
-Code
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://drive.google.com/file/d/1nCyCyLQjZlqHgaF-TZAoHPObm2WXmMqO/view?usp=drive_link" target="_blank" rel="noopener">
-Poster
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://speakerdeck.com/aiueola/adaptive-ope-of-ranking-policies" target="_blank" rel="noopener">
-Slides</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2306.15098" target="_blank" rel="noopener">
-arXiv</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://dl.acm.org/doi/abs/10.1145/3580305.3599447" target="_blank" rel="noopener">
-Proceedings</a>
-</p>
-</div>
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span class="author-highlighted">
-Yuta Saito</span>, <span>
-Qingyang Ren</span>, <span>
-Thorsten Joachims</span>
-</span>
-(2023).
-<a href="/en/publication/2023/icml2023/">Off-Policy Evaluation for Large Action Spaces via Conjunct Effect Modeling</a>.
-In <em>Proceedings of the 40th International Conference on Machine Learning (ICML)</em> (Acceptance rate=27.9%).
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/2023/icml2023/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/usaito/icml2023-offcem" target="_blank" rel="noopener">
-Code
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://drive.google.com/file/d/1yyLqEnJx75Z3N6ry6HrAj7L9MxK-4iyb/view?usp=drive_link" target="_blank" rel="noopener">
-Poster
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2305.08062" target="_blank" rel="noopener">
-arXiv</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://proceedings.mlr.press/v202/saito23b.html" target="_blank" rel="noopener">
-Proceedings</a>
-</p>
-</div>
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span>
-Takuma Udagawa</span>, <span>
-Haruka Kiyohara</span>, <span>
-Yusuke Narita</span>, <span class="author-highlighted">
-Yuta Saito</span>, <span>
-Kei Tateno</span>
-</span>
-(2022).
-<a href="/en/publication/2023/aaai2023/">Policy-Adaptive Estimator Selection for Off-Policy Evaluation</a>.
-In <em>Proceedings of the 37th AAAI Conference on Artificial Intelligence (AAAI)</em> (Acceptance rate=19.6%).
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/2023/aaai2023/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/sony/ds-research-code/aaai23-pasif" target="_blank" rel="noopener">
-Code
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://speakerdeck.com/aiueola/improving-accuracy-of-off-policy-evaluation-via-policy-adaptive-estimator-selection" target="_blank" rel="noopener">
-Slides</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2211.13904" target="_blank" rel="noopener">
-arXiv</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="2022" class="home-section wg-pages">
-<div class="home-section-bg">
-</div>
-<div class="container">
-<div class="row">
-<div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-<h1 class="mb-0">2022</h1>
-</div>
-<div class="col-12 col-lg-8">
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span class="author-highlighted">
-Yuta Saito</span>, <span>
-Thorsten Joachims</span>
-</span>
-(2022).
-<a href="/en/publication/2022/kdd2022/">Fair Ranking as Fair Division: Impact-Based Individual Fairness in Ranking</a>.
-In <em>Proceedings of the 28th SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD)</em> (Acceptance rate=14.9%).
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/2022/kdd2022/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/usaito/kdd2022-fair-ranking-nsw" target="_blank" rel="noopener">
-Code
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://youtu.be/Y59TEFxgZpA" target="_blank" rel="noopener">
-Video
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://speakerdeck.com/usaito/nsw-ranking-kdd22-en" target="_blank" rel="noopener">
-Slides</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2206.07247" target="_blank" rel="noopener">
-arXiv</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://dl.acm.org/doi/10.1145/3534678.3539353" target="_blank" rel="noopener">
-Proceedings</a>
-</p>
-</div>
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span class="author-highlighted">
-Yuta Saito</span>, <span>
-Thorsten Joachims</span>
-</span>
-(2022).
-<a href="/en/publication/2022/icml2022/">Off-Policy Evaluation for Large Action Spaces via Embeddings</a>.
-In <em>Proceedings of 39th International Conference on Machine Learning (ICML)</em> (Acceptance rate=21.9%).
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/2022/icml2022/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/usaito/icml2022-mips" target="_blank" rel="noopener">
-Code
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://youtu.be/Hrqhv-AsMRE" target="_blank" rel="noopener">
-Video
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://speakerdeck.com/usaito/mips-icml2022-en" target="_blank" rel="noopener">
-Slides</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2202.06317" target="_blank" rel="noopener">
-arXiv</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://proceedings.mlr.press/v162/saito22a.html" target="_blank" rel="noopener">
-Proceedings</a>
-</p>
-</div>
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span class="author-highlighted">
-Yuta Saito</span>, <span>
-Masahiro Nomura</span>
-</span>
-(2022).
-<a href="/en/publication/2022/ijcai2022/">Towards Resolving Propensity Contradiction in Offline Recommender Learning</a>.
-In <em>Proceedings of the 31st International Joint Conference on Artificial Intelligence (IJCAI)</em> (Acceptance rate=15%, <strong>Long Talk (top 4% of submissions)</strong>).
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/2022/ijcai2022/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.ijcai.org/proceedings/2022/307" target="_blank" rel="noopener">
-Proceedings</a>
-</p>
-</div>
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span>
-Haruka Kiyohara</span>, <span class="author-highlighted">
-Yuta Saito</span>, <span>
-Tatsuya Matsuhiro</span>, <span>
-Yusuke Narita</span>, <span>
-Nobuyuki Shimizu</span>, <span>
-Yasuo Yamamoto</span>
-</span>
-(2022).
-<a href="/en/publication/2022/wsdm2022/">Doubly Robust Off-Policy Evaluation for Ranking Policies under the Cascade Behavior Model</a>.
-In <em>Proceedings of the 15th International Conference on Web Search and Data Mining (WSDM)</em> (Acceptance rate=20.2%, <strong>Best Paper Runner-Up Award</strong>).
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/2022/wsdm2022/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/aiueola/wsdm2022-cascade-dr" target="_blank" rel="noopener">
-Code
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2202.01562" target="_blank" rel="noopener">
-arXiv</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://dl.acm.org/doi/10.1145/3488560.3498380" target="_blank" rel="noopener">
-Proceedings</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="2021" class="home-section wg-pages">
-<div class="home-section-bg">
-</div>
-<div class="container">
-<div class="row">
-<div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-<h1 class="mb-0">2021</h1>
-</div>
-<div class="col-12 col-lg-8">
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span>
-Daisuke Moriwaki</span>, <span>
-Yuta Hayakawa</span>, <span>
-Isshu Munemasa</span>, <span class="author-highlighted">
-Yuta Saito</span>, <span>
-Akira Matsui</span>, <span>
-Masashi Shibata</span>
-</span>
-(2021).
-<a href="/en/publication/2021/bigdata2021/">A Real-World Implementation of Unbiased Lift-based Bidding System</a>.
-In <em>Proceedings of the 2021 IEEE International Conference on Big Data (IEEE Big Data)</em>.
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/2021/bigdata2021/cite.bib">
-Cite
-</a>
-</p>
-</div>
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span class="author-highlighted">
-Yuta Saito</span>, <span>
-Shunsuke Aihara</span>, <span>
-Megumi Matsutani</span>, <span>
-Yusuke Narita</span>
-</span>
-(2021).
-<a href="/en/publication/2021/neurips2021/">Open Bandit Dataset and Pipeline: Towards Realistic and Reproducible Off-Policy Evaluation</a>.
-In <em>Proceedings of the Neural Information Processing Systems (NeurIPS) Track on Datasets and Benchmarks</em>.
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/2021/neurips2021/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/st-tech/zr-obp" target="_blank" rel="noopener">
-Code
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://research.zozo.com/data.html#OpenBanditDataset" target="_blank" rel="noopener">
-Dataset
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/33e75ff09dd601bbe69f351039152189-Abstract-round2.html" target="_blank" rel="noopener">
-Proceedings</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2008.07146" target="_blank" rel="noopener">
-arXiv</a>
-</p>
-</div>
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span>
-Masahiro Nomura</span>, <span class="author-highlighted">
-Yuta Saito</span>
-</span>
-(2021).
-<a href="/en/publication/2021/cikm2021/">Efficient Hyperparameter Optimization under Multi-Source Covariate Shift</a>.
-In <em>Proceedings of the 30th ACM International Conference on Information and Knowledge Management (CIKM)</em> (Acceptance rate=21.7%).
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/2021/cikm2021/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/nomuramasahir0/MS-CS" target="_blank" rel="noopener">
-Code
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://dl.acm.org/doi/abs/10.1145/3459637.3482336" target="_blank" rel="noopener">
-Proceedings</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2006.10600" target="_blank" rel="noopener">
-arXiv</a>
-</p>
-</div>
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span class="author-highlighted">
-Yuta Saito</span>, <span>
-Takuma Udagawa</span>, <span>
-Haruka Kiyohara</span>, <span>
-Kazuki Mogi</span>, <span>
-Yusuke Narita</span>, <span>
-Kei Tateno</span>
-</span>
-(2021).
-<a href="/en/publication/2021/recsys2021-1/">Evaluating the Robustness of Off-Policy Evaluation</a>.
-In <em>Proceedings of the 15th ACM Conference on Recommender Systems (RecSys)</em> (Acceptance rate=18.4%).
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/2021/recsys2021-1/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/sony/pyIEOE" target="_blank" rel="noopener">
-Code
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://usaito.github.io/files/RecSys2021_IEOE_slides.pdf" target="_blank" rel="noopener">
-Slides
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://dl.acm.org/doi/10.1145/3460231.3474245" target="_blank" rel="noopener">
-Proceedings</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2108.13703" target="_blank" rel="noopener">
-arXiv</a>
-</p>
-</div>
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span>
-Nathan Kallus</span>, <span class="author-highlighted">
-Yuta Saito</span>, <span>
-Masatoshi Uehara</span>
-</span>
-(2021).
-<a href="/en/publication/2021/icml2021/">Optimal Off-Policy Evaluation from Multiple Logging Policies</a>.
-In <em>Proceedings of 38th International Conference on Machine Learning (ICML)</em> (Acceptance rate=21.5%).
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/2021/icml2021/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/CausalML/MultipleLoggers" target="_blank" rel="noopener">
-Code
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://proceedings.mlr.press/v139/kallus21a.html" target="_blank" rel="noopener">
-Proceedings</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2010.11002" target="_blank" rel="noopener">
-arXiv</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="2020" class="home-section wg-pages">
-<div class="home-section-bg">
-</div>
-<div class="container">
-<div class="row">
-<div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-<h1 class="mb-0">2020</h1>
-</div>
-<div class="col-12 col-lg-8">
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span class="author-highlighted">
-Yuta Saito</span>
-</span>
-(2020).
-<a href="/en/publication/2020/recsys2020/">Doubly Robust Estimator for Ranking Metrics with Post-Click Conversions</a>.
-In <em>Proceedings of the 14th ACM Conference on Recommender Systems (RecSys)</em> (Acceptance rate=17.9%).
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/2020/recsys2020/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/usaito/dr-ranking-metric" target="_blank" rel="noopener">
-Code
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://usaito.github.io/files/RecSys2020_DRMetric_slides.pdf" target="_blank" rel="noopener">
-Slides
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://dl.acm.org/doi/abs/10.1145/3383313.3412262" target="_blank" rel="noopener">
-Proceedings</a>
-</p>
-</div>
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span class="author-highlighted">
-Yuta Saito</span>
-</span>
-(2020).
-<a href="/en/publication/2020/ictir2020/">Unbiased Pairwise Learning from Biased Implicit Feedback</a>.
-In <em>Proceedings of the 2020 ACM SIGIR on International Conference on Theory of Information Retrieval (ICTIR)</em> (Acceptance rate=40.5%).
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/2020/ictir2020/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/usaito/unbiased-pairwise-rec" target="_blank" rel="noopener">
-Code
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://dl.acm.org/doi/abs/10.1145/3409256.3409812" target="_blank" rel="noopener">
-Proceedings</a>
-</p>
-</div>
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span class="author-highlighted">
-Yuta Saito</span>
-</span>
-(2020).
-<a href="/en/publication/2020/sigir2020-1/">Asymmetric Tri-training for Debiasing Missing-Not-At-Random Explicit Feedback</a>.
-In <em>Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)</em> (Acceptance rate=26.5%).
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/2020/sigir2020-1/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/usaito/asymmetric-tri-rec-real" target="_blank" rel="noopener">
-Code
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://usaito.github.io/files/SIGIR2020_ATMF_slides.pdf" target="_blank" rel="noopener">
-Slides
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://dl.acm.org/doi/abs/10.1145/3397271.3401114" target="_blank" rel="noopener">
-Proceedings</a>
-</p>
-</div>
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span class="author-highlighted">
-Yuta Saito</span>, <span>
-Shota Yasui</span>
-</span>
-(2020).
-<a href="/en/publication/2020/icml2020/">Counterfactual Cross-Validation: Stable Model Selection Procedure for Causal Inference Models</a>.
-In <em>Proceedings of 37th International Conference on Machine Learning (ICML)</em> (Acceptance rate=21.8%).
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/2020/icml2020/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/usaito/counterfactual-cv" target="_blank" rel="noopener">
-Code
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://usaito.github.io/files/ICML2020_CFCV_slides.pdf" target="_blank" rel="noopener">
-Slides
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://proceedings.mlr.press/v119/saito20a.html" target="_blank" rel="noopener">
-Proceedings</a>
-</p>
-</div>
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span class="author-highlighted">
-Yuta Saito</span>, <span>
-Gota Morishita</span>, <span>
-Shota Yasui</span>
-</span>
-(2020).
-<a href="/en/publication/2020/sigir2020-2/">Dual Learning Algorithm for Delayed Conversions</a>.
-In <em>Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)</em> (Acceptance rate=30.0%).
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/2020/sigir2020-2/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://usaito.github.io/files/SIGIR2020_DALDF_slides.pdf" target="_blank" rel="noopener">
-Slides
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://dl.acm.org/doi/abs/10.1145/3397271.3401282" target="_blank" rel="noopener">
-Proceedings</a>
-</p>
-</div>
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span class="author-highlighted">
-Yuta Saito</span>, <span>
-Hayato Sakata</span>, <span>
-Kazuhide Nakata</span>
-</span>
-(2020).
-<a href="/en/publication/2020/sdm2020/">Cost-Effective and Stable Policy Optimization Algorithm for Uplift Modeling with Multiple Treatments</a>.
-In <em>Proceedings of the 2020 SIAM International Conference on Data Mining (SDM)</em> (Acceptance rate=24.0%).
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/2020/sdm2020/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://epubs.siam.org/doi/abs/10.1137/1.9781611976236.46" target="_blank" rel="noopener">
-Proceedings</a>
-</p>
-</div>
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span class="author-highlighted">
-Yuta Saito</span>, <span>
-Suguru Yaginuma</span>, <span>
-Yuta Nishino</span>, <span>
-Hayato Sakata</span>, <span>
-Kazuhide Nakata</span>
-</span>
-(2020).
-<a href="/en/publication/2020/wsdm2020/">Unbiased Recommender Learning from Missing-Not-At-Random Implicit Feedback</a>.
-In <em>Proceedings of the 13th International Conference on Web Search and Data Mining (WSDM)</em> (Acceptance rate=14.8%).
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/2020/wsdm2020/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/usaito/unbiased-implicit-rec-real" target="_blank" rel="noopener">
-Code
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://usaito.github.io/files/WSDM2020_RELMF_slides.pdf" target="_blank" rel="noopener">
-Slides
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://dl.acm.org/doi/abs/10.1145/3336191.3371783" target="_blank" rel="noopener">
-Proceedings</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="2019" class="home-section wg-pages">
-<div class="home-section-bg">
-</div>
-<div class="container">
-<div class="row">
-<div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-<h1 class="mb-0">2019</h1>
-</div>
-<div class="col-12 col-lg-8">
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span class="author-highlighted">
-Yuta Saito</span>, <span>
-Hayato Sakata</span>, <span>
-Kazuhide Nakata</span>
-</span>
-(2019).
-<a href="/en/publication/2019/sdm2019/">Doubly Robust Prediction and Evaluation Methods Improve Uplift Modeling for Observational Data</a>.
-In <em>Proceedings of the 2019 SIAM International Conference on Data Mining (SDM)</em> (Acceptance rate=22.7%).
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/2019/sdm2019/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://epubs.siam.org/doi/abs/10.1137/1.9781611975673.53" target="_blank" rel="noopener">
-Proceedings</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="workshops" class="home-section wg-pages">
-<div class="home-section-bg">
-</div>
-<div class="container">
-<div class="row">
-<div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-<h1 class="mb-0">Workshop Papers</h1>
-</div>
-<div class="col-12 col-lg-8">
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span class="author-highlighted">
-Yuta Saito</span>, <span>
-Suguru Yaginuma</span>, <span>
-Taketo Naito</span>, <span>
-Kazuhide Nakata</span>
-</span>
-(2022).
-<a href="/en/publication/workshops/wsdm2022/">Unbiased Recommender Learning from Biased Graded Implicit Feedback</a>.
-WSDM 2022 Workshop on Decision Making for Modern Information Retrieval System.
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/workshops/wsdm2022/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://usaito.github.io/files/WSDM2022WS_PconfMF.pdf" target="_blank" rel="noopener">
-PDF</a>
-</p>
-</div>
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span>
-Haruka Kiyohara</span>, <span>
-Kosuke Kawakami</span>, <span class="author-highlighted">
-Yuta Saito</span>
-</span>
-(2021).
-<a href="/en/publication/workshops/simrec2021/">Accelerating Offline Reinforcement Learning Application in Real-Time Bidding and Recommendation: Potential Use of Simulation</a>.
-RecSys 2021 Workshop on Simulation Methods for Recommender Systems.
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/workshops/simrec2021/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2109.08331" target="_blank" rel="noopener">
-arXiv</a>
-</p>
-</div>
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span class="author-highlighted">
-Yuta Saito</span>, <span>
-Takuma Udagawa</span>, <span>
-Kei Tateno</span>
-</span>
-(2020).
-<a href="/en/publication/workshops/reveal2020/">Data-Driven Off-Policy Estimator Selection: An Application in User Marketing on An Online Content Delivery Service</a>.
-RecSys 2020 Workshop on Bandit and Reinforcement Learning from User Interactions.
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/workshops/reveal2020/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/pdf/2109.08621.pdf" target="_blank" rel="noopener">
-arXiv</a>
-</p>
-</div>
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span>
-Daisuke Moriwaki</span>, <span>
-Yuta Hayakawa</span>, <span>
-Isshu Munemasa</span>, <span class="author-highlighted">
-Yuta Saito</span>, <span>
-Akira Matsui</span>
-</span>
-(2020).
-<a href="/en/publication/workshops/adkdd2020/">Unbiased lift-based bidding system</a>.
-AdKDD &amp; TargetAd 2020 Workshop (held in conjunction with KDD2020).
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/workshops/adkdd2020/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2007.04002" target="_blank" rel="noopener">
-arXiv</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="proposals" class="home-section wg-pages">
-<div class="home-section-bg">
-</div>
-<div class="container">
-<div class="row">
-<div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-<h1 class="mb-0">Proposals</h1>
-</div>
-<div class="col-12 col-lg-8">
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span class="author-highlighted">
-Yuta Saito</span>, <span>
-Thorsten Joachims</span>
-</span>
-(2022).
-<a href="/en/publication/proposals/kdd2022-2/">Counterfactual Evaluation and Learning for Interactive Systems</a>.
-In <em>Proceedings of the 28th SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD)</em>.
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/proposals/kdd2022-2/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/usaito/kdd2022-tutorial" target="_blank" rel="noopener">
-Code
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://dl.acm.org/doi/10.1145/3534678.3542601" target="_blank" rel="noopener">
-Proceedings</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://counterfactual-ml.github.io/kdd2022-tutorial/" target="_blank" rel="noopener">
-Website</a>
-</p>
-</div>
-<div class="pub-list-item" style="margin-bottom:1rem">
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<span class="article-metadata li-cite-author">
-<span class="author-highlighted">
-Yuta Saito</span>, <span>
-Thorsten Joachims</span>
-</span>
-(2021).
-<a href="/en/publication/proposals/recsys2021-2/">Counterfactual Learning and Evaluation for Recommender Systems</a>.
-In <em>Proceedings of the 15th ACM Conference on Recommender Systems (RecSys)</em>.
-<p>
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/en/publication/proposals/recsys2021-2/cite.bib">
-Cite
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/usaito/recsys2021-tutorial" target="_blank" rel="noopener">
-Code
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://youtu.be/HMo9fQMVB4w" target="_blank" rel="noopener">
-Video
-</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://dl.acm.org/doi/10.1145/3460231.3473320" target="_blank" rel="noopener">
-Proceedings</a>
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://sites.google.com/cornell.edu/recsys2021tutorial" target="_blank" rel="noopener">
-Website</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="about" class="home-section wg-about">
-<div class="home-section-bg">
-</div>
-<div class="container">
-<div class="row">
-<div class="col-12 col-lg-4">
-<div id="profile">
-<div class="portrait-title">
-<h2></h2>
-</div>
-<ul class="network-icon" aria-hidden="true">
+</li>
+<li id="menu-item-270" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-270"><a href="https://www.wsdm-conference.org/2024/call-for-papers/">Calls</a>
+<ul class="sub-menu">
+	<li id="menu-item-198" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-198"><a href="https://www.wsdm-conference.org/2024/call-for-papers/">Call for Papers</a></li>
+	<li id="menu-item-242" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-242"><a href="https://www.wsdm-conference.org/2024/call-for-tutorial-proposals/">Call for Tutorial</a></li>
+	<li id="menu-item-251" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-251"><a href="https://www.wsdm-conference.org/2024/call-for-workshop-proposals/">Call for Workshop</a></li>
+	<li id="menu-item-278" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-278"><a href="https://www.wsdm-conference.org/2024/call-for-demonstrations/">Call for Demonstrations</a></li>
+	<li id="menu-item-288" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-288"><a href="https://www.wsdm-conference.org/2024/call-for-doctoral-consortium/">Call for Doctoral Consortium</a></li>
+	<li id="menu-item-300" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-300"><a href="https://www.wsdm-conference.org/2024/call-for-wsdm-2024-cup-proposals/">Call for WSDM 2024 Cup Proposals</a></li>
+	<li id="menu-item-383" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-383"><a href="https://www.wsdm-conference.org/2024/call-for-wsdm-day-talks/">Call for WSDM Day Talks</a></li>
+	<li id="menu-item-442" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-442"><a href="https://www.wsdm-conference.org/2024/call-for-industry-day-talks/">Call for Industry Day Talk</a></li>
 </ul>
-</div>
-</div>
-<div class="col-12 col-lg-8">
-<div class="article-style">
-</div>
-<div class="row">
-</div>
-</div>
-</div>
-</div>
-</section>
-</div>
-<div class="page-footer">
-<div class="container">
-<footer class="site-footer">
-<p class="powered-by">
-Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
-</p>
-</footer>
-</div>
-</div>
-<div id="modal" class="modal fade" role="dialog">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title">Cite</h5>
-<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-<span aria-hidden="true">×</span>
-</button>
-</div>
-<div class="modal-body">
-<pre><code class="tex hljs"></code></pre>
-</div>
-<div class="modal-footer">
-<a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-<i class="fas fa-copy"></i> Copy
-</a>
-<a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-<i class="fas fa-download"></i> Download
-</a>
-<div id="modal-error"></div>
-</div>
-</div>
-</div>
-</div>
-<script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/desandro/imagesloaded@v4.1.4/imagesloaded.pkgd.min.js" integrity="sha512-S5PZ9GxJZO16tT9r3WJp/Safn31eu8uWrzglMahDT4dsmgqWonRY9grk3j+3tfuPr9WJNsfooOR7Gi7HL5W2jw==" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/gh/metafizzy/isotope@v3.0.6/dist/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
-<script id="search-hit-fuse-template" type="text/x-template">
-        <div class="search-hit" id="summary-{{key}}">
-          <div class="search-hit-content">
-            <div class="search-hit-name">
-              <a href="{{relpermalink}}">{{title}}</a>
-              <div class="article-metadata search-hit-type">{{type}}</div>
-              <p class="search-hit-description">{{snippet}}</p>
+</li>
+<li id="menu-item-351" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-351"><a href="https://www.wsdm-conference.org/2024/organizing-committee/">Organizers</a>
+<ul class="sub-menu">
+	<li id="menu-item-352" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-352"><a href="https://www.wsdm-conference.org/2024/organizing-committee/">Organizing Committee</a></li>
+	<li id="menu-item-525" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-525"><a href="https://www.wsdm-conference.org/2024/senior-pc-committee/">Senior PC committee</a></li>
+</ul>
+</li>
+<li id="menu-item-271" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-271"><a href="https://www.wsdm-conference.org/2024/supporting-wsdm-2024/">Sponsors</a>
+<ul class="sub-menu">
+	<li id="menu-item-264" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-264"><a href="https://www.wsdm-conference.org/2024/supporting-wsdm-2024/">Become a sponsor</a></li>
+	<li id="menu-item-470" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-470"><a href="https://www.wsdm-conference.org/2024/sponsors-and-supporters/">Sponsors and Supporters</a></li>
+</ul>
+</li>
+<li id="menu-item-539" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-539"><a href="https://www.wsdm-conference.org/2024/nsf-student-travel-awards/">Travel Awards</a>
+<ul class="sub-menu">
+	<li id="menu-item-552" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-552"><a href="https://www.wsdm-conference.org/2024/nsf-student-travel-awards/">NSF Travel Awards</a></li>
+	<li id="menu-item-550" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-550"><a href="https://www.wsdm-conference.org/2024/acm-sigweb-fair-access-student-participation-awards/">SIGWEB Awards</a></li>
+	<li id="menu-item-558" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-558"><a href="https://www.wsdm-conference.org/2024/sigmod-student-travel-awards/">SIGMOD Student Travel Awards</a></li>
+	<li id="menu-item-564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-564"><a href="https://www.wsdm-conference.org/2024/acm-sigir-student-travel-grants/">SIGIR Student Travel Grants</a></li>
+</ul>
+</li>
+<li id="menu-item-841" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-841"><a href="https://www.wsdm-conference.org/2024/venue-information/">Venue &amp; Travel</a>
+<ul class="sub-menu">
+	<li id="menu-item-842" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-842"><a href="https://www.wsdm-conference.org/2024/venue-information/">Venue Information</a></li>
+	<li id="menu-item-858" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-858"><a href="https://www.wsdm-conference.org/2024/hotel-accomodation/">Hotel Accomodation</a></li>
+	<li id="menu-item-850" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-850"><a href="https://www.wsdm-conference.org/2024/tourist-information/">Tourist Information</a></li>
+</ul>
+</li>
+<li id="menu-item-132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-132"><a href="https://www.wsdm-conference.org/2024/contact-us/">Contact Us</a></li>
+</ul>                </div><!--/.nav-collapse -->
             </div>
-          </div>
         </div>
-      </script>
-<script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
-<script src="/en/js/wowchemy.min.b9aedc960f9fb595ae8f12abcf0e69ea.js"></script>
+        	<div class="wrapper inner-main-title">
+		<div class="container">
+			<header class="entry-header init-animate" style="visibility: hidden; animation-name: none;">
+				<h1 class="entry-title">Schedule</h1>			</header><!-- .entry-header -->
+		</div>
+	</div>
+	<div id="content" class="site-content container clearfix">
+		<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+			<article id="post-715" class="init-animate post-715 page type-page status-publish hentry" style="visibility: hidden; animation-name: none;">
+		<!-- .single-feat-->
+	<div class="content-wrapper">
+		<div class="entry-content">
+			
+<h2 class="wp-block-heading alignwide has-text-align-center"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-red-color">ACM WSDM 2024 Program</mark></h2>
+
+
+
+<div id="section-g6fc1a5" class="wp-block-gutentor-e6 section-g6fc1a5 gutentor-element gutentor-element-image"><div class="gutentor-element-image-box"><div class="gutentor-image-thumb"><img decoding="async" class="normal-image" src="https://www.wsdm-conference.org/2024/wp-content/uploads/2024/03/WSDM_overview_1.png"></div></div></div>
+		</div><!-- .entry-content -->
+        	</div>
+</article><!-- #post-## -->		</main><!-- #main -->
+	</div><!-- #primary -->
+    </div><!-- #content -->
+        <div class="clearfix"></div>
+        <footer class="site-footer">
+                            <div class="footer-columns at-fixed-width">
+                    <div class="container">
+                        <div class="row">
+			                                                <div class="footer-sidebar col-sm-4 init-animate zoomIn" style="visibility: hidden; animation-name: none;">
+					                <aside id="text-3" class="widget widget_text"><h3 class="widget-title"><span>About US</span></h3>			<div class="textwidget"><p>WSDM (pronounced “wisdom”) is one of the premier conferences on web-inspired research involving search and data mining. The 17th ACM International WSDM Conference will take place in Mérida, Mexico (in-person conference with virtual elements), from March 4 to March 8, 2024.</p>
+</div>
+		</aside>                                </div>
+			                                                <div class="footer-sidebar col-sm-4 init-animate zoomIn" style="visibility: hidden; animation-name: none;">
+					                <aside id="nav_menu-3" class="widget widget_nav_menu"><h3 class="widget-title"><span>Quick Links</span></h3><div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li id="menu-item-207" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-207"><a href="https://www.wsdm-conference.org/2024/">Front Page</a></li>
+<li id="menu-item-208" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-208"><a href="https://www.wsdm-conference.org/2024/call-for-papers/">Call for Papers</a></li>
+<li id="menu-item-209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-209"><a href="https://www.wsdm-conference.org/2024/contact-information/">Contact Information</a></li>
+</ul></div></aside>                                </div>
+			                                                <div class="footer-sidebar col-sm-4 init-animate zoomIn" style="visibility: hidden; animation-name: none;">
+					                                                </div>
+			                                        </div>
+                    </div><!-- bottom-->
+                </div>
+                <div class="clearfix"></div>
+                            <div class="copy-right">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 init-animate" style="visibility: hidden; animation-name: none;">
+                            <div class="footer-copyright text-left">
+                                                                    <p class="at-display-inline-block">
+                                        © All right reserved                                    </p>
+                                                                <div class="site-info at-display-inline-block">
+				                    Event Star by <a href="http://www.acmethemes.com/" rel="designer">Acme Themes</a>                                </div><!-- .site-info -->
+                            </div>
+                        </div>
+                        <div class="col-sm-6 init-animate" style="visibility: hidden; animation-name: none;">
+                            <div class="at-first-level-nav text-right"><ul id="menu-footer-menu-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-207"><a href="https://www.wsdm-conference.org/2024/">Front Page</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-208"><a href="https://www.wsdm-conference.org/2024/call-for-papers/">Call for Papers</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-209"><a href="https://www.wsdm-conference.org/2024/contact-information/">Contact Information</a></li>
+</ul></div>                        </div>
+                    </div>
+                </div>
+                <a href="#page" class="sm-up-container" style="display: none;"><i class="fa fa-angle-up sm-up"></i></a>
+            </div>
+        </footer>
+            <!-- Modal -->
+        <div id="at-shortcode-bootstrap-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+					                                <h4 class="modal-title">Registration</h4>
+						                        </div>
+				    <div class="modal-body"><aside id="text-5" class="widget widget_text">			<div class="textwidget">
+<div class="wpcf7 js" id="wpcf7-f13-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/2024/schedule/#wpcf7-f13-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="13">
+<input type="hidden" name="_wpcf7_version" value="5.8.2">
+<input type="hidden" name="_wpcf7_locale" value="en_US">
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f13-o1">
+<input type="hidden" name="_wpcf7_container_post" value="0">
+<input type="hidden" name="_wpcf7_posted_data_hash" value="">
+</div>
+<p><label> Your Name (required)<br>
+<span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" value="" type="text" name="your-name"></span> </label>
+</p>
+<p><label> Your Email (required)<br>
+<span class="wpcf7-form-control-wrap" data-name="your-email"><input size="40" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" value="" type="email" name="your-email"></span> </label>
+</p>
+<p><label> Subject<br>
+<span class="wpcf7-form-control-wrap" data-name="your-subject"><input size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" value="" type="text" name="your-subject"></span> </label>
+</p>
+<p><label> Your Message<br>
+<span class="wpcf7-form-control-wrap" data-name="your-message"><textarea cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" name="your-message"></textarea></span> </label>
+</p>
+<p><input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Send"><span class="wpcf7-spinner"></span>
+</p><div class="wpcf7-response-output" aria-hidden="true"></div>
+</form>
+</div>
+
+</div>
+		</aside></div>                </div><!--.modal-content-->
+            </div>
+        </div><!--#at-shortcode-bootstrap-modal-->
+
+        </div><!-- #page -->
+    <link rel="stylesheet" id="wp-components-css" href="https://www.wsdm-conference.org/2024/wp-includes/css/dist/components/style.min.css?ver=6.5.4" type="text/css" media="all">
+<link rel="stylesheet" id="wp-preferences-css" href="https://www.wsdm-conference.org/2024/wp-includes/css/dist/preferences/style.min.css?ver=6.5.4" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-editor-css" href="https://www.wsdm-conference.org/2024/wp-includes/css/dist/block-editor/style.min.css?ver=6.5.4" type="text/css" media="all">
+<link rel="stylesheet" id="wp-reusable-blocks-css" href="https://www.wsdm-conference.org/2024/wp-includes/css/dist/reusable-blocks/style.min.css?ver=6.5.4" type="text/css" media="all">
+<link rel="stylesheet" id="wp-patterns-css" href="https://www.wsdm-conference.org/2024/wp-includes/css/dist/patterns/style.min.css?ver=6.5.4" type="text/css" media="all">
+<link rel="stylesheet" id="wp-editor-css" href="https://www.wsdm-conference.org/2024/wp-includes/css/dist/editor/style.min.css?ver=6.5.4" type="text/css" media="all">
+<link rel="stylesheet" id="gutentor-css" href="https://www.wsdm-conference.org/2024/wp-content/plugins/gutentor/dist/blocks.style.build.css?ver=3.2.7" type="text/css" media="all">
+<script type="text/javascript" src="https://www.wsdm-conference.org/2024/wp-content/plugins/gutentor/assets/library/wow/wow.min.js?ver=1.2.1" id="wow-js"></script>
+<script type="text/javascript" src="https://www.wsdm-conference.org/2024/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.8.2" id="swv-js"></script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/www.wsdm-conference.org\/2024\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.wsdm-conference.org/2024/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.8.2" id="contact-form-7-js"></script>
+<script type="text/javascript" src="https://www.wsdm-conference.org/2024/wp-content/plugins/gutentor/assets/library/slick/slick.min.js?ver=1.8.1" id="slick-js"></script>
+<script type="text/javascript" src="https://www.wsdm-conference.org/2024/wp-content/themes/event-star/acmethemes/core/js/skip-link-focus-fix.js?ver=20130115" id="event-star-skip-link-focus-fix-js"></script>
+<script type="text/javascript" src="https://www.wsdm-conference.org/2024/wp-content/themes/event-star/assets/library/bootstrap/js/bootstrap.min.js?ver=3.3.6" id="bootstrap-js"></script>
+<script type="text/javascript" src="https://www.wsdm-conference.org/2024/wp-content/plugins/gutentor/assets/library/magnific-popup/jquery.magnific-popup.min.js?ver=1.1.0" id="magnific-popup-js"></script>
+<script type="text/javascript" src="https://www.wsdm-conference.org/2024/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
+<script type="text/javascript" src="https://www.wsdm-conference.org/2024/wp-includes/js/masonry.min.js?ver=4.2.2" id="masonry-js"></script>
+<script type="text/javascript" id="event-star-custom-js-extra">
+/* <![CDATA[ */
+var event_star_ajax = {"ajaxurl":"https:\/\/www.wsdm-conference.org\/2024\/wp-admin\/admin-ajax.php","event_expire_text":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.wsdm-conference.org/2024/wp-content/themes/event-star/assets/js/event-star-custom.js?ver=1.0.5" id="event-star-custom-js"></script>
+<script type="text/javascript" id="gutentor-block-js-extra">
+/* <![CDATA[ */
+var gutentorLS = {"fontAwesomeVersion":"5","restNonce":"2ab49d34ea","restUrl":"https:\/\/www.wsdm-conference.org\/2024\/wp-json\/"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.wsdm-conference.org/2024/wp-content/plugins/gutentor/assets/js/gutentor.js?ver=3.2.7" id="gutentor-block-js"></script>
 
 </body></html>

@@ -1,4 +1,5 @@
 const dateFinder = require("datefinder");
+const { customDateFinder } = require("../untils/date")
 require("dotenv").config();
 const Conference = require("../models/conference-model");
 const ConferenceError = require("../models/conferenceError-model");
@@ -51,11 +52,11 @@ const searchConferenceLinks = async (browser, conference, maxLinks) => {
         // Open new page
         let page = await browser.newPage();
 
-        // Searching with keyword = Acronym + 2023
+        // Searching with keyword = Acronym + 2024
         await page.goto("https://www.google.com/");
         await page.waitForSelector("#APjFqb");
         await page.keyboard.sendCharacter(
-            conference.Acronym + " call for papers 2023"
+            conference.Acronym + " call for papers 2024"
         );
         await page.keyboard.press("Enter");
         await page.waitForNavigation();
@@ -134,7 +135,7 @@ const searchConferenceLinksByTitle = async (browser, conference, maxLinks) => {
         // Searching with keyword = Acronym + 2023
         await page.goto("https://www.google.com/");
         await page.waitForSelector("#APjFqb");
-        await page.keyboard.sendCharacter(conference.Title + " 2023");
+        await page.keyboard.sendCharacter(conference.Title + " "+ conference.Acronym + " 2024");
         await page.keyboard.press("Enter");
         await page.waitForNavigation();
         await page.waitForSelector("#search");
@@ -176,18 +177,25 @@ const searchConferenceLinksByTitle = async (browser, conference, maxLinks) => {
 
             links = links.concat(linkList.map((item) => item.link));
 
-            // Nếu links có nhiều hơn maxLinks, cắt bớt đi
-            if (links.length > maxLinks) {
-                links = links.slice(0, maxLinks);
-            }
-
-            if (links.length < maxLinks) {
+            if (links.length < maxLinks + 4) {
                 // Chưa đủ liên kết, tiếp tục tìm kiếm bằng cách lướt xuống
                 await page.keyboard.press("PageDown");
                 await page.waitForTimeout(2000); // Wating for loading
             }
         }
 
+        links.sort((a, b) => {
+            const aContainsAcronym = a.toLowerCase().includes(conference.Acronym.toLowerCase());
+            const bContainsAcronym = b.toLowerCase().includes(conference.Acronym.toLowerCase());
+
+            if (aContainsAcronym && !bContainsAcronym) return -1;
+            if (!aContainsAcronym && bContainsAcronym) return 1;
+            if (aContainsAcronym && bContainsAcronym) {
+                return a.indexOf(conference.Acronym) - b.indexOf(conference.Acronym);
+            }
+            return 0;
+        });
+        
         await page.close();
         return links.slice(0, maxLinks);
     } catch (error) {
@@ -432,7 +440,7 @@ const extractDatesFromBody = async (
             if(subBodyContent[index+keyword.length] == ':') {
                 snapshot = subBodyContent.substring(
                     index,
-                    index + keyword.length + snapshotRange * 2
+                    index + keyword.length + snapshotRange
                 );
             } else {
                 snapshot = subBodyContent.substring(
@@ -440,8 +448,11 @@ const extractDatesFromBody = async (
                     index + keyword.length + snapshotRange * 2
                 );
             }
-            
-            const dateFinderResult = dateFinder(formatStringDate(snapshot));
+            if(snapshot.includes("may be")) {
+                snapshot = snapshot.replace("may be")
+            }
+            // console.log("snapshot of: " + rootKeyword +snapshot)
+            const dateFinderResult = customDateFinder(snapshot);
             /*
             if (
                 dateFinderResult.length > 0 &&
@@ -460,7 +471,7 @@ const extractDatesFromBody = async (
             }
             */
             if (
-                dateFinderResult.length > 0
+                dateFinderResult.length > 0 && !isFakeNews(keyword, snapshot)
             ) {
                 dateArray.push({
                     date: findClosestDate(
@@ -721,6 +732,14 @@ const readKeywordsFromDict = () => {
         notificationDate_keywords,
         cameraReady_keywords,
     };
+};
+
+const readRoundkeysFromDict = () => {
+    const round_keywords = readKeywordsFromFile(
+        "/dict/round_dict.txt"
+    );
+
+    return round_keywords
 };
 
 const readKeywordsFromConference = async (conference) => {
@@ -1047,21 +1066,25 @@ const findClosestDate = (dateResults, keywordIndex, keywordLength) => {
     return closestDate.date;
 };
 
-const isFakeNews = (array, keywordToCheck) => {
-    // Trường hợp vừa có "Notification of Conditional Acceptance" vừa có "notification"
-    // thì "notification" là thông tin fake, không được lấy
+const isFakeNews = (key, content) => {
+    // // Trường hợp vừa có "Notification of Conditional Acceptance" vừa có "notification"
+    // // thì "notification" là thông tin fake, không được lấy
 
-    // some được sử dụng để kiểm tra xem ít nhất một phần tử trong mảng
-    // có chứa từ khóa được chỉ định hay không
-    // Nếu keyword đã xuất hiện --> là fake new
-    if (
-        array.some((item) =>
-            item.keyword.toLowerCase().includes(keywordToCheck.toLowerCase())
-        )
-    ) {
-        return true;
-    }
-    return false;
+    // // Nếu keyword đã xuất hiện --> là fake new
+    // if (
+    //     array.some((item) =>
+    //         item.keyword.toLowerCase().includes(keywordToCheck.toLowerCase())
+    //     )
+    // ) {
+    //     return true;
+    // }
+    // return false;
+    const keyIndex = content.indexOf(key) 
+
+    if(content[keyIndex + key.length].toLowerCase() == 's') return true
+
+    return false
+
 };
 
 module.exports = {
@@ -1073,5 +1096,6 @@ module.exports = {
     readKeywordsFromDict,
     getLocation,
     getConferenceType,
-    getConferenceDate
+    getConferenceDate,
+    readRoundkeysFromDict
 };

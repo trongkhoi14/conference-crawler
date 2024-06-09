@@ -86,13 +86,17 @@ Camera-ready manuscript
 Final camera ready paper
 Camera-ready copies due
 camera-ready papers
+Camera-Ready Completion Deadline
 camera ready
 Final Version
 Camera-ready papers & abstracts deadline
+Camera-ready Submission
 Camera-ready version, author registration
 Revised manuscripts due
+Camera-ready papers due (long & short)
 Camera Ready & Author Registration
 Camera-ready (for all tracks)
+Camera-ready paper due
 Camera-ready papers due (long & short papers)
 Decisions communicated to authors
 Camera Ready Papers
@@ -116,7 +120,7 @@ First submission - Camera-ready Due
 Second submission - Camera-ready Due
 Camera Ready and Registration
 camera ready papers submission
-Camera Ready:
+Camera Ready due
 final camera-ready copies of accepted papers will be due
 Final Paper Due
 Final Manuscripts Due
@@ -131,17 +135,20 @@ Camera-Ready
 Final Paper Submission Deadline
 Final Camera-Ready Manuscript and IEEE Copyright Form submission
 Camera Ready (for all)
+Camera-ready of accepted main conference and industry -government program papers
 Camera ready manuscripts
 Final Camera-Ready Deadline
 Paper Camera-ready
 Camera-ready Submissions
 Final Manuscript (Camera Ready)
 Camera-ready Due
+Final Paper (Camera Ready) Submission
 Final Paper Submission Deadline (including workshops)
 Final Paper Deadline
 Accepted Camera-ready papers due
 Submission of Camera-Ready Papers and Registration
 Camera ready Date
+Camera-ready papers (post-proceedings)
 Paper Submission for Accepted Manuscript
 Camera-ready paper and author registration
 Camera Ready "Final Manuscript" Due
@@ -193,13 +200,11 @@ Camera ready deadline for main conference track
 Camera-ready for Accepted Paper Due
 First submission deadline - Camera-ready
 Second submission deadline - Camera-ready
-Camera-ready paper due
 Deadline for camera-ready
 Camera-ready paper upload
 Final version submission deadline
 Main Track (round 1) - Camera-ready deadline
 Main Track (round 2) - Camera-ready deadline
-Camera-ready Submission
 Camera ready paper submission
 Regular - Camera Ready and Registration
 Position - Camera Ready and Registration
@@ -223,12 +228,10 @@ Winter deadline - Camera-ready deadline
 Summer deadline - Camera-ready deadline
 Camera-ready Papers
 Final version of papers
-Camera Ready due
 Publication-Ready deadline
 Final manuscript due
 Extended deadline
 Camera Ready papers due
-Final Paper (Camera Ready) Submission
 Camera-ready Paper Upload
 Final version deadline
 Regular Paper Camera-ready Submission
@@ -238,7 +241,6 @@ First cycle - Camera ready due
 Second cycle - Camera ready due
 Submission of camera-ready
 FINAL VERSION
-Camera Ready Deadline (Late-Breaking)
 Position  Papers - Camera Ready and Registration
 Deadline for camera ready
 Upload of camera-ready papers
@@ -280,10 +282,10 @@ Final Paper (Camera Ready) Submission & Early Bird Registration Deadline
 Deadline for camera-ready version of accepted paper
 Upload Final Publication Files
 Full paper camera-ready deadline
-Short paper notification to authors
+Short paper camera-ready deadline
 Registration deadline and final paper submission
 Submission of Camera-Ready Papers
-Camera-ready Papers Due (Research, In-Use, and Resource Tracks)
+Camera ready papers due
 Deadline for Final Camera-Ready Papers
 Camera-ready Papers Upload
 Final versions of accepted papers due
@@ -292,8 +294,7 @@ Final Papers Due
 Registration and Final manuscript due
 Final Versions
 Final Manuscript:
-Notification
-All Rounds: Camera Ready
+All Rounds Camera Ready
 Camera-ready papers (Round 1)
 Camera-ready papers (Round 2 and Major Revisions)
 Final paper upload due
@@ -313,6 +314,7 @@ Registration & Final Paper Due
 Camera ready version due
 Final “camera-ready” versions
 Main Conference Camera-ready Paper Submission and Author/Presenter Registration
+Camera-Ready Deadline*
 Camera-ready papers for the 1st round
 Camera-ready papers for the 2nd round
 Camera Ready Copy (CRC) deadline
@@ -320,7 +322,9 @@ Camera ready on
 Papers camera-ready
 Camera-ready deadline for accepted work
 Final version of papers due
-Conference paper version
+Camera ready paper submission due
+Conference version of paper
+Final paper due
 Issue 1 - Camera-ready deadline for accepted papers and minor revisions
 Issue 2 - Camera-ready deadline for accepted papers and minor revisions
 Issue 3 - Camera-ready deadline for accepted papers and minor revisions
@@ -346,7 +350,7 @@ Fall - Final paper files due
 Winter - Final paper files due
 The 1st Round - Camera Ready
 The 2nd Round - Camera Ready
-Authors electronically submit fully corrected
+Authors electronically submit fully corrected (camera-ready) papers
 Final Paper Due Date
 TCHES Volume 2024/1 - Final version due
 TCHES Volume 2024/2 - Final version due
@@ -357,4 +361,4 @@ Final post-proceedings version due
 Reviews Due
 Proceedings Files & PPTs/Videos Due
 1st Call - Submission of camera-ready or final versions of the accepted papers
-2nd Call -Submission of camera-ready or final versions of the accepted papers
+2nd Call - Submission of camera-ready or final versions of the accepted papers

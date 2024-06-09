@@ -1,96 +1,276 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head>
-  
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" class="js"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link href="hotnets.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="shortcut icon" href="/sites/default/files/garland_favicon.png" type="image/x-icon">
+    <title>HotNets Workshop | acm sigcomm</title>
+    <link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?z">
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?z">
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?z">
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?z">
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?z">
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/theme/content-module.css?z">
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/ckeditor/ckeditor.css?z">
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/date/date.css?z">
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/date/date_popup/themes/jquery.timeentry.css?z">
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?z">
+<link type="text/css" rel="stylesheet" media="all" href="/sites/default/files/color/garland-b9c15121/style.css?z">
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/garland/nspring.css?z">
+<link type="text/css" rel="stylesheet" media="print" href="/sites/all/themes/garland/print.css?z">
+    <script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="/misc/jquery.js?z"></script>
+<script type="text/javascript" src="/misc/drupal.js?z"></script>
+<script type="text/javascript" src="/sites/all/modules/google_analytics/googleanalytics.js?z"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutbound": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip" } });
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-42763972-1", { "cookieDomain": "auto" });ga("send", "pageview");
+//--><!]]>
+</script>
+    <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/garland/fix-ie.css" />    <![endif]-->
+  </head>
+  <body class="sidebar-left">
 
-<title>HotNets 2023: Call for Papers</title>
-</head>
-<body>
-<div class="banner">
-<table width="100%">
-<tbody><tr>
-    <td><a href="http://www.acm.org/"><img src="logos/acm-logo.jpg" width="90" height="90" alt="ACM logo" border="none"></a></td>
-    <td align="center"><h1>HotNets 2023: Twenty-Second ACM Workshop on Hot Topics in Networks</h1><h3>November 28-29, 2023  — Cambridge, Massachusetts, USA </h3></td>
-    <td><a href="http://www.sigcomm.org/"><img src="logos/sigcomm-logo.png" width="65" height="69" alt="SIGCOMM logo" border="none"></a></td>
-    <!--<td><a href="https://www.utexas.edu/"><img src="logos/ut_austin_logo.png" height=69 alt="UT Austin" border="none"></a></td>-->
-</tr>
-</tbody></table>
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="/" title="acm sigcomm"><img src="/sites/default/files/garland_logo.png" alt="acm sigcomm" id="logo"><span>acm sigcomm</span></a></h1>        </div>
+
+                  <ul class="links primary-links"><li class="menu-495 first"><a href="/about" title="About">About</a></li>
+<li class="menu-517"><a href="/awards" title="Awards">Awards</a></li>
+<li class="menu-2366"><a href="/change" title="SIGCOMM Changes">Changes</a></li>
+<li class="menu-531"><a href="/join" title="Become a Member of SIGCOMM">Join</a></li>
+<li class="menu-596"><a href="/news">News</a></li>
+<li class="menu-2365"><a href="/content/opentoc" title="">OpenToC</a></li>
+<li class="menu-479 active-trail"><a href="/events" title="SIGCOMM-Sponsored Events">Events</a></li>
+<li class="menu-481 last"><a href="/publications" title="SIGCOMM Publications">Publications</a></li>
+</ul>                <div style="clear: right;"></div>
+        <div class="ns-role-heading"><span class="ns-role-heading-header">Information for:</span>
+                  <ul class="links secondary-links"><li class="menu-493 first"><a href="/for-authors" title="Information for Authors">Authors</a></li>
+<li class="menu-600"><a href="/for-educators" title="Resources For Educators">Educators</a></li>
+<li class="menu-599"><a href="/for-conference-attendees" title="For Conference Attendees">Conference Attendees</a></li>
+<li class="menu-396 last"><a href="/for-organizers" title="Information for Conference Organizers">Conference Organizers</a></li>
+</ul>                </div>
+
+      </div> <!-- /header -->
+
+              <div id="sidebar-left" class="sidebar">
+          <!-- <div class="block block-theme"><form action="/events/hotnets-workshop"  accept-charset="UTF-8" method="post" id="search-theme-form">
+<div><div id="search" class="container-inline">
+  <div class="form-item" id="edit-search-theme-form-1-wrapper">
+ <input type="text" maxlength="128" name="search_theme_form" id="edit-search-theme-form-1" size="15" value="Search" class="form-text NormalTextBox txtSearch" onfocus="if (this.value == &#039;Search&#039;) {this.value = &#039;&#039;;}" onblur="if (this.value == &#039;&#039;) {this.value = &#039;Search&#039;;}" />
+</div>
+<input type="image" name="op" value="Search" id="edit-submit-1"  class="form-submit" src="/sites/all/themes/garland/images/search.jpg" />
+<input type="hidden" name="form_build_id" id="form-b3T1BZhRDJb3e_wwrao36nYRZcwlLD2iLD4smHCdToU" value="form-b3T1BZhRDJb3e_wwrao36nYRZcwlLD2iLD4smHCdToU"  />
+<input type="hidden" name="form_id" id="edit-search-theme-form" value="search_theme_form"  />
 </div>
 
-<div class="container">
+</div></form>
+</div> --> 
+          <div id="block-block-3" class="clear-block block block-block">
 
-<div class="leftside">
+
+  <div class="content"><p><a href="https://conferences.sigcomm.org/sigcomm/2024/" target="_blank"><img alt="" src="https://conferences.sigcomm.org/sigcomm/2024/images/logo.png" width="200"></a></p>
+<p><a href="https://ccronline.sigcomm.org/"><img alt="" height="61" src="http://www.sigcomm.org/sites/default/files/ccr-75x375-sketch.png" width="200"></a></p>
+<p><a href="http://conferences.sigcomm.org/sigcomm/2023/" target="_blank"><img alt="" height="150" src="https://conferences.sigcomm.org/sigcomm/2023/images/SIGCOMM23.png" width="200"></a></p>
+</div>
+</div>
+<div id="block-block-2" class="clear-block block block-block">
+
+
+  <div class="content"><p><a class="twitter-timeline" href="https://twitter.com/ACMSIGCOMM" data-widget-id="357925757030391808">Tweets by @ACMSIGCOMM</a></p>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+</div>
+<div id="block-user-0" class="clear-block block block-user">
+
+  <h2>User login</h2>
+
+  <div class="content"><form action="/events/hotnets-workshop?destination=node%2F263" accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required">
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass" maxlength="60" size="15" class="form-text required">
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in" class="form-submit">
+<div class="item-list"><ul><li class="first last"><a href="/user/password" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-iScrYD_CsZGwQGucSOKkPLsU_02-6tzoeJtjGWZ9Igk" value="form-iScrYD_CsZGwQGucSOKkPLsU_02-6tzoeJtjGWZ9Igk">
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block">
+
+</div></form>
+</div>
+</div>
+        </div>
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="/">Home</a> › <a href="/events" title="SIGCOMM-Sponsored Events">Events</a></div>          <div class="searchcrumb"><form action="/events/hotnets-workshop" accept-charset="UTF-8" method="post" id="search-theme-form">
+<div><div id="search" class="container-inline">
+  <div class="form-item" id="edit-search-theme-form-1-wrapper">
+ <input type="text" maxlength="128" name="search_theme_form" id="edit-search-theme-form-1" size="15" value="Search" class="form-text NormalTextBox txtSearch" onfocus="if (this.value == 'Search') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search';}">
+</div>
+<input type="image" name="op" value="Search" id="edit-submit-1" class="form-submit" src="/sites/all/themes/garland/images/search.jpg">
+<input type="hidden" name="form_build_id" id="form-b3T1BZhRDJb3e_wwrao36nYRZcwlLD2iLD4smHCdToU" value="form-b3T1BZhRDJb3e_wwrao36nYRZcwlLD2iLD4smHCdToU">
+<input type="hidden" name="form_id" id="edit-search-theme-form" value="search_theme_form">
+</div>
+
+</div></form>
+</div>                              <h2>HotNets Workshop</h2>                                                  <div class="clear-block">
+            <div id="node-263" class="node">
+
+
+
+  
+  <div class="content clear-block">
+    <p>Hot Topics in Networks (HotNets) workshops.</p>
+<h2>
+	Mission</h2>
+<p>The Workshop on Hot Topics in Networks (HotNets) was created in 2002 to discuss early-stage, creative networking research and to debate positions that reflect on the research direction and needs of the broad networking community. Architecture, high-level design work, and positions that may shape long-term research direction are especially welcome. HotNets is structured to work in synergy with conferences such as SIGCOMM by providing a venue in which innovative work may receive feedback to help it mature into conference papers or otherwise have a long-term impact on the community. To fulfill these goals HotNets calls for short position papers that argue a thoughtful point-of-view rather than full-length conference papers, and maintains a broad and diverse scope.</p>
+<h2>
+	Scope and Summary</h2>
+<p>Submission to the workshop is open and encouraged across a wide-ranging set of topics, including at least security, distributed systems, sensor networks, middleware, economics, and management, as well as more traditional core networking topics. Attendance is limited to around 60 participants, drawn mainly from the author pool, to help promote a welcoming atmosphere for discussions. In previous years, HotNets has received over 100 submissions and selected one in four of these for presentation at the workshop.</p>
+<h2>
+	Steering Committee</h2>
 <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="committee.html">Committees</a></li>
-    <li><a href="policies.html">Policies</a></li>
-    <li><a href="cfp.html">Call for Papers</a></li>
-    <li><a href="accepted.html">Accepted Papers</a></li>
-    <li><a href="program.html">Program</a></li>
-    <li><a href="hotels.html">Hotel Information</a></li>
-    <!--<li><a href="https://hotnets22travel.hotcrp.com/">Student Travel Grant</a></li>-->
-    <li><a href="visa-info.html">Visa Information</a></li>
-    <!--<li><a href="online.html">Online Participation</a></li> -->
-    <!--
-    <li><a href="program.html">Program</a></li>
-    <li><a href="registration.html">Registration</a></li>
-    <li><a href="directions.html">Directions</a></li>	
-    <li><a href="hotel-info.html">Hotel Information</a></li>
-    <li><a href="venue-info.html">Venue Information</a></li>
--->
+<li>
+		Katerina Argyraki, EPFL (<strong>chair</strong>, 2020 -&nbsp;)</li>
+<li>
+		Keith Winstein (Stanford, 2022 - )</li>
+<li>
+		Nandita Dukkipati (Google, 2024 - )</li>
+<li>
+		Aurojit Panda (NYU, 2024 - )</li>
+<li>
+		Ellen Zegura, Georgia Tech (SIGCOMM liaison, 2022 - )</li>
 </ul>
+<h2>
+	Upcoming Workshop</h2>
+<ul>
+<li>
+		<a href="http://conferences.sigcomm.org/hotnets/2024">HotNets 2024</a></li>
+</ul>
+<h2>
+	Previous HotNets Workshops</h2>
+<p>The proceedings of the following past HotNets workshops are available online:</p>
+<ul>
+<li>
+		<a href="http://conferences.sigcomm.org/hotnets/2023" style="background-color: transparent; color: rgb(22, 53, 136); text-decoration-line: underline;">HotNets 2023</a>, Cambridge, Massachusetts, November 28-29, 2023</li>
+<li>
+		<a href="http://conferences.sigcomm.org/hotnets/2022" style="background-color: transparent; color: rgb(22, 53, 136); text-decoration-line: underline;">HotNets 2022</a>, Austin, Texas, November 14-15, 2022</li>
+<li>
+		<a href="http://conferences.sigcomm.org/hotnets/2021" style="background-color: transparent; color: rgb(22, 53, 136); text-decoration-line: underline;">HotNets 2021</a>, Online, November 10-12, 2021</li>
+<li>
+		<a href="http://conferences.sigcomm.org/hotnets/2020" style="background-color: transparent; color: rgb(22, 53, 136); text-decoration-line: underline;">HotNets 2020</a>, Chicago, Illinois, November 4-6, 2020</li>
+<li>
+		<a href="http://conferences.sigcomm.org/hotnets/2019" style="background-color: transparent; color: rgb(22, 53, 136); text-decoration-line: underline;">HotNets 2019</a><span style="background-color: transparent;">, Princeton, NJ, November 14-15, 2019</span></li>
+<li>
+		<a href="http://conferences.sigcomm.org/hotnets/2018" style="background-color: transparent;">HotNets 2018</a><span style="background-color: transparent;">, Redmond, WA, November 15-16, 2018</span></li>
+<li>
+		<a href="http://conferences.sigcomm.org/hotnets/2017">HotNets 2017</a>, Palo Alto, CA, November 30-December 1, 2017</li>
+<li>
+		<a href="http://conferences.sigcomm.org/hotnets/2016">HotNets 2016</a>, Atlanta, GA, November 9-10, 2016</li>
+<li>
+		<a href="http://conferences.sigcomm.org/hotnets/2015">HotNets-XIV</a>, Philadelphia, PA, November 16-17, 2015.</li>
+<li>
+		<a href="http://conferences.sigcomm.org/hotnets/2014">HotNets-XIII</a>, Los Angeles, CA, October 27-28, 2014.</li>
+<li>
+		<a href="http://conferences.sigcomm.org/hotnets/2013">HotNets-XII</a>, College Park, MD, November 21-22, 2013.</li>
+<li>
+		<a href="http://conferences.sigcomm.org/hotnets/2012">HotNets-XI</a>, &nbsp;Redmond, WA, October 29-30, 2012.</li>
+<li>
+		<a href="http://conferences.sigcomm.org/hotnets/2011">HotNets-X</a>,&nbsp; Cambridge, MA, November 14-15, 2011.</li>
+<li>
+		<a href="http://conferences.sigcomm.org/hotnets/2010/">HotNets-IX</a>,&nbsp; Monterey, CA, October 20-21, 2010.</li>
+<li>
+		<a href="http://conferences.sigcomm.org/hotnets/2009/">HotNets-VIII</a>, New York City, NY, October 22-23, 2009.</li>
+<li>
+		<a href="http://conferences.sigcomm.org/hotnets/2008/">HotNets-VII</a>, Calgary, Alberta, Canada, October 6-7, 2008.</li>
+<li>
+		<a href="http://conferences.sigcomm.org/hotnets/2007/">HotNets-VI</a>, Atlanta, GA, November 14-15, 2007.</li>
+<li>
+		<a href="http://conferences.sigcomm.org/hotnets/2006/">HotNets-V</a>, Irvine, CA, November 2006.</li>
+<li>
+		<a href="http://conferences.sigcomm.org/hotnets/2005/">HotNets-IV</a>, College Park, MD, November 2005.</li>
+<li>
+		<a href="http://conferences.sigcomm.org/hotnets/2004/">HotNets-III</a>, San Diego, CA, November 2004.</li>
+<li>
+		<a href="http://conferences.sigcomm.org/hotnets/2003/">HotNets-II</a>, Boston, MA, November 2003.</li>
+<li>
+		<a href="http://conferences.sigcomm.org/hotnets/2002/">HotNets-I</a>, Princeton, NJ, October 2002.</li>
+</ul>
+<h2>
+	Former Steering Committee Members</h2>
+<ul>
+<li>
+		Ben Zhao, University of Chicago (2020 - 2023)</li>
+<li>
+		Sujata Banerjee,&nbsp;VMware (2018 - 2021)</li>
+<li>
+		<span style="background-color: transparent;">Aditya Akella, University of Wisconsin-Madison, (2018 - )</span></li>
+<li>
+		Dina Papagiannaki, Google (2018 - 2020)</li>
+<li>
+		Ramesh Govindan, USC (<span style="background-color: transparent;">2015 - 2019)</span></li>
+<li>
+		Bruce Davie, VMware (2014-2017)</li>
+<li>
+		Jeff Mogul, Google (2013-2015)</li>
+<li>
+		S. Keshav, University of Waterloo (2013-2014)</li>
+<li>
+		Nina Taft, Google (2010-2014)</li>
+<li>
+		Brad Karp, University College London (2009-)</li>
+<li>
+		Bruce Maggs, Duke (2008-2013)</li>
+<li>
+		Craig Partridge, BBN (2008-2010)</li>
+<li>
+		Alex Snoeren, UC San Diego (2004-2009)</li>
+<li>
+		Greg Minshall (2008-2009)</li>
+<li>
+		Scott Shenker, UC Berkeley/ICIR (2006-2007)</li>
+<li>
+		John Wroclawski, ISI/MIT, (2002-2007)</li>
+<li>
+		David Wetherall, University of Washington (2002-2004)</li>
+<li>
+		Larry Peterson, Princeton University (2002-2006)</li>
+</ul>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+        </div>
+
+      </div>
 
 </div>
+          </div>
+                    <div id="footer"><div id="block-block-1" class="clear-block block block-block">
 
-<div class="content">
 
-<h1>Call for Papers</h1>
+  <div class="content"><p><a href="/contact">Contact us</a> to send feedback about this page.</p>
+</div>
+</div>
+</div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
 
-<p> The 22nd ACM Workshop on Hot Topics in Networks (HotNets 2023) will bring together researchers in computer networks and systems to engage in a lively debate on the theory and practice of computer networking. HotNets provides a venue for discussing innovative ideas and for debating future research agendas in networking. </p>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
 
-<p> We invite researchers and practitioners to submit short position papers. We encourage papers that identify fundamental open questions, advocate a new approach, offer a constructive critique of the state of networking research, re-frame or debunk existing work, report unexpected early results from a deployment, report on promising but unproven ideas, or propose new evaluation methods. Novel ideas need not be supported by full evaluations; well-reasoned arguments or preliminary evaluations can support the possibility of the paper’s claims. </p>
-
-<p> We seek early-stage work, where the authors can benefit from community feedback. An ideal submission has the potential to open a line of inquiry for the community that results in multiple conference papers in related venues (SIGCOMM, NSDI, CoNEXT, SOSP, OSDI, MobiCom, MobiSys, etc.), rather than a single follow-on conference paper. We strongly discourage “conference papers in the miniature”, and the program committee will explicitly favor early work and papers likely to stimulate reflection and discussion over something that is ready for publication at a conference. Finished work that fits in a short paper is likely a better fit with the short-paper tracks at either CoNEXT or IMC, for example. </p>
-
-<p> HotNets takes a broad view of networking research. This includes new ideas relating to (but not limited to) mobile, wide-area, data-center, home, and enterprise networks using a variety of link technologies (e.g. wired, wireless, optical, visual, and acoustic), as well as social networks and network architecture. It encompasses all aspects of networks, including (but not limited to) packet-processing and transmission hardware and software, virtualization, mobility, provisioning and resource management, performance, energy consumption, sustainability, topology, robustness and security, measurement, diagnosis, verification, privacy, economics and evolution, interactions with applications, interactions between machine learning and networking, and usability of underlying networking technologies. </p>
-
-<p> Position papers will be selected based on originality, likelihood of stimulating insightful discussion at the workshop, and technical merit. Accepted papers will be posted online prior to the workshop and will be published in the ACM Digital Library to facilitate wide dissemination of the ideas discussed at the workshop. </p>
-
-<h1>Policy on Concurrent Submissions</h1>
-
-<p> Concurrent submissions to HotNets 2023 and any other peer-reviewed venue that cover the same work (differences in the degree of detail given the two venues’ length limits notwithstanding) are prohibited, and will result in the immediate rejection of the HotNets submission in question. “Concurrent” means any other peer-reviewed venue whose reviewing period (i.e., between submission and notification) overlaps with that of HotNets. The “same work” means, for example, a submission overlapping significantly in content with a conference submission. However, a position paper submitted to HotNets (e.g., that reflects broadly on the state of some aspect of the field, adopts a position as to how the field should move forward, or articulates a broad avenue of future work) will not be considered the “same work” as a conference-length paper on a specific system that addresses a point under the broad umbrella covered by the position paper. Authors with questions about the concurrent submission policy are encouraged to contact the PC chairs (Hitesh and Panda) prior to submitting. </p>
-
-<h1>Ethical Concerns</h1>
-
-<p> As part of the submission process, authors must attest that their work complies with all applicable ethical standards of their home institution(s), including, but not limited to privacy policies and policies on experiments involving humans. Note that submitting research for approval by one’s institution’s ethics review body is necessary, but not sufficient – in cases where the PC has concerns about the ethics of the work in a submission, the PC will have its own discussion of the ethics of that work. The PC takes a broad view of what constitutes an ethical concern, and authors agree to be available at any time during the review process to rapidly respond to queries from the PC chairs regarding ethical standards. </p>
-
-<h1>Workshop Participation</h1>
-<p> HotNets attendance is limited to roughly 90 people in person to facilitate a lively discussion (potentially with additional virtual participants). In-person invitations will be allocated first to one author of each paper, HotNets organizers and committee members, and conference sponsors. We require the paper presentations to be in-person (if authors have any concerns about this, they are welcome to contact the PC chairs). To promote an inclusive workshop, HotNets will also make a limited number of open registration slots for in-person attendance available to the community. </p>
-
-<h1>Submission and Formatting</h1>
-<p> Submitted papers must be no longer than 6 pages (10 point font, 12 point leading, 7 inch by 9.25 inch text block) including all content except references (appendices are not allowed). There are no limits for reference pages. <a href="hotnets23-template.zip">This archive</a> contains a LaTeX class file that follows the prescribed submission format and an example of a paper formatted using that class. </p>
-
-<p> All submissions must be blind: they must not indicate the names or affiliations of the authors in the paper. Only electronic submissions in PDF will be accepted. Submissions must be written in English, render without error using standard tools (e.g., Acrobat Reader), and print on US Letter paper. Papers must contain novel ideas and must differ significantly in content from previously published papers. </p>
-
-<p> Submit papers on the <a href="https://hotnets23.hotcrp.com">HotCRP</a>. </p>
-
-<h1>Important Dates</h1>
-<table>
     
-<!-- <tr> <td>Abstract deadline:</td> <td>
-<b>Friday June 23, 2023 (5:59:59 pm EDT)</b></td></tr> -->
-<tbody><tr> <td>Paper submission deadline:</td> <td>
-<b>Friday June 30, 2023 (5:59:59 pm EDT)</b></td></tr>
-<tr> <td>Acceptance/rejection notification:</td> <td>
-<b>September 15, 2023</b></td></tr>
-<!-- <b>September 4, 2022</b></td></tr> -->
-<tr> <td>Camera-ready deadline: </td> <td>
-<!-- <b>October 14, 2022</b></td></tr> -->
-<b>October 24, 2023</b></td></tr>
 
-
-
-
-
-
-</tbody></table></div></div></body></html>
+</body></html>

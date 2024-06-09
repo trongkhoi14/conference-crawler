@@ -1,0 +1,483 @@
+<!DOCTYPE html><html lang="en" data-bs-theme="light"><head>
+    
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="44th Annual International Cryptology Conference">
+
+<!-- Generic bootstrap -->
+<link href="https://iacr.org/libs/css/bootstrap/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font -->
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Arvo">
+
+<!-- Styling -->
+<link rel="stylesheet" href="/2024/styles/main.css?v=1">
+<!-- <link id="style" rel="stylesheet" href="/2024/styles/teal_theme.css"> -->
+<script type="module" src="js/color-modes.js"></script>
+<!-- metadata for googlebot -->
+<script type="application/ld+json">
+  {
+    "@id": "https://crypto.iacr.org/2024",
+    "@context": "http://schema.org/",
+    "@type": "Event",
+    "startDate": "18 Aug 2024",
+    "endDate": "22 Aug 2024",
+    "location": {
+      "@context": "http://schema.org",
+      "@type": "Place",
+      "address": {
+        "@context": "http://schema.org",
+        "@type": "PostalAddress",
+        "addressLocality": "Santa Barbara",
+        "addressCountry": "USA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-119.847152",
+        "longitude": "34.411608"
+      },
+      "name": "Conference Venue"
+    },
+    "organizer": {
+      "@context": "http://schema.org",
+      "@type": "NGO",
+      "legalName": "International Association for Cryptologic Research",
+      "alternateName": "IACR",
+      "sameAs": "https://iacr.org/",
+      "naics": "813920",
+      "logo": "https://iacr.org/img/logo/iacrlogo_small.png"
+    },
+    "name": "Crypto 2024",
+    "description": "44th Annual International Cryptology Conference",
+    "image": "https://iacr.org/img/logo/iacrlogo_small.png"
+  }
+</script>
+<!-- open graph for facebook. There is no type for event. -->
+<meta property="og:type" content="event">
+<meta property="og:url" content="https://crypto.iacr.org/2024">
+<meta property="event:start_time" content="18 Aug 2024">
+<meta property="event:end_time" content="22 Aug 2024">
+<meta property="og:description" content="44th Annual International Cryptology Conference">
+<meta property="og:image" content="https://iacr.org/img/logo/iacrlogo_small_og.png">
+<meta property="og:latitude" content="-119.847152">
+<meta property="og:longitude" content="34.411608">
+<!-- metadata for twitter. -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@iacr_news">
+<meta name="twitter:description" content="44th Annual International Cryptology Conference">
+<meta property="twitter:image" content="https://iacr.org/img/logo/iacr_wordmark_twitter.png">
+<!-- apple format for iMessage and search -->
+<link rel="apple-touch-icon" href="https://iacr.org/img/logo/iacrlogo_small.png">    <meta property="og:title" content="Crypto 2024 call for papers">
+    <meta name="twitter:title" content="Crypto 2024 call for papers">
+
+    <title>
+        Crypto 2024 - Call for Papers
+    </title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!-- BEGIN nav -->
+<header id="pageTop">
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/2024/" style="font-family: Arvo;">Crypto 2024</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav me-auto my-2 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/2024/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Technical Program
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/2024/acceptedpapers.php">Accepted papers</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/2024/callforpapers.php">Call for papers</a></li>
+                            <li><a class="dropdown-item" href="/2024/papersubmission.php">Submission instructions</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/2024/callforartifacts.php">Call for artifacts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Affiliated Events
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/2024/affiliated.php">Events</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/2024/callforaffiliated.php">Call for proposals</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Attend
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/2024/venue.php">Venue &amp; Travel</a></li>
+                            <li><a class="dropdown-item" href="/2024/visas.php">Visa Information</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/2024/conduct.php">
+                            Code of conduct
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/2024/sponsors.php">
+                            Sponsors
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/2024/contact.php">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center dropdown color-modes">
+                    <button class="btn btn-link px-0 text-decoration-none d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static">
+                        <svg class="bi my-1 me-2 theme-icon-active">
+                            <use href="./images/bootstrap-icons.svg#sun-fill"></use>
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme" style="--bs-dropdown-min-width: 8rem;">
+                        <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
+                                <svg class="bi me-2 opacity-50 theme-icon">
+                                    <use href="./images/bootstrap-icons.svg#sun-fill"></use>
+                                </svg>
+                                Light
+                                <svg class="bi ms-auto d-none">
+                                    <use href="./images/bootstrap-icons.svg#check2"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                <svg class="bi me-2 opacity-50 theme-icon">
+                                    <use href="./images/bootstrap-icons.svg#moon-stars-fill"></use>
+                                </svg>
+                                Dark
+                                <svg class="bi ms-auto d-none">
+                                    <use href="./images/bootstrap-icons.svg#check2"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                <svg class="bi me-2 opacity-50 theme-icon">
+                                    <use href="./images/bootstrap-icons.svg#circle-half"></use>
+                                </svg>
+                                Auto
+                                <svg class="bi ms-auto d-none">
+                                    <use href="./images/bootstrap-icons.svg#check2"></use>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<noscript>
+    <div class="container">
+        <h2>
+            This site is designed for browsers with javascript.
+        </h2>
+        <h3>
+            The dates, name, and location for the conference are
+            <a href="json/metadata.json">in a json file.</a>
+        </h3>
+    </div>
+</noscript>
+    <div id="carousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/ucsb2.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: 50% 50%;">
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center text-bg-primary p-1">
+        <svg class="biup">
+            <use href="./images/bootstrap-icons.svg#info-circle"></use>
+        </svg> Camera-ready version due: 31 May 2024
+    </div>
+
+    <main class="mt-4">
+        <div class="container py-3">
+            <h1 style="font-family: Arvo; font-size: 5em;">Call for Papers</h1>
+            <section class="row p-3">
+                <div class="col-md-8">
+                    <h3 class="display-6">
+                        General information
+                    </h3>
+                    <p>
+                        Crypto 2024, the 44th Annual International Cryptology Conference will take place in
+                        Santa Barbara, CA, USA on 18-22 August 2024.
+                        Crypto 2024 is organized by
+                        <a href="https://iacr.org/">the International Association for
+                            Cryptologic Research</a> (IACR). The proceedings will be published
+                        by Springer in the LNCS series.
+                    </p>
+                    <p>Original research papers are welcomed on any cryptographic topic, including but not limited to:
+                    </p>
+                    <ul>
+                        <li>foundational theory and mathematics</li>
+                        <li>the design, proposal, and analysis of cryptographic primitives and protocols</li>
+                        <li>secure implementation and optimization in hardware or software</li>
+                        <li>applied aspects of cryptography</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="display-6">
+                        Important Dates
+                    </h3>
+                    <table class="mt-5 p-5 table mx-auto">
+                        <tbody><tr>
+                            <td>
+                                <strong>13 Feb 2024</strong>
+                            </td>
+                            <td>
+                                Submission deadline<br>
+                                <a href="papersubmission.php">View submission instructions</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>7 Apr 2024</strong>
+                            </td>
+                            <td>
+                                First round notification
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>12 Apr 2024</strong>
+                            </td>
+                            <td>
+                                Rebuttal deadline
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>3 May 2024</strong>
+                            </td>
+                            <td>
+                                Final notification
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </div>
+            </section>
+
+            <section class="row p-3">
+                <h3 class="display-6">
+                    Review Process
+                </h3>
+                <p>The double-blind review process will follow the <a href="https://www.iacr.org/docs/conflicts.pdf">IACR Conflict of Interest Policy</a>. The authors
+                    will be asked, at submission time, to help identify program committee members with potential
+                    conflicts of interest.</p>
+                <p>Submissions must not substantially duplicate published work or work that has been submitted in
+                    parallel to any other journal or conference/workshop with published proceedings, and may not be
+                    submitted to any other venue unless notified of rejection (or withdrawn by the authors). Accepted
+                    submissions may not appear in any other conference or workshop that has proceedings.</p>
+                <p>The review process will consist of two rounds with a rebuttal phase. In the first round, the program
+                    committee will reject some submissions; the rest will proceed to the second round. At the end of the
+                    first round, the authors will be either notified of rejection or invited to submit a response to
+                    questions from the program committee (if any), which will be used to make the final decision in the
+                    second round.</p>
+            </section>
+
+            <section class="row p-3">
+                <h3 class="display-6">
+                    Awards
+                </h3>
+                <p>The Program Committee may choose one or more papers to receive an overall Best Paper Award. In a
+                    continuing effort to promote independent work by researchers at early stages of their careers, the
+                    Program Committee may also award a prize for the best paper(s) authored exclusively by early-career
+                    researchers (defined as within four years of their PhD completion date). As usual, awards will only
+                    be given if deserving papers are identified.</p>
+            </section>
+
+            <section class="row p-3">
+                <h3 class="display-6">
+                    Stipends
+                </h3>
+                <p>Students whose papers have been accepted and who present their talks at the conference will have
+                    their registration fees waived. A limited number of stipends will be available to those unable to
+                    obtain funding to attend the conference. Students in under-represented groups are especially
+                    encouraged to apply. Application instructions will be posted together with other registration
+                    information.</p>
+            </section>
+
+            <section class="row p-3">
+                <h3 class="display-6">
+                    Artifacts
+                </h3>
+                <p>To encourage open and reproducible research, authors of accepted papers will be invited to submit
+                    artifacts associated with their papers, such as software or datasets, for review. The artifact
+                    review will be a collaborative process between authors and the artifact review committee. The goal
+                    of the process is not just to evaluate artifacts, but also to improve them for reproduction and
+                    reusability by the scientific community. Artifacts that pass successfully through the artifact
+                    review process will be archived on the IACR's artifact archive at <a href="https://artifacts.iacr.org">artifacts.iacr.org</a>. Please see the detailed <a href="callforartifacts.php">call for artifacts</a>.</p>
+            </section>
+        </div>
+        <div class="p-5 text-center bg-body-tertiary">
+            <div class="container py-3">
+                <section class="row">
+                    <h3 class="display-6" style="margin-bottom: 2em">
+                        Program Committee
+                    </h3>
+
+                    <div id="errorBox"></div>
+                    <div id="committee" class="row">
+                        <!-- Handlebars import of PC members -->
+                        <script id="committee-member" type="text/x-handlebars-template">
+                            {{#each committee}}
+            <article class="col-12 col-sm-6 col-md-4 col-xl-3 my-2 text-center">
+              <p class="mb-0 lead">
+                <strong>{{name}}</strong>
+              </p>
+              <p>
+                {{affiliation}}
+              </p>
+            </article>
+          {{/each}}
+        </script>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="p-5 text-center">
+            <div class="container py-3">
+                <section class="row">
+                    <h3 class="display-6" style="margin-bottom: 2em">
+                        Area Chairs
+                    </h3>
+                    <div id="area-chairs" class="row">
+                        <script id="area-chairs-member" type="text/x-handlebars-template">
+                            {{#each area_chairs}}
+            <article class="col-sm-6 col-md-4 col-xl-3 col-12 my-2 text-center">
+              <p class="mb-0 lead">
+                <strong>{{name}}</strong>
+              </p>
+              <p>
+                {{affiliation}}
+              </p>
+            </article>
+          {{/each}}
+        </script>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+        <div class="p-5 text-center bg-body-tertiary">
+            <div class="container py-3">
+                <section class="row">
+                    <h3 class="display-6" style="margin-bottom: 2em">
+                        Artifact Chair
+                    </h3>
+
+                    <div id="artifact-chairs" class="row">
+                        <script id="artifact-chairs-member" type="text/x-handlebars-template">
+                            {{#each artifact_chairs}}
+            <article class="col-12 my-2 text-center">
+              <p class="mb-0 lead">
+                <strong>{{name}}</strong>
+              </p>
+              <p>
+                {{affiliation}}
+              </p>
+            </article>
+          {{/each}}
+        </script>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="p-5 text-center">
+            <div class="container py-3">
+                <section class="row">
+
+                    <!-- To add/edit contact information, please edit names and affiliations in
+      json/metadata.json -->
+                    <h3 class="display-6" style="margin-bottom: 2em">
+                        Program Co-Chairs
+                    </h3>
+
+                    <div class="row mt-3 mt-md-4">
+                        <aside class="col-12 col-sm-6 text-center mb-2">
+  <p class="mb-0 lead">
+    <strong>Leonid Reyzin</strong>
+  </p>
+  <p class="text-center">
+    Boston University<br>USA
+  </p>
+</aside><aside class="col-12 col-sm-6 text-center mb-2">
+  <p class="mb-0 lead">
+    <strong>Douglas Stebila</strong>
+  </p>
+  <p class="text-center">
+    University of Waterloo<br>Canada
+  </p>
+</aside>                    </div>
+
+                    <div classs="row">
+                        <div class="col-12 text-center mt-5">
+                            <a href="mailto:crypto2024programchairs@iacr.org"><button class="btn btn-primary" type="button">
+                                    <svg class="bi me-2 theme-icon">
+                                        <use href="./images/bootstrap-icons.svg#envelope-at-fill"></use>
+                                    </svg> crypto2024programchairs@iacr.org</button></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center bg-body-tertiary mt-auto">
+  <small>
+    Crypto 2024<br>
+    <a href="https://iacr.org/copyright.html">Copyright ©
+      2024</a>
+    <span class="d-none d-md-inline">by the </span><a href="https://iacr.org/"><span class="d-md-none">IACR</span>
+      <span class="d-none d-md-inline">International Association for
+        Cryptologic Research</span></a>
+    <span class="d-none d-md-inline">• </span><br class="d-md-none">
+    <a href="https://iacr.org/privacy.html">Privacy Policy</a>
+  </small>
+</footer>
+
+<script src="https://iacr.org/libs/js/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://iacr.org/libs/css/bootstrap/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+<script type="importmap">
+    {
+      "imports": {
+        "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.js",
+        "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.esm.min.js"
+      }
+    }
+    </script>
+    <!-- Handlebars -->
+    <script src="https://iacr.org/libs/js/handlebars/handlebars-v4.1.0.js" type="text/javascript"></script>
+    <!-- Personal scripts -->
+    <script src="js/committee.js"></script>
+
+
+
+</body></html>

@@ -165,6 +165,7 @@ fall - full submission
 Paper Submission Deadline *
 Submission open
 Paper (both full- and short) and Poster submission deadline
+Full Paper Submission deadline
 Deadline for Abstract
 Deadline for PDF uploading
 1st Round Deadline - Paper Submission Deadline
@@ -210,10 +211,10 @@ PAPER SUBMISSION DEADLINE
 SUBMISSION OF REVISED PAPERS
 Artifact submission
 Deadline for submitting full papers
+Paper submission deadline (incl. supp. material)
 Deadline of Abstract Submission
 Deadline for paper submission
 Paper & abstract submission
-Close
 Full Paper submission
 Submission Due Date
 Paper submission (no extensions)
@@ -228,15 +229,15 @@ Abstract Submission Round 1 (Full and Short Paper)
 Abstract + Paper Submission Round 1 (Full and Short Papers)
 Abstract + Paper Submission Round 2 (Short Papers only)
 Paper Submission due
-submission deadline
+Second call - submission deadline
 abstract deadline (firm)
 full paper deadline (firm)
 Submission deadline for abstracts
-Papers
+Papers are due
 abstracts
 full papers
-Deadline
-Deadline for informal presentation submission
+Title and Abstract deadline
+Paper and Pictorial Submission deadline
 New submissions close
 Full papers, abstracts, and panels submission deadline
 Abstract submission (deadline)
@@ -245,7 +246,7 @@ Full paper (track A) and extended abstract (track B) submission
 Abstracts for full and short papers
 Full papers and short papers
 Revisions due for submissions with conditional accept decisions
-Direct paper submission deadline
+ARR submission deadline (long & short papers)
 Paper submissions Round 1
 Paper submissions Round 2
 Paper submissions Round 3
@@ -255,18 +256,22 @@ Submission of short and full papers
 Scientific paper submission with rebuttal procedure
 Deadline for revised papers in the rebuttal procedure
 Scientific paper submission without rebuttal procedure
-full paper submission
+Deadline for abstract submission
+Deadline for full paper submission
 Paper submission deadline (via ARR)
 Abstract deadline
 Call for proceedings closes
 Revised paper deadline
-Paper acceptance cut-off date for inclusion in ECSCW 2023 Program
+Full paper abstract submission
 Submission Deadline (Round 1)
+Submission of Revisions (Round 1)
 Submission Deadline (Round 2)
+Submission of Revisions (Round 2)
 R1 Submission
 R2 Submission
 Abstract submission closes
 Deadline for improved paper version (for PC review) 
+Deadline for initial paper submission
 Abstract and Paper submission deadline
 Submission of the full version
 Submission Deadline (extended)
@@ -277,6 +282,7 @@ Submission extended deadline
 Spring - Full paper submissions due
 Fall - Full paper submissions due
 Full paper submissions
+Abstract submissions (recommended)
 Research paper first submission round - Paper submission
 Research paper second submission round - Paper submission
 Research paper third submission round - Paper submission
@@ -291,6 +297,7 @@ Cycle 1 - Paper submission
 Cycle 2 - Paper submission
 First submission - Paper Deadline
 Second submission - Paper Deadline
+Revised version
 Full research papers
 Full Paper Submission Deadline (Extended)
 all paper types submission (except posters)
@@ -299,11 +306,12 @@ Spring cycle - paper submission deadline
 Fall cycle - paper submission deadline
 Winter cycle - paper submission deadline
 Short Paper submission deadline
-Full Paper Submission deadline
+Regular & Poster Papers due
 Papers must be submitted electronically via the submission server, and received by
+Research Track Submission Deadline
+Extended to
 Submission of Regular, Special Session, Industrial, BMI Workshop Papers, and Workshop and Tutorial Proposals
 Submissions due
-Paper Submission Deadline - EXTENDED
 Technical Papers due
 First Deadline - Paper submission deadline
 Second Deadline - Paper submission deadline
@@ -313,7 +321,8 @@ Extended submission deadline for all papers (Full paper, Short paper, Discussion
 Full Paper Submission Due
 First round paper submission (extended to)
 Paper submission (extended to)
-Submit
+Abstract Submission Deadline (optional)
+Electronic submission of full papers
 Paper/Poster Submission Deadline
 Submissions Deadline
 Paper submission due
@@ -322,11 +331,14 @@ Submission Deadline:
 Abstract Due
 Full Paper Due
 Final Paper Submission
-Proposal Submission Deadline
+Conference/Invited Session Paper Submission
 Research & Applications Track Paper Submission
+Abstract/Paper Submission
 Title and Abstract submission deadline
 Full paper upload and editing closed
 Full Paper Submissions Due
+Abstract Submissions Due
+Paper Submission Deadline - EXTENDED
 Abstracts/Full-Text Paper Submission Deadline
 Regular & Special Session Paper Submission Deadline
 Submission of papers
@@ -334,11 +346,15 @@ Regular Paper Submissions (including Special Sessions)
 Submission via EDAS
 EasyChair closes for submissions
 Submission of Papers for Regular, Demo and Special Sessions
+Due for new draft submissions
+Due for final submission – new or revision
 Submission Date
-Regular submission
+First submission round
+Second submission round
 Manuscript Submission Deadline
 Abstract submissions
 Full manuscript submissions (double-blind)
+Revised submissions due
 Paper Abstract Due
 All Paper/Poster Submissions Due
 Deadline for Paper submission
@@ -352,6 +368,7 @@ Paper Abstract
 Full Paper Submission Deadline
 Conference track - Abstracts due
 Conference track - Papers due
+Close
 EXTENDED
 Conference paper submission deadline
 Abstracts Due
@@ -374,6 +391,7 @@ Volunteers registration submissions open
 Submission of contributions
 Submissions (Full paper, Main Track)
 Submission site opens
+Deadline
 Conference Track submission
 Submission is due
 Papers submitted in
@@ -382,6 +400,7 @@ Artifact Submission
 Tech track proposals deadline Closes earlier if capacity is reached
 Preliminary abstract submissions (mandatory, to assign reviewers)
 Papers and Extended Abstracts Submission
+
 Full and short paper abstracts due
 Full and short paper full submissions due
 Technical Paper submission deadline
@@ -428,6 +447,7 @@ Deadline for Extended Abstracts
 Submission Due
 Full paper abstracts submission
 Deadline for Full Paper
+Papers submission deadline
 Papers (Full/Short) Submission
 Research Papers 1st Round - Submission Deadline
 Research Papers 1st Round Revision - Submission Deadline
@@ -438,6 +458,7 @@ Abstract submission due
 Research paper first submission round - Revised paper submission
 Research paper second submission round - Revised paper submission
 Research paper third submission round - Revised paper submission
+Full version of the paper uploaded for revision
 Regular Paper Due
 Title+abstract submission
 Deadline (Maintrack and Special Sessions)
@@ -456,6 +477,7 @@ Revised Paper Submission
 Paper Submission (double-blind)
 Full paper deadline
 Resubmission deadline
+Submit
 Revised Submission
 Submission of revised papers
 Final version submission
@@ -475,7 +497,6 @@ Full Paper revised submission
 Abstract 
 Full Paper
 Submission deadline (full, short)
-Art Exhibition submission deadline
 Position Papers - Paper Submission
 Full / Short Submission Deadline
 Submission of abstract
@@ -486,6 +507,7 @@ Revision deadline (when needed)
 Main Conference Papers - Submission Deadline
 extended paper submission deadline
 Final deadline for full paper submission
+Paper Registration and Abstract Deadline
 Full-paper submission
 Submission of Full-Length Papers
 LNAI Submission deadline EXTENDED
@@ -529,10 +551,10 @@ Submission of full Papers
 Early paper submissions due
 Regular paper abstract submissions due
 Regular paper submissions due
-Paper SubmissionSubmission
 First Cycle Submissions Deadline
 Second Cycle Submissions Deadline
 Abstract Submissions
+Deadline for papers submission
 Abstract submission (optional)
 Regular Papers Deadline
 Late-Breaking Short Papers
@@ -549,6 +571,7 @@ Award Applications Open
 Award Applications Close
 Paper submission (formatted full text)
 Extended Submission Deadline
+Normal Submission deadline
 Appendix and resubmission information deadline
 Abstract and paper submission deadline
 Deadline for proposal submission for special sessions, workshops and tutorials
@@ -560,8 +583,7 @@ START system demo paper submission deadline
 Submission deadline for full papers and extended abstracts
 Submission of Special Session Proposals
 Regular/Special Session Paper Submission
-Full Papers Due (Research, In-Use, Resource Tracks)
-Abstracts Due(Research, In-Use, Resource Tracks)
+Full paper submission due
 Deadline for Abstract Submission for review
 Deadline for OS Proposal
 Revised Versions Due
@@ -572,10 +594,10 @@ Abstract (mandatory)
 Artifact Abstract Submission
 Paper Registration and Submission
 Final Submission
-1st Round: Abstract Deadline
-1st Round: Paper Submission
-2nd Round: Abstract Submission
-2nd Round: New and Revised (from 1st Round) Paper Submission
+1st Round Abstract Deadline
+1st Round Paper Submission
+2nd Round Abstract Submission
+2nd Round New and Revised (from 1st Round) Paper Submission
 Submission deadline (Round 1)
 Submission deadline (Round 2 and Major Revisions)
 Paper submission for main tracks (extended deadline)
@@ -586,12 +608,11 @@ Proposals for mini-courses and invited sessions
 Invited session full papers and extended abstracts
 Contributed session full papers and extended abstracts
 Advance registration opens
+Acceptance
 Paper Registration Deadline Extended
 Submission deadline Deadline Extended
-Submit your abstract
 Submission of Special Session proposals
 Submission of papers by authors
-Full paper submission due
 Paper submission deadline EXTENDED
 Workshop Papers Submission Date
 Abstract submission due date
@@ -601,9 +622,11 @@ Deadline for revised submissions
 Initial submission deadline
 Final submission deadline
 Submission deadline for full, short, and position papers
-Submission deadline presentation abstract
 Paper submission (including invited papers to Replicability Track)
 Paper Submission Portal Open
+Extended Deadline for Paper Submission due
+Paper anonymity period starts
+Final submissions due
 New paper submission deadline
 Papers submissions
 Submissions deadline
@@ -613,6 +636,7 @@ Fall - Paper submission
 Winter - Paper submission
 Main Conference Paper Submission
 Workshop Paper Submission Deadline
+Acceptance Notice*
 Paper submission for the 1st round
 Paper submission for the 2nd round
 Upload by
@@ -625,8 +649,7 @@ Revised submission
 Paper due
 Revision submission
 Paper review due
-Initial Paper Submissions
-“Let your imagination run wild” submissions
+Updated paper
 General deadline
 Demonstrations deadline
 Submission of Abstracts
@@ -635,6 +658,7 @@ Issue 2 - Paper submission deadline
 Issue 3 - Paper submission deadline
 Issue 4 - Paper submission deadline
 USB-only submission deadline
+Final deadline
 Paper submission deadline (cycle 1)
 Paper submission deadline (cycle 2)
 Paper/Poster Submission
@@ -682,9 +706,9 @@ TCHES Volume 2024/2 - Submission deadline
 TCHES Volume 2024/3 - Submission deadline
 TCHES Volume 2024/4 - Submission deadline
 SUBMISSION deadline
-Tutorial Submission Deadline
+full paper submission
 Acceptance notification
 First Call for Proposals
 Final Call for Proposals
 1st Call - Submission of draft papers (2000-5000 words) and extended abstracts (600-2000 words)
-2nd Call -Submission of draft papers (2000-5000 words) and extended abstracts (600-2000 words)
+2nd Call - Submission of draft papers (2000-5000 words) and extended abstracts (600-2000 words)

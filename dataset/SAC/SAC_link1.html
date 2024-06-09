@@ -1,10 +1,10 @@
 <!DOCTYPE html><html lang="en"><head>
-    <title>SAC 2023</title>
+    <title>SAC 2024</title>
     <meta charset="utf-8">
-    <meta property="og:url" content="https://www.sigapp.org/sac/sac2023/">
+    <meta property="og:url" content="https://www.sigapp.org/sac/sac2024/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="SAC 2023">
-    <meta property="og:description" content="The 38th ACM/SIGAPP Symposium On Applied Computing">
+    <meta property="og:title" content="SAC 2024">
+    <meta property="og:description" content="The 39th ACM/SIGAPP Symposium On Applied Computing">
 
     <link rel="shortcut icon" href="img/favicon.ico">
 
@@ -17,15 +17,79 @@
 <body>
 
 <!-- Navbar -->
-<div id="navbar">
-</div>
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+    <a href="http://www.acm.org" target="_blank"><img src="img/acmlogos.png" style="padding:1px;" alt="ACM">
+    </a><a class="navbar-brand" href="index.php">SAC2024</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarsDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.php">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="organization.php">ORGANIZATION</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tracks.php">TECHNICAL TRACKS</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown_s" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SUBMISSION</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown_s">
+                <a class="dropdown-item" href="submission.php">Regular Paper</a>
+                <a class="dropdown-item" href="submission_src.php">SRC Submission</a>
+                <a class="dropdown-item" href="authorkit.php">Author Kit</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="tutorial.php">Tutorial Proposals</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown_p" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PROGRAM</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown_p">
+            <a class="dropdown-item" href="keynote.php">Keynote Speakers</a>
+            <a class="dropdown-item" href="program.php">Technical Program</a>
+            <a class="dropdown-item" href="posters.php">Posters Program</a>
+            <a class="dropdown-item" href="src_program.php">SRC Program</a>
+            <a class="dropdown-item" href="tutorial_program.php">Tutorials Program</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="registration.php">REGISTRATION</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown_a" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ATTENDANCE</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown_a">
+            <a class="dropdown-item" href="travel.php">Travel &amp; Venue</a>
+            <a class="dropdown-item" href="stap.php">Student Travel Awards</a>
+        </div></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown_h" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">HISTORY</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown_h">
+            <a class="dropdown-item" target="_" href="https://www.sigapp.org/sac/SAC_STATS.pdf">SAC Stats</a>
+            <a class="dropdown-item" target="_" href="https://www.sigapp.org/sac/SAC_History.pdf">SAC History</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">        
+        <a href="http://www.acm.org/sigapp/" target="_blank">
+            <img src="img/SIGAPP-LOGO.jpg" height="40px" alt="SIGAPP">
+        </a>
+      </form>
+    </div>
+  </nav>
 
 <main role="main">    
 
 <style>   
   .jumbotron {
       color: black;
-      background-image      : url("img2023/TallinnPan2.jpg");
+      background-image      : url("img2024/background.jpg");
       background-color: #3171C9 ;
       background-size       : cover;
       background-position-y : 80%;
@@ -53,40 +117,21 @@
 
 <!------- Jumbo Title -------------->
 <div class="jumbotron">
-    <h1>The 38th ACM/SIGAPP Symposium On Applied Computing</h1>
-    <h3 id="location"><a href="https://en.wikipedia.org/wiki/Tallinn" target="_blank" style="color: black">Tallinn</a> Estonia</h3>
-    <h3>March 27 - March 31, 2023 </h3>
+    <h1>The 39th ACM/SIGAPP Symposium On Applied Computing</h1>
+    <h3 id="location"><span class="background_a">Avila, Spain</span></h3>
+    <h3><span class="background_a">April 8 - April 12, 2024</span></h3>
     <h4>
         <br>
-        <p class="black">sponsored by<br>
+        <p class="black"><span class="background_a">sponsored by</span><br>
         <a href="http://www.sigapp.org/" target="_blank" class="background_a">
             ACM Special Interest Group on Applied Computing (SIGAPP)</a>
         </p>        
 
-        <!--p>hosted by<br/>
-          <a href="http://www.chosun.ac.kr/eng" target="_blank">
-          Chosun University</a> <br/>
-          <a href="http://global.jnu.ac.kr" target="_blank">
-          Chonnam National University</a>
-      </p-->
-
-        <p class="black">local support provided by<br>
-            <a href="https://www.visitestonia.com/en/" target="_blank" class="background_a">
-                <img src="img2023/visit_estonia_logo.svg" height="50px"></a>
-            <a href="https://visittallinn.ee/" target="_blank" class="background_a">
-                <img src="img2023/tallinn_logo_rgb.png" height="50px">
-            </a>
+        <p class="black"><span class="background_a">hosted by</span><br>
+          <a href="https://www.usal.es/en" target="_blank" class="background_a">
+          University de Salamanca</a>
         </p>
-        <p class="black">held at<br>
-            <a href="https://www.tlu.ee/en/conference-centre" target="_blank" class="background_a">
-                Tallinn University Conference Center</a>
-        </p>
-
       </h4>
-
-
-
-
 </div>
 
 
@@ -97,109 +142,135 @@
     <h3 class="text-center" id="notice">NOTICE</h3>
 
       <ul class="list-group">
-        <li class="list-group-item">
-            <h4 class="list-group-item-heading red">Online proceedings will appear by July 2023.</h4>
-        </li>
-
         <li class="list-group-item" style="background-color:beige">
-            <h4 class="list-group-item-heading">SAC 2023 Award Winners:</h4>
+            <h4 class="list-group-item-heading">SAC 2024 Award Winners:</h4>
 
             <p class="list-group-item-text">
-            <b>Best Paper (AI and Agents)</b><br>
-            <i>"MGCMA: Multi-scale Generator with Channel-wise Mask Attention to generate Synthetic Contrast-enhanced Chest Computed Tomography"</i> 
+            <b>Best Paper: Software Design and Development</b><br>
+            <i>"VeriFog: A Generic Model-based Approach for Verifying Fog Systems at Design Time"</i> 
             by <br>
-            Jeongho Kim:Sungkyunkwan University;<br>
-            Yun-Gyoo Lee:Kangbuk Samsung Hospital, Sungkyunkwan University School of Medicine;<br>
-            Donggeun Ko:Sungkyunkwan University;<br>
-            Taejune Kim:Sungkyunkwan University;<br>
-            Soo-Youn Ham:Kangbuk Samsung Hospital, Sungkyunkwan University School of Medicine;<br>
-            Simon S Woo:Sungkyunkwan University<br>
+            Hiba Awad:IMT Atlantique, LS2N (UMR CNRS 6004),Inria centre at Rennes University;<br>
+            Abdelghani Alidra:IMT Atlantique, LS2N (UMR CNRS 6004),Inria centre at Rennes University;<br>
+            Hugo Bruneliere:IMT Atlantique, LS2N (UMR CNRS 6004);<br>
+            Thomas Ledoux:IMT Atlantique, LS2N (UMR CNRS 6004),Inria centre at Rennes University;<br>
+            Etienne Leclercq:Smile;<br>
+            Jonathan Rivalan:Smile
             </p>
 
             <p class="list-group-item-text">
-            <b>Best Paper (Distributed System)</b><br>
-            <i>"Distributed Key Generation with Smart Contracts using zk-SNARKs"</i> 
-            by<br>
-             Michael Sober:TU Hamburg,Christian Doppler Laboratory for Blockchain Technologies for the Internet of Things;<br>
-             Max Kobelt:TU Hamburg,Christian Doppler Laboratory for Blockchain Technologies for the Internet of Things;<br>
-             Giulia Scaffino:TU Wien,Christian Doppler Laboratory for Blockchain Technologies for the Internet of Things;<br>
-             Dominik Kaaser:TU Hamburg;Stefan Schulte:TU Hamburg,Christian Doppler Laboratory for Blockchain Technologies for the Internet of Things
+            <b>Best Paper: Information Systems</b><br>
+            <i>"The Abstract Expressive Power of First-Order and Description Logics with Concrete Domains"</i> 
+            by <br>
+            Franz Baader:TU Dresden,Center for Scalable Data Analytics and Artificial Intelligence (ScaDS.AI);<br>
+            Filippo De Bortoli:TU Dresden,Center for Scalable Data Analytics and Artificial Intelligence (ScaDS.AI)
             </p>
 
             <p class="list-group-item-text">
-            <b>Best Paper (Information Systems)</b><br>
-            <i>"OCC2T: An Early-Read Dual-Track OCC Algorithm For Mixed Mode Systems"</i> 
+            <b>Best Paper: System Software and Security</b><br>
+            <i>"An Asynchronous Scheme for Rollback Recovery in Message-Passing Concurrent Programming Languages"</i> 
             by <br>
-            Abdullah Alhajri:University of Warwick;<br>
-            Arshad Jhumka:University of Warwick;<br>
-            Richard Kirk:University of Warwick
+            Germán Vidal:VRAIN, Universitat Politècnica de València
             </p>
 
             <p class="list-group-item-text">
-            <b>Best Paper (System Software and Security)</b><br>
-            <i>"CAT: Context Aware Tracing for Rust Asynchronous Programs"</i> 
+            <b>Best Paper: AI and Agents</b><br>
+            <i>"Graph Learning-based Fleet Scheduling for Urban Air Mobility under Operational Constraints, Varying Demand &amp; Uncertainties"</i> 
             by <br>
-            Tsung-Yen Wang:National Cheng Kung University;<br>
-            Shao-Hua Wang:National Cheng Kung University;<br>
-            Chia-Heng Tu:National Cheng Kung University;<br>
-            Wen-Yew Liang:ADLINK Technology Inc.
+            Steve Paul:Mechanical and Aerospace Engineering, University at Buffalo;<br>
+            Jhoel Witter:University at Buffalo;<br>
+            Souma Chowdhury:Mechanical and Aerospace Engineering, University at Buffalo
             </p>
-            
+
             <p class="list-group-item-text">
-            <b>Best Paper (Software Design and Development)</b><br>
-            <i>"Million.js: A Fast Compiler-Augmented Virtual DOM for the Web"</i> 
+            <b>Best Paper: Distributed Systems</b><br>
+            <i>"Rescuing QUIC Flows From Countermeasures Against UDP Flooding Attacks"</i> 
             by <br>
-            Aiden Bai:Camas High School
+            Junseok Lee:Kangwon National University;<br>
+            Minhyeong Kim:Kangwon National University;<br>
+            Wonjun Song:Kangwon National University;<br>
+            Younghoon Kim:Sungkyunkwan University;<br>
+            Dohyung Kim:Kangwon National University
+            </p>
+
+            <p class="list-group-item-text">
+            <b>ACM Euro Award</b><br>
+            <i>"Binary Folding Compression for Efficient Software Distribution"</i> 
+            by <br>
+            Jinheng Li:City University of Hong Kong;<br>
+            Qiao Li:Xiamen University;<br>
+            Hu Wan:City University of Hong Kong;<br>
+            Chun Jason Xue:Mohamed bin Zayed University of Artificial Intelligence
             </p>
 
             <p class="list-group-item-text">
             <b>Best Poster</b><br>
-            <i>"Unsupervised Forecasting and Anomaly Detection of ADLs in single-resident elderly smart homes"</i> 
+            <i>"Evolutionary Feature Selection for Time-Series Forecasting"</i> 
             by <br>
-            Zahraa Khais Shahid:Luleå University of Technology,Skellefteå Municipality;<br>
-            Saguna Saguna:Luleå University of Technology;<br>
-            Christer Åhlund:Luleå University of Technology
+            Maria Lourdes Linares-Barrera:Department of Computer Languages and Systems, University of Seville;<br>
+            Manuel J. Jimenez-Navarro:Department of Computer Languages and Systems, University of Seville;<br>
+            Isabel Sofia Brito:Department of Engineering, Polytechnic Institute of Beja,Centre of Technology and Systems, Instituto de Desenvolvimiento de Novas Tecnologias;<br>
+            José C. Riquelme:Department of Computer Languages and Systems, University of Seville;<br>
+            María Martínez-Ballesteros:Department of Computer Languages and Systems, University of Seville
             </p>
-          </li>
-        
 
+            <p class="list-group-item-text">
+            <b>SAC'24 SRC winners</b><br>
+            </p><p><b>1st - </b> Sofiia Drozd : NTUU KPI<br>
+            Detection of War-Caused Agricultural Field Damages Using Sentinel-2 Satellite Data with Machine Learning and Anomaly Detection</p>
+            <p><b>2nd - </b>
+            Gayatri Priyadarsini Kancherla : Indian Institute of Technology Gandhinagar<br>
+            Least Privilege Persistent-Storage Access in Web Browsers</p>
+            <p><b>3rd - </b>
+            Ignacio D. Lopez-Miguel : TU Wien<br>
+            Enhancing Safety in Cyber-Physical Systems Through Runtime Enforcement</p>
+            <p></p>
+        </li>
 
+        <li class="list-group-item">
+            <h4 class="list-group-item-heading">ACM Europe Award</h4>
+        <p class="list-group-item-text">SAC 2024 introduces the newly established <span class="red">ACM Europe Award</span>,
+         which will recognize the most outstanding papers, distinct from the best papers in five different themes.
+          Recipients will be honored for their exceptional contributions and receive a <span class="red">cash prize of 1,000 Euros</span>.
+           The award is created with the support of ACM Europe.</p>
+        </li>
         <li class="list-group-item">
             <h4 class="list-group-item-heading" id="updates">Updates</h4>            
             <p class="list-group-item-text">
                 </p><ul style="list-style-type: '- ';">
-                <li>[Feb 28, 2023] <a href="posters.html">The Posters program</a> is posted.</li>
-                <li>[Feb 21, 2023] <a href="program.html">The final program</a> is posted.</li>
-                <li>[Feb 1, 2023] <a href="travel.html">Travel &amp; Venue</a> page is posted.</li>
-                <li>[Jan 20, 2023] <a href="program.html">The conference schedule</a> is posted.</li>
-                <li>[Jan 19, 2023] <a href="program.html">Proceedings Table Of Content</a> is posted.</li>
-                <li>[Jan 18, 2023] <a href="keynote.html">Keynote Speakers</a> page is posted.</li>
-                <li class="blue">[Dec 15, 2022] The <a href="registration.html">online registration</a> is open.</li>
-                <li>[Oct 23, 2022] The deadline for submission of regular papers and SRC research abstracts is extended to <b class="red">October 31st 2022. (final extension)</b> </li>
-                <li>[Oct 13, 2022] The deadline for submission of regular papers and SRC research abstracts is extended to October 24th 2022.</li>
-                <li>[Sept 28, 2022] The deadline for submission of regular papers and SRC research abstracts is extended to October 15th 2022.</li>
-                <li>[Sept 2, 2022] The submission site is reopen.</li>
-                <li>[Aug 30, 2022] The submission site is under maintenance and will reopen soon.</li>
-                <li>[Aug 12, 2022] <a href="authorkit.html">Author Kit</a> is posted.</li>
-                <li>[Aug 7, 2022] <a href="submission.html">Regular Paper Submission</a> page is open.</li>
-                <li>[Aug 7, 2022] <a href="submission_src.html">SRC Submission</a> page is open.</li>
-                <li>[Aug 7, 2022] <a href="tracks.html">Technical Tracks</a> page is open.</li>
-                <li>[July 7, 2022] <a href="#cfp">Call for Track Proposals</a> is posted.</li>
-                <li>[June 25, 2022] <a href="#">SAC 2023</a>: <em>Website</em> is open.</li>
+                <li>[Mar 16, 2024] <a href="posters.php">Poster Sessions Schedule</a> is posted.</li>
+                <li>[Feb 05, 2024] <a href="program.php#session_schedule">Session Schedule</a> is posted.</li>
+                <li>[Jan 23, 2024] <a href="program.php">Proceedings Table Of Content</a> is posted.</li>
+                <li>[Jan 18, 2024] <a href="tutorial_program.php">Tutorial Program</a> is posted.</li>
+                <li>[Dec 22, 2023] <a href="stap.php">STAP Application</a> is posted.</li>
+                <li>[Dec 19, 2023] <a href="posters.php">Poster preparation guidline</a> is posted.</li>
+                <li>[Dec 19, 2023] <a href="tutorial.php">Tutorial proposals</a> are due on <span class="red">Jan. 5, 2024.</span></li>
+                <li>[Dec 15, 2023] <a href="program.php">SAC 2024 Schedule at a Glance</a> is posted.</li>
+                <li>[Dec 09, 2023] The <a href="registration.php">registration page</a> open.</li>
+                <li>[Nov 21, 2023] The deadline for camera ready copy and author registration is extended to <span class="red">Jan. 5, 2024. </span></li>
+                <li>[Nov 16, 2023] The notification deadline for paper/SRC submissions is extended to <span class="red">Nov. 24, 2023.</span></li>
+                <li>[Nov 02, 2023] <a href="src_program.php">SRC Program</a> is posted.</li>
+                <li>[Sep 27, 2023] The deadline for submission of regular papers and SRC research abstracts is extended to <span class="red">Oct. 13, 2023.</span> 
+                (Tracks closed for submission: EMBS, DAPP, IAR, IRMAS, and KNLP)</li>
+                <li>[Aug 23, 2023] <a href="authorkit.php">Author Kit</a> is updated (max pages of posters and SRC).</li>
+                <li>[Jun 16, 2023] <a href="submission.php">Paper</a> / <a href="submission.php">SRC</a> submission site is open.</li>
+                <li>[Jun 16, 2023] <a href="authorkit.php">Author Kit</a> is posted.</li>
+                <li>[Jun 03, 2023] <a href="tracks.php">Technical Tracks</a> page is open.</li>
+                <li>[May 07, 2023] <a href="#cfc">Track Proposals Submission Link</a> is posted.</li>
+                <li>[Apr 05, 2023] <a href="#">SAC 2024</a>: <em>Website</em> is open.</li>
                 </ul>
             <p></p>
         </li>
 
         <li class="list-group-item">
             <h4 class="list-group-item-heading" id="acm_key_polices">
-                ACM’s Key Policies</h4>
+                ACM's Key Policies</h4>
             <p class="list-group-item-text">
                 </p><ol>
                     <li><a href="https://www.acm.org/privacy-policy">Privacy Policy</a></li>
                     <li><a href="https://www.acm.org/code-of-ethics">Code of Ethics and Professional Conduct</a></li>
                     <li><a href="https://www.acm.org/about-acm/policy-against-harassment">Policy Against Harassment at ACM Activities</a></li>
                 </ol>
-                In participating SAC <span class="sac_year">2023</span>, you acknowledge ACM’s Policy Against Harassment at ACM Activities and agree that behavior such as the following will constitute grounds for actions against you:
+                In participating SAC 2024, you acknowledge ACM's Policy Against Harassment at ACM Activities and agree that behavior such as the following will constitute grounds for actions against you:
                 <ul>
                     <li>Abusive action directed at an individual, such as threats, intimidation, or bullying</li>
                     <li>Racism, homophobia, or other behavior that discriminates against a group or class of people</li>
@@ -213,15 +284,10 @@
             <h4 class="list-group-item-heading">
                 SAC No-Show Policy</h4>
             <p class="list-group-item-text">
-                Paper registration is required, allowing the inclusion of the papers and posters in
-                the conference proceedings. An author or a proxy attending SAC MUST present the paper. This is a requirement
-                for all accepted papers, posters, and invited SRC submissions to be included in the ACM digital library.
-                <u>No-show of scheduled papers, posters, and student research abstracts will result
-                    in excluding them from the ACM digital library.</u>
-            </p>
-            <p class="list-group-item-text red bold underlined">
-                Authors who cannot make on-site presentations due to travel restrictions by governments or institutions,
-                 or those for whom travel is inadvisable due to medical reasons may request to present their materials online.
+            Paper registration is mandatory to include papers and posters in the conference proceedings.
+            An author or a proxy attending SAC MUST present the paper.
+            This requirement applies to all accepted papers, posters, and invited SRC submissions for inclusion in the ACM digital library.
+            In case of personal circumstances preventing physical attendance, online presentation is allowed, ensuring the paper's inclusion in the ACM digital library.
             </p>
         </li>
         <li class="list-group-item">
@@ -239,18 +305,18 @@
     </ul>
 </div>
 
-<div class="container">
+<div class="container" id="cfc">
     <div class="row">
         <div class="col-sm-8">
             <h3 id="cfp">&nbsp;</h3>
             <h3>CALL FOR CONTRIBUTIONS</h3>
         <ul class="list-group">
             <li class="list-group-item">
-        <p><a href="file2023/SAC2023-CFT.pdf" target="_blank">Call for Track Proposals</a><br>
-            <!-- - <a href=""  target="_blank">Submission Link</a> <br/> -->
-        </p><p><a href="file2023/SAC2023-TC-Guidelines.pdf" target="_blank">Track Chairs Guidelines</a></p>
-        <!--p><a href="file2022/SAC2022-CFP.pdf" target="_blank">Call for Papers and Tutorials (TBD)</a></p-->
-        <!--p><a href="file2022/SAC2022-CFSRC.pdf" target="_blank">Call for Student Research Abstracts (TBD)</a></p-->
+        <!--p>Call for Track Proposals (TBD) <br/>
+            &nbsp;&nbsp;<a href="https://softconf.com/n/sac2024-tp"  target="_blank">Track Proposals Submission Link</a> <br/-->
+        <p><a href="file2024/SAC2024-TC-Guidelines-V0.2.pdf" target="_blank">Track Chairs Guidelines</a></p>
+        <!--p>Call for Papers and Tutorials (TBD)</p>
+        <p>Call for Student Research Abstracts (TBD)</p-->
             </li>
             </ul>
         </div>
@@ -267,23 +333,23 @@
         <li class="list-group-item">
       <table class="table">
           <tbody>
-          <tr><td><span id="submission_track_proposals">July 15, 2022</span></td><td>Submission of track proposals</td></tr>
-          <tr><td><span id="noti_track_proposals">July 29, 2022</span></td><td>Notification of acceptance/rejection of track proposals</td></tr>
-          <tr><td><span id="submission_track_CFP">August 5, 2022</span></td><td>Submission of track CFPs to the Program Chairs</td></tr>
+          <tr><td>May 15, 2023</td><td>Submission of track proposals</td></tr>
+          <tr><td>May 21, 2023</td><td>Notification of acceptance/rejection of track proposals</td></tr>
+          <!--tr><td>August 5, 2023</td><td>Submission of track CFPs to the Program Chairs</td></tr-->
           <tr><td colspan="2"></td></tr>
-          <tr class="blue"><td><span id="submission_date"><del>October 1, 2022</del> <b style="color:red">October 31, 2022</b></span></td><td>Submission of regular papers and SRC research abstracts</td></tr>
-          <tr><td><span id="submission_tutorial_proposal_date"><del>October 10, 2022</del> <b style="color:red">December 19, 2022</b></span></td><td>Submission of Tutorial Proposals</td></tr>
-          <tr><td><span id="noti_tutorial_acceptance_date"><del>November 10, 2022</del> <b style="color:red">December 23, 2022</b></span></td><td>Notification of Tutorials Acceptance</td></tr>
-          <tr><td><span id="noti_paper_accept_date"><del>November 19, 2022</del> <b style="color:red">December 12, 2022</b></span></td><td>Notification of paper acceptance/rejection</td></tr>
-          <tr><td><span id="noti_src_accept_date"><del>November 19, 2022</del> <b style="color:red">December 12, 2022</b></span></td><td>Notification of SRC acceptance/rejection</td></tr>
-          <tr><td><span id="camera_ready_date"><del>December 6, 2022</del> <b style="color:red">December 30, 2022</b></span></td><td>Camera-ready copies of accepted papers/SRC</td></tr>
-          <tr><td><span id="author_registration_date"><del>December 6, 2022</del> <b style="color:red">December 30, 2022</b></span></td><td>Author registration due date</td></tr>
-          <tr><td><span id="stap_date">January 9, 2023</span></td><td>Submission of STAP(Student Travel Award Program) application</td></tr>
-          <tr><td><span id="stap_noti_date">January 30, 2023</span></td><td>Notification of STAP Awardee</td></tr>
-          <tr><td colspan="2"></td></tr>
-          <tr><td colspan="2"><span id="src_posters_date">Tuesday March 28, 2023</span>: SRC Posters Exhibit</td></tr>
-          <tr><td colspan="2"><span id="posters_date">Wednesday March 29, 2023</span>: Non-SRC Posters Program</td></tr>
-          <tr><td colspan="2"><span id="src_oral_date">Thursday March 30, 2023</span>: SRC Oral Presentations</td></tr>
+          <tr class="blue"><td><strike>September 15, 2023</strike> October 13, 2023 (GMT-7)</td><td>Submission of regular papers and SRC research abstracts</td></tr>
+          <!--tr><td>January 5, 2024</td><td>Submission of Tutorial Proposals</td></tr>
+          <tr><td>January 11, 2024</td><td>Notification of Tutorials Acceptance</td></tr-->
+          <tr><td><strike>November 17, 2023</strike> November 24, 2023</td><td>Notification of paper acceptance/rejection</td></tr>
+          <tr><td><strike>November 17, 2023</strike> November 24, 2023</td><td>Notification of SRC acceptance/rejection</td></tr>
+          <tr><td><strike>December 15, 2023</strike> January 5, 2024</td><td>Camera-ready copies of accepted papers/SRC</td></tr>
+          <tr><td>January 5, 2024</td><td>Author registration due date</td></tr>
+          <!--tr><td>January 9, 2024</td><td>Submission of STAP(Student Travel Award Program) application</td></tr>
+          <tr><td>January 30, 2024</td><td>Notification of STAP Awardee</td></tr-->
+          <tr><td colspan="2"></td>
+          </tr><tr><td colspan="2">Tuesday April 9, 2024: SRC Posters Exhibit</td></tr>
+          <tr><td colspan="2">Wednesday April 10, 2024: Non-SRC Posters Program</td></tr>
+          <tr><td colspan="2">Thursday April 11, 2024: SRC Oral Presentations</td></tr>
           </tbody>
       </table>
     </li>
@@ -297,13 +363,17 @@
 </div></main>
 
 
-<div id="footer">
-</div>
-
+<footer class="text-center">
+    <a class="up-arrow" href="#" data-toggle="tooltip" title="TO TOP">
+        <span class="material-icons">
+            keyboard_arrow_up
+            </span> </a><br>
+    <p>
+      Copyright © 2021-2024      <a href="https://www.acm.org/sigapp/" data-toggle="tooltip" title="Visit ACM SIGAPP">SIGAPP</a>. All rights reserved.
+    </p>
+</footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-<script src="script/data.js?ver=0228"></script>
 
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-591b37ff2acbb9a6"></script>

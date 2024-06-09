@@ -431,7 +431,6 @@ Final decisions
 Final Decisions
 Notification of
 Notifications
-Registration
 notification
 Notification
 Acceptance

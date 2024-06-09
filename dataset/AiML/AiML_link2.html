@@ -1,589 +1,561 @@
-<!DOCTYPE html><html lang="en-US"><head>
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="https://aiml2022.irisa.fr/xmlrpc.php">
-<title>AiML 2022 – Advances in Modal Logic, Rennes 2022</title>
-<meta name="robots" content="max-image-preview:large">
-<link rel="dns-prefetch" href="//s.w.org">
-<link rel="alternate" type="application/rss+xml" title="AiML 2022 » Feed" href="https://aiml2022.irisa.fr/feed/">
-<link rel="alternate" type="application/rss+xml" title="AiML 2022 » Comments Feed" href="https://aiml2022.irisa.fr/comments/feed/">
-<link rel="alternate" type="application/rss+xml" title="AiML 2022 » Home Comments Feed" href="https://aiml2022.irisa.fr/home/feed/">
-<script type="text/javascript">
-window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/aiml2022.irisa.fr\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.9.7"}};
-/*! This file is auto-generated */
-!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
-</script><script src="https://aiml2022.irisa.fr/wp-includes/js/wp-emoji-release.min.js?ver=5.9.7" type="text/javascript" defer=""></script>
-<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 0.07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-	<link rel="stylesheet" id="wp-block-library-css" href="https://aiml2022.irisa.fr/wp-content/plugins/gutenberg/build/block-library/style.css?ver=1548230908" type="text/css" media="all">
-<style id="global-styles-inline-css" type="text/css">
-body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-</style>
-<link rel="stylesheet" id="noUislider_dataset_css-css" href="https://aiml2022.irisa.fr/wp-content/plugins/inria-plugin/Services/nouislider_dataset.css?ver=5.9.7" type="text/css" media="all">
-<link rel="stylesheet" id="contact-form-7-css" href="https://aiml2022.irisa.fr/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.7" type="text/css" media="all">
-<link rel="stylesheet" id="nirvana-fonts-css" href="https://aiml2022.irisa.fr/wp-content/themes/nirvana/fonts/fontfaces.css?ver=1.6.2" type="text/css" media="all">
-<link rel="stylesheet" id="nirvana-style-css" href="https://aiml2022.irisa.fr/wp-content/themes/nirvana/style.css?ver=1.6.2" type="text/css" media="all">
-<style id="nirvana-style-inline-css" type="text/css">
- #header-container { width: 1400px; } #header-container, #access >.menu, #forbottom, #colophon, #footer-widget-area, #topbar-inner, .ppbox, #pp-afterslider #container, #breadcrumbs-box { max-width: 1400px; } @media (max-width: 800px) { #header-container {position: relative; } #branding {height: auto; } } #container.one-column { } #container.two-columns-right #secondary { width: 300px; float:right; } #container.two-columns-right #content { width: 960px; float: left; } /* fallback */ #container.two-columns-right #content { width: calc(100% - 380px); float: left; } #container.two-columns-left #primary { width: 300px; float: left; } #container.two-columns-left #content { width: 960px; float: right; } /* fallback */ #container.two-columns-left #content { width: -moz-calc(100% - 380px); float: right; width: -webkit-calc(100% - 380px ); width: calc(100% - 380px); } #container.three-columns-right .sidey { width: 150px; float: left; } #container.three-columns-right #primary { margin-left: 80px; margin-right: 80px; } #container.three-columns-right #content { width: 880px; float: left; } /* fallback */ #container.three-columns-right #content { width: -moz-calc(100% - 460px); float: left; width: -webkit-calc(100% - 460px); width: calc(100% - 460px); } #container.three-columns-left .sidey { width: 150px; float: left; } #container.three-columns-left #secondary{ margin-left: 80px; margin-right: 80px; } #container.three-columns-left #content { width: 880px; float: right;} /* fallback */ #container.three-columns-left #content { width: -moz-calc(100% - 460px); float: right; width: -webkit-calc(100% - 460px); width: calc(100% - 460px); } #container.three-columns-sided .sidey { width: 150px; float: left; } #container.three-columns-sided #secondary{ float:right; } #container.three-columns-sided #content { width: 880px; float: right; /* fallback */ width: -moz-calc(100% - 460px); float: right; width: -webkit-calc(100% - 460px); float: right; width: calc(100% - 460px); float: right; margin: 0 230px 0 -1340px; } body { font-family: "Source Sans Pro"; } #content h1.entry-title a, #content h2.entry-title a, #content h1.entry-title, #content h2.entry-title { font-family: inherit; } .widget-title, .widget-title a { line-height: normal; font-family: "Open Sans"; } .widget-container, .widget-container a { font-family: inherit; } .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6, .nivo-caption h2, #front-text1 h1, #front-text2 h1, h3.column-header-image, #comments #reply-title { font-family: Futura, "Century Gothic", AppleGothic, sans-serif; } #site-title span a { font-family: inherit; }; } #access ul li a, #access ul li a span { font-family: Futura, "Century Gothic", AppleGothic, sans-serif; } /* general */ body { color: #444444; background-color: #ffffff } a { color: #B52C00; } a:hover, .entry-meta span a:hover, .comments-link a:hover, body.coldisplay2 #front-columns a:active { color: #8C0005; } a:active { background-color: #8C0005; color: #ffffff; } .entry-meta a:hover, .widget-container a:hover, .footer2 a:hover { border-bottom-color: #CCCCCC; } .sticky h2.entry-title a { background-color: #B52C00; color: #ffffff; } #header { ; } #site-title span a { color: #BF4D28; } #site-description { color: #8C0005; } .socials a:hover .socials-hover { background-color: #D6341D; } .socials .socials-hover { background-color: #8C0005; } /* Main menu top level */ #access a, #nav-toggle span { color: #f6f5f1; } #access, #nav-toggle, #access ul li { background-color: #8C0005; } #access > .menu > ul > li > a > span { } #access ul li:hover { background-color: #760004; color: #e3e0d4; } #access ul > li.current_page_item , #access ul > li.current-menu-item, #access ul > li.current_page_ancestor , #access ul > li.current-menu-ancestor { background-color: #990d12; } /* Main menu Submenus */ #access ul ul li, #access ul ul { background-color: #760004; } #access ul ul li a { color: #e3e0d4; } #access ul ul li:hover { background-color: #840e12; } #breadcrumbs { background-color: #f5f5f5; } #access ul ul li.current_page_item, #access ul ul li.current-menu-item, #access ul ul li.current_page_ancestor, #access ul ul li.current-menu-ancestor { background-color: #840e12; } /* top menu */ #topbar { background-color: #A9A17A; border-bottom-color: #958d66; } .menu-header-search .searchform { background: #F7F7F7; } .topmenu ul li a, .search-icon:before { color: #E5E5E5; } .topmenu ul li a:hover { background-color: #99916a; } .search-icon:hover:before { color: #B52C00; } /* main */ #main { background-color: #ffffff; } #author-info, .page-title, #entry-author-info { border-color: #CCCCCC; } .page-title-text { border-color: #8C0005; } .page-title span { border-color: #B52C00; } #entry-author-info #author-avatar, #author-info #author-avatar { border-color: #EEEEEE; } .avatar-container:before { background-color: #8C0005; } .sidey .widget-container { color: #333333; ; } .sidey .widget-title { color: #FFFFFF; ; border-color: #CCCCCC; } .sidey .widget-container a { color: #FFFFFF; } .sidey .widget-container a:hover { color: #B52C00; } .widget-title span { border-color: #FFFFFF; } .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 { color: #A9A17A; } .entry-title, .entry-title a{ color: #A9A17A; } .entry-title a:hover { color: #99999; } #content span.entry-format { color: #CCCCCC; } /* footer */ #footer { color: #FFFEF9; ; } #footer2 { color: #FFFEF9; background-color: #A9A17A; } #sfooter-full { background-color: #a49c75; } .footermenu ul li { border-color: #b8b089; } .footermenu ul li:hover { border-color: #ccc49d; } #colophon a { ; } #colophon a:hover { ; } #footer2 a, .footermenu ul li:after { ; } #footer2 a:hover { ; } #footer .widget-container { color: #444; ; } #footer .widget-title { color: #A9A17A; ; border-color:#CCCCCC; } /* buttons */ a.continue-reading-link { color: #B52C00; border-color: #B52C00; } a.continue-reading-link:hover { background-color: #B52C00; color: #ffffff; } #cryout_ajax_more_trigger { border: 1px solid #CCCCCC; } #cryout_ajax_more_trigger:hover { background-color: #F7F7F7; } a.continue-reading-link i.crycon-right-dir { color: #B52C00 } a.continue-reading-link:hover i.crycon-right-dir { color: #ffffff } .page-link a, .page-link > span > em { border-color: #CCCCCC } .columnmore a { background: #8C0005; color:#F7F7F7 } .columnmore a:hover { background: #B52C00; } .file, .button, input[type="submit"], input[type="reset"], #respond .form-submit input#submit { background-color: #ffffff; border-color: #CCCCCC; } .button:hover, #respond .form-submit input#submit:hover { background-color: #F7F7F7; } .entry-content tr th, .entry-content thead th { color: #A9A17A; } .entry-content tr th { background-color: #B52C00; color:#ffffff; } .entry-content tr.even { background-color: #F7F7F7; } hr { border-color: #EEEEEE; } input[type="text"], input[type="password"], input[type="email"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="number"], input[type="range"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="week"], textarea, select { border-color: #CCCCCC #EEEEEE #EEEEEE #CCCCCC; color: #444444; } input[type="submit"], input[type="reset"] { color: #444444; } input[type="text"]:hover, input[type="password"]:hover, input[type="email"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="range"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, textarea:hover { background-color: rgba(247,247,247,0.4); } .entry-content pre { background-color: #F7F7F7; border-color: rgba(181,44,0,0.1); } abbr, acronym { border-color: #444444; } .comment-meta a { color: #999999; } #respond .form-allowed-tags { color: #999999; } .comment .reply a { border-color: #EEEEEE; } .comment .reply a:hover { color: #B52C00; } .entry-meta { border-color: #EEEEEE; } .entry-meta .crycon-metas:before { color: #CCCCCC; } .entry-meta span a, .comments-link a { color: #666666; } .entry-meta span a:hover, .comments-link a:hover { ; } .entry-meta span, .entry-utility span, .footer-tags { color: #c1c1c1; } .nav-next a, .nav-previous a{ background-color:#f8f8f8; } .nav-next a:hover, .nav-previous a:hover { background-color: #B52C00; color:#ffffff; } .pagination { border-color: #ededed; } .pagination a:hover { background-color: #8C0005; color: #ffffff; } h3#comments-title { border-color: #CCCCCC; } h3#comments-title span { background-color: #B52C00; color: #ffffff; } .comment-details { border-color: #EEEEEE; } .searchform input[type="text"] { color: #999999; } .searchform:after { background-color: #B52C00; } .searchform:hover:after { background-color: #8C0005; } .searchsubmit[type="submit"]{ color: #F7F7F7; } li.menu-main-search .searchform .s { background-color: #ffffff; } li.menu-main-search .searchsubmit[type="submit"] { color: #999999; } .caption-accented .wp-caption { background-color:rgba(181,44,0,0.8); color:#ffffff; } .nirvana-image-one .entry-content img[class*='align'], .nirvana-image-one .entry-summary img[class*='align'], .nirvana-image-two .entry-content img[class*='align'], .nirvana-image-two .entry-summary img[class*='align'] .nirvana-image-one .entry-content [class*='wp-block'][class*='align'] img, .nirvana-image-one .entry-summary [class*='wp-block'][class*='align'] img, .nirvana-image-two .entry-content [class*='wp-block'][class*='align'] img, .nirvana-image-two .entry-summary [class*='wp-block'][class*='align'] img { border-color: #B52C00; } html { font-size: 17px; line-height: 1.7; } .entry-content, .entry-summary, .ppbox { text-align: inherit ; } .entry-content, .entry-summary, .widget-container, .ppbox, .navigation { ; } #content h1.entry-title, #content h2.entry-title, .woocommerce-page h1.page-title { font-size: 36px; } .widget-title, .widget-title a { font-size: 24px; } .widget-container, .widget-container a { font-size: 18px; } #content h1, #pp-afterslider h1 { font-size: 32px; } #content h2, #pp-afterslider h2 { font-size: 28px; } #content h3, #pp-afterslider h3 { font-size: 24px; } #content h4, #pp-afterslider h4 { font-size: 20px; } #content h5, #pp-afterslider h5 { font-size: 16px; } #content h6, #pp-afterslider h6 { font-size: 12px; } #site-title span a { font-size: 46px; } #access ul li a { font-size: 15px; } #access ul ul ul a { font-size: 14px; } .nocomments, .nocomments2 { display: none; } .entry-content table, .entry-content tr, .entry-content tr th, .entry-content thead th, .entry-content tr td, .entry-content tr.even { background: none; border: none; color: inherit; } .page h1.entry-title, .home .page h2.entry-title { display: none; } header.page-header, .archive h1.page-title { display: none; } article footer.entry-meta { display: none; } .entry-content p, .entry-content ul, .entry-content ol, .entry-content dd, .entry-content pre, .entry-content hr, .commentlist p { margin-bottom: 1.0em; } #header-container > div { margin: 0px 0 0 0px; } #toTop:hover .crycon-back2top:before { color: #8C0005; } #main { margin-top: 5px; } #forbottom { padding-left: 0px; padding-right: 0px; } #header-widget-area { width: 33%; } #branding { height:0px; } @media (max-width: 1920px) { #branding, #bg_image { display: block; height: auto; max-width: 100%; min-height: inherit !important; } } 
-@media (min-width: 801px) { #primary{ height: 100%; position: fixed; /* Fixed Sidebar (stay in place on scroll) */ z-index: 1; /* Stay on top */ top: 0; /* Stay at the top */ left: 0; background-color: #8C0005; overflow-y: auto; padding-top: 50px; padding-left: 50px; padding-right: 50px; } #access { display : none; } #nav-toggle {display : none;} #footer2{padding: 35px 0 0 250px;} .wp-block-cover {padding: 30px;} .sponsor-column{ display: flex; justify-content: center; align-items: center; } } @media (max-width: 801px) { #primary{display: none;} }
-</style>
-<link rel="stylesheet" id="nirvana-mobile-css" href="https://aiml2022.irisa.fr/wp-content/themes/nirvana/styles/style-mobile.css?ver=1.6.2" type="text/css" media="all">
-<link rel="stylesheet" id="dashicons-css" href="https://aiml2022.irisa.fr/wp-includes/css/dashicons.min.css?ver=5.9.7" type="text/css" media="all">
-<link rel="stylesheet" id="my-calendar-reset-css" href="https://aiml2022.irisa.fr/wp-content/plugins/my-calendar/css/reset.css?ver=3.4.15" type="text/css" media="all">
-<link rel="stylesheet" id="my-calendar-style-css" href="https://aiml2022.irisa.fr/wp-content/plugins/my-calendar/styles/twentytwentytwo.css?ver=3.4.15-twentytwentytwo-css" type="text/css" media="all">
-<style id="my-calendar-style-inline-css" type="text/css">
+<!DOCTYPE html><html lang="en"><head>
+<!--
+New Event
+http://www.templatemo.com/tm-486-new-event
+-->
+<title>AiML 2024</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-/* Styles by My Calendar - Joseph C Dolson https://www.joedolson.com/ */
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
 
-.mc-main .mc_general .event-title, .mc-main .mc_general .event-title a { background: #ffffcc !important; color: #000000 !important; }
-.mc-main .mc_general .event-title a:hover, .mc-main .mc_general .event-title a:focus { background: #ffffff !important;}
-.mc-main {--primary-dark: #313233; --primary-light: #fff; --secondary-light: #fff; --secondary-dark: #000; --highlight-dark: #666; --highlight-light: #efefef; --category-mc_general: #ffffcc; }
-</style>
-<link rel="stylesheet" id="moove_gdpr_frontend-css" href="https://aiml2022.irisa.fr/wp-content/plugins/gdpr-cookie-compliance/dist/styles/gdpr-main.css?ver=4.12.3" type="text/css" media="all">
-<style id="moove_gdpr_frontend-inline-css" type="text/css">
-#moove_gdpr_cookie_modal,#moove_gdpr_cookie_info_bar,.gdpr_cookie_settings_shortcode_content{font-family:Nunito,sans-serif}#moove_gdpr_save_popup_settings_button{background-color:#373737;color:#fff}#moove_gdpr_save_popup_settings_button:hover{background-color:#000}#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton,#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton{background-color:#0C4DA2}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton,.gdpr_cookie_settings_shortcode_content .gdpr-shr-button.button-green{background-color:#0C4DA2;border-color:#0C4DA2}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton:hover,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton:hover,.gdpr_cookie_settings_shortcode_content .gdpr-shr-button.button-green:hover{background-color:#fff;color:#0C4DA2}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close span.gdpr-icon{background-color:#0C4DA2;border:1px solid #0C4DA2}#moove_gdpr_cookie_info_bar span.change-settings-button.focus-g,#moove_gdpr_cookie_info_bar span.change-settings-button:focus{-webkit-box-shadow:0 0 1px 3px #0C4DA2;-moz-box-shadow:0 0 1px 3px #0C4DA2;box-shadow:0 0 1px 3px #0C4DA2}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close i:hover,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close span.gdpr-icon:hover,#moove_gdpr_cookie_info_bar span[data-href]>u.change-settings-button{color:#0C4DA2}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected a span.gdpr-icon,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected button span.gdpr-icon{color:inherit}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a span.gdpr-icon,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button span.gdpr-icon{color:inherit}#moove_gdpr_cookie_modal .gdpr-acc-link{line-height:0;font-size:0;color:transparent;position:absolute}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close:hover i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content a:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content span.change-settings-button:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button:hover,#moove_gdpr_cookie_info_bar span[data-href]>u.change-settings-button,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content span.change-settings-button.focus-g,span.change-settings-button:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button:focus{color:#0C4DA2}#moove_gdpr_cookie_modal.gdpr_lightbox-hide{display:none}
-</style>
-<script type="text/javascript" src="https://aiml2022.irisa.fr/wp-content/plugins/inria-plugin/Services/nouislider.js?ver=5.9.7" id="noUislider_js-js"></script>
-<script type="text/javascript" src="https://aiml2022.irisa.fr/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
-<script type="text/javascript" src="https://aiml2022.irisa.fr/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
-<link rel="https://api.w.org/" href="https://aiml2022.irisa.fr/wp-json/"><link rel="alternate" type="application/json" href="https://aiml2022.irisa.fr/wp-json/wp/v2/pages/4"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://aiml2022.irisa.fr/xmlrpc.php?rsd">
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://aiml2022.irisa.fr/wp-includes/wlwmanifest.xml"> 
-<meta name="generator" content="WordPress 5.9.7">
-<link rel="canonical" href="https://aiml2022.irisa.fr/">
-<link rel="shortlink" href="https://aiml2022.irisa.fr/">
-<link rel="alternate" type="application/json+oembed" href="https://aiml2022.irisa.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Faiml2022.irisa.fr%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://aiml2022.irisa.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Faiml2022.irisa.fr%2F&amp;format=xml">
-<style>
-.qtranxs_flag_en {background-image: url(https://project.inria.fr/aiml2022/wp-content/plugins/qtranslate-xt-3.12.1/flags/gb.png); background-repeat: no-repeat;}
-.qtranxs_flag_fr {background-image: url(https://project.inria.fr/aiml2022/wp-content/plugins/qtranslate-xt-3.12.1/flags/fr.png); background-repeat: no-repeat;}
-</style>
-<link hreflang="en" href="https://aiml2022.irisa.fr/" rel="alternate">
-<link hreflang="fr" href="https://aiml2022.irisa.fr/fr/" rel="alternate">
-<link hreflang="x-default" href="https://aiml2022.irisa.fr/" rel="alternate">
-<meta name="generator" content="qTranslate-XT 3.12.1">
-<!--[if lt IE 9]>
-<script>
-document.createElement('header');
-document.createElement('nav');
-document.createElement('section');
-document.createElement('article');
-document.createElement('aside');
-document.createElement('footer');
-</script>
-<![endif]-->
-<style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
-<body class="home page-template-default page page-id-4 nirvana-image-two caption-simple nirvana-comment-placeholders nirvana-menu-left nirvana-topbarhide">
+<!-- Main css -->
+<link rel="stylesheet" href="css/style.css">
 
-		<a class="skip-link screen-reader-text" href="#main" title="Skip to content"> Skip to content </a>
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627"></feFuncR><feFuncG type="table" tableValues="0 0.49803921568627"></feFuncG><feFuncB type="table" tableValues="0 0.49803921568627"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 0.27843137254902"></feFuncG><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0"></feFuncR><feFuncG type="table" tableValues="0 0.64705882352941"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.78039215686275 1"></feFuncR><feFuncG type="table" tableValues="0 0.94901960784314"></feFuncG><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.44705882352941 0.4"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.098039215686275 1"></feFuncR><feFuncG type="table" tableValues="0 0.66274509803922"></feFuncG><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg>
-<div id="wrapper" class="hfeed">
-<div id="topbar"><div id="topbar-inner">  </div></div>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet" type="text/css">
 
-<div id="header-full">
-	<header id="header">
-		<div id="masthead">
-					<div id="branding" role="banner">
-				<div id="header-container"></div>								<div style="clear:both;"></div>
-			</div><!-- #branding -->
-			<button id="nav-toggle"><span>&nbsp;</span></button>
-			<nav id="access" class="jssafe" role="navigation">
-					<div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
-	<div class="menu"><ul id="prime_nav" class="menu"><li id="menu-item-90" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-90"><a href="https://aiml2022.irisa.fr/#home" aria-current="page"><span>Home</span></a></li>
-<li id="menu-item-92" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-92"><a href="https://aiml2022.irisa.fr/#important-dates" aria-current="page"><span>Important dates</span></a></li>
-<li id="menu-item-93" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-93"><a href="https://aiml2022.irisa.fr/#invited-speakers" aria-current="page"><span>Invited speakers</span></a></li>
-<li id="menu-item-539" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-539"><a href="https://aiml2022.irisa.fr/accepted-papers/"><span>Accepted papers</span></a></li>
-<li id="menu-item-94" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-94"><a href="https://aiml2022.irisa.fr/call-for-papers/"><span>Call for papers</span></a></li>
-<li id="menu-item-95" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-95"><a href="https://aiml2022.irisa.fr/registration/"><span>Registration</span></a></li>
-<li id="menu-item-96" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96"><a href="https://aiml2022.irisa.fr/program/"><span>Program</span></a></li>
-<li id="menu-item-97" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-97"><a href="https://aiml2022.irisa.fr/local-information/"><span>Local information</span></a></li>
-<li id="menu-item-98" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-98"><a href="https://aiml2022.irisa.fr/#contact-us" aria-current="page"><span>Contact us</span></a></li>
-<li id="menu-item-426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-426"><a href="https://lamassr.github.io/"><span>LAMAS&amp;SR 2022</span></a></li>
-<li id="menu-item-253" class="qtranxs-lang-menu qtranxs-lang-menu-en menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-253"><a title="English" href="#" aria-haspopup="true"><span>Language:&nbsp;<img class="qtranxs-flag" src="https://project.inria.fr/aiml2022/wp-content/plugins/qtranslate-xt-3.12.1/flags/gb.png" alt="English"></span></a>
-<ul class="sub-menu">
-	<li id="menu-item-540" class="qtranxs-lang-menu-item qtranxs-lang-menu-item-en menu-item menu-item-type-custom menu-item-object-custom menu-item-540"><a title="English" href="https://aiml2022.irisa.fr/en/"><span><img class="qtranxs-flag" src="https://project.inria.fr/aiml2022/wp-content/plugins/qtranslate-xt-3.12.1/flags/gb.png" alt="English">&nbsp;English</span></a></li>
-	<li id="menu-item-541" class="qtranxs-lang-menu-item qtranxs-lang-menu-item-fr menu-item menu-item-type-custom menu-item-object-custom menu-item-541"><a title="Français" href="https://aiml2022.irisa.fr/fr/"><span><img class="qtranxs-flag" src="https://project.inria.fr/aiml2022/wp-content/plugins/qtranslate-xt-3.12.1/flags/fr.png" alt="Français">&nbsp;Français</span></a></li>
-</ul>
-</li>
-</ul></div>			</nav><!-- #access -->
+</head>
+<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
 
+<!-- =========================
+     PRE LOADER       
+============================== -->
+<div class="preloader">
 
-		</div><!-- #masthead -->
-	</header><!-- #header -->
-</div><!-- #header-full -->
+	<div class="sk-rotating-plane"></div>
 
-<div style="clear:both;height:0;"> </div>
-<div id="main">
-		<div id="toTop"><i class="crycon-back2top"></i> </div>	<div id="forbottom">
-		
-		<div style="clear:both;"> </div>
-		<section id="container" class="two-columns-left">
-
-			<div id="content" role="main">
-						<ul class="yoyo">
-							</ul>
-	
-				
-		<div id="post-4" class="post-4 page type-page status-publish hentry">
-							<h2 class="entry-title">Home</h2>
-			
-			<div class="entry-content">
-				
-<div class="wp-block-cover aligncenter has-background-dim-10 has-background-dim has-left-content" style="background-image:url(https://aiml2022.irisa.fr/files/2021/11/shutterstock_1268064808_reduced-1.jpg)"><p class="wp-block-cover-text"><strong>Advances in Modal Logic<br>Rennes, August 22-25 2022</strong></p></div>
-
-
-
-<h2 id="home">Advances in Modal Logic 2022<br>Rennes, August 22-25</h2>
-
-
-
-<p>Advances in Modal Logic is an initiative aimed at presenting the state of the art in modal logic and its various applications. The initiative consists of a conference series together with volumes based on the conferences.</p>
-
-
-
-<blockquote class="wp-block-quote is-style-large"><p>Registrations are not possible any more.</p></blockquote>
-
-
-
-<p>Information about the AiML series can be obtained at&nbsp;<a href="http://www.aiml.net">http://www.aiml.net</a>.</p>
-
-
-
-<p>AiML 2022 is co-located with the Workshop on Logical Aspects of  Multi-Agent Systems and Strategic Reasoning (<a href="https://lamassr.github.io/">LAMAS&amp;SR 2022</a>) in <a href="https://www.irisa.fr/">IRISA</a>.</p>
-
-
-
-<h3>About COVID-19</h3>
-
-
-
-<p>Local organizers are following closely the evolution of the pandemic situation. Our preference is for a full in-person event, but we will employ an online or hybrid format according to the situation.</p>
-
-
-
-<h4>Organizing committee</h4>
-
-
-
-<p>All organizing staff are affiliated to <a href="https://www.irisa.fr/">IRISA</a>, except for additional affiliations listed next to their name.<br>Sophie Pinchinat (chair)<br>Sophie Maupilé<br>Aurélie Amet<br>Guillaume Aucher<br>Dylan Bellier<br>Aymen Bazouzi<br> Frédéric Bouvet<br> Lénaïg Cornanguer<br> Catherine Jacques-Orban<br> Antoine L’Azou<br> Pierre Le Scornet<br> Hervé Marchand<br> Nicolas Markey<br> Alexandre Terefenko, Université de Mons<br> Adrien Thomas</p>
-
-
-
-<h4>Programme committee chair</h4>
-
-
-
-<p>David Fernández Duque, University of Ghent<br>Alessandra Palmigiano, Vrije Universiteit Amsterdam</p>
-
-
-
-<h4>Programme committee</h4>
-
-
-
-<p>Erman Acar, VU Amsterdam<br>Bahareh Afshari, University of Amsterdam<br>Natasha&nbsp;Alechina, University of Utrecht<br>Steve Awodey, Carnegie Mellon<br>Philippe Balbiani, CNRS, Toulouse University<br>Marta Bilkova, Academy of Sciences of the Czech Republic<br>Xavier Caicedo, University of los Andes<br>Walter Carnielli, State University of Campinas<br>Agata Ciabattoni, TU Wien<br>Ivano Ciardelli, University of Munich<br>Willem Conradie, University of the Witwatersrand<br>Laurent De Rudder, University of Liege<br>Tommaso Flaminio, Spanish National Research Council<br>Sabine Frittella, INSA Centre Val de Loire<br>Nick Galatos, University of Denver<br>Sam van Gool, IRIF, Université de Paris<br>Giuseppe Greco, VU Amsterdam<br>Thomas Icard, Stanford University<br>Ramon Jansana University of Barcelona<br>Peter Jipsen,&nbsp;Chapman University<br>Joost Joosten, University of Barcelona<br>Stanislav Kikot, Sber Automotive Technologies<br>Philip Kremer, University of Toronto<br>Alexander Kurz, Chapman University<br>Roman&nbsp;Kuznets, TU Wien<br>Fei Liang, University of Shandong<br>Minghui Ma, Sun Yat-Sen University, Guangzhou<br>Morteza Moniri, Shahid Beheshti University<br>Tommaso Moraschini, University of Barcelona<br>Drew Moshier, Chapman University, Orange CA<br>Eric Pacuit, University of Maryland<br>Fedor Pakhomov, Ghent University<br>Sophie Pinchinat, IRISA, University of Rennes I<br>Daniele Porello, University of Genova<br>Vit Puncochar, Academy of Sciences of the Czech Republic<br>Revantha Ramanayake, University of Groningen<br>Christian Retoré, University of Montpellier<br>Umberto Rivieccio, Universidade Federal do Rio Grande do Norte<br>Claudette Robinson, University of Johannesburg<br>Gabriel&nbsp;Sandu, University of Helsinki<br>Igor Sedlar, Academy of Sciences of the Czech Republic<br>Ilya Shapirovsky, New Mexico State University<br>Apostolos Tzimoulis, VU Amsterdam<br>Sara Uckelman,&nbsp;Durham University<br>Jouko Väänänen, University of Helsinki<br>Heinrich Wansing, University of Bochum<br>Frank Wolter, University of Liverpool</p>
-
-
-
-<h2 id="important-dates">Important dates</h2>
-
-
-
-<ul><li>Abstracts of full papers submission deadline: 7 March 2022</li><li>Full papers submission deadline: 14 March 2022</li><li>Full papers acceptance notification: 13 May 2022</li><li>Short presentations submission deadline: 23 May 2022</li><li>Short presentations acceptance notification: 6 June 2022</li><li>Final version of full papers and short presentations due: 13 June 2022</li><li><strong>Registration&nbsp;deadline:&nbsp;10&nbsp;August&nbsp;2022</strong></li><li>Conference: 22 August — 25 August 2022 (followed by LAMAS&amp;SR 25 August — 26 August)</li></ul>
-
-
-
-<h2 id="invited-speakers">Invited speakers</h2>
-
-
-
-<div class="wp-block-columns has-2-columns">
-<div class="wp-block-column">
-<div class="wp-block-image"><figure class="aligncenter"><img width="1024" height="800" src="https://aiml2022.irisa.fr/files/2021/10/WesleyHolliday-1024x800.jpeg" alt="" class="wp-image-110" srcset="https://aiml2022.irisa.fr/files/2021/10/WesleyHolliday-1024x800.jpeg 1024w, https://aiml2022.irisa.fr/files/2021/10/WesleyHolliday-300x234.jpeg 300w, https://aiml2022.irisa.fr/files/2021/10/WesleyHolliday-768x600.jpeg 768w, https://aiml2022.irisa.fr/files/2021/10/WesleyHolliday-150x117.jpeg 150w, https://aiml2022.irisa.fr/files/2021/10/WesleyHolliday.jpeg 1280w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption><a href="https://sites.google.com/site/wesholliday/">Wesley Holliday</a></figcaption></figure></div>
 </div>
 
 
+<!-- =========================
+     NAVIGATION LINKS     
+============================== -->
+<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
+	<div class="container">
 
-<div class="wp-block-column">
-<p style="text-align:left">Wesley H. Holliday is Professor of Philosophy and Chair of the Group in Logic and the Methodology of Science at the University of California, Berkeley. He earned his PhD from Stanford University in 2012, working under the supervision of Johan van Benthem and Krista Lawlor. His dissertation on epistemic logic won the E. W. Beth Dissertation Prize in 2013. At Berkeley he has worked mainly on modal and nonclassical logic, logic and natural language, logic and probability, and logic and social choice theory. Some of his papers on modal logic have appeared in AiML 2010, 2012, 2014, 2016, 2018, and 2020.<br><br><strong>Invited&nbsp;talk&nbsp;AiML 2022&nbsp;:</strong>  <br><a href="https://aiml2022.irisa.fr/files/2022/07/wesley-h-holliday-talk-aiml2022.pdf">Non-classical modal logic for natural language</a></p>
-</div>
-</div>
-
-
-
-<div class="wp-block-columns has-2-columns">
-<div class="wp-block-column">
-<div class="wp-block-image"><figure class="aligncenter"><img loading="lazy" width="836" height="627" src="https://aiml2022.irisa.fr/files/2021/10/FrancescaPoggiolesi.jpg" alt="" class="wp-image-112" srcset="https://aiml2022.irisa.fr/files/2021/10/FrancescaPoggiolesi.jpg 836w, https://aiml2022.irisa.fr/files/2021/10/FrancescaPoggiolesi-300x225.jpg 300w, https://aiml2022.irisa.fr/files/2021/10/FrancescaPoggiolesi-768x576.jpg 768w, https://aiml2022.irisa.fr/files/2021/10/FrancescaPoggiolesi-150x113.jpg 150w" sizes="(max-width: 836px) 100vw, 836px"><figcaption><a href="https://sites.google.com/site/poggiolesi/home">Francesca Poggiolesi</a></figcaption></figure></div>
-</div>
-
-
-
-<div class="wp-block-column">
-<p style="text-align:left">I obtained my PhD in Philosophy from the University of Florence, Italy and the University of Paris 1 Panthéon-Sorbonne, France. Before joining the IHPST UMR 8590, CNRS, where I have been a permanent member since 2015, I have held research and teaching positions at the VUB, Belgium and Aix-Marseille University. I have been actively working on the proof theory for modal logic for almost ten years. More recently I have moved my interests to more philosophical notions such as grounding or explanations; I use the techniques of proof theory to attempt to provide a rigorous account of these concepts.<br><br><strong>Invited&nbsp;talk AiML 2022&nbsp;:</strong><br><a rel="noreferrer noopener" aria-label="Explanations in Logic (opens in a new tab)" href="https://aiml2022.irisa.fr/files/2022/07/francesca-poggiolesi-talk-aiml2022.pdf" target="_blank">Explanations in Logic</a></p>
-</div>
-</div>
-
-
-
-<div class="wp-block-columns has-2-columns">
-<div class="wp-block-column">
-<div class="wp-block-image"><figure class="aligncenter"><img loading="lazy" width="1024" height="1024" src="https://aiml2022.irisa.fr/files/2021/10/WillemConradie-1024x1024.jpg" alt="" class="wp-image-109" srcset="https://aiml2022.irisa.fr/files/2021/10/WillemConradie-1024x1024.jpg 1024w, https://aiml2022.irisa.fr/files/2021/10/WillemConradie-150x150.jpg 150w, https://aiml2022.irisa.fr/files/2021/10/WillemConradie-300x300.jpg 300w, https://aiml2022.irisa.fr/files/2021/10/WillemConradie-768x768.jpg 768w, https://aiml2022.irisa.fr/files/2021/10/WillemConradie.jpg 1632w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption><a href="https://sites.google.com/site/willemconradie/">Willem Conradie</a></figcaption></figure></div>
-</div>
-
-
-
-<div class="wp-block-column">
-<p style="text-align:left">Willem Conradie is a professor in the School of Mathematics at the<br> University of the Witwatersrand (WITS), South Africa, where is also Assistant Dean for Teaching and Learning in the Faculty of  Science. Previously he was an associate professor and head of  department at the University of Johannesburg. After completing the  Master of Logic programme at the ILLC in 2002, he received a PhD in  Mathematics from WITS in 2007 under the supervision of Valentin Goranko. His main research  interests are in non-classical logics and their applications, on which he publishes regularly, with some recent contributions addressing the correspondence theory for non-distributive modal logics, new polarity and graph-based semantic for non-distributive modal logics suitable for interpretations of  these formalisms as logics of categorisation systems or as hyper-constructivists logics of informational entropy and evidential reasoning, as well as new algebraic semantics for hybrid logics. Conradie has co-authored the book “Logic and Discrete Mathematics: A Concise Introduction” published by Wiley UK. He serves on the council of the South African Mathematical Society, the council of the Association for Symbolic Logic and on the South African Mathematics Olympiad committee.<br><br><strong>Invited&nbsp;talk&nbsp;AiML&nbsp;2022&nbsp;:</strong>  <br><a href="https://aiml2022.irisa.fr/files/2022/07/willem-conradie-talk-aiml2022.pdf">On parametric phenomena in correspondence theory</a></p>
-</div>
-</div>
-
-
-
-<div class="wp-block-columns has-2-columns">
-<div class="wp-block-column">
-<div class="wp-block-image"><figure class="aligncenter"><img loading="lazy" width="1024" height="754" src="https://aiml2022.irisa.fr/files/2021/10/RinekeVerbrugge-1024x754.jpeg" alt="" class="wp-image-111" srcset="https://aiml2022.irisa.fr/files/2021/10/RinekeVerbrugge-1024x754.jpeg 1024w, https://aiml2022.irisa.fr/files/2021/10/RinekeVerbrugge-300x221.jpeg 300w, https://aiml2022.irisa.fr/files/2021/10/RinekeVerbrugge-768x566.jpeg 768w, https://aiml2022.irisa.fr/files/2021/10/RinekeVerbrugge-150x110.jpeg 150w, https://aiml2022.irisa.fr/files/2021/10/RinekeVerbrugge.jpeg 1393w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption><a href="https://rinekeverbrugge.nl/">Rineke Verbrugge</a></figcaption></figure></div>
-</div>
-
-
-
-<div class="wp-block-column">
-<p style="text-align:left">Rineke Verbrugge is a pioneer in building bridges between logic and cognitive science. She holds the chair of Logic and Cognition at the University of Groningen’s Bernoulli Institute of Mathematics, Computer Science and Artificial Intelligence. Verbrugge’s research spans an area covering provability logic, teamwork in multi-agent environments, and social cognition.  Since her PhD on logic and the foundations of mathematics at the University of Amsterdam in 1993, Verbrugge has published more than 170 peer-reviewed international publications and a monograph, Teamwork in Multi-Agent Systems, with Barbara Dunin-Kęplicz. Verbrugge has led the NWO Vici-project “Cognitive systems in interaction: Logical and computational models of higher-order social cognition”. She is one of the six principal investigators of the Gravitation project “Hybrid Intelligence: Augmenting Human Intellect” that runs in the Netherlands in 2020-2030. Verbrugge is associate editor of the Journal of Logic, Language and Information and has been program (co-)chair of several workshops and conferences, including AiML 2020 and TARK 2023, as well as chair of the Dutch Association for Logic. Since 2021, Verbrugge is an elected member of the Royal Netherlands Academy of Sciences (KNAW).<br><br><strong>Joint invited&nbsp;talk&nbsp;AiML &amp;&nbsp;LAMAS&amp;SR&nbsp;2022&nbsp;</strong>:  <br><a href="https://aiml2022.irisa.fr/files/2022/07/rineke-verbrugge-talk-aiml2022-lamassr2022.pdf">Not the sky, but the third floor is the limit: Zero-one laws for provability logic, S4, and K4</a></p>
-</div>
-</div>
-
-
-
-<h2 id="contact-us">Contact us</h2>
-
-
-
-<p>Contact is not available any more.<br></p>
-
-
-<div role="form" class="wpcf7" id="wpcf7-f199-p4-o1" lang="en-US" dir="ltr">
-<div class="screen-reader-response"></div>
-<form action="/#wpcf7-f199-p4-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-<div style="display: none;">
-<input type="hidden" name="_wpcf7" value="199">
-<input type="hidden" name="_wpcf7_version" value="5.1.7">
-<input type="hidden" name="_wpcf7_locale" value="en_US">
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f199-p4-o1">
-<input type="hidden" name="_wpcf7_container_post" value="4">
-</div>
-<p><label> Your Name (required)<br>
-    <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span> </label></p>
-<p><label> Your Email (required)<br>
-    <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"></span> </label></p>
-<p><label> Subject<br>
-    <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false"></span> </label></p>
-<p><label> Your message<br>
-    <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </label></p>
-<p><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit"><span class="ajax-loader"></span></p>
-<div class="wpcf7-response-output wpcf7-display-none"></div></form></div>
-
-
-
-<h2>Sponsors</h2>
-
-
-
-<div class="wp-block-columns has-3-columns sponsor-column">
-<div class="wp-block-column">
-<div class="wp-block-image"><figure class="aligncenter"><a href="https://www.univ-rennes1.fr/" target="_blank" rel="noreferrer noopener"><img loading="lazy" width="1000" height="505" src="https://aiml2022.irisa.fr/files/2022/05/323739_UR1-gris-PNG.png" alt="" class="wp-image-362" srcset="https://aiml2022.irisa.fr/files/2022/05/323739_UR1-gris-PNG.png 1000w, https://aiml2022.irisa.fr/files/2022/05/323739_UR1-gris-PNG-300x152.png 300w, https://aiml2022.irisa.fr/files/2022/05/323739_UR1-gris-PNG-768x388.png 768w, https://aiml2022.irisa.fr/files/2022/05/323739_UR1-gris-PNG-150x76.png 150w" sizes="(max-width: 1000px) 100vw, 1000px"></a></figure></div>
-</div>
-
-
-
-<div class="wp-block-column">
-<div class="wp-block-image"><figure class="aligncenter"><a href="https://www.irisa.fr/" target="_blank" rel="noreferrer noopener"><img loading="lazy" width="346" height="78" src="https://aiml2022.irisa.fr/files/2022/05/logoIRISA.png" alt="" class="wp-image-433" srcset="https://aiml2022.irisa.fr/files/2022/05/logoIRISA.png 346w, https://aiml2022.irisa.fr/files/2022/05/logoIRISA-300x68.png 300w, https://aiml2022.irisa.fr/files/2022/05/logoIRISA-150x34.png 150w" sizes="(max-width: 346px) 100vw, 346px"></a></figure></div>
-</div>
-
-
-
-<div class="wp-block-column">
-<div class="wp-block-image"><figure class="aligncenter"><a href="https://www.inria.fr" target="_blank" rel="noreferrer noopener"><img loading="lazy" width="784" height="283" src="https://aiml2022.irisa.fr/files/2022/05/inria_logo_rouge_cmjn.png" alt="" class="wp-image-431" srcset="https://aiml2022.irisa.fr/files/2022/05/inria_logo_rouge_cmjn.png 784w, https://aiml2022.irisa.fr/files/2022/05/inria_logo_rouge_cmjn-300x108.png 300w, https://aiml2022.irisa.fr/files/2022/05/inria_logo_rouge_cmjn-768x277.png 768w, https://aiml2022.irisa.fr/files/2022/05/inria_logo_rouge_cmjn-150x54.png 150w" sizes="(max-width: 784px) 100vw, 784px"></a></figure></div>
-</div>
-</div>
-
-
-
-<div class="wp-block-columns has-3-columns sponsor-column">
-<div class="wp-block-column">
-<div class="wp-block-image"><figure class="aligncenter"><a href="https://fondation.univ-rennes1.fr/" target="_blank" rel="noreferrer noopener"><img loading="lazy" width="600" height="338" src="https://aiml2022.irisa.fr/files/2022/05/logo-Fondation-Rennes1-couleur-baseline.png" alt="" class="wp-image-365" srcset="https://aiml2022.irisa.fr/files/2022/05/logo-Fondation-Rennes1-couleur-baseline.png 600w, https://aiml2022.irisa.fr/files/2022/05/logo-Fondation-Rennes1-couleur-baseline-300x169.png 300w, https://aiml2022.irisa.fr/files/2022/05/logo-Fondation-Rennes1-couleur-baseline-150x85.png 150w" sizes="(max-width: 600px) 100vw, 600px"></a></figure></div>
-</div>
-
-
-
-<div class="wp-block-column">
-<div class="wp-block-image"><figure class="aligncenter"><a href="https://www.mdpi.com/journal/games" target="_blank" rel="noreferrer noopener"><img loading="lazy" width="931" height="292" src="https://aiml2022.irisa.fr/files/2022/05/Games_Logo-01.png" alt="" class="wp-image-363" srcset="https://aiml2022.irisa.fr/files/2022/05/Games_Logo-01.png 931w, https://aiml2022.irisa.fr/files/2022/05/Games_Logo-01-300x94.png 300w, https://aiml2022.irisa.fr/files/2022/05/Games_Logo-01-768x241.png 768w, https://aiml2022.irisa.fr/files/2022/05/Games_Logo-01-150x47.png 150w" sizes="(max-width: 931px) 100vw, 931px"></a></figure></div>
-</div>
-
-
-
-<div class="wp-block-column">
-<div class="wp-block-image"><figure class="aligncenter"><a href="http://www.irisa.fr/equipes/logica" target="_blank" rel="noreferrer noopener"><img loading="lazy" width="336" height="104" src="https://aiml2022.irisa.fr/files/2022/05/logo-logica.png" alt="" class="wp-image-469" srcset="https://aiml2022.irisa.fr/files/2022/05/logo-logica.png 336w, https://aiml2022.irisa.fr/files/2022/05/logo-logica-300x93.png 300w, https://aiml2022.irisa.fr/files/2022/05/logo-logica-150x46.png 150w" sizes="(max-width: 336px) 100vw, 336px"></a></figure></div>
-</div>
-</div>
-
-
-
-<div class="wp-block-columns has-3-columns sponsor-column">
-<div class="wp-block-column">
-<figure class="wp-block-image"><a href="https://metropole.rennes.fr/" target="_blank" rel="noreferrer noopener"><img loading="lazy" width="591" height="236" src="https://aiml2022.irisa.fr/files/2022/05/RM_quadriNOIR.png" alt="" class="wp-image-434" srcset="https://aiml2022.irisa.fr/files/2022/05/RM_quadriNOIR.png 591w, https://aiml2022.irisa.fr/files/2022/05/RM_quadriNOIR-300x120.png 300w, https://aiml2022.irisa.fr/files/2022/05/RM_quadriNOIR-150x60.png 150w" sizes="(max-width: 591px) 100vw, 591px"></a></figure>
-</div>
-
-
-
-<div class="wp-block-column">
-<div class="wp-block-image"><figure class="aligncenter"><a href="https://www.bretagne.bzh/" target="_blank" rel="noreferrer noopener"><img loading="lazy" width="113" height="114" src="https://aiml2022.irisa.fr/files/2022/05/logo.jpeg" alt="" class="wp-image-432"></a></figure></div>
-</div>
-
-
-
-<div class="wp-block-column">
-<div class="wp-block-image"><figure class="aligncenter"><a href="https://mitsubishielectric.com/" target="_blank" rel="noreferrer noopener"><img loading="lazy" width="500" height="337" src="https://aiml2022.irisa.fr/files/2022/05/mitsu_logo_01.png" alt="" class="wp-image-367" srcset="https://aiml2022.irisa.fr/files/2022/05/mitsu_logo_01.png 500w, https://aiml2022.irisa.fr/files/2022/05/mitsu_logo_01-300x202.png 300w, https://aiml2022.irisa.fr/files/2022/05/mitsu_logo_01-150x101.png 150w" sizes="(max-width: 500px) 100vw, 500px"></a></figure></div>
-</div>
-</div>
-				<div style="clear:both;"></div>
-											</div><!-- .entry-content -->
-		</div><!-- #post-## -->
-
-	<div id="comments" class="hideme"> 		<p class="nocomments">Comments are closed.</p>
-	</div><!-- #comments -->
-
-						</div><!-- #content -->
-					<div id="primary" class="widget-area sidey" role="complementary">
-		
-			<ul class="xoxo">
-								<li id="text-3" class="widget-container widget_text"><h3 class="widget-title"><span>AiML 2022</span></h3>			<div class="textwidget"></div>
-		</li><li id="nav_menu-3" class="widget-container widget_nav_menu"><div class="menu-navigation-container"><ul id="menu-navigation" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-90"><a href="https://aiml2022.irisa.fr/#home" aria-current="page">Home</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-92"><a href="https://aiml2022.irisa.fr/#important-dates" aria-current="page">Important dates</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-93"><a href="https://aiml2022.irisa.fr/#invited-speakers" aria-current="page">Invited speakers</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-539"><a href="https://aiml2022.irisa.fr/accepted-papers/">Accepted papers</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-94"><a href="https://aiml2022.irisa.fr/call-for-papers/">Call for papers</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-95"><a href="https://aiml2022.irisa.fr/registration/">Registration</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96"><a href="https://aiml2022.irisa.fr/program/">Program</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-97"><a href="https://aiml2022.irisa.fr/local-information/">Local information</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-98"><a href="https://aiml2022.irisa.fr/#contact-us" aria-current="page">Contact us</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-426"><a href="https://lamassr.github.io/">LAMAS&amp;SR 2022</a></li>
-<li class="qtranxs-lang-menu qtranxs-lang-menu-en menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-253"><a title="English" href="#">Language:&nbsp;<img class="qtranxs-flag" src="https://project.inria.fr/aiml2022/wp-content/plugins/qtranslate-xt-3.12.1/flags/gb.png" alt="English"></a>
-<ul class="sub-menu">
-	<li class="qtranxs-lang-menu-item qtranxs-lang-menu-item-en menu-item menu-item-type-custom menu-item-object-custom menu-item-540"><a title="English" href="https://aiml2022.irisa.fr/en/"><img class="qtranxs-flag" src="https://project.inria.fr/aiml2022/wp-content/plugins/qtranslate-xt-3.12.1/flags/gb.png" alt="English">&nbsp;English</a></li>
-	<li class="qtranxs-lang-menu-item qtranxs-lang-menu-item-fr menu-item menu-item-type-custom menu-item-object-custom menu-item-541"><a title="Français" href="https://aiml2022.irisa.fr/fr/"><img class="qtranxs-flag" src="https://project.inria.fr/aiml2022/wp-content/plugins/qtranslate-xt-3.12.1/flags/fr.png" alt="Français">&nbsp;Français</a></li>
-</ul>
-</li>
-</ul></div></li>			</ul>
-
-			
+		<!-- navbar header -->
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand">AiML 2024</a>
 		</div>
 
-		</section><!-- #container -->
+		<div class="collapse navbar-collapse">
 
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#intro" class="smoothScroll">Home</a></li>
+				<li><a href="#dates" class="smoothScroll">Important dates</a></li>
+				<li><a href="#speakers" class="smoothScroll">Invited speakers</a></li>
+				<li><a href="#committees" class="smoothScroll">Committees</a></li>
+				<!--<li><a href="#program" class="smoothScroll">Program</a></li>-->
+				<li><a href="#local" class="smoothScroll">Local information</a></li>
+				<li><a href="#submit" class="smoothScroll">Submissions</a></li>
+				<li><a href="#accepted-papers" class="smoothScroll">Accepted Papers</a></li>
+				<li><a href="#register" class="smoothScroll">Registration</a></li>
+				<li><a href="#sponsors" class="smoothScroll">Sponsors</a></li>
+			</ul>
 
-	<div style="clear:both;"></div>
-	</div> <!-- #forbottom -->
-
-	<footer id="footer" role="contentinfo">
-		<div id="colophon">
-		
-			
-			
-		</div><!-- #colophon -->
-
-		<div id="footer2">
-		
-			<div id="footer2-inside">
-				<em style="display:table;margin:0 auto;float:none;text-align:center;padding:7px 0;font-size:13px;">
-	Powered by <a target="_blank" href="http://www.cryoutcreations.eu" title="Nirvana Theme by Cryout Creations">Nirvana</a> &amp;
-	<a target="_blank" href="http://wordpress.org/" title="Semantic Personal Publishing Platform">  WordPress.</a></em>
-		<em style="display:table;margin:0 auto;float:none;text-align:center;padding:7px 0;font-size:13px;"><a target="_blank" href="https://iww.inria.fr/mentionslegales/" title="Mentions légales">Mentions légales</a> &amp; <a target="_blank" href="https://iww.inria.fr/mentionslegales/CGU/" title="CGU">CGU</a> &amp; <a target="_blank" href="https://iww.inria.fr/mentionslegales/politique-de-confidentialite/" title="Politique de confidentialité">Politique de confidentialité</a> &amp; <a target="_blank" href="https://iww.inria.fr/mentionslegales/cookies/" title="Cookies">Cookies</a></em>
-			</div> <!-- #footer2-inside -->
-			
-		</div><!-- #footer2 -->
-
-	</footer><!-- #footer -->
-
-	</div><!-- #main -->
-</div><!-- #wrapper -->
-
-
-  <!--copyscapeskip-->
-  <aside id="moove_gdpr_cookie_info_bar" class="moove-gdpr-info-bar-hidden moove-gdpr-align-center moove-gdpr-dark-scheme gdpr_infobar_postion_bottom" aria-label="GDPR Cookie Banner" style="display: none;">
-    <div class="moove-gdpr-info-bar-container">
-      <div class="moove-gdpr-info-bar-content">
-        
-<div class="moove-gdpr-cookie-notice">
-  <p>We are using cookies to give you the best experience on our website.</p><p>You can find out more about which cookies we are using or switch them off in <span data-href="#moove_gdpr_cookie_modal" class="change-settings-button">settings</span>.</p></div>
-<!--  .moove-gdpr-cookie-notice -->        
-<div class="moove-gdpr-button-holder">
-		  <button class="mgbutton moove-gdpr-infobar-allow-all gdpr-fbo-0" aria-label="Accept" role="button">Accept</button>
-	  </div>
-<!--  .button-container -->      </div>
-      <!-- moove-gdpr-info-bar-content -->
-    </div>
-    <!-- moove-gdpr-info-bar-container -->
-  </aside>
-  <!-- #moove_gdpr_cookie_info_bar -->
-  <!--/copyscapeskip-->
-<script type="text/javascript" id="contact-form-7-js-extra">
-/* <![CDATA[ */
-var wpcf7 = {"apiSettings":{"root":"https:\/\/aiml2022.irisa.fr\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://aiml2022.irisa.fr/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.7" id="contact-form-7-js"></script>
-<script type="text/javascript" id="nirvana-frontend-js-extra">
-/* <![CDATA[ */
-var nirvana_settings = {"mobile":"1","fitvids":"1","contentwidth":"1100"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://aiml2022.irisa.fr/wp-content/themes/nirvana/js/frontend.js?ver=1.6.2" id="nirvana-frontend-js"></script>
-<script type="text/javascript" src="https://aiml2022.irisa.fr/wp-includes/js/comment-reply.min.js?ver=5.9.7" id="comment-reply-js"></script>
-<script type="text/javascript" id="moove_gdpr_frontend-js-extra">
-/* <![CDATA[ */
-var moove_frontend_gdpr_scripts = {"ajaxurl":"https:\/\/aiml2022.irisa.fr\/wp-admin\/admin-ajax.php","post_id":"4","plugin_dir":"https:\/\/aiml2022.irisa.fr\/wp-content\/plugins\/gdpr-cookie-compliance","show_icons":"all","is_page":"1","ajax_cookie_removal":"true","strict_init":"1","enabled_default":{"third_party":0,"advanced":0},"geo_location":"false","force_reload":"false","is_single":"","hide_save_btn":"false","current_user":"0","cookie_expiration":"365","script_delay":"2000","close_btn_action":"1","close_btn_rdr":"","scripts_defined":"{\"cache\":true,\"header\":\"\",\"body\":\"\",\"footer\":\"\",\"thirdparty\":{\"header\":\"\",\"body\":\"\",\"footer\":\"\"},\"advanced\":{\"header\":\"\",\"body\":\"\",\"footer\":\"\"}}","gdpr_scor":"true","wp_lang":"en"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://aiml2022.irisa.fr/wp-content/plugins/gdpr-cookie-compliance/dist/scripts/main.js?ver=4.12.3" id="moove_gdpr_frontend-js"></script>
-<script type="text/javascript" id="moove_gdpr_frontend-js-after">
-var gdpr_consent__strict = "false"
-var gdpr_consent__thirdparty = "false"
-var gdpr_consent__advanced = "false"
-var gdpr_consent__cookies = ""
-</script>
-<script type="text/javascript" src="https://aiml2022.irisa.fr/wp-content/plugins/gutenberg/vendor/wp-polyfill.min.2ae96136.js" id="wp-polyfill-js"></script>
-<script type="text/javascript" id="wp-polyfill-js-after">
-( 'fetch' in window ) || document.write( '<script src="https://aiml2022.irisa.fr/wp-content/plugins/gutenberg/vendor/wp-polyfill-fetch.fabf21df.js"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://aiml2022.irisa.fr/wp-content/plugins/gutenberg/vendor/wp-polyfill-node-contains.7f2562fb.js"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://aiml2022.irisa.fr/wp-content/plugins/gutenberg/vendor/wp-polyfill-formdata.min.97f5e75c.js"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://aiml2022.irisa.fr/wp-content/plugins/gutenberg/vendor/wp-polyfill-element-closest.bfe1f8a5.js"></scr' + 'ipt>' );
-</script>
-<script type="text/javascript" src="https://aiml2022.irisa.fr/wp-content/plugins/gutenberg/build/dom-ready/index.js?ver=1548230908" id="wp-dom-ready-js"></script>
-<script type="text/javascript" src="https://aiml2022.irisa.fr/wp-content/plugins/gutenberg/build/a11y/index.js?ver=1548230908" id="wp-a11y-js"></script>
-<script type="text/javascript" id="mc.mcjs-js-extra">
-/* <![CDATA[ */
-var my_calendar = {"grid":"true","list":"true","mini":"true","ajax":"true","links":"true","newWindow":"New tab"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://aiml2022.irisa.fr/wp-content/plugins/my-calendar/js/mcjs.min.js?ver=3.4.15" id="mc.mcjs-js"></script>
-
-    
-  <!--copyscapeskip-->
-  <!-- V1 -->
-  <div id="moove_gdpr_cookie_modal" class="gdpr_lightbox-hide" role="complementary" aria-label="GDPR Settings Screen">
-    <div class="moove-gdpr-modal-content moove-clearfix logo-position-left moove_gdpr_modal_theme_v1">
-          
-        <button class="moove-gdpr-modal-close" aria-label="Close GDPR Cookie Settings">
-          <span class="gdpr-sr-only">Close GDPR Cookie Settings</span>
-          <span class="gdpr-icon moovegdpr-arrow-close"></span>
-        </button>
-            <div class="moove-gdpr-modal-left-content">
-        
-<div class="moove-gdpr-company-logo-holder">
-  <img src="https://aiml2022.irisa.fr/wp-content/plugins/gdpr-cookie-compliance/dist/images/gdpr-logo.png" alt="AiML 2022" width="350" height="233" class="img-responsive">
-</div>
-<!--  .moove-gdpr-company-logo-holder -->        <ul id="moove-gdpr-menu">
-          
-<li class="menu-item-on menu-item-privacy_overview menu-item-selected">
-  <button data-href="#privacy_overview" class="moove-gdpr-tab-nav" aria-label="Privacy Overview">
-    <span class="gdpr-nav-tab-title">Privacy Overview</span>
-  </button>
-</li>
-
-  <li class="menu-item-strict-necessary-cookies menu-item-off">
-    <button data-href="#strict-necessary-cookies" class="moove-gdpr-tab-nav" aria-label="Strictly Necessary Cookies">
-      <span class="gdpr-nav-tab-title">Strictly Necessary Cookies</span>
-    </button>
-  </li>
-
-
-
-
-        </ul>
-        
-<div class="moove-gdpr-branding-cnt">
-  		<a href="https://wordpress.org/plugins/gdpr-cookie-compliance/" rel="noopener noreferrer" target="_blank" class="moove-gdpr-branding">Powered by&nbsp; <span>GDPR Cookie Compliance</span></a>
 		</div>
-<!--  .moove-gdpr-branding -->      </div>
-      <!--  .moove-gdpr-modal-left-content -->
-      <div class="moove-gdpr-modal-right-content">
-        <div class="moove-gdpr-modal-title">
-           
-        </div>
-        <!-- .moove-gdpr-modal-ritle -->
-        <div class="main-modal-content">
 
-          <div class="moove-gdpr-tab-content">
-            
-<div id="privacy_overview" class="moove-gdpr-tab-main">
-      <span class="tab-title">Privacy Overview</span>
-    <div class="moove-gdpr-tab-main-content">
-  	<p>This website uses cookies so that we can provide you with the best user experience possible. Cookie information is stored in your browser and performs functions such as recognising you when you return to our website and helping our team to understand which sections of the website you find most interesting and useful.</p>
-  	  </div>
-  <!--  .moove-gdpr-tab-main-content -->
-
+	</div>
 </div>
-<!-- #privacy_overview -->            
-  <div id="strict-necessary-cookies" class="moove-gdpr-tab-main" style="display:none">
-    <span class="tab-title">Strictly Necessary Cookies</span>
-    <div class="moove-gdpr-tab-main-content">
-      <p>Strictly Necessary Cookie should be enabled at all times so that we can save your preferences for cookie settings.</p>
-      <div class="moove-gdpr-status-bar ">
-        <div class="gdpr-cc-form-wrap">
-          <div class="gdpr-cc-form-fieldset">
-            <label class="cookie-switch" for="moove_gdpr_strict_cookies">    
-              <span class="gdpr-sr-only">Enable or Disable Cookies</span>        
-              <input type="checkbox" aria-label="Strictly Necessary Cookies" value="check" name="moove_gdpr_strict_cookies" id="moove_gdpr_strict_cookies">
-              <span class="cookie-slider cookie-round" data-text-enable="Enabled" data-text-disabled="Disabled"></span>
-            </label>
-          </div>
-          <!-- .gdpr-cc-form-fieldset -->
-        </div>
-        <!-- .gdpr-cc-form-wrap -->
-      </div>
-      <!-- .moove-gdpr-status-bar -->
-              <div class="moove-gdpr-strict-warning-message" style="margin-top: 10px;">
-          <p>If you disable this cookie, we will not be able to save your preferences. This means that every time you visit this website you will need to enable or disable cookies again.</p>
-        </div>
-        <!--  .moove-gdpr-tab-main-content -->
-                                              
-    </div>
-    <!--  .moove-gdpr-tab-main-content -->
-  </div>
-  <!-- #strict-necesarry-cookies -->
-            
-            
-            
-          </div>
-          <!--  .moove-gdpr-tab-content -->
-        </div>
-        <!--  .main-modal-content -->
-        <div class="moove-gdpr-modal-footer-content">
-          <div class="moove-gdpr-button-holder">
-			  		<button class="mgbutton moove-gdpr-modal-allow-all button-visible" role="button" aria-label="Enable All">Enable All</button>
-		  					<button class="mgbutton moove-gdpr-modal-save-settings button-visible" role="button" aria-label="Save Settings">Save Settings</button>
+
+
+<!-- =========================
+    INTRO SECTION   
+============================== -->
+<section id="intro" class="parallax-section" style="background-position: 50% 0px;">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+				<h3 class="wow fadeInDown animated" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInDown;">19–23 August 2024 in Prague, The Czech Republic</h3>
+				<h1 class="wow fadeInUp animated" data-wow-delay="1.3s" style="visibility: visible; animation-delay: 1.3s; animation-name: fadeInUp;">Advances in Modal Logic 2024</h1>
+				<!--<a href="#overview" class="btn btn-lg btn-default smoothScroll wow fadeInUp hidden-xs" data-wow-delay="2.3s">LEARN MORE</a>
+				<a href="#register" class="btn btn-lg btn-danger smoothScroll wow fadeInUp" data-wow-delay="2.3s">REGISTER NOW</a>-->
+			</div>
+
+
+		</div>
+	</div>
+</section>
+
+<!-- =========================
+    ABOUT AND IMPORTANT DATES SECTION   
+============================== -->
+<section id="dates" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-6 col-sm-6"> <!-- class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.6s" -->
+			<h2>About AiML 2024</h2>
+
+			<p>
+			Advances in Modal Logic is an initiative aimed at presenting the state of the art in modal logic and its various applications. The initiative consists of a conference series together with volumes based on the conferences. Information about the AiML series can be obtained at <a target="_blank" href="http://www.aiml.net">http://www.aiml.net</a>.</p> 
+
+			<p>
+			AiML 2024 is organized by the <a target="_blank" href="https://www.cs.cas.cz/en">Institute of Computer Science of the Czech Academy of Sciences</a>, the <a target="_blank" href="https://www.flu.cas.cz/en/">Institute of Philosophy of the Czech Academy of Sciences</a> and the <a target="_blank" href="https://www.ff.cuni.cz/home/">Faculty of Arts of Charles University</a>.
+			</p> 
+
+			<p>
+			AiML 2024 is collocated with the 21st International Conference on Relational and Algebraic Methods in Computer Science (<a target="_blank" href="https://ramics-conf.github.io/2024/">RAMiCS 2024</a>).
+			</p>
+
+			<p>The full call for papers can be found <a href="cfp.html">here</a>.</p>
+
+			</div>
+
+			<div class="col-md-6 col-sm-6">  <!-- class="wow fadeInRight col-md-6 col-sm-6" data-wow-delay="0.6s"-->
+				<h2>Important dates</h2>
+				<ul>
+					<li>Abstracts of full papers submission: <s>8 March</s> 15 March</li>
+					<li>Full papers submission: <s>15 March</s> 29 March</li>
+					<li>Full papers notification: 20 May</li>
+					<li>Short presentations submission: 30 May</li>
+					<li>Short presentations notification: 14 June</li>
+					<li>Final versions of full papers and short presentations: <b>21 June</b></li>
+					<li>Registration deadline: <b>23 July</b></li>
+					<li>Conference: 19–23 August 2024</li>
+				</ul>
+			</div>	
+		</div>
+	</div>		
+</section>
+<br>
+
+<!-- =========================
+    SPEAKERS SECTION   
+============================== -->
+<section id="speakers" class="parallax-section">
+	<div class="speaker-container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">  <!-- wow bounceIn -->
+				<div class="section-title">
+					<h2>Invited Speakers</h2>
+					
 				</div>
-<!--  .moove-gdpr-button-holder -->        </div>
-        <!--  .moove-gdpr-modal-footer-content -->
-      </div>
-      <!--  .moove-gdpr-modal-right-content -->
-
-      <div class="moove-clearfix"></div>
-
-    </div>
-    <!--  .moove-gdpr-modal-content -->
-  </div>
-  <!-- #moove_gdpr_cookie_modal -->
-  <!--/copyscapeskip-->
+			</div>
 
 
+			<div id="owl-speakers" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
 
-<div id="a11y-speak-polite" class="a11y-speak-region" style="position: absolute;margin: -1px;padding: 0;height: 1px;width: 1px;overflow: hidden;clip: rect(1px, 1px, 1px, 1px);-webkit-clip-path: inset(50%);clip-path: inset(50%);border: 0;word-wrap: normal !important;" aria-live="polite" aria-relevant="additions text" aria-atomic="true"></div><div id="a11y-speak-assertive" class="a11y-speak-region" style="position: absolute;margin: -1px;padding: 0;height: 1px;width: 1px;overflow: hidden;clip: rect(1px, 1px, 1px, 1px);-webkit-clip-path: inset(50%);clip-path: inset(50%);border: 0;word-wrap: normal !important;" aria-live="assertive" aria-relevant="additions text" aria-atomic="true"></div></body></html>
+				<div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 3880px; left: 0px; display: block;"><div class="owl-item" style="width: 485px;"><div class="item  speaker-items wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.9s" style="visibility: hidden; animation-delay: 0.9s; animation-name: none;">
+					<div class="speakers-wrapper">
+						<div class="image-background">
+						<img src="images/speaker-baltag-cropped.jpg" class="img-responsive speaker-img" alt="speakers">
+						</div>
+							<div class="speakers-thumb">
+								<a href="https://sites.google.com/site/thealexandrubaltagsite/"><h3>Alexandru Baltag</h3></a>
+								<h6>University of Amsterdam</h6>
+							</div>
+					</div>
+				</div></div><div class="owl-item" style="width: 485px;"><div class="item speaker-items wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.6s" style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
+					<div class="speakers-wrapper">
+						<div class="image-background">
+						<img src="images/speaker-bilkova.jpg" class="img-responsive speaker-img" alt="speakers"></div> <!-- old class: img-responsive--> 
+							<div class="speakers-thumb">
+								<a href="https://sites.google.com/view/martabilkova"><h3>Marta Bílková</h3></a>
+								<h6>Czech Academy of Sciences</h6>
+								
+							</div>
+					</div>
+				</div></div><div class="owl-item" style="width: 485px;"><div class="item speaker-items wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.9s" style="visibility: hidden; animation-delay: 0.9s; animation-name: none;">
+					<div class="speakers-wrapper">
+						<div class="image-background">
+						<img src="images/speaker-david.jpg" class="img-responsive speaker-img" alt="speakers"></div>
+							<div class="speakers-thumb">
+								<a href="https://users.ugent.be/~dfernnde/"><h3>David Fernández-Duque</h3></a>
+								<h6>University of Barcelona
+								</h6>
+								
+							</div>
+					</div>
+				</div></div><div class="owl-item" style="width: 485px;"><div class="item speaker-items wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.6s" style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
+					<div class="speakers-wrapper">
+						<div class="image-background">
+						<img src="images/speaker-nalon-cr.png" class="img-responsive speaker-img" alt="speakers"></div>
+							<div class="speakers-thumb">
+								<a href="https://nalon.org/"><h3>Claudia Nalon</h3></a>
+								<h6>University of Brasília</h6>
+								
+							</div>
+					</div>
+				</div></div></div></div>
+
+				
+
+				
+
+				<!--
+				<div class="item wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.6s">
+					<div class="speakers-wrapper">
+						<img src="images/speaker-helle.png" class="img-responsive" alt="speakers">
+							<div class="speakers-thumb">
+								<h3>Helle Hvid Hansen</h3>
+								<h6>University of Groningen</h6>
+								<a href="https://research.rug.nl/en/persons/helle-hvid-hansen">Website</a>
+							</div>
+					</div>
+				</div>-->
+
+				
+			
+				
+			<div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div></div></div>
+		
+
+		</div>
+	</div>
+</section>
+
+
+
+<!-- =========================
+    COMMITTEES SECTION   
+============================== -->
+<section id="committees" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-6 col-sm-6"> <!-- wow fadeInUp data-wow-delay="0.6s"-->
+				<h2>Program Committee</h2>
+				<ul>
+					<li>Philippe Balbiani (Institut de Recherche en Informatique de Toulouse)</li>
+					<li>Lev	Beklemishev (Steklov Institute of Mathematics)</li>
+					<li>Nick Bezhanishvili (University of Amsterdam)</li>
+					<li>Agata Ciabattoni (TU Wien) <b>(chair)</b></li>
+					<li>Willem Conradie (University of the Witwatersrand)</li>
+					<li>Tommaso	Flaminio (IIIA–CSIC)</li>
+					<li>David Gabelaia  (TSU Razmadze Mathematical Institute) <b>(chair)</b></li>
+					<li>Silvio Ghilardi (University of Milan)</li>
+					<li>Nina Gierasimczuk (Technical University of Denmark)</li>
+					<li>Valentin Goranko (Stockholm University)</li>
+					<li>Rajeev Gore</li>
+					<li>Wesley Holliday	(University of California, Berkeley)</li>
+					<li>John Horty (University of Maryland)</li>
+					<li>Emil Jeřábek (Institute of Mathematics, Czech Academy of Sciences)</li>
+					<li>Clemens	Kupke (University of Strathclyde)</li>
+					<li>Agi	Kurucz (King's College London)</li>
+					<li>Roman Kuznets (TU Wien)</li>
+					<li>Emiliano Lorini	(Institut de Recherche en Informatique de Toulouse)</li>
+					<li>Tim	Lyon (Technische Universität Dresden)</li>
+					<li>Tommaso	Moraschini (University of Barcelona)</li>
+					<li>Larry Moss (Indiana University Bloomington)</li>
+					<li>Sara Negri (University of Genova)</li>
+					<li>Nicola Olivetti (Aix-Marseille Université)</li>
+					<li>Alessandra Palmigiano (VU Amsterdam)</li>
+					<li>Xavier Parent (TU Wien)</li>
+					<li>Elaine Pimentel	(UCL)</li>
+					<li>Vít Punčochář (Institute of Philosophy, Czech Academy of Sciences)</li>
+					<li>Revantha Ramanayake	(University of Groningen)</li>
+					<li>Renate A. Schmidt (The University of Manchester)</li>
+					<li>Igor Sedlár	(Czech Academy of Sciences)</li>
+					<li>Ilya Shapirovsky (New Mexico State University)</li>
+					<li>Viorica	Sofronie-Stokkermans (University of Koblenz)</li>
+					<li>Balder Ten Cate	(ILLC, University of Amsterdam)</li>
+					<li>Hans van Ditmarsch (University of Toulouse, CNRS, IRIT)</li>
+					<li>Yde	Venema (University of Amsterdam)</li>
+					<li>Rineke Verbrugge (University of Groningen)</li>
+					<li>Heinrich Wansing (Ruhr University Bochum)</li>
+					<li>Frank Wolter (University of Liverpool)</li>
+				</ul>
+			</div>
+
+			<div class="col-md-6 col-sm-6"> <!-- wow fadeInLeft data-wow-delay="0.6s"-->
+				<h2>Organizing Committee</h2>
+					<ul>
+						<li>Olga Bažantová (Czech Academy of Sciences)</li>
+						<li>Marta Bílková (Czech Academy of Sciences)</li>
+						<li>Petr Cintula (Czech Academy of Sciences)</li>
+						<li>Wesley Fussner (Czech Academy of Sciences)</li>
+						<li>Zuzana Haniková (Czech Academy of Sciences)</li>
+						<li>Raheleh Jalali (Czech Academy of Sciences)</li>
+						<li>Filip Jankovec (Czech Academy of Sciences)</li>
+						<li>Vojtěch Kolman (Charles University)</li>
+						<li>Chun-Yu Lin (Czech Academy of Sciences)</li>
+						<li>Ondrej Majer (Czech Academy of Sciences)</li>
+						<li>Vít Punčochář (Czech Academy of Sciences)</li>
+						<li>Igor Sedlár (Czech Academy of Sciences) <b>(chair)</b></li>
+						<li>Hana Stříhavková (Czech Academy of Sciences)</li>
+					</ul>
+				<h2>Steering Committee</h2>	
+					(2024–2026)
+					<ul>
+						<li>Guram Bezhanishvili (New Mexico State University)</li>
+						<li>Agata Ciabattoni (TU Wien)</li>
+						<li>Giovanna D'Agostino (University of Udine)</li>
+						<li>David Fernández-Duque (University of Barcelona)</li>
+						<li>David Gabelaia (TSU Razmadze Mathematical Institute)</li>
+						<li>Nicola Olivetti (Aix-Marseille Université)</li>
+						<li>Alessandra Palmigiano (VU Amsterdam)</li>
+						<li>Igor Sedlár (Czech Academy of Sciences)</li>
+						<li>Rineke Verbrugge (University of Groningen)</li>
+					</ul>
+			</div>			
+		</div>
+	</div>
+</section>
+
+<br>
+
+<!-- =========================
+    LOCAL SECTION   
+============================== -->
+<section id="local" class="parallax-section" style="background-color: #f9f9f9;">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-6 col-sm-6">
+				<h2>Venue</h2>
+				<p>Faculty of Arts, Charles University. 116 38, Prague 1, The Czech Republic.</p>
+				<p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.8417533855354!2d14.4158186!3d50.089249599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e62ed95da3%3A0xc99ee4aec148c181!2sFaculty%20of%20Arts!5e0!3m2!1sen!2scz!4v1693931076010!5m2!1sen!2scz" width="500" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</p>
+			</div>
+
+			<div class="col-md-6 col-sm-6">
+				<h2>Local information</h2>
+
+				<p><b>Note:</b> Book your accommodation as soon as possible as August is high season in Prague.</p>
+
+				<p>The local organisation team can be contacted at <a href="mailto:aiml-ramics@cs.cas.cz">aiml-ramics@cs.cas.cz</a>.</p>
+
+				<p>More information to be announced soon.</p>
+				
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<!-- =========================
+    SUBMISSIONS SECTION   
+============================== -->
+
+<section id="submit" class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<h2>Submissions</h2>
+			 
+			<p>There will be two types of submissions for AiML 2024:
+				</p><ul style="list-style-type: none;">
+					<li>(1) Full papers for publication in the proceedings and presentation at the conference.</li>
+					<li>(2) Short presentations intended for presentation at the conference but not for the published proceedings.</li>
+				</ul>
+			<p></p>
+
+			<p>
+				Both types of papers should be 
+				<a href="https://easychair.org/conferences/?conf=aiml2024">submitted electronically using the EasyChair submission page</a> 
+				using the <a href="AiML_2024_template.zip" download="AiML_2024_template.zip">AiML LaTeX template</a>. 
+				For more information, please visit the <a href="cfp.html">full call for papers</a>.
+			</p>
+			
+
+			<p>
+				At least one author of each accepted paper or short presentation must register for and attend the conference.
+			</p>
+
+		</div>
+	</div>
+	
+</section>
+<br>
+
+<!-- =========================
+    SPEAKERS SECTION   
+============================== -->
+
+<section id="accepted-papers" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<h2>Accepted Papers</h2>
+
+			
+			<ul>
+				<li><b>Marta Bílková, Hans van Ditmarsch, Roman Kuznets and Rojo Randrianomentsoa:</b>	<em>Bisimulation for Impure Simplicial Complexes</em></li>
+<li><b>Yuanzhe Yang:</b>	<em>A First-order Modal Logic of Strict Implication on Varying-Domain Models</em></li>
+<li><b>Damian Fornasiere, Johannes Marti and Giovanni Varricchione:</b>	<em>Frame Definability in Conditional Logic</em></li>
+<li><b>Wesley Holliday:</b>	<em>Modal logic, fundamentally</em></li>
+<li><b>Philippe Balbiani and Hans van Ditmarsch:</b>	<em>Towards Dynamic Distributed Knowledge</em></li>
+<li><b>Agi Kurucz, Frank Wolter and Michael Zakharyaschev:</b>	<em>The Interpolant Existence Problem for Weak K4 and Difference Logic</em></li>
+<li><b>Mikhail Rybakov, Dmitry Shkatov and Dmitrij Skvortsov:</b>	<em>On the system of positive slices in the structure of  superintuitionistic predicate logics</em></li>
+<li><b>Line van den Berg, Manuela Busaniche, Miguel Marcos and George Metcalfe:</b>	<em>Towards an Algebraic Theory of KD45-like Logics</em></li>
+<li><b>Daniel Gaina:</b>	<em>Birkhoff style proof systems for hybrid-dynamic quantum logic</em></li>
+<li><b>Rustam Galimullin and Louwe B. Kuijer:</b>	<em>Varieties of Distributed Knowledge</em></li>
+<li><b>Borja Sierra Miranda, Thomas Studer and Lukas Zenger:</b>	<em>Coalgebraic proof translations of non-wellfounded proofs</em></li>
+<li><b>Juan Pablo Aguilera and Grigorii Stepanov:</b>	<em>Strong Kripke completeness of the closed fragment of GLP</em></li>
+<li><b>Rodrigo Nicolau Almeida and Silvio Ghilardi:</b>	<em>Unification with Simple Variable Restrictions and Admissibility of Pi2-Rules</em></li>
+<li><b>Rodrigo Nicolau Almeida and Nick Bezhanishvili:</b>	<em>Coalgebraic Semantics for Intuitionistic Modal Logic</em></li>
+<li><b>Alexandru Baltag and Sonja Smets:</b>	<em>Logics for Data Exchange and Communication</em></li>
+<li><b>Yifeng Ding and Yipu Li:</b>	<em>Some General Completeness Results for Propositionally Quantified Modal Logics</em></li>
+<li><b>Vít Punčochář and Ivo Pezlar:</b>	<em>Informative Presupposition in Inquisitive Logic</em></li>
+<li><b>Jesse Comer:</b>	<em>Lovász Theorems for Modal Languages</em></li>
+<li><b>Yiwen Ding, Krishna Manoorkar, Mattia Panettiere and Ruoding Wang:</b>	<em>Toward the van Benthem Characterization Theorem for Non-Distributive Modal Logic</em></li>
+<li><b>Thomas Bolander and Alessandro Burigana:</b>	<em>Better Bounded Bisimulation Contractions</em></li>
+<li><b>Sofía Santiago-Fernández, Joost Johannes Joosten and David Fernández:</b>	<em>A tree rewriting system for the Reflection Calculus</em></li>
+<li><b>Xinghan Liu and Emiliano Lorini:</b>	<em>The complexity of reasoning about classifiers</em></li>
+<li><b>Nick Bezhanishvili, David Fernandez Duque and Reihane Zoghifard:</b>	<em>The Goldblatt-Thomason theorem for derivative spaces</em></li>
+<li><b>Ahmee Christensen:</b>	<em>Logics of Knowability</em></li>
+<li><b>Valentin Müller:</b>	<em>Natural Deduction, Normalization and Subformula Property for Kreisel-Putnam Logic</em></li>
+<li><b>Dmitry Rozplokhas:</b>	<em>LEGO-like Small-Model Constructions for Åqvist’s Logics</em></li>
+<li><b>Yanjing Wang and Junhua Yu:</b>	<em>Point-Set Neighborhood Logic</em></li>
+<li><b>Guillaume Massas:</b>	<em>Goldblatt-Thomason Theorems for Fundamental (Modal) Logic</em></li>
+<li><b>Xuefeng Wen:</b>	<em>A modal logic for reasoning in contexts</em></li>
+<li><b>Laura Bussi, Nick Bezhanishvili, Vincenzo Ciancia, David Fernandez Duque and David Gabelaia:</b>	<em>Logics of polyhedral reachability</em></li>
+<li><b>Wolfgang Poiger:</b>	<em>Positive modal logic over finite MV-chains</em></li>
+<li><b>Lide Grotenhuis, Lukas Zenger, Bahareh Afshari and Graham Leigh:</b>	<em>Intuitionistic Master Modality</em></li>
+<li><b>Mojtaba Mojtahedi and Konstantinos Papafilippou:</b>	<em>Projectivity meets Uniform Post-Interpolant: Classical and Intuitionistic Logic</em></li>
+<li><b>Vitor Greati and Revantha Ramanayake:</b>	<em>Deducibility in the full Lambek calculus with weakening is HAck-complete</em></li>
+<li><b>Melissa Antonelli and Jan von Plato:</b>	<em>On the Proof Theory of Apodictic Syllogistic</em></li>
+			</ul>
+			
+		</div>
+		
+	</div>
+	<br>
+</section>
+
+
+
+
+<!-- =========================
+    REGISTRATION SECTION   
+============================== -->
+
+<section id="registration" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<h2>Registration</h2>
+
+			<p>The registration is now open. Please fill out the registration form here: <a target="_blank" href="https://form.jotform.com/241467306672055"><b> Registration Form</b></a>.</p>
+
+			<p>After submitting the registration form, you will receive an email with a payment link within a few minutes (unless you have registered as an invited speaker). The registration process is not complete until we have received your payment. We only accept online payments by debit/credit card. At least one author of each accepted paper or short presentation must register for and attend the conference.</p>
+
+			<p>Early registration closes at <b>26 June</b> (AoE). Registration closes at <b>23 July</b> (AoE).</p>
+			
+		</div>
+		
+	</div>
+	<br>
+</section>
+
+
+<!-- =========================
+    SPONSORS SECTION   
+============================== -->
+<section id="sponsors" class="parallax-section" style="background-color: #f9f9f9;">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12"> <!-- wow bounceIn -->
+				<div class="section-title">
+					<h2>Our sponsors</h2>
+					
+				</div>
+			</div>
+
+			
+			<div class="wow fadeInUp col-md-4 col-sm-6 col-xs-6" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+				<a href="https://sites.google.com/view/mosaic-rise/">
+				<img src="sponsors/_EUflag.png" height="100" class="" alt="EU Flag">
+				<img src="sponsors/_mosaic.png" height="100" class="" alt="Mosaic">
+					</a>
+				<p>MOSAIC: Rise-MSCA-2020 P.101007627</p>
+			</div>
+			<div class="wow fadeInUp col-md-4 col-sm-6 col-xs-6" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+				<a href="https://www.cs.cas.cz/">
+				<img src="sponsors/_ICS.png" height="100" class="" alt="Institute of Computer Science">	
+			</a>
+			</div>
+
+			<div class="wow fadeInUp col-md-4 col-sm-6 col-xs-6" data-wow-delay="0.6s" style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
+				<a href="https://strategie.avcr.cz/en/o-strategii">
+				<img src="sponsors/_SAV21.png" height="100" class="" alt="Strategy AV21">	
+			</a>
+			</div>
+
+			<div class="wow fadeInUp col-md-4 col-sm-6 col-xs-6" data-wow-delay="0.9s" style="visibility: hidden; animation-delay: 0.9s; animation-name: none;">
+				<a href="https://folli.info/">
+				<img src="sponsors/_FoLLI_small.png" height="130" class="" alt="The Association for Logic, Language and Information">	
+			</a>
+			</div>
+
+			<div class="wow fadeInUp col-md-4 col-sm-6 col-xs-6" data-wow-delay="0.9s" style="visibility: hidden; animation-delay: 0.9s; animation-name: none;">
+				<a href="https://www.cski.cz/homepage/en">
+				<img src="sponsors/_cski.jpg" height="110" class="" alt="Czech Society for Cybernetics and Informatics">	
+			</a>
+			<p>Czech Society for Cybernetics and Informatics</p>
+			</div>
+<!--
+			<div class="wow fadeInUp col-md-3 col-sm-6 col-xs-6" data-wow-delay="1s">
+				<img src="images/sponsor-img4.jpg" class="img-responsive" alt="sponsors">	
+			</div>
+		-->
+
+		</div>
+	</div>
+</section>
+
+
+
+
+<!-- =========================
+    FOOTER SECTION   
+============================== -->
+<footer>
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+				<p>Copyright © 2024 Institute of Computer Science CAS  <!-- class="wow fadeInUp" data-wow-delay="0.6s"-->
+                    
+                    | Design: <a rel="nofollow" href="http://www.templatemo.com/page/1" target="_parent">Templatemo</a></p>
+                <!--    
+				<ul class="social-icon">
+					<li><a href="#" class="fa fa-facebook wow fadeInUp" data-wow-delay="1s"></a></li>
+					<li><a href="#" class="fa fa-twitter wow fadeInUp" data-wow-delay="1.3s"></a></li>
+					<li><a href="#" class="fa fa-dribbble wow fadeInUp" data-wow-delay="1.6s"></a></li>
+					<li><a href="#" class="fa fa-behance wow fadeInUp" data-wow-delay="1.9s"></a></li>
+					<li><a href="#" class="fa fa-google-plus wow fadeInUp" data-wow-delay="2s"></a></li>
+				</ul>
+			-->
+
+			</div>
+			
+		</div>
+	</div>
+</footer>
+
+
+<!-- Back top -->
+<a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+
+<!-- =========================
+     SCRIPTS   
+============================== -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
+
+</body></html>

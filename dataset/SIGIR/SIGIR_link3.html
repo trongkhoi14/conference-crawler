@@ -1,639 +1,305 @@
-<!DOCTYPE html><!--[if IE 8]>
-<html lang="en" class="ie8"> <![endif]--><!--[if IE 9]>
-<html lang="en" class="ie9"> <![endif]--><!--[if !IE]><!--><html lang="en"><!--<![endif]--><head>
-    <title>SIGIR-AP 2023</title>
+<!DOCTYPE html><html><head><title>SIGIR 2024</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width">
+	<link rel="icon" href="images/logos/logo-head.png" type="image/png">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/ie8.css">
+	<link rel="stylesheet" href="css/blocks.css">
+	<link rel="stylesheet" href="css/plugins.css">
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/custom1.css">
+	<link rel="stylesheet" href="css/header-v2.css">
+	<link rel="stylesheet" href="css/footer-v1.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/line-icons.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/shortcode_timeline2.css">
+	<link rel="stylesheet" href="css/blue.css">
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="keywords" content="The 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval">
-<meta name="description" content="The 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval">
-<meta name="author" content="">
-
-
-
-<link rel="stylesheet" href="/sigir-ap-2023//assets/plugins/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="/sigir-ap-2023//assets/css/style.css">
-
-<link rel="stylesheet" href="/sigir-ap-2023//assets/css/header-v2.css">
-<link rel="stylesheet" href="/sigir-ap-2023//assets/css/header-v3.css">
-<link rel="stylesheet" href="/sigir-ap-2023//assets/css/footer-v1.css">
-<link rel="stylesheet" href="/sigir-ap-2023//assets/css/portrait.css">
-<link rel="stylesheet" href="/sigir-ap-2023//assets/css/big-list.css">
-<link rel="stylesheet" href="/sigir-ap-2023//assets/css/page_404_error.css">
-
-
-<link rel="stylesheet" href="/sigir-ap-2023//assets/plugins/animate.css">
-<link rel="stylesheet" href="/sigir-ap-2023//assets/plugins/line-icons/line-icons.css">
-<link rel="stylesheet" href="/sigir-ap-2023//assets/plugins/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="/sigir-ap-2023//assets/plugins/parallax-slider/css/parallax-slider.css">
-<link rel="stylesheet" href="/sigir-ap-2023//assets/plugins/fancybox/source/jquery.fancybox.css">
-<link rel="stylesheet" href="/sigir-ap-2023//assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
+<!--	</head>-->
 
 
 
-<link rel="stylesheet" href="/sigir-ap-2023//assets/css/shortcode_timeline2.css">
-<link rel="stylesheet" href="/sigir-ap-2023//assets/css/blue.css">
-<link rel="stylesheet" href="/sigir-ap-2023//assets/css/custom1.css">
-</head>
+	</head><body class="header-fixed">
+	    <div class="wrapper" style="min-height: 800px">
+	<!--=== Header===-->
+	<div class="header-v2 header-sticky">
+		<div class="container container-space"></div>
+		<!-- Navbar -->
+		<div class="navbar navbar-default mega-menu" role="navigation">
+			<div class="container container-space">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="fa fa-bars"></span>
+					</button>
+						<a class="navbar-brand brand-style" href="index.html">
+						<img id="logo-header" src="images/logos/logo.png" width="110" height="48" alt="Logo" style="width: 110px; height: 48px;">
+					</a>
+				</div>
+				<div class="collapse navbar-collapse navbar-responsive-collapse">
+					<ul class="nav navbar-nav">
+						<!-- <li class="dropdown">
+							<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Submit</a>
+							<ul class="dropdown-menu">
+								<li><a href="index.html#important-dates">Important Dates</a></li>
+								 <li><a href="call.html">Call for Papers</a></li>
+							</ul>
+						</li> -->
+						<!--
+						<li class="dropdown">
+							<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Program</a>
+						</li>
+						<li class="dropdown">
+							<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Attend</a>
+							<! -- <ul class="dropdown-menu">
+								<li><a href="List.html">Visiting Washington DC</a></li>
+							</ul> -->
+						<!--</li>
+						-->
+						<li class=""><a href="index.html#important-dates">Dates</a></li>
 
-<body class="header-fixed">
-    <div class="wrapper" style="min-height: 800px">
-        <!--=== Header===-->
-        <div class="header-v2 header-sticky">
-            <div class="container container-space"></div>
-            <!-- Navbar -->
-            <div class="navbar navbar-default mega-menu" role="navigation">
-    <div class="container container-space">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="fa fa-bars"></span>
-            </button>
-            <a class="navbar-brand brand-style" href="/sigir-ap-2023//">
-                <img id="logo-header" src="/sigir-ap-2023//assets/img/SIGIR-AP_2023_LOGO.png" width="85" alt="Logo">
-            </a>
-        </div>
-        <div class="collapse navbar-collapse navbar-responsive-collapse">
-            <ul class="nav navbar-nav">
-                <!--
-                <li class="dropdown">
-                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Program</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/sigir-ap-2023//program-at-a-glance">Program at a Glance</a></li>
-                        <li><a href="/sigir-ap-2023//schedule">Program Schedule</a></li>
-                        <li><a href="/sigir-ap-2023//tutorial">Tutorial</a></li>
-                        <li><a href="/sigir-ap-2023//booklets">Booklets</a></li>
-                        <li><a href="/sigir-ap-2023//keynotes">Keynotes and Panel</a></li>
-                        <li><a href="/sigir-ap-2023//tutorials">Tutorials</a></li>
-                        <li><a href="/sigir-ap-2023//workshops">Workshops</a></li>
-                        <li><a href="/sigir-ap-2023//doctoral-consortium">Doctoral Consortium</a></li>
-                        <li><a href="/sigir-ap-2023//industry-track-schedule">Industry Track</a></li>
-                        <li><a href="/sigir-ap-2023//summer-school">Summer School</a></li>
-                        <li><a href="http://sigir.org/women-in-ir/sigir2020.html">Women-in-IR</a></li>
-                        <li><a href="/sigir-ap-2023//student-event">Student Event</a></li>
-                        <li><a href="/sigir-ap-2023//accepted-papers">Accepted Papers</a></li>
-                    </ul>
-                </li>
-                -->
-                <!--
-                <li class="dropdown">
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Attend</a>
-                        <ul class="dropdown-menu">                            
-                            <li><a href="https://sigir-schedule.baai.ac.cn/">Virtual Conference Portal</a></li>
-                            <li><a href="/sigir-ap-2023//registration">Registration</a></li>
-                            <li><a href="/sigir-ap-2023//presentation-instructions">Presentation Instructions</a></li>
-                            <li><a href="/sigir-ap-2023//call-for-volunteers">Call for Volunteers</a></li>
-                        <li><a href="/sigir-ap-2023//presentation-instructions">Presentation Instructions</a></li>
-                        <li><a href="/sigir-ap-2023//keynote-speaker">Keynote</a></li>
-                            <li><a href="/sigir-ap-2023//travel-grants">Travel Grants</a></li>
-                            <li><a href="/sigir-ap-2023//visa-information">Visa Information</a></li>
-                            <li><a href="/sigir-ap-2023//accommodation">Accommodation</a></li>
-                            <li><a href="/sigir-ap-2023//travel">Travel</a></li>
-                            <li><a href="/sigir-ap-2023//venue">Venue</a></li>
-                        </ul>
-                </li>
-                -->
-                <li class=""><a href="/sigir-ap-2023/" class="">Home</a></li>
-                <li class="dropdown">
-                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Calls</a>
-                    <ul class="dropdown-menu">
-                        <!--<li><a href="list-of-calls">List of calls</a></li>-->
-                        <li><a href="/sigir-ap-2023//call-for-papers">Call for Papers</a></li>
-                        <li><a href="/sigir-ap-2023//call-for-tutorials">Call for Tutorials</a></li>
-                        <!-- <li><a href="/sigir-ap-2023//call-for-workshop-proposals">Call for Workshop Proposals</a></li> -->
-                        <li><a href="/sigir-ap-2023//guidance-for-authors">Guidance for Authors</a></li>
-                        <!--<li><a href="/sigir-ap-2023//call-for-tutorials">Call for Tutorials</a></li>
-                        <li><a href="/sigir-ap-2023//call-for-workshops">Call for Workshops</a></li>
-                        <li><a href="/sigir-ap-2023//call-for-demonstration">Call for Demonstrations</a></li>
-                        <li><a href="/sigir-ap-2023//call-for-doctoral-consortium-papers">Call for Doctoral Consortium Papers</a></li>
-                        <li><a href="/sigir-ap-2023//call-for-industry-track-papers">Call for Industry Track Papers</a></li>
-                        -->
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Attend</a>
-                    <ul class="dropdown-menu">
-                        <!--<li><a href="list-of-calls">List of calls</a></li>-->
-
-                        <li><a href="/sigir-ap-2023//accommodation">Accommodation</a></li>
-                        <li><a href="/sigir-ap-2023//bestpaper-award">Best Paper Award</a></li>
-                        <li><a href="/sigir-ap-2023//call-for-volunteers">Call for Volunteers</a></li>
-                        <li><a href="/sigir-ap-2023//keynote-speaker">Keynote</a></li>
-                        <li><a href="/sigir-ap-2023//presentation-instructions">Presentation Instructions</a></li>
-                        <li><a href="/sigir-ap-2023//accepted-papers">Proceedings</a></li>  
-                        <li><a href="/sigir-ap-2023//schedule">Program Schedule</a></li>                      <li><a href="/sigir-ap-2023//registration">Registration</a></li>
-                        <li><a href="/sigir-ap-2023//tutorial">Tutorial</a></li>
-                        <li><a href="/sigir-ap-2023//venue">Venue</a></li>
-                        <li><a href="/sigir-ap-2023//visa-information">VISA Information</a></li>
-                        <li><a href="/sigir-ap-2023//visiting">Visiting Beijing</a></li>
-                    </ul>
-                </li>
-                <li class=""><a href="/sigir-ap-2023//important-dates" class="">Important Dates</a></li>
-                <li class=""><a href="/sigir-ap-2023//organizers" class="">Organizers</a></li>
-                
-                <!-- <li class=""><a href="/sigir-ap-2023//call-for-sponsors" class="">Sponsors</a></li> -->
-
-                
-                <li class="dropdown">
-                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Sponsors</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/sigir-ap-2023//call-for-sponsors">Call for sponsors</a></li>
-                        <!-- <li><a href="/sigir-ap-2023//list-of-sponsors">List of sponsors</a></li> -->
-                    </ul>
-                </li>
-                
-                
-
-            </ul>
-        </div>
-    </div>
-</div>
-
-            <!-- End Navbar -->
-        </div>
-        <!--=== End Header ===-->
-        <script type="text/javascript">
-    //Get Banner image by random
-    var n = Math.floor(Math.random() * 12 + 1);
-    document.write('<div class="interactive-slider-v2" style="background-image:url(\'/sigir-ap-2023//assets/img/main-banners/main-banners_' + n + '.jpg\')">');
-</script><div class="interactive-slider-v2" style="background-image:url('/sigir-ap-2023//assets/img/main-banners/main-banners_8.jpg')">
-
-        <div class="container">
-            <h1 class="animated fadeInUp">Call for Papers</h1>
-        </div>
-    </div>
-
-        <div class="bg-color-white">
-            <div class="container content-xs">
-                <div class="news-v3 margin-bottom-30">
-                    <!-- Contents goes here -->
-                    <div class="news-v3-in">
-                        <p>
-                            The anual SIGIR-AP (Asia/Pacific) conference is a new regional IR conference whose scope is fundamentally the same as that of SIGIR. 
-                            <!--The 1st ACM SIGIR-AP conference, to be held in Beijing, China, welcomes contributions related to any aspect of information retrieval and access, including theories and foundations, algorithms and applications, and evaluation and analysis. The conference and program chairs invite those working in areas related to IR to submit high-impact original papers for review. -->
-                            It will be hybrid, so authors of accepted papers can either present their work in-person or remotely.<br>
-                            The conference adopts double-blind, single-track reviewing, and allows submissions of papers that are commensurate with contribution size. 
-                            Specifically, there are two types of SIGIR-AP submissions: <strong>Regular submissions</strong> and <strong>SIGIR-Revise-and-Resubmit submissions</strong>.
-                        </p>
-                        
-                        <h1 class="margin-bottom-5" style="margin-bottom: 0">
-                            <strong>Regular Submissions</strong>
-                        </h1>
-                        <br>
-                        <p>
-                            <!--Compared to existing IR conferences, a novel feature of SIGIR-AP is that, although the review process is single-track (with a variable page limit – see below), SIGIR-AP has two paper types: <i>Regular</i> and <i>SIGIR-RR</i>:
-                            -->
-                            Regular submissions are new, original contributions that have not been submitted elsewhere before. We also welcome Resource papers and Reproducibility papers. Resources papers consider test collections and labelled datasets, designs and protocols of evaluation tasks, and software tools and services for information access. Reproducibility papers repeat, reproduce, generalize, and reexamine prior work, for example analysing to what extent assumptions of the original work are valid, or identify error modes and unexpected conclusions; typically these papers involve a new team and a new experimental setup, that is, they go beyond replication.
-                        </p>
-                            <li>
-                                <strong>Format</strong>: Paper body + references
-                            </li>
-                            <ul>
-                                <li>
-                                    <strong>Paper body</strong> should be 2-9 pages, and be commensurate with contribution size.
-                                </li>
-                                <li>
-                                    <strong>References</strong> have no page limit.
-                                </li>
-                            </ul>
-                            <br>
-                            <p>
-                            <!--Regular papers are general research papers like those submitted to SIGIR. Some of them could also be resource papers or reproducibility papers. 
-                            Similar to SIGIR, each regular paper will be reviewed by at least 3 Regular PC members.
-                            In contrast, SIGIR-RR papers are revised papers that were original rejected by SIGIR in the same year (e.g., SIGIR 2023).
-                            Authors are required to explain how they addressed the SIGIR reviewer comments to improve the paper. 
-                            For some of these papers, the SIGIR-AP PC chairs will have access to the original anonymised reviews from SIGIR 2023, provided by the SIGIR 2023 PC chairs. 
-                            The SIGIR-AP PC chairs will try to desk-reject SIGIR-RR submissions with clearly unsatisfactory explanation or revision. 
-                            Each SIGIR-RR paper will be reviewed by at least 2 Regular PC members. 
-                            During the online discussion, the Senior and Regular PC members will discuss how well the paper has been improved after SIGIR. 
-                            We believe that, at highly competitive conferences such as SIGIR, some of the rejected papers maybe just as good as the accepted ones.
-                            Therefore, with SIGIR-RR papers, SIGIR-AP aims to provide better review process through saving the reviewer efforts of SIGIR and avoiding potential negative bias caused by irresponsble reviews. 
-                            Also, please note that the anonymised SIGIR-AP 2023 reviews may be forwarded to the SIGIR 2024 PC chairs so that reviewer's efforts will be re-utilised if authors of rejected SIGIR-AP papers choose to resubmit to SIGIR.
-                            --> 
-                        </p>
-
-                        <h1 class="margin-bottom-5" style="margin-bottom: 0">
-                            <strong>SIGIR-Revise-and-Resubmit (SIGIR-RR) Submissions                            </strong>
-                        </h1>
-                        <br>
-                        <p>
-                            <!--Compared to existing IR conferences, a novel feature of SIGIR-AP is that, although the review process is single-track (with a variable page limit – see below), SIGIR-AP has two paper types: <i>Regular</i> and <i>SIGIR-RR</i>:
-                            -->
-                            SIGIR-RR submissions are revised versions of either full or short papers that were not accepted at the immediately preceding SIGIR conference (this option is not available for other SIGIR paper tracks, e.g., perspectives, resource, or reproducibility). In addition to the revised paper, the authors must include in the submission file a text explaining the revision based on the SIGIR reviews, as well as the original SIGIR submission.
-                        </p>
-                            <li>
-                                <strong>Format</strong>:  Paper body + References + Explanation (with SIGIR paper ID) + SIGIR submission
-                            </li>
-                            <ul>
-                                <li>
-                                    <strong>Paper body</strong> should be 2-9 pages, and be commensurate with contribution size.
-                                </li>
-                                <li>
-                                    <strong>References</strong> have no page limit.
-                                </li>
-                                <li>
-                                    <strong>Explanation</strong> (1-3 pages, no style requirements): a SIGIR paper ID, plus a text that explain how the authors addressed the points raised by the SIGIR reviewers after the SIGIR rejection.
-                                </li>
-                                <li>
-                                    <strong>SIGIR submission</strong>  include the original anonymised SIGIR submission as is in the SIGIR-AP submission.                                    .
-                                </li>
-                            </ul>
-                            
-                            <!--
-                            <li>
-                                <strong>SIGIR-RR Papers</strong> are revisions and resubmissions of papers that were not accepted at SIGIR 2023. 
-                            </li>
-                            -->
-                            <br>
-                            <p>
-                            <!--
-                            In contrast, SIGIR-RR papers are revised papers that were original rejected by SIGIR in the same year (e.g., SIGIR 2023).
-                            Authors are required to explain how they addressed the SIGIR reviewer comments to improve the paper. 
-                            For some of these papers, the SIGIR-AP PC chairs will have access to the original anonymised reviews from SIGIR 2023, provided by the SIGIR 2023 PC chairs. 
-                            The SIGIR-AP PC chairs will try to desk-reject SIGIR-RR submissions with clearly unsatisfactory explanation or revision. 
-                            Each SIGIR-RR paper will be reviewed by at least 2 Regular PC members. 
-                            During the online discussion, the Senior and Regular PC members will discuss how well the paper has been improved after SIGIR. 
-                            We believe that, at highly competitive conferences such as SIGIR, some of the rejected papers maybe just as good as the accepted ones.
-                            Therefore, with SIGIR-RR papers, SIGIR-AP aims to provide better review process through saving the reviewer efforts of SIGIR and avoiding potential negative bias caused by irresponsble reviews. 
-                            Also, please note that the anonymised SIGIR-AP 2023 reviews may be forwarded to the SIGIR 2024 PC chairs so that reviewer's efforts will be re-utilised if authors of rejected SIGIR-AP papers choose to resubmit to SIGIR.
-                            -->
-                        </p>
-
-                        <h5 class="margin-bottom-5"><strong>Important dates for paper submission:</strong></h5>
-                        <p>
-                            Time zone: <a href="https://www.timeanddate.com/time/zones/aoe">Anywhere On Earth (AOE)</a>
-                            <br>
-                            Abstracts due: <span class="text-danger">June 26, 2023</span><br>
-                            Paper submission due: <span class="text-danger">July 3, 2023</span><br>
-                            Paper decision notifications: <span class="text-danger">September 10, 2023</span><br>
-                            Camera ready papers due: <span class="text-danger">September 26, 2023</span><br>
-                        </p>
-
-                        <hr>
-                        <h2 class="margin-bottom-5" style="margin-bottom: 0"><strong>Submission Guidelines</strong></h2>
-                        <p class="margin-top-0">
-                            All papers must be original and not simultaneously submitted to another
-                            journal or conference.
-                        </p>
-                        <p>
-                            Submissions of regular and SIGIR-RR papers must be in English, in PDF format, 
-                            be at least 2 pages and at most 9 pages (including figures) + unlimited pages for references in length, in the current ACM two-column
-                            conference format. 
-                            Each paper will be accessed according to whether the paper length is commensurate with contribution size. 
-                            That is, for example, if a paper contains a good scientific contribution that is worth 2 pages, 
-                            then that 2-page paper should be a candidate for acceptance; 
-                            if a 9-page paper does not contain enough substance, then the paper is considered weak. 
-                            Suitable LaTeX, Word, and
-                            <a href="https://www.overleaf.com/gallery/tagged/acm-official">Overleaf</a>
-                            templates are available from the
-                            <a href="https://www.acm.org/publications/proceedings-template">ACM Website</a> (use
-                            the“sigconf”proceedings template). Papers must describe work that is not
-                            previously published, not accepted for publication elsewhere, and not currently under review
-                            elsewhere. Submissions must be
-                            anonymous and should be submitted electronically via the
-                            <a class="tooltips" href="https://easychair.org/conferences/?conf=sigirap2023" data-original-title="" title="">conference
-                                submission system</a>.
-                        </p>
-
-                        <hr>
-                        <h2 class="margin-bottom-5"><strong>Anonymity</strong></h2>
-                        <p>
-                            Authors are required to take all reasonable steps to preserve the anonymity of their
-                            submission. The submissions document must not include author information and must not
-                            include citations or discussion of related work that would make the authorship apparent.
-                            Note however, that it is acceptable to explicitly refer in the paper to the companies or
-                            organizations that provided datasets, hosted experiments, or deployed solutions. For
-                            example, instead of stating that an experiment “was conducted on the logs of a major search
-                            engine”, the authors should refer to the search engine by name. The reviewers will be
-                            informed that it does not necessarily imply that the authors are currently affiliated with
-                            the mentioned organization. While authors can upload to institutional or other preprint
-                            repositories such as arXiv.org before reviewing is complete, we generally discourage this
-                            since it places anonymity at risk (which could result in a negative outcome of the reviewing
-                            process). Authors should carefully go through <a href="https://www.acm.org/publications/policies/authorship">ACM’s authorship policy</a>
-                            before submitting a
-                            paper. To support identification of reviewers with conflicts of interest, the full author
-                            list must be specified at submission time. Authors should note that changes to the author
-                            list after the submission deadline are not allowed without permission from the PC Chairs. At
-                            least one author of each accepted paper is required to register for, attend, and present the
-                            work at the conference.
-                        </p>
-                        <p>All papers are to be submitted via <br>EasyChair:
-                            <a href="https://easychair.org/my/conference?conf=sigirap2023">https://easychair.org/my/conference?conf=sigirap2023</a>
-                        </p>
-
-                        <hr>
-                        <h2 class="margin-bottom-5" style="margin-bottom: 0"><strong>GUIDANCE FOR AUTHORS</strong></h2>
-                        To ensure the quality of submissions, we also provide a 
-                        <a href="/sigir-ap-2023//guidance-for-authors">guidance for authors</a>.
-                        We recommend that authors observe the guidance in preparing their papers.
-                        <hr>
-                        <h2 class="margin-bottom-5" style="margin-bottom: 0"><strong>TOPICS OF INTEREST</strong></h2>
-                        <p class="margin-top-0">Relevant topics include, but are not limited to:</p>
-                        <h3>
-                            <strong>Search and Ranking:</strong>
-                        </h3>
-                        Research on core IR principles and algorithms, such as:
-                        
-                            <ul>
-                                <li>
-                                    Queries and query analysis (e.g., query intent, query understanding, query
-                                    suggestion and prediction, query representation and reformulation, spoken queries).
-                                </li>
-                                <li>
-                                    Web search (e.g., ranking at web scale, link analysis, sponsored search, search
-                                    advertising, adversarial search and spam, vertical search).
-                                </li>
-                                <li>
-                                    Retrieval models and ranking (e.g., ranking algorithms, learning to rank, language models, retrieval models, combining searches, diversity, aggregated search, dealing with bias)
-                                </li>
-                                <li>
-                                    Efficiency and scalability (e.g., indexing, crawling, compression, search engine architecture, distributed search, metasearch, peer-to-peer search, search in the cloud).
-                                </li>
-                                <li>
-                                    Information security (e.g., encryption, sharing protocols, privacy guarantees).
-                                </li>
-                                <li>
-                                    Theoretical models and foundations of information retrieval and access (e.g., new theory, fundamental concepts, theoretical analysis).
-                                </li>
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">Program</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="program.html">Program-At-a-Glance</a></li>
+								<li><a href="program_details.html">Detailed Program</a></li>
+								<li><a href="program_papers.html">Accepted Papers</a></li>
+                                <li><a href="call_for_participation_llm_day.html">LLM Day</a></li>
+                                <li><a href="call_for_participation_government_day.html">Call For Participation Government Day</a></li>
+                                <li><a href="attend_workshops.html">Workshops</a></li>
+                                <li><a href="attend_Tutorials.html">Tutorials</a></li>
+                                <li><a href="keynotes.html">Keynote Speakers</a></li>
+								<li><a href="program_SIRIP.html">SIRIP 2024</a></li>
+								<li><a href="keynotes_SIRIP.html">SIRIP 2024 - Keynotes</a></li>
 
                             </ul>
-                        
-
-                        <h3>
-                            <strong>Search, Recommendation, and Content Analysis for Search and Recommendation:</strong>
-                        </h3>
-                        Research focusing on recommender systems, rich content representations and content analysis, such as:
-                            <ul>
-                                <li>
-                                    Filtering and recommendation (e.g., content-based filtering, collaborative filtering, recommender systems, recommendation algorithms, zero-query and implicit search, personalized recommendation).
-                                </li>
-                                <li>
-                                    Document representation and content analysis for search or recommendation (e.g., cross-lingual and multilingual search, NLP: summarization, text representation, linguistic analysis, readability, opinion mining and sentiment analysis, clustering, classification, topic models for search and recommendation).
-                                </li>
-                                <li>
-                                    Knowledge acquisition (e.g., information extraction, relation extraction, event extraction, query understanding, human-in-the-loop knowledge acquisition).
-                                </li>
-                            </ul>
-                        
-
-
-                        <h3>
-                            <strong>Machine Learning and Natural Language Processing for Search and Recommendation:</strong>
-                        </h3>
-                        Research bridging ML, NLP, and IR, such as:
-                        
-                            <ul>
-                                <li>
-                                    Core ML (e.g., deep learning for IR, embeddings, intelligent personal assistants and agents, unbiased learning).
-                                </li>
-                                <li>
-                                    Question answering (e.g., factoid and non-factoid question answering, interactive question answering, community-based question answering, question answering systems).
-                                </li>
-                                <li>
-                                    Conversational systems (e.g., conversational search interaction, dialog systems, spoken language interfaces, intelligent chat systems).
-                                </li>
-                                <li>
-                                    Explicit semantics (e.g., semantic search, named-entities, relation and event extraction).
-                                </li>
-                                <li>
-                                    Knowledge representation and reasoning (e.g., link prediction, knowledge graph completion, knowledge-guided query and document representation, ontology modeling).
-                                </li>
-                            </ul>
-                        
-
-
-                        <h3>
-                            <strong> Humans and Interaction:</strong>
-                        </h3>
-                        Research into user-centric aspects of IR including user interfaces, behavior modeling, interactive systems, such as:
-                            <ul>
-                                <li>
-                                    Mining and modeling users (e.g., user and task models, click models, log analysis, behavioral analysis, modeling and simulation of interaction, modeling of cognition).
-                                </li>
-                                <li>
-                                    Interactive search (e.g., search interfaces, information access, exploratory search, search context, whole-session support, proactive search, personalized search).
-                                </li>
-                                <li>
-                                    Collaborative search (e.g., human-in-the-loop, knowledge acquisition, social tagging, crowdsourcing).
-                                </li>
-                                <li>
-                                    Information security (e.g., privacy, surveillance, censorship, encryption).
-                                </li>
-                                <li>
-                                    User studies (e.g., learning during search, behaviours in search and recommendation).
-                                </li>
-                            </ul>
-                        
-
-
-                        <h3>
-                            <strong> Evaluation:</strong>
-                        </h3>
-                        Research that focuses on the measurement and evaluation of IR systems, such as:
-                            <ul>
-                                <li>
-                                    User-centered evaluation (e.g., user experience and performance, user engagement, search task design).
-                                </li>
-                                <li>
-                                    System-centered evaluation (e.g., evaluation metrics, test collections, experimental design, evaluation pipelines, crowdsourcing).
-                                </li>
-                                <li>
-                                    Beyond Cranfield (e.g., online evaluation, task-based, session-based, multi-turn, interactive search).
-                                </li>
-                                <li>
-                                    Beyond labels (e.g., simulation, implicit signals, eye-tracking and physiological signals).
-                                </li>
-                                <li>
-                                    Beyond effectiveness (e.g., value, utility, usefulness, diversity, novelty, urgency, freshness, credibility, authority).
-                                </li>
-                                <li>
-                                    Methodology (e.g., statistical methods, reproducibility, dealing with bias, new experimental approaches, metrics for metrics).
-                                </li>
-                            </ul>
-                        
-
-
-                        <h3>
-                            <strong>Fairness, Accountability, Transparency, Ethics, and Explainability (FATE) in IR:</strong>
-                        </h3>
-                        Research on aspects of responsibility, fairness, and bias in search and recommender systems, such as:
-                            <ul>
-                                <li>
-                                    Fairness, accountability, transparency (e.g., confidentiality, representativeness, discrimination and harmful bias).
-                                </li>
-                                <li>
-                                    Ethics, economics, and politics (e.g., studies on broader implications, norms and ethics, economic value, political impact, social good).
-                                </li>
-                                <li>
-                                    Two-sided search and recommendation scenarios (e.g., matching users and providers, marketplaces).
-                                </li>
-                                <li>
-                                    Personal safety (e.g., anonymisation, privacy principles, surveillance, censorship).
-                                </li>
-                            </ul>
-                        
-
-                        <h3>
-                            <strong>Domain-specific Applications:</strong> 
-                        </h3>
-                        Research focusing on domain-specific IR challenges, such as:
-                            <ul>
-                                <li>
-                                    Local and mobile search (e.g., location-based search, mobile usage understanding, mobile result presentation, audio and touch interfaces, geographic search, location context in search).
-                                </li>
-                                <li>
-                                    Social search (e.g., social networks in search, social media in search, blog and microblog search, forum search, Q&amp;A repositories).
-                                </li>
-                                <li>
-                                    Search in structured data (e.g., XML search, graph search, ranking in databases, desktop search, email search, entity-oriented search).
-                                </li>
-                            </ul>
-                        
-
-
-                        <hr>
-
-                        <h3><strong>Program co-Chairs</strong></h3>
-                        <ul>
-                            <li>Xuanjing Huang, Fudan University, P. R. China</li>
-                            <li>Tetsuya Sakai, Waseda University, Japan</li>
-                            <li>Justin Zobel, University of Melbourne, Australia</li>
-                        </ul>
-                        sigirap2023pcchairs@easychair.org
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--/end container-->
-    
-    <!--=== End Content ===-->
-
-
-    <!--=== Footer ===-->
-    <div class="purchase bg-grey">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-               <div class="col-md-5 col-xs-12">
-                   <div class="row">
-                       <div class="col-md-4 col-xs-4">
-                           <img class="img-responsive" src="/sigir-ap-2023//assets/img/logos/acm.png" style="width: 105%; margin-top: 15%;">
-                       </div>
-                       <div class="col-md-4 col-xs-4">
-                           <img class="img-responsive" src="/sigir-ap-2023//assets/img/logos/sigir.png" style="width: 80%; margin-top: 10%; margin-left: 10%;">
-                       </div>
-                       <div class="col-md-4 col-xs-4">
-                           <img class="img-responsive" src="/sigir-ap-2023//assets/img/logos/xhs.png" style="width: 90%; margin-top: 10%; margin-left: 10%;">
-                       </div>
-                   </div>
-               </div>
-
-               <div class="col-md-7 col-xs-12">
-                   <div class="row">
-                       <div class="col-md-3 col-xs-3">
-                           <img class="img-responsive" src="/sigir-ap-2023//assets/img/logos/zhipu.jpg" style="width: 90%; margin-top: 10%; margin-left: 10%;">
-                       </div>
-                       <div class="col-md-3 col-xs-3">
-                           <img class="img-responsive" src="/sigir-ap-2023//assets/img/logos/kuaishou.jpg" style="width: 70%; margin-top: 10%; margin-left: 10%;">
-                       </div>
-                       <div class="col-md-2 col-xs-3">
-                           <img class="img-responsive" src="/sigir-ap-2023//assets/img/logos/thu.jpg" style="width: 80%; margin-top: 10%; margin-left: 10%;">
-                       </div>
-                       <div class="col-md-2 col-xs-3">
-                           <img class="img-responsive" src="/sigir-ap-2023//assets/img/logos/MelbourneU.png" style="width: 80%; margin-top: 10%; margin-left: 10%;">
-                       </div>
-                   </div>
-               </div>
-           </div>
-           <!--Logos END-->
-       </div>
-   </div>
-</div>
-<!--=== End Content ===-->
-<div class="footer-v1">
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>
-                        2023 © <a href="#">SIGIR-AP 2023</a> All Rights Reserved.
-                    </p>
-                </div>
-
-                <!-- Social Links -->
-                <!-- <div class="col-md-6">
-                    <ul class="footer-socials list-inline">
-                        <li>
-                            <a href="https://www.facebook.com/sigir2020/" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
-                                data-original-title="Facebook">
-                                <i class="fa fa-facebook"></i>
-                            </a>
                         </li>
-                        <li>
-                            <a href="https://twitter.com/sigir2020" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
-                                data-original-title="Twitter">
-                                <i class="fa fa-twitter"></i>
-                            </a>
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">Attend</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="attend.html">Conference Venue</a></li>
+                                <li><a href="attend_registration.html">Conference Registration</a></li>
+								<li><a href="attend_accommodation.html">Accommodation</a></li>
+                                <li><a href="attend_visitingGT.html">Visiting Washington DC</a></li>
+								<li><a href="attend_info4authors.html">Information for Authors</a></li>
+								<li><a href="attend_studAwards.html">Travel Awards</a></li>
+								<li><a href="attend_events.html">Social Events</a></li>
+                            </ul>
                         </li>
-                    </ul>
-                </div> -->
-                <div class="col-md-6">
-                    <p>
-                        contact: lc2023@sigir-ap.org
-                    </p>
-                </div>
-                <!-- End Social Links -->
-            </div>
-        </div>
-    </div>
-    <!--/copyright-->
-</div>
-    <!--=== End Footer ===-->
+                        <li class=""><a href="organizers.html">Organizers</a></li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Sponsors</a>
+                            <ul class="dropdown-menu">
+								<li><a href="sponsorlist.html">Sponsors</a></li>
+                                <li><a href="call_for_sponsors.html">Call for Sponsorship</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Policies</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="policy_arxiv.html">Arxiv Policy</a></li>
+                                <li><a href="policy_inperson.html">In-person Policy</a></li>
+                                <li><a href="https://www.acm.org/about-acm/policy-against-harassment" target="_blank">Policy against Harassment</a></li>
+                                <li><a href="https://www.acm.org/about-acm/privacy-policy" target="_blank">Privacy Policy</a></li>
+                            </ul>
+                        </li>
+                        <li class=""><a href="FAQs.html">FAQ</a></li>
+						<li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Submit</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="tracks.html">Tracks</a></li>
+                                <hr style="margin:0em">
+                                <li><a href="call_for_papers.html">Call for Full Papers</a></li>
+                                <li><a href="call_for_short_papers.html">Call for Short Papers</a></li>
+                                <li><a href="call_for_res_rep_papers.html">Call for Resource &amp; Reproducibility Papers</a></li>
+                                <li><a href="call_for_demo_papers.html">Call for Demonstration Papers</a></li>
+                                <li><a href="call_for_perspectives_papers.html">Call for Perspectives Papers</a></li>
+                                <li><a href="call_for_tutorials.html">Call for Tutorial Proposals</a></li>
+                                <li><a href="call_for_workshops.html">Call for Workshop Proposals</a></li>
+                                <li><a href="call_for_DC_papers.html">Call for Doctoral Consortium Papers</a></li>
+                                <li><a href="call_for_SIRIP.html">Call for SIRIP 2024 (Industry Track)</a></li>
+                            </ul>
+                        </li>
+                        <li class=""><a href="https://www.ictir2024.org/" target="_blank">ICTIR</a></li>
 
-    <!--=== Scripts ===-->
-    <!-- JS Global Compulsory -->
-<script type="text/javascript" src="/sigir-ap-2023//assets/plugins/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="/sigir-ap-2023//assets/plugins/jquery/jquery-migrate.min.js"></script>
-<script type="text/javascript" src="/sigir-ap-2023//assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+		<!-- End Navbar -->
+	</div>
+	<!--=== End Header ===-->
+	     <!-- Image Gradient -->
+	     
+	     <div class="interactive-slider-v2" style="background-image:url('images/SIGIR_1.png')">
+	     	<div class="container">
+	     
+	     		<h1 class="animated fadeInUp">Call For SIRIP 2024</h1>
+	     
+	     	</div>
+	     </div>
+	     <!-- End Image Gradient -->
+	  
+	        <div class="bg-color-light">
+	            <div class="container content-xs">
+	                <div class="news-v3 margin-bottom-30">
+	               
+	
+	
+	                    <!-- Contents goes here -->
+	                    <div class="news-v3-in">
+	
+	                        <!--<h2 class="margin-bottom-5" style="margin-bottom: 0">
+	                            <strong>Call For Full Papers</strong>
+	                        </h2> -->
+							<p>
+								The annual SIGIR conference is the major international forum for the presentation of new
+								research results, and the demonstration of new systems and techniques, in the broad field
+								of information retrieval (IR). The 47th ACM SIGIR conference, will be run as an in-person
+								conference from July 14th to 18th, 2024 in Washington D.C., USA.
+							</p>
+							<p>
+								The SIGIR Symposium on IR in Practice (SIRIP) 2024 will be held as part of ACM SIGIR 2024,
+								onsite (in Washington DC, USA). We aim to provide an opportunity for researchers, engineers,
+								practitioners, analysts and consumers to meet and discuss the latest and greatest
+								Information Retrieval (IR) technologies as deployed in companies, big and small, and to
+								be the premier forum for knowledge sharing across the boundary between academia and industry.
+							</p>
+							<h3 class="margin-bottom-5"> <strong>Important Dates for SIRIP Papers</strong></h3>
+							<ul>
+								<li>Time zone: <a href="https://www.timeanddate.com/time/zones/aoe">Anywhere on Earth (AoE)</a></li>
+								<li>SIRIP Proposal abstract due: Feb 21, 2024</li>
+								<li>SIRIP Proposal due: Feb 28, 2024</li>
+								<li>SIRIP Notifications: April 10, 2024</li>
+								<li>SIRIP Camera ready: April 24, 2024</li>
+								<li>SIRIP Days: TBD, 2024</li>
+							</ul>
+							<hr>
+
+							<h2 class="margin-bottom-5"> <strong>Proposal Guidelines</strong></h2>
+							<p>
+								We solicit position papers, talk proposals, and panel proposals for SIRIP in the
+								following categories:
+							</p>
+							<ul>
+								<li>Open problems and challenges in industry, from industry research to production</li>
+								<li>Presentations creating a connection with academia to solve interesting problems, including presentations from academics spending time in industry, or vice-versa, covering insights for other practitioners</li>
+								<li>Novel applications of IR/Recsys/NLP/Multimodal learning systems, and complex user interaction modeling in real-world situations</li>
+								<li>Innovative approaches used in deployed systems and products. We also encourage presentations from small companies, especially startups or spin-offs from either a university project or a large company. Papers discussing domain specific challenges are also welcome.</li>
+								<li>Position papers on the current and future state of IR in practice, and the role IR could play in shaping the next generation of information access systems. </li>
+								<li>Building IR systems with an emphasis on trust and safety: Combating misinformation spread; Building privacy preserving retrieval systems; Algorithmic responsibility &amp; fairness.</li>
+								<li>Role of search &amp; IR in the creator economy (e.g. short video platforms, audio platforms) &amp; marketplaces (e.g. delivery services, hospitality industry, crowdfunding platforms, retail platforms, rentals)</li>
+								<li>System design case-studies from industry practitioners, identifying best practices and design principles for learning systems</li>
+								<li>Metrics and measurement techniques used at scale to understand performance of industrial systems. Success in achieving offline/online evaluation consistency</li>
+								<li>Best practices and successful applications in combining LLM and IR in new or existing products.</li>
+							</ul>
+							<br>
+							<h2 class="margin-bottom-5"> <strong>Submission</strong></h2>
+							<p>
+								Presentation proposals should be 2-4 pages (excluding references) and follow the ACM
+								format. Any appendices will be counted towards the page limit. Formatting guidelines are
+								available at this
+								<a href="https://www.acm.org/publications/proceedings-template">ACM publication site</a>
+								(use the ˮsigconf” proceedings template). Please include:
+							</p>
+							<ul>
+								<li>Title, abstract, main body of proposal</li>
+								<li>All author names and a short bio of the main presenter (~100 words, which will NOT
+									count towards the page limit)</li>
+								<li>Please do NOT submit a sales pitch</li>
+							</ul>
+							<p>
+								We also solicit panel discussion proposals in the above categories. Panel proposals should be 1-2 pages and include:
+							</p>
+							<ul>
+								<li>Panel title, description, proposed moderator (with a short CV), topics of discussion, and profiles of proposed panelists.</li>
+								<li>We strongly encourage a diverse slate of candidates for panelists and moderators.</li>
+							</ul>
+							<p>
+								Proposals should be submitted electronically via Easy Chair: <br>
+								<a href="https://easychair.org/conferences?conf=sigir24">https://easychair.org/conferences?conf=sigir24</a>
+							</p>
+							<h2 class="margin-bottom-5"> <strong>Presentation and Publication</strong></h2>
+							<p>
+								The presentation format of the Symposium will be decided based on submissions and interest to the wider community, and is likely to be a mix of short and long presentations as well as panels. A condition of acceptance is that at least one author commits to registering and attending SIRIP 2024 (in-person) to present the work. The authors of accepted proposals will be invited to submit a camera ready copy to be included in the proceedings.
+							</p>
+							<p>
+								For more information, visit the <a href="policy_inperson.html">in-person policy</a> page.
+							</p>
+							<h3 class="margin-bottom-5"> <strong>SIRIP co-chairs</strong></h3>
+							<ul>
+								<li>Edgar Meij, Bloomberg</li>
+								<li>Tao Ye, Amazon</li>
+							</ul>
+							<h3 class="margin-bottom-5"> <strong>Contact</strong></h3>
+							<p>For any questions, you may contact the Chairs by email to <a href="mailto:sigir24-sirip@easychair.org">sigir24-sirip@easychair.org</a> </p>
+
+						</div>
+	                </div>
+	            </div>
+	        </div>
+	        <!--/end container-->
+	    </div>
+	    <!--=== End Content ===-->
+	
+	
+	<!--=== Footer ===-->
+	<div class="footer-v1">
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<p>
+						@2024 ACM Special Interest Group on Information Retrieval. All Rights Reserved.
+						</p>
+					</div>
+	
+					<!-- Social Links -->
+					<div class="col-md-6">
+						<ul class="footer-socials list-inline">
+							<li>
+								<a href="https://www.linkedin.com/company/sigir-2024" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="LinkedIn">
+									<i class="fa fa-linkedin"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://twitter.com/SIGIRConf" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- End Social Links -->
+				</div>
+			</div>
+		</div>
+		<!--/copyright-->
+	</div>
+	<!--=== End Footer ===-->
+	
+	    <!--=== Scripts ===-->
+	<!-- JS Global Compulsory -->
+			<script type="text/javascript" src="js/jquery.min.js"></script>
+			<script type="text/javascript" src="js/bootstrap.min.js"></script>
+			<script type="text/javascript" src="js/app.js"></script>
+			<script type="text/javascript">
+				jQuery(document).ready(function() {
+					App.init();
+				});
+			</script>
+	
+	
+
+	
+	
 
 
-<!-- JS Implementing Plugins -->
-<script type="text/javascript" src="/sigir-ap-2023//assets/plugins/back-to-top.js"></script>
-<script type="text/javascript" src="/sigir-ap-2023//assets/plugins/jquery-smooth-scroll/jquery.smooth-scroll.js"></script>
-<!-- // <script type="text/javascript" src="assets/plugins/jquery.parallax.js"></script>
-// <script type="text/javascript" src="assets/plugins/parallax-slider/js/modernizr.js"></script>
-// <script type="text/javascript" src="assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
-// <script type="text/javascript" src="assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
-// <script type="text/javascript" src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script> -->
-
-
-<!-- JS Customization -->
-<script type="text/javascript" src="/sigir-ap-2023//assets/js/custom.js"></script>
-<!-- JS Page Level -->
-<script type="text/javascript" src="/sigir-ap-2023//assets/js/app.js"></script>
-<!-- //
-// <script type="text/javascript" src="assets/js/plugins/fancy-box.js"></script>
-// <script type="text/javascript" src="assets/js/plugins/owl-carousel.js"></script> -->
-
-
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-      	App.init();
-//         App.initParallaxBg();
-//         FancyBox.initFancybox();
-//         OwlCarousel.initOwlCarousel();
-});
-</script>
-
-
-<!--[if lt IE 9]>
-<script src="assets/plugins/respond.js"></script>
-<script src="assets/plugins/html5shiv.js"></script>
-<script src="assets/plugins/placeholder-IE-fixes.js"></script>
-<![endif]-->
-
-    <!--=== End scripts ===-->
-
-
-
-</div><div id="topcontrol" title="Scroll Back to Top" style="position: fixed; bottom: 5px; right: 5px; opacity: 0; cursor: pointer;"></div></body></html>
+</body></html>

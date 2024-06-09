@@ -427,7 +427,7 @@ Full Papers - abstracts due
 November cycle - Submission
 Submission of contributions
 1st Round: Paper Submission
-Paper Submission Deadline *
+Paper Submission Deadline
 Early Registration Deadline
 Submission deadline for ARR
 Paper submission (extended)
@@ -471,6 +471,7 @@ Paper abstract submission
 Submission of Full Papers
 Paper submission deadline
 Special Session Proposals
+Deadlines for submissions
 Final submission deadline
 OOPSLA 2024 R1 Submission
 Paper Submission Deadline
@@ -579,7 +580,7 @@ Full paper abstracts
 Paper submission due
 Paper Submission due
 Author responses due
-Submission Deadline:
+Submission Deadline
 Submissions deadline
 Paper submission Due
 Submission of Papers
@@ -593,7 +594,6 @@ Revision submission
 Paper Abstracts Due
 Full paper abstract
 Submission of Paper
-submission deadline
 Submission Deadline
 Abstract submission
 Revised version due
@@ -628,6 +628,7 @@ Abstract Deadline
 Artifact Deadline
 Abstract deadline
 Submission is due
+Papers Submission
 Submission close
 Second draft due
 SEDES Submission

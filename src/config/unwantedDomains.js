@@ -1,6 +1,7 @@
 const unwantedDomains = [
     "scholar.google",
     "translate.google",
+    "google.com",
     "wikicfp.com",
     "dblp.org",
     "medium.com",
@@ -13,6 +14,7 @@ const unwantedDomains = [
     "aconf.org",
     "myhuiban.com",
     "call4paper.com",
+    "portal.core",
 ];
 
 module.exports = unwantedDomains;

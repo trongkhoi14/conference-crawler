@@ -113,6 +113,7 @@ spring - notification
 summer - notification
 fall - notification
 Notification of Acceptance/Rejection
+Notification deadline
 Announcement of Accepted Manuscript IDs
 1st Round Deadline - Early Rejection
 1st Round Deadline - Author Notification​
@@ -158,21 +159,23 @@ Notification of decision
 author notification
 notification of acceptance
 Announcement of review results and workshop acceptance
-Notice of Acceptance
+Full Paper Notification
 Review release for full, short, and industry papers
 Acceptance notifications for full, short, and industry papers
+Notification of acceptance (long & short papers)
 Final notification Round 1.
 Final notification Round 2
 Final notification Round 3.
 1st notification for papers submitted in the rebuttal procedure
 Final notification for all papers (with or without Rebuttal)
-Notification of acceptance (long & short papers)
 (Conditional) Acceptance notification for proceedings*
 Final acceptance notification for proceedings*
 Paper acceptance cut-off date for inclusion in ECSCW 2024 Program
+Decisions communicated to authors
 Full paper notification
 Author Notification (Round 1)
 Author Notification (Round 2)
+Author Notification (Round 1 and 2 - final)
 R1 Author notifcation
 R2 Author notifcation
 Acceptance Notifications
@@ -187,6 +190,7 @@ Research paper second submission round - Notification of accept/revise/reject
 Research paper third submission round - Notification of accept/revise/reject
 First round reviews and notifications
 Second round reviews and notifications
+Final acceptance
 Artifact notification ESOP, FASE, FoSSaCS
 Notification of acceptance/rejection
 first review cycle notification
@@ -195,7 +199,6 @@ Cycle 1 - Notification (accept/reject/revision)
 Cycle 2 - Notification (accept/reject/revision)
 First submission - Author Notification
 Second submission - Author Notification
-Round 1 - Notification of acceptance
 Authors Notification
 Acceptance Notification Date
 acceptance notification
@@ -210,8 +213,11 @@ Paper Acceptance Notificatione
 Acceptance Notification of Regular, Special Session, Industrial and BMI Workshop Papers
 Final notifications
 First Deadline - Acceptance notification
+First Deadline - Early-reject notification
 Second Deadline - Acceptance notification
+Second Deadline - Early-reject notification
 Third Deadline - Acceptance notification
+Third Deadline - Early-reject notification
 Authors’ Notification on the review process results
 Camera-ready deadline
 Round 1 - Notifications to authors
@@ -224,6 +230,7 @@ Final Author Notification
 Early Decision Notification
 Final Notification
 Notifications Date
+Second round notification
 Notifications of Acceptance to Authors
 1st round decisions
 Final decisions
@@ -269,7 +276,6 @@ Summary reject notification
 Paper decision notifications
 Notification of Acceptance or Rebuttal
 Final notification of Acceptance or Rejection after Rebuttal
-Notification deadline
 Main Track (round 1) - Notification deadline
 Main Track (round 2) - Notification deadline
 Regular - Authors Notification
@@ -289,7 +295,6 @@ Research paper first submission round - Notification of accept/reject for revise
 Research paper second submission round - Notification of accept/reject for revised submission
 Research paper third submission round - Notification of accept/reject for revised submission
 Preliminary author notification
-Final acceptance
 Notifications (extended)
 Notification to authors - Paper
 Winter deadline - Notification of acceptance
@@ -341,7 +346,9 @@ First round notification for journal-track papers, and notification of acceptanc
 Notice of acceptance
 Final notification to authors
 First Cycle Acceptance Notification
+First Cycle: Final Decisions
 Second Cycle Acceptance Notification
+Second Cycle: Final Decisions
 Notification of papers accepted
 Regular Papers Notification
 Notifications for Late Breaking Short Papers
@@ -358,14 +365,13 @@ Notification of acceptance for paper and extended abstracts
 Full paper notification to authors
 Short paper notification to authors
 Notification of Special Session Acceptance
-Notifications (Research, In-Use, and Resource Tracks)
 Paper Notification (First Round)
 Paper Notification (Second Round)
 Review Result Notification
 Authors' Notification
 Decision
-1st Round: Notification (Accept/Revision/Reject)
-2nd Round: Notification
+1st Round Notification (Accept/Revision/Reject)
+2nd Round Notification
 Notification (Round 1)
 Notification (Round 2 and Major Revisions)
 First notification of acceptance/rejection
@@ -380,15 +386,15 @@ Authors notification
 Workshop Authors Notification
 Poster acceptance notification
 Acceptance/rejection notifications
-Presenter notifications
-Notification for the Replicability Track Expression of Interest
 Early reject notification
+Position- Authors Notification
 Authors notifications and courses selection
 Summer - Author notification
 Fall - Author notification
 Winter - Author notification
 Notification of Paper Decisions
 Workshop Paper Decision Notification
+Submission*
 Notification of acceptance for the 1st round
 Notification of Phase 1 rejections
 Notification of final acceptance or rejection
@@ -397,7 +403,8 @@ Papers Acceptance Notification
 First notification
 Decision notification
 Final acceptance notification
-Notification of acceptance for shepherding
+Acceptance for shepherding
+Notification of acceptance sent for all submissions
 Issue 1 - Author notification
 Issue 2 - Author notification
 Issue 3 - Author notification
@@ -406,6 +413,7 @@ USB-only acceptance notification
 Author Notification of Acceptance Decision
 Decision notifications
 Notification (cycle 1)
+Notification (cycle 2)
 Notification of acceptance/shepherding
 Spring Deadline - Notification to authors
 Fall Deadline - Notification to authors
@@ -432,10 +440,8 @@ TCHES Volume 2024/2 - Notification
 TCHES Volume 2024/3 - Notification
 TCHES Volume 2024/4 - Notification
 Notification of final acceptance
-Latest Workshop Notification
-Latest Tutorial Notification
 Submission deadline
 First Call Authors Notified
 Final Call Authors Notified
 1st Call - Notifications of acceptance
-2nd Call -Notifications of acceptance
+2nd Call - Notifications of acceptance

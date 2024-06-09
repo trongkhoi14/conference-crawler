@@ -11,8 +11,8 @@ const dataPineline = async (conferenceId) => {
             const organizations = [
                 {
                     name: "default",
-                    location: conference.Location? conference.Location : "updating",
-                    type: conference.Type? conference.Type : "updating",
+                    location: conference.Location? conference.Location : "",
+                    type: conference.Type? conference.Type : "",
                     start_date: conference.ConferenceDate[0]?.date,
                     end_date: conference.ConferenceDate[1]?.date
                 },
@@ -46,7 +46,7 @@ const dataPineline = async (conferenceId) => {
                 organizations: organizations? organizations : [""],
                 source: "CORE2023"
             };  
-            console.log(processedConf)
+            // console.log(processedConf)
 
             await postConference(processedConf)
             

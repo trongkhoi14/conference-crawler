@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
-  <title>ICS 2023</title>
+  <title>ICS 2024</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -11,7 +11,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-
 
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/ICS.png">
@@ -26,29 +25,46 @@
       addSponsors(getParameterByName("intel"), getParameterByName("harry"));
     });
   </script>
+
+<style>
+  footer {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 15px;
+    background-color: #f0f0f0;
+    color: #333;
+    width: 100%;
+  }
+</style>
+
 </head>
 
 <body>
 
   <a name="home" href="#"></a>
+
   <!--Navigation bar-->
   <div id="nav-placeholder"></div>
   <script>
     $("#nav-placeholder").load("nav.html", function () {
-      $("#nav-cfp").addClass("active")
+      $("#nav-cf").addClass("active")
       console.log("check")
-    });  
+    });
   </script>
   <!--end of Navigation bar-->
+
+
+
 
   <div class="container">
     <div class="row center" id="title">
       <div class="col-md-12">
         <!-- <img src="images/acm_logo_tablet.svg" > -->
-        <h1 class="text-center">ICS 2023: International Conference on Supercomputing</h1>
-        <h3 class="text-center">June 21-23, Orlando FL</h3>
-        <h3 class="text-center"><a href="https://fcrc.acm.org/"></a><a href="https://fcrc.acm.org/">In Conjunction with the
-              Federated Computing Research Conference</a></h3>
+        <h1 class="text-center">ICS 2024: International Conference on Supercomputing</h1>
+        <h2 class="text-center">June 4-7, 2024</h2>
+        <h3 class="text-center">International Conference Hall, Kyoto University, Kyoto, Japan</h3>
+        <!-- <h3 class="text-center"><a href="https://fcrc.acm.org/"><a href="https://fcrc.acm.org/">In Conjunction with the
+                      Federated Computing Research Conference</a></a></h3> -->
         <img class="img-fluid" height="210px" src="images/big_view.png">
       </div>
 
@@ -60,207 +76,214 @@
     <!-- <div class="row">
       <div class = "col-md-12">
       <h5>
-        ACM International Conference on Supercomputing (ICS) is the premier international forum for the presentation of research results in high-performance computing systems. The 37th conference (ICS-2023) will be held in Orlando, FL.
+        ACM International Conference on Supercomputing (ICS) is the premier international forum for the presentation of research results in high-performance computing systems. The 37th conference (ICS-2024) will be held in Orlando, FL.
       </h5>
     </div>
     </div> -->
     <div class="row top-spacing">
-      <div class="col-md-7">
-        <a href="#" name="papers"></a>
-        <div class="row">
-          <h3>Call for Papers</h3>
-        </div>
-        <div class="row">
-          <p><span style="font-weight: 400">
-              The ACM International Conference on Supercomputing (ICS) is the premier international forum for the
-              presentation of research results in high-performance computing systems. The 37th edition of ICS will be
-              part of ACM FCRC in Orlando June 21-23, 2023.
-            </span></p>
-          <p><span style="font-weight: 400">
-              Papers are solicited on all aspects of the architecture, software, and applications of high-performance
-              computing systems of all scales (from chips to supercomputing systems), including but not limited to:
-            </span></p>
-          <ul>
-            <li><span style="font-weight: 400">
-                Processor, accelerator, memory, storage, interconnect and system architectures, including architectures
-                based on future and emerging hardware (e.g. quantum, photonic, neuromorphic).
-              </span></li>
-            <li><span style="font-weight: 400">
-                Programming languages, paradigms and execution models, including domain-specific languages and
-                scientific problem-solving software environments.
-              </span></li>
-            <li><span style="font-weight: 400">
-                Compilers, runtime systems and system software, including optimization and support for hardware
-                resources and energy management.
-              </span></li>
-            <li><span style="font-weight: 400">
-                High-performance algorithms and applications including machine learning and large-scale data analytics,
-                as well as the implementation and deployment of algorithms and applications on large-scale systems.
-              </span></li>
-            <li><span style="font-weight: 400">
-                Tools for measurement, modelling, analysis and visualization of performance, energy, or other
-                quantitative properties of high-performance computing systems.
-              </span></li>
-            <!-- <li><span style="font-weight: 400">
-              Exposing security weaknesses and protecting against them in data centers and other large-scale computing systems;
-          </span></li>
-          <li><span style="font-weight: 400">
-              New applications and workload analysis; and
-          </span></li>
-          <li><span style="font-weight: 400">
-              The use of machine learning to design/analyze large-scale computing system.
-          </span></li> -->
-          </ul>
-        </div>
-        <div class="row">
-          <p><span style="font-weight: 400">
-              The review process will include a rebuttal period, and the papers will be evaluated based on novelty,
-              technical soundness, and potential impact on the field. </span></p>
-        </div>
-        <div class="row">
-          <h3><b>Important dates</b></h3>
-        </div>
+      <div class="col-md-8 confinfo">
+        <h2 class="column-title">
+          Call for Papers
+        </h2>
+<h4>
+<br>
+
+The ACM International Conference on Supercomputing (ICS) is the premier international forum for the
+presentation of
+research results in high-performance computing systems. The 38th edition of ICS will be held in Kyoto, Japan
+from June
+4-7, 2024.<br><br>
+Papers accepted for this conference will be published in the ACM proceedings. ACM's publication policy is as
+follows.<br><br>
+
+<ul>
+  <li>By submitting your article to an ACM Publication, you are hereby acknowledging that you and your co-authors are
+  subject to all ACM Publications Policies, including ACM's new Publications Policy on Research Involving Human
+  Participants and Subjects. Alleged violations of this policy or any ACM Publications Policy will be investigated by ACM
+  and may result in a full retraction of your paper, in addition to other potential penalties, as per ACM Publications
+  Policy.</li>
+  <br>
+  <li>Please ensure that you and your co-authors obtain an ORCID ID, so you can complete the publishing process for your
+  accepted paper. ACM has been involved in ORCID from the start and we have recently made a commitment to collect ORCID
+  IDs from all of our published authors. The collection process has started and will roll out as a requirement throughout
+  2022. We are committed to improve author discoverability, ensure proper attribution and contribute to ongoing community
+  efforts around name normalization; your ORCID ID will help in these efforts.</li>
+  <br>
+</ul>
+
+Papers are solicited on all aspects of the architecture, software, and applications of high-performance
+computing
+systems of all scales (from chips to supercomputing systems), including but not limited to:
+<br><br>
+<ul>
+  <li>Processor, accelerator, memory, storage, interconnect and system architectures, including architectures
+    based on
+    future and emerging hardware (e.g. quantum, superconducting, photonic, neuromorphic).</li><br>
+  <li>Programming languages, paradigms and execution models, including domain-specific languages and
+    scientific
+    problem-solving software environments.</li><br>
+  <li>Compilers, runtime systems and system software, including optimization and support for hardware
+    resources and energy
+    management.</li><br>
+  <li>High-performance algorithms and applications including machine learning and large-scale data analytics,
+    as well as the
+    implementation and deployment of algorithms and applications on large-scale systems.</li><br>
+  <li>Tools for measurement, modeling, analysis and visualization of performance, energy, or other
+    quantitative properties
+    of high-performance computing systems.</li><br>
+</ul>
+
+        <strong>Paper submission site: <a href="https://ics2024-kyoto.hotcrp.com/">https://ics2024-kyoto.hotcrp.com/</a></strong><br><br>
+
+        The papers will be evaluated based on novelty, technical soundness, and potential impact on the field.<br>
+        The review process includes a rebuttal. All papers are discussed by the committee, taking the authors' rebuttal into
+        account.
+
+</h4>
+
+        <h2 class="column-title">
+          Important dates
+        </h2>
+        <div class="intro-content-text">
+
+<h4>
+<br>
+
         <div class="row">
           <table>
             <tbody>
               <tr>
-                <td><span style="font-weight: 400">Abstract submission:</span></td>
-                <td>
-                  <!-- Friday,  -->
-                  January 27th, 2023 AOE
-                </td>
+                <td style="white-space: nowrap;">Abstract submission:</td>
+                <td style="white-space: nowrap;"><span style="margin-left: 50px;"><s>January 11th, 2024</s> CLOSED</span></td>
               </tr>
               <tr>
-                <td>Paper submission:</td>
-                <td>
-                  <!-- Friday,  -->
-                  February 3rd, 2023 AOE <br>
-                  <!-- <a href="http://ics23.hotcrp.com/">Submission Website</a> -->
-                </td>
+                <td style="white-space: nowrap;">Paper submission:</td>
+                <td style="white-space: nowrap;"><span style="margin-left: 50px;"><s>January 18th, 2024</s> CLOSED</span></td>
               </tr>
               <tr>
-                <td>Rebuttal period:</td>
-                <td>
-                  <!-- Monday,  -->
-                  April 3rd to
-                  <!-- Wednesday,  -->
-                  April 4th (AOE)
-                </td>
+                <td style="white-space: nowrap;">Rebuttal period:</td>
+                <td style="white-space: nowrap;"><span style="margin-left: 50px;"><s>March 18th to March 20th, 2024</s> CLOSED</span></td>
               </tr>
               <tr>
-                <td>Author notification:</td>
-                <td>
-                  <!-- Monday,  -->
-                  April 14th 2023
-                </td>
+                <td style="white-space: nowrap;">Author notification:</td>
+                <td style="white-space: nowrap;"><span style="margin-left: 50px;"><s>April 2nd, 2024</s> CLOSED</span></td>
               </tr>
               <tr>
-                <td>Camera-ready:</td>
-                <td>
-                  May 4th, 2023 AOE
-                </td>
+                <td style="white-space: nowrap;">Camera-ready:</td>
+                <td style="white-space: nowrap;"><span style="margin-left: 50px;"><s>April 22nd, 2024</s> CLOSED</span></td>
+              </tr>
+                <tr><td style="white-space: nowrap;">Registration site will open:</td>
+                <td style="white-space: nowrap;"><span style="margin-left: 50px;"><s>April 22nd, 2024</s> CLOSED</span></td>
+                </tr>
+                <tr>
+                  <td style="white-space: nowrap;">Author registration due:</td>
+                  <td style="white-space: nowrap;"><span style="margin-left: 50px;"><s>April 30th, 2024</s> CLOSED</span></td>
+                </tr>
+                <tr>
+                  <td style="white-space: nowrap;">Early-bird registration due:</td>
+                  <td style="white-space: nowrap;"><span style="margin-left: 50px;"><s>May 9th, 2024</s> CLOSED</span></td>
+                </tr>
+                <tr>
+              </tr><tr>
+                <td style="white-space: nowrap;">Dates of the conference:</td>
+                <td style="white-space: nowrap;"><span style="margin-left: 50px;"><s>June 4-7, 2024</s> CLOSED</span></td>
               </tr>
               <tr>
-                <td>Dates of the conference:</td>
-                <td>
-                  June 21-23, 2023
-                </td>
+                <td style="white-space: nowrap;"></td>
+                <td style="white-space: nowrap;"><span style="margin-left: 50px;">
+                    <font size="4">- <s>Workshop: June 4th</s> CLOSED</font>
+                  </span></td>
+              </tr>
+              <tr>
+                <td style="white-space: nowrap;"></td>
+                <td style="white-space: nowrap;"><span style="margin-left: 50px;">
+                    <font size="4">- <s>Main conference: June 5-7</s> CLOSED</font>
+                  </span></td>
               </tr>
             </tbody>
           </table>
         </div>
-        <div class="row">
-          <p><span style="font-weight: 400">
-              All submission dates above are AOE (Anywhere on Earth).
-        </span></p></div>
-        <!-- <div class="row">
-        <h3><b>Submissions</b></h3>
-      </div> -->
-        <!-- <div class="row">
-          <p><span style="font-weight: 400">
-              Authors will submit papers via the HotCRP conference review software (https://ics23.hotcrp.com). Please use the standard fonts/formatting in the 2017 ACM conference proceedings template (https://www.acm.org/publications/proceedings-template). Submissions should be a maximum of ten (10) pages, not including references. Submissions (both abstract and paper) should be prepared for double-blind review, i.e., without author names or other identifying material. Authors should refer to themselves in the third person when citing their own work.
 
-              <br><br>
+</h4>
+<h3 class="row">
+  ICS2024 PROGRAM CO-CHAIRS:<br>
+  Murali Annavaram, USC.<br>
+  Ana Lucia Varbanescu, University of Twente.
+  <br><br><br><br>
+</h3>
 
-              Authors may contact only the Program Chairs about submitted papers
-              during and after the review process. Contacting PC or ERC members
-              about submitted paper(s) is an ethical violation and may be grounds for
-              summary rejection.
-      </div> -->
-        <!-- <div class="row">
-        <p><span style="font-weight: 400">The submission system requests information about the authors. This information will not be given to the reviewers.<br>
-    </span></p>
-      </div> -->
-
-      </div>
-      <div class="col-md-1">
-      </div>
+        </div><!-- single intro text end-->
+      </div><!-- col end-->
       <div class="col-md-3" id="supporters">
 
         <!-- <div class="row">
-        <h3>Supporters:</h3>
-      </div> -->
+            <h3>Supporters:</h3>
+          </div> -->
         <div class="row">
           <!-- <div class="row">
-          <h4>Gold:</h4>
-        </div> -->
+              <h4>Gold:</h4>
+            </div> -->
           <!-- <div class="row">
-          <div class="col-md-2">
-            <div class="text-center">
-              <a href="http://www.paratools.com/" >
-                <img src="../paratools_logo.jpg" height="60" class="logo">
-              </a>
-            </div>
-          </div>
-        </div> -->
+              <div class="col-md-2">
+                <div class="text-center">
+                  <a href="http://www.paratools.com/" >
+                    <img src="../paratools_logo.jpg" height="60" class="logo">
+                  </a>
+                </div>
+              </div>
+            </div> -->
           <!-- <div class="row">
-          <div class="col-md-2">
-            <div class="text-center">
-              <a href="https://www.mellanox.com/" >
-                <img src="../Mellanox-Technologies.jpg" height="75" class="logo">
-              </a>
-            </div>
-          </div>
-        </div> -->
+              <div class="col-md-2">
+                <div class="text-center">
+                  <a href="https://www.mellanox.com/" >
+                    <img src="../Mellanox-Technologies.jpg" height="75" class="logo">
+                  </a>
+                </div>
+              </div>
+            </div> -->
           <!-- <div class="row">
-          <div class="col-md-2">
-            <div class="text-center">
-              <a href="https://www.amd.com/en" >
-                <img src="../53863A_AMD_E_Wh_RGB.jpg" height="75" class="logo">
-              </a>
-            </div>
-          </div>
-        </div> -->
+              <div class="col-md-2">
+                <div class="text-center">
+                  <a href="https://www.amd.com/en" >
+                    <img src="../53863A_AMD_E_Wh_RGB.jpg" height="75" class="logo">
+                  </a>
+                </div>
+              </div>
+            </div> -->
           <!-- <div class="row">
-          <div class="col-md-2">
-            <div class="text-center">
-              <a href="https://openpowerfoundation.org/" >
-                <img src="OpenPower_logo_whtbg.png" height="75" class="logo">
-              </a>
-            </div>
-          </div>
-        </div> -->
+              <div class="col-md-2">
+                <div class="text-center">
+                  <a href="https://openpowerfoundation.org/" >
+                    <img src="OpenPower_logo_whtbg.png" height="75" class="logo">
+                  </a>
+                </div>
+              </div>
+            </div> -->
         </div>
         <div class="row">
           <!-- <div class="row">
-          <h4>Bronze:</h4>
-        </div> -->
+              <h4>Bronze:</h4>
+            </div> -->
           <!-- <div class="row" >
-          <div class="col-md-2" >
-            <div class="text-center" >
-              <a href="https://www.hpccharm.com/">
-                <img src="../charmworks-logo.png" height="60" class="logo">
-              </a>
-            </div>
-          </div>
-        </div> -->
+              <div class="col-md-2" >
+                <div class="text-center" >
+                  <a href="https://www.hpccharm.com/">
+                    <img src="../charmworks-logo.png" height="60" class="logo">
+                  </a>
+                </div>
+              </div>
+            </div> -->
         </div>
-              <div class="row"><h3>Sponsors:</h3></div><div class="row spacing"><div class="col-md-2"><div class="text-center"> <a href="https://www.acm.org/"><img src="images/acm_logo_tablet.svg" height="75" class="logo"></a> </div> </div></div><div class="row spacing"><div class="col-md-2"><div class="text-center"> <a href="https://www.sigarch.org/"><img src="images/ACM_SIGARCH_logo.png" height="75" class="logo"></a> </div> </div></div><div class="row"><h3>Supporters:</h3></div><div class="row spacing"><div class="col-md-2"><div class="text-center"> <a href="https://www.intel.com/"><img src="images/intel/intel2.png" height="75" class="logo"></a> </div> </div></div><br><div class="row spacing"><div class="col-md-2"><div class="text-center"> <a href="https://www.genivia.com/"><img src="images/genivia.png" height="75" class="logo"></a> </div> </div></div><div class="row"><h3><a href="memoriam.html#memorial">In Memoriam</a></h3></div><div class="row spacing"><br></div></div>
-    </div>
-    <div class="footer">
-      <div id="intelMessage"><p>Intel and the Intel logo are trademarks of Intel Corporation or its subsidiaries.</p></div>
-    </div>
+              <div class="row"><h3>Sponsors:</h3></div><div class="row spacing"><div class="col-md-2"><div class="text-center"> <a href="https://www.acm.org/" target="_blank" rel="noopener noreferrer"><img src="images/acm_logo_tablet.svg" height="75" class="logo"></a> </div> </div></div><div class="row spacing"><div class="col-md-2"><div class="text-center"> <a href="https://www.sigarch.org/" target="_blank" rel="noopener noreferrer"><img src="images/ACM_SIGARCH_logo.png" height="75" class="logo"></a> </div> </div></div><div class="row"><h3>Supporters:</h3></div><div class="row"><h3>- Gold</h3></div><div class="row spacing"><div class="col-md-2"><div class="text-center"> <a href="https://www.amd.com/" target="_blank" rel="noopener noreferrer"><img src="images/AMD_E_Blk_RGB.jpg" height="100" class="logo"></a> </div> </div></div><div class="row spacing"><div class="col-md-2"><div class="text-center"> <a href="https://www.ddn.com/" target="_blank" rel="noopener noreferrer"><img src="images/DDN_Logo.png" height="130" class="logo"></a> </div> </div></div><div class="row spacing"><div class="col-md-2"><div class="text-center"> <a href="https://www.fujitsu.com/" target="_blank" rel="noopener noreferrer"><img src="images/fujitsu.jpg" height="130" class="logo"></a> </div> </div></div><div class="row"><h3>- Silver</h3></div><div class="row spacing"><div class="col-md-2"><div class="text-center"> <a href="https://altair.com/" target="_blank" rel="noopener noreferrer"><img src="images/Altair_Brandmark_Hz_RGB_FullColor.svg" height="40" class="logo"></a> </div> </div></div><div class="row spacing"><div class="col-md-2"><div class="text-center"> <a href="https://www.dell.com/" target="_blank" rel="noopener noreferrer"><img src="images/dell.png" height="35" class="logo"></a> </div> </div></div><div class="row spacing"><div class="col-md-2"><div class="text-center"> <a href="https://www.ibextech.jp/" target="_blank" rel="noopener noreferrer"><img src="images/IBEX_Logo-E1.png" height="80" class="logo"></a> </div> </div></div><div class="row spacing"><div class="col-md-2"><div class="text-center"> <a href="https://www.i-highway.com/en/" target="_blank" rel="noopener noreferrer"><img src="images/i-highway_logo.svg" height="110" class="logo"></a> </div> </div></div><div class="row"><h3>- Bronze</h3></div><div class="row spacing"><div class="col-md-2"><div class="text-center"> <a href="https://chiptip.tech/" target="_blank" rel="noopener noreferrer"><img src="images/chiptip_logo_170720.svg" height="125" class="logo"></a> </div> </div></div><div class="row spacing"><div class="col-md-2"><div class="text-center"> <a href="https://www.nec.com/" target="_blank" rel="noopener noreferrer"><img src="images/NEC.png" height="100" class="logo"></a> </div> </div></div></div>
+    </div><!-- row end-->
+  </div>
+  <!-- <div class="footer">
+    <div id="intelMessage"></div> -->
+  <!-- </div> -->
+
+<footer>
+  <p>ICS 2024 Official Website<br>© ICS 2024 Organizing Committee</p>
+</footer>
 
 
-
-</div></body></html>
+</body></html>

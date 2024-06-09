@@ -21,11 +21,12 @@ const {
 } = require("../exceptions/conference-exception");
 const { getImportantDates } = require("../rule/extractImportantDate-rule");
 const { getConferenceDates } = require("../rule/extractConferenceDate-rule");
+const { stringify } = require('csv-stringify/sync');
 
 const crawlController = async (browserInstance) => {
     try {
         // Create browser
-        // let browser = await browserInstance;
+        let browser = await browserInstance;
 
         //await crawlAllConferencesDetail(browser);
         // await processConferenceError(browser);
@@ -36,20 +37,72 @@ const crawlController = async (browserInstance) => {
         // ETL dữ liệu vừa cào sang postgre
         // await etlDataToPostgre()
 
-        // const importantDate = await getImportantDates(browser,"https://keod.scitevents.org/")
+        // const importantDate = await getImportantDates(
+        //     browser,"http://amsta-24.kesinternational.org/index.php")
         // console.log(importantDate)
         // const conferenceDate = await getConferenceDates(browser,"https://ic3k.scitevents.org/")
-        // const conferenceDate = await getConferenceDates(browser,"https://keod.scitevents.org/")
+        // const conferenceDate = await getConferenceDates(browser,"https://ic3k.scitevents.org/")
+
         
         // console.log(conferenceDate)
+
         // filterInvalidConferences()
 
-        await dataPineline("6639d5594fd45eb8c2e670b4");
+        // saveKeywordsToFile()
+
+        // await dataPineline("6639d3e78fb9939b82bceb91");
+
+        // await saveEvaluationDataset(browser)
+
+        await savePageContent(browser)
 
     } catch (error) {
         console.log("Error in crawlController: " + error);
     }
 };
+
+
+const saveEvaluationDataset = async (browser) => {
+    let conferenceIds = [];
+
+    const fileContent = fs.readFileSync("LastHope.csv", "utf8");
+    const existingData = csvParse(fileContent, { columns: true });
+
+    for (const row of existingData) {
+        conferenceIds.push(row.conference_id);
+    }
+
+    const results = [];
+
+    for (let i=0; i<100; i++) {
+        console.log(i)
+        const conference = await Conference.findOne({ _id: conferenceIds[i] });
+
+        if (!conference) continue;
+
+        const links = await webScraperService.searchConferenceLinksByTitle(browser, conference, 4);
+        const selectedLink = conference.Links.length > 0 ? conference.Links[0] : ""; // Giả sử link máy chọn là selectedLink trong database
+
+        const isTrue = links.includes(selectedLink) ? 'yes' : 'no';
+
+        const result = {
+            _id: conference._id,
+            title: conference.Title,
+            link1: links[0] || '',
+            link2: links[1] || '',
+            link3: links[2] || '',
+            link4: links[3] || '',
+            selectedLink: selectedLink || '',
+            isTrue: isTrue,
+        };
+
+        results.push(result);
+    }
+
+    const csvOutput = stringify(results, { header: !fs.existsSync('EvaluationDataset.csv') });
+    fs.writeFileSync('EvaluationDataset.csv', csvOutput, { flag: 'a' });
+    console.log("Successfully")
+}
 
 const saveKeywordsToFile = async () => {
     try {
@@ -92,33 +145,49 @@ const isKeywordInvalid = (keyword) => {
     const hasColon = keyword.includes(':');
     const hasInvalidDash = keyword.includes('-') && !keyword.includes(' - ');
     
-    return keyword.includes("+")
+    /*
+    Paper Submission Deadline *
+    Deadline
+    Deadlines for submissions - Papers (full and short)
+    Notification to authors - Paper
+    */
+
+    return keyword == "submission deadline"
     return hasColon || hasInvalidDash;
 };
 
 const filterInvalidConferences = async () => {
     try {
         const conferences = await Conference.find();
+        console.log("Find in: " + conferences.length)
         let invalidConferenceIds = [];
 
         conferences.forEach(conference => {
             let hasInvalidKeyword = false;
+            if( 
+                
+                conference.Links[0]?.toLowerCase().includes("call") ||
+                conference.Links[0]?.toLowerCase().includes("cfp")
+            ) {
+                hasInvalidKeyword = true;
+            }
+            
 
-            conference.SubmissonDate.forEach(item => {
-                if (isKeywordInvalid(item.keyword)) {
-                    hasInvalidKeyword = true;
-                }
-            });
-            conference.NotificationDate.forEach(item => {
-                if (isKeywordInvalid(item.keyword)) {
-                    hasInvalidKeyword = true;
-                }
-            });
-            conference.CameraReady.forEach(item => {
-                if (isKeywordInvalid(item.keyword)) {
-                    hasInvalidKeyword = true;
-                }
-            });
+            // conference.SubmissonDate.forEach(item => {
+            //     if (isKeywordInvalid(item.keyword)) {
+            //         hasInvalidKeyword = true;
+            //     }
+            // });
+            // conference.NotificationDate.forEach(item => {
+            //     if (isKeywordInvalid(item.keyword)) {
+            //         hasInvalidKeyword = true;
+            //     }
+            // });
+            // conference.CameraReady.forEach(item => {
+            //     if (isKeywordInvalid(item.keyword)) {
+            //         hasInvalidKeyword = true;
+            //     }
+            // });
 
             if (hasInvalidKeyword) {
                 invalidConferenceIds.push(conference._id.toString());
@@ -134,8 +203,28 @@ const filterInvalidConferences = async () => {
     }
 };
 
+const compareArrays = (arr1, arr2) => {
+    if (arr1.length !== arr2.length) {
+        return false;
+    }
 
+    const sortedArr1 = arr1.sort((a, b) => a.date.localeCompare(b.date));
+    const sortedArr2 = arr2.sort((a, b) => a.date.localeCompare(b.date));
 
+    for (let i = 0; i < sortedArr1.length; i++) {
+        const obj1 = sortedArr1[i];
+        const obj2 = sortedArr2[i];
+
+        if (
+            obj1.date !== obj2.date ||
+            obj1.keyword !== obj2.keyword
+        ) {
+            return false;
+        }
+    }
+
+    return true;
+};
 
 const etlDataToPostgre = async () => {
     let conferenceIds = [];
@@ -147,7 +236,7 @@ const etlDataToPostgre = async () => {
         conferenceIds.push(row.conference_id);
     }
     console.log(conferenceIds.length);
-    for (let i = 800; i < 968; i++) {
+    for (let i = 671; i < 968; i++) {
         console.log(i);
         await dataPineline(conferenceIds[i]);
 
@@ -185,13 +274,13 @@ const savePageContent = async (browser) => {
 
     // Filter rows where machine equals human
     const filteredData = existingData.filter(
-        (row) => row.machine === row.human && row.machine !== "link 5"
+        (row) => row
     );
 
-    for (let i = 98; i < 100; i++) {
+    for (let i = 0; i < 100; i++) {
         console.log(i);
         const currentConference = await Conference.findOne({
-            _id: filteredData[i].conference_id,
+            _id: filteredData[i]._id.slice(1,-1),
         });
 
         const dirPath = `./dataset/${currentConference.Acronym}`;

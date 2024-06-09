@@ -14,7 +14,9 @@ const getConferenceDates = async (browser, link) => {
         let imageLinks = await page.evaluate(() => {
             const images = Array.from(document.querySelectorAll("img"));
             return images
-                .filter(img => img.src.toLowerCase().includes('banner') || (img.alt && img.alt.toLowerCase().includes('banner')))
+                .filter(img => img.src.toLowerCase().includes('banner') 
+                || img.src.toLocaleLowerCase().includes('ban')
+                || (img.alt && img.alt.toLowerCase().includes('banner')))
                 .map(img => img.src);
         });
 
@@ -24,6 +26,7 @@ const getConferenceDates = async (browser, link) => {
         console.log(imageLinks)
 
         const textFromImage = await convertImageToText(imageLinks);
+        console.log(textFromImage)
         const conferenceDate = extractConferenceDate(textFromImage);
         return conferenceDate;
     } catch (error) {
@@ -64,6 +67,9 @@ const extractConferenceDate = (text) => {
             startDateISO,
             endDateISO,
         };
+
+    //October 17-19, 2024
+    //March 25, 2024
     } else {
         return null;
     }
