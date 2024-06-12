@@ -480,7 +480,7 @@ const extractDatesFromBody = async (
                 snapshot = snapshot.replace("may be");
             }
           
-            console.log("snapshot of: " + rootKeyword +snapshot)
+            // console.log("snapshot of: " + rootKeyword +snapshot)
             const dateFinderResult = customDateFinder(snapshot);
             /*
             if (

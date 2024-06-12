@@ -59,6 +59,7 @@ const scrapeConference = async (req, res) => {
         const duration = endTime - startTime; 
 
         if(data) {
+            console.log("Successfully")
             res.json({
                 message: "Successfully",
                 data: data,
