@@ -751,7 +751,7 @@ const filterKey = (keywordData, submissionDate_keywords) => {
     }
 
     let result = [];
-    console.log(filteredKeywords);
+    // console.log(filteredKeywords);
     for (let i = 0; i < filteredKeywords.length; i++) {
         let shouldAdd = true;
         for (let j = 0; j < filteredKeywords.length; j++) {
@@ -948,8 +948,8 @@ const isPositionDateBeforeKeyword = (link, bodyContent) => {
             }
         }
         let indexOfFirstDate = dateFinder(subBodyContent)[0]?.startIndex;
-        console.log(indexOfFirstDate);
-        console.log(indexOfFirstKey);
+        // console.log(indexOfFirstDate);
+        // console.log(indexOfFirstKey);
         if (indexOfFirstDate < indexOfFirstKey) {
             return true;
         } else {

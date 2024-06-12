@@ -81,6 +81,74 @@ const dataPineline = async (conferenceId) => {
     }
 };
 
+const getConferenceToPineline = async (conferenceId) => {
+    const allConference = await Conference.find({
+        _id: conferenceId,
+    });
+
+    for (const conference of allConference) {
+        if (conference.Links.length == 1 
+            && new Date((conference.ConferenceDate[0].date)).getUTCFullYear() > 2023
+        ) {
+            const organizations = [
+                {
+                    name: "default",
+                    location: conference.Location? conference.Location : "",
+                    type: conference.Type? conference.Type : "",
+                    start_date: conference.ConferenceDate[0]?.date,
+                    end_date: conference.ConferenceDate[1]?.date
+                },
+            ];
+            const importantDates = [
+                ...conference.SubmissonDate.map((item) => ({
+                    date_value: item.date,
+                    date_type: item.keyword,
+                })),
+                ...conference.NotificationDate.map((item) => ({
+                    date_value: item.date,
+                    date_type: item.keyword,
+                })),
+                ...conference.CameraReady.map((item) => ({
+                    date_value: item.date,
+                    date_type: item.keyword,
+                })),
+            ];
+
+            const processedConf = {
+                conf_name: conference.Title,
+                acronym: conference.Acronym,
+                callForPaper: conference.CallForPaper? conference.CallForPaper : "Not found",
+                link: conference.Links[0],
+                rank: conference.Rank,
+                fieldsOfResearch: getFieldOfRearchName(conference.PrimaryFoR)
+                    ? [getFieldOfRearchName(conference.PrimaryFoR)]
+                    : ["none"],
+                importantDates: importantDates? importantDates : [""],
+                nkey: conference._id.toString(),
+                organizations: organizations? organizations : [""],
+                source: "CORE2023"
+            };  
+
+            return processedConf
+        } else {
+            const processedConf = {
+                conf_name: conference.Title,
+                acronym: conference.Acronym,
+                callForPaper: "Not found",
+                link: "Not found",
+                rank: conference.Rank,
+                fieldsOfResearch: getFieldOfRearchName(conference.PrimaryFoR)
+                    ? [getFieldOfRearchName(conference.PrimaryFoR)]
+                    : ["none"],
+                nkey: conference._id.toString(),
+                source: "CORE2023"
+            };  
+
+            return processedConf
+        }
+    }
+}
+
 const getFieldOfRearchName = (forCode) => {
     for (let i = 0; i < fieldOfRearchCategories.length; i++) {
         const category = fieldOfRearchCategories[i];
@@ -199,5 +267,6 @@ const fieldOfRearchCategories = [
 
 module.exports = {
     dataPineline,
-    dataPinelineAPI
+    dataPinelineAPI,
+    getConferenceToPineline
 };
