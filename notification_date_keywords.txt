@@ -37,7 +37,8 @@ Notification of Acceptance
 [SHORT] Author notification
 All notifications
 Author notification
-Notification for major revisions
+Initial notification
+Final notification for major revisions
 Author Notification
 Notification of acceptance (Main Track)
 Paper Acceptance Notification
@@ -159,7 +160,7 @@ Notification of decision
 author notification
 notification of acceptance
 Announcement of review results and workshop acceptance
-Full Paper Notification
+Notice of Acceptance
 Review release for full, short, and industry papers
 Acceptance notifications for full, short, and industry papers
 Notification of acceptance (long & short papers)
@@ -191,6 +192,7 @@ Research paper third submission round - Notification of accept/revise/reject
 First round reviews and notifications
 Second round reviews and notifications
 Final acceptance
+Notification of paper revision requirements and final acceptance notification
 Artifact notification ESOP, FASE, FoSSaCS
 Notification of acceptance/rejection
 first review cycle notification
@@ -202,6 +204,7 @@ Second submission - Author Notification
 Authors Notification
 Acceptance Notification Date
 acceptance notification
+Tutorial acceptance notfication
 Notification of acceptance deadline
 Spring cycle - author notification
 Fall cycle - author notification
@@ -225,11 +228,11 @@ Round 2 - Notifications to authors
 Acceptance/Rejection Notification
 Paper Acceptance Notification (including workshops)
 Workshop acceptance notification
+Regular Paper Acceptance Notification
 Preliminary Notification to Authors
 Final Author Notification
 Early Decision Notification
 Final Notification
-Notifications Date
 Second round notification
 Notifications of Acceptance to Authors
 1st round decisions
@@ -241,6 +244,7 @@ Notification of Acceptance of Paper
 Paper acceptance
 Paper Acceptance
 Reviews completed and Authors notified
+Notification with reviews
 First deadline - Acceptance notification
 Second deadline - Acceptance notification
 Third deadline - Acceptance notification
@@ -265,7 +269,6 @@ Workshop, Fast Abstract, SRS papers notification
 Notice of Paper Acceptance
 Notifications Sent
 Notification of review outcomes for first round submissions
-Notification of review outcomes for second round submissions
 Acceptance Communicated by
 Main Track Notification Date
 Paper notification for the main track
@@ -296,7 +299,6 @@ Research paper second submission round - Notification of accept/reject for revis
 Research paper third submission round - Notification of accept/reject for revised submission
 Preliminary author notification
 Notifications (extended)
-Notification to authors - Paper
 Winter deadline - Notification of acceptance
 Summer deadline - Notification of acceptance
 Authors Notifications
@@ -308,7 +310,8 @@ Final Notifications
 Notifications to Authors 1st round
 Notifications to Authors 2nd round
 Notification of Regular Papers Acceptance
-Notification of acceptance for Full Papers
+Decision notification sent
+Comments on final papers sent
 First cycle - Notification to authors
 Second cycle - Notification to authors
 Announcement of Results
@@ -356,6 +359,7 @@ notification to Authors and opening of registrations
 Final notification (artifact submissions)
 Notification of decisions
 Notification for Full Papers
+Notification for Acceptance
 Submission Deadline
 Acceptance decision (expected)
 Author information deadline
@@ -367,6 +371,7 @@ Short paper notification to authors
 Notification of Special Session Acceptance
 Paper Notification (First Round)
 Paper Notification (Second Round)
+Notifications to acceptance/rejection
 Review Result Notification
 Authors' Notification
 Decision
@@ -378,12 +383,15 @@ First notification of acceptance/rejection
 Final notification after rebuttal phase
 Paper acceptance/rejection notification date
 Paper, invited session and mini-course decision notification
-Submission
 Expected notification date
 Notification of provisional acceptance
 Notifications sent out
 Authors notification
 Workshop Authors Notification
+ToSC, Volume 2024, Issue 1 - Decisions
+ToSC, Volume 2024, Issue 2 - Decisions
+ToSC, Volume 2024, Issue 3 - Decisions
+ToSC, Volume 2024, Issue 4 - Decisions
 Poster acceptance notification
 Acceptance/rejection notifications
 Early reject notification

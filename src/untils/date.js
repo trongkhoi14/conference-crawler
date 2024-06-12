@@ -47,10 +47,29 @@ const customDateFinder = (text) => {
             regex: /(January|February|March|April|May|June|July|August|September|October|November|December)\s*,?\s+(\d{4})/gi,
             format: (m) => `1 ${m[1]} ${m[2]}`,
             multiple: false
+        },
+        {
+            // Mẫu: "September 9(Sat), 2023"
+            regex: /(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})\s*\(\w+\)\s*,?\s+(\d{4})/gi,
+            format: (m) => `${m[2]} ${m[1]} ${m[3]}`,
+            multiple: false
+        },
+        {
+            // Mẫu: "July 7th"
+            regex: /(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})(st|nd|rd|th)?/gi,
+            format: (m) => `${m[2]} ${m[1]} 2024`,
+            multiple: false
+        },
+        {
+            // Mẫu: "Jul 01 '24"
+            regex: /(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2})\s+'(\d{2})/gi,
+            format: (m) => `${m[2]} ${m[1]} 20${m[3]}`,
+            multiple: false
         }
 
         // 26th-28th June, 2024
         // 2024 October 20th to 23rd
+        // will be held from January 22 (Mon.) to January 25 (Thur.), 2024
 
     ];
 

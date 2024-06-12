@@ -3,6 +3,7 @@ const sharp = require('sharp');
 const axios = require("axios");
 const webp=require('webp-converter');
 const dateFinder = require("datefinder");
+const { getLocation } = require('./extractLocation-rule')
 
 const getConferenceDates = async (browser, link) => {
     try {

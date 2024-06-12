@@ -21,6 +21,8 @@ const {
 } = require("../exceptions/conference-exception");
 const { getImportantDates } = require("../rule/extractImportantDate-rule");
 const { getConferenceDates } = require("../rule/extractConferenceDate-rule");
+const { getLocation } = require("../rule/extractLocation-rule")
+
 const { stringify } = require('csv-stringify/sync');
 
 const crawlController = async (browserInstance) => {
@@ -37,23 +39,24 @@ const crawlController = async (browserInstance) => {
         // ETL dữ liệu vừa cào sang postgre
         // await etlDataToPostgre()
 
-        const importantDate = await getImportantDates(
-            browser,"http://amsta-24.kesinternational.org/index.php")
+        // const importantDate = await getImportantDates(
+        //     browser,"https://events.vsc.ac.at/event/123/page/342-call-for-papers")
         
-        const dateArr = [
-            ...importantDate.submissionDate.map((item) => ({
-                date_value: item.date,
-                date_type: item.keyword,
-            })),
-            ...importantDate.notificationDate.map((item) => ({
-                date_value: item.date,
-                date_type: item.keyword,
-            })),
-            ...importantDate.cameraReady.map((item) => ({
-                date_value: item.date,
-                date_type: item.keyword,
-            })),
-        ];
+        // console.log(importantDate)
+        // const dateArr = [
+        //     ...importantDate.submissionDate.map((item) => ({
+        //         date_value: item.date,
+        //         date_type: item.keyword,
+        //     })),
+        //     ...importantDate.notificationDate.map((item) => ({
+        //         date_value: item.date,
+        //         date_type: item.keyword,
+        //     })),
+        //     ...importantDate.cameraReady.map((item) => ({
+        //         date_value: item.date,
+        //         date_type: item.keyword,
+        //     })),
+        // ];
 
         // console.log(dateArr)
         // const conferenceDate = await getConferenceDates(browser,"https://ic3k.scitevents.org/")
@@ -62,11 +65,17 @@ const crawlController = async (browserInstance) => {
         
         // console.log(conferenceDate)
 
+        // const title = "International Conference on Advanced Communications and Computation"
+        // const link = "https://www.iaria.org/conferences2024/INFOCOMP24.html"
+        // const location = await getLocation(browser, title, link)
+        // console.log("Location: " + location)
+        
+        
         // filterInvalidConferences()
 
         // saveKeywordsToFile()
 
-        // await dataPineline("6639d3e78fb9939b82bceb91");
+        // await dataPineline("6639c4d0078f0b3454c91bc8");
 
         // await saveEvaluationDataset(browser)
 
@@ -92,7 +101,7 @@ const saveEvaluationDataset = async (browser) => {
 
     const results = [];
 
-    for (let i=900; i<967; i++) {
+    for (let i=967; i<968; i++) {
         console.log(i)
         const conference = await Conference.findOne({ _id: conferenceIds[i] });
 
@@ -168,9 +177,12 @@ const isKeywordInvalid = (keyword) => {
     Deadline
     Deadlines for submissions - Papers (full and short)
     Notification to authors - Paper
+    2nd Round: Abstract Submission
+    Notification of
+
     */
 
-    return keyword == "submission deadline"
+    return keyword.includes("The submission deadline")
     return hasColon || hasInvalidDash;
 };
 
@@ -182,13 +194,31 @@ const filterInvalidConferences = async () => {
 
         conferences.forEach(conference => {
             let hasInvalidKeyword = false;
-            if( 
+            // if( 
                 
-                conference.Links[0]?.toLowerCase().includes("call") ||
-                conference.Links[0]?.toLowerCase().includes("cfp")
-            ) {
-                hasInvalidKeyword = true;
-            }
+            //    conference.CallForPaper?.includes("pdf")
+            // ) {
+            //     hasInvalidKeyword = true;
+            // }
+
+            conference.SubmissonDate.forEach(item => {
+                if (new Date((item.date)).getUTCMonth() == 6) {
+                    console.log(new Date((item.date)).getUTCMonth())
+                    hasInvalidKeyword = true;
+                }
+            });
+            conference.NotificationDate.forEach(item => {
+                if (new Date((item.date)).getUTCMonth() == 6) {
+                    console.log(new Date((item.date)).getUTCMonth())
+                    hasInvalidKeyword = true;
+                }
+            });
+            conference.CameraReady.forEach(item => {
+                if (new Date((item.date)).getUTCMonth() == 6) {
+                    console.log(new Date((item.date)).getUTCMonth())
+                    hasInvalidKeyword = true;
+                }
+            });
             
 
             // conference.SubmissonDate.forEach(item => {
@@ -254,7 +284,7 @@ const etlDataToPostgre = async () => {
         conferenceIds.push(row.conference_id);
     }
     console.log(conferenceIds.length);
-    for (let i = 671; i < 968; i++) {
+    for (let i = 198; i < 200; i++) {
         console.log(i);
         await dataPineline(conferenceIds[i]);
 

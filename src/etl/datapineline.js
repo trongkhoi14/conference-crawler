@@ -7,7 +7,11 @@ const dataPineline = async (conferenceId) => {
     });
 
     for (const conference of allConference) {
-        if (conference.Links.length == 1) {
+        // console.log(new Date((conference.ConferenceDate[0].date)).getUTCFullYear())
+        // console.log(new Date((conference.ConferenceDate[0].date)).getUTCMonth())
+        if (conference.Links.length == 1 
+            && new Date((conference.ConferenceDate[0].date)).getUTCFullYear() > 2023
+        ) {
             const organizations = [
                 {
                     name: "default",
@@ -53,8 +57,7 @@ const dataPineline = async (conferenceId) => {
             setTimeout(() => {
                 console.log("waiting ... ");
             }, 1000);
-        } else if (conference.Links.length == 0) {
-            
+        } else {
             const processedConf = {
                 conf_name: conference.Title,
                 acronym: conference.Acronym,
@@ -92,6 +95,7 @@ const dataPinelineAPI = async (conferenceId) => {
     const allConference = await Conference.find({
         _id: conferenceId,
     });
+
 
     for (const conference of allConference) {
         if (conference.Links.length == 1) {
@@ -135,8 +139,7 @@ const dataPinelineAPI = async (conferenceId) => {
 
             return await postConference(processedConf)
 
-        } else if (conference.Links.length == 0) {
-            
+        } else {
             const processedConf = {
                 conf_name: conference.Title,
                 acronym: conference.Acronym,

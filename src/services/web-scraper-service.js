@@ -1,15 +1,13 @@
 const dateFinder = require("datefinder");
-const { customDateFinder } = require("../untils/date")
+const { customDateFinder } = require("../untils/date");
 require("dotenv").config();
 const Conference = require("../models/conference-model");
 const ConferenceError = require("../models/conferenceError-model");
 const { readKeywordsFromFile } = require("../untils/handleFileDict");
 const { waitForRandomTime } = require("../untils/time");
 const { formatStringDate } = require("../untils/date");
-const {
-    extractDates,
-    extractDates2,
-} = require("../untils/date");
+const { extractDates, extractDates2 } = require("../untils/date");
+const listConfHasDateBeforeKeyword = require("../config/listConferenceHasDateBeforeKeyword")
 
 const getConferenceList = (browser) =>
     new Promise(async (resolve, reject) => {
@@ -135,7 +133,9 @@ const searchConferenceLinksByTitle = async (browser, conference, maxLinks) => {
         // Searching with keyword = Acronym + 2023
         await page.goto("https://www.google.com/");
         await page.waitForSelector("#APjFqb");
-        await page.keyboard.sendCharacter(conference.Title + " "+ conference.Acronym + " 2024");
+        await page.keyboard.sendCharacter(
+            conference.Title + " " + conference.Acronym + " 2024"
+        );
         await page.keyboard.press("Enter");
         await page.waitForNavigation();
         await page.waitForSelector("#search");
@@ -185,17 +185,24 @@ const searchConferenceLinksByTitle = async (browser, conference, maxLinks) => {
         }
 
         links.sort((a, b) => {
-            const aContainsAcronym = a.toLowerCase().includes(conference.Acronym.toLowerCase());
-            const bContainsAcronym = b.toLowerCase().includes(conference.Acronym.toLowerCase());
+            const aContainsAcronym = a
+                .toLowerCase()
+                .includes(conference.Acronym.toLowerCase());
+            const bContainsAcronym = b
+                .toLowerCase()
+                .includes(conference.Acronym.toLowerCase());
 
             if (aContainsAcronym && !bContainsAcronym) return -1;
             if (!aContainsAcronym && bContainsAcronym) return 1;
             if (aContainsAcronym && bContainsAcronym) {
-                return a.indexOf(conference.Acronym) - b.indexOf(conference.Acronym);
+                return (
+                    a.indexOf(conference.Acronym) -
+                    b.indexOf(conference.Acronym)
+                );
             }
             return 0;
         });
-        
+
         await page.close();
         return links.slice(0, maxLinks);
     } catch (error) {
@@ -276,7 +283,7 @@ const getConferenceDetails = async (
                 cameraReady_keywords,
                 snapshotRange
             );
-            const core = process.env.CORE2023
+            const core = process.env.CORE2023;
             if (
                 conferenceLink.includes(`${core[6]}${core[7]}`) &&
                 conferenceLink.includes(".org") &&
@@ -383,7 +390,7 @@ const getIndexOfKeywordNearKeyround = (content, keyround, keyword) => {
         const indexes = [];
         let index = str.indexOf(subStr);
         while (index !== -1) {
-            if(str[index-1] != '/') {
+            if (str[index - 1] != "/") {
                 indexes.push(index);
             }
             index = str.indexOf(subStr, index + subStr.length);
@@ -417,30 +424,51 @@ const getIndexOfKeywordNearKeyround = (content, keyround, keyword) => {
     return closestKeywordIndex;
 };
 
+
+
 const extractDatesFromBody = async (
+    isPositionDateBeforeKeyword,
     keywords,
     bodyContent,
     dateArray,
     snapshotRange
 ) => {
     for (let keyword of keywords) {
-        let rootKeyword = keyword
+        let rootKeyword = keyword;
         let keyRound;
-        if(keyword.includes(" - ")) {
-            keyword = rootKeyword.split(" - ")[1]
-            keyRound = rootKeyword.split(" - ")[0]
+        if (keyword.includes(" - ")) {
+            keyword = rootKeyword.split(" - ")[1];
+            keyRound = rootKeyword.split(" - ")[0];
         }
         let index = bodyContent.indexOf(keyword);
         let subBodyContent = bodyContent;
-        if(keyRound) {
-            index = getIndexOfKeywordNearKeyround(subBodyContent,keyRound, keyword)
+        
+        while(subBodyContent.includes("(Anywhere on Earth)")) {
+            subBodyContent = subBodyContent.replace("(Anywhere on Earth)")
         }
+        // while(subBodyContent.includes("  ")) {
+        //     subBodyContent = subBodyContent.replace(" ")
+        // }
+
+        if (keyRound) {
+            index = getIndexOfKeywordNearKeyround(
+                subBodyContent,
+                keyRound,
+                keyword
+            );
+        }
+        
         while (index !== -1 && index < subBodyContent.length) {
             let snapshot;
-            if(subBodyContent[index+keyword.length] == ':') {
+            if (subBodyContent[index + keyword.length] == ":") {
                 snapshot = subBodyContent.substring(
                     index,
                     index + keyword.length + snapshotRange
+                );
+            } else if (isPositionDateBeforeKeyword) {
+                snapshot = subBodyContent.substring(
+                    Math.max(0, index - snapshotRange + 20),
+                    index + keyword.length + 1
                 );
             } else {
                 snapshot = subBodyContent.substring(
@@ -449,9 +477,10 @@ const extractDatesFromBody = async (
                 );
             }
             if(snapshot.includes("may be")) {
-                snapshot = snapshot.replace("may be")
+                snapshot = snapshot.replace("may be");
             }
-            // console.log("snapshot of: " + rootKeyword +snapshot)
+          
+            console.log("snapshot of: " + rootKeyword +snapshot)
             const dateFinderResult = customDateFinder(snapshot);
             /*
             if (
@@ -470,9 +499,7 @@ const extractDatesFromBody = async (
                 break;
             }
             */
-            if (
-                dateFinderResult.length > 0 && !isFakeNews(keyword, snapshot)
-            ) {
+            if (dateFinderResult.length > 0 && !isFakeNews(keyword, snapshot)) {
                 dateArray.push({
                     date: findClosestDate(
                         dateFinderResult,
@@ -534,7 +561,7 @@ const getConferenceDate = async (browser, currentConference) => {
 
             if (currentConference.ConferenceDate.length > 0) {
                 conferenceYear = currentConference.ConferenceDate[0].date;
-                conferenceYear = new Date(conferenceYear)
+                conferenceYear = new Date(conferenceYear);
             } else {
                 conferenceYear = new Date("2023-01-01T00:00:00.000Z");
             }
@@ -547,23 +574,23 @@ const getConferenceDate = async (browser, currentConference) => {
             const conferenceDate = await getConferenceDateOnDPLPPage(
                 browser,
                 getDBLPSourceLink[0],
-                conferenceYear,
+                conferenceYear
             );
 
             if (conferenceDate.length > 0) {
-                console.log("Successfully")
+                console.log("Successfully");
                 await Conference.findByIdAndUpdate(currentConference._id, {
                     ConferenceDate: conferenceDate,
                 });
-                return true
+                return true;
             } else {
                 console.log(
                     "Cannot find conference date of conference with id: " +
                         currentConference._id
                 );
-                
+
                 await handleMissingInformationError(currentConference._id);
-                return false
+                return false;
             }
         } else {
             console.log(
@@ -574,16 +601,20 @@ const getConferenceDate = async (browser, currentConference) => {
         }
 
         await page.close();
-        return false
+        return false;
     } catch (error) {
         console.log("Error in getConferenceDate: " + error);
         // await handleMissingInformationError(currentConference._id);
         await page.close();
-        return false
+        return false;
     }
-}
+};
 
-const getConferenceDateOnDPLPPage = async (browser, DBLPLink, conferenceYear) => {
+const getConferenceDateOnDPLPPage = async (
+    browser,
+    DBLPLink,
+    conferenceYear
+) => {
     try {
         let page = await browser.newPage();
 
@@ -595,21 +626,21 @@ const getConferenceDateOnDPLPPage = async (browser, DBLPLink, conferenceYear) =>
                 return el.innerText;
             });
         });
-        page.close()
-        titleText = titleText.filter(t => t.includes(`${conferenceYear}`))
+        page.close();
+        titleText = titleText.filter((t) => t.includes(`${conferenceYear}`));
         // console.log(titleText)
 
-        if(titleText.length === 0) {
-            return []
+        if (titleText.length === 0) {
+            return [];
         }
 
-        let findDate = dateFinder(titleText[0])
+        let findDate = dateFinder(titleText[0]);
         let startDate;
         let endDate;
 
-        if(findDate.length < 2) {
+        if (findDate.length < 2) {
             const extractDate = extractDates2(titleText[0]);
-            if(extractDate) {
+            if (extractDate) {
                 startDate = extractDate.startDate;
                 endDate = extractDate.endDate;
             } else {
@@ -619,9 +650,9 @@ const getConferenceDateOnDPLPPage = async (browser, DBLPLink, conferenceYear) =>
                         keyword: "Conference start",
                         update_time: new Date(),
                     },
-                ]
-            } 
-        } else if(findDate.length === 2) {
+                ];
+            }
+        } else if (findDate.length === 2) {
             startDate = findDate[0].date;
             endDate = findDate[1].date;
         }
@@ -637,13 +668,13 @@ const getConferenceDateOnDPLPPage = async (browser, DBLPLink, conferenceYear) =>
                 date: endDate,
                 keyword: "Conference end",
                 update_time: new Date(),
-            }
-        ]
+            },
+        ];
     } catch (error) {
         console.log("Error in getLocationOnDPLPPage: " + error);
-        page.close()
+        page.close();
     }
-}
+};
 
 const shouldUpdateConference = (
     fullInformationPoint,
@@ -735,11 +766,9 @@ const readKeywordsFromDict = () => {
 };
 
 const readRoundkeysFromDict = () => {
-    const round_keywords = readKeywordsFromFile(
-        "/dict/round_dict.txt"
-    );
+    const round_keywords = readKeywordsFromFile("/dict/round_dict.txt");
 
-    return round_keywords
+    return round_keywords;
 };
 
 const readKeywordsFromConference = async (conference) => {
@@ -922,7 +951,7 @@ const getLocation = async (browser, currentConference) => {
 
             if (currentConference.ConferenceDate.length > 0) {
                 conferenceYear = currentConference.ConferenceDate[0].date;
-                conferenceYear = new Date(conferenceYear)
+                conferenceYear = new Date(conferenceYear);
             } else {
                 conferenceYear = new Date("2023-01-01T00:00:00.000Z");
             }
@@ -995,16 +1024,15 @@ const getLocationOnDPLPPage = async (browser, DBLPLink, conferenceYear) => {
 
         if (location.length > 0) {
             location = extractLocation(location[0]);
-            page.close()
+            page.close();
             return location;
         } else {
-            page.close()
+            page.close();
             return "";
         }
-        
     } catch (error) {
         console.log("Error in getLocationOnDPLPPage: " + error);
-        page.close()
+        page.close();
     }
 };
 
@@ -1013,30 +1041,37 @@ const getConferenceType = async (browser, currentConference) => {
         console.log(">> Getting conference type");
         let page = await browser.newPage();
 
-        await page.goto(currentConference.Links[0], { waitUntil: "domcontentloaded" });
+        await page.goto(currentConference.Links[0], {
+            waitUntil: "domcontentloaded",
+        });
         let bodyContent = await page.content();
 
         bodyContent = bodyContent.toLowerCase();
 
-        let online = bodyContent.includes('online') || currentConference.Location.includes("Virtual");
-        let offline = bodyContent.includes('offline') || bodyContent.includes('onsite') || currentConference.Location;
-        let hybrid = bodyContent.includes('hybrid');
-        
-        await page.close()
-        
+        let online =
+            bodyContent.includes("online") ||
+            currentConference.Location.includes("Virtual");
+        let offline =
+            bodyContent.includes("offline") ||
+            bodyContent.includes("onsite") ||
+            currentConference.Location;
+        let hybrid = bodyContent.includes("hybrid");
+
+        await page.close();
+
         if ((online && offline) || hybrid) {
-            return 'Hybrid';
+            return "Hybrid";
         } else if (offline) {
-            return 'Offline';
+            return "Offline";
         } else if (online) {
-            return 'Online';
-        }  else {
-            return '';
+            return "Online";
+        } else {
+            return "";
         }
     } catch (error) {
-        console.log("Error in getConferenceType:" + error)
+        console.log("Error in getConferenceType:" + error);
     }
-}
+};
 
 // Xử lý khi datefinder tìm được nhiều ngày
 const findClosestDate = (dateResults, keywordIndex, keywordLength) => {
@@ -1079,12 +1114,11 @@ const isFakeNews = (key, content) => {
     //     return true;
     // }
     // return false;
-    const keyIndex = content.indexOf(key) 
+    const keyIndex = content.indexOf(key);
 
-    if(content[keyIndex + key.length].toLowerCase() == 's') return true
+    if (content[keyIndex + key.length].toLowerCase() == "s") return true;
 
-    return false
-
+    return false;
 };
 
 module.exports = {
@@ -1097,5 +1131,5 @@ module.exports = {
     getLocation,
     getConferenceType,
     getConferenceDate,
-    readRoundkeysFromDict
+    readRoundkeysFromDict,
 };

@@ -107,6 +107,7 @@ Notification (Round 2 and Major Revisions)
 November cycle - Early reject notification
 Notification of paper acceptance/rejection
 Notification of acceptance will be sent by
+Notification of accept/reject/review again
 Author Notification of Acceptance Decision
 First notification of acceptance/rejection
 Notification of acceptance for shepherding
@@ -142,6 +143,7 @@ Announcement of Accepted Manuscript IDs
 Second submission - Author Notification
 First call - Notification of acceptance
 Notification of acceptance or rejection
+Notification of early-rejection papers
 Notification of provisional acceptance
 Notification of Acceptance or Rebuttal
 First submission - Author Notification
@@ -179,6 +181,7 @@ Research Track - Author notification
 First deadline - Author Notification
 Notification of Acceptance/Rejection
 First Cycle: Acceptance Notification
+Final notification of accept/reject
 Main Conference Author Notification
 2nd phase - Notification to authors
 Late Breaking Abstract Notification
@@ -193,6 +196,7 @@ R2 Author Notification of Revisions
 Acceptance / Rejection Notification
 Full papers acceptance notification
 1st phase - Notification to authors
+1st Round Reviews and Notifications
 TCHES Volume 2024/4 - Notification
 Winter cycle - author notification
 TCHES Volume 2024/1 - Notification
@@ -375,7 +379,6 @@ Authors' notification
 Decision Notification
 R1 Author notifcation
 Authors Notifications
-Camera-ready deadline
 Artifact notification
 Artifact Notification
 summer - notification
@@ -393,8 +396,6 @@ Results notification
 Author notifications
 Notice of acceptance
 Final notifications
-Submission deadline
-Submission Deadline
 1st round decisions
 author notification
 Author Notification
@@ -404,6 +405,7 @@ Final Notifications
 Paper Notifications
 Decisions announced
 Author notification
+2nd Round Decisions
 First notification
 Final Notification
 Author Notiﬁcation
@@ -429,7 +431,6 @@ Reviews Released
 Final acceptance
 Final decisions
 Final Decisions
-Notification of
 Notifications
 notification
 Notification

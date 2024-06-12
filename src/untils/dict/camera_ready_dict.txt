@@ -257,7 +257,6 @@ Camera-ready papers due
 Camera Ready Submission
 Early bird registration
 Proceedings version due
-Acceptance notification
 Camera Ready (for all)
 Final paper submission
 final version deadline
@@ -348,7 +347,7 @@ Final versions
 Final Versions
 Final Version
 FINAL VERSION
-Camera-ready:
+Camera-ready
 Final version
 Camera-ready
 Camera ready
