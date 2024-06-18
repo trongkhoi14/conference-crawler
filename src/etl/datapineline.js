@@ -10,7 +10,7 @@ const dataPineline = async (conferenceId) => {
         // console.log(new Date((conference.ConferenceDate[0].date)).getUTCFullYear())
         // console.log(new Date((conference.ConferenceDate[0].date)).getUTCMonth())
         if (conference.Links.length == 1 
-            && new Date((conference.ConferenceDate[0].date)).getUTCFullYear() > 2023
+            && new Date((conference.ConferenceDate[0].date)).getUTCFullYear() >= 2023
         ) {
             const organizations = [
                 {
@@ -48,7 +48,7 @@ const dataPineline = async (conferenceId) => {
                 importantDates: importantDates? importantDates : [""],
                 nkey: conference._id.toString(),
                 organizations: organizations? organizations : [""],
-                source: "CORE2023"
+                source: conference.Source
             };  
             // console.log(processedConf)
 
@@ -68,7 +68,7 @@ const dataPineline = async (conferenceId) => {
                     ? [getFieldOfRearchName(conference.PrimaryFoR)]
                     : ["none"],
                 nkey: conference._id.toString(),
-                source: "CORE2023"
+                source: conference.Source
             };  
             // console.log(processedConf)
 
@@ -202,7 +202,7 @@ const dataPinelineAPI = async (conferenceId) => {
                 importantDates: importantDates? importantDates : [""],
                 nkey: conference._id.toString(),
                 organizations: organizations? organizations : [""],
-                source: "CORE2023"
+                source: conference.Source
             };  
 
             return await postConference(processedConf)
@@ -218,7 +218,7 @@ const dataPinelineAPI = async (conferenceId) => {
                     ? [getFieldOfRearchName(conference.PrimaryFoR)]
                     : ["none"],
                 nkey: conference._id.toString(),
-                source: "CORE2023"
+                source: conference.Source
             };  
 
             return await postConference(processedConf)

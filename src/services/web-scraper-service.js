@@ -433,6 +433,7 @@ const extractDatesFromBody = async (
     dateArray,
     snapshotRange
 ) => {
+    
     for (let keyword of keywords) {
         let rootKeyword = keyword;
         let keyRound;
@@ -440,15 +441,14 @@ const extractDatesFromBody = async (
             keyword = rootKeyword.split(" - ")[1];
             keyRound = rootKeyword.split(" - ")[0];
         }
-        let index = bodyContent.indexOf(keyword);
+
         let subBodyContent = bodyContent;
         
         while(subBodyContent.includes("(Anywhere on Earth)")) {
-            subBodyContent = subBodyContent.replace("(Anywhere on Earth)")
+            subBodyContent = subBodyContent.replace("(Anywhere on Earth)", "")
         }
-        // while(subBodyContent.includes("  ")) {
-        //     subBodyContent = subBodyContent.replace(" ")
-        // }
+
+        let index = subBodyContent.indexOf(keyword);
 
         if (keyRound) {
             index = getIndexOfKeywordNearKeyround(
@@ -460,10 +460,12 @@ const extractDatesFromBody = async (
         
         while (index !== -1 && index < subBodyContent.length) {
             let snapshot;
-            if (subBodyContent[index + keyword.length] == ":") {
+            if (subBodyContent[index + keyword.length] == ":"
+                || !isPositionDateBeforeKeyword
+            ) {
                 snapshot = subBodyContent.substring(
                     index,
-                    index + keyword.length + snapshotRange
+                    index + keyword.length + snapshotRange 
                 );
             } else if (isPositionDateBeforeKeyword) {
                 snapshot = subBodyContent.substring(
@@ -477,7 +479,7 @@ const extractDatesFromBody = async (
                 );
             }
             if(snapshot.includes("may be")) {
-                snapshot = snapshot.replace("may be");
+                snapshot = snapshot.replace("may be", "");
             }
           
             // console.log("snapshot of: " + rootKeyword +snapshot)

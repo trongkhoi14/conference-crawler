@@ -1,5 +1,5 @@
-Regular
-Position
+Regular Papers
+Position Papers
 Abstracts
 June cycle
 November cycle
@@ -28,7 +28,12 @@ Main Track (round 2)
 Main Track (round 1)
 Deadlines for submissions
 Short Papers & Application Notes
+Camera Ready Papers
+Spring deadline
+Fall deadline
+Summer Deadline
 Spring Deadline
+Winter Deadline
 Fall Deadline
 Summer deadline
 Winter deadline 
@@ -56,6 +61,7 @@ The 1st Round
 The 2nd Round
 3rd Round
 2nd Round
+Third deadline
 Second deadline
 First deadline
 Research Paper

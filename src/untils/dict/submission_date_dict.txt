@@ -129,6 +129,7 @@ Main Conference Papers - Submission Deadline
 First Wave Submissions - Submission Deadline
 Spring Deadline - Full paper submissions due
 Regular and Special Session Paper Submission
+Call for papers for the main conference track
 For all submission categories. Full version
 Second Deadline - Paper submission deadline
 Second Deadline - Paper Submission Deadline
@@ -153,6 +154,7 @@ Third Deadline - Paper submission deadline
 First Deadline - Paper submission deadline
 TCHES Volume 2024/3 - Submission deadline
 Submission of long, short and demo papers
+Submission deadline (long & short papers)
 submission deadline for all contributions
 TCHES Volume 2024/2 - Submission deadline
 Deadline (Maintrack and Special Sessions)
@@ -164,6 +166,7 @@ Deadline for Extended abstract submission
 TCHES Volume 2024/4 - Submission deadline
 Main Conference Paper Submission Deadline
 Submission deadline presentation abstract
+Regular & Challenge paper submission due
 Submission Deadline (1st CFP – new date)
 Submission deadline (papers and posters)
 Deadline for updates to submitted papers
@@ -208,6 +211,7 @@ Main Conference Submission Site Opens
 The 2nd Round - Full paper submission
 Submission deadline Deadline Extended
 Second deadline - Submission Deadline
+Technical Papers: Submission Deadline
 Paper Registration Deadline Extended
 Full paper upload and editing closed
 Submissions (Full paper, Main Track)
@@ -226,6 +230,7 @@ Second cycle - Full paper submission
 Abstract/paper registration deadline
 Deadline for submission of abstracts
 Submission deadline for Short Papers
+Abstract submission to second round
 Conference Paper Submission Deadline
 1st Round Paper Submission Deadline
 Paper submission deadline (cycle 2)
@@ -267,8 +272,10 @@ Paper submission deadline EXTENDED
 extended paper submission deadline
 Art Exhibition submission deadline
 ROUND 4 - Revised paper submission
+Workshop/Special Session proposal
 Second Cycle: Submissions Deadline
 Deadline for full paper submission
+Deadline for Paper Submission due
 Tutorial and Workshop Proposal Due
 SPECIAL SESSIONS PROPOSAL DEADLINE
 Paper submission for the 2nd round
@@ -357,10 +364,10 @@ February Round - Revisions Due
 Short presentations submission
 Submission deadline (Extended)
 Submission of the full version
-Submission deadline (extended)
 Deadline to register abstracts
 Papers (Full/Short) Submission
 Full Paper submission deadline
+Paper titles and abstracts due
 Full Paper Submission Deadline
 Full Paper Submission deadline
 STOC Paper Submission Deadline
@@ -397,6 +404,7 @@ Revised Paper Upload Deadline
 1st Round - Abstract Deadline
 Mandatory abstract submission
 Regular paper submissions due
+Author registration deadline
 Submission extended deadline
 Abstract submission due date
 Doctoral Consortium deadline
@@ -438,6 +446,7 @@ Early Registration Deadline
 Submission deadline for ARR
 Paper submission (extended)
 Paper & abstract submission
+Full Paper Submission Date
 Call for proceedings closes
 Position - Paper Submission
 ROUND 2 - Paper submission
@@ -483,6 +492,7 @@ OOPSLA 2024 R1 Submission
 Paper Submission Deadline
 Submission of full papers
 Paper submission due date
+paper submission deadline
 Full paper submission due
 Summer - Paper submission
 Full Paper Submission Due
@@ -515,6 +525,7 @@ Final Call for Proposals
 Submission form deadline
 PhD Colloquium Abstracts
 Revised version deadline
+Second submission round
 The submission deadline
 Art and Media Galleries
 Submission Deadline for
@@ -536,9 +547,9 @@ Early-Decision Due Date
 Award Applications Open
 Paper first submission
 Short Paper Submission
-Final version deadline
 Full paper submissions
 Revised paper deadline
+First submission round
 Submission of Abstract
 fall - full submission
 Final Paper Submission
@@ -564,6 +575,7 @@ full paper submission
 Full Paper Submission
 Abstract Registration
 Submission Site Opens
+All papers submission
 Paper submissions due
 Submission site opens
 New submissions close
@@ -639,7 +651,6 @@ Second draft due
 SEDES Submission
 Regular Due Date
 Paper submission
-Final Submission
 Paper Submission
 Submissions open
 General deadline

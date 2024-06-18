@@ -9,7 +9,7 @@ const startBrowser = async () => {
                 ? process.env.PUPPETEER_EXECUTABLE_PATH
                 : puppeteer.executablePath(),
             //Không hiển thị GUI lên
-            headless: "new",
+            headless: false,
             defaultViewport: false,
             args: [
                 "--disable-setuid-sandbox",

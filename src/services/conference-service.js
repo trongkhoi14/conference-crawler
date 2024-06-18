@@ -8,10 +8,12 @@ const postConference = async (conference) => {
                 conference
             )
             .then((response) => {
+                console.log(">> POST: https://conference-searching.onrender.com/api/v1/post/etl")
                 console.log(response.data);
                 return true;
             })
             .catch((error) => {
+                console.log(">> POST: https://conference-searching.onrender.com/api/v1/post/etl")
                 console.log(error.response.data);
                 return false;
             })

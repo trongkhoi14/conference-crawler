@@ -5,9 +5,27 @@ const customDateFinder = (text) => {
     // Các mẫu regex để tìm các định dạng ngày tháng
     const patterns = [
         {
+            // Mẫu: "24th June 202" (lấy năm mặc định là 2024)
+            regex: /(\d{1,2})(st|nd|rd|th)?\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+202\s/gi,
+            format: (m) => `${m[1]} ${m[3]} 2024`,
+            multiple: false
+        },
+        {
+            // Mẫu: "Aug 15, 2024"
+            regex: /(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2}),\s+(\d{4})/gi,
+            format: (m) => `${m[2]} ${m[1]} ${m[3]}`,
+            multiple: false
+        },
+        {
             // Mẫu: "15 May 2024"
             regex: /(\d{1,2})\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{4})/gi,
             format: (m) => `${m[1]} ${m[2]} ${m[3]}`,
+            multiple: false
+        },
+        {
+            // Mẫu: "10th Jun 2024"
+            regex: /(\d{1,2})(st|nd|rd|th)?\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{4})/gi,
+            format: (m) => `${m[1]} ${m[3]} ${m[4]}`,
             multiple: false
         },
         {
@@ -55,6 +73,12 @@ const customDateFinder = (text) => {
             multiple: false
         },
         {
+            // Mẫu: "Fri, October 20th, 11:59 AoE, 2023"
+            regex: /(Sun|Mon|Tue|Wed|Thu|Fri|Sat),\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})(st|nd|rd|th)?,\s+(\d{2}:\d{2}\s+AoE),\s+(\d{4})/gi,
+            format: (m) => `${m[3]} ${m[2]} ${m[6]}`,
+            multiple: false
+        },
+        {
             // Mẫu: "July 7th"
             regex: /(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})(st|nd|rd|th)?/gi,
             format: (m) => `${m[2]} ${m[1]} 2024`,
@@ -64,6 +88,42 @@ const customDateFinder = (text) => {
             // Mẫu: "Jul 01 '24"
             regex: /(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2})\s+'(\d{2})/gi,
             format: (m) => `${m[2]} ${m[1]} 20${m[3]}`,
+            multiple: false
+        },
+        {
+            // Mẫu: "June, 30, 2024"
+            regex: /(January|February|March|April|May|June|July|August|September|October|November|December)\s*,\s*(\d{1,2})\s*,\s*(\d{4})/gi,
+            format: (m) => `${m[2]} ${m[1]} ${m[3]}`,
+            multiple: false
+        },
+        {
+            // Mẫu: "Jan 9th, 2024"
+            regex: /(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2})(st|nd|rd|th)?,?\s+(\d{4})/gi,
+            format: (m) => `${m[2]} ${m[1]} ${m[4]}`,
+            multiple: false
+        },
+        {
+            // Mẫu: "26/04" (mặc định năm 2024)
+            regex: /(\d{1,2})\/(\d{1,2})/gi,
+            format: (m) => `${m[1]} ${m[2]} 2024`,
+            multiple: false
+        },
+        {
+            // Mẫu: "June, 12"
+            regex: /(January|February|March|April|May|June|July|August|September|October|November|December),\s(\d{1,2})/gi,
+            format: (m) => `${m[2]} ${m[1]} 2024`,
+            multiple: false
+        },
+        {
+            // Mẫu: "Oct. 18th, 2022"
+            regex: /(Jan\.|Feb\.|Mar\.|Apr\.|May\.|Jun\.|Jul\.|Aug\.|Sep\.|Oct\.|Nov\.|Dec\.)\s+(\d{1,2})(st|nd|rd|th)?,?\s+(\d{4})/gi,
+            format: (m) => `${m[2]} ${m[1].replace('.', '')} ${m[4]}`,
+            multiple: false
+        },
+        {
+            // Mẫu: "14th June" (lấy năm mặc định là năm hiện tại)
+            regex: /(\d{1,2})(st|nd|rd|th)?\s+(January|February|March|April|May|June|July|August|September|October|November|December)/gi,
+            format: (m) => `${m[1]} ${m[3]} ${new Date().getFullYear()}`,
             multiple: false
         }
 

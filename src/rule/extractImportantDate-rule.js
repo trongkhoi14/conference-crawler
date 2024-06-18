@@ -15,7 +15,10 @@ let unwantedSelectors = [
     "button",
     ".cancel",
     ".title",
+    ".tachado",
+    ".text-tachado",
     "*[style*='text-decoration: line-through']",
+    "*[style*='text-decoration:line-through']",
 ];
 
 const listHasKeyRound = [
@@ -26,7 +29,25 @@ const listHasKeyRound = [
     "2024.sigmod.org",
     "group.acm.org/conferences",
     "documentengineering.org/doceng2024",
-    "eics.acm.org/2024"
+    "eics.acm.org/2024",
+    "csf2024.ieee-security.org",
+    "sp2024.ieee-security.org",
+    "wp.nyu.edu/acns2024",
+    "collaboratecom.eai-conferences.org/2024/",
+    "chira.scitevents.org",
+    "icde2024.github.io",
+    "icinco.scitevents.org",
+    "keod.scitevents.org",
+    "icmla-conference.org/icmla24",
+    "webist.scitevents.org",
+    "ijcci.scitevents.org",
+    "scitevents.org",
+    "usenix.org/conference/nsdi24",
+    "sss2024.github.io",
+    "usenix.org/conference/usenixsecurity24",
+    "apweb2024.zjnu.edu.cn",
+    "ches.iacr.org",
+    "iiis2024.org/wmsci/website"
 ];
 
 const hasRoundKey = (link) => {
@@ -349,11 +370,664 @@ const getImportantDates = async (browser, link) => {
             submissionDate_keywords = submissionDate_keywords.filter(k => k !== "Submission Deadline")
             cameraReady_keywords = cameraReady_keywords.filter(k => k !== "Early bird registration")
         }
+        if (link.includes("fmcad.org")) {
+            submissionDate_keywords = submissionDate_keywords.filter(k => k !== "abstract submission")
+        }
+        if (link.includes("fsttcs.org.in/2024")) {
+            submissionDate_keywords = submissionDate_keywords.filter(k => k != "full papers")
+        }
+        if (link.includes("sigplan.org/home/haskellsymp-2024")) {
+            submissionDate_keywords = submissionDate_keywords.filter(k => k !== "Paper submission")
+            cameraReady_keywords = cameraReady_keywords.filter(k => k !== "Camera-ready Deadline")
+        }
+        if (link.includes("2024.acmmm.org")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            await page.goto("https://2024.acmmm.org/regular-papers", { waitUntil: "domcontentloaded" });
+            await page.waitForSelector(".header")
+            let bodyContent = await clickAndReload(page, "date");
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("icteri.org/icteri-2024")) {
+            submissionDate_keywords = submissionDate_keywords.filter(k => k !== "paper submission" && k !== "abstract submission")
+            cameraReady_keywords = cameraReady_keywords.filter(k => k !== "camera-ready papers")
+        }
+        if (link.includes("ieeesmc2024.org")) {
+            submissionDate_keywords = submissionDate_keywords.filter(k => k !== "Deadline")
+            let page = await browser.newPage();
+            await page.goto("https://www.ieeesmc2024.org/call-for-paper", { waitUntil: "domcontentloaded" });
+            await page.waitForSelector(".container-fluid")
+            let bodyContent = await getContentAndRemoveUnwantedSelectors(page);
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("researchfora.net/event/index.php?id=2622743")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            let bodyContent = await getContentAndRemoveUnwantedSelectors(page);
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("waset.org/global-software-engineering-conference-in-august-2024-in-moscow")) {
+            submissionDate_keywords = submissionDate_keywords.filter(k => k !== "Abstract Submission" && k !== "Submission")
+        }
+        if (link.includes("secon2023.ieee-secon.org")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            let bodyContent = await clickAndReload(page, "call");
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("soca-ieee.org")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            let bodyContent = await page.evaluate((unwantedSelectors) => {
+                unwantedSelectors.forEach((selector) => {
+                    document
+                        .querySelectorAll(selector)
+                        .forEach((element) => element.remove());
+                });
+                const insertSeparator = () => {
+                    const allElements = document.querySelectorAll("strong");
+                    allElements.forEach((element) => {
+                        const separator = document.createElement("div");
+                        separator.innerText = "$".repeat(50);
+                        element.insertAdjacentElement("beforebegin", separator);
+                    });
+                };
+                insertSeparator();
+                return document.body.innerText;
+            }, unwantedSelectors)
+
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("conf.researchr.org/track/icsme-2024")) {
+            notificationDate_keywords = notificationDate_keywords.filter(k => k !== "Final notification")
+            cameraReady_keywords = cameraReady_keywords.filter(k => k !== "Camera-ready submission")
+        }
+        if (link.includes("ipccc.org")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            const cfpLink = await findCallForPapersPDFLinks(page);
+            let bodyContent = await convertImageToText(cfpLink[0])
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("vissoft.info")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            let bodyContent = await clickAndReload(page, "submission");
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("stevens.edu/page-right-nav/cifer-conference-2024")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            await page.goto("https://www.stevens.edu/page-basic/cifer-2024-call-for-papers", { waitUntil: "domcontentloaded" });
+            let bodyContent = await getContentAndRemoveUnwantedSelectors(page);
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("researchr.org/track/vlhcc-2024")) {
+            submissionDate_keywords = submissionDate_keywords.filter(k => k !== "paper submission deadline")
+        }
+        if (link.includes("asonam.cpsc.ucalgary.ca/2024")) {
+            submissionDate_keywords = submissionDate_keywords.filter(k => k !== "Full paper submissions" && !k.toLocaleLowerCase().includes("paper submission deadline"))
+        }
+        if (link.includes("ieeeismar.org")) {
+            submissionDate_keywords = submissionDate_keywords.filter(k => k !== "Submission Deadline for" && k !== "Abstract Deadline" && k !== "Paper Submission Deadline")
+        }
+        if (link.includes("pro-ve-2024.sciencesconf.org")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            let bodyContent = await page.evaluate((unwantedSelectors) => {
+                // Remove unwanted elements
+                unwantedSelectors.forEach((selector) => {
+                    document
+                        .querySelectorAll(selector)
+                        .forEach((element) => element.remove());
+                });
+        
+                // Function to insert separator div
+                const insertSeparator = (elements) => {
+                    if (elements.length === 0) return;
+        
+                    const startSeparator = document.createElement("div");
+                    startSeparator.innerText = "*".repeat(50);
+                    elements[0].insertAdjacentElement("beforebegin", startSeparator);
+        
+                    elements.forEach((element, index) => {
+                        if (index < elements.length) {
+                            // Avoid inserting after the last element
+                            const separator = document.createElement("div");
+                            separator.innerText = "*".repeat(50);
+                            element.insertAdjacentElement("afterend", separator);
+                        }
+                    });
+                };
+        
+                const insertSeparatorBefore = (els) => {
+                    if (els.length === 0) return;
+        
+                    els.forEach((element, index) => {
+                        if (index < els.length) {
+                            // Avoid inserting after the last element
+                            const separator = document.createElement("div");
+                            separator.innerText = "$".repeat(100);
+                            element.insertAdjacentElement("beforebegin", separator);
+                        }
+                    });
+                };
+        
+                // Function to insert $ separator before elements containing "important date"
+                const insertImportantDateSeparator = () => {
+                    const allElements = document.querySelectorAll("body *");
+                    allElements.forEach((element) => {
+                        if (
+                            element.innerText &&
+                            element.innerText.toLowerCase().includes("important date")
+                        ) {
+                            const separator = document.createElement("div");
+                            separator.innerText = "$".repeat(50);
+                            element.insertAdjacentElement("beforebegin", separator);
+                        }
+                    });
+                };
+        
+                // Find and insert separators for li and tr elements
+                const liElements = document.querySelectorAll("li");
+                const trElements = document.querySelectorAll("tr");
+                insertSeparator(liElements);
+                insertSeparator(trElements);
+                insertImportantDateSeparator();
+        
+                return document.body.innerText;
+            }, unwantedSelectors);
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("lamda.nju.edu.cn/ijclr24/")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            let bodyContent = await clickAndReload(page, "date");
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("ispec2024.github.io/ISPEC2024")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+
+            await page.waitForSelector("#authors")
+            await page.evaluate(() => {
+                link = Array.from(document.querySelectorAll("a")).find(
+                    (a) =>
+                        a.innerText.toLowerCase().includes("authors")
+                );
+                if (link) link.click();
+            });
+            let bodyContent = await getContentAndRemoveUnwantedSelectors(page);
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("ieee-itw2024.org")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            let bodyContent = await clickAndReload(page, "call");
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("wp.nyu.edu/acns2024")) {
+            roundKeys = roundKeys.filter(k => k !== "Spring" && k !== "Cycle 1")
+            submissionDate_keywords = submissionDate_keywords.filter(k => k !== "paper submission" && k !== "Submissions")
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            let  bodyContent = await clickAndReload(page, "call");
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("aimsaconference.org")) {
+            submissionDate_keywords = submissionDate_keywords.filter(k => k !== "Submission deadline (extended)")
+        }
+        if (link.includes("collaboratecom.eai-conferences.org")) {
+            roundKeys = roundKeys.filter(k => k)
+        }
+        if (link.includes("soc.uum.edu.my/icoci")) {
+            unwantedSelectors.push("br")
+        }
+        if (link.includes("confest2024.github.io")) {
+            submissionDate_keywords = submissionDate_keywords.filter(k => k !== "Paper submission")
+        }
+        if (link.includes("https://rtcsa2024.github.io/")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            await page.goto("https://rtcsa2024.github.io/?page=cfp.html", { waitUntil: "domcontentloaded" });
+            await page.waitForSelector(".header-container")
+            let bodyContent = await getContentAndRemoveUnwantedSelectors(page);
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("utwente.nl/en/eemcs/fois2024")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            await page.goto("https://www.utwente.nl/en/eemcs/fois2024/calls/", { waitUntil: "domcontentloaded" });
+            let bodyContent = await getContentAndRemoveUnwantedSelectors(page);
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("mobilehci.acm.org/2024")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            await page.goto("https://mobilehci.acm.org/2024/callforpapers.php", { waitUntil: "domcontentloaded" });
+            let bodyContent = await getContentAndRemoveUnwantedSelectors(page);
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("waset.org/image-analysis-and-recognition-conference-in-november-2024-in-bangkok")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+
+            // await page.waitForSelector("#authors")
+            await page.evaluate(() => {
+                link = Array.from(document.querySelectorAll("a")).find(
+                    (a) =>
+                        a.innerText.toLowerCase().includes("date")
+                );
+                if (link) link.click();
+            });
+            let bodyContent = await getContentAndRemoveUnwantedSelectors(page);
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("keod.scitevents.org")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            let bodyContent = await clickAndReload(page, "date");
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("icmlc.com/ICMLC")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            let bodyContent = await clickAndReload(page, "date");
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("icmv.org/")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            let bodyContent = await getContentAndRemoveUnwantedSelectors(page);
+            bodyContent = bodyContent.substring(bodyContent.indexOf("Important Date"), bodyContent.indexOf("Important Date") + 200)
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("cods-comad.in")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            let bodyContent = await clickAndReload(page, "call");
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("icseng.pl")) {
+
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            await page.waitForSelector(".elementor-element-7724f28")
+            let bodyContent = await getContentAndRemoveUnwantedSelectors(page);
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("kr.org/KR2024")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            let bodyContent = await clickAndReload(page, "date");
+            bodyContent = bodyContent.substring(bodyContent.indexOf("Main Track"), bodyContent.indexOf("Main Track") + 500)
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("waset.org/")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            await page.evaluate(() => {
+                link = Array.from(document.querySelectorAll("a")).find(
+                    (a) =>
+                        a.innerText.toLowerCase().includes("date")
+                );
+                if (link) link.click();
+            });
+            await page.waitForSelector("table")
+            let bodyContent = await getContentAndRemoveUnwantedSelectors(page);
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("cwi.nl/en/groups/networks-and-optimization/events/sagt-2024")) {
+            notificationDate_keywords = notificationDate_keywords.filter(k => k !== "author notification" && k !== "notification")
+        }
+        if (link.includes("synasc.ro")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            let bodyContent = await clickAndReload(page, "date");
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("isvc.net")) {
+            submissionDate_keywords = submissionDate_keywords.filter(k => k !== "paper submission deadline")
+        }
+        if (link.includes("wisa.or.kr")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            let bodyContent = await clickAndReload(page, "call");
+            await page.waitForSelector(".content")
+            console.log(bodyContent)
+            const cfpLink = await findCallForPapersPDFLinks(page);
+            console.log(cfpLink)
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("conferences.sigcomm.org/imc/2024/")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            let bodyContent = await clickAndReload(page, "call");
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("caine-conf.org")) {
+            let page = await browser.newPage();
+            await page.goto("https://www.caine-conf.org/main/cfp/", { waitUntil: "domcontentloaded" });
+            const cfpLink = await findCallForPapersPDFLinks(page);
+            console.log(cfpLink)
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("jelia2023.inf.tu-dresden.de")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            let bodyContent = await clickAndReload(page, "date");
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("nordichi2024.se")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            let bodyContent = await clickAndReload(page, "papers");
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("pg2024.hsu.edu.cn")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            let bodyContent = await getContentAndRemoveUnwantedSelectors(page);
+            while(bodyContent.includes("$$")) {
+                bodyContent = bodyContent.replace("$$", "")
+            }
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("usenix.org/conference/nsdi24")) {
+            roundKeys = roundKeys.filter(k => k !== "Spring" && k !== "Fall")
+        }
+        if (link.includes("usenix.org/conference/usenixsecurity24")) {
+            roundKeys = roundKeys.filter(k => k !== "Winter" && k !== "Fall" && k !== "Summer")
+        }
+        if (link.includes("fdtc.deib.polimi.it/FDTC24")) {
+            submissionDate_keywords = submissionDate_keywords.filter(k => k !== "Submission deadline")
+        }
+        if (link.includes("cyprusconferences.org")) {
+            submissionDate_keywords = submissionDate_keywords.filter(k => k !== "paper submission deadline")
+        }
+        if (link.includes("iiwas.org/conferences/iiwas2024/")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            let bodyContent = await clickAndReload(page, "date");
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+        if (link.includes("cisisconference.eu")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            let bodyContent = await clickAndReload(page, "date");
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
+            
+       
+        
 
         //-------------------------------------
 
         let page = await browser.newPage();
-
         await page.goto(link, { waitUntil: "domcontentloaded" });
 
         // Go to home site
@@ -512,7 +1186,9 @@ const getImportantDates = async (browser, link) => {
         console.log("Important dates not found for link: " + link);
         return null;
     } catch (error) {
+        await page.close();
         console.log("Error in getImportantDates rule: " + error);
+        
     }
 };
 
@@ -555,7 +1231,7 @@ const findClosestRoundKeys = (content, keyword, roundKeys) => {
     while (subContent.includes("**")) {
         subContent = subContent.replace("**", "");
     }
-    // console.log(subContent)
+    
     const keywordRegex = new RegExp(keyword, "g");
     let match;
     let closestRoundKeys = new Set();
@@ -566,12 +1242,13 @@ const findClosestRoundKeys = (content, keyword, roundKeys) => {
         for (const roundKey of roundKeys) {
             // Case khó
             if (
-                roundKey == "JULY 2023 CYCLE" ||
-                roundKey == "JANUARY 2024 CYCLE"
+                roundKey === "JULY 2023 CYCLE" ||
+                roundKey === "JANUARY 2024 CYCLE"
             ) {
                 closestRoundKeys.add(roundKey);
             } else {
-                const roundKeyRegex = new RegExp(roundKey, "g");
+                const escapedRoundKey = escapeRegExp(roundKey);
+                const roundKeyRegex = new RegExp(escapedRoundKey, "g");
                 let roundMatch;
 
                 while ((roundMatch = roundKeyRegex.exec(subContent)) !== null) {
@@ -610,8 +1287,10 @@ const hasImportantDates = (
     cameraReadyCounts
 ) => {
     return (
-        Object.keys(submissionCounts).length > 0 &&
-        Object.keys(notificationCounts).length > 0
+        (Object.keys(submissionCounts).length > 0 &&
+        Object.keys(notificationCounts).length > 0) ||
+        ( Object.keys(notificationCounts).length > 0 &&
+        Object.keys(cameraReadyCounts).length > 0)
     );
 };
 
@@ -674,8 +1353,10 @@ const getContentAndRemoveUnwantedSelectors = async (page) => {
         const liElements = document.querySelectorAll("li");
         const trElements = document.querySelectorAll("tr");
         const aElements = document.querySelectorAll("a");
+        const specialElement = document.querySelectorAll("div[class*='blk']")
         insertSeparator(liElements);
         insertSeparator(trElements);
+        insertSeparator(specialElement)
         insertSeparatorBefore(aElements);
         insertImportantDateSeparator();
 
@@ -686,7 +1367,7 @@ const getContentAndRemoveUnwantedSelectors = async (page) => {
 const clickAndReload = async (page, text) => {
     try {
         await page.evaluate((text) => {
-            const priorityTexts = ["MAIN-TRACK PAPERS", "call for paper"];
+            const priorityTexts = ["MAIN-TRACK PAPERS", "call for paper", "main track", "Research Papers"];
             
             const findLink = (texts) => {
                 for (const t of texts) {
@@ -699,8 +1380,11 @@ const clickAndReload = async (page, text) => {
                 }
                 return null;
             };
+            let link = null
 
-            let link = findLink(priorityTexts);
+            if(text == 'call') {
+                link = findLink(priorityTexts);
+            }
 
             if (!link) {
                 link = Array.from(document.querySelectorAll("a")).find(
@@ -722,7 +1406,6 @@ const clickAndReload = async (page, text) => {
         return "";
     }
 };
-
 
 const filterKey = (keywordData, submissionDate_keywords) => {
     const filteredKeywords = [];
@@ -871,6 +1554,10 @@ const processImportantDates = async (
     let notiFilteredKey = filterKey(result, notificationDate_keywords);
     let camFilteredKey = filterKey(result, cameraReady_keywords);
 
+    let snapshotRange = 50
+    if (link.includes("fm24.polimi.it")) {
+        subFilteredKey.push("Abstract Submission")
+    }
     if (link.includes("vrst.hosting.acm.org/vrst2024")) {
         notiFilteredKey.push("Author Notification for Papers");
     }
@@ -885,13 +1572,50 @@ const processImportantDates = async (
     if (link.includes("2024.fedcsis.org")) {
         subFilteredKey.push("Paper submission");
     }
-
+    if (link.includes("ieeevis.org/year/2024")) {
+        subFilteredKey.push("Paper submission")
+    }
+    if (link.includes("icvs2023.conf.tuwien.ac.at")) {
+        snapshotRange = 30
+    }
+    if (link.includes("dublincore.org/conferences")) {
+        snapshotRange = 80
+    }
+    if (link.includes("isita.ieice.org")) {
+        subFilteredKey.push("Paper Submission Deadline")
+    }
+    if (link.includes("scitevents.org")) {
+        subFilteredKey = subFilteredKey.filter(k => k !== "Position Papers - Abstract Submission")
+    }
+    if (link.includes("attend.ieee.org/mmsp-2024")) {
+        subFilteredKey.push("Paper Submission")
+    }
+    if (link.includes("conferences.sigcomm.org/imc/2024")) {
+        notiFilteredKey.push("Notification")
+    }
+    if (link.includes("crises-deim.urv.cat/psd2024")) {
+        subFilteredKey.push("Submission deadline")
+        notiFilteredKey.push("Acceptance notification")
+        camFilteredKey.push("Proceedings version due")
+    }
+    if (link.includes("2024.splc.net")) {
+        notiFilteredKey.push("Notification")
+    }
+    if (link.includes("vecos-world.org")) {
+        snapshotRange = 20
+    }
+    if (link.includes("ches.iacr.org")) {
+        while(bodyContent.includes("$$")) {
+            bodyContent = bodyContent.replace("$$", "")
+        }
+    }
+ 
     await webScraperService.extractDatesFromBody(
         PositionDateBeforeKeyword,
         subFilteredKey,
         bodyContent,
         submissionDate,
-        50
+        snapshotRange
     );
 
     await webScraperService.extractDatesFromBody(
@@ -899,7 +1623,7 @@ const processImportantDates = async (
         notiFilteredKey,
         bodyContent,
         notificationDate,
-        50
+        snapshotRange
     );
 
     await webScraperService.extractDatesFromBody(
@@ -907,17 +1631,49 @@ const processImportantDates = async (
         camFilteredKey,
         bodyContent,
         cameraReady,
-        50
+        snapshotRange
     );
 
-    // await page.close();
+    await page.close();
     return { submissionDate, notificationDate, cameraReady };
 };
 
 // Nếu từ chữ important date đến ngày trước thì ngày đứng trước key, và ngược lại
 const isPositionDateBeforeKeyword = (link, bodyContent) => {
-    if (
-        listConfHasDateBeforeKeyword.some((domain) => {
+    if (link.includes("iiwas.org/conferences/iiwas2024/")) {
+        return false
+    }
+    if (link.includes("conferences.miccai.org")) {
+        return false
+    }
+    if (link.includes("isvc.net")) {
+        return false
+    }
+    if(link.includes("ieee-smart-world.org")) {
+        return false
+    }
+    if(link.includes("hpcn.exeter.ac.uk/trustcom2023")) {
+        return false
+    }
+    if(link.includes("tapconference.github.io")) {
+        return true
+    }
+    if(link.includes("sinconf.org/sin2024")) {
+        return false
+    }
+    if(link.includes("iclp24.utdallas.edu")) {
+        return false
+    }
+    if(link.includes("iiwas.org/conferences/momm2024")) {
+        return true
+    }
+    if(link.includes("acii-conf.net")) {
+        return false
+    }
+    if(link.includes("cloudcom2024.org")) {
+        return false
+    }
+    if (listConfHasDateBeforeKeyword.some((domain) => {
             return link.includes(domain);
         })
     ) {
@@ -975,7 +1731,8 @@ const findCallForPapersPDFLinks = async (page) => {
                     ((href.toLocaleLowerCase().includes("cfp") ||
                         href.toLocaleLowerCase().includes("call")) &&
                         href.endsWith(".pdf")) ||
-                    href.includes("drive.google.com")
+                    href.includes("drive.google.com") ||
+                    href.includes("WISA")
                 );
             })
             .map((anchor) => anchor.href);
