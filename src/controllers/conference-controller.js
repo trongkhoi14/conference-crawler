@@ -54,7 +54,7 @@ const crawlConferenceById = async (confId) => {
                 message: "Navigation timeout of 30000 ms exceeded when go to " + conference.Links[0]
             };
         }
-        // console.log(newImportantDates)
+        console.log(newImportantDates)
 
         const oldImportantDates = {
             submissionDate: conference.SubmissonDate.map(item => ({
@@ -74,7 +74,7 @@ const crawlConferenceById = async (confId) => {
             })),
         };
 
-        // console.log(oldImportantDates)
+        console.log(oldImportantDates)
 
         await browser.close();
 
@@ -146,7 +146,7 @@ const crawlController = async (browserInstance) => {
         // Create browser
         // let browser = await browserInstance;
 
-        const isSuccess = await crawlConferenceById("6639c03c647e53b594533c95")
+        const isSuccess = await crawlConferenceById("6639c048647e53b594533ca3")
         console.log(isSuccess)
         //await crawlAllConferencesDetail(browser);
         // await processConferenceError(browser);
@@ -193,7 +193,7 @@ const crawlController = async (browserInstance) => {
 
         // saveKeywordsToFile()
 
-        // await dataPineline("6639cef3c521b3f2ad6114a3")
+        // await dataPineline("6639c048647e53b594533ca3")
 
         // await saveEvaluationDataset(browser)
 

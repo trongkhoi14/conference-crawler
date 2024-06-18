@@ -1,7 +1,5 @@
 const startBrowser = require('./src/untils/browser');
 const { crawlController, crawlConferenceById } = require('./src/controllers/conference-controller')
-const { notificationController } = require('./src/controllers/notification-controller')
-const { dataPinelineAPI } = require('./src/etl/datapineline')
 const dbConnect = require('./src/config/dbconnect');
 const { scrapeConference } = require('./src/controllers/pineline-controller')
 var cron = require('node-cron');
@@ -20,7 +18,7 @@ const main = async () => {
    
 };  
 
-main();
+// main();
 
 const app = express()
 const port = process.env.PORT || 8081

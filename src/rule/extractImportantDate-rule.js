@@ -22,6 +22,7 @@ let unwantedSelectors = [
 ];
 
 const listHasKeyRound = [
+    "conferences.sigcomm.org/co-next/2024",
     "documentengineering.org",
     "sigsac.org/ccs/CCS2024",
     "ic3k.scitevents.org",
@@ -1020,6 +1021,9 @@ const getImportantDates = async (browser, link) => {
                 cameraReady_keywords,
                 roundKeys
             );
+        }
+        if (link.includes("conferences.sigcomm.org/co-next/2024")) {
+            unwantedSelectors = unwantedSelectors.filter(s => s !== "strike")
         }
             
        
