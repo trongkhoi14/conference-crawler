@@ -48,6 +48,7 @@ dbConnect().then(() => {
 const updateStatus = async(fullDocument) => {
     const startTime = Date.now();
     const isCrawlSuccess = await crawlConferenceById(fullDocument.conf_id)
+    console.log(isCrawlSuccess.message)
     const endTime = Date.now();
     const duration = endTime - startTime; 
     if(isCrawlSuccess.status) {
@@ -88,58 +89,6 @@ try {
     console.error('Error on Server:', error);
 }
 };
-
-
-
-
-
-// const Agenda = require('agenda');
-// const jobModel = require('./src/models/job-model')
-
-// const mongoUrl = "mongodb+srv://14042002a:luongkhoi123@cluster0.xro9zib.mongodb.net/conference-searching?retryWrites=true&w=majority"
-// const agenda = new Agenda({ db: { address: mongoUrl, collection: 'agenda_jobs' } });
-
-// dbConnect().then(async()=>{
-//     await agenda.start();
-//     console.log("Agenda started ...")
-// })
-
-// const crawlData = async (conf_id) => {
-//     try {
-//         console.log("Crawling ... " + conf_id)
-//       const response = {data: "oke"};
-//       return response.data;
-//     } catch (error) {
-//       console.error(`Error crawling data for conf_id: ${conf_id}`, error);
-//       throw error;
-//     }
-//   };
-
-// agenda.define('crawl data', async (job, done) => {
-//     const { conf_id, jobId } = job.attrs.data;
-  
-//     try {
-//       const data = await crawlData(conf_id);
-        
-//       await jobModel.findByIdAndUpdate(jobId, {
-//         status: 'completed',
-//         data
-//       });
-  
-//       console.log(`Job ${jobId} completed`);
-//       done()
-//     } catch (error) {
-//       await jobModel.findByIdAndUpdate(jobId, {
-//         status: 'failed',
-//         error: error.message
-//       });
-//       done(error)
-//       console.error(`Job ${jobId} failed with error: ${error.message}`);
-//     }
-//   });
-
-
- 
 
 //----------------------------------
 

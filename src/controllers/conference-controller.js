@@ -132,6 +132,7 @@ const crawlConferenceById = async (confId) => {
         }
        
     } catch (error) {
+        await browser.close();
         console.log("Error in Conference controller/crawlConferenceById: " + error);
         return {
             status: false,
@@ -146,8 +147,8 @@ const crawlController = async (browserInstance) => {
         // Create browser
         // let browser = await browserInstance;
 
-        const isSuccess = await crawlConferenceById("6639c048647e53b594533ca3")
-        console.log(isSuccess)
+        // const isSuccess = await crawlConferenceById("6639c048647e53b594533ca3")
+        // console.log(isSuccess)
         //await crawlAllConferencesDetail(browser);
         // await processConferenceError(browser);
 
@@ -189,7 +190,7 @@ const crawlController = async (browserInstance) => {
         // console.log("Location: " + location)
         
         
-        // filterInvalidConferences()
+        filterInvalidConferences()
 
         // saveKeywordsToFile()
 
@@ -320,9 +321,14 @@ const filterInvalidConferences = async () => {
             //     hasInvalidKeyword = true;
             // }
 
+            conference.ConferenceDate.forEach(item => {
+                if (new Date((item.date)).getUTCMonth() == 6 && new Date((item.date)).getUTCFullYear() == 2024) {
+                    hasInvalidKeyword = true;
+                }
+            });
+
             // conference.SubmissonDate.forEach(item => {
-            //     if (new Date((item.date)).getUTCMonth() == 6) {
-            //         console.log(new Date((item.date)).getUTCMonth())
+            //     if (new Date((item.date)).getUTCMonth() == 6 && new Date((item.date)).getUTCFullYear() == 2024) {
             //         hasInvalidKeyword = true;
             //     }
             // });
@@ -340,21 +346,21 @@ const filterInvalidConferences = async () => {
             // });
             
 
-            conference.SubmissonDate.forEach(item => {
-                if (isKeywordInvalid(item.keyword)) {
-                    hasInvalidKeyword = true;
-                }
-            });
-            conference.NotificationDate.forEach(item => {
-                if (isKeywordInvalid(item.keyword)) {
-                    hasInvalidKeyword = true;
-                }
-            });
-            conference.CameraReady.forEach(item => {
-                if (isKeywordInvalid(item.keyword)) {
-                    hasInvalidKeyword = true;
-                }
-            });
+            // conference.SubmissonDate.forEach(item => {
+            //     if (isKeywordInvalid(item.keyword)) {
+            //         hasInvalidKeyword = true;
+            //     }
+            // });
+            // conference.NotificationDate.forEach(item => {
+            //     if (isKeywordInvalid(item.keyword)) {
+            //         hasInvalidKeyword = true;
+            //     }
+            // });
+            // conference.CameraReady.forEach(item => {
+            //     if (isKeywordInvalid(item.keyword)) {
+            //         hasInvalidKeyword = true;
+            //     }
+            // });
 
             if (hasInvalidKeyword) {
                 invalidConferenceIds.push(conference._id.toString());
@@ -403,7 +409,7 @@ const etlDataToPostgre = async () => {
         conferenceIds.push(row.conference_id);
     }
     console.log(conferenceIds.length);
-    for (let i = 198; i < 200; i++) {
+    for (let i = 0; i < 100; i++) {
         console.log(i);
         await dataPineline(conferenceIds[i]);
 

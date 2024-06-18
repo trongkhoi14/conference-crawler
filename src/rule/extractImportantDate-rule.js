@@ -1190,7 +1190,7 @@ const getImportantDates = async (browser, link) => {
         console.log("Important dates not found for link: " + link);
         return null;
     } catch (error) {
-        await page.close();
+        // await page.close();
         console.log("Error in getImportantDates rule: " + error);
         
     }
