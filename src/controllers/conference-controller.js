@@ -87,14 +87,14 @@ const crawlConferenceById = async (confId) => {
             return d1 === d2;
         };
 
-        let isNewChange = false
+        let hasNewChange = false
 
         const checkAndUpdate = (oldDates, newDates, type) => {
             oldDates.forEach(oldItem => {
                 const newItem = newDates.find(newItem => newItem.keyword === oldItem.keyword);
                 if (newItem && !compareDatesOnly(oldItem.date, newItem.date)) {
                     updates[type].push(newItem);
-                    isNewChange = true
+                    hasNewChange = true
                     console.log("+ " + oldItem.keyword + ": " + new Date(oldItem.date).toISOString().split('T')[0] + " change to " + new Date(newItem.date).toISOString().split('T')[0])
                 } else {
                     updates[type].push(oldItem)
@@ -106,11 +106,15 @@ const crawlConferenceById = async (confId) => {
         checkAndUpdate(oldImportantDates.notificationDate, newImportantDates.notificationDate, 'NotificationDate');
         checkAndUpdate(oldImportantDates.cameraReady, newImportantDates.cameraReady, 'CameraReady');
 
-        if(safeConferenceList.some(i => i == confId) && isNewChange) {
+        if(safeConferenceList.some(i => i == confId) && hasNewChange) {
             await Conference.findByIdAndUpdate(confId, updates);
             console.log(">> New update to database successfully")
-        } else if (!isNewChange) {
+        } else {
             console.log(">> Important date not change or not in safe list")
+            return {
+                status: true,
+                message: "Important date not change or not in safe list"
+            };
         }
 
         // Pineline

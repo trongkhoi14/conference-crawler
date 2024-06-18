@@ -20,7 +20,7 @@ const main = async () => {
    
 };  
 
-// main();
+main();
 
 const app = express()
 const port = process.env.PORT || 8081
