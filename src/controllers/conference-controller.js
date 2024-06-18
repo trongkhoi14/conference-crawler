@@ -54,7 +54,7 @@ const crawlConferenceById = async (confId) => {
                 message: "Navigation timeout of 30000 ms exceeded when go to " + conference.Links[0]
             };
         }
-        console.log(newImportantDates)
+        // console.log(newImportantDates)
 
         const oldImportantDates = {
             submissionDate: conference.SubmissonDate.map(item => ({
@@ -74,7 +74,7 @@ const crawlConferenceById = async (confId) => {
             })),
         };
 
-        console.log(oldImportantDates)
+        // console.log(oldImportantDates)
 
         await browser.close();
 
