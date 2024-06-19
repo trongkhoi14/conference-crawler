@@ -14,7 +14,7 @@ const dataPineline = async (conferenceId) => {
             && new Date((conference.ConferenceDate[0].date)).getUTCFullYear() >= 2023
             && (conference.Rank == 'C' || conference.Rank == 'B' || conference.Rank == 'A' || conference.Rank == 'A*')
         ) {
-            console.log(conference.Rank)
+
             const organizations = [
                 {
                     name: "default",
@@ -55,7 +55,7 @@ const dataPineline = async (conferenceId) => {
             };  
             // console.log(processedConf)
 
-            // await postConference(processedConf)
+            await postConference(processedConf)
             
             setTimeout(() => {
                 console.log("waiting ... ");
@@ -76,7 +76,7 @@ const dataPineline = async (conferenceId) => {
             };  
             // console.log(processedConf)
 
-            // await postConference(processedConf)
+            await postConference(processedConf)
             
             setTimeout(() => {
                 console.log("waiting ... ");

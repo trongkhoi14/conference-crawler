@@ -28,9 +28,11 @@ const safeConferenceList = require('../config/safeList')
 
 // Handle job
 const crawlConferenceById = async (confId) => {
-    try {
-        let browser = await startBrowser();
 
+    let browser = await startBrowser();
+    console.log(">> Browser is opening ...")
+
+    try {
         const conference = await Conference.findById(confId);
 
         if (!conference) {
@@ -75,8 +77,6 @@ const crawlConferenceById = async (confId) => {
         };
 
         // console.log(oldImportantDates)
-
-        await browser.close();
 
         // So sánh và cập nhật cơ sở dữ liệu nếu có sự thay đổi
         const updates = { SubmissonDate: [], NotificationDate: [], CameraReady: [] };
@@ -132,13 +132,15 @@ const crawlConferenceById = async (confId) => {
         }
        
     } catch (error) {
-        await browser.close();
         console.log("Error in Conference controller/crawlConferenceById: " + error);
         return {
             status: false,
             message: error
         };
-    } 
+    } finally {
+        await browser.close();
+        console.log(">> Browser is closed")
+    }
 };
 
 
@@ -190,11 +192,11 @@ const crawlController = async (browserInstance) => {
         // console.log("Location: " + location)
         
         
-        filterInvalidConferences()
+        // filterInvalidConferences()
 
         // saveKeywordsToFile()
 
-        // await dataPineline("6639c048647e53b594533ca3")
+        // await dataPineline("6639d5284fd45eb8c2e6708c")
 
         // await saveEvaluationDataset(browser)
 
@@ -409,7 +411,7 @@ const etlDataToPostgre = async () => {
         conferenceIds.push(row.conference_id);
     }
     console.log(conferenceIds.length);
-    for (let i = 0; i < 100; i++) {
+    for (let i = 950; i < 968; i++) {
         console.log(i);
         await dataPineline(conferenceIds[i]);
 
