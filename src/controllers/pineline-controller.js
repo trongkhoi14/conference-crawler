@@ -63,8 +63,6 @@ const scrapeConferenceById = async (confId) => {
     } 
 }
 
-
-
 const scrapeConference = async (req, res) => {
     const startTime = Date.now(); 
 

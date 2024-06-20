@@ -95,3 +95,7 @@ try {
 app.listen(process.env.PORT, ()=> {
     console.log(`Server was running on port ${process.env.PORT}`)
 })
+
+cron.schedule('*/10 * * * *', () => {
+    console.log('I am boring ...');
+});
