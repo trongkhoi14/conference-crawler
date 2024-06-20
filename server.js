@@ -30,6 +30,11 @@ app.use(express.urlencoded({extended: true}))
 
 app.get('/api/scrape/conference/:id', scrapeConference)
 
+app.get('/api/scrape', (req, res) => {
+    console.log("I am boring ...")
+    res.send("I am boring ...")
+})
+
 //---------- Test---------------
 // Kết nối đến MongoDB
 const jobModel = require('./src/models/job-model')
@@ -95,7 +100,3 @@ try {
 app.listen(process.env.PORT, ()=> {
     console.log(`Server was running on port ${process.env.PORT}`)
 })
-
-cron.schedule('*/10 * * * *', () => {
-    console.log('I am boring ...');
-});
