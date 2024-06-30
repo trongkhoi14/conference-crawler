@@ -103,6 +103,21 @@ const getImportantDates = async (browser, link) => {
             submissionDate_keywords = submissionDate_keywords.filter(
                 (k) => k !== "Submission deadline"
             );
+            notificationDate_keywords = notificationDate_keywords.filter(k => k != "Acceptance notification")
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            let bodyContent = await getContentAndRemoveUnwantedSelectors(page);
+            bodyContent = bodyContent.replace("incl. title, abstract, author list", "")
+            bodyContent = bodyContent.replace("incl. videos, supplementary materials, accessibility alt-text and video subtitles", "")
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
         }
         if (link.includes("aiccsa.net/AICCSA2024/")) {
             notificationDate_keywords = notificationDate_keywords.filter(
@@ -243,11 +258,6 @@ const getImportantDates = async (browser, link) => {
                     roundKeys
                 );
             }
-        }
-        if (link.includes("conf.researchr.org/track/apsec-2024")) {
-            submissionDate_keywords = submissionDate_keywords.filter(
-                (k) => k !== "Paper Deadline"
-            );
         }
         if (link.includes("researchr.org/track/ase-2024")) {
             submissionDate_keywords = submissionDate_keywords.filter(
@@ -1025,6 +1035,20 @@ const getImportantDates = async (browser, link) => {
         if (link.includes("conferences.sigcomm.org/co-next/2024")) {
             unwantedSelectors = unwantedSelectors.filter(s => s !== "strike")
         }
+        if (link.includes("dsaa2024.dsaa.co")) {
+            let page = await browser.newPage();
+            await page.goto(link, { waitUntil: "domcontentloaded" });
+            let bodyContent = await clickAndReload(page, "call");
+            return await processImportantDates(
+                link,
+                page,
+                bodyContent,
+                submissionDate_keywords,
+                notificationDate_keywords,
+                cameraReady_keywords,
+                roundKeys
+            );
+        }
             
        
         
@@ -1371,7 +1395,10 @@ const getContentAndRemoveUnwantedSelectors = async (page) => {
 const clickAndReload = async (page, text) => {
     try {
         await page.evaluate((text) => {
-            const priorityTexts = ["MAIN-TRACK PAPERS", "call for paper", "main track", "Research Papers"];
+            //Full Papers, Call for Participation, call-for-submissions
+
+            //ngoài tìm link có date, còn có thể tìm 'sub'
+            const priorityTexts = ["MAIN-TRACK PAPERS", "call for paper", "main track", "Research Papers", "Research Track"];
             
             const findLink = (texts) => {
                 for (const t of texts) {
@@ -1644,6 +1671,9 @@ const processImportantDates = async (
 
 // Nếu từ chữ important date đến ngày trước thì ngày đứng trước key, và ngược lại
 const isPositionDateBeforeKeyword = (link, bodyContent) => {
+    if (link.includes("eccv.ecva.net")) {
+        return false
+    }
     if (link.includes("iiwas.org/conferences/iiwas2024/")) {
         return false
     }

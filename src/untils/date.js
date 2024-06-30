@@ -1,6 +1,15 @@
 const dateFinder = require("datefinder");
 const moment = require("moment");
 
+const monthNames = [
+    "January", "February", "March", "April", "May", "June", 
+    "July", "August", "September", "October", "November", "December"
+];
+
+const getMonthName = (monthNumber) => {
+    return monthNames[parseInt(monthNumber) - 1];
+};
+
 const customDateFinder = (text) => {
     // Các mẫu regex để tìm các định dạng ngày tháng
     const patterns = [
@@ -103,9 +112,15 @@ const customDateFinder = (text) => {
             multiple: false
         },
         {
+            // Mẫu: "01/07/2024"
+            regex: /(\d{1,2})\/(\d{1,2})\/(\d{4})/gi,
+            format: (m) => `${m[1]} ${getMonthName(m[2])} ${m[3]}`,
+            multiple: false
+        },
+        {
             // Mẫu: "26/04" (mặc định năm 2024)
             regex: /(\d{1,2})\/(\d{1,2})/gi,
-            format: (m) => `${m[1]} ${m[2]} 2024`,
+            format: (m) => `${m[1]} ${getMonthName(m[2])} 2024`,
             multiple: false
         },
         {

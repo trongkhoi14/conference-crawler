@@ -1,0 +1,534 @@
+<!DOCTYPE html><html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="https://conf.researchr.org/favicon.ico?28d37e6d7e5e12d24c39bdba0f4f3cfd" rel="shortcut icon" type="image/x-icon">
+<link href="https://conf.researchr.org/stylesheets/common_.css?d7bcca3579a066193caf560ede9d6399" rel="stylesheet" type="text/css">
+<title>PPoPP 2024</title>
+<script type="text/javascript">var show_webdsl_debug=false;</script>
+<script type="text/javascript">var contextpath="https://conf.researchr.org";</script>
+<link rel="stylesheet" href="https://conf.researchr.org/stylesheets/bootstrap/css/bootstrap.min.css?7f89537eaf606bff49f5cc1a7c24dbca" type="text/css"><link rel="stylesheet" href="https://conf.researchr.org/stylesheets/conf.css?e932e0f7d85713d7a754140df849ee79" type="text/css"><link rel="stylesheet" href="https://conf.researchr.org/stylesheets/logobar.css?d68c282160782c2b5f5bfb8ceb47a30e" type="text/css"><link rel="stylesheet" href="https://conf.researchr.org/stylesheets/owl-carousel/owl.theme.css?f23cf727e4fcca9a5470658da5e755c9" type="text/css"><link rel="stylesheet" href="https://conf.researchr.org/stylesheets/owl-carousel/owl.carousel.css?0371b5a2d50e985b09b7d337edc0dc9f" type="text/css"><link rel="stylesheet" href="https://conf.researchr.org/stylesheets/owl-carousel/owl.transitions.css?b1bdaeac4065bf67a7d7a06213192964" type="text/css"><link rel="stylesheet" href="https://conf.researchr.org/stylesheets/theme.bootstrap_3.min.css?6867e70881e6ed2c03b6c9cf9c3152e0" type="text/css"><script type="text/javascript" src="//code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="https://conf.researchr.org/javascript/owl-carousel/owl.carousel.min.js?88d0fe722f04973e2888b58a63aa0570"></script>
+<script type="text/javascript" src="https://conf.researchr.org/javascript/twitter-widget-ios-fix.js?7ba20a9fa447de94b2a094eead2ccfe8"></script>
+<script type="text/javascript" src="https://conf.researchr.org/javascript/jquery.tablesorter.combined.min.js?285b21976326641f8f1b910492e6d5d0"></script>
+<script type="text/javascript" src="https://conf.researchr.org/javascript/jquery.tablesorter.pager.min.js?4551cdfea66f45a11ae5548f3d50a06f"></script>
+<script type="text/javascript" src="https://conf.researchr.org/javascript/tablesorter-init.js?ee6babedf1a6be960e4543a1bb57b421"></script>
+<script type="text/javascript" src="https://conf.researchr.org/javascript/bootstrap/js/bootstrap.min.js?2f34b630ffe30ba2ff2b91e3f3c322a1"></script>
+<script type="text/javascript" src="https://conf.researchr.org/javascript/notify.min.js?e86d399917a84b69a4683f504c7a7813"></script><style type="text/css" id="notify-bootstrap">.notifyjs-bootstrap-base {
+  font-weight: bold;
+  padding: 8px 15px 8px 14px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  white-space: nowrap;
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-position: 3px 7px;
+}
+.notifyjs-bootstrap-error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border-color: #EED3D7;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAtRJREFUeNqkVc1u00AQHq+dOD+0poIQfkIjalW0SEGqRMuRnHos3DjwAH0ArlyQeANOOSMeAA5VjyBxKBQhgSpVUKKQNGloFdw4cWw2jtfMOna6JOUArDTazXi/b3dm55socPqQhFka++aHBsI8GsopRJERNFlY88FCEk9Yiwf8RhgRyaHFQpPHCDmZG5oX2ui2yilkcTT1AcDsbYC1NMAyOi7zTX2Agx7A9luAl88BauiiQ/cJaZQfIpAlngDcvZZMrl8vFPK5+XktrWlx3/ehZ5r9+t6e+WVnp1pxnNIjgBe4/6dAysQc8dsmHwPcW9C0h3fW1hans1ltwJhy0GxK7XZbUlMp5Ww2eyan6+ft/f2FAqXGK4CvQk5HueFz7D6GOZtIrK+srupdx1GRBBqNBtzc2AiMr7nPplRdKhb1q6q6zjFhrklEFOUutoQ50xcX86ZlqaZpQrfbBdu2R6/G19zX6XSgh6RX5ubyHCM8nqSID6ICrGiZjGYYxojEsiw4PDwMSL5VKsC8Yf4VRYFzMzMaxwjlJSlCyAQ9l0CW44PBADzXhe7xMdi9HtTrdYjFYkDQL0cn4Xdq2/EAE+InCnvADTf2eah4Sx9vExQjkqXT6aAERICMewd/UAp/IeYANM2joxt+q5VI+ieq2i0Wg3l6DNzHwTERPgo1ko7XBXj3vdlsT2F+UuhIhYkp7u7CarkcrFOCtR3H5JiwbAIeImjT/YQKKBtGjRFCU5IUgFRe7fF4cCNVIPMYo3VKqxwjyNAXNepuopyqnld602qVsfRpEkkz+GFL1wPj6ySXBpJtWVa5xlhpcyhBNwpZHmtX8AGgfIExo0ZpzkWVTBGiXCSEaHh62/PoR0p/vHaczxXGnj4bSo+G78lELU80h1uogBwWLf5YlsPmgDEd4M236xjm+8nm4IuE/9u+/PH2JXZfbwz4zw1WbO+SQPpXfwG/BBgAhCNZiSb/pOQAAAAASUVORK5CYII=);
+}
+.notifyjs-bootstrap-success {
+  color: #468847;
+  background-color: #DFF0D8;
+  border-color: #D6E9C6;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAutJREFUeNq0lctPE0Ecx38zu/RFS1EryqtgJFA08YCiMZIAQQ4eRG8eDGdPJiYeTIwHTfwPiAcvXIwXLwoXPaDxkWgQ6islKlJLSQWLUraPLTv7Gme32zoF9KSTfLO7v53vZ3d/M7/fIth+IO6INt2jjoA7bjHCJoAlzCRw59YwHYjBnfMPqAKWQYKjGkfCJqAF0xwZjipQtA3MxeSG87VhOOYegVrUCy7UZM9S6TLIdAamySTclZdYhFhRHloGYg7mgZv1Zzztvgud7V1tbQ2twYA34LJmF4p5dXF1KTufnE+SxeJtuCZNsLDCQU0+RyKTF27Unw101l8e6hns3u0PBalORVVVkcaEKBJDgV3+cGM4tKKmI+ohlIGnygKX00rSBfszz/n2uXv81wd6+rt1orsZCHRdr1Imk2F2Kob3hutSxW8thsd8AXNaln9D7CTfA6O+0UgkMuwVvEFFUbbAcrkcTA8+AtOk8E6KiQiDmMFSDqZItAzEVQviRkdDdaFgPp8HSZKAEAL5Qh7Sq2lIJBJwv2scUqkUnKoZgNhcDKhKg5aH+1IkcouCAdFGAQsuWZYhOjwFHQ96oagWgRoUov1T9kRBEODAwxM2QtEUl+Wp+Ln9VRo6BcMw4ErHRYjH4/B26AlQoQQTRdHWwcd9AH57+UAXddvDD37DmrBBV34WfqiXPl61g+vr6xA9zsGeM9gOdsNXkgpEtTwVvwOklXLKm6+/p5ezwk4B+j6droBs2CsGa/gNs6RIxazl4Tc25mpTgw/apPR1LYlNRFAzgsOxkyXYLIM1V8NMwyAkJSctD1eGVKiq5wWjSPdjmeTkiKvVW4f2YPHWl3GAVq6ymcyCTgovM3FzyRiDe2TaKcEKsLpJvNHjZgPNqEtyi6mZIm4SRFyLMUsONSSdkPeFtY1n0mczoY3BHTLhwPRy9/lzcziCw9ACI+yql0VLzcGAZbYSM5CCSZg1/9oc/nn7+i8N9p/8An4JMADxhH+xHfuiKwAAAABJRU5ErkJggg==);
+}
+.notifyjs-bootstrap-info {
+  color: #3A87AD;
+  background-color: #D9EDF7;
+  border-color: #BCE8F1;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYFAhkSsdes/QAAA8dJREFUOMvVlGtMW2UYx//POaWHXg6lLaW0ypAtw1UCgbniNOLcVOLmAjHZolOYlxmTGXVZdAnRfXQm+7SoU4mXaOaiZsEpC9FkiQs6Z6bdCnNYruM6KNBw6YWewzl9z+sHImEWv+vz7XmT95f/+3/+7wP814v+efDOV3/SoX3lHAA+6ODeUFfMfjOWMADgdk+eEKz0pF7aQdMAcOKLLjrcVMVX3xdWN29/GhYP7SvnP0cWfS8caSkfHZsPE9Fgnt02JNutQ0QYHB2dDz9/pKX8QjjuO9xUxd/66HdxTeCHZ3rojQObGQBcuNjfplkD3b19Y/6MrimSaKgSMmpGU5WevmE/swa6Oy73tQHA0Rdr2Mmv/6A1n9w9suQ7097Z9lM4FlTgTDrzZTu4StXVfpiI48rVcUDM5cmEksrFnHxfpTtU/3BFQzCQF/2bYVoNbH7zmItbSoMj40JSzmMyX5qDvriA7QdrIIpA+3cdsMpu0nXI8cV0MtKXCPZev+gCEM1S2NHPvWfP/hL+7FSr3+0p5RBEyhEN5JCKYr8XnASMT0xBNyzQGQeI8fjsGD39RMPk7se2bd5ZtTyoFYXftF6y37gx7NeUtJJOTFlAHDZLDuILU3j3+H5oOrD3yWbIztugaAzgnBKJuBLpGfQrS8wO4FZgV+c1IxaLgWVU0tMLEETCos4xMzEIv9cJXQcyagIwigDGwJgOAtHAwAhisQUjy0ORGERiELgG4iakkzo4MYAxcM5hAMi1WWG1yYCJIcMUaBkVRLdGeSU2995TLWzcUAzONJ7J6FBVBYIggMzmFbvdBV44Corg8vjhzC+EJEl8U1kJtgYrhCzgc/vvTwXKSib1paRFVRVORDAJAsw5FuTaJEhWM2SHB3mOAlhkNxwuLzeJsGwqWzf5TFNdKgtY5qHp6ZFf67Y/sAVadCaVY5YACDDb3Oi4NIjLnWMw2QthCBIsVhsUTU9tvXsjeq9+X1d75/KEs4LNOfcdf/+HthMnvwxOD0wmHaXr7ZItn2wuH2SnBzbZAbPJwpPx+VQuzcm7dgRCB57a1uBzUDRL4bfnI0RE0eaXd9W89mpjqHZnUI5Hh2l2dkZZUhOqpi2qSmpOmZ64Tuu9qlz/SEXo6MEHa3wOip46F1n7633eekV8ds8Wxjn37Wl63VVa+ej5oeEZ/82ZBETJjpJ1Rbij2D3Z/1trXUvLsblCK0XfOx0SX2kMsn9dX+d+7Kf6h8o4AIykuffjT8L20LU+w4AZd5VvEPY+XpWqLV327HR7DzXuDnD8r+ovkBehJ8i+y8YAAAAASUVORK5CYII=);
+}
+.notifyjs-bootstrap-warn {
+  color: #C09853;
+  background-color: #FCF8E3;
+  border-color: #FBEED5;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAABJlBMVEXr6eb/2oD/wi7/xjr/0mP/ykf/tQD/vBj/3o7/uQ//vyL/twebhgD/4pzX1K3z8e349vK6tHCilCWbiQymn0jGworr6dXQza3HxcKkn1vWvV/5uRfk4dXZ1bD18+/52YebiAmyr5S9mhCzrWq5t6ufjRH54aLs0oS+qD751XqPhAybhwXsujG3sm+Zk0PTwG6Shg+PhhObhwOPgQL4zV2nlyrf27uLfgCPhRHu7OmLgAafkyiWkD3l49ibiAfTs0C+lgCniwD4sgDJxqOilzDWowWFfAH08uebig6qpFHBvH/aw26FfQTQzsvy8OyEfz20r3jAvaKbhgG9q0nc2LbZxXanoUu/u5WSggCtp1anpJKdmFz/zlX/1nGJiYmuq5Dx7+sAAADoPUZSAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfdBgUBGhh4aah5AAAAlklEQVQY02NgoBIIE8EUcwn1FkIXM1Tj5dDUQhPU502Mi7XXQxGz5uVIjGOJUUUW81HnYEyMi2HVcUOICQZzMMYmxrEyMylJwgUt5BljWRLjmJm4pI1hYp5SQLGYxDgmLnZOVxuooClIDKgXKMbN5ggV1ACLJcaBxNgcoiGCBiZwdWxOETBDrTyEFey0jYJ4eHjMGWgEAIpRFRCUt08qAAAAAElFTkSuQmCC);
+}
+</style>
+<script type="text/javascript" src="https://conf.researchr.org/javascript/ajax.js?2dbd1cc4f8f2d52ae9c879d7346f4f8a"></script>
+<script type="text/javascript">$(document).ready( function(){
+          $('#program-menu a[data-fltr-type]').on('click', function(event){
+            event.preventDefault();
+            window.location = $(this).attr('href') + "?" + encodeURIComponent( $(this).data('fltr-type') ) + '=' + encodeURIComponent( $(this).data('fltr-val') );
+          })
+        })
+      </script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-4G0QWEKVQS"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-4G0QWEKVQS', {'cookie_domain': 'auto', 'anonymizeIp': true });gtag('config', 'UA-9607501-2', {'cookie_domain': 'auto', 'anonymizeIp': true });</script>
+<meta prefix="og: http://ogp.me/ns#" property="og:title" content="PPoPP 2024">
+<meta name="description" content="March 2nd – March 6th, 2024, Edinburgh, UK  
+Co-located with CC, CGO and HPCA 
+PPoPP is the premier forum for leading work on all aspects of parallel programming, including theoretical foundations, techniques, languages, compilers, runtime systems, tools, and practical experience. In the context of the symposium, “parallel programming” encompasses work on concurrent and parallel systems (multicore, multi-threaded, heterogeneous, clustered, and distributed systems; grids; datacenters; clouds; and large-scale machines). Given the rise of parallel architectures in the consumer market (desktop ...">
+<meta prefix="og: http://ogp.me/ns#" property="og:description" content="March 2nd – March 6th, 2024, Edinburgh, UK  
+Co-located with CC, CGO and HPCA 
+PPoPP is the premier forum for leading work on all aspects of parallel programming, including theoretical foundations, techniques, languages, compilers, runtime systems, tools, and practical experience. In the context of the symposium, “parallel programming” encompasses work on concurrent and parallel systems (multicore, multi-threaded, heterogeneous, clustered, and distributed systems; grids; datacenters; clouds; and large-scale machines). Given the rise of parallel architectures in the consumer market (desktop ...">
+<meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://www.ppopp.org/getImage/carousel/Edinburgh.jpg?1704813717000">
+<meta name="keywords" content="Parallel Programming, Code Generation, Distributed ">
+<script type="text/javascript">function addEventModalLoadOnClick( containerNode ){
+        $(containerNode).find( "a[data-event-modal]" ).on("click", function(e){
+          var eventId = $(this).data("event-modal"); 
+          var modalElem = $("#modal-" + eventId);
+          if(modalElem.length){
+            modalElem.modal({ backdrop: 'static', keyboard: true}, 'show');
+          } else {
+            var loaderElem = $("#event-modal-loader");
+            loaderElem.find("input.event-id-input").val( eventId );
+            loaderElem.find("#load-modal-action").click();
+          }
+          e.preventDefault();
+        } );
+      }
+    </script><script type="text/javascript">function addStarredEventOnClick( containerNode ){
+        $(containerNode).find( "[data-event-star]" ).on("click", function(e){
+          var eventId = $(this).data("event-star"); 
+          var starEventFormElem = $("#event-star-form");
+          starEventFormElem.find("input.event-id-input").val( eventId );
+          starEventFormElem.find("#star-event-action").click();
+          e.preventDefault();
+          e.stopPropagation();
+        } );
+      }
+    </script><script type="text/javascript">function pauseOnCloseModal( modalid ){
+        //pauses video (only youtube at the moment) when closing modal
+        $('#' + modalid).on('hidden.bs.modal', function () {
+          $(this).find('.embed-container iframe[src*=enablejsapi]').each( function(){ this.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*') } );
+        } )
+      }
+    </script>
+<script type="text/javascript">
+
+  //redirect to ppopp24.sigplan.org for ppopp.org URLs
+  if(window.location.hostname.indexOf("ppopp.org") > -1){
+    var meta = document.createElement('meta');
+    meta.httpEquiv = "refresh";
+    meta.content = "0;url=https://ppopp24.sigplan.org";
+    document.getElementsByTagName('head')[0].appendChild(meta);
+ 
+    window.location.replace("https://ppopp24.sigplan.org");
+  }
+</script>
+<style>
+.track-color.c1 {
+    background-color: #B9B7B7 !important;
+}
+.track-color.c2 {
+    background-color: #96C27D !important;
+}
+.track-color.c3 {
+    background-color: #ED9A99 !important;
+}
+.track-color.c4 {
+    background-color: #ED9A99 !important;
+}
+</style>
+<style>body.tablesorter-disableSelection { -ms-user-select: none; -moz-user-select: -moz-none;-khtml-user-select: none; -webkit-user-select: none; user-select: none; }.tablesorter-resizable-container { position: relative; height: 1px; }.tablesorter-resizable-handle { position: absolute; display: inline-block; width: 8px;top: 1px; cursor: ew-resize; z-index: 3; user-select: none; -moz-user-select: none; }</style><style type="text/css" id="core-notify">.notifyjs-corner {
+  position: fixed;
+  margin: 5px;
+  z-index: 1050;
+}
+
+.notifyjs-corner .notifyjs-wrapper,
+.notifyjs-corner .notifyjs-container {
+  position: relative;
+  display: block;
+  height: inherit;
+  width: inherit;
+  margin: 3px;
+}
+
+.notifyjs-wrapper {
+  z-index: 1;
+  position: absolute;
+  display: inline-block;
+  height: 0;
+  width: 0;
+}
+
+.notifyjs-container {
+  display: none;
+  z-index: 1;
+  position: absolute;
+}
+
+.notifyjs-hidable {
+  cursor: pointer;
+}
+
+[data-notify-text],[data-notify-html] {
+  position: relative;
+}
+
+.notifyjs-arrow {
+  position: absolute;
+  z-index: 2;
+  width: 0;
+  height: 0;
+}</style></head>
+<body id="home"><div class="frame"><div class="logobar"><div class="container"><a href="https://www.ppopp.org" class="navbar-brand navigate"><span class="brand-text">PPoPP 2024</span></a><div class="place">Sat 2 - Wed 6 March 2024 <a href="https://www.ppopp.org/venue/PPoPP-2024-venue" class="navigate">Edinburgh, United Kingdom</a></div></div></div><div class="navbar navbar-default"><div class="container"><div class="navbar-header"><button type="button" data-toggle="collapse" data-target="#navigationbar" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div><div id="navigationbar" class="navigationbar collapse navbar-collapse"><ul class="block nav navbar-nav"><li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Attending <span class="caret"></span></a><ul class="block dropdown-menu"><li class="block"><a href="https://www.ppopp.org/venue/PPoPP-2024-venue" class="navigate">Venue: Edinburgh International Conference Center</a></li><li class="block"><a href="https://www.ppopp.org/venue/PPoPP-2024-national-museum-of-scotland" class="navigate">Banquet Venue: National Museum of Scotland</a></li><li class="block"><a href="https://www.ppopp.org/attending/registration" class="navigate">Registration</a></li><li class="block"><a href="https://www.ppopp.org/attending/accommodation" class="navigate">Accommodation Options</a></li><li class="block"><a href="https://www.ppopp.org/attending/travel" class="navigate">Travel</a></li><li class="block"><a href="https://www.ppopp.org/attending/travel-grant" class="navigate">Travel Grants</a></li><li class="block"><a href="https://www.ppopp.org/attending/what-to-do" class="navigate">What to do in Edinburgh</a></li><li class="block"><a href="https://www.ppopp.org/attending/visa" class="navigate">Visa</a></li><li class="block"><a href="https://www.ppopp.org/attending/codeofconduct" class="navigate">Code of Conduct</a></li></ul></li><li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Program <span class="caret"></span></a><ul id="program-menu" class="block dropdown-menu"><li class="block"><a href="https://www.ppopp.org/program/program-PPoPP-2024/" class="navigate">Complete Program</a></li><li class="block"><a href="https://www.ppopp.org/program/program-PPoPP-2024/" data-fltr-type="prog" data-fltr-val="Your Program" class="navigate"><span class="glyphicon glyphicon-star"></span> Your Program</a></li><li class="block divider"></li><li class="block"><a href="https://www.ppopp.org/program/program-PPoPP-2024/" data-fltr-type="date" data-fltr-val="Sat 2 Mar 2024" class="navigate">Sat 2 Mar</a></li><li class="block"><a href="https://www.ppopp.org/program/program-PPoPP-2024/" data-fltr-type="date" data-fltr-val="Sun 3 Mar 2024" class="navigate">Sun 3 Mar</a></li><li class="block"><a href="https://www.ppopp.org/program/program-PPoPP-2024/" data-fltr-type="date" data-fltr-val="Mon 4 Mar 2024" class="navigate">Mon 4 Mar</a></li><li class="block"><a href="https://www.ppopp.org/program/program-PPoPP-2024/" data-fltr-type="date" data-fltr-val="Tue 5 Mar 2024" class="navigate">Tue 5 Mar</a></li><li class="block"><a href="https://www.ppopp.org/program/program-PPoPP-2024/" data-fltr-type="date" data-fltr-val="Wed 6 Mar 2024" class="navigate">Wed 6 Mar</a></li></ul></li><li id="tracks-in-navbar" class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Tracks <span class="caret"></span></a><ul class="block dropdown-menu multi-column columns-1"><div class="row"><div class="col-sm-12"><ul class="block multi-column-dropdown"><li class="block dropdown-header">PPoPP 2024</li><li class="block"><a href="https://www.ppopp.org/track/PPoPP-2024-keynotes" class="navigate">Keynotes</a></li><li class="block"><a href="https://www.ppopp.org/track/PPoPP-2024-papers" class="navigate">Main Conference</a></li><li class="block"><a href="https://www.ppopp.org/track/PPoPP-2024-workshops-and-tutorials" class="navigate">Workshops and Tutorials</a></li><li class="block"><a href="https://www.ppopp.org/track/PPoPP-2024-artifact-evaluation" class="navigate">Artifact Evaluation</a></li></ul></div></div></ul></li><li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Organization <span class="caret"></span></a><ul class="block dropdown-menu multi-column columns-1"><div class="row"><div class="col-sm-12"><ul class="block multi-column-dropdown"><li class="block dropdown-header">PPoPP 2024 Committees</li><li class="block"><a href="https://www.ppopp.org/committee/PPoPP-2024-organizing-committee" class="navigate">Organizing Committee</a></li><li class="block"><a href="https://www.ppopp.org/committee/PPoPP-2024-steering-committee" class="navigate">Steering Committee</a></li><li class="block dropdown-header">Track Committees  </li><li class="block"><a href="https://www.ppopp.org/committee/PPoPP-2024-papers-program-committee" class="navigate"><strong>Main Conference</strong></a></li><li class="block"><a href="https://www.ppopp.org/committee/PPoPP-2024-workshops-and-tutorials-workshop-tutorial-evaluation-committee" class="navigate"><strong>Workshops and Tutorials</strong></a></li><li class="block"><a href="https://www.ppopp.org/committee/PPoPP-2024-artifact-evaluation-artifact-evaluation-committee" class="navigate"><strong>Artifact Evaluation</strong></a></li><li class="block dropdown-header">Contributors</li><li class="block"><a href="https://www.ppopp.org/people-index" class="navigate"><span class="glyphicon glyphicon-search"></span><sup><span class="glyphicon glyphicon-user"></span></sup> People Index</a></li></ul></div></div></ul></li><li class="block"><a href="https://www.ppopp.org/search//all" class="navigate"><span class="glyphicon glyphicon-search"></span><span class="hidden-sm"> Search</span></a></li><li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="hidden-sm">Series <span class="caret"></span></span><span title="" class="visible-sm" data-original-title="Series"><span class="glyphicon glyphicon-repeat"></span> <span class="caret"></span></span></a><ul class="block dropdown-menu"><li class="block"><a href="https://conf.researchr.org/series/PPoPP" class="navigate"><span class="glyphicon glyphicon-home"></span> Series</a></li><li class="block divider"></li><li class="block"><a href="https://ppopp25.sigplan.org" class="navigate">PPoPP 2025</a></li><li class="block"><span class="text-muted" style="margin-left: 2px;"><span class="glyphicon glyphicon-hand-right"></span> PPoPP 2024</span></li><li class="block"><a href="https://ppopp23.sigplan.org" class="navigate">PPoPP 2023</a></li><li class="block"><a href="https://ppopp22.sigplan.org" class="navigate">PPoPP 2022</a></li><li class="block"><a href="https://ppopp21.sigplan.org" class="navigate">PPoPP 2021</a></li><li class="block"><a href="https://ppopp20.sigplan.org" class="navigate">PPoPP  2020</a></li><li class="block"><a href="https://ppopp19.sigplan.org" class="navigate">PPoPP 2019</a></li><li class="block"><a href="https://ppopp18.sigplan.org" class="navigate">PPoPP 2018</a></li><li class="block"><a href="https://ppopp17.sigplan.org" class="navigate">PPoPP 2017</a></li><li class="block"><a href="https://ppopp16.sigplan.org" class="navigate">PPoPP 2016</a></li><li class="block"><a href="https://ppopp15.soe.ucsc.edu/" target="_blank" class="navigate">PPoPP 2015 <span class="pull-right"><span class="glyphicon glyphicon-new-window"></span></span></a></li><li class="block"><a href="https://sites.google.com/site/ppopp2014/" target="_blank" class="navigate">PPoPP 2014 <span class="pull-right"><span class="glyphicon glyphicon-new-window"></span></span></a></li><li class="block"><a href="http://dl.acm.org/citation.cfm?id=2442516" target="_blank" class="navigate">PPoPP 2013 <span class="pull-right"><span class="glyphicon glyphicon-new-window"></span></span></a></li><li class="block"><a href="http://dl.acm.org/citation.cfm?id=2145816&amp;picked=prox" target="_blank" class="navigate">PPoPP 2012 <span class="pull-right"><span class="glyphicon glyphicon-new-window"></span></span></a></li><li class="block"><a href="http://ppopp11.ac.uma.es/tiki-index.php" target="_blank" class="navigate">PPoPP 2011 <span class="pull-right"><span class="glyphicon glyphicon-new-window"></span></span></a></li><li class="block"><a href="http://dl.acm.org/citation.cfm?id=1693453" target="_blank" class="navigate">PPoPP 2010 <span class="pull-right"><span class="glyphicon glyphicon-new-window"></span></span></a></li><li class="block"><a href="http://ppopp09.rice.edu/" target="_blank" class="navigate">PPoPP 2009 <span class="pull-right"><span class="glyphicon glyphicon-new-window"></span></span></a></li></ul></li></ul><div class="navbar-right"><ul class="block nav navbar-nav"><li class="block"><a href="https://conf.researchr.org/signin/PPoPP-2024/https%3A%5Es%5Esconf.researchr.org%5Eshome%5Esppopp-2024" rel="nofollow" class="navigate">Sign in</a></li><li class="block"><a href="https://www.ppopp.org/signup" class="navigate">Sign up</a></li></ul></div></div></div></div><script type="text/javascript">$(document).ready(function(){
+      $('.carousel').carousel({
+        interval: 10000
+      })
+    });
+  </script><div id="carousel-92fe5453-e97f-4130-8e2c-474593183891" data-ride="carousel" class="carousel slide carousel-fade"><ol class="carousel-indicators"><li data-target="#carousel-92fe5453-e97f-4130-8e2c-474593183891" data-slide-to="0" class="active"></li><li data-target="#carousel-92fe5453-e97f-4130-8e2c-474593183891" data-slide-to="1"></li><li data-target="#carousel-92fe5453-e97f-4130-8e2c-474593183891" data-slide-to="2"></li><li data-target="#carousel-92fe5453-e97f-4130-8e2c-474593183891" data-slide-to="3"></li><li data-target="#carousel-92fe5453-e97f-4130-8e2c-474593183891" data-slide-to="4"></li></ol><div class="carousel-inner" style="background-color: #FFF;"><div class="item active"><div class="fill" style="background-image:url('https://www.ppopp.org/getImage/carousel/Edinburgh.jpg?1704813717000');"></div><div class="attribution"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png"></a> Photo by <em>Michel Steuwer</em></div><div class="carousel-caption"><h3>Edinburgh</h3><h5><p>from Calton Hill</p></h5></div></div><div class="item"><div class="fill" style="background-image:url('https://www.ppopp.org/getImage/carousel/DSC07387.jpeg?1678460795000');"></div><div class="attribution"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png"></a> Photo by <em>Michel Steuwer</em></div><div class="carousel-caption"><h3>Edinburgh</h3><h5><p>from Arthur’s Seat</p></h5></div></div><div class="item"><div class="fill" style="background-image:url('https://www.ppopp.org/getImage/carousel/DSC00823.jpeg?1678460912000');"></div><div class="attribution"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png"></a> Photo by <em>Michel Steuwer</em></div><div class="carousel-caption"><h3>Edinburgh Castle</h3><h5></h5></div></div><div class="item"><div class="fill" style="background-image:url('https://www.ppopp.org/getImage/carousel/IMG_4521.jpeg?1678460963000');"></div><div class="attribution"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png"></a> Photo by <em>Michel Steuwer</em></div><div class="carousel-caption"><h3>Arthur's Seat</h3><h5></h5></div></div><div class="item"><div class="fill" style="background-image:url('https://www.ppopp.org/getImage/carousel/DSC05077.jpeg?1678461040000');"></div><div class="attribution"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png"></a> Photo by <em>Michel Steuwer</em></div><div class="carousel-caption"><h3>National Monument of Scotland</h3><h5></h5></div></div></div><a href="#carousel-92fe5453-e97f-4130-8e2c-474593183891" data-slide="prev" class="left carousel-control"><span class="glyphicon glyphicon-chevron-left"></span></a><a href="#carousel-92fe5453-e97f-4130-8e2c-474593183891" data-slide="next" class="right carousel-control"><span class="glyphicon glyphicon-chevron-right"></span></a></div><div id="content" class="container"><div class="row"><div class="col-sm-7"><div class="row"><div class="col-sm-12"><div class="page-header"><h1>ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming 2024</h1></div><h3><a href="#march-2nd-march-6th-2024-edinburgh-uk" id="march-2nd-march-6th-2024-edinburgh-uk" class="anchor-link">March 2nd  – March 6th, 2024, Edinburgh, UK</a></h3>
+<style>
+.half-line {
+  line-height: .1em;
+}
+p.maintext{
+  line-height: 1.2;
+  font-size: 24pt;
+}
+</style>
+<h4><a href="#co-located-with-cc-cgo-and-hpca" id="co-located-with-cc-cgo-and-hpca" class="anchor-link">Co-located with </a><a href="https://conf.researchr.org/home/CC-2024">CC</a>, <a href="https://cgo.org">CGO</a> and <a href="http://hpca-conf.org/2024">HPCA</a></h4>
+<p><strong>PPoPP</strong> is the premier forum for leading work on all aspects of parallel programming, including theoretical foundations, techniques, languages, compilers, runtime systems, tools, and practical experience. In the context of the symposium, <em>“parallel programming”</em> encompasses work on concurrent and parallel systems (multicore, multi-threaded, heterogeneous, clustered, and distributed systems; grids; datacenters; clouds; and large-scale machines). Given the rise of parallel architectures in the consumer market (desktops, laptops, and mobile devices) and data centers, PPoPP is particularly interested in work that addresses new parallel workloads and issues that arise out of extreme-scale applications or cloud platforms, as well as techniques and tools that improve the productivity of parallel programming or work towards improved synergy with such emerging architectures.</p>
+<p>View the track page for all the details of the main conference.</p>
+<p>Proceedings will be available in the ACM Digital Library.</p>
+</div></div><div class="row"><div class="col-sm-12"><div class="page-header"><h2>Latest News</h2></div><div class="panel panel-default"><ul class="list-group"><li class="list-group-item"><small class="text-muted">Mon 26 Feb 2024 by <a href="https://www.ppopp.org/profile/michelsteuwer" class="navigate">Michel Steuwer</a></small><h3>Proceedings published in the ACM Digital Library<br></h3><p>The Proceedings of PPoPP 2024 have been published and are now <a href="https://dl.acm.org/doi/proceedings/10.1145/3627535">accessible in the ACM Digital Library</a>.</p>
+</li><li class="list-group-item"><small class="text-muted">Wed 20 Dec 2023 by <a href="https://www.ppopp.org/profile/michelsteuwer" class="navigate">Michel Steuwer</a></small><h3>Student Travel Grants<br></h3><p>Eligible students can apply for financial support for attending the conference via the NSF travel grant, ACM SIGPLAN PAC, and SICSA. More information here: <a href="https://conf.researchr.org/attending/PPoPP-2024/travel-grant">https://conf.researchr.org/attending/PPoPP-2024/travel-grant</a></p>
+</li></ul></div><a href="https://www.ppopp.org/news" class="navigate"><small class="text-muted">All News Articles</small></a></div></div><div class="row"><div class="col-sm-12"><h3>Keynotes</h3><div id="84254fc8f4a1143b68984f0b93599ce1wrapper"><div id="84254fc8f4a1143b68984f0b93599ce1" class="owl-carousel owl-theme" style="opacity: 1; display: block;"><div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 1608px; left: 0px; display: block;"><div class="owl-item" style="width: 268px;"><a href="https://www.ppopp.org/details/PPoPP-2024-keynotes/1/HPCA-Keynote-Terminus-Moving-the-Center-of-Cloud-Servers-to-SmartNICs-and-Beyond" class="highlight-carousel-item navigate"><div class="thumbnail"><span style="position:absolute;"></span><img alt="Derek Chiou" src="https://conf.researchr.org/getProfileImage/derekchiou/850ae5db-4586-4cb2-acaa-fa121777080d/avatar.jpg?1717691295000" class="outputimage owl-top"><div class="caption"><div class="owl-bottom"><h5>HPCA Keynote: Terminus: Moving the Center of Cloud Servers to SmartNICs and Beyond</h5><h6><i>Derek Chiou</i></h6></div></div></div></a></div><div class="owl-item" style="width: 268px;"><a href="https://www.ppopp.org/details/PPoPP-2024-keynotes/2/CGO-Keynote-Computing-Systems-for-the-Foundation-Model-Era" class="highlight-carousel-item navigate"><div class="thumbnail"><span style="position:absolute;"></span><img alt="Kunle Olukotun" src="https://conf.researchr.org/getProfileImage/kunleolukotun/84dd0e57-c223-4f84-964b-13e4585c2bb7/avatar.jpg?1717691293000" class="outputimage owl-top"><div class="caption"><div class="owl-bottom"><h5>CGO Keynote: Computing Systems for the Foundation Model Era</h5><h6><i>Kunle Olukotun</i></h6></div></div></div></a></div><div class="owl-item" style="width: 268px;"><a href="https://www.ppopp.org/details/PPoPP-2024-keynotes/3/PPoPP-Keynote-Sparsity-in-Deep-Neural-Nets" class="highlight-carousel-item navigate"><div class="thumbnail"><span style="position:absolute;"></span><img alt="Nir Shavit" src="https://conf.researchr.org/getProfileImage/nirshavit/7414a16e-9905-4836-9bd4-0aa8152b0aa8/avatar.jpg?1717691297000" class="outputimage owl-top"><div class="caption"><div class="owl-bottom"><h5>PPoPP Keynote: Sparsity in Deep Neural Nets</h5><h6><i>Nir Shavit</i></h6></div></div></div></a></div></div></div><div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div></div></div></div><script type="text/javascript">$(document).ready(function() {
+	 
+		  $("#84254fc8f4a1143b68984f0b93599ce1").owlCarousel({
+		 
+		      autoPlay: 15000, //Set AutoPlay to 15 sec
+		 
+		      items : 4,
+		      itemsDesktop : [1199,4],
+		      itemsDesktopSmall : [979,4],
+		      itemsTablet: [768,3],
+		      itemsTabletSmall: [600,2],
+		      itemsMobile: [479,2],
+		      itemsScaleUp: false,
+		      stopOnHover: true,
+		      responsiveBaseWidth: "#84254fc8f4a1143b68984f0b93599ce1wrapper"
+		      
+		 
+		  });
+		 
+		});
+	</script><script type="text/javascript">$(window).on('load', function() {
+		var a = [/*"owl-top",*/ "owl-bottom"];
+		a.forEach(function(cl) {
+			var maxHeight=0;
+	        $('#84254fc8f4a1143b68984f0b93599ce1 .' + cl + ',#84254fc8f4a1143b68984f0b93599ce1 .' + cl + ' *').each(function () {
+	            var thisHeight = $(this).outerHeight( true );
+	            if (thisHeight > maxHeight ){
+	            	maxHeight = thisHeight;
+	            }
+	        });
+	        $('#84254fc8f4a1143b68984f0b93599ce1 .' + cl).css('height', maxHeight);
+	    });
+    });
+    </script></div></div><div class="row"><div class="col-sm-12"><div class="page-header"><h3>Schedule</h3></div><style type="text/css">
+  .grid-schedule {
+    text-align: center;
+    align-content: center;
+    overflow-x: scroll;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 4em 3fr 2fr 3fr;
+    gap: 4px;
+    container-name: schedule-container;
+    container-type: inline-size;
+  }
+  .grid-schedule a {color:white;}
+
+  .grid-schedule .small {font-size: 0.8em;}
+
+  div.weekend-header {
+    display: flex;
+    flex-direction: column;
+  }
+  div.weekend-header :first-child {
+    height: 2.5em;
+  }
+  div.weekend-header :nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  div.main-event,
+  div.tut,
+  div.work,
+  div.empty {
+    margin: 2px;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.tut,
+  div.work,
+  div.empty {
+    container: grid-item / inline-size;
+    font-size: 1em;
+    width: 100%;
+    height: 4em;
+    overflow-x: scroll;
+    container-name: grid-item;
+  }
+  @container schedule-container (width < 500px) {
+    div.tut, div.work, div.empty {
+      font-size: .75em;
+      height: 5em;
+    }
+  }
+  @container schedule-container (width > 800px) {
+    div.tut, div.work, div.empty {
+      font-size: 1.25em;
+      height: 3.5em;
+    }
+  }
+
+  div.main-event {
+    font-size: 3em;
+  }
+  @container schedule-container (width < 500px) {
+    div.main-event {
+      font-size: 2em;
+    }
+  }
+
+  div.schedule-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  div.schedule-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  div.hpca div.tut { background-color:#F50000; }
+  div.hpca div.work { background-color:#8F0000; }
+  div.hpca-main { background-color:#BB0000;}
+
+  div.cgo div.tut { background-color:#00E000; }
+  div.cgo div.work { background-color:#008F00; }
+  div.cgo-main { background-color:#00BB00; }
+
+  div.ppopp div.tut { background-color:#0A0AFF; }
+  div.ppopp div.work { background-color:#0000A3; }
+  div.ppopp-main { background-color:#0000BB; }
+
+  div.cc {
+    grid-row: 5 / 6;
+    grid-column: 1 / 3;
+  }
+  div.cc .schedule-row :first-child { width: 25%; }
+  div.cc .schedule-row :nth-child(2) { width: 75%; }
+  div.cc div.main-event {background-color: #ECA72C; height: 3em; }
+
+  div.reception {
+    grid-row: 6 / 7;
+    grid-column: 2 / 3;
+  }
+  div.reception .schedule-row :first-child { width: 40%; }
+  div.reception .schedule-row :nth-child(2) { width: 60%; }
+  div.reception div.main-event {background-color: #666666; height: 2em; font-size: 1.5em;}
+
+  @container schedule-container (width < 500px) {
+    div.reception div.main-event {
+      font-size: 1em;
+    }
+  }
+
+  div.banquet {
+    grid-row: 6 / 7;
+    grid-column: 3 / 3;
+  }
+  div.banquet .schedule-row :first-child { width: 25%; }
+  div.banquet .schedule-row :nth-child(2) { width: 50%; }
+  div.banquet .schedule-row :nth-child(3) { width: 25%; }
+  div.banquet div.main-event {background-color: #666666; height: 2em;  font-size: 1.5em;}
+
+  @container schedule-container (width < 500px) {
+    div.banquet .schedule-row :first-child { width: 20%; }
+    div.banquet .schedule-row :nth-child(2) { width: 60%; }
+    div.banquet .schedule-row :nth-child(3) { width: 20%; }
+    div.banquet div.main-event {
+      font-size: 1em;
+    }
+  }
+</style>
+<div class="grid-schedule">
+  <!-- Header -->
+  <div class="weekend-header"> 
+    <div><strong>Saturday</strong><br><span class="small">March 2nd</span></div>
+    <div>
+      <div>Morning</div>
+      <div>Afternoon</div>
+    </div>
+  </div>
+  <div class="weekend-header">
+    <div><strong>Sunday</strong><br><span class="small">March 3rd</span></div>
+    <div>
+      <div>Morning</div>
+      <div>Afternoon</div>
+    </div>
+  </div>
+  <div style="display: flex; flex-direction: row; justify-content: space-around;">
+    <div><strong>Mon</strong><br><span class="small">March 4th</span></div>
+    <div><strong>Tue</strong><br><span class="small">March 5th</span></div>
+    <div><strong>Wed</strong><br><span class="small">March 6th</span></div>
+  </div>
+
+  <!-- PPoPP begin -->
+  <!-- Saturday -->
+  <div class="ppopp schedule-column">
+    <div class="schedule-row">
+      <div class="work"><a href="https://mocalabucm.github.io/gpgpu2024/" title="" data-original-title="WORKSHOP ON GENERAL PURPOSE PROCESSING USING GPU">GPGPU</a></div>
+    </div>
+    <div class="schedule-row">
+      <div class="work">
+        <a href="https://diffprog-ppopp24.github.io" title="" data-original-title="Workshop on Differentiable Parallel Programming">Different. Parallel Prog.</a>
+      </div>
+      <div class="empty"></div>
+    </div>
+    <div class="schedule-row">
+      <div class="tut">
+        Conc. Alogs. in Kotlin Coroutines
+      </div>
+      <div class="empty"></div>
+    </div>
+  </div>
+  <!-- Sunday -->
+  <div class="ppopp schedule-column">
+    <div class="schedule-row">
+      <div class="work"><a href="https://pmam2024.hotcrp.com/u/0/" title="" data-original-title="International Workshop on Programming Models and Applications for Multicores and Manycores">PMAM</a></div>
+      <div class="work"><a href="https://ornl.github.io/events/exhet2024/" title="" data-original-title="International Workshop on Extreme Heterogeneity Solutions">ExHET</a></div>
+    </div>
+  </div>
+  <!-- Main -->
+  <div class="ppopp-main main-event"><a href="https://conf.researchr.org/home/PPoPP-2024">PPoPP</a></div>
+  <!-- PPoPP end -->
+
+  <!-- CGO begin -->
+  <!-- Saturday -->
+  <div class="cgo schedule-column">
+    <div class="schedule-row">
+      <div class="tut">BuildIt</div>
+      <div class="work"><a href="https://jnamaral.github.io/LATHC24/" title="" data-original-title="Languages, Architectures, and Tools for Heterogeneous Computing Workshop">LATHC</a></div>
+    </div>
+    <div class="schedule-row">
+      <div class="work"><a href="https://easychair.org/cfp/LLVM-CGO-2024" title="" data-original-title="LLVM Performance Workshop">LLVM Performance Workshop</a></div>
+    </div>
+  </div>
+  <!-- Sunday -->
+  <div class="cgo schedule-column">
+    <div class="schedule-row">
+      <div class="work"><a href="https://www.c4ml.org" title="" data-original-title="Compilers for Machine Learning Workshop">C4ML Workshop</a></div>
+    </div>
+  </div>
+  <!-- Main -->
+  <div class="cgo-main main-event"><a href="https://conf.researchr.org/home/cgo-2024">CGO</a></div>
+  <!-- CGO end -->
+
+  <!-- HPCA begin -->
+  <!-- Saturday -->
+  <div class="hpca schedule-column">
+    <div class="schedule-row">
+      <div class="tut">XiangShan</div>
+      <div class="tut">GENESYS</div>
+    </div>
+    <div class="schedule-row">
+      <div class="tut">MLPerf</div>
+      <div class="empty"></div>
+    </div>
+    <div class="schedule-row">
+      <div class="tut">gem5</div>
+    </div>
+  </div>
+  <!-- Sunday -->
+  <div class="hpca schedule-column">
+    <div class="schedule-row">
+      <div class="tut">Smart Networking</div>
+      <div class="tut">Structural Simulation Toolkit</div>
+    </div>
+    <div class="schedule-row">
+      <div class="tut">Versal ACAP AI Engine</div>
+        <div class="work"><a href="https://haflang.github.io/workshops/hafdal24.html" title="" data-original-title="Workshop on Hardware Acceleration of Functional and Declarative Languages">HAFDAL</a></div>
+      </div>
+      <div class="schedule-row">
+        <div class="tut">Faults at Scale</div>
+    </div>
+  </div>
+  <!-- Main -->
+  <div class="hpca-main main-event"><a href="https://www.hpca-conf.org/2024/">HPCA</a></div>
+  <!-- HPCA end -->
+
+  <!-- CC begin -->
+  <div class="cc">
+    <div class="schedule-row">
+      <div></div>
+      <div class="main-event"><a href="https://conf.researchr.org/home/CC-2024">CC</a></div>
+    </div>
+  </div>
+  <!-- CC end -->
+
+  <!-- Social events begin -->
+  <div class="reception">
+    <div class="schedule-row">
+      <div></div>
+      <div class="main-event">Reception</div>
+    </div>
+  </div>
+
+  <div class="banquet">
+    <div class="schedule-row">
+      <div></div>
+      <div class="main-event">Banquet</div>
+      <div></div>
+    </div>
+  </div>
+  <!-- Social events end -->
+  
+</div>
+</div></div><div class="row"><div class="col-sm-12"><div class="page-header"><h3>Code of Conduct</h3></div><p>The open exchange of ideas and the freedom of thought and expression are central to the aims and goals of SIGPLAN; these require an environment that recognizes the inherent worth of every person and group, that fosters dignity, understanding, and mutual respect, and that embraces diversity. For these reasons, SIGPLAN is dedicated to providing a harassment-free conference experience, and abides by the <a href="https://www.acm.org/special-interest-groups/volunteer-resources/officers-manual/policy-against-discrimination-and-harassment">ACM Policy Against Discrimination and Harassment at ACM Activities</a>.</p>
+<p>Conference participants violating these standards may be sanctioned or expelled from the conference, at the discretion of the conference organizers. Conference organizers are requested to report serious incidents to the SIGPLAN Vice Chair.</p>
+</div></div></div><div class="col-sm-4 col-sm-offset-1 sidebar"><div class="panel panel-primary"><div class="panel-heading clearfix"><div class="panel-title"><span class="glyphicon glyphicon-road"></span> PPoPP 2024 Tracks</div></div><div class="panel-body"><div class="all-tracks"><a href="https://www.ppopp.org/track/PPoPP-2024-keynotes" class="text-muted navigate">Keynotes</a> | <a href="https://www.ppopp.org/track/PPoPP-2024-papers" class="text-muted navigate">Main Conference</a> | <a href="https://www.ppopp.org/track/PPoPP-2024-workshops-and-tutorials" class="text-muted navigate">Workshops and Tutorials</a> | <a href="https://www.ppopp.org/track/PPoPP-2024-artifact-evaluation" class="text-muted navigate">Artifact Evaluation</a></div></div></div><div class="panel panel-primary"><div class="panel-heading clearfix"><div class="panel-title"><span class="glyphicon glyphicon-bullhorn"></span> <a href="https://www.ppopp.org/news" class="navigate">Featured News</a></div></div><table class="table table-hover"><tbody><tr href="https://www.ppopp.org/news#Proceedings-published-in-the-ACM-Digital-Library" class="clickable-row"><td>Proceedings published in the ACM Digital Library<span class="pull-right"><small class="text-muted">Mon 26 Feb 2024</small></span></td></tr><tr href="https://www.ppopp.org/news#Student-Travel-Grants" class="clickable-row"><td>Student Travel Grants<span class="pull-right"><small class="text-muted">Wed 20 Dec 2023</small></span></td></tr><tr href="https://www.ppopp.org/news#Registration-open!" class="clickable-row"><td>Registration open!<span class="pull-right"><small class="text-muted">Mon 4 Dec 2023</small></span></td></tr><tr href="https://www.ppopp.org/news#Four-Workshops-and-One-Tutorial-at-PPoPP-2024" class="clickable-row"><td>Four Workshops and One Tutorial at PPoPP 2024<span class="pull-right"><small class="text-muted">Mon 9 Oct 2023</small></span></td></tr><tr href="https://www.ppopp.org/news#Call-for-Papers-published" class="clickable-row"><td>Call for Papers published<span class="pull-right"><small class="text-muted">Wed 17 May 2023</small></span></td></tr></tbody></table></div><div class="panel panel-primary social-media-widget"><div class="panel-heading clearfix"><div class="panel-title"><svg xmlns="http://www.w3.org/2000/svg" height="0.875em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg> Posts</div></div><a class="twitter-timeline" data-height="400" href="https://twitter.com/PPoPPConf">PPoPP Conference</a><script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div><div class="panel panel-warning"><div class="panel-heading clearfix"><div class="panel-title">Supporters</div></div><table class="table table-hover"><tbody><tr href="https://huawei.com/" title="" class="clickable-row new-window" data-original-title="Huawei"><td><span class="supporter-logo "><img alt="Huawei" src="https://conf.researchr.org/getLogo/4a9b8cbb-2dbb-4b85-8f0e-ec1276eb03ab?1699031022000" class="outputimage"></span></td><td>Platinum Sponsor</td></tr><tr href="http://www.codeplay.com/" title="" class="clickable-row new-window" data-original-title="Codeplay"><td><span class="supporter-logo "><img alt="Codeplay" src="https://conf.researchr.org/getLogo/5b6d53ed-48bb-40e2-858d-984f4e08b378?1701779896000" class="outputimage"></span></td><td>Gold Sponsor</td></tr><tr href="https://www.antgroup.com/en" title="" class="clickable-row new-window" data-original-title="Ant Research"><td><span class="supporter-logo "><img alt="Ant Research" src="https://conf.researchr.org/getLogo/cd312b41-3d5e-4d03-83c2-8e629a8fa558?1701779888000" class="outputimage"></span></td><td>Gold Sponsor</td></tr><tr href="https://www.amazon.science" title="" class="clickable-row new-window" data-original-title="Amazon"><td><span class="supporter-logo "><img alt="Amazon" src="https://conf.researchr.org/getLogo/d22bfbd6-7277-4147-84f9-1d0649233a82?1706798268000" class="outputimage"></span></td><td>Gold Sponsor</td></tr><tr href="https://www.arm.com/" title="" class="clickable-row new-window" data-original-title="Arm"><td><span class="supporter-logo "><img alt="Arm" src="https://conf.researchr.org/getLogo/da9dd1a5-3038-4f45-8c9d-85ccf6d54f87?1697216206000" class="outputimage"></span></td><td>Silver Sponsor</td></tr><tr href="https://rebellions.ai/" title="" class="clickable-row new-window" data-original-title="Rebellions.ai"><td><span class="supporter-logo "><img alt="Rebellions.ai" src="https://conf.researchr.org/getLogo/fadda784-8ad1-4c0f-9a1f-6321a82bd8a5?1698131373000" class="outputimage"></span></td><td>Silver Sponsor</td></tr><tr href="https://google.com/" title="" class="clickable-row new-window" data-original-title="Google"><td><span class="supporter-logo "><img alt="Google" src="https://conf.researchr.org/getLogo/8511e6b2-ff6b-46dc-94db-443588cdd5c8?1701779938000" class="outputimage"></span></td><td>Silver Sponsor</td></tr><tr href="https://www.furiosa.ai/" title="" class="clickable-row new-window" data-original-title="FuriosaAI"><td><span class="supporter-logo "><img alt="FuriosaAI" src="https://conf.researchr.org/getLogo/d65ec56b-def8-4200-9bf8-122e2c77194a?1704803158000" class="outputimage"></span></td><td>Silver Sponsor</td></tr><tr href="https://moreh.io/" title="" class="clickable-row new-window" data-original-title="Moreh"><td><span class="supporter-logo "><img alt="Moreh" src="https://conf.researchr.org/getLogo/85c35d07-060a-4a92-a39b-4f013ec169c8?1697216265000" class="outputimage"></span></td><td>Bronze Sponsor</td></tr><tr href="https://qualcomm.com" title="" class="clickable-row new-window" data-original-title="Qualcomm"><td><span class="supporter-logo "><img alt="Qualcomm" src="https://conf.researchr.org/getLogo/caf2bd6d-2839-451d-8eb9-cb3cf8380207?1704803165000" class="outputimage"></span></td><td>Bronze Sponsor</td></tr><tr href="https://ibm.com/" title="" class="clickable-row new-window" data-original-title="IBM"><td><span class="supporter-logo "><img alt="IBM" src="https://conf.researchr.org/getLogo/d53ad8d1-31a1-4037-b1bc-90b6c1a2de50?1697216293000" class="outputimage"></span></td><td>Bronze Sponsor</td></tr><tr href="https://amd.com/" title="" class="clickable-row new-window" data-original-title="AMD"><td><span class="supporter-logo "><img alt="AMD" src="https://conf.researchr.org/getLogo/90dab120-f308-48c4-9b88-e70207aa0c2c?1701779980000" class="outputimage"></span></td><td>Bronze Sponsor</td></tr><tr href="https://mangoboost.io/" title="" class="clickable-row new-window" data-original-title="MangoBoost"><td><span class="supporter-logo "><img alt="MangoBoost" src="https://conf.researchr.org/getLogo/c0665ade-78fc-49eb-ae6c-ffedaf7955ae?1704803314000" class="outputimage"></span></td><td>Bronze Sponsor</td></tr><tr href="https://www.acm.org" title="" class="clickable-row new-window" data-original-title="Association for Computing Machinery"><td><span class="supporter-logo "><img alt="Association for Computing Machinery" src="https://conf.researchr.org/getLogo/e15197a6-e029-40da-84a8-e1aea6b104fc?1697216388000" class="outputimage"></span></td><td>Conference Sponsor</td></tr><tr href="https://www.sigplan.org" title="" class="clickable-row new-window" data-original-title="SIGPLAN"><td><span class="supporter-logo "><img alt="SIGPLAN" src="https://conf.researchr.org/getLogo/126d33ac-35cb-4caf-9eda-db567d0e0297?1697216429000" class="outputimage"></span></td><td>Conference Sponsor</td></tr><tr href="https://www.sighpc.org" title="" class="clickable-row new-window" data-original-title="SIGHPC"><td><span class="supporter-logo "><img alt="SIGHPC" src="https://conf.researchr.org/getLogo/e3a72fec-b2d7-40a5-a3e4-7c5b6dd456c1?1697216454000" class="outputimage"></span></td><td>Conference Sponsor</td></tr><tr href="https://www.sicsa.ac.uk/" title="" class="clickable-row new-window" data-original-title="SICSA"><td><span class="supporter-logo "><img alt="SICSA" src="https://conf.researchr.org/getLogo/5e0c082d-aab0-4717-973b-dd7cf2f0342d?1701780091000" class="outputimage"></span></td><td>Conference Sponsor</td></tr><tr href="https://nsf.gov/" title="" class="clickable-row new-window" data-original-title="U.S. National Science Foundation"><td><span class="supporter-logo "><img alt="U.S. National Science Foundation" src="https://conf.researchr.org/getLogo/5b0f095b-3265-4e90-ab80-1c5cb3e6682b?1707227056000" class="outputimage"></span></td><td>Student Travel Grant Sponsor</td></tr></tbody></table></div></div></div><div id="messages-placeholder" class="alert alert-warning" style="display:none;"><a data-dismiss="alert" class="close">x</a><em>Sun 30 Jun 04:34</em></div></div><div id="notifications-ph" class="webdsl-placeholder"></div><div id="event-modal-loader" class="webdsl-placeholder"><form name="form_131600131703c411e65b13378d08eb1f6672b5a0259" id="form_131600131703c411e65b13378d08eb1f6672b5a0259" action="https://conf.researchr.org/eventDetailsModalByAjaxConferenceEdition" accept-charset="UTF-8" method="POST" class="hidden"><input type="hidden" name="form_131600131703c411e65b13378d08eb1f6672b5a0259" value="1"><input type="hidden" name="context" value="PPoPP-2024"><input name="ae03f7f6f951d515a297b161e922205d" type="text" value="" class="inputString form-control event-id-input"><button style="position: absolute; left: -9999px; width: 1px; height: 1px;" onclick="javascript:serverInvoke(&quot;https://conf.researchr.org/eventDetailsModalByAjaxConferenceEdition&quot;,&quot;eventDetailsModalByAjaxConferenceEdition_ia0_3c411e65b13378d08eb1f6672b5a0259&quot;, [{&quot;name&quot;:&quot;context&quot;, &quot;value&quot;:&quot;PPoPP-2024&quot;},],&quot;form_131600131703c411e65b13378d08eb1f6672b5a0259&quot;, this.nextSibling, false,&quot;event-modal-loader&quot;); return false;"></button><a submitid="eventDetailsModalByAjaxConferenceEdition_ia0_3c411e65b13378d08eb1f6672b5a0259" href="javascript:void(0)" onclick="javascript:loadImageElem=this;$(this.previousSibling).click()" id="load-modal-action"></a></form></div><div id="event-star-form" class="webdsl-placeholder"><form name="form_509860938088b48fd14544d4239b498a2cf339e02b" id="form_509860938088b48fd14544d4239b498a2cf339e02b" action="https://conf.researchr.org/eventStarByAjaxConferenceEdition" accept-charset="UTF-8" method="POST" class="hidden"><input type="hidden" name="form_509860938088b48fd14544d4239b498a2cf339e02b" value="1"><input type="hidden" name="context" value="PPoPP-2024"><input name="a0b55aa29cf9431a9461b359872014e3" type="text" value="" class="inputString form-control event-id-input"><button style="position: absolute; left: -9999px; width: 1px; height: 1px;" onclick="javascript:serverInvoke(&quot;https://conf.researchr.org/eventStarByAjaxConferenceEdition&quot;,&quot;eventStarByAjaxConferenceEdition_ia0_88b48fd14544d4239b498a2cf339e02b&quot;, [{&quot;name&quot;:&quot;context&quot;, &quot;value&quot;:&quot;PPoPP-2024&quot;},],&quot;form_509860938088b48fd14544d4239b498a2cf339e02b&quot;, this.nextSibling, false,&quot;event-star-form&quot;); return false;"></button><a submitid="eventStarByAjaxConferenceEdition_ia0_88b48fd14544d4239b498a2cf339e02b" href="javascript:void(0)" onclick="javascript:loadImageElem=this;$(this.previousSibling).click()" id="star-event-action"></a></form></div><div id="event-modals" class="webdsl-placeholder"></div><script type="text/javascript">(function(){
+    var post_process_function = function(n){ var node=(n&&n.nodeType === 1)?n:document; addEventModalLoadOnClick(node); addStarredEventOnClick(node); };
+    var original_post_process_func = ajax_post_process;
+    ajax_post_process = function(){
+      original_post_process_func.apply(this,arguments);
+      post_process_function.apply(this,arguments);
+    };
+    $(document).ready( post_process_function );
+  })();   
+  </script><footer class="footer"><div class="container"><div class="footer-box"><div class="row"><div class="col-sm-3"><h3><a href="https://www.ppopp.org" class="navigate"><span class="glyphicon glyphicon-home"></span> PPoPP 2024</a></h3><div><a href="https://www.ppopp.org/contact" class="navigate"><span class="glyphicon glyphicon-envelope"></span> contact form</a></div><hr>using <a href="https://conf.researchr.org" class="navigate">conf.researchr.org</a> (<a href="http://yellowgrass.org/roadmap/conf.researchr.org" class="navigate">v1.65.0</a>)<br><small><a href="https://www.ppopp.org/support" target="_blank" class="navigate"><span class="glyphicon glyphicon-question-sign"></span> Support page</a></small><br><small></small></div><div class="col-sm-5"><div class="row"><div class="col-sm-6"><h4>Tracks</h4><a href="https://www.ppopp.org/track/PPoPP-2024-keynotes" class="navigate">Keynotes</a><br><a href="https://www.ppopp.org/track/PPoPP-2024-papers" class="navigate">Main Conference</a><br><a href="https://www.ppopp.org/track/PPoPP-2024-workshops-and-tutorials" class="navigate">Workshops and Tutorials</a><br><a href="https://www.ppopp.org/track/PPoPP-2024-artifact-evaluation" class="navigate">Artifact Evaluation</a></div><div class="col-sm-6"></div></div></div><div class="col-sm-2"><h4>Attending</h4><a href="https://www.ppopp.org/venue/PPoPP-2024-venue" class="navigate">Venue: Edinburgh International Conference Center</a><br><a href="https://www.ppopp.org/venue/PPoPP-2024-national-museum-of-scotland" class="navigate">Banquet Venue: National Museum of Scotland</a><br><a href="https://www.ppopp.org/attending/registration" class="navigate">Registration</a><br><a href="https://www.ppopp.org/attending/accommodation" class="navigate">Accommodation Options</a><br><a href="https://www.ppopp.org/attending/travel" class="navigate">Travel</a><br><a href="https://www.ppopp.org/attending/travel-grant" class="navigate">Travel Grants</a><br><a href="https://www.ppopp.org/attending/what-to-do" class="navigate">What to do in Edinburgh</a><br><a href="https://www.ppopp.org/attending/visa" class="navigate">Visa</a><br><a href="https://www.ppopp.org/attending/codeofconduct" class="navigate">Code of Conduct</a></div><div class="col-sm-2"><a href="https://www.ppopp.org/signup" class="navigate">Sign Up</a></div></div></div></div></footer></div><script type="text/javascript">(function(){
+    var post_process_function = function(n){ var node=(n&&n.nodeType === 1)?n:document; var defaultplacement = $(document).scrollLeft() > 100 ? 'auto left' : 'auto top'; $(node).find('[title]').each( function(i,el){ var $e=$(el); var $parent=$e.parent();$e.tooltip({placement: function(tt, elem){ var attval = elem.getAttribute('data-placement'); return attval ? attval : defaultplacement; }, sanitize: false, container: $parent.hasClass('btn-group') || $parent.hasClass('input-group') ? $parent.parent() : false}) } ); $('.tooltip.fade.in, .ui-tooltip-content').remove();  };
+    var original_post_process_func = ajax_post_process;
+    ajax_post_process = function(){
+      original_post_process_func.apply(this,arguments);
+      post_process_function.apply(this,arguments);
+    };
+    $(document).ready( post_process_function );
+  })();   
+  </script><script type="text/javascript">jQuery(document).ready(function($) {
+        $(".clickable-row").click(function() {
+          var href = $(this).attr("href");
+          if( window.location.href.indexOf( href ) < 0 ){
+            if ($(this).hasClass('new-window') ){
+              window.open( href );
+            } else {
+              window.document.location = href;
+            }
+          }
+        });
+    });
+    </script>
+</body></html>

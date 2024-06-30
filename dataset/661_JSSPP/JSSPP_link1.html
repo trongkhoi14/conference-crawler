@@ -1,0 +1,454 @@
+<!DOCTYPE html><html lang="en"><head>
+<!--<meta http-equiv="content-type" content="text/html; charset=UTF-8"> -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Workshop on Job Scheduling Strategies for Parallel Processing (JSSPP)">
+    <meta name="keywords" content="Workshop on Job Scheduling Strategies for Parallel Processing, JSSPP, Cloud, Grid, Job, VM, Scheduling, Workload, Computer Science">
+    <meta name="author" content="Dalibor Klusacek">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="./favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="./favicons/manifest.json">
+    <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+    <title>Job Scheduling Strategies for Parallel Processing</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="jsspp_files/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="jsspp_files/bootstrap-theme.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="jsspp_files/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jsspp_files/theme.css" rel="stylesheet">
+    <link href="jsspp_files/jsspp.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="jsspp_files/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  <body>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://jsspp.org/index.php?page=about">JSSPP</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="http://jsspp.org/index.php?page=about"><font color="#ffeaa3"><b>About</b></font></a></li>
+            <li><a href="http://jsspp.org/index.php?page=cfp" title="Call for Papers and Call for Problems">Call for Submissions</a></li>
+            <li><a href="http://jsspp.org/index.php?page=deadlines">Deadlines</a></li>
+            <li><a href="http://jsspp.org/index.php?page=program" title="Workshop Program"><font color="#ffeaa3"><b>2024 Program</b></font></a></li>
+            <li><a href="http://jsspp.org/index.php?page=submission">Submission</a></li>
+            <li><a href="http://jsspp.org/index.php?page=committees">Committees</a></li>
+            <li><a href="http://jsspp.org/index.php?page=registration">Registration</a></li>
+            <li><a href="http://jsspp.org/workload">Workloads</a></li>
+            <li><a href="http://jsspp.org/tools">Tools</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+</nav>  
+  <div class="container theme-showcase" role="main">
+  
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron jsspp_jumbotron">
+<img src="./jsspp_files/images/logo_vertical_bot_medium.png" class="img-responsive img-thumbnail jsspp_img_jumbotron" alt="JSSPP logo">
+
+	  <h1>JSSPP 2024</h1>
+      <p>
+	  27<sup>th</sup> Workshop on Job Scheduling Strategies for Parallel Processing (JSSPP 2024)<br>
+	  In Conjunction with IPDPS 2024, San Francisco, California USA, May 31, 2024
+	  </p>
+
+      </div>
+
+      <div class="page-header">
+      <h1>Welcome to JSSPP 2024 Workshop</h1>
+      </div>
+<a href="http://ipdps.org" title="IPDPS conference"><img src="./jsspp_files/images/2024-logo-200px.jpg" class="img-responsive img-thumbnail ipdps_img" alt="IPDPS"></a>
+
+      <p>JSSPP 2024 is the 27<sup>th</sup> edition of the workshop on <strong>Job Scheduling Strategies for Parallel Processing</strong>. JSSPP 2024 will be
+held in conjunction with 38th IEEE International Parallel and Distributed Processing Symposium (IPDPS'2024), May 27 - 31, 2024 in San Francisco, California USA.
+<br>
+
+
+</p><p>
+      This annual series of workshops has been held since 1995 in conjunction with various other conferences, including <a href="http://www.ipdps.org">IPDPS</a> (formerly IPPS), 
+	  the main parallel processing symposium sponsored by the IEEE, the ACM <a href="http://www.cs.umd.edu/conference/sigmetrics2001/">SIGMETRICS</a> and
+	  <a href="http://ics05.csail.mit.edu/">ICS</a> conferences, and <a href="http://www.hpdc.org">HPDC</a>/<a href="http://www.gridforum.org/">GGF</a>, 
+	  the premier annual meeting of the Global Grid Forum.
+	  </p>
+	  <p>
+	  The proceedings of these workshops are <a href="https://link.springer.com/conference/jsspp">published by Springer-Verlag in the Lecture Notes in Computer Science Series</a>.<br>
+	  You can <a href="http://www.cs.huji.ac.il/~feit/parsched/parsched.bib">download BibTeX file of all these workshop proceedings</a>.<br>
+	  </p>
+      <p>
+      <b>JSSPP 2024 is currently planned as in-person meeting</b>. 
+      The virtual format was very successful in both JSSPP 2022, 2021 and JSSPP 2020 editions, with great participant attendance and engagement with the presenters.	  
+	  </p>
+	       <p>&nbsp;</p> 
+	  <div class="row">
+
+        <div class="col-sm-4">
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+             <h3 class="panel-title"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Paper Submission Deadline</h3>
+            </div>
+            <div class="panel-body">
+              <b>February 25th, 2024 (final extension)</b> 
+            </div>
+          </div>
+        </div><!-- /.col-sm-4 -->
+        <div class="col-sm-4">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Author Notification</h3>
+            </div>
+            <div class="panel-body">
+              March 10th, 2024  
+            </div>
+          </div>
+        </div><!-- /.col-sm-4 -->
+        <div class="col-sm-4">
+          <div class="panel panel-warning">
+            <div class="panel-heading">
+              <h3 class="panel-title"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Camera-Ready Paper</h3>
+            </div>
+            <div class="panel-body">
+             <b>June 15th, 2024</b> 
+            </div>
+          </div>
+        </div><!-- /.col-sm-4 -->
+      </div>
+	
+
+
+<h2><font color="red">News: </font></h2>
+<a href="./2024/Managing_Private_Clouds_with_Flex_ JSSPP_2024.pdf" title="JSSPP 2024 keynote"><img src="./2024/flex.png" class="img-responsive img-thumbnail ipdps_img" alt="SLURM"></a>
+<!--
+<div class="jsspp_video">
+<iframe width="468" height="263" src="https://www.youtube.com/embed/1HAnPmr9KNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+<iframe width="468" height="263" src="https://www.youtube.com/embed/JAvha-eM3G4?start=155" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+--> 
+<h3><font color="orange">Keynote Lecture is Online</font></h3>
+JSSPP Keynote was delivered by <b>Walfredo Cirne (Google): <a href="./2024/Managing_Private_Clouds_with_Flex_ JSSPP_2024.pdf">Managing Private Clouds</a></b>.<br>
+<i>Abstract: This talk defines the Private Cloud Management program and presents Flex, Google’s solution for it. It covers how Flex makes Google’s easier to operate, as well as the key techniques used to make it more efficient. It also discusses how we preserve governance by charging internal users the resources they prompted Google to buy, in spite of aggressive resource sharing and on-demand allocation.
+</i>
+
+<h3><font color="red">JSSPP 2024 preliminary program is available</font></h3>
+Check out our <a href="index.php?page=program">2024 Preliminary Program!</a> This year, <b>10 papers</b> will be presented at JSSPP as well as a <b>keynote lecture by Walfredo Cirne (Google) with the title: <i>Managing Private Clouds</i></b>.
+
+<h3>2023 Proceedings PUBLISHED by Springer</h3>
+We are happy to announce that the proceedings of <b>JSSPP 2023 - 26th Workshop on Job Scheduling Strategies for Parallel Processing</b> have been published in LNCS series by Springer. 
+The book is available at: <a href="https://link.springer.com/book/10.1007/978-3-031-43943-8">https://link.springer.com/book/10.1007/978-3-031-43943-8</a>.
+
+<h3><font>2023 Program Available</font></h3>
+We are happy to announce that JSSPP 2023 will host <b>8 regular papers</b> and a <b>keynote lecture by Moe Jette on SLURM resource manager</b> <a href="https://jsspp.org/index.php?page=program">[ Visit Program Page ]</a>.
+
+<h3>All talks from 2022 edition are online</h3>
+View 11 paper presentations including the keynote at the <a href="https://www.youtube.com/playlist?list=PLZ0E2QtDORVjtMHLj5ZWb9sAf2mmaZEjl">JSSPP YouTube channel</a>.<br>
+
+<!--<h3>Preliminary Program is Online</h3>
+Preliminary program of JSSPP 2021 is online: <a href="https://jsspp.org/index.php?page=program">https://jsspp.org/index.php?page=program</a><br>
+The link to connect is <a href="https://meet.google.com/jfe-infk-ntc"><b>https://meet.google.com/jfe-infk-ntc</b></a>.-->
+
+<h3>JSSPP is on Slack</h3>
+<a href="https://join.slack.com/t/jsspp/shared_invite/zt-m3og21sj-RH8otKwzFST82stICr67xA" title="JSSPP on Slack"><img src="./jsspp_files/images/slack.jpg" class="img-responsive img-thumbnail ipdps_img" alt="slack"></a>
+Feel free to join us at <a href="https://join.slack.com/t/jsspp/shared_invite/zt-m3og21sj-RH8otKwzFST82stICr67xA">Slack</a>. Slack is a perfect way to discuss and share ideas within JSSPP scheduling community.
+
+<h2>Quick Links</h2>
+
+<ul>
+<li> <a href="index.php?page=cfp"><b>2024 Call for Submissions</b></a> <font color="red">[NEW]</font></li>
+<li> <a href="index.php#previous">Previous workshops</a></li>
+<li> <a href="https://jsspp.org/index.php?page=program">2023 Program</a></li>
+<li> <a href="https://join.slack.com/t/jsspp/shared_invite/zt-m3og21sj-RH8otKwzFST82stICr67xA">Slack Channel</a> <font color="red">[NEW]</font></li>
+<li> <a href="index.php?page=committees">Workshop Organizers</a></li>
+<!--<li> <a href="./OSP/">Format description and tools for OSP submission</a> <b>[NEW!]</b>-->
+<li> <a href="index.php?page=submission">Paper Formatting Instructions</a></li>
+<li> <a href="./workload">Workloads Archive</a></li>
+
+
+</ul>
+	  
+	  <p>
+	  This workshop series has been ranked among the very good venues in Computer Science in terms of impact (CORE:B-&gt;C, LiveSHINE:A-, Microsoft Academic:A-, ERA:B, Qualis:B1). Latest results can be 
+found at the <a href="http://valutazione.unibas.it/gii-grin-scie-rating/ratingSearch.jsf">GGS Conference Rating</a>, <a href="http://portal.core.edu.au/conf-ranks/">CORE Conference Portal</a> 
+or at the <a href="http://www.conferenceranks.com">Conference Ranks</a> websites (using "jsspp" acronym).<br>
+	  </p>
+
+
+     
+
+<a name="previous"></a><br>
+<h2>Previous Workshops</h2>
+<img src="./jsspp_files/images/LNCS-Logo.jpg" class="img-responsive img-thumbnail online_img" alt="JSSPP publishes with Springer">
+
+<ul>
+<li> 1st Workshop on Job Scheduling Strategies for Parallel
+Processing<br>
+Held in conjunction with IPPS '95, Santa Barbara, CA, 25 April 1995
+  <ul>
+  <li> <a href="http://www.cs.huji.ac.il/~feit/parsched/jsspp95/">Technical program</a>.
+  </li><li> <a href="http://www.cs.huji.ac.il/~feit/parsched/lncs.html#1995">Proceedings ordering information</a>.
+  </li></ul>
+<p>
+</p></li><li> 2nd Workshop on Job Scheduling Strategies for Parallel
+Processing<br>
+Held in conjunction with IPPS '96, Honolulu, Hawaii, 16 April 1996
+  <ul>
+  <li> <a href="http://www.cs.huji.ac.il/~feit/parsched/jsspp96/">Technical program</a>.
+  </li><li> <a href="http://www.cs.huji.ac.il/~feit/parsched/lncs.html#1996">Proceedings ordering information</a>.
+  </li></ul>
+<p>
+</p></li><li> 3rd Workshop on Job Scheduling Strategies for Parallel
+Processing<br>
+Held in conjunction with IPPS '97, Geneva, Switzerland, 5 April 1997
+  <ul>
+  <li> <a href="http://www.cs.huji.ac.il/~feit/parsched/jsspp97/">Technical program</a>.
+  </li><li> <a href="http://www.cs.huji.ac.il/~feit/parsched/lncs.html#1997">Proceedings ordering information</a>.
+  </li></ul>
+<p>
+</p></li><li> 4th Workshop on Job Scheduling Strategies for Parallel
+Processing<br>
+Held in conjunction with IPPS/SPDP '98, Orlando, FL, 30 March 1998
+  <ul>
+  <li> <a href="http://www.cs.huji.ac.il/~feit/parsched/jsspp98/">Technical program</a>.
+  </li><li> <a href="http://www.cs.huji.ac.il/~feit/parsched/lncs.html#1998">Proceedings ordering information</a>.
+  </li></ul>
+<p>
+</p></li><li> 5th Workshop on Job Scheduling Strategies for Parallel
+Processing<br>
+Held in conjunction with IPPS/SPDP '99, San Juan, Puerto Rico, 16 April 1999
+  <ul>
+  <li> <a href="http://www.cs.huji.ac.il/~feit/parsched/jsspp99/">Technical program</a>
+  </li><li> <a href="http://www.cs.huji.ac.il/~feit/parsched/lncs.html#1999">Proceedings ordering information</a>.
+  </li></ul>
+<p>
+</p></li><li> 6th Workshop on Job Scheduling Strategies for Parallel
+Processing<br>
+Held in conjunction with IPDPS 2000, Cancun, Mexico, 1 May 2000
+  <ul>
+  <li> <a href="http://www.cs.huji.ac.il/~feit/parsched/jsspp00/">Technical program</a>
+  </li><li> <a href="http://www.cs.huji.ac.il/~feit/parsched/lncs.html#2000">Proceedings ordering information</a>.
+  </li></ul>
+<p>
+</p></li><li> 7th Workshop on Job Scheduling Strategies for Parallel
+Processing<br>
+Held in conjunction with SIGMETRICS 2001, University Park Hotel at MIT, Cambridge, MA, 16 June 2001
+  <ul>
+  <li> <a href="http://www.cs.huji.ac.il/~feit/parsched/jsspp01/">Technical program</a>.
+  </li><li> <a href="http://www.cs.huji.ac.il/~feit/parsched/lncs.html#2001">Proceedings ordering information</a>.
+  </li></ul>
+<p>
+</p></li><li> 8th Workshop on Job Scheduling Strategies for Parallel
+Processing<br>
+Held in conjunction with HPDC11/GGF5, Edinburgh, Scotland, 24 July 2002
+  <ul>
+  <li> <a href="http://www.cs.huji.ac.il/~feit/parsched/jsspp02/">Technical program</a>.
+  </li><li> <a href="http://www.cs.huji.ac.il/~feit/parsched/lncs.html#2002">Proceedings ordering information</a>.
+  </li></ul>
+<p>
+</p></li><li> 9th Workshop on Job Scheduling Strategies for Parallel
+Processing<br>
+Held in conjunction with HPDC12/GGF8, Seattle, WA, 24 June 2003
+  <ul>
+  <li> <a href="http://www.cs.huji.ac.il/~feit/parsched/jsspp03/">Technical program</a>.
+  </li><li> <a href="http://www.cs.huji.ac.il/~feit/parsched/lncs.html#2003">Proceedings ordering information</a>.
+  </li></ul>
+<p>
+</p></li><li> 10th Workshop on Job Scheduling Strategies for Parallel
+processing<br>
+Held in conjunction with SIGMETRICS 2004, New York, NY, 13 June 2004
+  <ul>
+  <li> <a href="http://www.cs.huji.ac.il/~feit/parsched/jsspp04/">Technical program</a>.
+  </li><li> <a href="http://www.cs.huji.ac.il/~feit/parsched/lncs.html#2004">Proceedings ordering information</a>.
+  </li></ul>
+<p>
+</p></li><li> 11th Workshop on Job Scheduling Strategies for Parallel
+processing<br>
+Held in conjunction with ICS 2005, Boston, MA, 19 June 2005
+  <ul>
+  <li> <a href="http://www.cs.huji.ac.il/~feit/parsched/jsspp05/">Technical program</a>.
+  </li><li> <a href="http://www.cs.huji.ac.il/~feit/parsched/lncs.html#2005">Proceedings ordering information</a>.
+  </li></ul>
+<p>
+</p></li><li> 12th workshop on Job Scheduling Strategies for Parallel
+processing<br>
+Held in conjunction with SIGMETRICS 2006, St. Malo, France, 26 June 2006
+  <ul>
+  <li> <a href="http://www.cs.huji.ac.il/~feit/parsched/jsspp06/">Technical Program</a>.
+  </li><li> <a href="http://www.cs.huji.ac.il/~feit/parsched/lncs.html#2006">Proceedings ordering information</a>.
+  </li></ul>
+<p>
+</p></li><li> 13th Workshop on Job Scheduling Strategies for Parallel
+Processing<br>
+Held in conjunction with ICS 2007, Seattle, WA, 17 June 2007
+  <ul>
+  <li> <a href="http://www.cs.huji.ac.il/~feit/parsched/jsspp07/">Technical Program</a>.
+  </li><li> <a href="http://www.cs.huji.ac.il/~feit/parsched/lncs.html#2007">Proceedings ordering information</a>.
+  </li></ul>
+<p>
+</p></li><li> 14th Workshop on Job Scheduling Strategies for Parallel
+Processing<br>
+Held in conjunction with IPDPS 2009, Rome, Italy, 29 May 2009
+  <ul>
+  <li> <a href="http://www.cs.huji.ac.il/~feit/parsched/jsspp09/">Technical program</a>.
+  </li><li> <a href="http://www.cs.huji.ac.il/~feit/parsched/lncs.html#2009">Proceedings ordering information</a>.
+  </li></ul>
+<p>
+</p></li><li> 15th Workshop on Job Scheduling Strategies for Parallel
+Processing<br>
+Held in conjunction with IPDPS 2010, Atlanta, GA, 23 April 2010
+  <ul>
+  <li> <a href="http://www.cs.huji.ac.il/~feit/parsched/jsspp10/">Technical program</a>.
+  </li><li> <a href="http://www.cs.huji.ac.il/~feit/parsched/lncs.html#2010">Proceedings ordering information</a>.
+  </li></ul>
+<p>
+</p></li><li> 16th Workshop on Job Scheduling Strategies for Parallel
+Processing<br>
+Held in conjunction with IPDPS 2012 in Shanghai, China, 25 May 2012
+  <ul>
+  <li> <a href="http://www.cs.huji.ac.il/~feit/parsched/jsspp12/">Technical program</a>.
+  </li><li> <a href="http://www.cs.huji.ac.il/~feit/parsched/lncs.html#2012">Proceedings ordering information</a>.
+  </li></ul>
+<p>
+</p></li><li> 17th Workshop on Job Scheduling Strategies for Parallel
+Processing<br>
+Held in conjunction with IPDPS 2013 in Boston, Massachusetts, 24 May 2013
+  <ul>
+  <li> <a href="http://www.cs.huji.ac.il/~feit/parsched/jsspp13/">Technical program</a>.
+  </li><li> <a href="http://www.cs.huji.ac.il/~feit/parsched/lncs.html#2013">Proceedings ordering information</a>.
+  </li></ul>
+<p>
+</p></li><li> 18th Workshop on Job Scheduling Strategies for Parallel
+Processing<br>
+Held in conjunction with IPDPS 2014 in Phoenix, Arizona, on 23 May 2014
+  <ul>
+  <li> <a href="http://www.cs.huji.ac.il/~feit/parsched/jsspp14/">Technical program</a>.
+  </li><li> <a href="http://www.cs.huji.ac.il/~feit/parsched/lncs.html#2014">Proceedings ordering information</a>.
+  </li></ul>
+<p>
+</p></li><li> 19th Workshop on Job Scheduling Strategies for Parallel
+Processing<br>
+Held in conjunction with IPDPS 2015 in Hyderabad, India, on 29 May 2015
+  <ul>
+  <li> <a href="http://www.cs.huji.ac.il/~feit/parsched/jsspp15/">Technical program</a>.
+  </li><li> Proceedings published by Springer-Verlag as LNCS 10353 (jointly with 2016 edition). <a href="https://link.springer.com/book/10.1007%2F978-3-319-61756-5">19th and 20th International Workshops, JSSPP 2015, Hyderabad, India, May 26, 2015 and JSSPP 2016, Chicago, IL, USA, May 27, 2016, Revised Selected Papers</a>.
+  </li></ul>
+<p>
+</p></li><li> 20th Workshop on Job Scheduling Strategies for Parallel
+Processing<br>
+Held in conjunction with IPDPS 2016 in Chicago, Illinois, on 27 May 2016
+  <ul>
+  <li> <a href="http://www.cs.huji.ac.il/~feit/parsched/jsspp16/">Technical program</a>.
+  </li><li> Proceedings published by Springer-Verlag as LNCS 10353 (jointly with 2015 edition). <a href="https://link.springer.com/book/10.1007%2F978-3-319-61756-5">19th and 20th International Workshops, JSSPP 2015, Hyderabad, India, May 26, 2015 and JSSPP 2016, Chicago, IL, USA, May 27, 2016, Revised Selected Papers</a>.
+  
+  </li></ul>
+<p>
+</p></li><li> 21st Workshop on Job Scheduling Strategies for Parallel
+Processing<br>
+Held in conjunction with IPDPS 2017 in Orlando, Florida, on 2 June 2017
+  <ul>
+  <li> <a href="http://jsspp.org/index.php?page=program17">Technical program</a>.
+  </li><li> Proceedings published by Springer as LNCS 10773. <a href="https://link.springer.com/book/10.1007/978-3-319-77398-8">21st International Workshop, JSSPP 2017, Orlando, FL, USA, June 2, 2017, Revised Selected Papers</a>.
+  </li></ul>
+<p>
+</p></li><li> 22nd Workshop on Job Scheduling Strategies for Parallel
+Processing<br>
+Held in conjunction with IPDPS 2018 in Vancouver, Canada, on 25 May 2018
+  <ul>
+  <li> <a href="http://jsspp.org/index.php?page=program18">Technical program</a>.
+  </li><li> Proceedings published by Springer as LNCS 11332. <a href="https://link.springer.com/book/10.1007/978-3-030-10632-4">22nd International Workshop, JSSPP 2018, Vancouver, Canada, May 25, 2018, Revised Selected Papers</a>.  
+  </li></ul>
+<p>
+</p></li><li> 23rd Workshop on Job Scheduling Strategies for Parallel
+Processing<br>
+Held online in conjunction with IPDPS 2020 on 22 May 2020
+  <ul>
+  <li> <a href="http://jsspp.org/index.php?page=program20">Technical program</a>.
+  </li><li> Proceedings published by Springer as LNCS 12326. <a href="https://link.springer.com/book/10.1007/978-3-030-63171-0">23rd International Workshop, JSSPP 2020, New Orleans, LA, USA, May 22, 2020, Revised Selected Papers</a>.
+  </li></ul>
+<p>
+</p></li><li> 24th Workshop on Job Scheduling Strategies for Parallel
+Processing<br>
+Held online in conjunction with IPDPS 2021 on 21 May 2021
+  <ul>
+  <li> <a href="http://jsspp.org/index.php?page=program21">Technical program</a>.
+  </li><li> Proceedings published by Springer as LNCS 12985.  <a href="https://link.springer.com/book/10.1007/978-3-030-88224-2">24th International Workshop, JSSPP 2021, May 21, 2021, Revised Selected Papers</a>. 
+  </li></ul>
+<p>
+</p></li><li> 25th Workshop on Job Scheduling Strategies for Parallel
+Processing<br>
+Held online in conjunction with IPDPS 2022 on 3 June 2022
+  <ul>
+  <li> <a href="http://jsspp.org/index.php?page=program22">Technical program</a>.
+  </li><li> Proceedings published by Springer as LNCS 13592.  <a href="https://link.springer.com/book/10.1007/978-3-031-22698-4">25th International Workshop, JSSPP 2022, June 3, 2022, Revised Selected Papers</a>. 
+  </li></ul>
+<p>
+</p><p>
+</p></li><li> 26th Workshop on Job Scheduling Strategies for Parallel
+Processing<br>
+Held in conjunction with IPDPS 2023 on 19 May 2023
+  <ul>
+  <li> <a href="http://jsspp.org/index.php?page=program">Technical program</a>.
+  </li><li> Proceedings published by Springer as LNCS 14283.  <a href="https://link.springer.com/book/10.1007/978-3-031-43943-8">26th International Workshop, JSSPP 2023, May 19, 2023, Revised Selected Papers</a>. 
+  </li></ul>
+<p>
+
+
+</p></li></ul>
+      
+      <div class="page-header">
+        &nbsp;
+      </div>
+      <div class="well jsspp_well">
+        <p>JSSPP 1995-2024 – the Workshop on Jobs Scheduling Strategies for Parallel Processing. <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact email: <a href="mailto:jssppw@gmail.com">jssppw@gmail.com</a>
+        </p>
+      </div>
+
+
+
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="jsspp_files/jquery.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="jsspp_files/bootstrap.js"></script>
+    <script src="jsspp_files/docs.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="jsspp_files/ie10-viewport-bug-workaround.js"></script>
+  
+
+
+
+</body></html>

@@ -25,6 +25,7 @@ const { getLocation } = require("../rule/extractLocation-rule")
 const startBrowser = require('../untils/browser');
 const { stringify } = require('csv-stringify/sync');
 const safeConferenceList = require('../config/safeList')
+const {getType} =require('../rule/extractType-rule')
 
 // Handle job
 const crawlConferenceById = async (confId) => {
@@ -56,7 +57,7 @@ const crawlConferenceById = async (confId) => {
                 message: "Navigation timeout of 30000 ms exceeded when go to " + conference.Links[0]
             };
         }
-        // console.log(newImportantDates)
+        console.log(newImportantDates)
 
         const oldImportantDates = {
             submissionDate: conference.SubmissonDate.map(item => ({
@@ -76,7 +77,7 @@ const crawlConferenceById = async (confId) => {
             })),
         };
 
-        // console.log(oldImportantDates)
+        console.log(oldImportantDates)
 
         // So sánh và cập nhật cơ sở dữ liệu nếu có sự thay đổi
         const updates = { SubmissonDate: [], NotificationDate: [], CameraReady: [] };
@@ -147,9 +148,9 @@ const crawlConferenceById = async (confId) => {
 const crawlController = async (browserInstance) => {
     try {
         // Create browser
-        // let browser = await browserInstance;
+        let browser = await browserInstance;
 
-        // const isSuccess = await crawlConferenceById("6639c048647e53b594533ca3")
+        // const isSuccess = await crawlConferenceById("6639c523078f0b3454c91c0e")
         // console.log(isSuccess)
         //await crawlAllConferencesDetail(browser);
         // await processConferenceError(browser);
@@ -196,16 +197,110 @@ const crawlController = async (browserInstance) => {
 
         // saveKeywordsToFile()
         
-        await dataPineline("6639c03c647e53b594533c95")
+        // await dataPineline("6639c509078f0b3454c91bf6")
 
         // await saveEvaluationDataset(browser)
 
         // await savePageContent(browser)
 
+        //-----------
+        // Test bộ luật
+        // testTypeExtraction(browser)
+
+        const conferencesToUpdate = await Conference.find({ Source: "CONFHUB" });
+
+        if (conferencesToUpdate.length > 0) {
+            // Update each conference
+            for (let conference of conferencesToUpdate) {
+                conference.Source = "CORE2023";
+                await conference.save();
+            }
+
+            console.log(`Updated ${conferencesToUpdate.length} conferences.`);
+        } else {
+            console.log("No conferences found with Source: CONFHUB");
+        }
        
 
     } catch (error) {
         console.log("Error in crawlController: " + error);
+    }
+};
+
+const testTypeExtraction = async (browser) => {
+    try {
+        const conferences = await conferenceModel.find({
+            Rank: { $in: ["A", "B", "C", "A*"] }
+        });
+
+        let total = 0;
+        let correct = 0;
+        let isNull = 0;
+
+        for (let i =0; i < 100; i++) {
+            const expectedType = conferences[i].Type;
+            const extractedType = await getType(browser, conferences[i].Links[0]);
+            if (extractedType == null) {
+                isNull++;
+                continue;
+            }
+            if (expectedType.toLowerCase() == extractedType.toLowerCase()) {
+                console.log("True")
+                correct++;
+            }
+            total++;
+        }
+
+        const accuracy = (correct / total) * 100;
+        console.log(`Total extracted: ${total}`);
+        console.log(`Correct Accuracy: ${accuracy.toFixed(2)}%`);
+        console.log(`Null: ${isNull}`)
+
+        return accuracy;
+    } catch (error) {
+        console.log("Error in testLocationExtraction: " + error);
+    }
+};
+
+const compareLocations = (expected, actual) => {
+    if(!expected || !actual) return false
+    return expected.toLowerCase() === actual.toLowerCase();
+};
+
+
+
+const testLocationExtraction = async (browser) => {
+    try {
+        const conferences = await conferenceModel.find({
+            Rank: { $in: ["A", "B", "C", "A*"] }
+        });
+
+        let total = 0;
+        let correct = 0;
+        let isNull = 0;
+
+        for (let i =2; i < 3; i++) {
+            const expectedLocation = conferences[i].Location;
+            const extractedLocation = await getLocation(browser, conferences[i].Title, conferences[i].Links[0]);
+            if (extractedLocation == null) {
+                isNull++;
+                continue;
+            }
+            if (compareLocations(expectedLocation, extractedLocation)) {
+                console.log("True")
+                correct++;
+            }
+            total++;
+        }
+
+        const accuracy = (correct / total) * 100;
+        console.log(`Total extracted: ${total}`);
+        console.log(`Correct Accuracy: ${accuracy.toFixed(2)}%`);
+        console.log(`Null: ${isNull}`)
+
+        return accuracy;
+    } catch (error) {
+        console.log("Error in testLocationExtraction: " + error);
     }
 };
 
@@ -222,16 +317,31 @@ const saveEvaluationDataset = async (browser) => {
 
     const results = [];
 
-    for (let i=967; i<968; i++) {
+    for (let i=0; i<200; i++) {
         console.log(i)
         const conference = await Conference.findOne({ _id: conferenceIds[i] });
 
         if (!conference) continue;
 
+        if (conference.Rank !== 'A' &&
+            conference.Rank !== 'A*' &&
+            conference.Rank !== 'B' &&
+            conference.Rank !== 'C'
+        ) continue;
+
         const links = await webScraperService.searchConferenceLinksByTitle(browser, conference, 4);
         const selectedLink = conference.Links.length > 0 ? conference.Links[0] : ""; // Giả sử link máy chọn là selectedLink trong database
 
-        const isTrue = links.includes(selectedLink) ? 'yes' : 'no';
+        let isTrue = ""
+        if (links[0].includes(selectedLink)) {
+            isTrue = "link1"
+        } else if (links[1].includes(selectedLink)) {
+            isTrue = "link2"
+        } else if (links[2].includes(selectedLink)) {
+            isTrue = "link3"
+        } else if (links[3].includes(selectedLink)) {
+            isTrue = "link4"
+        }
 
         const result = {
             _id: conference._id,
@@ -411,7 +521,7 @@ const etlDataToPostgre = async () => {
         conferenceIds.push(row.conference_id);
     }
     console.log(conferenceIds.length);
-    for (let i = 950; i < 968; i++) {
+    for (let i = 0; i < 200; i++) {
         console.log(i);
         await dataPineline(conferenceIds[i]);
 
@@ -452,13 +562,13 @@ const savePageContent = async (browser) => {
         (row) => row
     );
 
-    for (let i = 0; i < 100; i++) {
+    for (let i = 765; i < 778; i++) {
         console.log(i);
         const currentConference = await Conference.findOne({
             _id: filteredData[i]._id.slice(1,-1),
         });
 
-        const dirPath = `./dataset/${currentConference.Acronym}`;
+        const dirPath = `./dataset/${i}_${currentConference.Acronym}`;
         // Ensure the directory exists
         if (!fs.existsSync(dirPath)) {
             fs.mkdirSync(dirPath, { recursive: true });

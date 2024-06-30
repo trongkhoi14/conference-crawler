@@ -232,6 +232,7 @@ Deadline for submission of abstracts
 Submission deadline for Short Papers
 Abstract submission to second round
 Conference Paper Submission Deadline
+Electronic submission of full papers
 1st Round Paper Submission Deadline
 Paper submission deadline (cycle 2)
 Doctoral Consortium Submission Open
@@ -598,7 +599,6 @@ Full paper abstracts
 Paper submission due
 Paper Submission due
 Author responses due
-Submission Deadline
 Submissions deadline
 Paper submission Due
 Submission of Papers

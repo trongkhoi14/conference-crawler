@@ -11,8 +11,13 @@ const dataPineline = async (conferenceId) => {
         // console.log(new Date((conference.ConferenceDate[0].date)).getUTCMonth())
 
         if (conference.Links.length == 1 
+            // && (conference.SubmissonDate.length > 0 ||
+            //     conference.NotificationDate.length > 0 ||
+            //     conference.CameraReady.length > 0
+            // )
             && new Date((conference.ConferenceDate[0].date)).getUTCFullYear() >= 2023
             && (conference.Rank == 'C' || conference.Rank == 'B' || conference.Rank == 'A' || conference.Rank == 'A*')
+           
         ) {
 
             const organizations = [
@@ -51,7 +56,7 @@ const dataPineline = async (conferenceId) => {
                 importantDates: importantDates? importantDates : [""],
                 nkey: conference._id.toString(),
                 organizations: organizations? organizations : [""],
-                source: conference.Source
+                source: "CORE2023"
             };  
             // console.log(processedConf)
 
@@ -66,13 +71,13 @@ const dataPineline = async (conferenceId) => {
                 conf_name: conference.Title,
                 acronym: conference.Acronym,
                 callForPaper: "Not found",
-                link: "Not found",
+                link: conference.Links[0]? conference.Links[0] : "Not found",
                 rank: conference.Rank,
                 fieldsOfResearch: getFieldOfRearchName(conference.PrimaryFoR)
                     ? [getFieldOfRearchName(conference.PrimaryFoR)]
                     : ["none"],
                 nkey: conference._id.toString(),
-                source: conference.Source
+                source: "CORE2023"
             };  
             // console.log(processedConf)
 

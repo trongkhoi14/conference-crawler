@@ -1,0 +1,716 @@
+<!DOCTYPE html><html lang="en"><head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Cryptographic Hardware and Embedded Systems">
+
+    <!-- Generic bootstrap -->
+    <link href="https://iacr.org/libs/css/bootstrap/confv2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="/2024/styles/main.css">
+    <link id="style" rel="stylesheet" href="/2024/styles/blue_theme.css">
+    <!-- metadata for googlebot -->
+    <script type="application/ld+json">
+     {
+       "@id": "https://ches.iacr.org/2024",
+       "@context": "http://schema.org/",
+       "@type": "Event",
+       "startDate": "",
+       "endDate":  "",
+       "location": {
+         "@context": "http://schema.org",
+         "@type": "Place",
+         "address": {
+           "@context": "http://schema.org",
+           "@type": "PostalAddress",
+           "addressLocality": "Halifax",
+           "addressCountry": "Canada"
+         },
+         "geo": {
+           "@type": "GeoCoordinates",
+           "latitude": "-63.57481",
+           "longitude": "44.64649"
+         },
+         "name": "Conference Venue"
+       },
+       "organizer": {
+         "@context": "http://schema.org",
+         "@type": "NGO",
+         "legalName": "International Association for Cryptologic Research",
+         "alternateName": "IACR",
+         "sameAs": "https://iacr.org/",
+         "naics": "813920",
+         "logo": "https://iacr.org/img/logo/iacrlogo_small.png"
+       },
+       "name": "CHES 2024",
+       "description": "Cryptographic Hardware and Embedded Systems",
+       "image": "https://iacr.org/img/logo/iacrlogo_small.png"
+     }
+    </script>
+    <!-- open graph for facebook. There is no type for event. -->
+    <meta property="og:type" content="event">
+    <meta property="og:url" content="https://ches.iacr.org/2024">
+    <meta property="event:start_time" content="">
+    <meta property="event:end_time" content="">
+    <meta property="og:description" content="Cryptographic Hardware and Embedded Systems">
+    <meta property="og:image" content="https://iacr.org/img/logo/iacrlogo_small_og.png">
+    <meta property="og:latitude" content="-63.57481">
+    <meta property="og:longitude" content="44.64649">
+    <!-- metadata for twitter. -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@iacr_news">
+    <meta name="twitter:description" content="Cryptographic Hardware and Embedded Systems">
+    <meta property="twitter:image" content="https://iacr.org/img/logo/iacr_wordmark_twitter.png">
+    <!-- apple format for iMessage and search -->
+    <link rel="apple-touch-icon" href="https://iacr.org/img/logo/iacrlogo_small.png">
+    <meta property="og:title" content="CHES 2024 accepted papers">
+    <meta name="twitter:title" content="CHES 2024 accepted papers">
+
+    <title>
+      CHES 2024 Accepted Papers
+    </title>
+  </head>
+  <body>
+    <!-- BEGIN nav -->
+<div id="pageTop">
+   <header id="conf_id" class="headerImg">
+     <div class="headerGradient">
+        <div class="pageTopContainer">
+          <div id="titlesLogoDiv" class="d-flex justify-content-between align-items-center">
+            <div class="headerConferenceName">
+              <div class="col text-center">
+              <a href="/2024/">
+                <img src="images/CHES_logo.png" style="max-width: 120px;">
+              </a>
+              </div>
+              <h1 class="headerTitle mt-0">
+                CHES 2024              </h1>
+            </div>
+            <div class="headerLogo">
+              <a href="https://iacr.org/">
+                <img id="logo" class="d-none d-lg-block mx-auto" src="https://iacr.org/img/logo/iacrlogo_small.png" title="International Association for Cryptologic Research">
+              </a>
+            </div>
+            <div class="headerInfo">
+              <h3 class="headerInfoTop">
+                September 4-7, 2024              </h3>
+              <h3 class="headerInfoBottom">
+                Halifax, Canada              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="main-nav-row" class="sticky-top">
+      <nav class="container navbar navbar-expand-md">
+        <button class="navbar-toggler mt-1 collapsed nofocus" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav">
+          <ul id="nav-ul" class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="https://ches.iacr.org/index.php">CHES Home</a>
+            </li>
+            <li class="nav-item mt-4 mt-md-0">
+              <a class="nav-link" href="/2024/">
+                CHES 2024              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                Technical Program
+              </a>
+              <div class="dropdown-menu mx-md-3 mx-lg-5">
+                <a class="dropdown-item" href="/2024/challenge.php">
+                  CHES Challenge
+                </a>
+                <a class="dropdown-item" href="/2024/tutorials.php">
+                  Tutorials
+                </a>
+                <a class="dropdown-item" href="/2024/affiliated.php">
+                  Affiliated Events
+                </a>
+<!--
+                <a class="dropdown-item" href="/2024/rumpsession.php">
+                  Rump session
+                </a> -->
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/2024/callforpapers.php">
+                  Call for Papers
+                </a>
+                <a class="dropdown-item" href="/2024/papersubmission.php">
+                  Paper Submission
+                </a>
+                <a class="dropdown-item" href="/2024/artifacts.php">
+                  Artifact Evaluation
+                </a>
+                <div class="dropdown-divider"></div>
+<!--
+                <a class="dropdown-item" href="/2024/callforchallenge.php">
+                  Call for CHES Challenge Organizers
+                </a>
+-->
+                <a class="dropdown-item" href="/2024/callfortestoftime.php">
+                  Call for Test of Time Award
+                </a>
+                <a class="dropdown-item" href="/2024/posters.php">
+                  Call for Posters
+                </a>
+<!--
+                <a class="dropdown-item" href="/2024/callforaffiliated.php">
+                  Call for Affiliated Events
+                </a>
+                <a class="dropdown-item" href="/2024/callfortutorials.php">
+                  Call for Tutorials
+                </a>
+-->
+                <!-- <a class="dropdown-item" href="/2024/papersubmission.php">
+                  Paper submission
+                </a>
+                <a class="dropdown-item" href="/2024/invitedtalks.php">
+                  Invited talks
+                </a>
+                <a class="dropdown-item" href="/2024/acceptedpapers.php">
+                  Accepted papers
+                </a>
+                <a class="dropdown-item" href="/2024/program.php">
+                  Main program
+                </a>
+-->
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/2024/acceptedpapers.php">
+                  Accepted Papers
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                Attend
+              </a>
+              <div class="dropdown-menu mx-md-3 mx-lg-5">
+                <a class="dropdown-item" href="/2024/registration.php">
+                  Registration
+                </a>
+                <a class="dropdown-item" href="/2024/travel.php">
+                  Venue &amp; Travel
+                </a>
+                <a class="dropdown-item" href="/2024/visas.php">
+                  Visas
+                </a>
+                <a class="dropdown-item" href="/2024/conduct.php">
+                  Code of Conduct
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/2024/sponsors.php">
+                Sponsors
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/2024/contact.php">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+</div>
+<!-- END OF nav -->
+
+<noscript>
+  <div class="container">
+    <h2>
+      This site is designed for browsers with javascript.
+    </h2>
+    <h3>
+      The dates, name, and location for the conference are
+      <a href="json/metadata.json">in a json file.</a>
+    </h3>
+  </div>
+</noscript>
+
+  <main class="container p-4">
+    <h2 class="indPageTitle">
+      Accepted Papers
+    </h2>
+
+    
+    <h3 class="pageSubtitle mt-4">
+      TCHES 2024, issue 1
+    </h3>
+
+    <ol>
+
+<li>
+<h6 class="paperTitle">Gadget-based Masking of Streamlined NTRU Prime Decapsulation in Hardware</h6>
+<p>
+Georg Land, Adrian Marotzke, Jan Richter-Brockmann, Tim Güneysu<br>
+<small class="font-italic">Ruhr-University Bochum; Hamburg University of Technology; NXP; DFKI GmbH</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">A Tale of Snakes and Horses: Amplifying Correlation Power Analysis on Quadratic Maps</h6>
+<p>
+Anna Guinet, Georg Land, Ioan Gabriel Bucur, Tim Güneysu<br>
+<small class="font-italic">Ruhr University Bochum; Radboud University</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">1LUTSensor: Detecting FPGA Voltage Fluctuations using LookUp Tables</h6>
+<p>
+Darshana Jayasinghe, Brian Udugama, Sri Parameswaran<br>
+<small class="font-italic">University of Sydney; University of New South Wales</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">Fast and Clean: Auditable high-performance assembly via constraint solving</h6>
+<p>
+Amin Abdulrahman, Hanno Becker, Matthias J. Kannwischer, Fabien Klein<br>
+<small class="font-italic">Ruhr University Bochum; Max Planck Institute for Security and Privacy; Amazon Web Services; Chelpis; Arm Ltd.</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">All You Need Is Fault: Zero-Value Attacks on AES and a New λ-Detection M&amp;M</h6>
+<p>
+Haruka Hirata, Daiki Miyahara, Victor Arribas, Yang Li, Noriyuki Miura, Svetla Nikova, Kazuo Sakiyama<br>
+<small class="font-italic">University of Electro-Communications; Rambus Inc.; KU Leuven; Osaka University; University of Bergen</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">Who Watches the Watchers: Attacking Glitch Detection Circuits</h6>
+<p>
+Amund Askeland, Svetla Nikova, Ventzislav Nikov<br>
+<small class="font-italic">University of Bergen; KU Leuven; NXP Semiconductors</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">SEV-Step: A Single-Stepping Framework for AMD-SEV</h6>
+<p>
+Luca Wilke, Jan Wichelmann, Anja Rabich, Thomas Eisenbarth<br>
+<small class="font-italic">University of Lübeck</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">Low Cost and Precise Jitter Measurement Method for TRNG Entropy Assessment</h6>
+<p>
+Florent Bernard, Arturo Garay, Patrick Haddad, Nathalie Bochard, Viktor Fischer<br>
+<small class="font-italic">Université de Lyon; STMicroelectronics; Czech Technical University</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">StaTI: Protecting against Fault Attacks Using Stable Threshold Implementations</h6>
+<p>
+Siemen Dhooghe, Artemii Ovchinnikov, Dilara Toprakhisar<br>
+<small class="font-italic">KU Leuven</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">Fallen Sanctuary: A Higher-Order and Leakage-Resilient Rekeying Scheme</h6>
+<p>
+Rei Ueno, Naofumi Homma, Akiko Inoue, Kazuhiko Minematsu<br>
+<small class="font-italic">Tohoku University; NEC</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">Smooth Passage with the Guards: Second-Order Hardware Masking of the AES with Low Randomness and Low Latency</h6>
+<p>
+Barbara Gigerl, Franz Klug, Stefan Mangard, Florian Mendel, Robert Primas<br>
+<small class="font-italic">Graz University of Technology; Infineon Technologies AG; Intel Labs</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">EstraNet: An Efficient Shift-Invariant Transformer Network for Side-Channel Analysis</h6>
+<p>
+Suvadeep Hajra, Siddhartha Chowdhury, Debdeep Mukhopadhyay<br>
+<small class="font-italic">Indian Institute of Technology Kharagpur</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">High-assurance zeroization</h6>
+<p>
+Santiago Arranz Olmos, Gilles Barthe, Ruben Gonzalez, Benjamin Grégoire, Vincent Laporte, Jean-Christophe Léchenet, Tiago Oliveira, Peter Schwabe<br>
+<small class="font-italic">Max Planck Institute for Security and Privacy; IMDEA Software Institute; Neodyme AG; Inria; Radboud University</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">Quasi-linear masking against SCA and FIA, with cost amortization</h6>
+<p>
+Claude CARLET, Abderrahman DAIF, Sylvain GUILLEY, Cédric TAVERNIER<br>
+<small class="font-italic">University of Bergen; University of Paris; BULL-SAS, Trustway; TELECOM-ParisTech; Secure-IC; HENSOLDT</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">Quantile: Quantifying Information Leakage</h6>
+<p>
+Vedad Hadžić, Gaëtan Cassiers, Robert Primas, Stefan Mangard, Roderick Bloem<br>
+<small class="font-italic">Graz University of Technology; Intel Labs</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">TeeJam: Sub-Cache-Line Leakages Strike Back</h6>
+<p>
+Florian Sieck, Zhiyuan Zhang, Sebastian Berndt, Chitchanok Chuengsatiansup, Thomas Eisenbarth, Yuval Yarom<br>
+<small class="font-italic">University of Lübeck; University of Melbourne; Ruhr University Bochum</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">CalyPSO: An Enhanced Search Optimization based Framework to Model Delay-based PUFs</h6>
+<p>
+Nimish Mishra, Kuheli Pratihar, Satota Mandal, Anirban Chakraborty, Ulrich Rührmair, Debdeep Mukhopadhyay<br>
+<small class="font-italic">Indian Institute of Technology Kharagpur; Indian Institute of Engineering Science and Technology Shibpur; TU Berlin; University of Connecticut</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">ModHE: Modular Homomorphic Encryption Using Module Lattices (Potentials and Limitations)</h6>
+<p>
+Anisha Mukherjee, Aikata Aikata, Ahmet Can Mert, Yongwoo Lee, Sunmin Kwon, Maxim Deryabin, Sujoy Sinha Roy<br>
+<small class="font-italic">Graz University of Technology; Samsung Advanced Institute of Technology</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">Faster Bootstrapping via Composite NTT and Modulus Raising</h6>
+<p>
+Zhihao Li, Ying Liu, Xianhui Lu, Ruida Wang, Benqiang Wei, Chunling Chen, Kunpeng Wang<br>
+<small class="font-italic">State Key Laboratory of Information Security, IIE, CAS; School of Cyber Security, UCAS</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">Fast and Accurate: Efficient Full-Domain Functional Bootstrap and Digit Decomposition for Homomorphic Computation</h6>
+<p>
+Shihe Ma, Tairong Huang, Anyu Wang, Qixian Zhou, Xiaoyun Wang<br>
+<small class="font-italic">Tsinghua University; Ant Group</small>
+</p>
+</li>
+
+</ol>
+    <h3 class="pageSubtitle mt-4">
+      TCHES 2024, issue 2
+    </h3>
+
+    <ol>
+
+<li>
+<h6 class="paperTitle">Revisiting Keccak and Dilithium Implementations on ARMv7-M</h6>
+<p>
+Junhao Huang, Alexandre Adomnicăi, Jipeng Zhang, Wangchen Dai, Yao Liu, Ray C. C. Cheung, Çetin Kaya Koç, Donglong Chen<br>
+<small class="font-italic">BNU-HKBU United International College; Hong Kong Baptist University; Independent researcher; Nanjing University of Aeronautics and Astronautics; Zhejiang Lab; Sun Yat-sen University; City University of Hong Kong; Nanjing University of Aeronautics and Astronautics; Iğdır University; University of California Santa Barbara</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">ConvKyber: Unleashing the Power of AI Accelerators for Faster Kyber with Novel Iteration-based Approaches</h6>
+<p>
+Tian Zhou, Fangyu Zheng, Guang Fan, Lipeng Wan, Wenxu Tang, Yixuan Song, Yi Bian, Jingqiang Lin<br>
+<small class="font-italic">University of Science and Technology of China; University of Chinese Academy of Sciences; Ant Group</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">Single trace HQC shared key recovery with SASCA</h6>
+<p>
+Guillaume Goy, Julien Maillard, Philippe Gaborit, Antoine Loiseau<br>
+<small class="font-italic">Université Grenoble Alpes; CEA, Leti, MINATEC Campus; University of Limoges</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">Unlock the Door to my Secrets, but don’t Forget to Glitch</h6>
+<p>
+Marc Schink, Alexander Wagner, Felix Oberhansl, Stefan Köckeis, Emanuele Strieder, Sven Freud, Dominik Klein<br>
+<small class="font-italic">Fraunhofer Institute for Applied and Integrated Security; Bundesamt für Sicherheit in der Informationstechnik</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">A Highly-efficient Lattice-based Post-Quantum Cryptography Processor for IoT Applications</h6>
+<p>
+Zewen Ye, Ruibing Song, Hao Zhang, Donglong Chen, Ray Chak-Chung Cheung, Kejie Huang<br>
+<small class="font-italic">Zhejiang University; BNU-HKBU United International College; City University of Hong Kong</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">Impeccable Keccak</h6>
+<p>
+Ivan Gavrilan, Felix Oberhansl, Alexander Wagner, Emanuele Strieder, Andreas Zankl<br>
+<small class="font-italic">Fraunhofer Institute for Applied and Integrated Security; Technical University of Munich</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">High-Performance Hardware Implementation of MPCitH and Picnic3</h6>
+<p>
+Guoxiao Liu, Keting Jia, Puwen Wei, Lei Ju<br>
+<small class="font-italic">Tsinghua University; Shandong University</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">SDitH in Hardware</h6>
+<p>
+Sanjay Deshpande, James Howe, Jakub Szefer, Dongze Yue<br>
+<small class="font-italic">Yale University; SandboxAQ</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">Nibbling MAYO: Optimized Implementations for AVX2 and Cortex-M4</h6>
+<p>
+Ward Beullens, Fabio Campos, Sofía Celi, Basil Hess, Matthias J. Kannwischer<br>
+<small class="font-italic">IBM Research Europe; RheinMain University of Applied Sciences; Brave Software; QSMC</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">Masking Floating-Point Number Multiplication and Addition of Falcon</h6>
+<p>
+Keng-Yu Chen, Jiun-Peng Chen<br>
+<small class="font-italic">National Taiwan University; Academia Sinica</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">MiRitH — Efficient Post-Quantum Signatures from MinRank in the Head</h6>
+<p>
+Gora Adj, Stefano Barbero, Emanuele Bellini, Andre Esser, Luis Rivera-Zamarripa, Carlo Sanna, Floyd Zweydinger, Javier Verbel<br>
+<small class="font-italic">Technology Innovation Institute; Politecnico di Torino</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">eLIMInate: a Leakage-focused ISE for Masked Implementation</h6>
+<p>
+Hao Cheng, Daniel Page, Weijia Wang<br>
+<small class="font-italic">University of Luxembourg; University of Bristol; Shandong University</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">Exploiting Small-Norm Polynomial Multiplication with Physical Attacks: Application to CRYSTALS-Dilithium</h6>
+<p>
+Olivier Bronchain, Melissa Azouaoui, Mohamed ElGhamrawy, Joost Renes, Tobias Schneider<br>
+<small class="font-italic">NXP Semiconductors</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">Distribution of Signal to Noise Ratio and Application to Leakage Detection</h6>
+<p>
+Mathieu des Noes<br>
+<small class="font-italic">CEA-Leti; Université Grenoble Alpes</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">Efficient ASIC Architecture for Low Latency Classic McEliece Decoding</h6>
+<p>
+Daniel Fallnich, Christian Lanius, Shutao Zhang, Tobias Gemmeke<br>
+<small class="font-italic">RWTH Aachen University</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">JustSTART: How to Find an RSA Authentication Bypass on Xilinx UltraScale(+) with Fuzzing</h6>
+<p>
+Maik Ender, Felix Hahn, Marc Fyrbiak, Amir Moradi, Christof Paar<br>
+<small class="font-italic">Max Planck Institute for Security and Privacy; Technische Universität Darmstadt</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">CASA: A Compact and Scalable Accelerator for Approximate Homomorphic Encryption</h6>
+<p>
+Pengzhou He, Samira Carolina Oliva Madrigal, Çetin Kaya Koç, Tianyou Bao, Jiafeng Xie<br>
+<small class="font-italic">Villanova University; San José State University; UCSB, Iğdır University, NUAA</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">Compact Circuits for Efficient Mobius Transform</h6>
+<p>
+Subhadeep Banik, Francesco Regazzoni<br>
+<small class="font-italic">University of Lugano; University of Amsterdam; Università della Svizzera italiana</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">Load-Balanced Parallel Implementation on GPUs for Multi-Scalar Multiplication Algorithm</h6>
+<p>
+Yutian Chen, Cong Peng, Yu Dai, Min Luo, Debiao He<br>
+<small class="font-italic">Wuhan University</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">Gleeok: A Family of Low-Latency PRFs and its Applications to Authenticated Encryption</h6>
+<p>
+Ravi Anand, Subhadeep Banik, Andrea Caforio, Tatsuya Ishikawa, Takanori Isobe, Fukang Liu, Kazuhiko Minematsu, Mostafizar Rahman, Kosei Sakamoto<br>
+<small class="font-italic">University of Hyogo; University of Lugano; EPFL; Tokyo Institute of Technology; NEC; Mitsubishi Electric Corporation</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">OBSCURE: Versatile Software Obfuscation from a Lightweight Secure Element</h6>
+<p>
+Darius Mercadier, Viet Sang Nguyen, Matthieu Rivain, Aleksei Udovenko<br>
+<small class="font-italic">Google; Université Jean Monnet; CryptoExperts; University of Luxembourg</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">A Low-Latency High-Order Arithmetic to Boolean Masking Conversion</h6>
+<p>
+Jiangxue Liu, Cankun Zhao, Shuohang Peng, Bohan Yang, Hang Zhao, Xiangdong Han, Min Zhu, Shaojun Wei, Leibo Liu<br>
+<small class="font-italic">Beijing National Research Center for Information Science and Technology; Tsinghua University; Wuxi Micro Innovation Integrated Circuit Design Co., Ltd.</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">Laser-Based Command Injection Attacks on Voice-Controlled Microphone Arrays</h6>
+<p>
+Hetian Shi, Yi He, Qing Wang, Jianwei Zhuge, Qi Li, Xin Liu<br>
+<small class="font-italic">Tsinghua University; Huawei Cloud Co., Ltd.; Lanzhou University</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">UpWB: An Uncoupled Architecture Design for White-box Cryptography Using Vectorized Montgomery Multiplication</h6>
+<p>
+Xiangren Chen, Bohan Yang, Jianfeng Zhu, Jun Liu, Shuying Yin, Guang Yang, Min Zhu, Shaojun Wei, Leibo Liu<br>
+<small class="font-italic">Beijing National Research Center for lnformation Science and Technology; Tsinghua University; Shaanxi Normal University; Wuxi Micro Innovation Integrated Circuit Design Co., Ltd.</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">TPMScan: A wide-scale study of security-relevant properties of TPM 2.0 chips</h6>
+<p>
+Petr Svenda, Antonin Dufka, Milan Broz, Roman Lacko, Tomas Jaros, Daniel Zatovic, Josef Pospisil<br>
+<small class="font-italic">Masaryk University; Red Hat; NUKIB</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">Quantum Circuit Reconstruction from Power Side-Channel Attacks on Quantum Computer Controllers</h6>
+<p>
+Ferhat Erata, Chuanqi Xu, Ruzica Piskac, Jakub Szefer<br>
+<small class="font-italic">Yale University</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">High-Performance Design Patterns and File Formats for Side-Channel Analysis</h6>
+<p>
+Jonah Bosland, Stefan Ene, Peter Baumgartner, Vincent Immler<br>
+<small class="font-italic">Oregon State University; Independent Security Researcher</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">Defeating Low-Cost Countermeasures against Side-Channel Attacks in Lattice-based Encryption: A Case Study on Crystals-Kyber</h6>
+<p>
+Prasanna Ravi, Thales Paiva, Dirmanto Jap, Jan-Pieter D'Anvers, Shivam Bhasin<br>
+<small class="font-italic">Temasek Labs, Nanyang Technological University; FUNDEP and CASNAV; KU Leuven</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">SHAPER: A General Architecture for Privacy-Preserving Primitives in Secure Machine Learning</h6>
+<p>
+Ziyuan Liang, Qi'ao Jin, Zhiyong Wang, Zhaohui Chen, Zhen Gu, Yanheng Lu, Fan Zhang<br>
+<small class="font-italic">Zhejiang University; Alibaba Group</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">Carry Your Fault: A Fault Propagation Attack on Side-Channel Protected LWE-based KEM</h6>
+<p>
+Suparna Kundu, Siddhartha Chowdhury, Sayandeep Saha, Angshuman Karmakar, Debdeep Mukhopadhyay, Ingrid Verbauwhede<br>
+<small class="font-italic">KU Leuven; Indian Institute of Technology Kharagpur; Université catholique de Louvain; Indian Institute of Technology Kanpur</small>
+</p>
+</li>
+
+<li>
+<h6 class="paperTitle">Impact of the Flicker Noise on the Ring Oscillator-based TRNGs</h6>
+<p>
+Licinius Benea, Mikael Carmona, Viktor Fischer, Florian Pebay-Peyroula, Romain Wacquez<br>
+<small class="font-italic">Université Grenoble Alpes; CEA, Leti, MINATEC Campus; Jean Monnet University; CEA-Leti</small>
+</p>
+</li>
+
+</ol>
+<!--
+    <h3 class="pageSubtitle mt-4">
+      TCHES 2024, issue 3
+    </h3>
+
+    <p>This information is not yet available.</p>
+    <h3 class="pageSubtitle mt-4">
+      TCHES 2024, issue 4
+    </h3>
+
+    <p>This information is not yet available.</p>-->
+
+  </main>
+
+  <footer class="text-center footer">
+  <small>
+    <a href="/2024/">
+      <img src="images/CHES_logo.png" style="max-width: 60px;"><br>
+    </a>
+    CHES 2024<br>
+    <a href="https://iacr.org/copyright.html">Copyright ©
+      2024</a>
+    <span class="d-none d-md-inline">by the </span><a href="https://iacr.org/"><span class="d-md-none">IACR</span>
+    <span class="d-none d-md-inline">International Association for
+    Cryptologic Research</span></a>
+    <span class="d-none d-md-inline">• </span><br class="d-md-none">
+    <a href="https://iacr.org/privacy.html">Privacy Policy</a>
+
+    <span class="d-none d-md-inline">• <br class="d-md-none">
+
+    <!-- Halifax Skyline -->
+<!--
+    Title photo by <a href="https://www.flickr.com/photos/shawnkent/41319830421/" target="_blank">Shawn Kent</a> under CC BY 2.0</span>
+-->
+
+    <!-- Lighthouse -->
+    Title photo by <a href="https://www.flickr.com/photos/shawnkent/34030981525/" target="_blank">Shawn Kent</a> under CC BY 2.0</span>
+
+    <!-- Lighthouse 2 -->
+<!--
+    Title photo by <a href="https://www.flickr.com/photos/shawnkent/41319831651/" target="_blank">Shawn Kent</a> under CC BY 2.0</span>
+-->
+
+  </small>
+</footer>
+
+<script src="https://iacr.org/libs/js/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://iacr.org/libs/css/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+</body></html>

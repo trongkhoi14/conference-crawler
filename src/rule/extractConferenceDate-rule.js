@@ -5,6 +5,9 @@ const webp=require('webp-converter');
 const dateFinder = require("datefinder");
 const { getLocation } = require('./extractLocation-rule')
 
+//Check lại conf này
+//6639d0b12aa97d8b888060c7
+
 const getConferenceDates = async (browser, link) => {
     try {
         console.log(">> Getting conference date from: " + link);

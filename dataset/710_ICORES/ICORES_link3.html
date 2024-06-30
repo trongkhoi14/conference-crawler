@@ -1,0 +1,561 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head id="ctl00_Head1"><meta http-equiv="content-language" content="en"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="imagetoolbar" content="no"><meta name="author" content="Insticc"><meta id="ctl00_PageTitle" name="title" content="ICORES, 11th Int'l. Conf. on Operations Research and Enterprise Systems"><meta id="ctl00_PageLocation" name="location" content="3 - 5 February, 2022, Online Streaming, --- Select a Country ---"><meta id="ctl00_PageDescription" name="description" content="Methodologies and Technologies, Applications"><meta id="ctl00_PageKeywords" name="keywords" content="Data Mining and Business Analytics, Decision Analysis, Design, Analysis, and Innovation for Enterprise Systems, Dynamic Programming, Forecasting, Game Theory, Industrial Engineering, Information Systems, Inventory Theory, Linear Programming, Management Sciences, Network Optimization, Optimization, Predictive Analytics, Queuing Theory, Simulation, Stochastic Optimization, Stochastic Processes, Automation of Operations, Decision Support Systems, Energy and Environment, Logistics, Maintenance, New Applications of OR, Optimization in Finance, OR in Education, OR in Emergency Management, OR in Health, OR in National Defense/International Security, OR in Telecommunications, OR in Transportation, Project Management, Resource Allocation, Risk Management, Routing, Scheduling, Supply Chain Management, Systems of Systems/Teams and Socio-Technical Systems"><meta name="language" content="en"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes;"><link id="ctl00_favIcon" rel="icon" href="App_Themes/favicon.ico" type="image/ico"><link id="ctl00_favIconShortcut" rel="shortcut icon" href="App_Themes/favicon.ico" type="image/x-icon"><link rel="stylesheet" href="App_Themes/photomorpher.css" type="text/css">
+
+    <script type="text/javascript" src="JavaScript/photomorpher.js"></script>
+
+    
+    
+<style>
+.specialSessionsLinks a {font-weight: bold; }
+
+</style>
+
+
+    <!--[if lt IE 8]>
+           <style type="text/css">
+                           #content {
+                                           float: right;
+                                           }
+           </style>
+    <![endif]-->
+
+<link href="App_Themes/2022/style.css" type="text/css" rel="stylesheet"><title>
+	ICORES 2022 - Conference
+</title></head>
+<body>
+    <form name="aspnetForm" method="post" action="./Home.aspx?y=2022" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUINTY1NjQ1NjMPZBYCZg9kFgQCAQ9kFggCBA8WAh4HY29udGVudAVHSUNPUkVTLCAxMXRoIEludCdsLiBDb25mLiBvbiBPcGVyYXRpb25zIFJlc2VhcmNoIGFuZCBFbnRlcnByaXNlIFN5c3RlbXNkAgUPFgIfAAVAMyAtIDUgRmVicnVhcnksIDIwMjIsIE9ubGluZSBTdHJlYW1pbmcsIC0tLSBTZWxlY3QgYSBDb3VudHJ5IC0tLWQCBg8WAh8ABSxNZXRob2RvbG9naWVzIGFuZCBUZWNobm9sb2dpZXMsIEFwcGxpY2F0aW9uc2QCBw8WAh8ABdcGRGF0YSBNaW5pbmcgYW5kIEJ1c2luZXNzIEFuYWx5dGljcywgRGVjaXNpb24gQW5hbHlzaXMsIERlc2lnbiwgQW5hbHlzaXMsIGFuZCBJbm5vdmF0aW9uIGZvciBFbnRlcnByaXNlIFN5c3RlbXMsIER5bmFtaWMgUHJvZ3JhbW1pbmcsIEZvcmVjYXN0aW5nLCBHYW1lIFRoZW9yeSwgSW5kdXN0cmlhbCBFbmdpbmVlcmluZywgSW5mb3JtYXRpb24gU3lzdGVtcywgSW52ZW50b3J5IFRoZW9yeSwgTGluZWFyIFByb2dyYW1taW5nLCBNYW5hZ2VtZW50IFNjaWVuY2VzLCBOZXR3b3JrIE9wdGltaXphdGlvbiwgT3B0aW1pemF0aW9uLCBQcmVkaWN0aXZlIEFuYWx5dGljcywgUXVldWluZyBUaGVvcnksIFNpbXVsYXRpb24sIFN0b2NoYXN0aWMgT3B0aW1pemF0aW9uLCBTdG9jaGFzdGljIFByb2Nlc3NlcywgQXV0b21hdGlvbiBvZiBPcGVyYXRpb25zLCBEZWNpc2lvbiBTdXBwb3J0IFN5c3RlbXMsIEVuZXJneSBhbmQgRW52aXJvbm1lbnQsIExvZ2lzdGljcywgTWFpbnRlbmFuY2UsIE5ldyBBcHBsaWNhdGlvbnMgb2YgT1IsIE9wdGltaXphdGlvbiBpbiBGaW5hbmNlLCBPUiBpbiBFZHVjYXRpb24sIE9SIGluIEVtZXJnZW5jeSBNYW5hZ2VtZW50LCBPUiBpbiBIZWFsdGgsIE9SIGluIE5hdGlvbmFsIERlZmVuc2UvSW50ZXJuYXRpb25hbCBTZWN1cml0eSwgT1IgaW4gVGVsZWNvbW11bmljYXRpb25zLCBPUiBpbiBUcmFuc3BvcnRhdGlvbiwgUHJvamVjdCBNYW5hZ2VtZW50LCBSZXNvdXJjZSBBbGxvY2F0aW9uLCBSaXNrIE1hbmFnZW1lbnQsIFJvdXRpbmcsIFNjaGVkdWxpbmcsIFN1cHBseSBDaGFpbiBNYW5hZ2VtZW50LCBTeXN0ZW1zIG9mIFN5c3RlbXMvVGVhbXMgYW5kIFNvY2lvLVRlY2huaWNhbCBTeXN0ZW1zZAIDD2QWGgIBDw8WAh4LTmF2aWdhdGVVcmwFEn4vSG9tZS5hc3B4P3k9MjAyMmQWAmYPDxYCHghJbWFnZVVybAU8aHR0cHM6Ly9pbnN0aWNjLm9yZy9pbWFnZXMvd2lzZS9ldmVudHMvMzExNy9iYW5uZXJzL3dlYi53ZWJwZGQCAw8PFgIfAQUSfi9Ib21lLmFzcHg/eT0yMDIyZGQCBQ8PFgIfAQUWfi9Db250YWN0cy5hc3B4P3k9MjAyMmRkAgcPDxYCHwEFEX4vRkFRLmFzcHg/eT0yMDIyZGQCCQ8PFgIfAQUvaHR0cHM6Ly93d3cuc2NpdGVwcmVzcy5vcmcvUHVibGlzaGVkUGFwZXJzLzIwMjJkZAILD2QWAmYPFgIeC18hSXRlbUNvdW50AiQWSGYPZBYEAgEPDxYKHgRUZXh0BQdBY3Rpb25zHwFlHghDc3NDbGFzcwUIbHYwIGxpbmseBF8hU0ICAh4HVmlzaWJsZWhkZAIDDw8WCB8EBQdBY3Rpb25zHwUFA2x2MB8GAgIfB2hkZAIBD2QWBAIBDw8WCh8EBQtJbmZvcm1hdGlvbh8BZR8FBQhsdjAgbGluax8GAgIfB2hkZAIDDw8WBh8EBQtJbmZvcm1hdGlvbh8FBQNsdjAfBgICZGQCAg9kFgQCAQ8PFgofBAUSQ29uZmVyZW5jZSBEZXRhaWxzHwFlHwUFCGx2MSBsaW5rHwYCAh8HaGRkAgMPDxYGHwQFEkNvbmZlcmVuY2UgRGV0YWlscx8FBQNsdjEfBgICZGQCAw9kFgQCAQ8PFgofBAUPSW1wb3J0YW50IERhdGVzHwEFHH4vSW1wb3J0YW50RGF0ZXMuYXNweD95PTIwMjIfBQUIbHYyIGxpbmsfBgICHwdoZGQCAw8PFggfBAUPSW1w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D2QWBAIBDw8WCB8EBQZBd2FyZHMfAQUcfi9QcmV2aW91c0F3YXJkcy5hc3B4P3k9MjAyMh8FBQhsdjIgbGluax8GAgJkZAIDDw8WCB8EBQZBd2FyZHMfBQUDbHYyHwYCAh8HaGRkAiMPZBYEAgEPDxYKHwQFD0Jvb2tzIFB1Ymxpc2hlZB8BBSZ+L0Jvb2tzUHVibGlzaGVkU2NpdGVwcmVzcy5hc3B4P3k9MjAyMh8FBRBsdjIgbGlua3N0eWxlVGFiHwYCAh8HaGRkAgMPDxYIHwQFD0Jvb2tzIFB1Ymxpc2hlZB8FBQNsdjIfBgICHwdoZGQCDQ8PFgIfB2hkFgICAQ8WAh4JaW5uZXJodG1sZWQCDw9kFgICBQ8WAh8DAgMWBmYPZBYEAgEPDxYCHwQFDVNwb25zb3JlZCBieTpkZAIDDxYCHwMCARYCZg9kFgRmDxUBFmh0dHA6Ly93d3cuaW5zdGljYy5vcmdkAgEPDxYGHgdUb29sVGlwBVBJbnN0aXR1dGUgZm9yIFN5c3RlbXMgYW5kIFRlY2hub2xvZ2llcyBvZiBJbmZvcm1hdGlvbiwgQ29udHJvbCBhbmQgQ29tbXVuaWNhdGlvbh4NQWx0ZXJuYXRlVGV4dAVQSW5zdGl0dXRlIGZvciBTeXN0ZW1zIGFuZCBUZWNobm9sb2dpZXMgb2YgSW5mb3JtYXRpb24sIENvbnRyb2wgYW5kIENvbW11bmljYXRpb24fAgVYaHR0cHM6Ly9pbnN0aWNjLm9yZy9pbWFnZXMvQ29udGFjdHMvT3JnYW5pemF0aW9ucy82MDdhZjYyZDg5NGE2Nzc2MjVkODQ5ZDkvTG9nby93ZWIud2VicGRkAgEPZBYEAgEPDxYCHwQFFUlOU1RJQ0MgaXMgTWVtYmVyIG9mOmRkAgMPFgIfAwIBFgJmD2QWBGYPFQETaHR0cDovL3d3dy53Zm1jLm9yZ2QCAQ8PFgYfCQUdV29ya2Zsb3cgTWFuYWdlbWVudCBDb2FsaXRpb24fCgUdV29ya2Zsb3cgTWFuYWdlbWVudCBDb2FsaXRpb24fAgVYaHR0cHM6Ly9pbnN0aWNjLm9yZy9pbWFnZXMvQ29udGFjdHMvT3JnYW5pemF0aW9ucy82MDdhZjYyZjg5NGE2Nzc2MjVkODRiYWIvTG9nby93ZWIud2VicGRkAgIPZBYEAgEPDxYCHwQFCkxvZ2lzdGljczpkZAIDDxYCHwMCARYCZg9kFgRmDxUBGWh0dHA6Ly93d3cuc2NpdGV2ZW50cy5jb21kAgEPDxYGHwkFIlNjaWVuY2UgYW5kIFRlY2hub2xvZ3kgRXZlbnRzLCBMZGEfCgUiU2NpZW5jZSBhbmQgVGVjaG5vbG9neSBFdmVudHMsIExkYR8CBVhodHRwczovL2luc3RpY2Mub3JnL2ltYWdlcy9Db250YWN0cy9Pcmdhbml6YXRpb25zLzYwN2FmNjJlODk0YTY3NzYyNWQ4NGFmZC9Mb2dvL3dlYi53ZWJwZGQCEw9kFgJmDxYCHwNmZAIVD2QWAgIBD2QWOGYPZBYEZg9kFgQCAQ8PFgIfBAWKAUlDT1JFUyAyMDIyIHdpbGwgYmUgaGVsZCBpbiBjb25qdW5jdGlvbiB3aXRoIDxiPjx1PjxhIGhyZWY9ICJodHRwczovL2ljYWFydC5zY2l0ZXZlbnRzLm9yZz95PTIwMjIidGFyZ2V0PSJfYmxhbmsiPklDQUFSVCAyMDIyPC9hPjwvdT48L2I+LmRkAgMPDxYCHwQFZTxici8+UmVnaXN0cmF0aW9uIHRvIElDT1JFUyBhbGxvd3MgZnJlZSBhY2Nlc3MgdG8gdGhlIElDQUFSVCBjb25mZXJlbmNlIChhcyBhIG5vbi1zcGVha2VyKS48YnIvPjxici8+ZGQCBA9kFgQCAQ8PFgIfAgVCaHR0cHM6Ly9pbnN0aWNjLm9yZy9pbWFnZXMvd2lzZS9zaGFyZWQvQW5ub3VuY2VtZW50cy9vcmlnaW5hbC53ZWJwZGQCCQ9kFgQCAw8WAh4Dc3JjBT9odHRwczovL2luc3RpY2Mub3JnL2ltYWdlcy93aXNlLy9FeHRlcm5hbC9hbmRyb2lkL29yaWdpbmFsLndlYnBkAgUPFgIfCwU7aHR0cHM6Ly9pbnN0aWNjLm9yZy9pbWFnZXMvd2lzZS8vRXh0ZXJuYWwvaW9zL29yaWdpbmFsLndlYnBkAgEPDxYEHhJiSG90ZWxJbmZvSG9tZXBhZ2VoHwdoZBYCZg9kFgQCAQ8WAh4GdGFyZ2V0BQZfYmxhbmsWAmYPFgIfCwU/aHR0cHM6Ly9pbnN0aWNjLm9yZy9pbWFnZXMvd2lzZS8vSWNvbnMvbmV3c2xldHRlci9vcmlnaW5hbC53ZWJwZAIDDxYCHw0FBl9ibGFua2QCAg9kFgICAQ9kFgoCAQ8WAh4EaHJlZgUlbWFpbHRvOmljb3Jlcy5zZWNyZXRhcmlhdEBpbnN0aWNjLm9yZxYCAgEPDxYCHwIFUmh0dHBzOi8vaW5zdGljYy5vcmcvaW1hZ2VzL3dpc2UvZXZlbnRzLzMxMTcvY29udGFjdFNlY3JldGFyaWF0QnV0dG9uL29yaWdpbmFsLndlYnBkZAIDD2QWBAIBDw8WBB8CBUZodHRwczovL2luc3RpY2Mub3JnL2ltYWdlcy93aXNlL3NoYXJlZC9zdWJtaXRQYXBlckJ1dHRvbi9vcmlnaW5hbC53ZWJwHwdoZGQCAw8PFgQfAgVJaHR0cHM6Ly9pbnN0aWNjLm9yZy9pbWFnZXMvd2lzZS9zaGFyZWQvc3VibWl0QWJzdHJhY3RCdXR0b24vb3JpZ2luYWwud2VicB8HaGRkAgUPDxYCHwIFTWh0dHBzOi8vaW5zdGljYy5vcmcvaW1hZ2VzL3dpc2UvZXZlbnRzLzMxMTcvZG93bmxvYWRGbHllckJ1dHRvbi9vcmlnaW5hbC53ZWJwZGQCBw8PFgIfAgVOaHR0cHM6Ly9pbnN0aWNjLm9yZy9pbWFnZXMvd2lzZS9ldmVudHMvMzExNy9kb3dubG9hZFBvc3RlckJ1dHRvbi9vcmlnaW5hbC53ZWJwZGQCDQ8WAh8OBSsJaHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL0lDT1JFU0NvbmZlcmVuY2UJFgICAQ8WAh8LBUBodHRwczovL2luc3RpY2Mub3JnL2ltYWdlcy93aXNlLy9FeHRlcm5hbC9mYWNlYm9vay9vcmlnaW5hbC53ZWJwZAIDDw8WAh8HaGQWAgIBDxYCHwMCBRYKAgEPZBYCZg8VAg1waWMwMV8zMTB4MjMwQmh0dHBzOi8vaW5zdGljYy5vcmcvaW1hZ2VzLy9XaXNlL1ZlbnVlcy8xMDcvUm90YXRvcl8xL29yaWdpbmFsLnBuZ2QCAg9kFgJmDxUCDXBpYzExXzMxMHgyMzBCaHR0cHM6Ly9pbnN0aWNjLm9yZy9pbWFnZXMvL1dpc2UvVmVudWVzLzEwNy9Sb3RhdG9yXzIvb3JpZ2luYWwucG5nZAIDD2QWAmYPFQINcGljMjFfMzEweDIzMEJodHRwczovL2luc3RpY2Mub3JnL2ltYWdlcy8vV2lzZS9WZW51ZXMvMTA3L1JvdGF0b3JfMy9vcmlnaW5hbC5wbmdkAgQPZBYCZg8VAg1waWMzMV8zMTB4MjMwQmh0dHBzOi8vaW5zdGljYy5vcmcvaW1hZ2VzLy9XaXNlL1ZlbnVlcy8xMDcvUm90YXRvcl80L29yaWdpbmFsLnBuZ2QCBQ9kFgJmDxUCDXBpYzQxXzMxMHgyMzBCaHR0cHM6Ly9pbnN0aWNjLm9yZy9pbWFnZXMvL1dpc2UvVmVudWVzLzEwNy9Sb3RhdG9yXzUvb3JpZ2luYWwucG5nZAIED2QWAmYPFgIfCAVVIDxici8+PGRpdiBzdHlsZT0iYm9yZGVyLWJvdHRvbTogbm9uZTsgbWFyZ2luLXRvcDogMHB4OyI+DQogICAgICAgICZuYnNwOw0KICAgIDwvZGl2PmQCBQ9kFgJmDxYCHwNmZAIGDw8WBB4XYkhhc3RpdGxlSW1wb3J0YW50RGF0ZXNoHwdoZBYCZg9kFgQCAQ8WAh4FY2xhc3MFEWhlYWRpbmcxX25vQm9yZGVyZAIFD2QWCgIBDxYCHwdoFgICAg8PFgIfBAUUMyAtIDUgRmVicnVhcnksIDIwMjJkZAIDD2QWCAIBDxYCHw4FGX4vR2xvc3NhcnkuYXNweCNSUD95PTIwMjJkAgUPDxYIHglGb3JlQ29sb3IKTh4JRm9udF9Cb2xkaB8EBRlPY3RvYmVyIDYsIDIwMjEgKGV4cGlyZWQpHwYChBBkZAILDw8WCB8RCk4fEmgfBAUbTm92ZW1iZXIgMTUsIDIwMjEgKGV4cGlyZWQpHwYChBBkZAIRDw8WCB8RCk4fEmgfBAUbTm92ZW1iZXIgMjksIDIwMjEgKGV4cGlyZWQpHwYChBBkZAIFD2QWCAIBDxYCHw4FGX4vR2xvc3NhcnkuYXNweCNQUD95PTIwMjIWAgIBDw8WAh8EBQ9Qb3NpdGlvbiBQYXBlcnNkZAIFDw8WCB8RCk4fEmgfBAUaTm92ZW1iZXIgOCwgMjAyMSAoZXhwaXJlZCkfBgKEEGRkAgsPDxYIHxEKTh8SaB8EBRpEZWNlbWJlciA3LCAyMDIxIChleHBpcmVkKR8GAoQQZGQCEQ8PFggfEQpOHxJoHwQFG0RlY2Vt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IHRoZSBJbnRlcm5hdGlvbmFsIENvbmZlcmVuY2Ugb24gT3BlcmF0aW9ucyBSZXNlYXJjaCBhbmQgRW50ZXJwcmlzZSBTeXN0ZW1zIChJQ09SRVMpIGlzIHRvIGJyaW5nIHRvZ2V0aGVyIHJlc2VhcmNoZXJzLCBlbmdpbmVlcnMsIGZhY3VsdHksIGFuZCBwcmFjdGl0aW9uZXJzIGludGVyZXN0ZWQgaW4gYm90aCB0aGVvcmV0aWNhbCBhZHZhbmNlcyBhbmQgcHJhY3RpY2FsIGFwcGxpY2F0aW9ucyBpbiB0aGUgZmllbGQgb2Ygb3BlcmF0aW9ucyByZXNlYXJjaC4gVHdvIHNpbXVsdGFuZW91cyB0cmFja3Mgd2lsbCBiZSBoZWxkLCBjb3ZlcmluZyBvbiBvbmUgc2lkZSBkb21haW4gaW5kZXBlbmRlbnQgbWV0aG9kb2xvZ2llcyBhbmQgdGVjaG5vbG9naWVzIGFuZCBvbiB0aGUgb3RoZXIgc2lkZSBwcmFjdGljYWwgd29yayBkZXZlbG9wZWQgaW4gc3BlY2lmaWMgYXBwbGljYXRpb24gYXJlYXMuZGQCCQ8PFgIeHWJIYXN0aXRsZUNvbmZlcmVuY2VBcmVhc1Nob3J0aGQWBGYPZBYEAgEPFgIfEAUJbm9QYWRkaW5nZAIFDxYCHwMCAhYEZg9kFgQCAQ8PFgIfBAUBMWRkAgUPFgIfDgUefi9DYWxsRm9yUGFwZXJzLmFzcHg/eT0yMDIyI0ExFgJmDxUBHk1ldGhvZG9sb2dpZXMgYW5kIFRlY2hub2xvZ2llc2QCAQ9kFgQCAQ8PFgIfBAUBMmRkAgUPFgIfDgUefi9DYWxsRm9yUGFwZXJzLmFzcHg/eT0yMDIyI0EyFgJmDxUBDEFwcGxpY2F0aW9uc2QCAg8WAh8HaGQCCg8PFgIeGWJIYXN0aXRsZUNvbmZlcmVuY2VDaGFpcnNoZBYCZg9kFgICAQ8WAh8QBQlub1BhZGRpbmcWAgIBDxYCHw4FKn4vRXZlbnRDaGFpcnMuYXNweCNjb25mZXJlbmNlX2NoYWlyP3k9MjAyMhYCAgEPDxYCHwQFEENvbmZlcmVuY2UgQ2hhaXJkZAILDw8WAh4VYkhhc3RpdGxlUHJvZ3JhbUNoYWlyaGQWAmYPZBYCAgEPFgIfEAUJbm9QYWRkaW5nFgICAQ8WAh8OBSx+L1Byb2dyYW1Db21taXR0ZWUuYXNweCNwcm9ncmFtX2NoYWlyP3k9MjAyMhYCAgEPDxYCHwQFEVBST0dSQU0gQ08tQ0hBSVJTZGQCDA8PFgIeE2JIYXN0aXRsZUxvY2FsQ2hhaXJoZBYCZg8WAh8HaBYCAgEPFgIfEAUJbm9QYWRkaW5nFgICAQ8WAh8OBSV+L0V2ZW50Q2hhaXJzLmFzcHgjbG9jYWxfY2hhaXI/eT0yMDIyFgICAQ8PFgIfBAULTE9DQUwgQ0hBSVJkZAINDw8WAh4JYkhhc3RpdGxlaGQWAmYPZBYCAgMPFgIfEAUJbm9QYWRkaW5nFgICAQ8WBB8IBRBLZXlub3RlIFNwZWFrZXJzHw4FHX4vS2V5bm90ZVNwZWFrZXJzLmFzcHg/eT0yMDIyZAIOD2QWAmYPFgIfCAUBIGQCDw8PFgQeF2JIYXN0aXRsZVdvcmtzaG9wc1Nob3J0aB4aYlJlZHVjZWRTaXRlV29ya3Nob3BzU2hvcnRoZBYCZg9kFgICAQ8WBB8QBRtub1BhZGRpbmcgZGl2V29ya3Nob3BzVGl0bGUfB2hkAhAPDxYEHhdiSGFzVGl0bGVTcGVjaWFsU2Vzc2lvbmgeGmJSZWR1Y2VkU2l0ZVNwZWNpYWxTZXNzaW9uaGQWAmYPZBYCAgEPFgQfEAUbbm9QYWRkaW5nIGRpdldvcmtzaG9wc1RpdGxlHwdoZAIRDw8WAh4WYkhhc3RpdGxlVHV0b3JpYWxTaG9ydGhkFgJmD2QWAgIBDxYEHxAFG25vUGFkZGluZyBkaXZXb3Jrc2hvcHNUaXRsZR8HaGQCEg8PFgIeE2JIYXN0aXRsZURlbW9zU2hvcnRoZBYCZg9kFgICAQ8WBB8QBRtub1BhZGRpbmcgZGl2V29ya3Nob3BzVGl0bGUfB2hkAhMPDxYCHhNiSGFzdGl0bGVQYW5lbFNob3J0aGQWAmYPZBYCAgEPFgQfEAUbbm9QYWRkaW5nIGRpdldvcmtzaG9wc1RpdGxlHwdoZAIUDw8WBh4QYkhhc3RpdGxlRENTaG9ydGgeGGJSZWR1Y2VkU2l0ZURDU2hvcnRKb2ludGcfB2hkFgJmDxYCHwdoFgICAQ8WAh8QBRtkaXZXb3Jrc2hvcHNUaXRsZSBub1BhZGRpbmdkAhUPDxYEHiFiUmVkdWNlZFNpdGVPcGVuQ29tbXVuaWNhdGlvbkhvbWVoHwdoZBYCZg8WAh8HZ2QCFg8PFgIfB2hkFgJmDxYCHwdoFgICAw8WAh8HaBYCAgMPFgIfBAUBLmQCFw9kFgJmDxYCHwgFVSA8YnIvPjxkaXYgc3R5bGU9ImJvcmRlci1ib3R0b206IG5vbmU7IG1hcmdpbi10b3A6IDBweDsiPg0KICAgICAgICAmbmJzcDsNCiAgICA8L2Rpdj5kAhgPZBYCZg8WAh8IBWc8ZGl2IHN0eWxlPSJib3JkZXItYm90dG9tOiAxcHggZG90dGVkICMwMDAwMDA7IG1hcmdpbjogMjBweCAwcHggMTVweCAwcHg7Ij4NCiAgICAgICAgJm5ic3A7DQogICAgPC9kaXY+ZAIZD2QWAgICDxYCHgVzdHlsZQUNaGVpZ2h0OjIwNnB4OxYCAgMPFgIfAwIDFgZmD2QWBmYPFQEZaHR0cDovL3d3dy5zY2l0ZXByZXNzLm9yZ2QCAQ8PFgYfCQUoU2NpZW5jZSBhbmQgVGVjaG5vbG9neSBQdWJsaWNhdGlvbnMsIExkYR8CBVhodHRwczovL2luc3RpY2Mub3JnL2ltYWdlcy9jb250YWN0cy9Pcmdhbml6YXRpb25zLzYwN2FmNjJlODk0YTY3NzYyNWQ4NGIwMC9Mb2dvL3dlYi53ZWJwHwoFKFNjaWVuY2UgYW5kIFRlY2hub2xvZ3kgUHVibGljYXRpb25zLCBMZGFkZAIDDw8WAh8EBZcDPHAgc3R5bGU9InRleHQtYWxpZ246IGxlZnQ7Ij5BbGwgcGFwZXJzIHByZXNlbnRlZCBhdCB0aGUgY29uZmVyZW5jZSZuYnNwO3ZlbnVlPGJyIC8+d2lsbCBiZSBhdmFpbGFibGUgYXQgdGhlJm5ic3A7PGEgaHJlZj0iaHR0cDovL3d3dy5zY2l0ZXByZXNzLm9yZy9EaWdpdGFsTGlicmFyeS9EZWZhdWx0LmFzcHgiIHRhcmdldD0iX2JsYW5rIj5TQ0lURVBSRVNTIERpZ2l0YWwgTGlicmFyeTwvYT4NCjxiciAvPg0KKDxzcGFuIHN0eWxlPSJmb250LXN0eWxlOiBpdGFsaWM7Ij5jb25zdWx0IFNDSVRFUFJFU1MgPC9zcGFuPg0KPGEgaHJlZj0iL0V0aGljc09mUHVibGljYXRpb24uYXNweCIgdGFyZ2V0PSJfYmxhbmsiIHN0eWxlPSJmb250LXN0eWxlOiBpdGFsaWM7Ij5FdGhpY3Mgb2YgUHVibGljYXRpb248L2E+KTwvcD5kZAIBD2QWBmYPFQEnaHR0cHM6Ly93d3cuc3ByaW5nZXIuY29tL2pvdXJuYWwvNDI5NzkvZAIBDw8WBh8JBSBTcHJpbmdlciBOYXR1cmUgQ29tcHV0ZXIgU2NpZW5jZR8CBWdodHRwczovL3d3dy5pbnN0aWNjLm9yZy9pbWFnZXMvUEFSTUEvUHViQ292ZXJzLzM1QUFGNUZDLTE3RkMtNEEwRi1BMEI3LTlFN0IwNUZBQkQ4MC9Cb29rU2VyaWVzL3dlYi53ZWJwHwoFIFNwcmluZ2VyIE5hdHVyZSBDb21wdXRlciBTY2llbmNlZGQCAw8PFgIfBAX3ATxwIHN0eWxlPSJ0ZXh0LWFsaWduOiBsZWZ0OyI+QSBzaG9ydCBsaXN0IG9mIGJlc3QgcGFwZXJzIHdpbGwgYmUgaW52aXRlZDxiciAvPiBmb3IgYSBwb3N0LWNvbmZlcmVuY2Ugc3BlY2lhbCZuYnNwO2lzc3VlIG9mIHRoZTxiciAvPiA8YSB0YXJnZXQ9Il9ibGFuayIgaHJlZj0iaHR0cHM6Ly93d3cuc3ByaW5nZXIuY29tL2pvdXJuYWwvNDI5NzkvIj5TcHJpbmdlciBOYXR1cmUgQ29tcHV0ZXIgU2NpZW5jZSBKb3VybmFsPC9hPjwvcD5kZAICD2QWBmYPFQEjaHR0cDovL3d3dy5zcHJpbmdlci5jb20vc2VyaWVzLzc4OTlkAgEPDxYGHwkFMkNvbW11bmljYXRpb25zIGluIENvbXB1dGVyIGFuZCBJbmZvcm1hdGlvbiBTY2llbmNlHwIFZ2h0dHBzOi8vd3d3Lmluc3RpY2Mub3JnL2ltYWdlcy9QQVJNQS9QdWJDb3ZlcnMvRkZGRDRENUEtNUEzNi00MzFDLUFCQjktMzYyNzFFQTE2MjMzL0Jvb2tTZXJpZXMvd2ViLndlYnAfCgUyQ29tbXVuaWNhdGlvbnMgaW4gQ29tcHV0ZXIgYW5kIEluZm9ybWF0aW9uIFNjaWVuY2VkZAIDDw8WAh8EBfcBPHAgc3R5bGU9InRleHQtYWxpZ246IGxlZnQ7Ij5JdCBpcyBwbGFubmVkIHRvIHB1Ymxpc2ggYSBzaG9ydCBsaXN0IG9mIHJldmlzZWQmbmJzcDthbmQ8YnIgLz4gZXh0ZW5kZWQmbmJzcDt2ZXJzaW9ucyBvZiBwcmVzZW50ZWQgcGFwZXJzJm5ic3A7d2l0aDxiciAvPiBTcHJpbmdlciZuYnNwO2luIGEmbmJzcDs8YSB0YXJnZXQ9Il9ibGFuayIgaHJlZj0iL0Jvb2tzUHVibGlzaGVkLmFzcHgiPkNDSVMgU2VyaWVzIGJvb2s8L2E+PC9wPmRkAhoPZBYIAgUPFgIfB2hkAgcPFgIfB2hkAgkPFgIfAwIBFgJmD2QWBAIBDw8WAh8EBRRJbiBDb29wZXJhdGlvbiB3aXRoOmRkAgMPFgIfAwIBFgJmD2QWBGYPFQETaHR0cDovL3d3dy5zaWFtLm9yZ2QCAQ8PFgYfCQUuU29jaWV0eSBmb3IgSW5kdXN0cmlhbCBhbmQgQXBwbGllZCBNYXRoZW1hdGljcx8KBS5Tb2NpZXR5IGZvciBJbmR1c3RyaWFsIGFuZCBBcHBsaWVkIE1hdGhlbWF0aWNzHwIFWGh0dHBzOi8vaW5zdGljYy5vcmcvaW1hZ2VzL0NvbnRhY3RzL09yZ2FuaXphdGlvbnMvNjA3YWY2MmU4OTRhNjc3NjI1ZDg0YjMzL0xvZ28vd2ViLndlYnBkZAIPDxYCHwMCARYCZg9kFgQCAQ8PFgIfBAU9UHJvY2VlZGluZ3Mgd2lsbCBiZSBzdWJtaXR0ZWQgZm9yIGV2YWx1YXRpb24gZm9yIGluZGV4aW5nIGJ5OmRkAgMPFgIfAwIHFg5mD2QWBAIBDxYCHw4FFWh0dHA6Ly93d3cuc2NvcHVzLmNvbRYEAgEPDxYGHwkFBlNDT1BVUx8KBQZTQ09QVVMfAgVYaHR0cHM6Ly9pbnN0aWNjLm9yZy9pbWFnZXMvQ29udGFjdHMvT3JnYW5pemF0aW9ucy82MDdhZjYyZTg5NGE2Nzc2MjVkODRiMDIvTG9nby93ZWIud2VicGRkAgMPDxYCHwRlZGQCAw8WAh8HaBYEAgEPDxYGHwkFBlNDT1BVUx8CBVhodHRwczovL2luc3RpY2Mub3JnL2ltYWdlcy9Db250YWN0cy9Pcmdhbml6YXRpb25zLzYwN2FmNjJlODk0YTY3NzYyNWQ4NGIwMi9Mb2dvL3dlYi53ZWJwHwoFBlNDT1BVU2RkAgMPDxYCHwRlZGQCAQ9kFgQCAQ8WAh8OBRtodHRwczovL3NjaG9sYXIuZ29vZ2xlLmNvbS8WBAIBDw8WBh8JBQ5Hb29nbGUgU2Nob2xhch8KBQ5Hb29nbGUgU2Nob2xhch8CBVhodHRwczovL2luc3RpY2Mub3JnL2ltYWdlcy9Db250YWN0cy9Pcmdhbml6YXRpb25zLzYwN2FmNjJkODk0YTY3NzYyNWQ4NDkyOS9Mb2dvL3dlYi53ZWJwZGQCAw8PFgIfBGVkZAIDDxYCHwdoFgQCAQ8PFgYfCQUOR29vZ2xlIFNjaG9sYXIfAgVYaHR0cHM6Ly9pbnN0aWNjLm9yZy9pbWFnZXMvQ29udGFjdHMvT3JnYW5pemF0aW9ucy82MDdhZjYyZDg5NGE2Nzc2MjVkODQ5MjkvTG9nby93ZWIud2VicB8KBQ5Hb29nbGUgU2Nob2xhcmRkAgMPDxYCHwRlZGQCAg9kFgQCAQ8WAh8OBRBodHRwczovL2RibHAub3JnFgQCAQ8PFgYfCQUmVGhlIERCTFAgQ29tcHV0ZXIgU2NpZW5jZSBCaWJsaW9ncmFwaHkfCgUmVGhlIERCTFAgQ29tcHV0ZXIgU2NpZW5jZSBCaWJsaW9ncmFwaHkfAgVYaHR0cHM6Ly9pbnN0aWNjLm9yZy9pbWFnZXMvQ29udGFjdHMvT3JnYW5pemF0aW9ucy82MDdhZjYyZTg5NGE2Nzc2MjVkODRiNWYvTG9nby93ZWIud2VicGRkAgMPDxYCHwRlZGQCAw8WAh8HaBYEAgEPDxYGHwkFJlRoZSBEQkxQIENvbXB1dGVyIFNjaWVuY2UgQmlibGlvZ3JhcGh5HwIFWGh0dHBzOi8vaW5zdGljYy5vcmcvaW1hZ2VzL0NvbnRhY3RzL09yZ2FuaXphdGlvbnMvNjA3YWY2MmU4OTRhNjc3NjI1ZDg0YjVmL0xvZ28vd2ViLndlYnAfCgUmVGhlIERCTFAgQ29tcHV0ZXIgU2NpZW5jZSBCaWJsaW9ncmFwaHlkZAIDDw8WAh8EZWRkAgMPZBYEAgEPFgIfDgUfaHR0cHM6Ly93d3cuc2VtYW50aWNzY2hvbGFyLm9yZxYEAgEPDxYGHwkFEFNlbWFudGljIFNjaG9sYXIfCgUQU2VtYW50aWMgU2Nob2xhch8CBVhodHRwczovL2luc3RpY2Mub3JnL2ltYWdlcy9Db250YWN0cy9Pcmdhbml6YXRpb25zLzYwN2FmNjJlODk0YTY3NzYyNWQ4NGIwNS9Mb2dvL3dlYi53ZWJwZGQCAw8PFgIfBGVkZAIDDxYCHwdoFgQCAQ8PFgYfCQUQU2VtYW50aWMgU2Nob2xhch8CBVhodHRwczovL2luc3RpY2Mub3JnL2ltYWdlcy9Db250YWN0cy9Pcmdhbml6YXRpb25zLzYwN2FmNjJlODk0YTY3NzYyNWQ4NGIwNS9Mb2dvL3dlYi53ZWJwHwoFEFNlbWFudGljIFNjaG9sYXJkZAIDDw8WAh8EZWRkAgQPZBYEAgEPFgIfDgUeaHR0cHM6Ly9hY2FkZW1pYy5taWNyb3NvZnQuY29tFgQCAQ8PFgYfCQUSTWljcm9zb2Z0IEFjYWRlbWljHwoFEk1pY3Jvc29mdCBBY2FkZW1pYx8CBVhodHRwczovL2luc3RpY2Mub3JnL2ltYWdlcy9Db250YWN0cy9Pcmdhbml6YXRpb25zLzYwN2FmNjJlODk0YTY3NzYyNWQ4NGE4Yy9Mb2dvL3dlYi53ZWJwZGQCAw8PFgIfBGVkZAIDDxYCHwdoFgQCAQ8PFgYfCQUSTWljcm9zb2Z0IEFjYWRlbWljHwIFWGh0dHBzOi8vaW5zdGljYy5vcmcvaW1hZ2VzL0NvbnRhY3RzL09yZ2FuaXphdGlvbnMvNjA3YWY2MmU4OTRhNjc3NjI1ZDg0YThjL0xvZ28vd2ViLndlYnAfCgUSTWljcm9zb2Z0IEFjYWRlbWljZGQCAw8PFgIfBGVkZAIFD2QWBAIBDxYCHw4FIWh0dHA6Ly93d3cuZW5naW5lZXJpbmd2aWxsYWdlLmNvbRYEAgEPDxYGHwkFEUVuZ2luZWVyaW5nIEluZGV4HwoFEUVuZ2luZWVyaW5nIEluZGV4HwIFWGh0dHBzOi8vaW5zdGljYy5vcmcvaW1hZ2VzL0NvbnRhY3RzL09yZ2FuaXphdGlvbnMvNjA3YWY2MmM4OTRhNjc3NjI1ZDg0ODhjL0xvZ28vd2ViLndlYnBkZAIDDw8WAh8EZWRkAgMPFgIfB2gWBAIBDw8WBh8JBRFFbmdpbmVlcmluZyBJbmRleB8CBVhodHRwczovL2luc3RpY2Mub3JnL2ltYWdlcy9Db250YWN0cy9Pcmdhbml6YXRpb25zLzYwN2FmNjJjODk0YTY3NzYyNWQ4NDg4Yy9Mb2dvL3dlYi53ZWJwHwoFEUVuZ2luZWVyaW5nIEluZGV4ZGQCAw8PFgIfBGVkZAIGD2QWBAIBDxYCHw4FRGh0dHBzOi8vY2xhcml2YXRlLmNvbS93ZWJvZnNjaWVuY2Vncm91cC9zb2x1dGlvbnMvd2Vib2ZzY2llbmNlLWNwY2kvFgQCAQ8PFgYfCQU2V2ViIG9mIFNjaWVuY2UgLyBDb25mZXJlbmNlIFByb2NlZWRpbmdzIENpdGF0aW9uIEluZGV4HwoFNldlYiBvZiBTY2llbmNlIC8gQ29uZmVyZW5jZSBQcm9jZWVkaW5ncyBDaXRhdGlvbiBJbmRleB8CBVhodHRwczovL2luc3RpY2Mub3JnL2ltYWdlcy9Db250YWN0cy9Pcmdhbml6YXRpb25zLzYwN2FmNjJmODk0YTY3NzYyNWQ4NGJhNS9Mb2dvL3dlYi53ZWJwZGQCAw8PFgIfBAU0V2ViIG9mIFNjaWVuY2UvQ29uZmVyZW5jZSBQcm9jZWVkaW5ncyBDaXRhdGlvbiBJbmRleGRkAgMPFgIfB2gWBAIBDw8WBh8JBTZXZWIgb2YgU2NpZW5jZSAvIENvbmZlcmVuY2UgUHJvY2VlZGluZ3MgQ2l0YXRpb24gSW5kZXgfAgVYaHR0cHM6Ly9pbnN0aWNjLm9yZy9pbWFnZXMvQ29udGFjdHMvT3JnYW5pemF0aW9ucy82MDdhZjYyZjg5NGE2Nzc2MjVkODRiYTUvTG9nby93ZWIud2VicB8KBTZXZWIgb2YgU2NpZW5jZSAvIENvbmZlcmVuY2UgUHJvY2VlZGluZ3MgQ2l0YXRpb24gSW5kZXhkZAIDDw8WAh8EBTRXZWIgb2YgU2NpZW5jZS9Db25mZXJlbmNlIFByb2NlZWRpbmdzIENpdGF0aW9uIEluZGV4ZGQCGw9kFgICAQ8WAh8DZmQCFw8PFgIfBAUEMjAyNGRkAhkPFgIfB2hkAhsPDxYCHwIFO2h0dHBzOi8vaW5zdGljYy5vcmcvaW1hZ2VzL3dpc2UvL290aGVyL2Zvb3Rlci9vcmlnaW5hbC53ZWJwZGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgIFKGN0bDAwJHBhZ2VDb250ZW50JGN0bDAyJGJ0bkRvd25sb2FkRmx5ZXIFKWN0bDAwJHBhZ2VDb250ZW50JGN0bDAyJGJ0bkRvd25sb2FkUG9zdGVyRhq8WuZk8nkeT+3fBleOeQ4LlYEgCs/j6Ush5aIk2HE=">
+</div>
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Z24RX5K7L6"></script>
+                                        <script>window.dataLayer = window.dataLayer || [];
+                                        function gtag() { 
+                                        dataLayer.push(arguments); }
+                                        gtag('js', new Date());
+                                        gtag('config', 'G-Z24RX5K7L6');
+                                        </script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="8D0E13E6">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAMd1R7lhCE3/59LDZ0UYnwCNoBQnsLsppNCGYtb2jVBvUGwJKc5rcUDMY2y+k6IBIK1XIqR9GWJ1NSMj4d9p0jSXElZYFAwX6hPWodxE8y7NA==">
+</div>
+        <div id="container">
+       
+            <div style="width: 1000px; height: 171px; position:relative;">
+            
+                <a id="ctl00_HyperLinkBanner" href="Home.aspx?y=2022"><img id="ctl00_Banner" alt="Banner" src="https://insticc.org/images/wise/events/3117/banners/web.webp" style="border-width:0px;"></a>
+            </div>
+            <div id="up_all">
+                <a id="ctl00_HyperLinkHome" href="Home.aspx?y=2022">Home</a>
+                &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.insticc.org/Primoris/" target="_blank">Log In</a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a id="ctl00_HyperLinkContacts" href="Contacts.aspx?y=2022">Contacts</a>
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+             <a id="ctl00_HyperLinkFaq" href="FAQ.aspx?y=2022">FAQs</a>
+                &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.insticc.org/" target="_blank">INSTICC Portal</a>
+            </div>
+            <div id="sep_top">
+                &nbsp;
+            </div>
+            <div id="main">
+ <a id="ctl00_HyperLink1" href="https://www.scitepress.org/PublishedPapers/2022" style="color: white; cursor: default;">Documents</a>
+                
+                <div id="nav">
+                    
+                    
+        
+        
+    
+        
+        <span id="ctl00_WebsiteMenu1_RepeaterMenu_ctl01_lblMenuItem" class="lv0">Information</span>
+    
+        
+        <span id="ctl00_WebsiteMenu1_RepeaterMenu_ctl02_lblMenuItem" class="lv1">Conference Details</span>
+    
+        
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl04_hplMenuItem" class="lv2 linkstrong" href="http://www.insticc.org/node/technicalprogram/icores/2022" target="_self">Technical Program</a>
+        
+    
+        
+        
+    
+        
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl07_hplMenuItem" class="lv2 link" href="ProgramCommittee.aspx?y=2022" target="_self">Program Committee</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl08_hplMenuItem" class="lv2 link" href="EventChairs.aspx?y=2022" target="_self">Event Chairs</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl09_hplMenuItem" class="lv2 link" href="KeynoteSpeakers.aspx?y=2022" target="_self">Keynote Lectures</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl10_hplMenuItem" class="lv2 link" href="BestPaperAward.aspx?y=2022" target="_self">Best Paper Awards</a>
+        
+    
+        
+        <span id="ctl00_WebsiteMenu1_RepeaterMenu_ctl11_lblMenuItem" class="lv1">Satellite Events</span>
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl12_hplMenuItem" class="lv2 link" href="Workshops.aspx?y=2022" target="_self">Workshops</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl13_hplMenuItem" class="lv2 link" href="SpecialSessions.aspx?y=2022" target="_self">Special Sessions</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl14_hplMenuItem" class="lv2 link" href="Tutorials.aspx?y=2022" target="_self">Tutorials</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl15_hplMenuItem" class="lv2 link" href="Demos.aspx?y=2022" target="_self">Demos</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl16_hplMenuItem" class="lv2 link" href="Panel.aspx?y=2022" target="_self">Panels</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl17_hplMenuItem" class="lv2 link" href="DoctoralConsortium.aspx?y=2022" target="_self">Doctoral Consortium</a>
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        <span id="ctl00_WebsiteMenu1_RepeaterMenu_ctl22_lblMenuItem" class="lv1">Partners</span>
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl23_hplMenuItem" class="lv2 link" href="RDCommunity.aspx?y=2022" target="_self">Academic Partners</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl24_hplMenuItem" class="lv2 link" href="IndustrialPartners.aspx?y=2022" target="_self">Industrial Partners</a>
+        
+    
+        
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl26_hplMenuItem" class="lv2 link" href="Institutions.aspx?y=2022" target="_self">Institutional Partners</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl27_hplMenuItem" class="lv2 link" href="MediaPartner.aspx?y=2022" target="_self">Media Partners</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl28_hplMenuItem" class="lv2 link" href="PartnerEvent.aspx?y=2022" target="_self">Partner Events</a>
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl29_hplMenuItem" class="lv2 link" href="PublicationPartner.aspx?y=2022" target="_self">Publication Partners</a>
+        
+    
+        
+        <span id="ctl00_WebsiteMenu1_RepeaterMenu_ctl30_lblMenuItem" class="lv1">Previous Conferences</span>
+    
+        
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl32_hplMenuItem" class="lv2 link" href="Abstracts.aspx?y=2022" target="_self">Abstracts</a>
+        
+    
+        
+        
+    
+        <a id="ctl00_WebsiteMenu1_RepeaterMenu_ctl34_hplMenuItem" class="lv2 link" href="PreviousAwards.aspx?y=2022" target="_self">Awards</a>
+        
+    
+        
+        
+    
+
+                    
+                    
+
+<div id="SponsersLeft">
+    <div id="ctl00_SponsorsLeftMARKS_divTextSponsersLeft" class="SponsorLeft">
+    </div>
+
+    <div style="text-align: center">
+        
+
+
+        
+                <p>
+                    </p><div style="margin-top: 30px; margin-bottom: 15px;">
+                        <span id="ctl00_SponsorsLeftMARKS_RepeaterParma_ctl00_labelOrganization" style="font-weight: bold">Sponsored by:</span>
+                    </div>
+                    
+                            <div style="margin-bottom: 10px;">
+                                <a target="_blank" href="http://www.insticc.org">
+                                    <img id="ctl00_SponsorsLeftMARKS_RepeaterParma_ctl00_ChildRepeater_ctl00_organizationLabel" title="Institute for Systems and Technologies of Information, Control and Communication" src="https://insticc.org/images/Contacts/Organizations/607af62d894a677625d849d9/Logo/web.webp" alt="Institute for Systems and Technologies of Information, Control and Communication" style="border-width:0px;"></a>
+                            </div>
+                        
+                <p></p>
+            
+                <p>
+                    </p><div style="margin-top: 30px; margin-bottom: 15px;">
+                        <span id="ctl00_SponsorsLeftMARKS_RepeaterParma_ctl01_labelOrganization" style="font-weight: bold">INSTICC is Member of:</span>
+                    </div>
+                    
+                            <div style="margin-bottom: 10px;">
+                                <a target="_blank" href="http://www.wfmc.org">
+                                    <img id="ctl00_SponsorsLeftMARKS_RepeaterParma_ctl01_ChildRepeater_ctl00_organizationLabel" title="Workflow Management Coalition" src="https://insticc.org/images/Contacts/Organizations/607af62f894a677625d84bab/Logo/web.webp" alt="Workflow Management Coalition" style="border-width:0px;"></a>
+                            </div>
+                        
+                <p></p>
+            
+                <p>
+                    </p><div style="margin-top: 30px; margin-bottom: 15px;">
+                        <span id="ctl00_SponsorsLeftMARKS_RepeaterParma_ctl02_labelOrganization" style="font-weight: bold">Logistics:</span>
+                    </div>
+                    
+                            <div style="margin-bottom: 10px;">
+                                <a target="_blank" href="http://www.scitevents.com">
+                                    <img id="ctl00_SponsorsLeftMARKS_RepeaterParma_ctl02_ChildRepeater_ctl00_organizationLabel" title="Science and Technology Events, Lda" src="https://insticc.org/images/Contacts/Organizations/607af62e894a677625d84afd/Logo/web.webp" alt="Science and Technology Events, Lda" style="border-width:0px;"></a>
+                            </div>
+                        
+                <p></p>
+            
+    </div>
+
+    
+</div>
+
+                    
+                </div>
+
+                <div id="content">
+                    
+                    
+                    
+
+
+                    
+
+    <div id="ctl00_pageContent_ctl00_divTop" class="center">
+    <span id="ctl00_pageContent_ctl00_lblLocatedInfo">ICORES 2022 will be held in conjunction with <b><u><a href="https://icaart.scitevents.org?y=2022" target="_blank">ICAART 2022</a></u></b>.</span>
+    <span id="ctl00_pageContent_ctl00_lblRegistrationInfo"><br>Registration to ICORES allows free access to the ICAART conference (as a non-speaker).<br><br></span>
+</div>
+
+<div id="ctl00_pageContent_ctl00_divJoints" class="center">
+    <span id="ctl00_pageContent_ctl00_lblJointInfo"></span>
+    <span id="ctl00_pageContent_ctl00_lblLocatedInfoJoint"></span>
+    <span id="ctl00_pageContent_ctl00_lblRegistrationInfoJoint"></span>
+</div>
+
+
+
+
+<div style="position: relative">
+    <div id="ctl00_pageContent_ctl02_DownloadPack" class="DownloadPack">
+        <table>
+            <tbody><tr>
+                <td style="text-align: center; vertical-align: bottom">
+                    <a href="mailto:icores.secretariat@insticc.org" id="ctl00_pageContent_ctl02_emailA" target="_blank">
+                        <img id="ctl00_pageContent_ctl02_ImgContactSecretariat" alt="ContactSecretariat" src="https://insticc.org/images/wise/events/3117/contactSecretariatButton/original.webp" style="border-width:0px;">
+                    </a>
+                    <div id="ctl00_pageContent_ctl02_Div1">
+                        <p></p>
+                        
+                        <p></p>
+                        
+                    </div>
+                </td>
+                <td style="text-align: center; vertical-align: bottom"></td>
+                <td style="text-align: center; vertical-align: bottom">
+                    <input type="image" name="ctl00$pageContent$ctl02$btnDownloadFlyer" id="ctl00_pageContent_ctl02_btnDownloadFlyer" src="https://insticc.org/images/wise/events/3117/downloadFlyerButton/original.webp" style="border-width:0px;">
+                </td>
+                <td style="text-align: center; vertical-align: bottom"></td>
+                <td style="text-align: center; vertical-align: bottom">
+                    <input type="image" name="ctl00$pageContent$ctl02$btnDownloadPoster" id="ctl00_pageContent_ctl02_btnDownloadPoster" src="https://insticc.org/images/wise/events/3117/downloadPosterButton/original.webp" style="border-width:0px;">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center; vertical-align: bottom"></td>
+                <td style="text-align: center; vertical-align: bottom"></td>
+                <td style="text-align: center; vertical-align: bottom">
+                    
+                </td>
+                <td style="text-align: center; vertical-align: bottom"></td>
+                <td style="text-align: center; vertical-align: bottom">
+                    
+                </td>
+            </tr>
+            <tr>
+
+                <td colspan="5">
+
+                    <a href="	https://www.facebook.com/ICORESConference	" id="ctl00_pageContent_ctl02_facebookLink" target="_blank">
+                        <img src="https://insticc.org/images/wise//External/facebook/original.webp" id="ctl00_pageContent_ctl02_facebookImg" alt="Facebook" style="width: 139px; float: right; margin-bottom: 6px;">
+                    </a>
+                </td>
+            </tr>
+        </tbody></table>
+
+    </div>
+</div>
+<div id="ctl00_pageContent_ctl04_ControlContent"> <br><div style="border-bottom: none; margin-top: 0px;">
+        &nbsp;
+    </div></div>
+
+
+
+<div id="Scope" class="ScopeShort">
+    <span id="ctl00_pageContent_ctl08_lblScope">The purpose of the International Conference on Operations Research and Enterprise Systems (ICORES) is to bring together researchers, engineers, faculty, and practitioners interested in both theoretical advances and practical applications in the field of operations research. Two simultaneous tracks will be held, covering on one side domain independent methodologies and technologies and on the other side practical work developed in specific application areas.</span>
+</div>
+<div id="ctl00_pageContent_ctl09_Conference_Areas_Short">
+<h1 id="ctl00_pageContent_ctl09_divTitleAreas" class="noPadding">
+    Conference Areas
+</h1>
+    
+    
+            <h2 class="nolineSmall">
+                <span id="ctl00_pageContent_ctl09_rptAreas_ctl00_lblAreaOrder">1</span>
+               <span id="ctl00_pageContent_ctl09_rptAreas_ctl00_Label1">. </span>   
+                <a href="CallForPapers.aspx?y=2022#A1" id="ctl00_pageContent_ctl09_rptAreas_ctl00_linkArea">Methodologies and Technologies</a>
+            </h2>
+            <br>           
+        
+            <h2 class="nolineSmall">
+                <span id="ctl00_pageContent_ctl09_rptAreas_ctl01_lblAreaOrder">2</span>
+               <span id="ctl00_pageContent_ctl09_rptAreas_ctl01_Label1">. </span>   
+                <a href="CallForPapers.aspx?y=2022#A2" id="ctl00_pageContent_ctl09_rptAreas_ctl01_linkArea">Applications</a>
+            </h2>
+            <br>           
+        
+     
+</div>
+<div id="ctl00_pageContent_ctl10_Conference_Chairs">
+<a name="conference_co-chairs"></a>
+<h1 id="ctl00_pageContent_ctl10_divTitle" class="noPadding">
+    <a href="EventChairs.aspx?y=2022#conference_chair" id="ctl00_pageContent_ctl10_linkChairPage">
+ <span id="ctl00_pageContent_ctl10_lblChairs">Conference Chair</span></a>
+        </h1>
+
+<div id="ctl00_pageContent_ctl10_div_Repeater">
+
+
+
+<a href="EventChairs.aspx?y=2022#MarcDemange"><span id="ctl00_pageContent_ctl10_lblChairName0" class="Normal strong">Marc Demange</span>,&nbsp;</a><span id="ctl00_pageContent_ctl10_lblChair0" class="Normal">RMIT University, School of Science - Mathematical Sciences, Australia</span><br></div>
+ 
+</div><div id="ctl00_pageContent_ctl11_Program_Chair_Home">
+<h1 id="ctl00_pageContent_ctl11_divTitle" class="noPadding">
+ 
+    <a href="ProgramCommittee.aspx?y=2022#program_chair" id="ctl00_pageContent_ctl11_linkChairPage">
+    <span id="ctl00_pageContent_ctl11_lblTitle">PROGRAM CO-CHAIRS</span>
+        </a>
+</h1>
+   <div id="ctl00_pageContent_ctl11_divChairs">
+   <a href="ProgramCommittee.aspx?y=2022#FedericoLiberatore"><span id="ctl00_pageContent_ctl11_lblChairName0" class="Normal" style="font-weight:bold;">Federico Liberatore</span>,&nbsp;</a><span id="ctl00_pageContent_ctl11_lblChair0" class="Normal">Cardiff University, United Kingdom</span><br><a href="ProgramCommittee.aspx?y=2022#GregH.Parlier"><span id="ctl00_pageContent_ctl11_lblChairName1" class="Normal" style="font-weight:bold;">Greg H. Parlier</span>,&nbsp;</a><span id="ctl00_pageContent_ctl11_lblChair1" class="Normal">GH Parlier Consulting, United States</span><br></div>
+    
+</div>
+
+<div id="ctl00_pageContent_ctl13_Keynotemini">
+ <a id="ctl00_pageContent_ctl13_lnkKeynotes" name="keynote_speakers"></a>
+    <h1 id="ctl00_pageContent_ctl13_divKeynotesTitle" class="noPadding">
+        <a href="KeynoteSpeakers.aspx?y=2022" id="ctl00_pageContent_ctl13_lblKeynotes">Keynote Speakers</a>
+    </h1>
+    <div id="ctl00_pageContent_ctl13_divkeynotes">
+    <a href="KeynoteSpeakers.aspx?y=2022#1" id="ctl00_pageContent_ctl13_lblChairName0"><strong>Nikolaos Matsatsinis</strong>,&nbsp;</a><span>Technical University of Crete, Greece</span><br><a href="KeynoteSpeakers.aspx?y=2022#2" id="ctl00_pageContent_ctl13_lblChairName1"><strong>David Ríos Insúa</strong>,&nbsp;</a><span>ICMAT, Spain</span><br><a href="KeynoteSpeakers.aspx?y=2022#3" id="ctl00_pageContent_ctl13_lblChairName2"><strong>Ivana Ljubic</strong>,&nbsp;</a><span>ESSEC Business School of Paris, France</span><br><a href="KeynoteSpeakers.aspx?y=2022#4" id="ctl00_pageContent_ctl13_lblChairName3"><strong>Yakov Ben-Haim</strong>,&nbsp;</a><span>Faculty of Mechanical Engineering, Technion - Israel Institute of Technology, Israel</span><br></div>
+    
+</div>
+<div id="ctl00_pageContent_ctl14_ControlContent"> </div>
+<div id="ctl00_pageContent_ctl23_ControlContent"> <br><div style="border-bottom: none; margin-top: 0px;">
+        &nbsp;
+    </div></div><div id="ctl00_pageContent_ctl24_ControlContent"><div style="border-bottom: 1px dotted #000000; margin: 20px 0px 15px 0px;">
+        &nbsp;
+    </div></div><span id="ctl00_pageContent_ctl25_labelPub" style="font-weight: bold">Publications:</span>
+
+
+<div id="ctl00_pageContent_ctl25_PublicationsDiv" class="divPublications" style="height:206px;">
+    
+
+    
+            <div style="display: inline-block; float: left; padding-right: 15px; vertical-align: middle; min-height: 204px;">
+                <center>
+                    <div> <a target="_blank" href="http://www.scitepress.org">
+                        <img id="ctl00_pageContent_ctl25_RepeaterPublicationParma_ctl00_publicationLabel" title="Science and Technology Publications, Lda" src="https://insticc.org/images/contacts/Organizations/607af62e894a677625d84b00/Logo/web.webp" alt="Science and Technology Publications, Lda" style="border-width:0px;"></a>
+                        <br>
+                        <span id="ctl00_pageContent_ctl25_RepeaterPublicationParma_ctl00_labelPublication" style="font-size: 10px;"><p style="text-align: left;">All papers presented at the conference&nbsp;venue<br>will be available at the&nbsp;<a href="http://www.scitepress.org/DigitalLibrary/Default.aspx" target="_blank">SCITEPRESS Digital Library</a>
+<br>
+(<span style="font-style: italic;">consult SCITEPRESS </span>
+<a href="/EthicsOfPublication.aspx" target="_blank" style="font-style: italic;">Ethics of Publication</a>)</p></span>
+                    </div>
+                        </center>
+            </div>
+        
+            <div style="display: inline-block; float: left; padding-right: 15px; vertical-align: middle; min-height: 204px;">
+                <center>
+                    <div> <a target="_blank" href="https://www.springer.com/journal/42979/">
+                        <img id="ctl00_pageContent_ctl25_RepeaterPublicationParma_ctl01_publicationLabel" title="Springer Nature Computer Science" src="https://www.insticc.org/images/PARMA/PubCovers/35AAF5FC-17FC-4A0F-A0B7-9E7B05FABD80/BookSeries/web.webp" alt="Springer Nature Computer Science" style="border-width:0px;"></a>
+                        <br>
+                        <span id="ctl00_pageContent_ctl25_RepeaterPublicationParma_ctl01_labelPublication" style="font-size: 10px;"><p style="text-align: left;">A short list of best papers will be invited<br> for a post-conference special&nbsp;issue of the<br> <a target="_blank" href="https://www.springer.com/journal/42979/">Springer Nature Computer Science Journal</a></p></span>
+                    </div>
+                        </center>
+            </div>
+        
+            <div style="display: inline-block; float: left; padding-right: 15px; vertical-align: middle; min-height: 204px;">
+                <center>
+                    <div> <a target="_blank" href="http://www.springer.com/series/7899">
+                        <img id="ctl00_pageContent_ctl25_RepeaterPublicationParma_ctl02_publicationLabel" title="Communications in Computer and Information Science" src="https://www.insticc.org/images/PARMA/PubCovers/FFFD4D5A-5A36-431C-ABB9-36271EA16233/BookSeries/web.webp" alt="Communications in Computer and Information Science" style="border-width:0px;"></a>
+                        <br>
+                        <span id="ctl00_pageContent_ctl25_RepeaterPublicationParma_ctl02_labelPublication" style="font-size: 10px;"><p style="text-align: left;">It is planned to publish a short list of revised&nbsp;and<br> extended&nbsp;versions of presented papers&nbsp;with<br> Springer&nbsp;in a&nbsp;<a target="_blank" href="/BooksPublished.aspx">CCIS Series book</a></p></span>
+                    </div>
+                        </center>
+            </div>
+        
+
+</div>
+
+<div id="SponsersCenter">
+    <div id="ctl00_pageContent_ctl26_divSponsersCenter">
+    </div>
+
+    <div>
+        
+
+
+        
+
+        
+
+        
+                <p>
+                    </p><div style="margin-top: 30px; margin-bottom: 15px;">
+                        <span id="ctl00_pageContent_ctl26_RepeaterParma_ctl00_labelOrganization" style="font-weight: bold">In Cooperation with:</span>
+
+                    </div>
+                    
+                            <div style="display: inline-block; margin-bottom: 10px; padding-right: 20px; vertical-align: middle;">
+                                <a target="_blank" href="http://www.siam.org">
+                                    <img id="ctl00_pageContent_ctl26_RepeaterParma_ctl00_ChildRepeater_ctl00_organizationLabel" title="Society for Industrial and Applied Mathematics" src="https://insticc.org/images/Contacts/Organizations/607af62e894a677625d84b33/Logo/web.webp" alt="Society for Industrial and Applied Mathematics" style="border-width:0px;"></a>
+                            </div>
+                        
+                <p></p>
+            
+    </div>
+
+
+    <div>
+        
+
+        
+        
+                <div style="margin-top: 30px; margin-bottom: 15px;">
+                    <span id="ctl00_pageContent_ctl26_RepeaterIndexersParma_ctl00_labelOrganization" style="font-weight: bold">Proceedings will be submitted for evaluation for indexing by:</span>
+                </div>
+                
+                        <div style="display: inline-block; margin-bottom: 10px; padding-right: 20px; vertical-align: middle;">
+                            <a href="http://www.scopus.com" id="ctl00_pageContent_ctl26_RepeaterIndexersParma_ctl00_ChildRepeater_ctl00_A1" target="_blank" style="cursor: pointer">
+                                <img id="ctl00_pageContent_ctl26_RepeaterIndexersParma_ctl00_ChildRepeater_ctl00_organizationLabel" title="SCOPUS" src="https://insticc.org/images/Contacts/Organizations/607af62e894a677625d84b02/Logo/web.webp" alt="SCOPUS" style="border-width:0px;">
+                                <br>
+                                <span id="ctl00_pageContent_ctl26_RepeaterIndexersParma_ctl00_ChildRepeater_ctl00_LabelDescription" style="font-size: 6.5pt;"></span>
+                            </a>
+                            
+
+                        </div>
+                    
+                        <div style="display: inline-block; margin-bottom: 10px; padding-right: 20px; vertical-align: middle;">
+                            <a href="https://scholar.google.com/" id="ctl00_pageContent_ctl26_RepeaterIndexersParma_ctl00_ChildRepeater_ctl01_A1" target="_blank" style="cursor: pointer">
+                                <img id="ctl00_pageContent_ctl26_RepeaterIndexersParma_ctl00_ChildRepeater_ctl01_organizationLabel" title="Google Scholar" src="https://insticc.org/images/Contacts/Organizations/607af62d894a677625d84929/Logo/web.webp" alt="Google Scholar" style="border-width:0px;">
+                                <br>
+                                <span id="ctl00_pageContent_ctl26_RepeaterIndexersParma_ctl00_ChildRepeater_ctl01_LabelDescription" style="font-size: 6.5pt;"></span>
+                            </a>
+                            
+
+                        </div>
+                    
+                        <div style="display: inline-block; margin-bottom: 10px; padding-right: 20px; vertical-align: middle;">
+                            <a href="https://dblp.org" id="ctl00_pageContent_ctl26_RepeaterIndexersParma_ctl00_ChildRepeater_ctl02_A1" target="_blank" style="cursor: pointer">
+                                <img id="ctl00_pageContent_ctl26_RepeaterIndexersParma_ctl00_ChildRepeater_ctl02_organizationLabel" title="The DBLP Computer Science Bibliography" src="https://insticc.org/images/Contacts/Organizations/607af62e894a677625d84b5f/Logo/web.webp" alt="The DBLP Computer Science Bibliography" style="border-width:0px;">
+                                <br>
+                                <span id="ctl00_pageContent_ctl26_RepeaterIndexersParma_ctl00_ChildRepeater_ctl02_LabelDescription" style="font-size: 6.5pt;"></span>
+                            </a>
+                            
+
+                        </div>
+                    
+                        <div style="display: inline-block; margin-bottom: 10px; padding-right: 20px; vertical-align: middle;">
+                            <a href="https://www.semanticscholar.org" id="ctl00_pageContent_ctl26_RepeaterIndexersParma_ctl00_ChildRepeater_ctl03_A1" target="_blank" style="cursor: pointer">
+                                <img id="ctl00_pageContent_ctl26_RepeaterIndexersParma_ctl00_ChildRepeater_ctl03_organizationLabel" title="Semantic Scholar" src="https://insticc.org/images/Contacts/Organizations/607af62e894a677625d84b05/Logo/web.webp" alt="Semantic Scholar" style="border-width:0px;">
+                                <br>
+                                <span id="ctl00_pageContent_ctl26_RepeaterIndexersParma_ctl00_ChildRepeater_ctl03_LabelDescription" style="font-size: 6.5pt;"></span>
+                            </a>
+                            
+
+                        </div>
+                    
+                        <div style="display: inline-block; margin-bottom: 10px; padding-right: 20px; vertical-align: middle;">
+                            <a href="https://academic.microsoft.com" id="ctl00_pageContent_ctl26_RepeaterIndexersParma_ctl00_ChildRepeater_ctl04_A1" target="_blank" style="cursor: pointer">
+                                <img id="ctl00_pageContent_ctl26_RepeaterIndexersParma_ctl00_ChildRepeater_ctl04_organizationLabel" title="Microsoft Academic" src="https://insticc.org/images/Contacts/Organizations/607af62e894a677625d84a8c/Logo/web.webp" alt="Microsoft Academic" style="border-width:0px;">
+                                <br>
+                                <span id="ctl00_pageContent_ctl26_RepeaterIndexersParma_ctl00_ChildRepeater_ctl04_LabelDescription" style="font-size: 6.5pt;"></span>
+                            </a>
+                            
+
+                        </div>
+                    
+                        <div style="display: inline-block; margin-bottom: 10px; padding-right: 20px; vertical-align: middle;">
+                            <a href="http://www.engineeringvillage.com" id="ctl00_pageContent_ctl26_RepeaterIndexersParma_ctl00_ChildRepeater_ctl05_A1" target="_blank" style="cursor: pointer">
+                                <img id="ctl00_pageContent_ctl26_RepeaterIndexersParma_ctl00_ChildRepeater_ctl05_organizationLabel" title="Engineering Index" src="https://insticc.org/images/Contacts/Organizations/607af62c894a677625d8488c/Logo/web.webp" alt="Engineering Index" style="border-width:0px;">
+                                <br>
+                                <span id="ctl00_pageContent_ctl26_RepeaterIndexersParma_ctl00_ChildRepeater_ctl05_LabelDescription" style="font-size: 6.5pt;"></span>
+                            </a>
+                            
+
+                        </div>
+                    
+                        <div style="display: inline-block; margin-bottom: 10px; padding-right: 20px; vertical-align: middle;">
+                            <a href="https://clarivate.com/webofsciencegroup/solutions/webofscience-cpci/" id="ctl00_pageContent_ctl26_RepeaterIndexersParma_ctl00_ChildRepeater_ctl06_A1" target="_blank" style="cursor: pointer">
+                                <img id="ctl00_pageContent_ctl26_RepeaterIndexersParma_ctl00_ChildRepeater_ctl06_organizationLabel" title="Web of Science / Conference Proceedings Citation Index" src="https://insticc.org/images/Contacts/Organizations/607af62f894a677625d84ba5/Logo/web.webp" alt="Web of Science / Conference Proceedings Citation Index" style="border-width:0px;">
+                                <br>
+                                <span id="ctl00_pageContent_ctl26_RepeaterIndexersParma_ctl00_ChildRepeater_ctl06_LabelDescription" style="font-size: 6.5pt;">Web of Science/Conference Proceedings Citation Index</span>
+                            </a>
+                            
+
+                        </div>
+                    
+            
+    </div>
+
+    
+    <br>
+    <br>
+    
+</div>
+
+<div id="Partners" class="divPartners">
+    <table style="width:100%">
+       
+    </table>
+</div>
+
+
+                </div>
+
+                <div id="footer">
+
+                    ©&nbsp;<span id="ctl00_CurrentYear">2024</span>
+                    &nbsp;<a href="http://www.insticc.org/" target="_blank">INSTICC</a>
+                    
+                </div>
+            </div>
+              <img id="ctl00_ImageFooter" alt="footer" src="https://insticc.org/images/wise//other/footer/original.webp" style="border-width:0px;">
+
+            
+        </div>
+    </form>
+    
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+
+
+
+
+
+</body></html><!--Start of Zopim Live Chat Script--><!--End of Zopim Live Chat Script-->
