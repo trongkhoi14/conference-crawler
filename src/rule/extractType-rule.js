@@ -17,7 +17,8 @@ const type_hybrid = [
     "to be organized in hybrid",
     "an option to present remotely",
     "attend remotely",
-    "Dual-Mode Conference"
+    "Dual-Mode Conference",
+    "option to attend remotely"
 ];
 
 const getType = async (browser, link) => { 
@@ -56,6 +57,8 @@ const getType = async (browser, link) => {
         if (containsKeyword(bodyContent, type_offline)) {
             isOffline = true
         }
+
+        // Đi vào site: Call for Contributions
         
         if ((isOnline && isOffline) || isHybrid) {
             return "hybrid";

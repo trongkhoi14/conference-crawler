@@ -112,10 +112,10 @@ const crawlConferenceById = async (confId) => {
             console.log(">> New update to database successfully")
         } else {
             console.log(">> Important date not change or not in safe list")
-            return {
-                status: true,
-                message: "Important date not change or not in safe list"
-            };
+            // return {
+            //     status: true,
+            //     message: "Important date not change or not in safe list"
+            // };
         }
 
         // Pineline
@@ -207,20 +207,7 @@ const crawlController = async (browserInstance) => {
         // Test bộ luật
         // testTypeExtraction(browser)
 
-        const conferencesToUpdate = await Conference.find({ Source: "CONFHUB" });
-
-        if (conferencesToUpdate.length > 0) {
-            // Update each conference
-            for (let conference of conferencesToUpdate) {
-                conference.Source = "CORE2023";
-                await conference.save();
-            }
-
-            console.log(`Updated ${conferencesToUpdate.length} conferences.`);
-        } else {
-            console.log("No conferences found with Source: CONFHUB");
-        }
-       
+        
 
     } catch (error) {
         console.log("Error in crawlController: " + error);
@@ -237,7 +224,7 @@ const testTypeExtraction = async (browser) => {
         let correct = 0;
         let isNull = 0;
 
-        for (let i =0; i < 100; i++) {
+        for (let i =0; i < 500; i++) {
             const expectedType = conferences[i].Type;
             const extractedType = await getType(browser, conferences[i].Links[0]);
             if (extractedType == null) {
@@ -247,6 +234,10 @@ const testTypeExtraction = async (browser) => {
             if (expectedType.toLowerCase() == extractedType.toLowerCase()) {
                 console.log("True")
                 correct++;
+            }
+            else {
+                console.log(conferences[i]._id)
+                console.log(extractedType.toLowerCase())
             }
             total++;
         }
