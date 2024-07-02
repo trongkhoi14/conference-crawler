@@ -1,5 +1,5 @@
 const startBrowser = require('./src/untils/browser');
-const { crawlController, crawlConferenceById } = require('./src/controllers/conference-controller')
+const { crawlController, crawlConferenceById, crawlNewConferenceById } = require('./src/controllers/conference-controller')
 const dbConnect = require('./src/config/dbconnect');
 const { scrapeConference } = require('./src/controllers/pineline-controller')
 var cron = require('node-cron');
@@ -18,7 +18,7 @@ const main = async () => {
    
 };  
 
-// main();
+main();
 
 const app = express()
 const port = process.env.PORT || 8081
@@ -50,14 +50,20 @@ dbConnect().then(() => {
     console.error("Failed to connect to MongoDB", err);
   });
 
-const updateStatus = async(fullDocument) => {
+const updateStatus = async(job) => {
     const startTime = Date.now();
-    const isCrawlSuccess = await crawlConferenceById(fullDocument.conf_id)
+    let isCrawlSuccess;
+    if(job.job_type == "update now") {
+        isCrawlSuccess = await crawlConferenceById(job)
+    } else if(job.job_type == "import conference") {
+        isCrawlSuccess = await crawlNewConferenceById(job)
+    }
+    
     console.log(isCrawlSuccess.message)
     const endTime = Date.now();
     const duration = endTime - startTime; 
     if(isCrawlSuccess.status) {
-        return await jobModel.updateOne({ _id: fullDocument._id }, { 
+        return await jobModel.updateOne({ _id: job._id }, { 
             $set: { 
                 status: "completed",
                 duration: duration

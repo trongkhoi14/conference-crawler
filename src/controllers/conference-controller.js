@@ -25,16 +25,18 @@ const { getLocation } = require("../rule/extractLocation-rule")
 const startBrowser = require('../untils/browser');
 const { stringify } = require('csv-stringify/sync');
 const safeConferenceList = require('../config/safeList')
-const {getType} =require('../rule/extractType-rule')
+const { getType } = require('../rule/extractType-rule')
+const { updateJobProgress } = require('../services/job-service')
 
-// Handle job
-const crawlConferenceById = async (confId) => {
+
+// Handle job update now
+const crawlConferenceById = async (job) => {
 
     let browser = await startBrowser();
     console.log(">> Browser is opening ...")
 
     try {
-        const conference = await Conference.findById(confId);
+        const conference = await Conference.findById(job.conf_id);
 
         if (!conference) {
             return {
@@ -47,15 +49,24 @@ const crawlConferenceById = async (confId) => {
         // Cần cào thêm các thông tin khác (getLocation, getConferenceDates, getConferenceLink)
 
         // Cào important dates
+        await updateJobProgress(job._id, 10, "Crawling important dates")
         let newImportantDates;
         if (conference.Links[0].length > 0) {
             newImportantDates = await getImportantDates(browser, conference.Links[0]);
+        } else {
+            return {
+                status: true,
+                message: "Conference hasn't new update"
+            };
         }
+
         if(!newImportantDates) {
             return {
                 status: false,
                 message: "Navigation timeout of 30000 ms exceeded when go to " + conference.Links[0]
             };
+        } else {
+            await updateJobProgress(job._id, 40, "Crawling important dates successfully")
         }
         console.log(newImportantDates)
 
@@ -103,24 +114,31 @@ const crawlConferenceById = async (confId) => {
             });
         };
 
+        await updateJobProgress(job._id, 50, "Check for updates")
+
         checkAndUpdate(oldImportantDates.submissionDate, newImportantDates.submissionDate, 'SubmissonDate');
         checkAndUpdate(oldImportantDates.notificationDate, newImportantDates.notificationDate, 'NotificationDate');
         checkAndUpdate(oldImportantDates.cameraReady, newImportantDates.cameraReady, 'CameraReady');
 
+        
+
         if(safeConferenceList.some(i => i == confId) && hasNewChange) {
             await Conference.findByIdAndUpdate(confId, updates);
-            console.log(">> New update to database successfully")
+            console.log(">> Save new update to database successfully")
+            await updateJobProgress(job._id, 60, "Save new update to database successfully")
         } else {
             console.log(">> Important date not change or not in safe list")
+            await updateJobProgress(job._id, 60, "Important date not change")
             // return {
             //     status: true,
             //     message: "Important date not change or not in safe list"
             // };
         }
-
+        await updateJobProgress(job._id, 70, "ETL data to destination")
         // Pineline
         const isPinelineSuccess = await dataPinelineAPI(confId)
         if(isPinelineSuccess) {
+            await updateJobProgress(job._id, 90, "ETL data to CONFHUB successfully")
             return {
                 status: true,
                 message: "Update conference successfully"
@@ -143,6 +161,98 @@ const crawlConferenceById = async (confId) => {
         console.log(">> Browser is closed")
     }
 };
+
+// Handle job import conf
+const crawlNewConferenceById = async (job) => {
+    let browser = await startBrowser();
+    console.log(">> Browser is opening ...")
+
+    try {
+        const conference = await Conference.findById(job.conf_id);
+
+        if (!conference) {
+            return {
+                status: false,
+                message: "Conference not found"
+            };
+        }
+
+        // Trường hợp conf đã có link
+        if (conference.Links[0].length > 0) {
+
+            // Cào important dates
+            await updateJobProgress(job._id, 10, "Crawling important dates")
+            setTimeout(() => {
+                
+            }, 4000);
+            //Cào Conference Dates
+            await updateJobProgress(job._id, 30, "Crawling conference dates")
+            setTimeout(() => {
+                
+            }, 2000);
+            //Cào Location
+            await updateJobProgress(job._id, 50, "Crawling location")
+            setTimeout(() => {
+                
+            }, 2000);
+            //Cào Type
+            await updateJobProgress(job._id, 60, "Crawling type")
+            setTimeout(() => {
+                
+            }, 2000);
+            //Cào cfp
+            await updateJobProgress(job._id, 80, "Crawling call for papers")
+            setTimeout(() => {
+                
+            }, 2000);
+
+            // Update to database
+            
+        } 
+        else {
+            // Trường hợp conf chưa có link
+            let links = await webScraperService.searchConferenceLinksByTitle(
+                browser,
+                conference,
+                4
+            );
+            for(let link of links) {
+                let importantDate = await getImportantDates(browser, link);
+            }
+
+            // Update to database
+        }
+
+    // Pineline
+    await updateJobProgress(job._id, 80, "ETL data to destination")
+    const isPinelineSuccess = await dataPinelineAPI(confId)
+    if(isPinelineSuccess) {
+        await updateJobProgress(job._id, 90, "ETL data to destination successfully")
+        return {
+            status: true,
+            message: "Update conference successfully"
+        };
+    } else {
+        return {
+            status: false,
+            message: "Something occurred in data pipeline"
+        }
+    }
+
+        
+       
+    } catch (error) {
+        console.log("Error in Conference controller/crawlConferenceById: " + error);
+        return {
+            status: false,
+            message: error
+        };
+    } finally {
+        await browser.close();
+        console.log(">> Browser is closed")
+    }
+};
+
 
 
 const crawlController = async (browserInstance) => {
@@ -205,7 +315,7 @@ const crawlController = async (browserInstance) => {
 
         //-----------
         // Test bộ luật
-        // testTypeExtraction(browser)
+        await testTypeExtraction(browser)
 
         
 
@@ -224,8 +334,11 @@ const testTypeExtraction = async (browser) => {
         let correct = 0;
         let isNull = 0;
 
-        for (let i =0; i < 500; i++) {
+        for (let i =544; i < 545; i++) {
             const expectedType = conferences[i].Type;
+            console.log("---------------------------")
+            console.log(">> " + i)
+            console.log(">> " + conferences[i]._id)
             const extractedType = await getType(browser, conferences[i].Links[0]);
             if (extractedType == null) {
                 isNull++;
@@ -1179,5 +1292,6 @@ module.exports = {
     crawlNewConferences,
     crawlAllConferencesDetail,
     processConferenceError,
-    crawlConferenceById
+    crawlConferenceById,
+    crawlNewConferenceById
 };
