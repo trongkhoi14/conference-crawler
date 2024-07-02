@@ -122,8 +122,8 @@ const crawlConferenceById = async (job) => {
 
         
 
-        if(safeConferenceList.some(i => i == confId) && hasNewChange) {
-            await Conference.findByIdAndUpdate(confId, updates);
+        if(safeConferenceList.some(i => i == job.conf_id) && hasNewChange) {
+            await Conference.findByIdAndUpdate(job.conf_id, updates);
             console.log(">> Save new update to database successfully")
             await updateJobProgress(job._id, 60, "Save new update to database successfully")
         } else {
@@ -136,7 +136,7 @@ const crawlConferenceById = async (job) => {
         }
         await updateJobProgress(job._id, 70, "ETL data to destination")
         // Pineline
-        const isPinelineSuccess = await dataPinelineAPI(confId)
+        const isPinelineSuccess = await dataPinelineAPI(job.conf_id)
         if(isPinelineSuccess) {
             await updateJobProgress(job._id, 90, "ETL data to CONFHUB successfully")
             return {
@@ -225,7 +225,7 @@ const crawlNewConferenceById = async (job) => {
 
     // Pineline
     await updateJobProgress(job._id, 80, "ETL data to destination")
-    const isPinelineSuccess = await dataPinelineAPI(confId)
+    const isPinelineSuccess = await dataPinelineAPI(job.conf_id)
     if(isPinelineSuccess) {
         await updateJobProgress(job._id, 90, "ETL data to destination successfully")
         return {
