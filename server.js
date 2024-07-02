@@ -18,7 +18,7 @@ const main = async () => {
    
 };  
 
-main();
+// main();
 
 const app = express()
 const port = process.env.PORT || 8081
@@ -57,6 +57,8 @@ const updateStatus = async(job) => {
         isCrawlSuccess = await crawlConferenceById(job)
     } else if(job.job_type == "import conference") {
         isCrawlSuccess = await crawlNewConferenceById(job)
+    } else {
+        isCrawlSuccess = await crawlConferenceById(job)
     }
     
     console.log(isCrawlSuccess.message)
@@ -71,7 +73,7 @@ const updateStatus = async(job) => {
         });
     }
     else {
-        return await jobModel.updateOne({ _id: fullDocument._id }, { 
+        return await jobModel.updateOne({ _id: job._id }, { 
             $set: { 
                 status: "failed",
                 error: isCrawlSuccess.message,
