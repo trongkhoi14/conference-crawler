@@ -49,7 +49,9 @@ const removeUnwantedKey = (content) => {
     let result = content
     const unwantedKey = [
         "Virtual Posters",
+        "virtual_posters",
         "hybrid games",
+        "hybrid approaches",
         "Virtual Research Environments",
         "Hybrid Intelligence",
         "Virtual Personal Assistants",
@@ -64,6 +66,7 @@ const removeUnwantedKey = (content) => {
         "virtualization technologies",
         "Hybrid Graphs",
         "Virtual Reality",
+        "virtual-reality",
         "cancel the integrated virtual component",
         "hybrid AI systems",
         "virtual elements",
@@ -80,7 +83,11 @@ const removeUnwantedKey = (content) => {
         "separate virtual volume",
         "Hybrid Approach for High-Performance Deep Learning",
         "Virtual Personal Assistants and Cognitive Experts",
-        "Virtual, Mixed and Augmented Reality"
+        "Virtual, Mixed and Augmented Reality",
+        "Remote Memory",
+        // Selector
+        `data-facet-badge="Remote"`,
+        `<span class="label-primary label">Remote</span>`
     ]
     for(key of unwantedKey) {
         while(result.toLowerCase().includes(key.toLowerCase())) {
@@ -95,10 +102,10 @@ const getType = async (browser, link) => {
         let page = await browser.newPage();
         await page.goto(link, { waitUntil: "domcontentloaded" });
         // Evaluate the body content
-        // let bodyContent = await page.evaluate(() => document.body.innerText.toLowerCase());
-        let bodyContent = await page.content()
+        let bodyContent = await page.evaluate(() => document.body.innerText.toLowerCase());
+        // let bodyContent = await page.content()
         bodyContent = removeUnwantedKey(bodyContent)
-        console.log(bodyContent)
+        // console.log(bodyContent)
         const containsKeyword = (content, keywords) => {
             for (const keyword of keywords) {
                 if (content.includes(keyword.toLowerCase())) {

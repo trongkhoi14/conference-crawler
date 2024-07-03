@@ -50,7 +50,7 @@ dbConnect().then(() => {
     console.error("Failed to connect to MongoDB", err);
   });
 
-const updateStatus = async(job) => {
+const updateStatus = async (job) => {
     const startTime = Date.now();
     let isCrawlSuccess;
     if(job.job_type == "update now") {
@@ -92,9 +92,9 @@ try {
 
     const changeStream = jobModel.watch([{ $match: { 'operationType': 'insert' } }]);
 
-    changeStream.on('change', (change) => {
+    changeStream.on('change', async (change) => {
         console.log('Server detected change:', change.fullDocument);
-        updateStatus(change.fullDocument);
+        await updateStatus(change.fullDocument);
     });
 
     console.log('Server is listening for changes...');

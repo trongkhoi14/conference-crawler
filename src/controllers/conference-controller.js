@@ -309,13 +309,13 @@ const crawlController = async (browserInstance) => {
         
         // await dataPineline("6639c509078f0b3454c91bf6")
 
-        // await saveEvaluationDataset(browser)
+        await saveEvaluationDataset(browser)
 
         // await savePageContent(browser)
 
         //-----------
         // Test bộ luật
-        await testTypeExtraction(browser)
+        // await testTypeExtraction(browser)
 
         
 
@@ -334,7 +334,7 @@ const testTypeExtraction = async (browser) => {
         let correct = 0;
         let isNull = 0;
 
-        for (let i =544; i < 545; i++) {
+        for (let i =500; i < 550; i++) {
             const expectedType = conferences[i].Type;
             console.log("---------------------------")
             console.log(">> " + i)
@@ -421,7 +421,7 @@ const saveEvaluationDataset = async (browser) => {
 
     const results = [];
 
-    for (let i=0; i<200; i++) {
+    for (let i=200; i<300; i++) {
         console.log(i)
         const conference = await Conference.findOne({ _id: conferenceIds[i] });
 
@@ -434,16 +434,16 @@ const saveEvaluationDataset = async (browser) => {
         ) continue;
 
         const links = await webScraperService.searchConferenceLinksByTitle(browser, conference, 4);
-        const selectedLink = conference.Links.length > 0 ? conference.Links[0] : ""; // Giả sử link máy chọn là selectedLink trong database
+        const selectedLink = conference.Links.length > 0 ? conference.Links[0] : ""; // Link máy chọn là selectedLink trong database
 
         let isTrue = ""
-        if (links[0].includes(selectedLink)) {
+        if (links[0].split("://")[1].includes(selectedLink.split("://")[1])) {
             isTrue = "link1"
-        } else if (links[1].includes(selectedLink)) {
+        } else if (links[1].split("://")[1].includes(selectedLink.split("://")[1])) {
             isTrue = "link2"
-        } else if (links[2].includes(selectedLink)) {
+        } else if (links[2].split("://")[1].includes(selectedLink.split("://")[1])) {
             isTrue = "link3"
-        } else if (links[3].includes(selectedLink)) {
+        } else if (links[3].split("://")[1].includes(selectedLink.split("://")[1])) {
             isTrue = "link4"
         }
 
@@ -461,8 +461,8 @@ const saveEvaluationDataset = async (browser) => {
         results.push(result);
     }
 
-    const csvOutput = stringify(results, { header: !fs.existsSync('EvaluationDataset.csv') });
-    fs.writeFileSync('EvaluationDataset.csv', csvOutput, { flag: 'a' });
+    const csvOutput = stringify(results, { header: !fs.existsSync('EvaluationDataset_ByAcronymAndYear.csv') });
+    fs.writeFileSync('EvaluationDataset_ByAcronymAndYear.csv', csvOutput, { flag: 'a' });
     console.log("Successfully")
 }
 
