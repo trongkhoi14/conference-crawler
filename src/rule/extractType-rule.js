@@ -102,7 +102,8 @@ const getType = async (browser, link) => {
         let page = await browser.newPage();
         await page.goto(link, { waitUntil: "domcontentloaded" });
         // Evaluate the body content
-        let bodyContent = await page.evaluate(() => document.body.innerText.toLowerCase());
+        // let bodyContent = await page.evaluate(() => document.body.innerText.toLowerCase());
+        let bodyContent = await page.evaluate(() => document.documentElement.innerText.toLowerCase());
         // let bodyContent = await page.content()
         bodyContent = removeUnwantedKey(bodyContent)
         // console.log(bodyContent)

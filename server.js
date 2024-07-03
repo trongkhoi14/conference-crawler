@@ -53,41 +53,49 @@ dbConnect().then(() => {
 const updateStatus = async (job) => {
     const startTime = Date.now();
     let isCrawlSuccess;
-    if(job.job_type == "update now") {
-        isCrawlSuccess = await crawlConferenceById(job)
-    } else if(job.job_type == "import conference") {
-        isCrawlSuccess = await crawlNewConferenceById(job)
+  
+    if (job.job_type == "update now") {
+      isCrawlSuccess = await crawlConferenceById(job);
+    } else if (job.job_type == "import conference") {
+      isCrawlSuccess = await crawlNewConferenceById(job);
     } else {
-        isCrawlSuccess = await crawlConferenceById(job)
+      isCrawlSuccess = await crawlConferenceById(job);
     }
-    
-    console.log(isCrawlSuccess.message)
+  
+    console.log(isCrawlSuccess.message);
     const endTime = Date.now();
-    const duration = endTime - startTime; 
-    if(isCrawlSuccess.status) {
-        return await jobModel.updateOne({ _id: job._id }, { 
-            $set: { 
-                status: "completed",
-                duration: duration
-            } 
-        });
+    const duration = endTime - startTime;
+  
+    if (isCrawlSuccess.status) {
+      await jobModel.updateOne({ _id: job._id }, {
+        $set: {
+          status: "completed",
+          duration: duration
+        }
+      });
+    } else {
+      await jobModel.updateOne({ _id: job._id }, {
+        $set: {
+          status: "failed",
+          error: isCrawlSuccess.message,
+          duration: duration
+        }
+      });
     }
-    else {
-        return await jobModel.updateOne({ _id: job._id }, { 
-            $set: { 
-                status: "failed",
-                error: isCrawlSuccess.message,
-                duration: duration
-            } 
-        });
+  
+    // Kiểm tra xem còn công việc nào đang chờ không
+    const pendingJob = await jobModel.findOne({ status: "pending" });
+  
+    if (pendingJob) {
+      await updateStatus(pendingJob);
     }
-}
+  };
 
 const monitorChanges = async () => {
 try {
     await mongoose.connect(mongoUrl, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
+        useNewUrlParser: true,
+        useUnifiedTopology: true
     });
 
     const changeStream = jobModel.watch([{ $match: { 'operationType': 'insert' } }]);

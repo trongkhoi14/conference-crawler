@@ -309,13 +309,13 @@ const crawlController = async (browserInstance) => {
         
         // await dataPineline("6639c509078f0b3454c91bf6")
 
-        await saveEvaluationDataset(browser)
+        // await saveEvaluationDataset(browser)
 
         // await savePageContent(browser)
 
         //-----------
         // Test bộ luật
-        // await testTypeExtraction(browser)
+        await testTypeExtraction(browser)
 
         
 
@@ -334,7 +334,7 @@ const testTypeExtraction = async (browser) => {
         let correct = 0;
         let isNull = 0;
 
-        for (let i =500; i < 550; i++) {
+        for (let i =529; i < 530; i++) {
             const expectedType = conferences[i].Type;
             console.log("---------------------------")
             console.log(">> " + i)
@@ -421,7 +421,7 @@ const saveEvaluationDataset = async (browser) => {
 
     const results = [];
 
-    for (let i=200; i<300; i++) {
+    for (let i=500; i<700; i++) {
         console.log(i)
         const conference = await Conference.findOne({ _id: conferenceIds[i] });
 
@@ -461,8 +461,8 @@ const saveEvaluationDataset = async (browser) => {
         results.push(result);
     }
 
-    const csvOutput = stringify(results, { header: !fs.existsSync('EvaluationDataset_ByAcronymAndYear.csv') });
-    fs.writeFileSync('EvaluationDataset_ByAcronymAndYear.csv', csvOutput, { flag: 'a' });
+    const csvOutput = stringify(results, { header: !fs.existsSync('EvaluationDataset_ByTitleAndAcronymAndYear.csv') });
+    fs.writeFileSync('EvaluationDataset_ByTitleAndAcronymAndYear.csv', csvOutput, { flag: 'a' });
     console.log("Successfully")
 }
 
@@ -538,7 +538,13 @@ const filterInvalidConferences = async () => {
             // }
 
             conference.ConferenceDate.forEach(item => {
-                if (new Date((item.date)).getUTCMonth() == 6 && new Date((item.date)).getUTCFullYear() == 2024) {
+                if (new Date((item.date)).getUTCFullYear() == 2024
+                && (
+                    conference.Rank == "A*" ||
+                    conference.Rank == "A" ||
+                    conference.Rank == "B" ||
+                    conference.Rank == "C" 
+                )) {
                     hasInvalidKeyword = true;
                 }
             });
