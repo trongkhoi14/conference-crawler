@@ -1,39 +1,68 @@
 const type_offline = [
+    "physical meeting",
+    "physical conference",
+    "in-person presentation",
+    "no synchronous virtual",
+    "live conference",
     "remote presentations are not allowed",
+    "present their paper in person",
     "no hybrid mode",
-    "offline",
     "face-to-face",
     "onsite participants",
+    "In-Person Presenters",
     "in-person event only",
     "in person conference",
     "in-person conference",
+    "in-person event",
+    "presented in person",
     "present their work in person",
-    "attend in person"
+    "attend in person",
+    "Physically (on-site)",
+    "(physically) present",
+    "will be in-person",
+    "in-person meetings",
+    "In Person:",
+    "offline"
 ]
 
 const type_online = [
     "online only participation option",
+    "online presentations",
+    "Online Attendance",
     "Virtual Conference", 
+    "virtual conference",
     "Virtual Conference Venue", 
     "only participating remotely",
     "Virtual Participation",
     "Remote attendance",
     "remote presentation",
     "online participation",
+    "will be held online",
+    "take place online",
     "only remote",
-    "remote", 
-    "virtual", 
+    "remote option",
+    "fully ONLINE",
+    "Remotely (on-line)",
+    "Virtual Access",
+    ", Online (Virtual)",
+    "(online)"
+    // "remote", 
+    // "virtual", 
 
 ];
 
 const type_hybrid = [
+    "A hybrid event",
+    "online presentation is possible",
+    "in-person or virtually",
     "physical presence or virtual participation",
+    "in-person conference with virtual elements",
+    "remote presentation options",
     "allowed to present remotely",
-    // "Virtual Participation", 
-    // "remote", "virtual", 
-    // "Face-to-Face Participation",
-    // "attend remotely",
+    "a virtual and a physical meeting",
     "Online & In-person participation", 
+    "Remote Presentation Option",
+    "in-person and online",
     "hybrid support", 
     "online and face-to-face", 
     "online participation options",
@@ -42,12 +71,38 @@ const type_hybrid = [
     "an option to present remotely",
     "Dual-Mode Conference",
     "option to attend remotely",
-    "hybrid"
+    "support for remote",
+    "support online participation",
+    "online attendance possible",
+    "possibility for remote presentation",
+    "hybrid mode",
+    "Hybrid Conference",
+    "(format: hybrid)",
+    "(Hybrid)",
+    "hybrid format",
+    "online and in-person",
+    "will be held hybrid",
+    "Remote Presentation Instructions",
+    "Virtual Conference Instructions",
+    "assistance for remote presentation",
+    "Remote presentations can be organized",
+    "WILL BY HYBRID THIS YEAR",
+    "or virtually",
+    "Besides online sessions, there will be pure on-site sessions",
+    "Hybrid participation information",
+    "Onsite and virtual participation available",
+    "hybrid onsite/online sessions",
+    "Japan and ONLINE",
+    "HYBRID EVENT",
+    "Hybrid @"
+    // "hybrid"
 ];
 
 const removeUnwantedKey = (content) => {
     let result = content
     const unwantedKey = [
+        "Hybrid-Dynamic Quantum Logic",
+        "hybrid conference rotation cycle",
         "Virtual Posters",
         "virtual_posters",
         "hybrid games",
@@ -73,7 +128,17 @@ const removeUnwantedKey = (content) => {
         "2022 - Virtual Conference",
         "2021 - Virtual Conference",
         "2020 - Virtual Conference",
+        "&nbsp;– virtual conference",
+        "– Virtual conference<br />",
+        "[**Virtual Conference Website**]",
+        "(2022, hybrid)",
         "innovative learning and teaching approach, which integrates the best of online and face-to-face experiences",
+        "Last years, iiWAS2020, iiWAS2021 and iiWAS2022 conferences were held as virtual conferences",
+        "Last years, MoMM2020, MoMM2021 and MoMM2022 conferences were held as virtual conferences",
+        "Due to the current pandemic, our plans may change and require a virtual conference",
+        "Remote presentations and pre-recorded videos are not allowed",
+        "online presentations will be accommodated only in exceptional cases",
+        "remote presentations are possible only as exceptional",
         "Real-time, hybrid, and cyber-physical systems",
         "remote presentations are not allowed",
         "virtual reality",
@@ -85,9 +150,29 @@ const removeUnwantedKey = (content) => {
         "Virtual Personal Assistants and Cognitive Experts",
         "Virtual, Mixed and Augmented Reality",
         "Remote Memory",
+        "remote presentations is not allowed",
+        "The conference is not able to entertain a hybrid option, a remote presentation",
+        "with the exception of workshops, which may be conducted either in-person or virtually",
+        "multi-theme hybrid conference which groups AMSTA-22, HCIS-22, IDT-22, InMed-22, SEEL-22 and STS-22 in one venue",
+        `<a href="vcc.php" class="astyle2">KES Virtual Conference Centre</a>`,
+        "virtual conference due to COVID-19",
+        "ICSIP 2020 | Virtual Conference",
+        "Virtual participation in the conference will no longer be supported",
+        "this has changed only for 2021 virtual conference",
+        "hybrid models",
+        "Policy regarding Remote Presentation",
+        "remote presentations or videos will not be accepted",
+        "Any allowance for remote presentation will be considered only after clear evidence that attendance is impossible",
+        "virtual conference platform</a>, or if you are in-person attendee in Guangzhou",
+        "Simulation Around the World (Hybrid)",
+        "virtual conference site",
         // Selector
         `data-facet-badge="Remote"`,
-        `<span class="label-primary label">Remote</span>`
+        `<span class="label-primary label">Remote</span>`,
+        `<!-- <a class="dropdown-item" href="/2024/virtual.php">
+            Remote attendance
+        </a>`,
+        
     ]
     for(key of unwantedKey) {
         while(result.toLowerCase().includes(key.toLowerCase())) {
@@ -103,13 +188,13 @@ const getType = async (browser, link) => {
         await page.goto(link, { waitUntil: "domcontentloaded" });
         // Evaluate the body content
         // let bodyContent = await page.evaluate(() => document.body.innerText.toLowerCase());
-        let bodyContent = await page.evaluate(() => document.documentElement.innerText.toLowerCase());
-        // let bodyContent = await page.content()
+        // let bodyContent = await page.evaluate(() => document.documentElement.innerText.toLowerCase());
+        let bodyContent = await page.content()
         bodyContent = removeUnwantedKey(bodyContent)
-        // console.log(bodyContent)
+        
         const containsKeyword = (content, keywords) => {
             for (const keyword of keywords) {
-                if (content.includes(keyword.toLowerCase())) {
+                if (content.toLowerCase().includes(keyword.toLowerCase())) {
                     console.log(`Found keyword: ${keyword}`);
                     return true;
                 }
@@ -135,6 +220,9 @@ const getType = async (browser, link) => {
         // Navigate to "Call for Contributions" or similar page and check again
         let callPageContent = await clickAndReload(page, "call");
         callPageContent = removeUnwantedKey(callPageContent)
+
+        // console.log(callPageContent)
+        
         if (containsKeyword(callPageContent, type_hybrid)) {
             isHybrid = true;
         }
@@ -173,15 +261,19 @@ const clickAndReload = async (page, text) => {
                 "Research Papers", 
                 "Research Track",
                 "Call for Contributions",
-                "CFP"
+                "page_id=145",
+                "CFP",
             ];
             
             const findLink = (texts) => {
                 for (const t of texts) {
                     const link = Array.from(document.querySelectorAll("a")).find(
                         (a) =>
-                            a.innerText.toLowerCase().includes(t.toLowerCase()) ||
-                            a.href.toLowerCase().includes(t.toLowerCase())
+                            a.href !== "https://aclrollingreview.org/cfp" &&
+                            (
+                            a.innerHTML.toLowerCase().includes(t.toLowerCase()) ||
+                            a.href.toLowerCase().includes(t.toLowerCase()) 
+                            )
                     );
                     if (link) return link;
                 }
@@ -201,16 +293,14 @@ const clickAndReload = async (page, text) => {
                 );
             }
 
-            if (link) link.click();
+            if (link) {
+                link.click();
+            }
         }, text);
 
         await page.waitForNavigation({ waitUntil: "domcontentloaded" });
 
-        let bodyContent = page.evaluate(() => {
-            return document.body.innerText;
-        }, );
-
-        return bodyContent;
+        return await page.content();
     } catch (error) {
         return "";
     }

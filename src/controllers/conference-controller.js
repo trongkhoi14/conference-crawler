@@ -257,6 +257,7 @@ const crawlNewConferenceById = async (job) => {
 
 const crawlController = async (browserInstance) => {
     try {
+        
         // Create browser
         let browser = await browserInstance;
 
@@ -307,7 +308,11 @@ const crawlController = async (browserInstance) => {
 
         // saveKeywordsToFile()
         
-        // await dataPineline("6639c509078f0b3454c91bf6")
+        // await dataPineline("6639c54f078f0b3454c91c38")
+        /*
+        6639cee1c521b3f2ad611493
+
+        */
 
         // await saveEvaluationDataset(browser)
 
@@ -316,6 +321,7 @@ const crawlController = async (browserInstance) => {
         //-----------
         // Test bộ luật
         await testTypeExtraction(browser)
+        // await getConferenceDates(browser, "https://mswimconf.com/2023/")
 
         
 
@@ -334,7 +340,7 @@ const testTypeExtraction = async (browser) => {
         let correct = 0;
         let isNull = 0;
 
-        for (let i =529; i < 530; i++) {
+        for (let i=400; i < 500; i++) {
             const expectedType = conferences[i].Type;
             console.log("---------------------------")
             console.log(">> " + i)

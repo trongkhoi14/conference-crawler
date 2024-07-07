@@ -1,0 +1,2124 @@
+---------------------------
+>> 400
+>> 6639c6bc4c771c093141cbb0
+True
+---------------------------
+>> 401
+>> 6639c6c04c771c093141cbb4
+True
+---------------------------
+>> 402
+>> 6639c6c44c771c093141cbb8
+Found keyword: Hybrid Conference
+Found keyword: Virtual Participation
+new ObjectId('6639c6c44c771c093141cbb8')
+hybrid
+---------------------------
+>> 403
+>> 6639c6f04c771c093141cbe0
+True
+---------------------------
+>> 404
+>> 6639c6f44c771c093141cbe4
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)    
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:157:20)
+---------------------------
+>> 405
+>> 6639c6fa4c771c093141cbea
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)    
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:157:20)
+---------------------------
+>> 406
+>> 6639c7084c771c093141cbf8
+Found keyword: in-person event
+True
+---------------------------
+>> 407
+>> 6639c7144c771c093141cc02
+True
+---------------------------
+>> 408
+>> 6639c7384c771c093141cc24
+True
+---------------------------
+>> 409
+>> 6639c73c4c771c093141cc28
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)    
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:157:20)
+---------------------------
+>> 410
+>> 6639c73e4c771c093141cc2a
+True
+---------------------------
+>> 411
+>> 6639cecac521b3f2ad61147d
+True
+---------------------------
+>> 412
+>> 6639ced2c521b3f2ad611485
+True
+---------------------------
+>> 413
+>> 6639ced6c521b3f2ad611489
+True
+---------------------------
+>> 414
+>> 6639cefdc521b3f2ad6114ab
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)    
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:157:20)
+---------------------------
+>> 415
+>> 6639cf71c521b3f2ad611515
+True
+---------------------------
+>> 416
+>> 6639cff42aa97d8b88806013
+True
+---------------------------
+>> 417
+>> 6639d0012aa97d8b8880601f
+Found keyword: allowed to present remotely
+True
+---------------------------
+>> 418
+>> 6639d00e2aa97d8b8880602b
+True
+---------------------------
+>> 419
+>> 6639d0102aa97d8b8880602d
+True
+---------------------------
+>> 420
+>> 6639d02f2aa97d8b8880604b
+Found keyword: physical presence or virtual participation
+Found keyword: Virtual Participation
+Found keyword: offline
+Found keyword: physical presence or virtual participation
+Found keyword: Virtual Participation
+Found keyword: offline
+True
+---------------------------
+>> 421
+>> 6639d03e2aa97d8b8880605b
+True
+---------------------------
+>> 422
+>> 6639d0312aa97d8b8880604d
+True
+---------------------------
+>> 423
+>> 6639d0382aa97d8b88806055
+True
+---------------------------
+>> 424
+>> 6639d06c2aa97d8b88806085
+Found keyword: Remote attendance
+new ObjectId('6639d06c2aa97d8b88806085')
+online
+---------------------------
+>> 425
+>> 6639d0882aa97d8b888060a1
+Found keyword: allowed to present remotely
+True
+---------------------------
+>> 426
+>> 6639d0ab2aa97d8b888060c3
+Found keyword: Hybrid Conference
+Found keyword: Virtual Conference
+True
+---------------------------
+>> 427
+>> 6639d0802aa97d8b88806099
+new ObjectId('6639d0802aa97d8b88806099')
+offline
+---------------------------
+>> 428
+>> 6639d0932aa97d8b888060ab
+True
+---------------------------
+>> 429
+>> 6639d0a12aa97d8b888060b9
+True
+---------------------------
+>> 430
+>> 6639d0b32aa97d8b888060c9
+True
+---------------------------
+>> 431
+>> 6639d0402aa97d8b8880605d
+True
+---------------------------
+>> 432
+>> 6639d04f2aa97d8b8880606b
+True
+---------------------------
+>> 433
+>> 6639d0512aa97d8b8880606d
+new ObjectId('6639d0512aa97d8b8880606d')
+offline
+---------------------------
+>> 434
+>> 6639d0542aa97d8b8880606f
+Found keyword: online participation
+Found keyword: taking place in
+Found keyword: in-person presentation
+new ObjectId('6639d0542aa97d8b8880606f')
+hybrid
+---------------------------
+>> 435
+>> 6639d05c2aa97d8b88806077
+True
+>> 6639d05c2aa97d8b88806077
+True
+True
+---------------------------
+>> 436
+>> 6639d0602aa97d8b8880607b
+True
+---------------------------
+>> 437
+>> 6639d0762aa97d8b8880608f
+True
+---------------------------
+>> 438
+>> 6639d07c2aa97d8b88806095
+True
+---------------------------
+>> 439
+>> 6639d0472aa97d8b88806063
+True
+---------------------------
+>> 440
+>> 6639d0482aa97d8b88806065
+True
+---------------------------
+>> 441
+>> 6639d04b2aa97d8b88806067
+Found keyword: allowed to present remotely
+True
+---------------------------
+>> 442
+>> 6639d0562aa97d8b88806071
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:157:20)
+---------------------------
+>> 443
+>> 6639d05e2aa97d8b88806079
+True
+---------------------------
+>> 444
+>> 6639d06e2aa97d8b88806087
+True
+---------------------------
+>> 445
+>> 6639d09b2aa97d8b888060b3
+Found keyword: allowed to present remotely
+True
+---------------------------
+>> 446
+>> 6639d0ad2aa97d8b888060c5
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:157:20)
+---------------------------
+>> 447
+>> 6639d03c2aa97d8b88806059
+Found keyword: taking place in
+new ObjectId('6639d03c2aa97d8b88806059')
+offline
+---------------------------
+>> 448
+>> 6639d0442aa97d8b88806061
+Found keyword: Hybrid @
+Found keyword: Hybrid Conference
+Found keyword: Remotely (on-line)
+Found keyword: Physically (on-site)
+True
+--------------------------- 
+>> 449
+>> 6639d03a2aa97d8b88806057
+Found keyword: or virtually
+Found keyword: in-person meetings
+Found keyword: in-person meetings
+new ObjectId('6639d03a2aa97d8b88806057')
+hybrid
+---------------------------
+>> 450
+>> 6639d04d2aa97d8b88806069
+True
+---------------------------
+>> 451
+>> 6639d05a2aa97d8b88806075
+Found keyword: in-person conference
+True
+---------------------------
+>> 452
+>> 6639d0722aa97d8b8880608b
+Found keyword: Hybrid Conference
+Found keyword: Virtual Conference
+True
+---------------------------
+>> 453
+>> 6639d08a2aa97d8b888060a3
+True
+---------------------------
+>> 454
+>> 6639d08d2aa97d8b888060a5
+True
+---------------------------
+>> 455
+>> 6639d0952aa97d8b888060ad
+Found keyword: allowed to present remotely
+True
+---------------------------
+>> 456
+>> 6639d0622aa97d8b8880607d
+True
+---------------------------
+>> 457
+>> 6639d07a2aa97d8b88806093
+Found keyword: Virtual Conference
+new ObjectId('6639d07a2aa97d8b88806093')
+online
+---------------------------
+>> 458
+>> 6639d0842aa97d8b8880609d
+Found keyword: allowed to present remotely
+True
+---------------------------
+>> 459
+>> 6639d0a32aa97d8b888060bb
+True
+---------------------------
+>> 460
+>> 6639d0652aa97d8b8880607f
+Found keyword: Virtual Conference
+new ObjectId('6639d0652aa97d8b8880607f')
+online
+---------------------------
+>> 461
+>> 6639d07e2aa97d8b88806097
+True
+---------------------------
+>> 462
+>> 6639d0862aa97d8b8880609f
+True
+---------------------------
+>> 463
+>> 6639d09f2aa97d8b888060b7
+True
+---------------------------
+>> 464
+>> 6639d0a52aa97d8b888060bd
+Found keyword: Hybrid Conference
+Found keyword: Virtual Participation
+Found keyword: (Hybrid)
+Found keyword: taking place in
+new ObjectId('6639d0a52aa97d8b888060bd')
+hybrid
+---------------------------
+>> 465
+>> 6639d0822aa97d8b8880609b
+True
+---------------------------
+>> 466
+>> 6639d0912aa97d8b888060a9
+True
+---------------------------
+>> 467
+>> 6639d0a72aa97d8b888060bf
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:157:20)
+---------------------------
+>> 468
+>> 6639d0b12aa97d8b888060c7
+Found keyword: A hybrid event
+True
+---------------------------
+>> 469
+>> 6639d0bb2aa97d8b888060d1
+Found keyword: physical presence or virtual participation
+Found keyword: Virtual Participation
+Found keyword: physical presence or virtual participation
+Found keyword: Virtual Participation
+True
+---------------------------
+>> 470
+>> 6639d0b72aa97d8b888060cd
+Found keyword: physical presence or virtual participation
+Found keyword: Virtual Participation
+Found keyword: physical presence or virtual participation
+Found keyword: Virtual Participation
+True
+---------------------------
+>> 471
+>> 6639d126387369a8970585f3
+True
+---------------------------
+>> 472
+>> 6639d162387369a89705862f
+True
+---------------------------
+>> 473
+>> 6639d166387369a897058633
+Found keyword: remote presentation
+Found keyword: presented in person
+new ObjectId('6639d166387369a897058633')
+hybrid
+---------------------------
+>> 474
+>> 6639d17c387369a897058645
+True
+---------------------------
+>> 475
+>> 6639d182387369a89705864b
+True
+---------------------------
+>> 476
+>> 6639d1aa387369a897058673
+Found keyword: allowed to present remotely
+True
+---------------------------
+>> 477
+>> 6639d39c8fb9939b82bceb51
+True
+---------------------------
+>> 478
+>> 6639d3a78fb9939b82bceb5b
+True
+---------------------------
+>> 479
+>> 6639d3b08fb9939b82bceb63
+Found keyword: offline
+new ObjectId('6639d3b08fb9939b82bceb63')
+offline
+---------------------------
+>> 480
+>> 6639d3bb8fb9939b82bceb6b
+True
+---------------------------
+>> 481
+>> 6639d3bf8fb9939b82bceb6f
+True
+---------------------------
+>> 482
+>> 6639d3c98fb9939b82bceb77
+True
+---------------------------
+>> 483
+>> 6639d3cd8fb9939b82bceb7b
+True
+---------------------------
+>> 484
+>> 6639d3e98fb9939b82bceb93
+True
+--------------------------- 
+>> 485eva
+>> 6639d4e04fd45eb8c2e67050
+new ObjectId('6639d4e04fd45eb8c2e67050')
+offline
+---------------------------
+>> 486
+>> 6639d4f94fd45eb8c2e67064
+True
+---------------------------
+>> 487
+>> 6639d5064fd45eb8c2e67070
+True
+---------------------------
+>> 488
+>> 6639d5234fd45eb8c2e67088
+True
+---------------------------
+>> 489
+>> 6639d53a4fd45eb8c2e6709a
+True
+---------------------------
+>> 490
+>> 6639d5414fd45eb8c2e670a0
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:157:20)
+---------------------------
+>> 491
+>> 6639d55d4fd45eb8c2e670b8
+Found keyword: Hybrid Conference
+Found keyword: Virtual Conference
+Found keyword: Virtual Conference
+new ObjectId('6639d55d4fd45eb8c2e670b8')
+hybrid
+---------------------------
+>> 492
+>> 6639d55f4fd45eb8c2e670ba
+Found keyword: in-person conference
+True
+---------------------------
+>> 493
+>> 6639d5644fd45eb8c2e670be
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:157:20)
+---------------------------
+>> 494
+>> 6639d5664fd45eb8c2e670c0
+Found keyword: online and in-person
+True
+---------------------------
+>> 495
+>> 6639d5784fd45eb8c2e670ce
+Found keyword: hybrid format
+Found keyword: take place online
+Found keyword: face-to-face
+True
+---------------------------
+>> 496
+>> 6639d59d4fd45eb8c2e670ee
+Found keyword: fully ONLINE
+True
+---------------------------
+>> 497
+>> 6639d5bd4fd45eb8c2e67100
+True
+---------------------------
+>> 498
+>> 6639d5cb4fd45eb8c2e6710c
+Found keyword: Virtual Conference
+True
+---------------------------
+>> 499
+>> 6639d6cbb9c725a1d3ed3dbb
+True
+Total extracted: 91
+Correct Accuracy: 84.62%
+Null: 9
+
+>> 531
+>> 6639d6f3b9c725a1d3ed3ddd
+True
+---------------------------
+>> 532
+>> 6639d707b9c725a1d3ed3df1
+Found keyword: (Hybrid)
+Found keyword: online only participation option
+new ObjectId('6639d707b9c725a1d3ed3df1')
+hybrid
+---------------------------
+>> 533
+>> 6639d725b9c725a1d3ed3e0d
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:167:20)
+---------------------------
+>> 534
+>> 6639d72db9c725a1d3ed3e15
+Found keyword: A hybrid event
+Found keyword: A hybrid event
+True
+---------------------------
+>> 535
+>> 6639d116387369a8970585e3
+True
+---------------------------
+>> 536
+>> 6639d119387369a8970585e5
+True
+---------------------------
+>> 537
+>> 6639d120387369a8970585ed
+Found keyword: physical conference
+Found keyword: in person conference
+True
+---------------------------
+>> 538
+>> 6639d128387369a8970585f5
+True
+---------------------------
+>> 539
+>> 6639d135387369a897058601
+True
+---------------------------
+>> 540
+>> 6639d155387369a897058623
+Found keyword: in-person conference
+True
+---------------------------
+>> 541
+>> 6639d164387369a897058631
+Found keyword: in-person event
+Found keyword: in-person event
+True
+---------------------------
+>> 542
+>> 6639d173387369a89705863d
+True
+---------------------------
+>> 543
+>> 6639d184387369a89705864d
+True
+---------------------------
+>> 544
+>> 6639d19c387369a897058665
+True
+---------------------------
+>> 545
+>> 6639d19e387369a897058667
+True
+---------------------------
+>> 546
+>> 6639d1a2387369a89705866b
+True
+---------------------------
+>> 547
+>> 6639d1a4387369a89705866d
+True
+---------------------------
+>> 548
+>> 6639d1b5387369a89705867d
+True
+---------------------------
+>> 549
+>> 6639d1bf387369a897058687
+True
+---------------------------
+>> 550
+>> 6639d1c0387369a897058689
+True
+---------------------------
+>> 551
+>> 6639d1c8387369a897058691
+True
+---------------------------
+>> 552
+>> 6639d3408fb9939b82bceb03
+Found keyword: allowed to present remotely
+True
+---------------------------
+>> 553
+>> 6639d3428fb9939b82bceb05
+Found keyword: Virtual Conference
+Found keyword: in person conference
+new ObjectId('6639d3428fb9939b82bceb05')
+hybrid
+---------------------------
+>> 554
+>> 6639d3508fb9939b82bceb11
+Found keyword: allowed to present remotely
+True
+---------------------------
+>> 555
+>> 6639d38b8fb9939b82bceb41
+Found keyword: presented in person
+Found keyword: in-person event
+True
+---------------------------
+>> 556
+>> 6639d39a8fb9939b82bceb4f
+True
+---------------------------
+>> 557
+>> 6639d3a58fb9939b82bceb59
+new ObjectId('6639d3a58fb9939b82bceb59')
+offline
+---------------------------
+>> 558
+>> 6639d3b68fb9939b82bceb67
+True
+---------------------------
+>> 559
+>> 6639d3f78fb9939b82bceb9f
+True
+---------------------------
+>> 560
+>> 6639d4008fb9939b82bceba7
+True
+---------------------------
+>> 561
+>> 6639d4048fb9939b82bcebab
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:167:20)
+---------------------------
+>> 562
+>> 6639d4078fb9939b82bcebad
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:167:20)
+---------------------------
+>> 563
+>> 6639d4d74fd45eb8c2e6704a
+Found keyword: online presentations
+Found keyword: will be in-person
+new ObjectId('6639d4d74fd45eb8c2e6704a')
+hybrid
+---------------------------
+>> 564
+>> 6639d50e4fd45eb8c2e67076
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:167:20)
+---------------------------
+>> 565
+>> 6639d5104fd45eb8c2e67078
+Found keyword: offline
+True
+---------------------------
+>> 566
+>> 6639d5324fd45eb8c2e67094
+True
+---------------------------
+>> 567
+>> 6639d5764fd45eb8c2e670cc
+True
+---------------------------
+>> 568
+>> 6639d5944fd45eb8c2e670e6
+Found keyword: Remote attendance
+Found keyword: in-person conference
+True
+---------------------------
+>> 569
+>> 6639d5c14fd45eb8c2e67104
+True
+---------------------------
+>> 570
+>> 6639d6c3b9c725a1d3ed3db3
+True
+---------------------------
+>> 571
+>> 6639d6e9b9c725a1d3ed3dd5
+Found keyword: Remote attendance
+Found keyword: Remote attendance
+new ObjectId('6639d6e9b9c725a1d3ed3dd5')
+online
+---------------------------
+>> 572
+>> 6639d701b9c725a1d3ed3deb
+True
+---------------------------
+>> 573
+>> 6639d713b9c725a1d3ed3dfd
+True
+---------------------------
+>> 574
+>> 6639d11c387369a8970585e9
+True
+---------------------------
+>> 575
+>> 6639d0bd2aa97d8b888060d3
+Found keyword: allowed to present remotely
+True
+---------------------------
+>> 576
+>> 6639d11e387369a8970585eb
+True
+---------------------------
+>> 577
+>> 6639d146387369a897058613
+new ObjectId('6639d146387369a897058613')
+offline
+---------------------------
+>> 578
+>> 6639d180387369a897058649
+True
+---------------------------
+>> 579
+>> 6639d186387369a89705864f
+True
+---------------------------
+>> 580
+>> 6639d198387369a897058661
+True
+---------------------------
+>> 581
+>> 6639d19a387369a897058663
+True
+---------------------------
+>> 582
+>> 6639d1b7387369a89705867f
+new ObjectId('6639d1b7387369a89705867f')
+offline
+---------------------------
+>> 583
+>> 6639d1bd387369a897058685
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:167:20)
+---------------------------
+>> 584
+>> 6639d1ca387369a897058693
+True
+---------------------------
+>> 585
+>> 6639d1cf387369a897058697
+True
+---------------------------
+>> 586
+>> 6639d1d2387369a897058699
+True
+---------------------------
+>> 587
+>> 6639d1d3387369a89705869b
+True
+---------------------------
+>> 588
+>> 6639d3218fb9939b82bceae9
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:167:20)
+---------------------------
+>> 589
+>> 6639d3248fb9939b82bceaeb
+True
+---------------------------
+>> 590
+>> 6639d32d8fb9939b82bceaf3
+True
+---------------------------
+>> 591
+>> 6639d3358fb9939b82bceaf9
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:167:20)
+---------------------------
+>> 592
+>> 6639d3448fb9939b82bceb07
+new ObjectId('6639d3448fb9939b82bceb07')
+offline
+---------------------------
+>> 593
+>> 6639d34e8fb9939b82bceb0f
+True
+---------------------------
+>> 594
+>> 6639d3528fb9939b82bceb13
+True
+---------------------------
+>> 595
+>> 6639d3678fb9939b82bceb25
+True
+---------------------------
+>> 596
+>> 6639d3878fb9939b82bceb3d
+Found keyword: Hybrid Conference
+Found keyword: Virtual Conference
+Found keyword: Virtual Conference
+new ObjectId('6639d3878fb9939b82bceb3d')
+hybrid
+---------------------------
+>> 597
+>> 6639d3ae8fb9939b82bceb61
+Found keyword: remote presentation
+Found keyword: present their work in person
+new ObjectId('6639d3ae8fb9939b82bceb61')
+hybrid
+---------------------------
+>> 598
+>> 6639d3b98fb9939b82bceb69
+True
+---------------------------
+>> 599
+>> 6639d3d48fb9939b82bceb81
+True
+---------------------------
+>> 600
+>> 6639d3d98fb9939b82bceb85
+True
+---------------------------
+>> 601
+>> 6639d3de8fb9939b82bceb89
+True
+---------------------------
+>> 602
+>> 6639d3e18fb9939b82bceb8b
+True
+--------------------------- here -- done 603 rồi
+>> 603
+>> 6639d3e78fb9939b82bceb91
+Found keyword: in-person presentation
+new ObjectId('6639d3e78fb9939b82bceb91')
+offline
+---------------------------
+>> 604
+>> 6639d3eb8fb9939b82bceb95
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:167:20)
+---------------------------
+>> 605
+>> 6639d4da4fd45eb8c2e6704c
+True
+---------------------------
+>> 606
+>> 6639d4e74fd45eb8c2e67056
+Found keyword: remote presentation
+Found keyword: present their paper in person
+new ObjectId('6639d4e74fd45eb8c2e67056')
+hybrid
+---------------------------
+>> 607
+>> 6639d5084fd45eb8c2e67072
+True
+---------------------------
+>> 608
+>> 6639d52d4fd45eb8c2e67090
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:167:20)
+---------------------------
+>> 609
+>> 6639d5304fd45eb8c2e67092
+Found keyword: in-person event
+True
+---------------------------
+>> 610
+>> 6639d5474fd45eb8c2e670a6
+True
+---------------------------
+>> 611
+>> 6639d5544fd45eb8c2e670b0
+True
+---------------------------
+>> 612
+>> 6639d5594fd45eb8c2e670b4
+True
+---------------------------
+>> 613
+>> 6639d56b4fd45eb8c2e670c4
+True
+---------------------------
+>> 614
+>> 6639d57f4fd45eb8c2e670d4
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:167:20)
+---------------------------
+>> 615
+>> 6639d5ba4fd45eb8c2e670fe
+Found keyword: Hybrid Conference
+new ObjectId('6639d5ba4fd45eb8c2e670fe')
+hybrid
+---------------------------
+>> 616
+>> 6639d69bb9c725a1d3ed3d8b
+True
+---------------------------
+>> 617
+>> 6639d6a9b9c725a1d3ed3d99
+Found keyword: hybrid mode
+Found keyword: no hybrid mode
+Found keyword: hybrid mode
+Found keyword: no hybrid mode
+new ObjectId('6639d6a9b9c725a1d3ed3d99')
+hybrid
+---------------------------
+>> 618
+>> 6639d6bfb9c725a1d3ed3daf
+Found keyword: face-to-face
+True
+---------------------------
+>> 619
+>> 6639d6e5b9c725a1d3ed3dd1
+True
+---------------------------
+>> 620
+>> 6639d6ebb9c725a1d3ed3dd7
+True
+---------------------------
+>> 621
+>> 6639d6f9b9c725a1d3ed3de3
+True
+---------------------------
+>> 622
+>> 6639d705b9c725a1d3ed3def
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:167:20)
+---------------------------
+>> 623
+>> 6639d711b9c725a1d3ed3dfb
+True
+---------------------------
+>> 624
+>> 6639d718b9c725a1d3ed3e01
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:167:20)
+---------------------------
+>> 625
+>> 6639d71ab9c725a1d3ed3e03
+True
+---------------------------
+>> 626
+>> 6639d0b52aa97d8b888060cb
+Found keyword: Hybrid Conference
+Found keyword: Remote attendance
+True
+---------------------------
+>> 627
+>> 6639d0c22aa97d8b888060d7
+Found keyword: in-person conference
+Found keyword: offline
+True
+---------------------------
+>> 628
+>> 6639d12f387369a8970585fb
+True
+---------------------------
+>> 629
+>> 6639d13b387369a897058607
+True
+---------------------------
+>> 630
+>> 6639d13d387369a897058609
+True
+---------------------------
+>> 631
+>> 6639d141387369a89705860d
+Found keyword: allowed to present remotely
+True
+---------------------------
+>> 632
+>> 6639d142387369a89705860f
+True
+---------------------------
+>> 633
+>> 6639d14a387369a897058617
+True
+---------------------------
+>> 634
+>> 6639d152387369a89705861f
+Found keyword: Virtual Conference
+new ObjectId('6639d152387369a89705861f')
+online
+---------------------------
+>> 635
+>> 6639d15a387369a897058627
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:167:20)
+---------------------------
+>> 636
+>> 6639d194387369a89705865d
+True
+---------------------------
+>> 637
+>> 6639d1ae387369a897058677
+Found keyword: in-person presentation
+True
+---------------------------
+>> 638
+>> 6639d1b1387369a897058679
+Found keyword: will be in-person
+True
+---------------------------
+>> 639
+>> 6639d1f5387369a89705869f
+True
+---------------------------
+>> 640
+>> 6639d34c8fb9939b82bceb0d
+Found keyword: Virtual Conference
+Found keyword: in-person event
+True
+---------------------------
+>> 641
+>> 6639d3708fb9939b82bceb2d
+Found keyword: in-person conference
+True
+---------------------------
+>> 642
+>> 6639d3778fb9939b82bceb33
+Found keyword: allowed to present remotely
+True
+---------------------------
+>> 643
+>> 6639d38d8fb9939b82bceb43
+True
+---------------------------
+>> 644
+>> 6639d3ac8fb9939b82bceb5f
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:167:20)
+---------------------------
+>> 645
+>> 6639d4028fb9939b82bceba9
+True
+---------------------------
+>> 646
+>> 6639d5024fd45eb8c2e6706c
+True
+---------------------------
+>> 647
+>> 6639d5194fd45eb8c2e67080
+True
+---------------------------
+>> 648
+>> 6639d5374fd45eb8c2e67098
+Found keyword: attend in person
+True
+---------------------------
+>> 649
+>> 6639d5524fd45eb8c2e670ae
+True
+---------------------------
+>> 650
+>> 6639d5834fd45eb8c2e670d8
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:167:20)
+---------------------------
+>> 651
+>> 6639d5ad4fd45eb8c2e670f8
+Found keyword: hybrid mode
+Found keyword: remote presentation
+Found keyword: offline
+True
+---------------------------
+>> 652
+>> 6639d684b9c725a1d3ed3d77
+True
+---------------------------
+>> 653
+>> 6639d686b9c725a1d3ed3d79
+True
+---------------------------
+>> 654
+>> 6639d691b9c725a1d3ed3d83
+True
+---------------------------
+>> 655
+>> 6639d6b0b9c725a1d3ed3d9f
+Found keyword: in-person conference
+Found keyword: in-person conference
+True
+---------------------------
+>> 656
+>> 6639d6b9b9c725a1d3ed3da9
+True
+---------------------------
+>> 657
+>> 6639d6f7b9c725a1d3ed3de1
+Found keyword: remote presentation
+new ObjectId('6639d6f7b9c725a1d3ed3de1')
+online
+---------------------------
+>> 658
+>> 6639d70fb9c725a1d3ed3df9
+True
+---------------------------
+>> 659
+>> 6639d715b9c725a1d3ed3dff
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:167:20)
+---------------------------
+>> 660
+>> 6639d727b9c725a1d3ed3e0f
+Found keyword: hybrid mode
+Found keyword: offline
+new ObjectId('6639d727b9c725a1d3ed3e0f')
+hybrid
+---------------------------
+>> 661
+>> 6639d72bb9c725a1d3ed3e13
+True
+---------------------------
+>> 662
+>> 6639d730b9c725a1d3ed3e19
+Found keyword: Remote Presentation Instructions
+Found keyword: remote presentation
+Found keyword: Remote Presentation Instructions
+Found keyword: remote presentation
+new ObjectId('6639d730b9c725a1d3ed3e19')
+hybrid
+---------------------------
+>> 663
+>> 6639d737b9c725a1d3ed3e1f
+True
+---------------------------
+>> 664
+>> 6639d0b92aa97d8b888060cf
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:167:20)
+---------------------------
+>> 665
+>> 6639d111387369a8970585dd
+True
+---------------------------
+>> 666
+>> 6639d14e387369a89705861b
+True
+---------------------------
+>> 667
+>> 6639d177387369a897058641
+True
+---------------------------
+>> 668
+>> 6639d1a9387369a897058671
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:167:20)
+---------------------------
+>> 669
+>> 6639d1b3387369a89705867b
+Found keyword: physical presence or virtual participation
+Found keyword: Virtual Participation
+Found keyword: physical presence or virtual participation
+Found keyword: Virtual Participation
+True
+---------------------------
+>> 670
+>> 6639d1b9387369a897058681
+Found keyword: Virtual Conference Instructions
+Found keyword: Virtual Conference
+new ObjectId('6639d1b9387369a897058681')
+hybrid
+---------------------------
+>> 671
+>> 6639d33e8fb9939b82bceb01
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:167:20)
+---------------------------
+>> 672
+>> 6639d35c8fb9939b82bceb1b
+True
+---------------------------
+>> 673
+>> 6639d3698fb9939b82bceb27
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:167:20)
+---------------------------
+>> 674
+>> 6639d37c8fb9939b82bceb37
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:167:20)
+---------------------------
+>> 675
+>> 6639d3b38fb9939b82bceb65
+True
+---------------------------
+>> 676
+>> 6639d3c48fb9939b82bceb73
+True
+---------------------------
+>> 677
+>> 6639d3d18fb9939b82bceb7f
+Found keyword: in-person conference
+True
+---------------------------
+>> 678
+>> 6639d3f08fb9939b82bceb99
+True
+---------------------------
+>> 679
+>> 6639d5214fd45eb8c2e67086
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:167:20)
+---------------------------
+>> 680
+>> 6639d5354fd45eb8c2e67096
+Found keyword: (Hybrid)
+Found keyword: Virtual Participation
+new ObjectId('6639d5354fd45eb8c2e67096')
+hybrid
+---------------------------
+>> 681
+>> 6639d5434fd45eb8c2e670a2
+True
+---------------------------
+>> 682
+>> 6639d54a4fd45eb8c2e670a8
+True
+---------------------------
+>> 683
+>> 6639d5564fd45eb8c2e670b2
+True
+---------------------------
+>> 684
+>> 6639d56e4fd45eb8c2e670c6
+True
+---------------------------
+>> 685
+>> 6639d5984fd45eb8c2e670ea
+True
+---------------------------
+>> 686
+>> 6639d5c44fd45eb8c2e67106
+Found keyword: Hybrid Conference
+Found keyword: Virtual Access
+True
+---------------------------
+>> 687
+>> 6639d5c74fd45eb8c2e67108
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:167:20)
+---------------------------
+>> 688
+>> 6639d5ce4fd45eb8c2e6710e
+True
+---------------------------
+>> 689
+>> 6639d68fb9c725a1d3ed3d81
+True
+---------------------------
+>> 690
+>> 6639d6a3b9c725a1d3ed3d93
+True
+---------------------------
+>> 691
+>> 6639d6a5b9c725a1d3ed3d95
+True
+---------------------------
+>> 692
+>> 6639d6b4b9c725a1d3ed3da3
+True
+---------------------------
+>> 693
+>> 6639d6b5b9c725a1d3ed3da5
+True
+---------------------------
+>> 694
+>> 6639d6b7b9c725a1d3ed3da7
+True
+---------------------------
+>> 695
+>> 6639d6bbb9c725a1d3ed3dab
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:167:20)
+---------------------------
+>> 696
+>> 6639d6c5b9c725a1d3ed3db5
+Found keyword: Hybrid Conference
+Found keyword: Virtual Conference
+Found keyword: in-person conference
+True
+---------------------------
+>> 697
+>> 6639d6c9b9c725a1d3ed3db9
+True
+---------------------------
+>> 698
+>> 6639d6cfb9c725a1d3ed3dbf
+True
+---------------------------
+>> 699
+>> 6639d6e1b9c725a1d3ed3dcf
+True
+Total extracted: 174
+Correct Accuracy: 88.51%
+Null: 26
+
+---------------------------
+>> 700
+>> 6639d6f1b9c725a1d3ed3ddb
+True
+---------------------------
+>> 701
+>> 6639d6f5b9c725a1d3ed3ddf
+True
+---------------------------
+>> 702
+>> 6639d70cb9c725a1d3ed3df7
+True
+---------------------------
+>> 703
+>> 6639d721b9c725a1d3ed3e09
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:171:20)
+---------------------------
+>> 704
+>> 6639d729b9c725a1d3ed3e11
+True
+---------------------------
+>> 705
+>> 6639d10e387369a8970585db
+Found keyword: allowed to present remotely
+True
+---------------------------
+>> 706
+>> 6639d112387369a8970585df
+True
+---------------------------
+>> 707
+>> 6639d11a387369a8970585e7
+Found keyword: (Hybrid)
+Found keyword: (online)
+Found keyword: (Hybrid)
+Found keyword: (online)
+new ObjectId('6639d11a387369a8970585e7')
+hybrid
+---------------------------
+>> 708
+>> 6639d133387369a8970585ff
+Found keyword: Virtual Conference
+new ObjectId('6639d133387369a8970585ff')
+online
+---------------------------
+>> 709
+>> 6639d154387369a897058621
+True
+---------------------------
+>> 710
+>> 6639d158387369a897058625
+Found keyword: allowed to present remotely
+new ObjectId('6639d158387369a897058625')
+hybrid
+---------------------------
+>> 711
+>> 6639d18b387369a897058655
+True
+---------------------------
+>> 712
+>> 6639d1a6387369a89705866f
+True
+---------------------------
+>> 713
+>> 6639d3328fb9939b82bceaf7
+True
+---------------------------
+>> 714
+>> 6639d3658fb9939b82bceb23
+Found keyword: in-person conference
+True
+---------------------------
+>> 715
+>> 6639d36e8fb9939b82bceb2b
+True
+---------------------------
+>> 716
+>> 6639d3748fb9939b82bceb31
+Found keyword: in-person conference
+True
+---------------------------
+>> 717
+>> 6639d3798fb9939b82bceb35
+Found keyword: allowed to present remotely
+True
+---------------------------
+>> 718
+>> 6639d3aa8fb9939b82bceb5d
+True
+---------------------------
+>> 719
+>> 6639d3cb8fb9939b82bceb79
+True
+---------------------------
+>> 720
+>> 6639d3cf8fb9939b82bceb7d
+Found keyword: Hybrid Conference
+Found keyword: Virtual Conference
+True
+---------------------------
+>> 721
+>> 6639d3ed8fb9939b82bceb97
+True
+---------------------------
+>> 722
+>> 6639d3f48fb9939b82bceb9d
+Error in getType:  Error: net::ERR_CONNECTION_REFUSED at https://isrr2024.su.domains/
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:175:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Deferred.race (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\Deferred.js:83:20)
+    at async CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:141:25)
+    at async CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:20)
+    at async getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:171:9)
+    at async testTypeExtraction (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\controllers\conference-controller.js:348:35)
+    at async crawlController (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\controllers\conference-controller.js:323:9)
+    at async main (C:\Users\PC\Workspace\HCMUS\conference-crawler\server.js:17:5)
+---------------------------
+>> 723
+>> 6639d3fa8fb9939b82bceba1
+True
+---------------------------
+>> 724
+>> 6639d3fe8fb9939b82bceba5
+True
+---------------------------
+>> 725
+>> 6639d4e24fd45eb8c2e67052
+True
+---------------------------
+>> 726
+>> 6639d4e54fd45eb8c2e67054
+True
+---------------------------
+>> 727
+>> 6639d5044fd45eb8c2e6706e
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:171:20)
+---------------------------
+>> 728
+>> 6639d5144fd45eb8c2e6707c
+Found keyword: Hybrid Conference
+new ObjectId('6639d5144fd45eb8c2e6707c')
+hybrid
+---------------------------
+>> 729
+>> 6639d5174fd45eb8c2e6707e
+True
+---------------------------
+>> 730
+>> 6639d51e4fd45eb8c2e67084
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:171:20)
+---------------------------
+>> 731
+>> 6639d5254fd45eb8c2e6708a
+True
+---------------------------
+>> 732
+>> 6639d54f4fd45eb8c2e670ac
+True
+---------------------------
+>> 733
+>> 6639d57d4fd45eb8c2e670d2
+True
+---------------------------
+>> 734
+>> 6639d5854fd45eb8c2e670da
+True
+---------------------------
+>> 735
+>> 6639d68ab9c725a1d3ed3d7d
+True
+---------------------------
+>> 736
+>> 6639d68db9c725a1d3ed3d7f
+Found keyword: A hybrid event
+True
+---------------------------
+>> 737
+>> 6639d694b9c725a1d3ed3d85
+True
+---------------------------
+>> 738
+>> 6639d6b1b9c725a1d3ed3da1
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:171:20)
+---------------------------
+>> 739
+>> 6639d6ddb9c725a1d3ed3dcb
+Found keyword: Virtual Conference
+Found keyword: in-person event
+new ObjectId('6639d6ddb9c725a1d3ed3dcb')
+hybrid
+---------------------------
+>> 740
+>> 6639d708b9c725a1d3ed3df3
+Found keyword: Virtual Conference
+Found keyword: Virtual Conference
+True
+---------------------------
+>> 741
+>> 6639d70ab9c725a1d3ed3df5
+True
+---------------------------
+>> 742
+>> 6639d71cb9c725a1d3ed3e05
+True
+---------------------------
+>> 743
+>> 6639d114387369a8970585e1
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:171:20)
+---------------------------
+>> 744
+>> 6639d122387369a8970585ef
+Found keyword: in-person presentation
+True
+---------------------------
+>> 745
+>> 6639d12c387369a8970585f9
+Found keyword: in-person conference
+True
+---------------------------
+>> 746
+>> 6639d13e387369a89705860b
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:171:20)
+---------------------------
+>> 747
+>> 6639d15c387369a897058629
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:171:20)
+---------------------------
+>> 748
+>> 6639d15e387369a89705862b
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:171:20)
+---------------------------
+>> 749
+>> 6639d16b387369a897058637
+Found keyword: hybrid mode
+True
+---------------------------
+>> 750
+>> 6639d176387369a89705863f
+Found keyword: physical meeting
+Found keyword: physical meeting
+True
+---------------------------
+>> 751
+>> 6639d18f387369a897058659
+True
+---------------------------
+>> 752
+>> 6639d192387369a89705865b
+True
+---------------------------
+>> 753
+>> 6639d1ac387369a897058675
+Found keyword: A hybrid event
+Found keyword: A hybrid event
+True
+---------------------------
+>> 754
+>> 6639d1cd387369a897058695
+True
+---------------------------
+>> 755
+>> 6639d3268fb9939b82bceaed
+Found keyword: Remote attendance
+Found keyword: Remote attendance
+new ObjectId('6639d3268fb9939b82bceaed')
+online
+---------------------------
+>> 756
+>> 6639d32b8fb9939b82bceaf1
+Found keyword: Virtual Participation
+Found keyword: in-person conference
+new ObjectId('6639d32b8fb9939b82bceaf1')
+hybrid
+---------------------------
+>> 757
+>> 6639d3378fb9939b82bceafb
+True
+---------------------------
+>> 758
+>> 6639d3618fb9939b82bceb1f
+True
+---------------------------
+>> 759
+>> 6639d3808fb9939b82bceb39
+Found keyword: (Hybrid)
+True
+---------------------------
+>> 760
+>> 6639d3838fb9939b82bceb3b
+True
+---------------------------
+>> 761
+>> 6639d3908fb9939b82bceb45
+True
+---------------------------
+>> 762
+>> 6639d3988fb9939b82bceb4d
+True
+---------------------------
+>> 763
+>> 6639d5284fd45eb8c2e6708c
+True
+---------------------------
+>> 764
+>> 6639d5454fd45eb8c2e670a4
+Found keyword: Hybrid Conference
+Found keyword: Virtual Conference
+Found keyword: Hybrid Conference
+Found keyword: Virtual Conference
+new ObjectId('6639d5454fd45eb8c2e670a4')
+hybrid
+---------------------------
+>> 765
+>> 6639d54c4fd45eb8c2e670aa
+Found keyword: remote presentation
+Found keyword: in-person conference
+Found keyword: online presentations
+Found keyword: offline
+new ObjectId('6639d54c4fd45eb8c2e670aa')
+hybrid
+---------------------------
+>> 766
+>> 6639d5874fd45eb8c2e670dc
+True
+---------------------------
+>> 767
+>> 6639d59a4fd45eb8c2e670ec
+True
+---------------------------
+>> 768
+>> 6639d5a74fd45eb8c2e670f4
+Found keyword: Hybrid Conference
+new ObjectId('6639d5a74fd45eb8c2e670f4')
+hybrid
+---------------------------
+>> 769
+>> 6639d5aa4fd45eb8c2e670f6
+Found keyword: present their work in person
+True
+---------------------------
+>> 770
+>> 6639d5b54fd45eb8c2e670fc
+True
+---------------------------
+>> 771
+>> 6639d5c94fd45eb8c2e6710a
+True
+---------------------------
+>> 772
+>> 6639d6a1b9c725a1d3ed3d91
+True
+---------------------------
+>> 773
+>> 6639d6cdb9c725a1d3ed3dbd
+True
+---------------------------
+>> 774
+>> 6639d6fdb9c725a1d3ed3de7
+True
+---------------------------
+>> 775
+>> 6639d6ffb9c725a1d3ed3de9
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:171:20)
+---------------------------
+>> 776
+>> 6639d723b9c725a1d3ed3e0b
+True
+---------------------------
+>> 777
+>> 6639d735b9c725a1d3ed3e1d
+new ObjectId('6639d735b9c725a1d3ed3e1d')
+offline
+---------------------------
+>> 778
+>> 6672bb262826b7fba0fc0953
+True
+---------------------------
+>> 779
+>> 6672bc0c2826b7fba0fc0963
+True
+---------------------------
+>> 780
+>> 6672bc0e2826b7fba0fc096b
+True
+---------------------------
+>> 781
+>> 6672bc0f2826b7fba0fc096f
+Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
+    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
+    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
+    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
+    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
+    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
+    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
+    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
+    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
+    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:171:20)
+---------------------------
+>> 782
+>> 6672bc102826b7fba0fc0973
+True
+---------------------------
+>> 783
+>> 667f512a472900daadd30e20
+True
+---------------------------
+>> 784
+>> 66800a7465020b576fb7c66c
+True
+---------------------------
+>> 785
+>> 66800a7865020b576fb7c673
+True
+---------------------------
+>> 786
+>> 66800a7b65020b576fb7c67a
+True
+---------------------------
+>> 787
+>> 66800a7f65020b576fb7c681
+Found keyword: allowed to present remotely
+True
+---------------------------
+>> 788
+>> 66850557fb1e8f2f9e6445e1
+True
+---------------------------
+>> 789
+>> 6685055cfb1e8f2f9e6445ea
+Found keyword: in-person conference
+Found keyword: in-person conference
+True
+---------------------------
+>> 790
+>> 66850560fb1e8f2f9e6445f2
+True
+---------------------------
+>> 791
+>> 66850564fb1e8f2f9e6445fb
+True
+---------------------------
+>> 792
+>> 6685bb48fb1e8f2f9e64484d
+True
+---------------------------

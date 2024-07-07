@@ -18,7 +18,7 @@ const main = async () => {
    
 };  
 
-// main();
+main();
 
 const app = express()
 const port = process.env.PORT || 8081
@@ -41,6 +41,9 @@ const jobModel = require('./src/models/job-model')
 const { default:mongoose} = require('mongoose')
 
 const mongoUrl = "mongodb+srv://14042002a:luongkhoi123@cluster0.xro9zib.mongodb.net/conference-searching?retryWrites=true&w=majority";
+
+const jobQueue = [];
+let isProcessing = false;
 
 dbConnect().then(() => {
     console.log("Connected to MongoDB");

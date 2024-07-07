@@ -14,6 +14,7 @@ const getConferenceDates = async (browser, link) => {
 
         let page = await browser.newPage();
         await page.goto(link, { waitUntil: "domcontentloaded" });
+        await page.waitForSelector("frame")
         
         let imageLinks = await page.evaluate(() => {
             const images = Array.from(document.querySelectorAll("img"));
