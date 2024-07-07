@@ -86,32 +86,39 @@ const updateStatus = async (job) => {
       });
     }
   
-    // Kiểm tra xem còn công việc nào đang chờ không
-    const pendingJob = await jobModel.findOne({ status: "pending" });
-  
-    if (pendingJob) {
-      await updateStatus(pendingJob);
-    }
+    isProcessing = false;
+    processQueue();
   };
 
+const processQueue = async () => {
+    if (jobQueue.length === 0 || isProcessing) {
+        return;
+    }
+
+    isProcessing = true;
+    const job = jobQueue.shift(); // Lấy công việc đầu tiên từ hàng đợi
+    await updateStatus(job);
+};
+
 const monitorChanges = async () => {
-try {
-    await mongoose.connect(mongoUrl, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-    });
+    try {
+        await mongoose.connect(mongoUrl, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true
+        });
 
-    const changeStream = jobModel.watch([{ $match: { 'operationType': 'insert' } }]);
+        const changeStream = jobModel.watch([{ $match: { 'operationType': 'insert' } }]);
 
-    changeStream.on('change', async (change) => {
-        console.log('Server detected change:', change.fullDocument);
-        await updateStatus(change.fullDocument);
-    });
+        changeStream.on('change', async (change) => {
+            console.log('Server detected change:', change.fullDocument);
+            jobQueue.push(change.fullDocument);
+            processQueue();
+        });
 
-    console.log('Server is listening for changes...');
-} catch (error) {
-    console.error('Error on Server:', error);
-}
+        console.log('Server is listening for changes...');
+    } catch (error) {
+        console.error('Error on Server:', error);
+    }
 };
 
 //----------------------------------
