@@ -30,10 +30,23 @@ app.use(express.urlencoded({extended: true}))
 
 app.get('/api/scrape/conference/:id', scrapeConference)
 
-app.get('/api/scrape', (req, res) => {
+app.get('/api/scrape', async (req, res) => {
     console.log("I am boring ...")
-    res.send("I am boring ...")
+    await addPendingJobsToQueue();
+    res.send("Checked for pending jobs and added to queue if not already present.");
 })
+
+const addPendingJobsToQueue = async () => {
+    const pendingJobs = await jobModel.find({ status: "pending" });
+
+    for (const job of pendingJobs) {
+        if (!jobQueue.some(j => j._id.equals(job._id))) {
+            jobQueue.push(job);
+        }
+    }
+
+    processQueue();
+};
 
 //---------- Test---------------
 // Kết nối đến MongoDB
