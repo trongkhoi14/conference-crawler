@@ -58,11 +58,29 @@ const updateStatus = async (job) => {
     let isCrawlSuccess;
   
     if (job.job_type == "update now") {
-      isCrawlSuccess = await crawlConferenceById(job);
+        await jobModel.updateOne({ _id: job._id }, {
+            $set: {
+                status: "processing",
+                duration: duration
+            }
+        });
+        isCrawlSuccess = await crawlConferenceById(job);
     } else if (job.job_type == "import conference") {
-      isCrawlSuccess = await crawlNewConferenceById(job);
+        await jobModel.updateOne({ _id: job._id }, {
+            $set: {
+                status: "processing",
+                duration: duration
+            }
+        });
+        isCrawlSuccess = await crawlNewConferenceById(job);
     } else {
-      isCrawlSuccess = await crawlConferenceById(job);
+        await jobModel.updateOne({ _id: job._id }, {
+            $set: {
+                status: "processing",
+                duration: duration
+            }
+            });
+        isCrawlSuccess = await crawlConferenceById(job);
     }
   
     console.log(isCrawlSuccess.message);
@@ -97,6 +115,14 @@ const processQueue = async () => {
 
     isProcessing = true;
     const job = jobQueue.shift(); // Lấy công việc đầu tiên từ hàng đợi
+
+    const jobExists = await jobModel.findById(job._id);
+    if (!jobExists) {
+        console.log(`Job with ID ${job._id} no longer exists in the database.`);
+        isProcessing = false;
+        processQueue(); 
+        return;
+    }
     await updateStatus(job);
 };
 
