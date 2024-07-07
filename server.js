@@ -74,7 +74,6 @@ const updateStatus = async (job) => {
         await jobModel.updateOne({ _id: job._id }, {
             $set: {
                 status: "processing",
-                duration: duration
             }
         });
         isCrawlSuccess = await crawlConferenceById(job);
@@ -82,7 +81,6 @@ const updateStatus = async (job) => {
         await jobModel.updateOne({ _id: job._id }, {
             $set: {
                 status: "processing",
-                duration: duration
             }
         });
         isCrawlSuccess = await crawlNewConferenceById(job);
@@ -90,7 +88,6 @@ const updateStatus = async (job) => {
         await jobModel.updateOne({ _id: job._id }, {
             $set: {
                 status: "processing",
-                duration: duration
             }
             });
         isCrawlSuccess = await crawlConferenceById(job);
