@@ -1,10 +1,13 @@
 const type_offline = [
+    "will be held on-site",
+    "F2F Presentations",
     "physical meeting",
     "physical conference",
     "in-person presentation",
     "no synchronous virtual",
     "live conference",
     "remote presentations are not allowed",
+    "Paper presentation can be delivered on-site",
     "present their paper in person",
     "no hybrid mode",
     "face-to-face",
@@ -28,6 +31,8 @@ const type_offline = [
 const type_online = [
     "online only participation option",
     "online presentations",
+    "Virtual Presentations",
+    "remote participation",
     "Online Attendance",
     "Virtual Conference", 
     "virtual conference",
@@ -52,8 +57,10 @@ const type_online = [
 ];
 
 const type_hybrid = [
+    "consist of a virtual and a physical meeting",
     "A hybrid event",
     "online presentation is possible",
+    "while also supporting remote attendance",
     "in-person or virtually",
     "physical presence or virtual participation",
     "in-person conference with virtual elements",
@@ -71,10 +78,13 @@ const type_hybrid = [
     "an option to present remotely",
     "Dual-Mode Conference",
     "option to attend remotely",
+    "will be held as Hybrid",
     "support for remote",
     "support online participation",
     "online attendance possible",
     "possibility for remote presentation",
+    "the opportunity to present their work in the online",
+    "Onsite and Online Hybrid Event",
     "hybrid mode",
     "Hybrid Conference",
     "(format: hybrid)",
@@ -89,11 +99,14 @@ const type_hybrid = [
     "WILL BY HYBRID THIS YEAR",
     "or virtually",
     "Besides online sessions, there will be pure on-site sessions",
+    "both in-person and virtual participation",
     "Hybrid participation information",
     "Onsite and virtual participation available",
+    "possibility of remote presentation",
     "hybrid onsite/online sessions",
     "Japan and ONLINE",
     "HYBRID EVENT",
+    "(hybrid support)",
     "Hybrid @"
     // "hybrid"
 ];
@@ -118,6 +131,7 @@ const removeUnwantedKey = (content) => {
         "virtual machines",
         "virtual machine",
         "may reassess the possibility for virtual or hybrid options",
+        "Blog post: Improving the hybrid conference experience",
         "virtualization technologies",
         "Hybrid Graphs",
         "Virtual Reality",
@@ -129,7 +143,9 @@ const removeUnwantedKey = (content) => {
         "2021 - Virtual Conference",
         "2020 - Virtual Conference",
         "&nbsp;– virtual conference",
-        "– Virtual conference<br />",
+        "– Virtual conference<br/>",
+        "2021</a> – virtual conference<br>",
+        "2020</a> – virtual conference<br>",
         "[**Virtual Conference Website**]",
         "(2022, hybrid)",
         "innovative learning and teaching approach, which integrates the best of online and face-to-face experiences",
@@ -154,6 +170,9 @@ const removeUnwantedKey = (content) => {
         "The conference is not able to entertain a hybrid option, a remote presentation",
         "with the exception of workshops, which may be conducted either in-person or virtually",
         "multi-theme hybrid conference which groups AMSTA-22, HCIS-22, IDT-22, InMed-22, SEEL-22 and STS-22 in one venue",
+        "VECoS 2021</a> in Beijing as a virtual conference due to COVID'19",
+        "<dd><small>Hybrid Conference, Oklahoma City, USA</small></dd>",
+        "<dd><small>virtual conference</small></dd>",
         `<a href="vcc.php" class="astyle2">KES Virtual Conference Centre</a>`,
         "virtual conference due to COVID-19",
         "ICSIP 2020 | Virtual Conference",
@@ -163,9 +182,16 @@ const removeUnwantedKey = (content) => {
         "Policy regarding Remote Presentation",
         "remote presentations or videos will not be accepted",
         "Any allowance for remote presentation will be considered only after clear evidence that attendance is impossible",
+        "We expect to hold a hybrid conference (virtual + physical). We look forward to meeting you in Singapore",
+        "IEEE ICNP 2021 conference will be held as a full virtual conference",
         "virtual conference platform</a>, or if you are in-person attendee in Guangzhou",
+        "not transmit on-site presentations outside the conference (online)",
+        `<a href="https://bpm2024.agh.edu.pl/" rel="home">Virtual Conference</a>`,
+        "Israel (online) 2021",
+        "2021</span></a><span> in Daejeon (hybrid)",
         "Simulation Around the World (Hybrid)",
         "virtual conference site",
+        "as in no hybrid mode",
         // Selector
         `data-facet-badge="Remote"`,
         `<span class="label-primary label">Remote</span>`,
@@ -190,8 +216,8 @@ const getType = async (browser, link) => {
         // let bodyContent = await page.evaluate(() => document.body.innerText.toLowerCase());
         // let bodyContent = await page.evaluate(() => document.documentElement.innerText.toLowerCase());
         let bodyContent = await page.content()
+        bodyContent = bodyContent.replace(/<!--[\s\S]*?-->/g, '');
         bodyContent = removeUnwantedKey(bodyContent)
-        
         const containsKeyword = (content, keywords) => {
             for (const keyword of keywords) {
                 if (content.toLowerCase().includes(keyword.toLowerCase())) {
@@ -233,6 +259,23 @@ const getType = async (browser, link) => {
             isOffline = true;
         }
 
+        if(!isHybrid && !isOnline && !isOffline) {
+            // Navigate to "Registration" 
+            let registrationPageContent = await clickAndReload(page, "Registration");
+            registrationPageContent = removeUnwantedKey(registrationPageContent)
+
+            if (containsKeyword(registrationPageContent, type_hybrid)) {
+                isHybrid = true;
+            }
+            if (containsKeyword(registrationPageContent, type_online)) {
+                isOnline = true;
+            }
+            if (containsKeyword(registrationPageContent, type_offline)) {
+                isOffline = true;
+            }
+        }
+        
+
         await page.close();
 
         if ((isOnline && isOffline) || isHybrid) {
@@ -260,6 +303,7 @@ const clickAndReload = async (page, text) => {
                 "main track", 
                 "Research Papers", 
                 "Research Track",
+                "call-for-contributions-acm/papers/",
                 "Call for Contributions",
                 "page_id=145",
                 "CFP",
@@ -267,7 +311,7 @@ const clickAndReload = async (page, text) => {
             
             const findLink = (texts) => {
                 for (const t of texts) {
-                    const link = Array.from(document.querySelectorAll("a")).find(
+                    const link = Array.from(document.querySelectorAll("a, link")).find(
                         (a) =>
                             a.href !== "https://aclrollingreview.org/cfp" &&
                             (

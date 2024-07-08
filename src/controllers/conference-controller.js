@@ -308,7 +308,7 @@ const crawlController = async (browserInstance) => {
 
         // saveKeywordsToFile()
         
-        // await dataPineline("6639c54f078f0b3454c91c38")
+        // await dataPineline("6639c4bc078f0b3454c91bb4")
         /*
         6639cee1c521b3f2ad611493
 
@@ -339,8 +339,8 @@ const testTypeExtraction = async (browser) => {
         let total = 0;
         let correct = 0;
         let isNull = 0;
-
-        for (let i=400; i < 500; i++) {
+        //
+        for (let i=0; i < 150; i++) {
             const expectedType = conferences[i].Type;
             console.log("---------------------------")
             console.log(">> " + i)

@@ -50,112 +50,112 @@ const addPendingJobsToQueue = async () => {
 
 //---------- Test---------------
 // Kết nối đến MongoDB
-const jobModel = require('./src/models/job-model')
-const { default:mongoose} = require('mongoose')
+// const jobModel = require('./src/models/job-model')
+// const { default:mongoose} = require('mongoose')
 
-const mongoUrl = "mongodb+srv://14042002a:luongkhoi123@cluster0.xro9zib.mongodb.net/conference-searching?retryWrites=true&w=majority";
+// const mongoUrl = "mongodb+srv://14042002a:luongkhoi123@cluster0.xro9zib.mongodb.net/conference-searching?retryWrites=true&w=majority";
 
-const jobQueue = [];
-let isProcessing = false;
+// const jobQueue = [];
+// let isProcessing = false;
 
-dbConnect().then(() => {
-    console.log("Connected to MongoDB");
-    // Bắt đầu lắng nghe thay đổi sau khi kết nối
-    monitorChanges();
-  }).catch(err => {
-    console.error("Failed to connect to MongoDB", err);
-  });
+// dbConnect().then(() => {
+//     console.log("Connected to MongoDB");
+//     // Bắt đầu lắng nghe thay đổi sau khi kết nối
+//     monitorChanges();
+//   }).catch(err => {
+//     console.error("Failed to connect to MongoDB", err);
+//   });
 
-const updateStatus = async (job) => {
-    const startTime = Date.now();
-    let isCrawlSuccess;
+// const updateStatus = async (job) => {
+//     const startTime = Date.now();
+//     let isCrawlSuccess;
   
-    if (job.job_type == "update now") {
-        await jobModel.updateOne({ _id: job._id }, {
-            $set: {
-                status: "processing",
-            }
-        });
-        isCrawlSuccess = await crawlConferenceById(job);
-    } else if (job.job_type == "import conference") {
-        await jobModel.updateOne({ _id: job._id }, {
-            $set: {
-                status: "processing",
-            }
-        });
-        isCrawlSuccess = await crawlNewConferenceById(job);
-    } else {
-        await jobModel.updateOne({ _id: job._id }, {
-            $set: {
-                status: "processing",
-            }
-            });
-        isCrawlSuccess = await crawlConferenceById(job);
-    }
+//     if (job.type == "update now") {
+//         await jobModel.updateOne({ _id: job._id }, {
+//             $set: {
+//                 status: "processing",
+//             }
+//         });
+//         isCrawlSuccess = await crawlConferenceById(job);
+//     } else if (job.type == "import conference") {
+//         await jobModel.updateOne({ _id: job._id }, {
+//             $set: {
+//                 status: "processing",
+//             }
+//         });
+//         isCrawlSuccess = await crawlNewConferenceById(job);
+//     } else {
+//         await jobModel.updateOne({ _id: job._id }, {
+//             $set: {
+//                 status: "processing",
+//             }
+//             });
+//         isCrawlSuccess = await crawlConferenceById(job);
+//     }
   
-    console.log(isCrawlSuccess.message);
-    const endTime = Date.now();
-    const duration = endTime - startTime;
+//     console.log(isCrawlSuccess.message);
+//     const endTime = Date.now();
+//     const duration = endTime - startTime;
   
-    if (isCrawlSuccess.status) {
-      await jobModel.updateOne({ _id: job._id }, {
-        $set: {
-          status: "completed",
-          duration: duration
-        }
-      });
-    } else {
-      await jobModel.updateOne({ _id: job._id }, {
-        $set: {
-          status: "failed",
-          error: isCrawlSuccess.message,
-          duration: duration
-        }
-      });
-    }
+//     if (isCrawlSuccess.status) {
+//       await jobModel.updateOne({ _id: job._id }, {
+//         $set: {
+//           status: "completed",
+//           duration: duration
+//         }
+//       });
+//     } else {
+//       await jobModel.updateOne({ _id: job._id }, {
+//         $set: {
+//           status: "failed",
+//           error: isCrawlSuccess.message,
+//           duration: duration
+//         }
+//       });
+//     }
   
-    isProcessing = false;
-    processQueue();
-  };
+//     isProcessing = false;
+//     processQueue();
+//   };
 
-const processQueue = async () => {
-    if (jobQueue.length === 0 || isProcessing) {
-        return;
-    }
+// const processQueue = async () => {
+//     if (jobQueue.length === 0 || isProcessing) {
+//         return;
+//     }
 
-    isProcessing = true;
-    const job = jobQueue.shift(); // Lấy công việc đầu tiên từ hàng đợi
+//     isProcessing = true;
+//     const job = jobQueue.shift(); // Lấy công việc đầu tiên từ hàng đợi
 
-    const jobExists = await jobModel.findById(job._id);
-    if (!jobExists) {
-        console.log(`Job with ID ${job._id} no longer exists in the database.`);
-        isProcessing = false;
-        processQueue(); 
-        return;
-    }
-    await updateStatus(job);
-};
+//     const jobExists = await jobModel.findById(job._id);
+//     if (!jobExists) {
+//         console.log(`Job with ID ${job._id} no longer exists in the database.`);
+//         isProcessing = false;
+//         processQueue(); 
+//         return;
+//     }
+//     await updateStatus(job);
+// };
 
-const monitorChanges = async () => {
-    try {
-        await mongoose.connect(mongoUrl, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true
-        });
+// const monitorChanges = async () => {
+//     try {
+//         await mongoose.connect(mongoUrl, {
+//             useNewUrlParser: true,
+//             useUnifiedTopology: true
+//         });
 
-        const changeStream = jobModel.watch([{ $match: { 'operationType': 'insert' } }]);
+//         const changeStream = jobModel.watch([{ $match: { 'operationType': 'insert' } }]);
 
-        changeStream.on('change', async (change) => {
-            console.log('Server detected change:', change.fullDocument);
-            jobQueue.push(change.fullDocument);
-            processQueue();
-        });
+//         changeStream.on('change', async (change) => {
+//             console.log('Server detected change:', change.fullDocument);
+//             jobQueue.push(change.fullDocument);
+//             processQueue();
+//         });
 
-        console.log('Server is listening for changes...');
-    } catch (error) {
-        console.error('Error on Server:', error);
-    }
-};
+//         console.log('Server is listening for changes...');
+//     } catch (error) {
+//         console.error('Error on Server:', error);
+//     }
+// };
 
 //----------------------------------
 
