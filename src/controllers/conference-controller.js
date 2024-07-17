@@ -258,11 +258,11 @@ const crawlConferenceById = async (job) => {
             //     message: "Important date not change or not in safe list"
             // };
         }
-        await updateJobProgress(job._id, 70, "ETL data to destination")
+        await updateJobProgress(job._id, 80, "ETL data to destination")
         // Pineline
         const isPinelineSuccess = await dataPinelineAPI(job.conf_id)
         if(isPinelineSuccess) {
-            await updateJobProgress(job._id, 90, "ETL data to CONFHUB successfully")
+            await updateJobProgress(job._id, 100, "ETL data to CONFHUB successfully")
             return {
                 status: true,
                 message: "Update conference successfully"
@@ -318,9 +318,6 @@ const crawlNewConferenceById = async (job) => {
             //Cào cfp
             await updateJobProgress(job._id, 80, "Crawling call for papers")
             let callForPaper = await getCallForPaper(browser, link, conference.Acronym);
-
-            // Update to database
-            
         } 
         else {
             // Trường hợp conf chưa có link
@@ -330,12 +327,21 @@ const crawlNewConferenceById = async (job) => {
                 4
             );
             for(let link of links) {
+                await updateJobProgress(job._id, 10, "Crawling important dates")
                 let importantDates = await getImportantDates(browser, link);
+
+                await updateJobProgress(job._id, 30, "Crawling conference dates")
                 let conferenceDates = await getConferenceDates(browser, link, conference.Title);
+                
+                await updateJobProgress(job._id, 50, "Crawling location")
+                let location = await getLocation(browser, link)
+
+                await updateJobProgress(job._id, 60, "Crawling type")
                 let type = await getType(browser, link);
+
+                await updateJobProgress(job._id, 80, "Crawling call for papers")
                 let callForPaper = await getCallForPaper(browser, link, conference.Acronym);
                 
-                let location = await getLocation(browser, link)
 
                 if (importantDates && conferenceDates && type) {
                     const result = {
@@ -359,7 +365,7 @@ const crawlNewConferenceById = async (job) => {
                         Location: location,
                         Type: type
                     }
-                    console.log(result)
+                    // console.log(result)
                     await Conference.findByIdAndUpdate(conference._id, {
                         Links: [link],
                         ConferenceDate: [
@@ -392,7 +398,7 @@ const crawlNewConferenceById = async (job) => {
         await updateJobProgress(job._id, 80, "ETL data to destination")
         const isPinelineSuccess = await dataPinelineAPI(job.conf_id)
         if(isPinelineSuccess) {
-            await updateJobProgress(job._id, 90, "ETL data to destination successfully")
+            await updateJobProgress(job._id, 100, "ETL data to destination successfully")
             return {
                 status: true,
                 message: "Update conference successfully"
