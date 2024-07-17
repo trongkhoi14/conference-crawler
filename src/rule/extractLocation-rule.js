@@ -53,7 +53,7 @@ const compareLocations = (expected, actual) => {
 };
 
 const getLocation = async (browser,link) {
-  const result = await isInDict(browser,extractedLocation)
+  const result = await isInDict(browser,link)
   if(result[0]){
     return result[1];
   }
