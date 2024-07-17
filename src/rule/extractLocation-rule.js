@@ -1,4 +1,5 @@
 const conferenceModel = require("../models/conference-model");
+
 const fs = require("fs");
 const readline = require("readline");
 /*
@@ -25,7 +26,7 @@ const readLocations = async (filePath) => {
   return locations;
 };
 
-const isInDict = async (link) => {
+const isInDict = async (browser, link) => {
   let page = await browser.newPage();
   await page.goto(link, { waitUntil: "domcontentloaded" });
   try {
@@ -35,19 +36,19 @@ const isInDict = async (link) => {
 
     await page.close();
 
-    const locations = await readLocations("./untils/dict/locations.txt");
-    console.log(locations);
+    const locations = await readLocations("./src/untils/dict/locations.txt");
 
-    // for (const location of locations) {
-    //   if (bodyContent.includes(location)) {
-    //     return true;
-    //   }
-    // }
-    return false;
+    for (const location of locations) {
+      if (bodyContent.includes(location)) {
+        return [true, location];
+      }
+    }
+
+    return [false];
   }
 };
 
-const getLocation = async (browser, title, link, isSigplan) => {
+const getLocation = async (browser, link, isSigplan) => {
   try {
     console.log(">> Getting location from: " + link);
 

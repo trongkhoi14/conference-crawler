@@ -298,7 +298,6 @@ HONG KONG, CHINA
 greater Washington DC area
 Wuhan, China
 Shenzhen, China
-
 the Simons Institute for the Theory of Computing on the University of California, Berkeley campus
 Vancouver, Canada
 Milan
@@ -517,7 +516,6 @@ Denarau Island, Fiji
 Gyeongsangbuk-do, South Korea
 Porto, Portugal
 Guangzhou, China
-
 Buffalo, New York, USA
 Tampere, Finland
 Porto, Portugal
@@ -570,7 +568,6 @@ Singapore
 Washington DC- USA
 Weihai, Shandong, China
 Chur, Switzerland
-
 Long Beach, California, USA
 Porto de Galinhas, Brazil
 Lisbon, Portugal
@@ -636,7 +633,6 @@ Kyoto, Japan
 Taipei, Taiwan
 AUT City Campus, Auckland, New Zealand
 Hagenberg, Austria
-
 Columbia River Gorge, Washington USA
 London, United Kingdom
 Technical University of Denmark
@@ -650,7 +646,6 @@ Université de Québec à Montréal in Montréal, Québec, Canada
 Spokane, Washington, U.S
 The Sheraton Grand Seattle | Seattle, Washington, U.S.
 Westin Houston, Memorial City | Houston, TX, U.S.
-
 Amsterdam, The Netherlands
 Parc Alvisse Hotel, Luxembourg
 Cambridge, United Kingdom
