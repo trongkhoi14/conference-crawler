@@ -1,13 +1,8 @@
-const cron = require("node-cron");
-const schedule = require("node-schedule");
 const webScraperService = require("../services/web-scraper-service");
 const Conference = require("../models/conference-model");
 const LastUpdateTime = require("../models/lastUpdateTime-model");
 const ConferenceError = require("../models/conferenceError-model");
-const emailService = require("../services/email-service");
-const dbConference = require("../models/conference-model");
-const dbFollow = require("../models/follow-model");
-const dbUser = require("../models/user-model");
+const cache = require("../models/cache-model");
 const conferenceModel = require("../models/conference-model");
 const { dataPineline, dataPinelineAPI } = require("../etl/datapineline");
 const conferenceHasIncorrectLinks = require("../config/IncorrectLink");
@@ -305,19 +300,19 @@ const crawlNewConferenceById = async (job) => {
         if (conference.Links[0]?.length > 0) {
             // Cào important dates
             await updateJobProgress(job._id, 10, "Crawling important dates")
-            let newImportantDates = await getImportantDates(browser, link);
+            let newImportantDates = await getImportantDates(browser, conference.Links[0]);
             //Cào Conference Dates
             await updateJobProgress(job._id, 30, "Crawling conference dates")
-            let conferenceDates = await getConferenceDates(browser, link, conference.Title);
+            let conferenceDates = await getConferenceDates(browser, conference.Links[0], conference.Title);
             //Cào Location
             await updateJobProgress(job._id, 50, "Crawling location")
-            let location = await getLocation(browser, link)
+            let location = await getLocation(browser, conference.Links[0])
             //Cào Type
             await updateJobProgress(job._id, 60, "Crawling type")
-            let type = await getType(browser, link);
+            let type = await getType(browser, conference.Links[0]);
             //Cào cfp
             await updateJobProgress(job._id, 80, "Crawling call for papers")
-            let callForPaper = await getCallForPaper(browser, link, conference.Acronym);
+            let callForPaper = await getCallForPaper(browser, conference.Links[0], conference.Acronym);
         } 
         else {
             // Trường hợp conf chưa có link
@@ -327,6 +322,7 @@ const crawlNewConferenceById = async (job) => {
                 4
             );
             for(let link of links) {
+                
                 await updateJobProgress(job._id, 10, "Crawling important dates")
                 let importantDates = await getImportantDates(browser, link);
 
@@ -342,30 +338,25 @@ const crawlNewConferenceById = async (job) => {
                 await updateJobProgress(job._id, 80, "Crawling call for papers")
                 let callForPaper = await getCallForPaper(browser, link, conference.Acronym);
                 
+                const bk = await cache.findOne({
+                    Title: conference.Title
+                })
+                if(bk) {
+                    await Conference.findByIdAndUpdate(conference._id, {
+                        Links: bk.Links,
+                        ConferenceDate: bk.ConferenceDate,
+                        SubmissonDate: bk.SubmissonDate,
+                        NotificationDate: bk.NotificationDate,
+                        CameraReady: bk.CameraReady,
+                        CallForPaper: bk.CallForPaper,
+                        Location: bk.Location,
+                        Type: bk.Type
+                    })
+                    break;
+                }
+                 
 
                 if (importantDates && conferenceDates && type) {
-                    const result = {
-                        Links: [link],
-                        ConferenceDate: [
-                            {
-                                date: conferenceDates.startDateISO,
-                                keyword: "Conference start",
-                                update_time: new Date()
-                            },
-                            {
-                                date: conferenceDates.endDateISO,
-                                keyword: "Conference end",
-                                update_time: new Date()
-                            }
-                        ],
-                        SubmissonDate: importantDates.submissionDate,
-                        NotificationDate: importantDates.notificationDate,
-                        CameraReady: importantDates.cameraReady,
-                        CallForPaper: callForPaper,
-                        Location: location,
-                        Type: type
-                    }
-                    // console.log(result)
                     await Conference.findByIdAndUpdate(conference._id, {
                         Links: [link],
                         ConferenceDate: [
@@ -390,8 +381,6 @@ const crawlNewConferenceById = async (job) => {
                     break;
                 }
             }
-
-
         }
 
         // Pineline
@@ -409,11 +398,19 @@ const crawlNewConferenceById = async (job) => {
                 message: "Something occurred in data pipeline"
             }
         }
-
-        
-       
     } catch (error) {
         console.log("Error in Conference controller/crawlConferenceById: " + error);
+        await Conference.findByIdAndUpdate(job.conf_id, {
+            Links: [],
+            ConferenceDate: [],
+            SubmissonDate: [],
+            NotificationDate: [],
+            CameraReady: [],
+            CallForPaper: [],
+            Location: "",
+            Type: ""
+        })
+        await dataPinelineAPI(job.conf_id)
         return {
             status: false,
             message: error
@@ -442,9 +439,11 @@ const crawlController = async (browserInstance) => {
         //     })
         //     console.log(isSuccess)
         // }
+        
         await crawlNewConferenceById({
-            conf_id: "6697864a60386000ce523e76"
+            conf_id: "6697c81460386000ce523ebb"
         })
+       
        
         //await crawlAllConferencesDetail(browser);
         // await processConferenceError(browser);
