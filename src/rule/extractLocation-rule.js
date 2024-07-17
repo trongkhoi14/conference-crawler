@@ -47,8 +47,20 @@ const isInDict = async (browser, link) => {
     return [false];
   }
 };
+const compareLocations = (expected, actual) => {
+  if (!expected || !actual) return false;
+  return expected.toLowerCase() === actual.toLowerCase();
+};
 
-const getLocation = async (browser, link, isSigplan) => {
+const getLocation = async (browser,link) {
+  const result = await isInDict(browser,extractedLocation)
+  if(result[0]){
+    return result[1];
+  }
+  return "null";
+}
+
+const getLocationFromALink = async (browser, link, isSigplan) => {
   try {
     console.log(">> Getting location from: " + link);
 
@@ -70,7 +82,9 @@ const getLocation = async (browser, link, isSigplan) => {
 
       await page.close();
 
-      return extractLocation(bodyContent);
+      const extractedLocation = extractLocation(bodyContent);
+
+      return extractedLocation;
     }
   } catch (error) {
     console.log("Error in get Location: " + error);
@@ -302,6 +316,6 @@ const extractLocation = (text) => {
 };
 
 module.exports = {
-  getLocation,
+  getLocation: getLocationFromALink,
   isInDict,
 };
