@@ -1056,7 +1056,7 @@ const getImportantDates = async (browser, link) => {
         //-------------------------------------
 
         let page = await browser.newPage();
-        await page.goto(link, { waitUntil: "domcontentloaded" });
+        await page.goto(link, { waitUntil: "domcontentloaded", timeout: 60000 });
 
         // Go to home site
 
@@ -1398,7 +1398,14 @@ const clickAndReload = async (page, text) => {
             //Full Papers, Call for Participation, call-for-submissions
 
             //ngoài tìm link có date, còn có thể tìm 'sub'
-            const priorityTexts = ["MAIN-TRACK PAPERS", "call for paper", "main track", "Research Papers", "Research Track"];
+            const priorityTexts = [
+                "MAIN-TRACK PAPERS", 
+                "call for paper", 
+                "main track", 
+                "Research Papers", 
+                "Research Track",
+                "clustercomp.org/2024/papers"
+            ];
             
             const findLink = (texts) => {
                 for (const t of texts) {

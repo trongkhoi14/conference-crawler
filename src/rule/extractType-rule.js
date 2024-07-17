@@ -5,6 +5,7 @@ const type_offline = [
     "physical conference",
     "in-person presentation",
     "no synchronous virtual",
+    "In Person Live Conference",
     "live conference",
     "remote presentations are not allowed",
     "Paper presentation can be delivered on-site",
@@ -14,11 +15,14 @@ const type_offline = [
     "onsite participants",
     "In-Person Presenters",
     "in-person event only",
+    "presented by one of its authors in person",
     "in person conference",
     "in-person conference",
     "in-person event",
     "presented in person",
     "present their work in person",
+    "In-person Participation",
+    "physical event only",
     "attend in person",
     "Physically (on-site)",
     "(physically) present",
@@ -30,6 +34,7 @@ const type_offline = [
 
 const type_online = [
     "online only participation option",
+    "remote presenting",
     "online presentations",
     "Virtual Presentations",
     "remote participation",
@@ -63,12 +68,14 @@ const type_hybrid = [
     "while also supporting remote attendance",
     "in-person or virtually",
     "physical presence or virtual participation",
+    "apply for complementary virtual participation",
     "in-person conference with virtual elements",
     "remote presentation options",
     "allowed to present remotely",
     "a virtual and a physical meeting",
     "Online & In-person participation", 
     "Remote Presentation Option",
+    "available for <b>FREE</b> remote viewing on Zoom",
     "in-person and online",
     "hybrid support", 
     "online and face-to-face", 
@@ -85,6 +92,7 @@ const type_hybrid = [
     "possibility for remote presentation",
     "the opportunity to present their work in the online",
     "Onsite and Online Hybrid Event",
+    "join in person or remotely",
     "hybrid mode",
     "Hybrid Conference",
     "(format: hybrid)",
@@ -96,6 +104,9 @@ const type_hybrid = [
     "Virtual Conference Instructions",
     "assistance for remote presentation",
     "Remote presentations can be organized",
+    "possible to register for remote attendance",
+    "Online and Hybrid Options",
+    "conference talks online and offline",
     "WILL BY HYBRID THIS YEAR",
     "or virtually",
     "Besides online sessions, there will be pure on-site sessions",
@@ -105,6 +116,8 @@ const type_hybrid = [
     "possibility of remote presentation",
     "hybrid onsite/online sessions",
     "Japan and ONLINE",
+    "Remote Participation Rates*",
+    `<a href="https://aut.zoom.us/j/95468713549" target="_blank">virtually</a>`,
     "HYBRID EVENT",
     "(hybrid support)",
     "Hybrid @"
@@ -116,6 +129,9 @@ const removeUnwantedKey = (content) => {
     const unwantedKey = [
         "Hybrid-Dynamic Quantum Logic",
         "hybrid conference rotation cycle",
+        "No virtual presentations will be allowed",
+        "no online participation/registration will be considered",
+        "remote participation will not be supported",
         "Virtual Posters",
         "virtual_posters",
         "hybrid games",
@@ -131,6 +147,7 @@ const removeUnwantedKey = (content) => {
         "virtual machines",
         "virtual machine",
         "may reassess the possibility for virtual or hybrid options",
+        "ISSN 2522-2422 (Online)",
         "Blog post: Improving the hybrid conference experience",
         "virtualization technologies",
         "Hybrid Graphs",
@@ -147,6 +164,10 @@ const removeUnwantedKey = (content) => {
         "2021</a> – virtual conference<br>",
         "2020</a> – virtual conference<br>",
         "[**Virtual Conference Website**]",
+        "WETICE 2021</a> &#8211; Bayonne, France (online)",
+        "WETICE 2020</a> &#8211; Bayonne, France (online)",
+        "Jurix 2021 – Vilnius (hybrid)",
+        "Jurix 2020 – Brno/Prague (online)",
         "(2022, hybrid)",
         "innovative learning and teaching approach, which integrates the best of online and face-to-face experiences",
         "Last years, iiWAS2020, iiWAS2021 and iiWAS2022 conferences were held as virtual conferences",
@@ -177,11 +198,13 @@ const removeUnwantedKey = (content) => {
         "virtual conference due to COVID-19",
         "ICSIP 2020 | Virtual Conference",
         "Virtual participation in the conference will no longer be supported",
+        "(Online), ICMV 2022 (Rome)",
         "this has changed only for 2021 virtual conference",
         "hybrid models",
         "Policy regarding Remote Presentation",
         "remote presentations or videos will not be accepted",
         "Any allowance for remote presentation will be considered only after clear evidence that attendance is impossible",
+        "we will keep monitoring the situation of the pandemic to decide later if remote participation would be possible",
         "We expect to hold a hybrid conference (virtual + physical). We look forward to meeting you in Singapore",
         "IEEE ICNP 2021 conference will be held as a full virtual conference",
         "virtual conference platform</a>, or if you are in-person attendee in Guangzhou",
@@ -189,6 +212,7 @@ const removeUnwantedKey = (content) => {
         `<a href="https://bpm2024.agh.edu.pl/" rel="home">Virtual Conference</a>`,
         "Israel (online) 2021",
         "2021</span></a><span> in Daejeon (hybrid)",
+        "Virtual access to the conference online component",
         "Simulation Around the World (Hybrid)",
         "virtual conference site",
         "as in no hybrid mode",
@@ -245,6 +269,7 @@ const getType = async (browser, link) => {
 
         // Navigate to "Call for Contributions" or similar page and check again
         let callPageContent = await clickAndReload(page, "call");
+        callPageContent = callPageContent.replace(/<!--[\s\S]*?-->/g, '');
         callPageContent = removeUnwantedKey(callPageContent)
 
         // console.log(callPageContent)
@@ -262,6 +287,7 @@ const getType = async (browser, link) => {
         if(!isHybrid && !isOnline && !isOffline) {
             // Navigate to "Registration" 
             let registrationPageContent = await clickAndReload(page, "Registration");
+            registrationPageContent = registrationPageContent.replace(/<!--[\s\S]*?-->/g, '');
             registrationPageContent = removeUnwantedKey(registrationPageContent)
 
             if (containsKeyword(registrationPageContent, type_hybrid)) {

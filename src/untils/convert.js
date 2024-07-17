@@ -18,7 +18,7 @@ const convertImageToText = async (imageUrl) => {
 
         return result.ParsedResults[0].ParsedText
     } catch (error) {
-        console.error(error);
+        // console.error(error);
     }
 };
 

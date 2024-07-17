@@ -134,11 +134,8 @@ const searchConferenceLinksByTitle = async (browser, conference, maxLinks) => {
         await page.goto("https://www.google.com/");
         await page.waitForSelector("#APjFqb");
         await page.keyboard.sendCharacter(
-            conference.Title + " " + conference.Acronym + " 2024"
+            conference.Title + " " + conference.Acronym + ` ${new Date().getFullYear()}`
         );
-        // await page.keyboard.sendCharacter(
-        //     conference.Acronym + " 2024"
-        // );
         await page.keyboard.press("Enter");
         await page.waitForNavigation();
         await page.waitForSelector("#search");

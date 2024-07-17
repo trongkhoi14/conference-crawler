@@ -1,2359 +1,3865 @@
 ---------------------------
->> 0
->> 6639c033647e53b594533c8d
-Found keyword: in-person event
-True
----------------------------
->> 1
->> 6639c03c647e53b594533c95
-Found keyword: presented in person
-True
----------------------------
->> 2
->> 6639c048647e53b594533ca3
-True
----------------------------
->> 3
->> 6639c075647e53b594533cd5
-True
----------------------------
->> 4
->> 6639c079647e53b594533cd9
-Found keyword: (physically) present
-Found keyword: (physically) present
-True
----------------------------
->> 5
->> 6639c081647e53b594533ce1
-True
----------------------------
->> 6
->> 6639c1686e0c3f3fe99c55fd
-True
----------------------------
->> 7
->> 6639c16e6e0c3f3fe99c5603
-True
----------------------------
->> 8
->> 6639c1736e0c3f3fe99c5609
-True
----------------------------
->> 9
->> 6639c04d647e53b594533ca9
-True
----------------------------
->> 10
->> 6639c05e647e53b594533cbb
-True
----------------------------
->> 11
->> 6639c060647e53b594533cbd
-True
----------------------------
->> 12
->> 6639c061647e53b594533cbf
-True
----------------------------
->> 13
->> 6639c063647e53b594533cc1
-Found keyword: Virtual Access
-Found keyword: in-person presentation
-True
----------------------------
->> 14
->> 6639c07d647e53b594533cdd
-True
----------------------------
->> 15
->> 6639c03f647e53b594533c99
-True
----------------------------
->> 16
->> 6639c030647e53b594533c89
-True
----------------------------
->> 17
->> 6639c045647e53b594533c9f
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)  
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:188:20)
----------------------------
->> 18
->> 6639c065647e53b594533cc3
-True
----------------------------
->> 19
->> 6639c06b647e53b594533cc9
-True
----------------------------
->> 20
->> 6639c06d647e53b594533ccb
-True
----------------------------
->> 21
->> 6639c070647e53b594533ccf
-True
----------------------------
->> 22
->> 6639c084647e53b594533ce5
-True
----------------------------
->> 23
->> 6639c1666e0c3f3fe99c55fb
-Found keyword: remote presentation
-Found keyword: In-Person Presenters
-True
----------------------------
->> 24
->> 6639c1796e0c3f3fe99c560f
-True
----------------------------
->> 25
->> 6639c038647e53b594533c91
-True
----------------------------
->> 26
->> 6639c04a647e53b594533ca5
-Found keyword: in-person conference
-Found keyword: offline
-True
----------------------------
->> 27
->> 6639c053647e53b594533caf
-True
----------------------------
->> 28
->> 6639c055647e53b594533cb1
-True
----------------------------
->> 29
->> 6639c059647e53b594533cb5
-Found keyword: in-person conference
-Found keyword: in-person conference
-True
----------------------------
->> 30
->> 6639c06e647e53b594533ccd
-Found keyword: or virtually
-new ObjectId('6639c06e647e53b594533ccd')
-hybrid
----------------------------
->> 31
->> 6639c16c6e0c3f3fe99c5601
-Found keyword: or virtually
-True
----------------------------
->> 32
->> 6639c031647e53b594533c8b
-Found keyword: Virtual Conference Instructions
-Found keyword: Virtual Conference
-True
----------------------------
->> 33
->> 6639c03a647e53b594533c93
-Found keyword: Virtual Access
-new ObjectId('6639c03a647e53b594533c93')
-online
----------------------------
->> 34
->> 6639c035647e53b594533c8f
-True
----------------------------
->> 35
->> 6639c069647e53b594533cc7
-True
----------------------------
->> 36
->> 6639c073647e53b594533cd3
-Found keyword: A hybrid event
-Found keyword: online participation
-Found keyword: in-person conference
-True
----------------------------
->> 37
->> 6639c077647e53b594533cd7
-True
----------------------------
->> 38
->> 6639c1606e0c3f3fe99c55f5
-True
----------------------------
->> 39
->> 6639c1756e0c3f3fe99c560b
-True
----------------------------
->> 40
->> 6639c04f647e53b594533cab
-Found keyword: attend in person
-True
----------------------------
->> 41
->> 6639c16a6e0c3f3fe99c55ff
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)  
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:188:20)
----------------------------
->> 42
->> 6639c1716e0c3f3fe99c5607
-Found keyword: physical conference
-True
----------------------------
->> 43
->> 6639c05c647e53b594533cb9
-True
----------------------------
->> 44
->> 6639c083647e53b594533ce3
-True
----------------------------
->> 45
->> 6639c15e6e0c3f3fe99c55f3
-True
----------------------------
->> 46
->> 6639c1646e0c3f3fe99c55f9
-Found keyword: remote presentation
-Found keyword: attend in person
-True
----------------------------
->> 47
->> 6639c1776e0c3f3fe99c560d
-True
----------------------------
->> 48
->> 6639c041647e53b594533c9b
-Found keyword: in-person conference
-True
----------------------------
->> 49
->> 6639c046647e53b594533ca1
-True
----------------------------
->> 50
->> 6639c051647e53b594533cad
-Found keyword: (online)
-Found keyword: Remote Presentation Option
-Found keyword: Remote attendance
-Found keyword: physical conference
-True
----------------------------
->> 51
->> 6639c057647e53b594533cb3
-True
----------------------------
->> 52
->> 6639c067647e53b594533cc5
-True
----------------------------
->> 53
->> 6639c07f647e53b594533cdf
-True
----------------------------
->> 54
->> 6639c17b6e0c3f3fe99c5611
-True
----------------------------
->> 55
->> 6639c1886e0c3f3fe99c561f
-True
----------------------------
->> 56
->> 6639c17e6e0c3f3fe99c5615
-True
----------------------------
->> 57
->> 6639c19d6e0c3f3fe99c5635
-Found keyword: Remote Presentation Instructions
-Found keyword: remote presentation
-Found keyword: Remote Presentation Instructions
-Found keyword: remote presentation
-True
----------------------------
->> 58
->> 6639c2594931f50e65517e1f
-True
----------------------------
->> 59
->> 6639c2784931f50e65517e3f
-True
----------------------------
->> 60
->> 6639c1916e0c3f3fe99c5629
-Found keyword: no synchronous virtual
-True
----------------------------
->> 61
->> 6639c19c6e0c3f3fe99c5633
-True
----------------------------
->> 62
->> 6639c19f6e0c3f3fe99c5637
-Found keyword: Hybrid @
-Found keyword: Hybrid Conference
-Found keyword: Remotely (on-line)
-Found keyword: Physically (on-site)
-True
----------------------------
->> 63
->> 6639c1ad6e0c3f3fe99c5645
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)  
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:188:20)
----------------------------
->> 64
->> 6639c1b66e0c3f3fe99c564f
-True
----------------------------
->> 65
->> 6639c1856e0c3f3fe99c561b
-True
----------------------------
->> 66
->> 6639c17c6e0c3f3fe99c5613
-True
----------------------------
->> 67
->> 6639c18c6e0c3f3fe99c5623
-Found keyword: face-to-face
-True
----------------------------
->> 68
->> 6639c1976e0c3f3fe99c562f
-Found keyword: allowed to present remotely
-True
----------------------------
->> 69
->> 6639c1a16e0c3f3fe99c5639
-True
----------------------------
->> 70
->> 6639c1816e0c3f3fe99c5617
-True
----------------------------
->> 71
->> 6639c18f6e0c3f3fe99c5627
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)  
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:188:20)
----------------------------
->> 72
->> 6639c19a6e0c3f3fe99c5631
-True
----------------------------
->> 73
->> 6639c1ae6e0c3f3fe99c5647
-Found keyword: remote presentation options
-Found keyword: remote presentation
-Found keyword: in-person presentation
-True
----------------------------
->> 74
->> 6639c27d4931f50e65517e45
-True
----------------------------
->> 75
->> 6639c2814931f50e65517e49
-True
----------------------------
->> 76
->> 6639c18a6e0c3f3fe99c5621
-True
----------------------------
->> 77
->> 6639c18d6e0c3f3fe99c5625
-Found keyword: Hybrid Conference
-Found keyword: Hybrid Conference
-True
----------------------------
->> 78
->> 6639c1a66e0c3f3fe99c563f
-True
----------------------------
->> 79
->> 6639c1aa6e0c3f3fe99c5643
-Found keyword: face-to-face
-True
----------------------------
->> 80
->> 6639c27a4931f50e65517e41
-Found keyword: in-person event
-True
----------------------------
->> 81
->> 6639c1956e0c3f3fe99c562d
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)  
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:188:20)
----------------------------
->> 82
->> 6639c1b46e0c3f3fe99c564d
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)  
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:188:20)
----------------------------
->> 83
->> 6639c1b76e0c3f3fe99c5651
-Found keyword: remote option
-Found keyword: will be in-person
-True
----------------------------
->> 84
->> 6639c1ba6e0c3f3fe99c5653
-True
----------------------------
->> 85
->> 6639c2534931f50e65517e19
-True
----------------------------
->> 86
->> 6639c2764931f50e65517e3d
-True
----------------------------
->> 87
->> 6639c2894931f50e65517e51
-True
----------------------------
->> 88
->> 6639c1836e0c3f3fe99c5619
-Found keyword: will be in-person
-True
----------------------------
->> 89
->> 6639c1936e0c3f3fe99c562b
-Found keyword: presented in person
-True
----------------------------
->> 90
->> 6639c1a36e0c3f3fe99c563b
-True
----------------------------
->> 91
->> 6639c2834931f50e65517e4b
-True
----------------------------
->> 92
->> 6639c1a56e0c3f3fe99c563d
-Found keyword: face-to-face
-True
----------------------------
->> 93
->> 6639c1a86e0c3f3fe99c5641
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)  
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:188:20)
----------------------------
->> 94
->> 6639c1b26e0c3f3fe99c564b
-True
----------------------------
->> 95
->> 6639c2574931f50e65517e1d
-True
----------------------------
->> 96
->> 6639c2854931f50e65517e4d
-True
----------------------------
->> 97
->> 6639c28d4931f50e65517e55
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)  
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:188:20)
----------------------------
->> 98
->> 6639c2984931f50e65517e5f
-Found keyword: Hybrid Conference
-Found keyword: in-person conference
-True
----------------------------
->> 99
->> 6639c2934931f50e65517e5b
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)  
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:188:20)
----------------------------
 >> 100
 >> 6639c2a04931f50e65517e67
+>> Getting conference date from: https://www.eusflat2023.eu/88603/detail/eusflat-13th-conference-of-the-european-society-for-fuzzy-logic-and-technology-jointly-with-the-ago.html
+
+Found conference date in home page
+Extracted Start Date: 2023-09-04T00:00:00.000Z
+Extracted End Date: 2023-09-08T00:00:00.000Z
 True
 ---------------------------
 >> 101
 >> 6639c3b5bf0a76d1ef717bd9
-Found keyword: in-person conference
-Found keyword: present their work in person
+>> Getting conference date from: https://dis.acm.org/2024/
+>> Found conference date near title
+Extracted Start Date: 2024-07-01T00:00:00.000Z
+Extracted End Date: 2024-07-05T00:00:00.000Z
 True
 ---------------------------
 >> 102
 >> 6639c3bdbf0a76d1ef717be1
-new ObjectId('6639c3bdbf0a76d1ef717be1')
-offline
+>> Getting conference date from: https://digraconference2024.org/
+False
 ---------------------------
 >> 103
 >> 6639c3c8bf0a76d1ef717bed
+>> Getting conference date from: https://emas.in.tu-clausthal.de/2024/
+Found conference date in home page
+Extracted Start Date: 2024-05-06T00:00:00.000Z
+Extracted End Date: 2024-05-07T00:00:00.000Z
 True
 ---------------------------
 >> 104
 >> 6639c389bf0a76d1ef717bab
+>> Getting conference date from: https://www.usenix.org/conference/fast24
+>> Found conference date near title
+Extracted Start Date: 2024-02-27T00:00:00.000Z
+Extracted End Date: 2024-02-29T00:00:00.000Z
 True
 ---------------------------
 >> 105
 >> 6639c29e4931f50e65517e65
-Found keyword: offline
+>> Getting conference date from: https://eamt2024.sheffield.ac.uk/
+>> Found conference date near title
+Extracted Start Date: 2024-06-24T00:00:00.000Z
+Extracted End Date: 2024-06-27T00:00:00.000Z
 True
 ---------------------------
 >> 106
 >> 6639c380bf0a76d1ef717ba1
-Found keyword: support for remote
-Found keyword: in-person event
+>> Getting conference date from: https://coalg.org/calco-mfps-2023/#calco
+>> Found conference date near title
+Extracted Start Date: 2023-06-19T00:00:00.000Z
+Extracted End Date: 2023-06-23T00:00:00.000Z
 True
 ---------------------------
 >> 107
 >> 6639c382bf0a76d1ef717ba3
-Found keyword: will be held online
+>> Getting conference date from: https://theory.utdallas.edu/AAIM2024/index.html
+>> Found conference date near title
+Extracted Start Date: 2024-09-21T00:00:00.000Z
+Extracted End Date: 2024-09-23T00:00:00.000Z
 True
 ---------------------------
 >> 108
 >> 6639c395bf0a76d1ef717bb7
+>> Getting conference date from: https://ipco2024.ii.uni.wroc.pl/
+>> Found conference date near title
+Extracted Start Date: 2024-07-03T00:00:00.000Z
+Extracted End Date: 2024-07-05T00:00:00.000Z
 True
 ---------------------------
 >> 109
 >> 6639c3acbf0a76d1ef717bcf
-Found keyword: (online)
-Found keyword: attend in person
-new ObjectId('6639c3acbf0a76d1ef717bcf')
-hybrid
+>> Getting conference date from: https://www.uni-trier.de/index.php?id=90670&L=2
+>> Found conference date near title
+Extracted Start Date: 2024-02-19T00:00:00.000Z
+Extracted End Date: 2024-02-23T00:00:00.000Z
+True
 ---------------------------
 >> 110
 >> 6639c3b3bf0a76d1ef717bd7
-True
+>> Getting conference date from: https://www.date-conference.com/
+>> Found conference date near title
+Expected Start Date: 2024-03-25T00:00:00.000Z
+Expected End Date: 2024-03-27T00:00:00.000Z
+Extracted Start Date: 2025-03-31T00:00:00.000Z
+Extracted End Date: 2025-04-02T00:00:00.000Z
+False
 ---------------------------
 >> 111
 >> 6639c3bbbf0a76d1ef717bdf
-True
+>> Getting conference date from: https://dafx24.surrey.ac.uk/
+Found conference date in home page
+Expected Start Date: 2024-09-03T00:00:00.000Z
+Expected End Date: 2024-09-07T00:00:00.000Z
+Extracted Start Date: 2023-10-17T00:00:00.000Z
+Extracted End Date: null
+False
 ---------------------------
 >> 112
 >> 6639c3c4bf0a76d1ef717be9
+>> Getting conference date from: https://2023.splashcon.org/home/dls-2023
+Found conference date in home page
+Extracted Start Date: 2023-10-22T00:00:00.000Z
+Extracted End Date: 2023-10-27T00:00:00.000Z
 True
 ---------------------------
 >> 113
 >> 6639c3cdbf0a76d1ef717bf3
-Found keyword: face-to-face
+>> Getting conference date from: https://www.unirioja.es/ethicomp/2024/index.html
+>> Found conference date near keyword in important date site
+Extracted Start Date: 2024-03-13T00:00:00.000Z
+Extracted End Date: 2024-03-15T00:00:00.000Z
 True
 ---------------------------
 >> 114
 >> 6639c2964931f50e65517e5d
-Found keyword: offline
-True
+>> Getting conference date from: https://isaga2024.com/
+Found conference date in home page
+Expected Start Date: 2023-07-08T00:00:00.000Z
+Expected End Date: 2023-07-12T00:00:00.000Z
+Extracted Start Date: 2024-07-08T00:00:00.000Z
+Extracted End Date: 2024-07-12T00:00:00.000Z
+False
 ---------------------------
 >> 115
 >> 6639c38dbf0a76d1ef717baf
+>> Getting conference date from: https://2024.ieee-cog.org/
+>> Found conference date near title
+Extracted Start Date: 2024-08-05T00:00:00.000Z
+Extracted End Date: 2024-08-08T00:00:00.000Z
 True
 ---------------------------
 >> 116
 >> 6639c393bf0a76d1ef717bb5
+>> Getting conference date from: https://www.cidrdb.org/cidr2024/
+Found conference date in home page
+Extracted Start Date: 2024-01-14T00:00:00.000Z
+Extracted End Date: 2024-01-17T00:00:00.000Z
 True
 ---------------------------
 >> 117
 >> 6639c3c2bf0a76d1ef717be7
-True
+>> Getting conference date from: https://www.dna30.org/
+>> Found conference date near title
+Expected Start Date: 2024-09-16T00:00:00.000Z
+Expected End Date: 2024-09-20T00:00:00.000Z
+Extracted Start Date: 2024-07-15T00:00:00.000Z
+Extracted End Date: null
+False
 ---------------------------
 >> 118
 >> 6639c3d1bf0a76d1ef717bf7
+>> Getting conference date from: https://www.euroxr.org/conference-2024
+undefined
+Found conference date in home page
+Extracted Start Date: 2024-11-27T00:00:00.000Z
+Extracted End Date: 2024-11-29T00:00:00.000Z
 True
 ---------------------------
 >> 119
 >> 6639c384bf0a76d1ef717ba5
+>> Getting conference date from: https://theory.utdallas.edu/COCOA2023/cfp.html
+>> Found conference date near keyword
+Extracted Start Date: 2023-12-15T00:00:00.000Z
+Extracted End Date: 2023-12-17T00:00:00.000Z
 True
 ---------------------------
 >> 120
 >> 6639c399bf0a76d1ef717bbb
-Found keyword: Remote attendance
-Found keyword: face-to-face
+>> Getting conference date from: https://www.viam.science.tsu.ge/itp2024/
+>> Found conference date near title
+Extracted Start Date: 2024-09-09T00:00:00.000Z
+Extracted End Date: 2024-09-14T00:00:00.000Z
 True
 ---------------------------
 >> 121
 >> 6639c3c0bf0a76d1ef717be5
+>> Getting conference date from: http://ds2024.isti.cnr.it/
+>> Found conference date near title
+Extracted Start Date: 2024-10-14T00:00:00.000Z
+Extracted End Date: 2024-10-16T00:00:00.000Z
 True
 ---------------------------
 >> 122
 >> 6639c3c6bf0a76d1ef717beb
-Found keyword: hybrid format
-Found keyword: online participation
-Found keyword: offline
-Found keyword: hybrid format
-Found keyword: online participation
-Found keyword: offline
+>> Getting conference date from: https://educationaldatamining.org/edm2024/
+Found conference date in screenshot
+Extracted Start Date: 2024-07-14T00:00:00.000Z
+Extracted End Date: 2024-07-17T00:00:00.000Z
 True
 ---------------------------
 >> 123
 >> 6639c482078f0b3454c91b7e
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)  
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:188:20)
+Hasn't link
 ---------------------------
 >> 124
 >> 6639c484078f0b3454c91b80
-Found keyword: physical conference
-Found keyword: physical conference
+>> Getting conference date from: https://www.ecrts.org/
+>> Found conference date near keyword
+Extracted Start Date: 2024-07-09T00:00:00.000Z
+Extracted End Date: 2024-07-12T00:00:00.000Z
 True
 ---------------------------
 >> 125
 >> 6639c37bbf0a76d1ef717b9d
-Found keyword: hybrid mode
-Found keyword: remote presentation
-Found keyword: offline
+>> Getting conference date from: https://paclic2023.github.io/
+Found conference date in home page
+Extracted Start Date: 2023-12-02T00:00:00.000Z
+Extracted End Date: 2023-12-05T00:00:00.000Z
 True
----------------------------
+--------------------------- 
 >> 126
 >> 6639c397bf0a76d1ef717bb9
-True
+>> Getting conference date from: https://cicm-conference.org/2024/cicm.php
+>> Found conference date near title
+Expected Start Date: 2023-08-05T00:00:00.000Z
+Expected End Date: 2023-08-09T00:00:00.000Z
+Extracted Start Date: 2024-08-05T00:00:00.000Z
+Extracted End Date: 2024-08-09T00:00:00.000Z
+False
 ---------------------------
 >> 127
 >> 6639c39fbf0a76d1ef717bc3
+>> Getting conference date from: https://conf.researchr.org/home/cseet-2024
+Found conference date in home page
+Extracted Start Date: 2024-07-29T00:00:00.000Z
+Extracted End Date: 2024-08-01T00:00:00.000Z
 True
 ---------------------------
 >> 128
 >> 6639c3abbf0a76d1ef717bcd
-Found keyword: in-person event
-Found keyword: in-person event
+>> Getting conference date from: https://ct-rsa-2024.aau.at/
+>> Found conference date near keyword
+Extracted Start Date: 2024-05-06T00:00:00.000Z
+Extracted End Date: 2024-05-09T00:00:00.000Z
 True
 ---------------------------
 >> 129
 >> 6639c3aebf0a76d1ef717bd1
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)  
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:188:20)
+Hasn't link
 ---------------------------
 >> 130
 >> 6639c3b9bf0a76d1ef717bdd
+>> Getting conference date from: https://events.gwdg.de/event/576/
+>> Found conference date near title
+Extracted Start Date: 2024-08-12T00:00:00.000Z
+Extracted End Date: 2024-08-16T00:00:00.000Z
 True
 ---------------------------
 >> 131
 >> 6639c3cfbf0a76d1ef717bf5
+>> Getting conference date from: https://eatis.org/eatis2024/index.html
+>> Found conference date near title
+Extracted Start Date: 2024-07-03T00:00:00.000Z
+Extracted End Date: 2024-07-05T00:00:00.000Z
 True
 ---------------------------
 >> 132
 >> 6639c3d6bf0a76d1ef717bfb
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)  
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:188:20)
+Hasn't link
 ---------------------------
 >> 133
 >> 6639c48b078f0b3454c91b86
-Found keyword: online attendance possible
-Found keyword: Online Attendance
+>> Getting conference date from: https://2024.eacl.org/
+Found conference date in home page
+Extracted Start Date: 2024-03-17T00:00:00.000Z
+Extracted End Date: 2024-03-22T00:00:00.000Z
 True
 ---------------------------
 >> 134
 >> 6639c28b4931f50e65517e53
-True
+>> Getting conference date from: https://casc-conference.org/
+undefined
+False
 ---------------------------
 >> 135
 >> 6639c28f4931f50e65517e57
-Found keyword: Hybrid Conference
-Found keyword: Hybrid Conference
+>> Getting conference date from: https://www.cgs-network.org/cgi24/
+>> Found conference date near title
+Extracted Start Date: 2024-07-01T00:00:00.000Z
+Extracted End Date: 2024-07-05T00:00:00.000Z
 True
 ---------------------------
 >> 136
 >> 6639c37ebf0a76d1ef717b9f
+>> Getting conference date from: https://www.agilealliance.org/xp2024/
+>> Found conference date near title
+Extracted Start Date: 2024-06-04T00:00:00.000Z
+Extracted End Date: 2024-06-07T00:00:00.000Z
 True
 ---------------------------
 >> 137
 >> 6639c386bf0a76d1ef717ba7
-Found keyword: in-person conference
+>> Getting conference date from: https://www.conll.org/
+>> Found conference date near keyword
+Extracted Start Date: 2024-11-12T00:00:00.000Z
+Extracted End Date: 2024-11-13T00:00:00.000Z
 True
 ---------------------------
 >> 138
 >> 6639c3b0bf0a76d1ef717bd3
+>> Getting conference date from: https://www.dexa.org/dawak2024
+undefined
+Found conference date in home page
+Extracted Start Date: 2024-08-26T00:00:00.000Z
+Extracted End Date: 2024-08-28T00:00:00.000Z
 True
 ---------------------------
 >> 139
 >> 6639c3b7bf0a76d1ef717bdb
-True
+>> Getting conference date from: https://dese.ai/dese-2024/
+17th INTERNATIONAL CONFERENCE
+DEVELOPMENTS IN e-SYSTEMS ENGINEERING
+2024
+NOVEMBER
+UAE
+
+False
 ---------------------------
 >> 140
 >> 6639c3cabf0a76d1ef717bef
+>> Getting conference date from: https://2024.emnlp.org/
+>> Found conference date near title
+Extracted Start Date: 2024-11-12T00:00:00.000Z
+Extracted End Date: 2024-11-16T00:00:00.000Z
 True
 ---------------------------
 >> 141
 >> 6639c3d3bf0a76d1ef717bf9
-True
+>> Getting conference date from: https://iuuk.mff.cuni.cz/events/conferences/eurocomb23/callForPapers.html
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
 ---------------------------
 >> 142
 >> 6639c487078f0b3454c91b82
+>> Getting conference date from: https://dsd-seaa.com/
+Found conference date in home page
+Extracted Start Date: 2024-08-28T00:00:00.000Z
+Extracted End Date: 2024-08-30T00:00:00.000Z
 True
 ---------------------------
 >> 143
 >> 6639c489078f0b3454c91b84
+>> Getting conference date from: https://pdp2024.org/
+
+Found conference date in home page
+Extracted Start Date: 2024-03-20T00:00:00.000Z
+Extracted End Date: 2024-03-22T00:00:00.000Z
 True
 ---------------------------
 >> 144
 >> 6639c29c4931f50e65517e63
+>> Getting conference date from: https://apors2024.casconf.cn/
+undefined
+Found conference date in screenshot
+Extracted Start Date: 2024-11-15T00:00:00.000Z
+Extracted End Date: 2024-11-18T00:00:00.000Z
 True
 ---------------------------
 >> 145
 >> 6639c39abf0a76d1ef717bbd
+>> Getting conference date from: https://learningtheory.org/colt2024/
+>> Found conference date near title
+Extracted Start Date: 2024-06-30T00:00:00.000Z
+Extracted End Date: 2024-07-03T00:00:00.000Z
 True
 ---------------------------
 >> 146
 >> 6639c3a5bf0a76d1ef717bc7
-Found keyword: offline
-Found keyword: offline
+>> Getting conference date from: https://tamc2024.comp.polyu.edu.hk/
+>> Found conference date near title
+Extracted Start Date: 2024-05-13T00:00:00.000Z
+Extracted End Date: 2024-05-15T00:00:00.000Z
 True
 ---------------------------
 >> 147
 >> 6639c3a9bf0a76d1ef717bcb
+>> Getting conference date from: https://www.cdve.org/dates.html
+Th 21st International Conference
+on Cooperative Design, Vi ualization
+and Engineering
+CDVE2024
+
+Found conference date in home page
+Extracted Start Date: 2024-09-15T00:00:00.000Z
+Extracted End Date: 2024-09-18T00:00:00.000Z
 True
 ---------------------------
 >> 148
 >> 6639c497078f0b3454c91b92
+>> Getting conference date from: https://ecscw.eusset.eu/2024/
+Found conference date in home page
+Extracted Start Date: 2024-06-17T00:00:00.000Z
+Extracted End Date: 2024-06-21T00:00:00.000Z
 True
 ---------------------------
 >> 149
 >> 6639c491078f0b3454c91b8c
-True
-Total extracted: 138
-Correct Accuracy: 97.10%
-Null: 12
-
+>> Getting conference date from: https://www.ecai2024.eu/
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
 ---------------------------
 >> 150
 >> 6639c4bc078f0b3454c91bb4
-Found keyword: Onsite and Online Hybrid Event
+>> Getting conference date from: https://conference.eurospi.net/index.php/en/programme/conference-programme
+Found conference date in home page
+Extracted Start Date: 2024-09-04T00:00:00.000Z
+Extracted End Date: 2024-09-06T00:00:00.000Z
 True
 ---------------------------
 >> 151
 >> 6639c4c3078f0b3454c91bba
-True
+>> Getting conference date from: https://etaps.org/2024/conferences/esop/
+False
 ---------------------------
 >> 152
 >> 6639c4d0078f0b3454c91bc8
+>> Getting conference date from: https://dastlab.github.io/edbticdt2024/
+Found conference date in home page
+Extracted Start Date: 2024-03-25T00:00:00.000Z
+Extracted End Date: 2024-03-28T00:00:00.000Z
 True
 ---------------------------
 >> 153
 >> 6639c4e6078f0b3454c91bd8
-True
+>> Getting conference date from: https://etaps.org/2024/conferences/fossacs/
+False
 ---------------------------
 >> 154
 >> 6639c4f8078f0b3454c91be6
-Found keyword: possibility for remote presentation
-Found keyword: remote presentation
-Found keyword: present their paper in person
+>> Getting conference date from: https://graphdrawing.github.io/gd2024/
+>> Found conference date near title
+Extracted Start Date: 2024-09-18T00:00:00.000Z
+Extracted End Date: 2024-09-20T00:00:00.000Z
 True
 ---------------------------
 >> 155
 >> 6639c50f078f0b3454c91bfc
-Found keyword: hybrid format
-new ObjectId('6639c50f078f0b3454c91bfc')
-hybrid
+>> Getting conference date from: http://www.asru2023.org/
+Found conference date in home page
+Expected Start Date: 2023-12-16T00:00:00.000Z
+Expected End Date: 2023-12-20T00:00:00.000Z
+Extracted Start Date: 2023-07-24T00:00:00.000Z
+Extracted End Date: 2023-08-14T00:00:00.000Z
+False
 ---------------------------
 >> 156
 >> 6639c513078f0b3454c91c00
+>> Getting conference date from: https://csf2024.ieee-security.org/
+>> Found conference date near title
+Extracted Start Date: 2024-07-08T00:00:00.000Z
+Extracted End Date: 2024-07-12T00:00:00.000Z
 True
 ---------------------------
 >> 157
 >> 6639c51d078f0b3454c91c08
-True
+>> Getting conference date from: https://cvpr.thecvf.com/
+Found conference date in home page
+Expected Start Date: 2024-06-17T00:00:00.000Z
+Expected End Date: 2024-06-21T00:00:00.000Z
+Extracted Start Date: 2024-06-19T00:00:00.000Z
+Extracted End Date: 2024-06-21T00:00:00.000Z
+False
 ---------------------------
 >> 158
 >> 6639c539078f0b3454c91c24
-True
+>> Getting conference date from: https://fg2024.ieee-biometrics.org/
+>> Found conference date near title
+Expected Start Date: 2024-05-28T00:00:00.000Z
+Expected End Date: 2024-05-30T00:00:00.000Z
+Extracted Start Date: 2024-05-27T00:00:00.000Z
+Extracted End Date: 2024-05-31T00:00:00.000Z
+False
 ---------------------------
 >> 159
 >> 6639c540078f0b3454c91c2a
+>> Getting conference date from: https://icbc2024.ieee-icbc.org/
+>> Found conference date near title
+Extracted Start Date: 2024-05-27T00:00:00.000Z
+Extracted End Date: 2024-05-31T00:00:00.000Z
 True
 ---------------------------
 >> 160
 >> 6639c542078f0b3454c91c2c
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)      
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)        
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 161
 >> 6639c69c4c771c093141cb90
-True
+>> Getting conference date from: https://conf.researchr.org/track/icpc-2024/icpc-2024-research?
+
+Found conference date in home page
+Expected Start Date: 2024-04-15T00:00:00.000Z
+Expected End Date: 2024-04-16T00:00:00.000Z
+Extracted Start Date: 2024-04-14T00:00:00.000Z
+Extracted End Date: 2024-04-20T00:00:00.000Z
+False
 ---------------------------
 >> 162
 >> 6639c6b14c771c093141cba4
+>> Getting conference date from: https://conferences.big.tuwien.ac.at/biweek2024/edoc.php
+>> Found conference date near keyword
+Extracted Start Date: 2024-09-09T00:00:00.000Z
+Extracted End Date: 2024-09-13T00:00:00.000Z
 True
 ---------------------------
 >> 163
 >> 6639c49e078f0b3454c91b98
+>> Getting conference date from: https://www.evostar.org/2024/evocop/
+Found conference date in home page
+Extracted Start Date: 2024-04-03T00:00:00.000Z
+Extracted End Date: 2024-04-05T00:00:00.000Z
 True
 ---------------------------
 >> 164
 >> 6639c4be078f0b3454c91bb6
-Found keyword: in-person conference
-True
+>> Getting conference date from: https://algo-conference.org/2024/esa/
+False
 ---------------------------
 >> 165
 >> 6639c4c0078f0b3454c91bb8
-Found keyword: in-person and online
-Found keyword: online participation
-True
+>> Getting conference date from: https://www.esann.org/
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
 ---------------------------
 >> 166
 >> 6639c4d6078f0b3454c91bcc
+>> Getting conference date from: https://fc24.ifca.ai/
+Found conference date in home page
+Extracted Start Date: 2024-03-04T00:00:00.000Z
+Extracted End Date: 2024-03-08T00:00:00.000Z
 True
 ---------------------------
 >> 167
 >> 6639c4e0078f0b3454c91bd4
+>> Getting conference date from: https://www.fdl-conference.com/index.html
+Found conference date in home page
+Extracted Start Date: 2024-09-04T00:00:00.000Z
+Extracted End Date: 2024-09-06T00:00:00.000Z
 True
 ---------------------------
 >> 168
 >> 6639c51f078f0b3454c91c0a
-Found keyword: Remote Presentation Option
-Found keyword: remote presentation
-Found keyword: Remote Presentation Option
-Found keyword: remote presentation
-Found keyword: in-person meetings
+>> Getting conference date from: https://www.ieeelcn.org/
+>> Found conference date near title
+Extracted Start Date: 2024-10-08T00:00:00.000Z
+Extracted End Date: 2024-10-10T00:00:00.000Z
 True
 ---------------------------
 >> 169
 >> 6639c525078f0b3454c91c10
-Found keyword: in-person presentation
-Found keyword: in-person presentation
+>> Getting conference date from: https://ieeevr.org/2024/contribute/papers/
+>> Found conference date near title
+Extracted Start Date: 2024-03-16T00:00:00.000Z
+Extracted End Date: 2024-03-21T00:00:00.000Z
 True
 ---------------------------
 >> 170
 >> 6639c554078f0b3454c91c3c
-True
+>> Getting conference date from: https://www.cis-ram.org/2024/
+>> Error in getConferenceDates: TimeoutError: Waiting failed: 30000ms exceeded
+False
 ---------------------------
 >> 171
 >> 6639c556078f0b3454c91c3e
+>> Getting conference date from: https://www.icdm2024.org/
+>> Found conference date near title
+Extracted Start Date: 2024-12-09T00:00:00.000Z
+Extracted End Date: 2024-12-12T00:00:00.000Z
 True
 ---------------------------
 >> 172
 >> 6639c67e4c771c093141cb74
+>> Getting conference date from: https://icfec2024.ontariotechu.ca/
+>> Found conference date near title
+Extracted Start Date: 2024-05-06T00:00:00.000Z
+Extracted End Date: 2024-05-09T00:00:00.000Z
 True
 ---------------------------
 >> 173
 >> 6639c6aa4c771c093141cb9e
+>> Getting conference date from: https://www.vcip2024.org/index.html
+>> Found conference date near keyword
+Extracted Start Date: 2024-12-08T00:00:00.000Z
+Extracted End Date: 2024-12-11T00:00:00.000Z
 True
 ---------------------------
 >> 174
 >> 6639c6b84c771c093141cbac
+>> Getting conference date from: https://www.ipdps.org/
+Found conference date in home page
+Extracted Start Date: 2024-05-27T00:00:00.000Z
+Extracted End Date: 2024-05-31T00:00:00.000Z
 True
 ---------------------------
 >> 175
 >> 6639c4cc078f0b3454c91bc4
+>> Getting conference date from: https://www.emmsad.org/home
+>> Found conference date near keyword
+Extracted Start Date: 2024-06-03T00:00:00.000Z
+Extracted End Date: 2024-06-04T00:00:00.000Z
 True
 ---------------------------
 >> 176
 >> 6639c4e3078f0b3454c91bd6
-Found keyword: offline
-True
+>> Getting conference date from: https://hpi.de/foga2023/
+Found conference date in home page
+Expected Start Date: 2023-08-30T00:00:00.000Z
+Expected End Date: 2023-09-01T00:00:00.000Z
+Extracted Start Date: 2023-06-09T00:00:00.000Z
+Extracted End Date: 2023-06-16T00:00:00.000Z
+False
 ---------------------------
 >> 177
 >> 6639c503078f0b3454c91bf0
-True
+>> Getting conference date from: https://hcw-ipdps.org/
+False
 ---------------------------
 >> 178
 >> 6639c51b078f0b3454c91c06
+>> Getting conference date from: https://computationalcomplexity.org/
+Found conference date in home page
+Extracted Start Date: 2024-07-22T00:00:00.000Z
+Extracted End Date: 2024-07-25T00:00:00.000Z
 True
 ---------------------------
 >> 179
 >> 6639c529078f0b3454c91c14
-Found keyword: A hybrid event
-Found keyword: will be in-person
+>> Getting conference date from: https://services.conferences.computer.org/2024/
+undefined
+Found conference date in home page
+Extracted Start Date: 2024-07-07T00:00:00.000Z
+Extracted End Date: 2024-07-13T00:00:00.000Z
 True
 ---------------------------
 >> 180
 >> 6639c53b078f0b3454c91c26
-Found keyword: offline
+>> Getting conference date from: https://2024.acsos.org/track/acsos-2024-papers
+Found conference date in home page
+Extracted Start Date: 2024-09-16T00:00:00.000Z
+Extracted End Date: 2024-09-20T00:00:00.000Z
 True
 ---------------------------
 >> 181
 >> 6639c54b078f0b3454c91c34
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)   
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)    
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 182
 >> 6639c54d078f0b3454c91c36
-Found keyword: Hybrid Conference
-True
+>> Getting conference date from: https://mobinets.cn/conf/cit2023/index.html
+>> Found conference date near keyword
+Expected Start Date: 2023-12-28T00:00:00.000Z
+Expected End Date: 2023-12-30T00:00:00.000Z
+Extracted Start Date: 2023-11-01T00:00:00.000Z
+Extracted End Date: 2023-11-03T00:00:00.000Z
+False
 ---------------------------
 >> 183
 >> 6639c6934c771c093141cb88
-Found keyword: A hybrid event
-Found keyword: A hybrid event
+>> Getting conference date from: https://www.ieee-is.org/news/next-ieee-conference/
+Found conference date in home page
+Extracted Start Date: 2024-08-29T00:00:00.000Z
+Extracted End Date: 2024-08-31T00:00:00.000Z
 True
 ---------------------------
 >> 184
 >> 6639c6954c771c093141cb8a
+>> Getting conference date from: https://sites.google.com/view/ieee-mass-2024
+Found conference date in home page
+Extracted Start Date: 2024-09-23T00:00:00.000Z
+Extracted End Date: 2024-09-25T00:00:00.000Z
 True
 ---------------------------
 >> 185
 >> 6639c69a4c771c093141cb8e
-Found keyword: in-person conference
-Found keyword: offline
+>> Getting conference date from: https://percom.org/2024/
+>> Found conference date near keyword
+Extracted Start Date: 2024-03-11T00:00:00.000Z
+Extracted End Date: 2024-03-15T00:00:00.000Z
 True
 ---------------------------
 >> 186
 >> 6639c69e4c771c093141cb92
-Found keyword: in-person and online
+>> Getting conference date from: https://2024.ieee-icra.org/
+>> Found conference date near title
+Extracted Start Date: 2024-05-13T00:00:00.000Z
+Extracted End Date: 2024-05-17T00:00:00.000Z
 True
 ---------------------------
 >> 187
 >> 6639c4ac078f0b3454c91ba4
+>> Getting conference date from: https://2024.ecoop.org/track/ecoop-2024-papers
+Found conference date in home page
 True
----------------------------
+--------------------------- 
 >> 188
 >> 6639c48d078f0b3454c91b88
-True
+>> Getting conference date from: https://ecco2024.euro-online.org/
+False
 ---------------------------
 >> 189
 >> 6639c4b6078f0b3454c91bae
-Found keyword: face-to-face
+>> Getting conference date from: https://ea-tel.eu/ectel2024
+>> Found conference date near title
 True
 ---------------------------
 >> 190
 >> 6639c4ba078f0b3454c91bb2
-True
+>> Getting conference date from: https://events.vsc.ac.at/event/123/
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
 ---------------------------
 >> 191
 >> 6639c4c4078f0b3454c91bbc
-Found keyword: face-to-face
+>> Getting conference date from: https://esorics2024.org/
+>> Found conference date near title
 True
 ---------------------------
 >> 192
 >> 6639c4c6078f0b3454c91bbe
+>> Getting conference date from: https://eurocg2024.math.uoi.gr/
+>> Found conference date near title
 True
 ---------------------------
 >> 193
 >> 6639c4d9078f0b3454c91bce
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)   
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)    
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 194
 >> 6639c4de078f0b3454c91bd2
+>> Getting conference date from: https://fmcad.org/FMCAD24/
+>> Found conference date near title
 True
 ---------------------------
 >> 195
 >> 6639c4f6078f0b3454c91be4
+>> Getting conference date from: https://dimva.org/dimva2024/#page-top
+>> Found conference date near keyword
 True
 ---------------------------
 >> 196
 >> 6639c4fa078f0b3454c91be8
-Found keyword: support online participation
-Found keyword: online participation
-True
+>> Getting conference date from: https://graphicsinterface.org/conference/2024/
+False
 ---------------------------
 >> 197
 >> 6639c505078f0b3454c91bf2
-Found keyword: will be held hybrid
+>> Getting conference date from: https://www.flextechchair.org/HSI2024/home-1.html
+Found conference date in home page
 True
 ---------------------------
 >> 198
 >> 6639c53e078f0b3454c91c28
+>> Getting conference date from: https://www3.cs.stonybrook.edu/~ieeebigdata2024/
+>> Found conference date near title
 True
 ---------------------------
 >> 199
 >> 6639c558078f0b3454c91c40
+>> Getting conference date from: https://dsaa2024.dsaa.co/index.html
+>> Found conference date near title
 True
 ---------------------------
 >> 200
 >> 6639c6734c771c093141cb6a
+>> Getting conference date from: https://dcoss.org/dcoss23/
+>> Found conference date near keyword
 True
 ---------------------------
 >> 201
 >> 6639c67a4c771c093141cb70
+>> Getting conference date from: https://healthcom2024.ieee-healthcom.org/
+
+Found conference date in home page
 True
 ---------------------------
 >> 202
 >> 6639c67c4c771c093141cb72
+>> Getting conference date from: https://cyprusconferences.org/iceccs2024/
+Found conference date in home page
 True
 ---------------------------
 >> 203
 >> 6639c6834c771c093141cb78
-True
+>> Getting conference date from: https://waset.org/global-software-engineering-conference-in-august-2024-in-moscow
+>> Found conference date near keyword
+Expected Start Date: 2024-08-29T00:00:00.000Z
+Expected End Date: 2024-08-30T00:00:00.000Z
+Extracted Start Date: 2025-03-22T00:00:00.000Z
+Extracted End Date: 2025-03-23T00:00:00.000Z
+False
 ---------------------------
 >> 204
 >> 6639c6874c771c093141cb7c
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)   
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)    
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 205
 >> 6639c68e4c771c093141cb84
+>> Getting conference date from: https://ieee-isi.org/2023/
+>> Found conference date near title
 True
 ---------------------------
 >> 206
 >> 6639c6a24c771c093141cb96
-True
+>> Getting conference date from: https://www.soca-ieee.org/index.html
+False
 ---------------------------
 >> 207
 >> 6639c6a44c771c093141cb98
+>> Getting conference date from: https://conf.researchr.org/home/saner-2024
+Found conference date in home page
 True
 ---------------------------
 >> 208
 >> 6639c6ac4c771c093141cba0
-Found keyword: remote participation
-Found keyword: Paper presentation can be delivered on-site
-new ObjectId('6639c6ac4c771c093141cba0')
-hybrid
+>> Getting conference date from: https://icws.conferences.computer.org/2024/
+Found conference date in screenshot
+True
 ---------------------------
 >> 209
 >> 6639c6b24c771c093141cba6
+>> Getting conference date from: https://www.2024.ieeeigarss.org/
+>> Found conference date near title
 True
 ---------------------------
 >> 210
 >> 6639c48f078f0b3454c91b8a
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)   
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)    
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 211
 >> 6639c499078f0b3454c91b94
-True
+>> Getting conference date from: https://eccv.ecva.net/
+False
 ---------------------------
 >> 212
 >> 6639c49c078f0b3454c91b96
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)   
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)    
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 213
 >> 6639c4a2078f0b3454c91b9c
+>> Getting conference date from: https://www.ecir2024.org/
+Found conference date in home page
 True
 ---------------------------
 >> 214
 >> 6639c4c9078f0b3454c91bc0
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)   
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)    
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 215
 >> 6639c4cb078f0b3454c91bc2
-Found keyword: online participation
-new ObjectId('6639c4cb078f0b3454c91bc2')
-online
+>> Getting conference date from: https://2024.eurosys.org/index.html
+False
 ---------------------------
 >> 216
 >> 6639c4cf078f0b3454c91bc6
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)   
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)    
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 217
 >> 6639c4ee078f0b3454c91bde
-True
+>> Getting conference date from: https://etaps.org/2024/conferences/fase/
+False
 ---------------------------
 >> 218
 >> 6639c507078f0b3454c91bf4
-True
+>> Getting conference date from: https://hai-conference.net/hai2024/
+HAI 2024
+Swansea, United Kingdom
+24-27 Nov 2024
+The 12th International Conference on Human-Agent Interaction
+will take place at Swansea University,
+United Kingdom
+QQQ
+0000
+1000
+
+False
 ---------------------------
 >> 219
 >> 6639c511078f0b3454c91bfe
+>> Getting conference date from: http://www.bibe2024.kg.ac.rs/
+Found conference date in home page
 True
 ---------------------------
 >> 220
 >> 6639c52f078f0b3454c91c1a
-Found keyword: hybrid mode
-Found keyword: in-person conference
+>> Getting conference date from: https://infocom2023.ieee-infocom.org/ieee-global-internet-gi-symposium
+Found conference date in home page
 True
 ---------------------------
 >> 221
 >> 6639c537078f0b3454c91c22
+>> Getting conference date from: https://avss2024.org/program.php
+Found conference date in home page
 True
 ---------------------------
 >> 222
 >> 6639c547078f0b3454c91c30
+>> Getting conference date from: https://www.cloudcom2024.org/
+>> Found conference date near title
 True
 ---------------------------
 >> 223
 >> 6639c54f078f0b3454c91c38
-Found keyword: assistance for remote presentation
-Found keyword: remote presentation
+>> Getting conference date from: https://infocom2024.ieee-infocom.org/
+>> Found conference date near title
 True
 ---------------------------
 >> 224
 >> 6639c6784c771c093141cb6e
+>> Getting conference date from: https://www.escience-conference.org/2024/
+Found conference date in home page
 True
 ---------------------------
 >> 225
 >> 6639c6a64c771c093141cb9a
+>> Getting conference date from: https://conf.researchr.org/track/icsme-2024/icsme-2024-papers
+
+Found conference date in home page
 True
 ---------------------------
 >> 226
 >> 6639c4b2078f0b3454c91baa
-Found keyword: physical conference
+>> Getting conference date from: https://conf.researchr.org/track/ecsa-2024/ecsa-2024-research-papers
+>> Found conference date near title
 True
 ---------------------------
 >> 227
 >> 6639c4b4078f0b3454c91bac
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)   
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)    
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 228
 >> 6639c4ec078f0b3454c91bdc
-Found keyword: offline
+>> Getting conference date from: https://2024.fie-conference.org/
+>> Found conference date near title
 True
 ---------------------------
 >> 229
 >> 6639c552078f0b3454c91c3a
-Found keyword: Dual-Mode Conference
-Found keyword: Virtual Conference
-Found keyword: Dual-Mode Conference
-Found keyword: Virtual Conference
+>> Getting conference date from: https://iser.org.in/conf/index.php?id=2622714#:~:text=Welcome%20to%20(ICCV%2D24),experts%20of%20to%20one%20platform.
+Found conference date in home page
 True
 ---------------------------
 >> 230
 >> 6639c6804c771c093141cb76
-Found keyword: possibility for remote presentation
-Found keyword: remote presentation
-Found keyword: in-person conference
+>> Getting conference date from: https://2024.ieeewcci.org/
+>> Found conference date near title
 True
 ---------------------------
 >> 231
 >> 6639c6854c771c093141cb7a
-True
+>> Getting conference date from: http://www.ieee-hust-ncc.org/2024/HPCC/index.html
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
 ---------------------------
 >> 232
 >> 6639c6b44c771c093141cba8
-Found keyword: possibility for remote presentation
-Found keyword: remote presentation
-Found keyword: in-person conference
+>> Getting conference date from: https://2024.ieeewcci.org/
+Found conference date in home page
 True
 ---------------------------
 >> 233
 >> 6639c4a0078f0b3454c91b9a
-Found keyword: hybrid mode
+>> Getting conference date from: https://www.evostar.org/2024/
+Found conference date in home page
 True
 ---------------------------
 >> 234
 >> 6639c493078f0b3454c91b8e
-Found keyword: presented in person
+>> Getting conference date from: https://eccb2024.fi/
+>> Found conference date near title
 True
 ---------------------------
 >> 235
 >> 6639c4a5078f0b3454c91b9e
+>> Getting conference date from: https://ecmlpkdd.org/2024/
+>> Found conference date near title
 True
 ---------------------------
 >> 236
 >> 6639c4ae078f0b3454c91ba6
-True
+>> Getting conference date from: https://euro2024cph.dk/
+False
 ---------------------------
 >> 237
 >> 6639c4fc078f0b3454c91bea
+>> Getting conference date from: https://icfp24.sigplan.org/home/haskellsymp-2024#Call-for-Papers
+Found conference date in home page
 True
 ---------------------------
 >> 238
 >> 6639c523078f0b3454c91c0e
+>> Getting conference date from: https://www.ieeesmc2024.org/home
+Found conference date in home page
 True
 ---------------------------
 >> 239
 >> 6639c527078f0b3454c91c12
-Found keyword: possibility for remote presentation
-Found keyword: remote presentation
-Found keyword: in-person conference
+>> Getting conference date from: https://2024.ieeewcci.org/
+>> Found conference date near title
 True
 ---------------------------
 >> 240
 >> 6639c52b078f0b3454c91c16
-Found keyword: face-to-face
+>> Getting conference date from: https://ccnc2024.ieee-ccnc.org/
+LÅfit0Gis
+NEVADA
+
+Found conference date in home page
 True
 ---------------------------
 >> 241
 >> 6639c535078f0b3454c91c20
+>> Getting conference date from: https://tc.computer.org/tclt/icalt-2024/
+>> Found conference date near title
 True
 ---------------------------
 >> 242
 >> 6639c6a04c771c093141cb94
+>> Getting conference date from: https://secon2023.ieee-secon.org/
+
+Found conference date in home page
 True
 ---------------------------
 >> 243
 >> 6639c6b64c771c093141cbaa
-Found keyword: in-person event
+>> Getting conference date from: https://orion.polito.it/iolts/
+Found conference date in home page
 True
 ---------------------------
 >> 244
 >> 6639c4aa078f0b3454c91ba2
+>> Getting conference date from: https://euramas.github.io/eumas2024/
+>> Found conference date near title
 True
 ---------------------------
 >> 245
 >> 6639c4d3078f0b3454c91bca
-Found keyword: Virtual Conference
-new ObjectId('6639c4d3078f0b3454c91bca')
-online
+>> Getting conference date from: https://etra.acm.org/2024/index.html
+>> Found conference date near keyword
+True
 ---------------------------
 >> 246
 >> 6639c4f1078f0b3454c91be0
-Found keyword: hybrid mode
-Found keyword: online participation
+>> Getting conference date from: https://gecco-2024.sigevo.org/HomePage
+Found conference date in home page
 True
 ---------------------------
 >> 247
 >> 6639c4f4078f0b3454c91be2
+>> Getting conference date from: https://irc.cs.sdu.edu.cn/gmp2024/index.html#/index
+Found conference date in home page
 True
 ---------------------------
 >> 248
 >> 6639c509078f0b3454c91bf6
+>> Getting conference date from: https://www.computing-conf.org/
+iadis digital library
+
+>> Found conference date near keyword in important date site
 True
 ---------------------------
 >> 249
 >> 6639c50b078f0b3454c91bf8
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)   
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)    
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 250
 >> 6639c531078f0b3454c91c1c
+>> Getting conference date from: https://globecom2024.ieee-globecom.org/
+
+Found conference date in home page
 True
 ---------------------------
 >> 251
 >> 6639c549078f0b3454c91c32
+>> Getting conference date from: https://clustercomp.org/2024/
+
+Found conference date in home page
 True
 ---------------------------
 >> 252
 >> 6639c6764c771c093141cb6c
+>> Getting conference date from: https://icdar2024.net/
+>> Found conference date near keyword
 True
 ---------------------------
 >> 253
 >> 6639c6884c771c093141cb7e
-Found keyword: in-person conference
+>> Getting conference date from: https://2024.ieeeicip.org/
+undefined
+Found conference date in screenshot
 True
 ---------------------------
 >> 254
 >> 6639c6974c771c093141cb8c
+>> Getting conference date from: https://2024.ieeeicme.org/general-calls-and-topics-of-interest/
+Found conference date in home page
 True
 ---------------------------
 >> 255
 >> 6639c6a84c771c093141cb9c
-Found keyword: remote participation
-Found keyword: Paper presentation can be delivered on-site
+>> Getting conference date from: https://sse.conferences.computer.org/2024/
+Found conference date in screenshot
 True
 ---------------------------
 >> 256
 >> 6639c6ae4c771c093141cba2
+>> Getting conference date from: http://www.wimob.org/wimob2024/
+W MSB
+The 20th International Conference on Wireless and Mobile
+Computing, Networking and Communications.
+iL23 October,2024, Paris, France
+
+Found conference date in home page
 True
 ---------------------------
 >> 257
 >> 6639c6ba4c771c093141cbae
+>> Getting conference date from: https://www.ipccc.org/ipccc2024/main.php?page=1
+>> Found conference date near keyword
 True
 ---------------------------
 >> 258
 >> 6639c6cd4c771c093141cbc0
-Found keyword: (format: hybrid)
+>> Getting conference date from: https://www.ieee-ism.org/
+Found conference date in home page
 True
 ---------------------------
 >> 259
 >> 6639c6c84c771c093141cbbc
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)   
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)    
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 260
 >> 6639c6cb4c771c093141cbbe
-Found keyword: presented in person
+>> Getting conference date from: https://2024.ieee-isit.org/home
+Found conference date in screenshot
 True
 ---------------------------
 >> 261
 >> 6639c7064c771c093141cbf6
-True
+>> Getting conference date from: https://2024.ieee-iscc.org/
+False
 ---------------------------
 >> 262
 >> 6639c7104c771c093141cbfe
-Found keyword: Remote presentations can be organized
-Found keyword: remote presentation
-Found keyword: Remote presentations can be organized
-Found keyword: remote presentation
+>> Getting conference date from: https://lics.siglog.org/lics24/cfp.php
+Found conference date in home page
 True
 ---------------------------
 >> 263
 >> 6639c71a4c771c093141cc08
+>> Getting conference date from: https://wcnc2024.ieee-wcnc.org/
+>> Found conference date near title
 True
 ---------------------------
 >> 264
 >> 6639c71f4c771c093141cc0c
+>> Getting conference date from: https://hpsr2024.ieee-hpsr.org/
+
+Found conference date in home page
 True
 ---------------------------
 >> 265
 >> 6639c73a4c771c093141cc26
+>> Getting conference date from: https://www.discotec.org/2024/dais
+>> Found conference date near keyword
 True
 ---------------------------
 >> 266
 >> 6639ceb5c521b3f2ad61146b
+>> Getting conference date from: https://pro-ve-2024.sciencesconf.org/
+Found conference date in screenshot
 True
 ---------------------------
 >> 267
 >> 6639ceb8c521b3f2ad61146d
+>> Getting conference date from: https://sites.google.com/view/pemwn2024/home?authuser=0      
+>> Found conference date near keyword
 True
 ---------------------------
 >> 268
 >> 6639cebcc521b3f2ad611471
-True
+>> Getting conference date from: https://ifsa2024.crea.gov.it/
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
 ---------------------------
 >> 269
 >> 6639cecec521b3f2ad611481
+>> Getting conference date from: https://ipsn.acm.org/2024/index.html
+>> Found conference date near title
 True
 ---------------------------
 >> 270
 >> 6639ced0c521b3f2ad611483
+>> Getting conference date from: https://isc24.cs.gmu.edu/
+Found conference date in screenshot
 True
 ---------------------------
 >> 271
 >> 6639cedfc521b3f2ad611491
-True
+>> Getting conference date from: http://itcs-conf.org/index.html
+False
 ---------------------------
 >> 272
 >> 6639cee5c521b3f2ad611497
-True
+>> Getting conference date from: https://ifm2024.cs.manchester.ac.uk/
+Found conference date in screenshot
+Expected Start Date: 2024-11-13T00:00:00.000Z
+Expected End Date: 2024-11-15T00:00:00.000Z
+Extracted Start Date: 2024-11-11T00:00:00.000Z
+Extracted End Date: 2024-11-12T00:00:00.000Z
+False
 ---------------------------
 >> 273
 >> 6639cef6c521b3f2ad6114a5
+>> Getting conference date from: https://idc.acm.org/2024/
+>> Found conference date near title
 True
 ---------------------------
 >> 274
 >> 6639cf0fc521b3f2ad6114bb
-True
+>> Getting conference date from: https://abz-conf.org/site/2024/
+False
 ---------------------------
 >> 275
 >> 6639cf1bc521b3f2ad6114c5
+>> Getting conference date from: https://bpm2024.agh.edu.pl/
+
+>> Found conference date near keyword in important date site
 True
 ---------------------------
 >> 276
 >> 6639cf3fc521b3f2ad6114e5
-Found keyword: possibility for remote presentation
-Found keyword: remote presentation
-Found keyword: present their paper in person
+>> Getting conference date from: https://easyconferences.eu/ciac2023/
+>> Found conference date near title
 True
 ---------------------------
 >> 277
 >> 6639cf52c521b3f2ad6114f7
+>> Getting conference date from: https://www.evostar.org/2024/evomusart/
+Found conference date in home page
 True
 ---------------------------
 >> 278
 >> 6639cf56c521b3f2ad6114fb
-Found keyword: in-person event
-Found keyword: in-person conference
+>> Getting conference date from: https://e-nns.org/icann2024/
+>> Found conference date near title
 True
 ---------------------------
 >> 279
 >> 6639cf58c521b3f2ad6114fd
+>> Getting conference date from: https://icat.vrsj.org/2024/
+Found conference date in home page
 True
 ---------------------------
 >> 280
 >> 6639d0082aa97d8b88806025
+>> Getting conference date from: https://icce2024.ateneo.edu/
+>> Found conference date near title
 True
 ---------------------------
 >> 281
 >> 6639c6d94c771c093141cbca
-True
+>> Getting conference date from: https://conferences.imt-atlantique.fr/rsp-symposium/
+35th International Workshop
+on Rapid System Prototyping
+Shortening the Path from Specification to Prototype
+October 3, 2024 | Raleigh, NC, USA
+EMBEDDED
+
+False
 ---------------------------
 >> 282
 >> 6639c6df4c771c093141cbd0
+>> Getting conference date from: https://2024.msrconf.org/track/msr-2024-technical-papers?    
+>> Found conference date near keyword
 True
 ---------------------------
 >> 283
 >> 6639c7124c771c093141cc00
-True
+>> Getting conference date from: https://sp2024.ieee-security.org/index.html
+>> Found conference date near title
+Expected Start Date: 2024-05-20T00:00:00.000Z
+Expected End Date: 2024-05-23T00:00:00.000Z
+Extracted Start Date: 2024-05-20T00:00:00.000Z
+Extracted End Date: 2024-05-22T00:00:00.000Z
+False
 ---------------------------
 >> 284
 >> 6639c7184c771c093141cc06
-Found keyword: A hybrid event
-Found keyword: Virtual Conference
-Found keyword: in-person conference
-new ObjectId('6639c7184c771c093141cc06')
-hybrid
+>> Getting conference date from: https://ieeevis.org/year/2024/welcome
+Found conference date in home page
+True
 ---------------------------
 >> 285
 >> 6639c7234c771c093141cc10
-True
+>> Getting conference date from: https://www.asonam.cpsc.ucalgary.ca/2024/
+False
 ---------------------------
 >> 286
 >> 6639c72d4c771c093141cc1a
+>> Getting conference date from: http://ieee-aiplus.org/2024/euc/cfw.php
+>> Found conference date near keyword
 True
 ---------------------------
 >> 287
 >> 6639c7364c771c093141cc22
-Found keyword: HYBRID EVENT
-Found keyword: Virtual Participation
-Found keyword: offline
+>> Getting conference date from: https://www.safeprocess2024.eu/
+Found conference date in home page
 True
 ---------------------------
 >> 288
 >> 6639cf17c521b3f2ad6114c1
+>> Getting conference date from: https://sc24.supercomputing.org/
+Found conference date in home page
 True
 ---------------------------
 >> 289
 >> 6639cf45c521b3f2ad6114eb
-Found keyword: Virtual Presentations
-Found keyword: in-person presentation
-new ObjectId('6639cf45c521b3f2ad6114eb')
-hybrid
+>> Getting conference date from: https://wp.nyu.edu/acns2024/
+>> Found conference date near title
+True
 ---------------------------
 >> 290
 >> 6639cf6bc521b3f2ad61150f
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)   
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)    
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 291
 >> 6639cf6dc521b3f2ad611511
+>> Getting conference date from: https://conf.researchr.org/track/CC-2024/CC-2024-papers#event-overview
+Found conference date in home page
 True
 ---------------------------
 >> 292
 >> 6639cffb2aa97d8b88806019
-Found keyword: allowed to present remotely
+>> Getting conference date from: https://csedu.scitevents.org/
+CSEDU 2025
+17TH INTERNATIONAL CONFERENCE ON COMPUTER SUPPORTED EDUCATION
+PORTO, PORTUGAL
+1 - 3 APRIL, 2025
+
+Found conference date near banner image
 True
 ---------------------------
 >> 293
 >> 6639d0162aa97d8b88806033
-Found keyword: allowed to present remotely
+>> Getting conference date from: https://coopis.scitevents.org/
+CooplS
+Systems
+Porto -Portugal • November 19-21, 2024
+
+Found conference date near banner image
 True
 ---------------------------
 >> 294
 >> 6639d01a2aa97d8b88806037
+>> Getting conference date from: https://2024.cansconference.org/
+>> Found conference date near title
 True
 ---------------------------
 >> 295
 >> 6639c6d44c771c093141cbc6
-True
+>> Getting conference date from: https://ispass.org/ispass2024/
+>> Error in getConferenceDates: TimeoutError: Waiting failed: 30000ms exceeded
+False
 ---------------------------
 >> 296
 >> 6639c6e44c771c093141cbd4
+>> Getting conference date from: https://www.ieee-scam.org/2024/
+Found conference date in home page
 True
 ---------------------------
 >> 297
 >> 6639c6ec4c771c093141cbdc
+>> Getting conference date from: https://pacificvis.github.io/pvis2024/
+Found conference date in home page
 True
 ---------------------------
 >> 298
 >> 6639c6f84c771c093141cbe8
-True
+>> Getting conference date from: https://www.stevens.edu/page-right-nav/cifer-conference-2024 
+Found conference date in home page
+Expected Start Date: 2024-10-22T00:00:00.000Z
+Expected End Date: 2024-10-23T00:00:00.000Z
+Extracted Start Date: 2024-07-15T00:00:00.000Z
+Extracted End Date: 2024-10-21T00:00:00.000Z
+False
 ---------------------------
 >> 299
 >> 6639c7294c771c093141cc16
-Found keyword: hybrid mode
+>> Getting conference date from: https://ieeeismar.org/
+>> Found conference date near keyword
 True
-Total extracted: 138
-Correct Accuracy: 95.65%
-Null: 12
+Total extracted: 86
+Correct Accuracy: 95.35%
+Null: 17
+Hasn't link: 10
+>> 247
+>> 6639c4f4078f0b3454c91be2
+>> Getting conference date from: https://irc.cs.sdu.edu.cn/gmp2024/index.html#/index
+Found conference date in home page
+True
+---------------------------
+>> 248
+>> 6639c509078f0b3454c91bf6
+>> Getting conference date from: https://www.computing-conf.org/
+iadis digital library
 
+>> Found conference date near keyword in important date site
+True
+---------------------------
+>> 249
+>> 6639c50b078f0b3454c91bf8
+Hasn't link
+---------------------------
+>> 250
+>> 6639c531078f0b3454c91c1c
+>> Getting conference date from: https://globecom2024.ieee-globecom.org/
 
+Found conference date in home page
+True
+---------------------------
+>> 251
+>> 6639c549078f0b3454c91c32
+>> Getting conference date from: https://clustercomp.org/2024/
+
+Found conference date in home page
+True
+---------------------------
+>> 252
+>> 6639c6764c771c093141cb6c
+>> Getting conference date from: https://icdar2024.net/
+>> Found conference date near keyword
+True
+---------------------------
+>> 253
+>> 6639c6884c771c093141cb7e
+>> Getting conference date from: https://2024.ieeeicip.org/
+undefined
+Found conference date in screenshot
+True
+---------------------------
+>> 254
+>> 6639c6974c771c093141cb8c
+>> Getting conference date from: https://2024.ieeeicme.org/general-calls-and-topics-of-interest/
+Found conference date in home page
+True
+---------------------------
+>> 255
+>> 6639c6a84c771c093141cb9c
+>> Getting conference date from: https://sse.conferences.computer.org/2024/
+Found conference date in screenshot
+True
+---------------------------
+>> 256
+>> 6639c6ae4c771c093141cba2
+>> Getting conference date from: http://www.wimob.org/wimob2024/
+W MSB
+The 20th International Conference on Wireless and Mobile
+Computing, Networking and Communications.
+iL23 October,2024, Paris, France
+
+Found conference date in home page
+True
+---------------------------
+>> 257
+>> 6639c6ba4c771c093141cbae
+>> Getting conference date from: https://www.ipccc.org/ipccc2024/main.php?page=1
+>> Found conference date near keyword
+True
+---------------------------
+>> 258
+>> 6639c6cd4c771c093141cbc0
+>> Getting conference date from: https://www.ieee-ism.org/
+Found conference date in home page
+True
+---------------------------
+>> 259
+>> 6639c6c84c771c093141cbbc
+Hasn't link
+---------------------------
+>> 260
+>> 6639c6cb4c771c093141cbbe
+>> Getting conference date from: https://2024.ieee-isit.org/home
+Found conference date in screenshot
+True
+---------------------------
+>> 261
+>> 6639c7064c771c093141cbf6
+>> Getting conference date from: https://2024.ieee-iscc.org/
+False
+---------------------------
+>> 262
+>> 6639c7104c771c093141cbfe
+>> Getting conference date from: https://lics.siglog.org/lics24/cfp.php
+Found conference date in home page
+True
+---------------------------
+>> 263
+>> 6639c71a4c771c093141cc08
+>> Getting conference date from: https://wcnc2024.ieee-wcnc.org/
+>> Found conference date near title
+True
+---------------------------
+>> 264
+>> 6639c71f4c771c093141cc0c
+>> Getting conference date from: https://hpsr2024.ieee-hpsr.org/
+
+Found conference date in home page
+True
+---------------------------
+>> 265
+>> 6639c73a4c771c093141cc26
+>> Getting conference date from: https://www.discotec.org/2024/dais
+>> Found conference date near keyword
+True
+---------------------------
+>> 266
+>> 6639ceb5c521b3f2ad61146b
+>> Getting conference date from: https://pro-ve-2024.sciencesconf.org/
+Found conference date in screenshot
+True
+---------------------------
+>> 267
+>> 6639ceb8c521b3f2ad61146d
+>> Getting conference date from: https://sites.google.com/view/pemwn2024/home?authuser=0      
+>> Found conference date near keyword
+True
+---------------------------
+>> 268
+>> 6639cebcc521b3f2ad611471
+>> Getting conference date from: https://ifsa2024.crea.gov.it/
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
+---------------------------
+>> 269
+>> 6639cecec521b3f2ad611481
+>> Getting conference date from: https://ipsn.acm.org/2024/index.html
+>> Found conference date near title
+True
+---------------------------
+>> 270
+>> 6639ced0c521b3f2ad611483
+>> Getting conference date from: https://isc24.cs.gmu.edu/
+Found conference date in screenshot
+True
+---------------------------
+>> 271
+>> 6639cedfc521b3f2ad611491
+>> Getting conference date from: http://itcs-conf.org/index.html
+False
+---------------------------
+>> 272
+>> 6639cee5c521b3f2ad611497
+>> Getting conference date from: https://ifm2024.cs.manchester.ac.uk/
+Found conference date in screenshot
+Expected Start Date: 2024-11-13T00:00:00.000Z
+Expected End Date: 2024-11-15T00:00:00.000Z
+Extracted Start Date: 2024-11-11T00:00:00.000Z
+Extracted End Date: 2024-11-12T00:00:00.000Z
+False
+---------------------------
+>> 273
+>> 6639cef6c521b3f2ad6114a5
+>> Getting conference date from: https://idc.acm.org/2024/
+>> Found conference date near title
+True
+---------------------------
+>> 274
+>> 6639cf0fc521b3f2ad6114bb
+>> Getting conference date from: https://abz-conf.org/site/2024/
+False
+---------------------------
+>> 275
+>> 6639cf1bc521b3f2ad6114c5
+>> Getting conference date from: https://bpm2024.agh.edu.pl/
+
+>> Found conference date near keyword in important date site
+True
+---------------------------
+>> 276
+>> 6639cf3fc521b3f2ad6114e5
+>> Getting conference date from: https://easyconferences.eu/ciac2023/
+>> Found conference date near title
+True
+---------------------------
+>> 277
+>> 6639cf52c521b3f2ad6114f7
+>> Getting conference date from: https://www.evostar.org/2024/evomusart/
+Found conference date in home page
+True
+---------------------------
+>> 278
+>> 6639cf56c521b3f2ad6114fb
+>> Getting conference date from: https://e-nns.org/icann2024/
+>> Found conference date near title
+True
+---------------------------
+>> 279
+>> 6639cf58c521b3f2ad6114fd
+>> Getting conference date from: https://icat.vrsj.org/2024/
+Found conference date in home page
+True
+---------------------------
+>> 280
+>> 6639d0082aa97d8b88806025
+>> Getting conference date from: https://icce2024.ateneo.edu/
+>> Found conference date near title
+True
+---------------------------
+>> 281
+>> 6639c6d94c771c093141cbca
+>> Getting conference date from: https://conferences.imt-atlantique.fr/rsp-symposium/
+35th International Workshop
+on Rapid System Prototyping
+Shortening the Path from Specification to Prototype
+October 3, 2024 | Raleigh, NC, USA
+EMBEDDED
+
+False
+---------------------------
+>> 282
+>> 6639c6df4c771c093141cbd0
+>> Getting conference date from: https://2024.msrconf.org/track/msr-2024-technical-papers?    
+>> Found conference date near keyword
+True
+---------------------------
+>> 283
+>> 6639c7124c771c093141cc00
+>> Getting conference date from: https://sp2024.ieee-security.org/index.html
+>> Found conference date near title
+Expected Start Date: 2024-05-20T00:00:00.000Z
+Expected End Date: 2024-05-23T00:00:00.000Z
+Extracted Start Date: 2024-05-20T00:00:00.000Z
+Extracted End Date: 2024-05-22T00:00:00.000Z
+False
+---------------------------
+>> 284
+>> 6639c7184c771c093141cc06
+>> Getting conference date from: https://ieeevis.org/year/2024/welcome
+Found conference date in home page
+True
+---------------------------
+>> 285
+>> 6639c7234c771c093141cc10
+>> Getting conference date from: https://www.asonam.cpsc.ucalgary.ca/2024/
+False
+---------------------------
+>> 286
+>> 6639c72d4c771c093141cc1a
+>> Getting conference date from: http://ieee-aiplus.org/2024/euc/cfw.php
+>> Found conference date near keyword
+True
+---------------------------
+>> 287
+>> 6639c7364c771c093141cc22
+>> Getting conference date from: https://www.safeprocess2024.eu/
+Found conference date in home page
+True
+---------------------------
+>> 288
+>> 6639cf17c521b3f2ad6114c1
+>> Getting conference date from: https://sc24.supercomputing.org/
+Found conference date in home page
+True
+---------------------------
+>> 289
+>> 6639cf45c521b3f2ad6114eb
+>> Getting conference date from: https://wp.nyu.edu/acns2024/
+>> Found conference date near title
+True
+---------------------------
+>> 290
+>> 6639cf6bc521b3f2ad61150f
+Hasn't link
+---------------------------
+>> 291
+>> 6639cf6dc521b3f2ad611511
+>> Getting conference date from: https://conf.researchr.org/track/CC-2024/CC-2024-papers#event-overview
+Found conference date in home page
+True
+---------------------------
+>> 292
+>> 6639cffb2aa97d8b88806019
+>> Getting conference date from: https://csedu.scitevents.org/
+CSEDU 2025
+17TH INTERNATIONAL CONFERENCE ON COMPUTER SUPPORTED EDUCATION
+PORTO, PORTUGAL
+1 - 3 APRIL, 2025
+
+Found conference date near banner image
+True
+---------------------------
+>> 293
+>> 6639d0162aa97d8b88806033
+>> Getting conference date from: https://coopis.scitevents.org/
+CooplS
+Systems
+Porto -Portugal • November 19-21, 2024
+
+Found conference date near banner image
+True
+---------------------------
+>> 294
+>> 6639d01a2aa97d8b88806037
+>> Getting conference date from: https://2024.cansconference.org/
+>> Found conference date near title
+True
+---------------------------
+>> 295
+>> 6639c6d44c771c093141cbc6
+>> Getting conference date from: https://ispass.org/ispass2024/
+>> Error in getConferenceDates: TimeoutError: Waiting failed: 30000ms exceeded
+False
+---------------------------
+>> 296
+>> 6639c6e44c771c093141cbd4
+>> Getting conference date from: https://www.ieee-scam.org/2024/
+Found conference date in home page
+True
+---------------------------
+>> 297
+>> 6639c6ec4c771c093141cbdc
+>> Getting conference date from: https://pacificvis.github.io/pvis2024/
+Found conference date in home page
+True
+---------------------------
+>> 298
+>> 6639c6f84c771c093141cbe8
+>> Getting conference date from: https://www.stevens.edu/page-right-nav/cifer-conference-2024 
+Found conference date in home page
+Expected Start Date: 2024-10-22T00:00:00.000Z
+Expected End Date: 2024-10-23T00:00:00.000Z
+Extracted Start Date: 2024-07-15T00:00:00.000Z
+Extracted End Date: 2024-10-21T00:00:00.000Z
+False
+---------------------------
+>> 299
+>> 6639c7294c771c093141cc16
+>> Getting conference date from: https://ieeeismar.org/
+>> Found conference date near keyword
+True
+Total extracted: 86
+Correct Accuracy: 95.35%
+Null: 17
+Hasn't link: 10
+[nodemon] restarting due to changes...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+MONGO URI:  mongodb+srv://14042002a:luongkhoi123@cluster0.xro9zib.mongodb.net/conference-searching?retryWrites=true&w=majority
+Server was running on port 8080
+DB connection was successfully
+---------------------------
+>> 300
+>> 6639c72b4c771c093141cc18
+>> Getting conference date from: https://dsn2024uq.github.io/
+>> Found conference date near title
+True
+---------------------------
+>> 301
+>> 6639c7434c771c093141cc2e
+Hasn't link
+---------------------------
+>> 302
+>> 6639cebec521b3f2ad611473
+>> Getting conference date from: https://ima.org.uk/21435/19th-ima-international-conference-on-cryptography-and-coding/
+False
+---------------------------
+>> 303
+>> 6639cee1c521b3f2ad611493
+>> Getting conference date from: https://aaai.org/aaai-conference/
+>> Found conference date near keyword
+True
+---------------------------
+>> 304
+>> 6639cee8c521b3f2ad611499
+>> Getting conference date from: https://ida2024.org/
+>> Found conference date near title
+True
+---------------------------
+>> 305
+>> 6639cef1c521b3f2ad6114a1
+>> Getting conference date from: https://iva.acm.org/2024/
+>> Found conference date near keyword
+True
+---------------------------
+>> 306
+>> 6639cf01c521b3f2ad6114af
+>> Getting conference date from: https://compose.ioc.ee/icalp2024/
+>> Found conference date near keyword
+Expected Start Date: 2024-07-08T00:00:00.000Z
+Expected End Date: 2024-07-13T00:00:00.000Z
+Extracted Start Date: 2024-07-08T00:00:00.000Z
+Extracted End Date: 2024-07-12T00:00:00.000Z
+False
+---------------------------
+>> 307
+>> 6639cf26c521b3f2ad6114cf
+Hasn't link
+---------------------------
+>> 308
+>> 6639cf34c521b3f2ad6114db
+>> Getting conference date from: https://www.iaria.org/conferences2024/CfPACHI24.html
+>> Found conference date near title
+True
+---------------------------
+>> 309
+>> 6639cf5cc521b3f2ad611501
+>> Getting conference date from: https://icaps24.icaps-conference.org/calls/main_track/       
+>> Found conference date near title
+True
+---------------------------
+>> 310
+>> 6639cf73c521b3f2ad611517
+>> Getting conference date from: https://complexis.scitevents.org/
+COMPLEXIS 2024
+9th International Conference on Com lexi Future Information Systems and Risk
+ANGERS, FRANCE
+28 - 29 APRIL, 2024
+
+Found conference date near banner image
+True
+---------------------------
+>> 311
+>> 6639cf75c521b3f2ad611519
+>> Getting conference date from: http://cca-net.de/cca2024/
+>> Found conference date near title
+True
+---------------------------
+>> 312
+>> 6639cf79c521b3f2ad61151d
+>> Getting conference date from: https://computationalcreativity.net/iccc24/
+>> Found conference date near keyword
+True
+---------------------------
+>> 313
+>> 6639cf7dc521b3f2ad611521
+>> Getting conference date from: https://lrec-coling-2024.org/
+>> Found conference date near title
+True
+---------------------------
+>> 314
+>> 6639d0182aa97d8b88806035
+>> Getting conference date from: https://www.discotec.org/2024/coordination.html
+>> Found conference date near keyword
+True
+---------------------------
+>> 315
+>> 6639d0232aa97d8b8880603f
+>> Getting conference date from: https://data.scitevents.org/
+aoæs
+11 - 13 June, 2025
+Bilbao - Séa10SS
+RNATIONAL CONFERENCE ON DATA SCIENCE; TECHNOLOGWÄND APPLICATIONS•
+
+Found conference date near banner image
+Expected Start Date: 2024-07-09T00:00:00.000Z
+Expected End Date: 2024-07-11T00:00:00.000Z
+Extracted Start Date: 2025-06-11T00:00:00.000Z
+Extracted End Date: 2025-06-13T00:00:00.000Z
+False
+---------------------------
+>> 316
+>> 6639c6d04c771c093141cbc2
+>> Getting conference date from: https://www.nca-ieee.org/2024/call_for_papers.html
+Found conference date in home page
+True
+---------------------------
+>> 317
+>> 6639c6d24c771c093141cbc4
+>> Getting conference date from: https://www.ieee-ispa.org/2024/ispa/
+The 22nd IEEE International Symposium on
+Parallel a
+tributed Processing with Applications
+(IEEE ISPA 2024)
+Kai en
+enan, hinå
+vem er
+
+Found conference date in home page
+True
+---------------------------
+>> 318
+>> 6639c6db4c771c093141cbcc
+>> Getting conference date from: https://isorc.github.io/2024/
+>> Found conference date near keyword
+True
+---------------------------
+>> 319
+>> 6639c6e64c771c093141cbd6
+>> Getting conference date from: https://iwqos2024.ieee-iwqos.org/
+
+Found conference date in home page
+True
+---------------------------
+>> 320
+>> 6639c6f24c771c093141cbe2
+Hasn't link
 ---------------------------
 >> 321
 >> 6639c7014c771c093141cbf2
-True
+>> Getting conference date from: https://attend.ieee.org/ssci-2023/ieee-symposium-on-computational-intelligence-in-cyber-security-ieee-cics/
+False
 ---------------------------
 >> 322
 >> 6639c7164c771c093141cc04
-True
----------------------------
+>> Getting conference date from: https://events.vtsociety.org/vtc2024-spring/
+>> Found conference date near keyword
+Expected Start Date: 2024-06-24T00:00:00.000Z
+Expected End Date: 2024-06-27T00:00:00.000Z
+Extracted Start Date: 2022-06-19T00:00:00.000Z
+Extracted End Date: 2022-06-22T00:00:00.000Z
+False
+--------------------------- 
 >> 323
 >> 6639c71c4c771c093141cc0a
-True
+>> Getting conference date from: https://wacv2024.thecvf.com/submissions/
+False
 ---------------------------
 >> 324
 >> 6639c7254c771c093141cc12
-True
+>> Getting conference date from: https://www.uccbdcat2024.org/BDCAT/
+False
 ---------------------------
 >> 325
 >> 6639c7274c771c093141cc14
-Found keyword: offline
+>> Getting conference date from: https://2024.iccad.com/
+
+Found conference date in home page
 True
 ---------------------------
 >> 326
 >> 6639c72f4c771c093141cc1c
-Found keyword: presented in person
+>> Getting conference date from: https://iros2024-abudhabi.org/
+>> Found conference date near title
 True
 ---------------------------
 >> 327
 >> 6639ceaec521b3f2ad611465
-Found keyword: in-person and online
+>> Getting conference date from: https://interact2023.org/
+Found conference date in home page
 True
 ---------------------------
 >> 328
 >> 6639cebac521b3f2ad61146f
+>> Getting conference date from: https://noms2024.ieee-noms.org/
+>> Found conference date near keyword
 True
 ---------------------------
 >> 329
 >> 6639ced9c521b3f2ad61148b
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)        
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)   
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)     
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 330
 >> 6639cf0ac521b3f2ad6114b7
+>> Getting conference date from: https://ieeecompsac.computer.org/2024/cfp/
+>> Found conference date near keyword
 True
 ---------------------------
 >> 331
 >> 6639cf11c521b3f2ad6114bd
+>> Getting conference date from: https://sighpc.ipsj.or.jp/HPCAsia2024/cfp.html
+Found conference date in home page
 True
 ---------------------------
 >> 332
 >> 6639cf14c521b3f2ad6114bf
+>> Getting conference date from: https://www.kono.cis.iwate-u.ac.jp/~yamanaka/walcom2024/     
+>> Found conference date near title
 True
 ---------------------------
 >> 333
 >> 6639cf2ec521b3f2ad6114d5
-Found keyword: face-to-face
-new ObjectId('6639cf2ec521b3f2ad6114d5')
-offline
+>> Getting conference date from: https://voyager.ce.fit.ac.jp/conf/aina/2024/
+>> Found conference date near title
+True
 ---------------------------
 >> 334
 >> 6639cf43c521b3f2ad6114e9
+>> Getting conference date from: https://www.evostar.org/2024/evoapps/
+Found conference date in home page
 True
 ---------------------------
 >> 335
 >> 6639cf60c521b3f2ad611505
+>> Getting conference date from: https://broadnets.eai-conferences.org/2024/
+COMMUNITY THAT BUILDS YOUR CAREER
+Collaborative research. Objective evaluation. Fair recognition.
+
+Found conference date in home page
 True
 ---------------------------
 >> 336
 >> 6639cf62c521b3f2ad611507
+>> Getting conference date from: https://iccbr2024.org/
+Found conference date in home page
 True
 ---------------------------
 >> 337
 >> 6639cf6fc521b3f2ad611513
+>> Getting conference date from: https://esweek.org/cases/
+Found conference date in home page
 True
 ---------------------------
 >> 338
 >> 6639cf7fc521b3f2ad611523
+>> Getting conference date from: https://recomb.org/recomb2024/index.html
+>> Found conference date near keyword in important date site
 True
 ---------------------------
 >> 339
 >> 6639cff92aa97d8b88806017
-True
+>> Getting conference date from: http://2024.cscwd.org/
+>> Error in getConferenceDates: TimeoutError: Waiting failed: 30000ms exceeded
+False
 ---------------------------
 >> 340
 >> 6639d0252aa97d8b88806041
+>> Getting conference date from: https://www.dexa.org/
+>> Found conference date near keyword
 True
 ---------------------------
 >> 341
 >> 6639c6d74c771c093141cbc8
-Found keyword: face-to-face
+>> Getting conference date from: https://pimrc2024.ieee-pimrc.org/
+
+Found conference date in home page
 True
 ---------------------------
 >> 342
 >> 6639c6c64c771c093141cbba
-Found keyword: in-person conference
+>> Getting conference date from: https://2024.ccgrid-conference.org/
+Found conference date in home page
 True
 ---------------------------
 >> 343
 >> 6639c6c24c771c093141cbb6
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)        
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)   
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)     
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 344
 >> 6639c6ea4c771c093141cbda
+>> Getting conference date from: https://noms2024.ieee-noms.org/
+>> Found conference date near title
 True
 ---------------------------
 >> 345
 >> 6639c6f64c771c093141cbe6
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)        
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)   
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)     
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 346
 >> 6639c6fe4c771c093141cbee
-Error in getType:  TimeoutError: Navigation timeout of 30000 ms exceeded
-    at new Deferred (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\Deferred.js:26:34) 
-    at Deferred.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\Deferred.js:68:16)
-    at new LifecycleWatcher (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\LifecycleWatcher.js:75:60)
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:140:29)   
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)     
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async testTypeExtraction (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\controllers\conference-controller.js:348:35)
-    at async crawlController (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\controllers\conference-controller.js:323:9)
+>> Getting conference date from: https://cmte.ieee.org/cis-bbtc/cibcb2024/
+Found conference date in home page
+True
 ---------------------------
 >> 347
 >> 6639c7044c771c093141cbf4
+>> Getting conference date from: https://www.ac.uma.es/arith2024/index.html
+Found conference date in home page
 True
 ---------------------------
 >> 348
 >> 6639c7214c771c093141cc0e
-Found keyword: Virtual Conference Instructions
-Found keyword: Virtual Conference
-True
+>> Getting conference date from: https://acisinternational.org/conferences/icis-2024/
+Found conference date in home page
+Expected Start Date: 2024-09-20T00:00:00.000Z
+Expected End Date: 2024-09-22T00:00:00.000Z
+Extracted Start Date: 2024-06-07T00:00:00.000Z
+Extracted End Date: 2024-06-09T00:00:00.000Z
+False
 ---------------------------
 >> 349
 >> 6639c7324c771c093141cc1e
-Found keyword: hybrid mode
-Found keyword: offline
+>> Getting conference date from: https://www.wi-iat.com/wi-iat2024/index.html
+Found conference date in home page
 True
 ---------------------------
 >> 350
 >> 6639cec8c521b3f2ad61147b
+>> Getting conference date from: https://www.eurosis.org/conf/isc/2024/index.html
+>> Found conference date near title
 True
 ---------------------------
 >> 351
 >> 6639cedbc521b3f2ad61148d
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)        
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)   
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)     
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 352
 >> 6639ceddc521b3f2ad61148f
-Found keyword: , Online (Virtual)
+>> Getting conference date from: https://www.informingscience.org/Conferences/InSITE2024      
+Found conference date in home page
 True
 ---------------------------
 >> 353
 >> 6639cef3c521b3f2ad6114a3
+>> Getting conference date from: https://conference.iemss.org/
+Found conference date in home page
 True
 ---------------------------
 >> 354
 >> 6639cf03c521b3f2ad6114b1
+>> Getting conference date from: http://sirocco2024.di.unisa.it/
+>> Found conference date near title
 True
 ---------------------------
 >> 355
 >> 6639cf05c521b3f2ad6114b3
-True
+>> Getting conference date from: https://ictac2024.cs.ait.ac.th/
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
 ---------------------------
 >> 356
 >> 6639cf22c521b3f2ad6114cb
-Found keyword: online and face-to-face
-Found keyword: face-to-face
-Found keyword: online and face-to-face
-Found keyword: face-to-face
-True
+>> Getting conference date from: https://www.immersivelrn.org/ilrn2024/
+>> Found conference date near title
+Expected Start Date: 2024-06-10T00:00:00.000Z
+Expected End Date: 2024-06-13T00:00:00.000Z
+Extracted Start Date: 2024-06-03T00:00:00.000Z
+Extracted End Date: 2024-06-05T00:00:00.000Z
+False
 ---------------------------
 >> 357
 >> 6639cf37c521b3f2ad6114dd
+>> Getting conference date from: https://www.iiwas.org/conferences/momm2024/
+>> Found conference date near keyword
 True
 ---------------------------
 >> 358
 >> 6639cf38c521b3f2ad6114df
-True
+>> Getting conference date from: https://acii-conf.net/2024/
+>> Found conference date near title
+Expected Start Date: 2024-09-15T00:00:00.000Z
+Expected End Date: 2024-09-18T00:00:00.000Z
+Extracted Start Date: 2024-09-16T00:00:00.000Z
+Extracted End Date: 2024-09-18T00:00:00.000Z
+False
 ---------------------------
 >> 359
 >> 6639cf3ac521b3f2ad6114e1
-Found keyword: allowed to present remotely
+>> Getting conference date from: https://icaart.scitevents.org/
+ICRRRT
+1 7th International Conference on Agents and Artificial Intelligence
+Porto, Portugal
+23 - 25 February, 2025
+
+Found conference date near banner image
 True
 ---------------------------
 >> 360
 >> 6639cf3cc521b3f2ad6114e3
+>> Getting conference date from: https://ica3pp2024.scimeeting.cn/
+Found conference date in home page
 True
 ---------------------------
 >> 361
 >> 6639cf4ec521b3f2ad6114f3
-Found keyword: in-person event
-Found keyword: offline
+>> Getting conference date from: https://aistats.org/aistats2024/
+>> Found conference date near title
 True
 ---------------------------
 >> 362
 >> 6639cf50c521b3f2ad6114f5
+>> Getting conference date from: https://aied2024.cesar.school/
+>> Found conference date near title
 True
 ---------------------------
 >> 363
 >> 6639cf84c521b3f2ad611527
-Found keyword: remote presentation
-Found keyword: Besides online sessions, there will be pure on-site sessions
-Found keyword: remote presentation
+>> Getting conference date from: https://iccsa.org/
+>> Found conference date near title
 True
 ---------------------------
 >> 364
 >> 6639d0052aa97d8b88806023
+>> Getting conference date from: https://www.icchp.org/
+>> Found conference date near title
 True
 ---------------------------
 >> 365
 >> 6639d0122aa97d8b8880602f
+>> Getting conference date from: https://icarcv2024.org/
+Found conference date in home page
 True
 ---------------------------
 >> 366
 >> 6639d01e2aa97d8b8880603b
+>> Getting conference date from: https://cw2023.ieee.tn/
+>> Found conference date near title
 True
 ---------------------------
 >> 367
 >> 6639d0292aa97d8b88806045
+>> Getting conference date from: https://dastlab.github.io/edbticdt2024/
+Found conference date in home page
 True
 ---------------------------
 >> 368
 >> 6639c6e14c771c093141cbd2
-True
+>> Getting conference date from: https://vissoft.info/2024/index.html
+False
 ---------------------------
 >> 369
 >> 6639c6ee4c771c093141cbde
-True
+>> Getting conference date from: https://2024.rtas.org/
+>> Found conference date near title
+Expected Start Date: 2024-05-13T00:00:00.000Z
+Expected End Date: 2024-05-16T00:00:00.000Z
+Extracted Start Date: 2023-05-09T00:00:00.000Z
+Extracted End Date: 2023-05-12T00:00:00.000Z
+False
 ---------------------------
 >> 370
 >> 6639c6fc4c771c093141cbec
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)        
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)   
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)     
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 371
 >> 6639c7004c771c093141cbf0
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)        
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)   
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)     
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 372
 >> 6639c70a4c771c093141cbfa
+>> Getting conference date from: https://focs.computer.org/2024/
+Found conference date in home page
 True
 ---------------------------
 >> 373
 >> 6639ceb1c521b3f2ad611467
-True
+>> Getting conference date from: https://www.dbsec2024.unimol.it/
+>> Error in getConferenceDates: TimeoutError: Waiting failed: 30000ms exceeded
+False
 ---------------------------
 >> 374
 >> 6639cee3c521b3f2ad611495
+>> Getting conference date from: https://fmics.inria.fr/2024/
+>> Found conference date near keyword
 True
 ---------------------------
 >> 375
 >> 6639ceefc521b3f2ad61149f
-True
+>> Getting conference date from: https://ieee-iv.org/2024/
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
 ---------------------------
 >> 376
 >> 6639cf0dc521b3f2ad6114b9
-Found keyword: Hybrid Conference
-True
+>> Getting conference date from: https://icer2024.acm.org/track/icer-2024-papers
+Found conference date in home page
+Expected Start Date: 2024-08-13T00:00:00.000Z
+Expected End Date: 2024-08-15T00:00:00.000Z
+Extracted Start Date: 2024-05-10T00:00:00.000Z
+Extracted End Date: 2024-05-15T00:00:00.000Z
+False
 ---------------------------
 >> 377
 >> 6639cf19c521b3f2ad6114c3
-Found keyword: Hybrid Conference
+>> Getting conference date from: https://www.kde.cs.uni-kassel.de/icfca2023/
+>> Found conference date near keyword in important date site
 True
 ---------------------------
 >> 378
 >> 6639cf24c521b3f2ad6114cd
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)        
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)   
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)     
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 379
 >> 6639cf2cc521b3f2ad6114d3
-True
+>> Getting conference date from: https://adma2024.github.io/
+False
 ---------------------------
 >> 380
 >> 6639cf4ac521b3f2ad6114ef
+>> Getting conference date from: https://icail2023.di.uminho.pt/
+>> Found conference date near keyword
 True
 ---------------------------
 >> 381
 >> 6639cf5ac521b3f2ad6114ff
+>> Getting conference date from: https://easyconferences.eu/cade2023/
+>> Found conference date near title
 True
 ---------------------------
 >> 382
 >> 6639cf5ec521b3f2ad611503
+>> Getting conference date from: https://www.ares-conference.eu/
+>> Found conference date near title
 True
 ---------------------------
 >> 383
 >> 6639cf65c521b3f2ad611509
-Found keyword: allowed to present remotely
-True
+>> Getting conference date from: https://closer.scitevents.org/Home.aspx
+CLOSER 2025
+15TH INTERNATIONAL CONFERENCE ON CLOUD COMPUTING AND SERVICES SCIENCE
+PORTO. PORTUGAL
+- 3 APRIL. 2025
+
+False
 ---------------------------
 >> 384
 >> 6639cf66c521b3f2ad61150b
+>> Getting conference date from: https://collaboratecom.eai-conferences.org/2024/
+COMMUNITY THAT BUILDS YOUR CAREER
+Collaborative research. Objective evaluation. Fair recognition.
+
+Found conference date in home page
 True
 ---------------------------
 >> 385
 >> 6639cf77c521b3f2ad61151b
-Found keyword: hybrid mode
-Found keyword: online presentations
+>> Getting conference date from: https://iccci.pwr.edu.pl/2024/
+>> Found conference date near title
 True
 ---------------------------
 >> 386
 >> 6639d00c2aa97d8b88806029
+>> Getting conference date from: https://soc.uum.edu.my/icoci/2023/
+>> Found conference date near title
 True
 ---------------------------
 >> 387
 >> 6639d0142aa97d8b88806031
-True
+>> Getting conference date from: https://www.codit2024.com/
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
 ---------------------------
 >> 388
 >> 6639d02d2aa97d8b88806049
+>> Getting conference date from: https://cyber-science.org/2024/dasc/
+>> Found conference date near title
 True
 ---------------------------
 >> 389
 >> 6639c6e84c771c093141cbd8
+>> Getting conference date from: https://lanman2024.ieee-lanman.org/
+
+Found conference date in home page
 True
 ---------------------------
 >> 390
 >> 6639c7344c771c093141cc20
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)        
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)   
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)     
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 391
 >> 6639cec6c521b3f2ad611479
+>> Getting conference date from: https://www.lamda.nju.edu.cn/ijclr24/
+>> Found conference date near keyword
 True
 ---------------------------
 >> 392
 >> 6639ceccc521b3f2ad61147f
-Found keyword: in person conference
+>> Getting conference date from: https://www.iiwas.org/conferences/iiwas2024/
+>> Found conference date near keyword
 True
 ---------------------------
 >> 393
 >> 6639cefac521b3f2ad6114a9
+>> Getting conference date from: https://assets24.sigaccess.org/
+Found conference date in home page
 True
 ---------------------------
 >> 394
 >> 6639cf30c521b3f2ad6114d7
-True
+>> Getting conference date from: https://cyprusconferences.org/caise2024/
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
 ---------------------------
 >> 395
 >> 6639cf86c521b3f2ad611529
+>> Getting conference date from: https://cyprusconferences.org/caip2023/
+>> Found conference date near title
 True
 ---------------------------
 >> 396
 >> 6639cff62aa97d8b88806015
+>> Getting conference date from: https://www.safecomp2024.unifi.it/
+>> Found conference date near title
 True
 ---------------------------
 >> 397
 >> 6639cfff2aa97d8b8880601d
+>> Getting conference date from: https://icvs2023.conf.tuwien.ac.at/contributions/call-for-papers/
+>> Found conference date near title
 True
 ---------------------------
 >> 398
 >> 6639d0202aa97d8b8880603d
-Found keyword: physical conference
+>> Getting conference date from: https://icde2024.github.io/
+Found conference date in home page
 True
 ---------------------------
 >> 399
 >> 6639d0272aa97d8b88806043
-True
+>> Getting conference date from: https://www.dasfaa2024.org/
+>> Found conference date near keyword
+Expected Start Date: 2024-07-02T00:00:00.000Z
+Expected End Date: 2024-07-05T00:00:00.000Z
+Extracted Start Date: 2024-07-03T00:00:00.000Z
+Extracted End Date: 2024-07-05T00:00:00.000Z
+False
+Total extracted: 76
+Correct Accuracy: 88.16%
+Null: 13
+Hasn't link: 11
 ---------------------------
 >> 400
 >> 6639c6bc4c771c093141cbb0
-Found keyword: presented in person
+>> Getting conference date from: https://conf.researchr.org/track/RE-2024/RE-2024-Research-Papers
+Found conference date in home page
 True
 ---------------------------
 >> 401
 >> 6639c6c04c771c093141cbb4
+>> Getting conference date from: https://www.cse.unsw.edu.au/~wowmom/2024/
+Found conference date in home page
 True
 ---------------------------
 >> 402
 >> 6639c6c44c771c093141cbb8
-Found keyword: Hybrid Conference
-Found keyword: Virtual Participation
-True
+>> Getting conference date from: https://2024.alife.org/
+>> Found conference date near keyword
+Expected Start Date: 2023-07-22T00:00:00.000Z
+Expected End Date: 2023-07-26T00:00:00.000Z
+Extracted Start Date: 2024-07-22T00:00:00.000Z
+Extracted End Date: 2024-07-26T00:00:00.000Z
+False
 ---------------------------
 >> 403
 >> 6639c6f04c771c093141cbe0
+>> Getting conference date from: https://tencon2024.org/
+Found conference date in screenshot
 True
 ---------------------------
 >> 404
 >> 6639c6f44c771c093141cbe4
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)        
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)   
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)     
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 405
 >> 6639c6fa4c771c093141cbea
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)        
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)   
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)     
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 406
 >> 6639c7084c771c093141cbf8
-Found keyword: in-person event
-True
+>> Getting conference date from: https://www.fccm.org/
+Found conference date in home page
+Expected Start Date: 2024-05-05T00:00:00.000Z
+Expected End Date: 2024-05-08T00:00:00.000Z
+Extracted Start Date: 2025-05-04T00:00:00.000Z
+Extracted End Date: 2025-05-07T00:00:00.000Z
+False
 ---------------------------
 >> 407
 >> 6639c7144c771c093141cc02
+>> Getting conference date from: https://conf.researchr.org/track/vlhcc-2024/vlhcc-2024-research-papers
+Found conference date in home page
 True
 ---------------------------
 >> 408
 >> 6639c7384c771c093141cc24
+>> Getting conference date from: https://ifipsec2024.co.uk/
+Found conference date in home page
 True
 ---------------------------
 >> 409
 >> 6639c73c4c771c093141cc28
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)        
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)   
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)     
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 410
 >> 6639c73e4c771c093141cc2a
-True
+>> Getting conference date from: https://networking.ifip.org/2024/
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
 ---------------------------
 >> 411
 >> 6639cecac521b3f2ad61147d
+>> Getting conference date from: https://www.ihmmsec.org/cms/home/home173.html?acceptCookie=1&idart=205&idcat=69&changelang=2
+Found conference date in home page
 True
 ---------------------------
 >> 412
 >> 6639ced2c521b3f2ad611485
+>> Getting conference date from: https://ispec2024.github.io/ISPEC2024/
+>> Found conference date near keyword
 True
 ---------------------------
 >> 413
 >> 6639ced6c521b3f2ad611489
+>> Getting conference date from: http://www.ieee-itw2024.org/
+>> Found conference date near title
 True
 ---------------------------
 >> 414
 >> 6639cefdc521b3f2ad6114ab
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)        
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)   
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)     
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 415
 >> 6639cf71c521b3f2ad611515
-True
+>> Getting conference date from: https://voyager.ce.fit.ac.jp/conf/cisis/2024/
+>> Found conference date near keyword
+Expected Start Date: 2024-07-03T00:00:00.000Z
+Expected End Date: 2024-07-05T00:00:00.000Z
+Extracted Start Date: 2023-07-05T00:00:00.000Z
+Extracted End Date: 2023-07-07T00:00:00.000Z
+False
 ---------------------------
 >> 416
 >> 6639cff42aa97d8b88806013
+>> Getting conference date from: http://icccn.org/index.html
+Found conference date in home page
 True
 ---------------------------
 >> 417
 >> 6639d0012aa97d8b8880601f
-Found keyword: allowed to present remotely
+>> Getting conference date from: https://chira.scitevents.org/
+Found conference date near banner image
 True
 ---------------------------
 >> 418
 >> 6639d00e2aa97d8b8880602b
+>> Getting conference date from: https://resources.sei.cmu.edu/news-events/events/er2024/     
+>> Found conference date near keyword
 True
 ---------------------------
 >> 419
 >> 6639d0102aa97d8b8880602d
+>> Getting conference date from: https://confest2024.github.io/
+Found conference date in home page
 True
 ---------------------------
 >> 420
 >> 6639d02f2aa97d8b8880604b
-Found keyword: physical presence or virtual participation
-Found keyword: Virtual Participation
-Found keyword: offline
-Found keyword: physical presence or virtual participation
-Found keyword: Virtual Participation
-Found keyword: offline
-True
+>> Getting conference date from: https://www.iaria.org/conferences2024/ICDS24.html
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
 ---------------------------
 >> 421
 >> 6639d03e2aa97d8b8880605b
+>> Getting conference date from: https://rtcsa2024.github.io/
+>> Found conference date near keyword
 True
 ---------------------------
 >> 422
 >> 6639d0312aa97d8b8880604d
+>> Getting conference date from: https://dgmm2024.dimai.unifi.it/
+Found conference date in home page
 True
 ---------------------------
 >> 423
 >> 6639d0382aa97d8b88806055
-True
+>> Getting conference date from: https://icdcs2024.icdcs.org/
+False
 ---------------------------
 >> 424
 >> 6639d06c2aa97d8b88806085
-Found keyword: Remote attendance
-new ObjectId('6639d06c2aa97d8b88806085')
-online
+>> Getting conference date from: https://chi2024.acm.org/
+Found conference date in home page
+True
 ---------------------------
 >> 425
 >> 6639d0882aa97d8b888060a1
-Found keyword: allowed to present remotely
+>> Getting conference date from: https://ict4awe.scitevents.org/
+Found conference date near banner image
 True
 ---------------------------
 >> 426
 >> 6639d0ab2aa97d8b888060c3
-Found keyword: Hybrid Conference
-Found keyword: Virtual Conference
-True
+>> Getting conference date from: https://www.mirlabs.org/isda23/
+>> Found conference date near keyword
+Expected Start Date: 2023-12-11T09:24:33.397Z
+Expected End Date: 2023-12-13T09:24:33.397Z
+Extracted Start Date: 2023-12-11T00:00:00.000Z
+Extracted End Date: 2023-12-13T00:00:00.000Z
+False
 ---------------------------
 >> 427
 >> 6639d0802aa97d8b88806099
-Found keyword: Hybrid participation information
+>> Getting conference date from: https://www.ieaaie2024.com/
+Found conference date in home page
 True
 ---------------------------
 >> 428
 >> 6639d0932aa97d8b888060ab
+>> Getting conference date from: https://ipmu2024.inesc-id.pt/
+>> Found conference date near keyword
 True
 ---------------------------
 >> 429
 >> 6639d0a12aa97d8b888060b9
+>> Getting conference date from: https://www.eah-jena.de/i4cs-conference
+>> Found conference date near title
 True
 ---------------------------
 >> 430
 >> 6639d0b32aa97d8b888060c9
+>> Getting conference date from: https://iui.acm.org/2024/
+Found conference date in home page
 True
 ---------------------------
 >> 431
 >> 6639d0402aa97d8b8880605d
-True
+>> Getting conference date from: https://ewsn24.tii.ae/
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
 ---------------------------
 >> 432
 >> 6639d04f2aa97d8b8880606b
+>> Getting conference date from: https://memocode2024.github.io/
+Found conference date in home page
 True
 ---------------------------
 >> 433
 >> 6639d0512aa97d8b8880606d
-Found keyword: (online)
-new ObjectId('6639d0512aa97d8b8880606d')
-online
+>> Getting conference date from: https://www.utwente.nl/en/eemcs/fois2024/
+>> Found conference date near title
+Expected Start Date: 2024-07-15T00:00:00.000Z
+Expected End Date: 2024-07-19T00:00:00.000Z
+Extracted Start Date: 2024-07-08T00:00:00.000Z
+Extracted End Date: 2024-07-09T00:00:00.000Z
+False
 ---------------------------
 >> 434
 >> 6639d0542aa97d8b8880606f
-Found keyword: online participation
-Found keyword: online presentation is possible
-Found keyword: in-person presentation
+>> Getting conference date from: https://cs.ioc.ee/fscd24/
+>> Found conference date near title
 True
 ---------------------------
 >> 435
 >> 6639d05c2aa97d8b88806077
+>> Getting conference date from: https://2024.splashcon.org/home/gpce-2024
+Found conference date in home page
 True
 ---------------------------
 >> 436
 >> 6639d0602aa97d8b8880607b
+>> Getting conference date from: http://2024.gpc-conf.org/home.html
+>> Found conference date near keyword
 True
 ---------------------------
 >> 437
 >> 6639d0762aa97d8b8880608f
+>> Getting conference date from: https://waset.org/image-analysis-and-recognition-conference-in-november-2024-in-bangkok
+>> Found conference date near title
 True
 ---------------------------
 >> 438
 >> 6639d07c2aa97d8b88806095
+>> Getting conference date from: http://www.math.akita-u.ac.jp/ciaa2024/
+>> Found conference date near title
 True
 ---------------------------
 >> 439
 >> 6639d0472aa97d8b88806063
-True
+>> Getting conference date from: https://icec2024.uea.edu.br/
+False
 ---------------------------
 >> 440
 >> 6639d0482aa97d8b88806065
+>> Getting conference date from: https://conf.researchr.org/track/ease-2024/ease-2024-papers  
+>> Found conference date near title
 True
 ---------------------------
 >> 441
 >> 6639d04b2aa97d8b88806067
-Found keyword: allowed to present remotely
+>> Getting conference date from: https://enase.scitevents.org/
+Found conference date near banner image
 True
 ---------------------------
 >> 442
 >> 6639d0562aa97d8b88806071
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)        
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)   
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)     
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 443
 >> 6639d05e2aa97d8b88806079
+>> Getting conference date from: https://conf.researchr.org/track/icgt-2024/icgt-2024-Research-Papers-1
+Found conference date in home page
 True
 ---------------------------
 >> 444
 >> 6639d06e2aa97d8b88806087
+>> Getting conference date from: https://mobilehci.acm.org/2024/
+>> Found conference date near keyword
 True
 ---------------------------
 >> 445
 >> 6639d09b2aa97d8b888060b3
-Found keyword: allowed to present remotely
+>> Getting conference date from: https://icissp.scitevents.org/
+Found conference date near banner image
 True
 ---------------------------
 >> 446
 >> 6639d0ad2aa97d8b888060c5
-Error in getType:  ProtocolError: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
-    at <instance_members_initializer> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:96:14)
-    at new Callback (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:100:16)
-    at CallbackRegistry.create (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\common\CallbackRegistry.js:32:26)
-    at Connection._rawSend (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Connection.js:91:26)
-    at CdpCDPSession.send (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\CDPSession.js:78:33)
-    at navigate (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:164:51)        
-    at CdpFrame.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:142:17)   
-    at CdpFrame.<anonymous> (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:108:27)
-    at CdpPage.goto (C:\Users\PC\Workspace\HCMUS\conference-crawler\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:602:43)     
-    at getType (C:\Users\PC\Workspace\HCMUS\conference-crawler\src\rule\extractType-rule.js:210:20)
+Hasn't link
 ---------------------------
 >> 447
 >> 6639d03c2aa97d8b88806059
-Found keyword: Online Attendance
-new ObjectId('6639d03c2aa97d8b88806059')
-online
+>> Getting conference date from: https://www.icec.net/icec2024
+Found conference date in home page
+True
 ---------------------------
 >> 448
 >> 6639d0442aa97d8b88806061
-Found keyword: Hybrid @
-Found keyword: Hybrid Conference
-Found keyword: Remotely (on-line)
-Found keyword: Physically (on-site)
+>> Getting conference date from: https://eannconf.org/2024/
+>> Found conference date near title
 True
 ---------------------------
 >> 449
 >> 6639d03a2aa97d8b88806057
-Found keyword: in-person meetings
-Found keyword: in-person meetings
+>> Getting conference date from: https://www.dublincore.org/conferences/2024/
+False
+---------------------------
+>> 450
+>> 6639d04d2aa97d8b88806069
+>> Getting conference date from: https://icfem2024.info/
+False
+---------------------------
+>> 451
+>> 6639d05a2aa97d8b88806075
+>> Getting conference date from: https://icfp24.sigplan.org/track/icfp-2024-papers
+Found conference date in home page
 True
-Total extracted: 132
-Correct Accuracy: 96.21%
-Null: 18
+---------------------------
+>> 452
+>> 6639d0722aa97d8b8880608b
+>> Getting conference date from: https://www.mirlabs.org/his23/
+Found conference date in home page
+True
+---------------------------
+>> 453
+>> 6639d08a2aa97d8b888060a3
+>> Getting conference date from: https://ifitt.net/enter-conference/enter-25/
+Found conference date in home page
+True
+---------------------------
+>> 454
+>> 6639d08d2aa97d8b888060a5
+>> Getting conference date from: https://icics2024.aegean.gr/
+>> Found conference date near title
+True
+---------------------------
+>> 455
+>> 6639d0952aa97d8b888060ad
+>> Getting conference date from: https://secrypt.scitevents.org/
+Found conference date near banner image
+Expected Start Date: 2024-07-08T00:00:00.000Z
+Expected End Date: 2024-07-10T00:00:00.000Z
+Extracted Start Date: 2025-06-12T00:00:00.000Z
+Extracted End Date: 2025-06-14T00:00:00.000Z
+False
+---------------------------
+>> 456
+>> 6639d0622aa97d8b8880607d
+>> Getting conference date from: https://esweek.org/codes-isss/
+Found conference date in home page
+True
+---------------------------
+>> 457
+>> 6639d07a2aa97d8b88806093
+>> Getting conference date from: https://www.icsip.org/
+>> Found conference date near keyword
+True
+---------------------------
+>> 458
+>> 6639d0842aa97d8b8880609d
+>> Getting conference date from: https://icinco.scitevents.org/
+Found conference date near banner image
+True
+---------------------------
+>> 459
+>> 6639d0a32aa97d8b888060bb
+>> Getting conference date from: https://sites.google.com/view/cpaior2024
+False
+---------------------------
+>> 460
+>> 6639d0652aa97d8b8880607f
+>> Getting conference date from: https://qshine.eai-conferences.org/2024/
+False
+---------------------------
+>> 461
+>> 6639d07e2aa97d8b88806097
+>> Getting conference date from: https://ipin-conference.org/2024/
+Found conference date in home page
+Expected Start Date: 2024-10-14T00:00:00.000Z
+Expected End Date: 2024-10-17T00:00:00.000Z
+Extracted Start Date: 2024-10-24T00:00:00.000Z
+Extracted End Date: 2024-10-13T00:00:00.000Z
+False
+---------------------------
+>> 462
+>> 6639d0862aa97d8b8880609f
+>> Getting conference date from: https://ictd.org/
+Found conference date in home page
+True
+---------------------------
+>> 463
+>> 6639d09f2aa97d8b888060b7
+>> Getting conference date from: https://iv.csites.fct.unl.pt/pt/
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
+---------------------------
+>> 464
+>> 6639d0a52aa97d8b888060bd
+>> Getting conference date from: https://ideal2024.webs.upv.es/
+Found conference date in home page
+True
+---------------------------
+>> 465
+>> 6639d0822aa97d8b8880609b
+>> Getting conference date from: https://science.lpnu.ua/iddm-2024
+>> Found conference date near keyword
+True
+---------------------------
+>> 466
+>> 6639d0912aa97d8b888060a9
+>> Getting conference date from: https://fusion2024.org/
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
+---------------------------
+>> 467
+>> 6639d0a72aa97d8b888060bf
+Hasn't link
+---------------------------
+>> 468
+>> 6639d0b12aa97d8b888060c7
+>> Getting conference date from: https://iis-international.org/its2024-generative-intelligence-and-its/#:~:text=ITS2024%20will%20be%20held%20in,to%20attend%20it%20online%20too.
+>> Found conference date near keyword
+True
+---------------------------
+>> 469
+>> 6639d0bb2aa97d8b888060d1
+>> Getting conference date from: https://www.iaria.org/conferences2023/CfPICIMP23.html        
+>> Found conference date near title
+True
+---------------------------
+>> 470
+>> 6639d0b72aa97d8b888060cd
+>> Getting conference date from: https://www.iaria.org/conferences2023/CfPICIW23.html
+>> Found conference date near title
+True
+---------------------------
+>> 471
+>> 6639d126387369a8970585f3
+>> Getting conference date from: https://icmv.org/
+Found conference date in home page
+True
+---------------------------
+>> 472
+>> 6639d162387369a89705862f
+>> Getting conference date from: https://ieee-cybermatics.org/2023/icpads/
+>> Found conference date near title
+True
+---------------------------
+>> 473
+>> 6639d166387369a897058633
+>> Getting conference date from: https://icpp2024.org/
+>> Found conference date near title
+True
+---------------------------
+>> 474
+>> 6639d17c387369a897058645
+>> Getting conference date from: https://sites.google.com/view/prima-2024/
+Found conference date in home page
+True
+---------------------------
+>> 475
+>> 6639d182387369a89705864b
+>> Getting conference date from: https://icpmconference.org/2024/
+>> Found conference date near title
+True
+---------------------------
+>> 476
+>> 6639d1aa387369a897058673
+>> Getting conference date from: https://icsoft.scitevents.org/
+False
+---------------------------
+>> 477
+>> 6639d39c8fb9939b82bceb51
+>> Getting conference date from: https://algo-conference.org/2024/algowin/
+Found conference date in home page
+True
+---------------------------
+>> 478
+>> 6639d3a78fb9939b82bceb5b
+>> Getting conference date from: https://atva-conference.org/2024/
+Found conference date in home page
+Expected Start Date: 2024-10-21T00:00:00.000Z
+Expected End Date: 2024-10-24T00:00:00.000Z
+Extracted Start Date: 2024-06-11T00:00:00.000Z
+Extracted End Date: 2024-06-14T00:00:00.000Z
+False
+---------------------------
+>> 479
+>> 6639d3b08fb9939b82bceb63
+>> Getting conference date from: https://eventos.ull.es/111018/detail/isco-2024-tenerife-22-24-may-2024.html
+Found conference date in home page
+True
+---------------------------
+>> 480
+>> 6639d3bb8fb9939b82bceb6b
+>> Getting conference date from: http://ds-rt.com/2024/
+Found conference date in screenshot
+True
+---------------------------
+>> 481
+>> 6639d3bf8fb9939b82bceb6f
+>> Getting conference date from: https://sea2024.univie.ac.at/
+Found conference date in home page
+True
+---------------------------
+>> 482
+>> 6639d3c98fb9939b82bceb77
+>> Getting conference date from: https://www.uni-trier.de/en/universitaet/fachbereiche-faecher/fachbereich-iv/faecher/informatikwissenschaften/professuren/theoretische-informatik/research/conferences-and-workshops/fct-2023
+>> Found conference date near title
+True
+---------------------------
+>> 483
+>> 6639d3cd8fb9939b82bceb7b
+>> Getting conference date from: https://hpca-conf.org/2024/
+Found conference date in home page
+True
+---------------------------
+>> 484
+>> 6639d3e98fb9939b82bceb93
+>> Getting conference date from: https://conference.cs.cityu.edu.hk/isnn/
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
+---------------------------
+>> 485
+>> 6639d4e04fd45eb8c2e67050
+>> Getting conference date from: https://attend.ieee.org/istas-2024/
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
+---------------------------
+>> 486
+>> 6639d4f94fd45eb8c2e67064
+>> Getting conference date from: https://www.hitz.eus/gwc2023/
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
+---------------------------
+>> 487
+>> 6639d5064fd45eb8c2e67070
+>> Getting conference date from: http://iwoca2024.di.unisa.it/
+>> Found conference date near title
+True
+---------------------------
+>> 488
+>> 6639d5234fd45eb8c2e67088
+>> Getting conference date from: https://conferences.famnit.upr.si/event/31/
+>> Found conference date near title
+True
+---------------------------
+>> 489
+>> 6639d53a4fd45eb8c2e6709a
+>> Getting conference date from: https://2024.refsq.org/track/refsq-2024-papers
+Found conference date in home page
+True
+---------------------------
+>> 490
+>> 6639d5414fd45eb8c2e670a0
+Hasn't link
+---------------------------
+>> 491
+>> 6639d55d4fd45eb8c2e670b8
+>> Getting conference date from: http://idt-24.kesinternational.org/
+Found conference date near banner image
+True
+---------------------------
+>> 492
+>> 6639d55f4fd45eb8c2e670ba
+>> Getting conference date from: https://www.k-cap.org/2023/index.html
+>> Found conference date near title
+True
+---------------------------
+>> 493
+>> 6639d5644fd45eb8c2e670be
+Hasn't link
+---------------------------
+>> 494
+>> 6639d5664fd45eb8c2e670c0
+>> Getting conference date from: https://lrec-coling-2024.org/
+Found conference date in home page
+True
+---------------------------
+>> 495
+>> 6639d5784fd45eb8c2e670ce
+>> Getting conference date from: https://mtsummit2023.scimeeting.cn/en/web/index/
+Found conference date in screenshot
+Expected Start Date: 2023-09-04T00:00:00.000Z
+Expected End Date: 2023-09-08T00:00:00.000Z
+Extracted Start Date: 2024-09-04T00:00:00.000Z
+Extracted End Date: 2024-09-08T00:00:00.000Z
+False
+---------------------------
+>> 496
+>> 6639d59d4fd45eb8c2e670ee
+>> Getting conference date from: https://www.ntms-conf.org/ntms2021/
+Found conference date in screenshot
+True
+---------------------------
+>> 497
+>> 6639d5bd4fd45eb8c2e67100
+>> Getting conference date from: https://pkawwebsite.github.io/2024/
+Found conference date in home page
+True
+---------------------------
+>> 498
+>> 6639d5cb4fd45eb8c2e6710c
+>> Getting conference date from: https://pam2024.cs.northwestern.edu/
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
+---------------------------
+>> 499
+>> 6639d6cbb9c725a1d3ed3dbb
+>> Getting conference date from: https://srds-conference.org/
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
+Total extracted: 74
+Correct Accuracy: 87.84%
+Null: 17
+Hasn't link: 9
+---------------------------
+>> 100
+>> 6639c2a04931f50e65517e67
+>> Getting conference date from: https://www.eusflat2023.eu/88603/detail/eusflat-13th-conference-of-the-european-society-for-fuzzy-logic-and-technology-jointly-with-the-ago.html
+
+Found conference date in home page
+True
+---------------------------
+>> 101
+>> 6639c3b5bf0a76d1ef717bd9
+>> Getting conference date from: https://dis.acm.org/2024/
+>> Found conference date near title
+True
+---------------------------
+>> 102
+>> 6639c3bdbf0a76d1ef717be1
+>> Getting conference date from: https://digraconference2024.org/
+False
+---------------------------
+>> 103
+>> 6639c3c8bf0a76d1ef717bed
+>> Getting conference date from: https://emas.in.tu-clausthal.de/2024/
+Found conference date in home page
+True
+---------------------------
+>> 104
+>> 6639c389bf0a76d1ef717bab
+>> Getting conference date from: https://www.usenix.org/conference/fast24
+>> Found conference date near title
+Expected Start Date: 2024-02-27T00:00:00.000Z
+Expected End Date: 2024-02-29T00:00:00.000Z
+Extracted Start Date: 2024-02-26T00:00:00.000Z
+Extracted End Date: 2024-02-29T00:00:00.000Z
+False
+---------------------------
+>> 105
+>> 6639c29e4931f50e65517e65
+>> Getting conference date from: https://eamt2024.sheffield.ac.uk/
+>> Found conference date near title
+True
+---------------------------
+>> 106
+>> 6639c380bf0a76d1ef717ba1
+>> Getting conference date from: https://coalg.org/calco-mfps-2023/#calco
+>> Found conference date near title
+True
+---------------------------
+>> 107
+>> 6639c382bf0a76d1ef717ba3
+>> Getting conference date from: https://theory.utdallas.edu/AAIM2024/index.html
+>> Found conference date near title
+True
+---------------------------
+>> 108
+>> 6639c395bf0a76d1ef717bb7
+>> Getting conference date from: https://ipco2024.ii.uni.wroc.pl/
+>> Found conference date near title
+True
+---------------------------
+>> 109
+>> 6639c3acbf0a76d1ef717bcf
+>> Getting conference date from: https://www.uni-trier.de/index.php?id=90670&L=2
+>> Found conference date near title
+True
+---------------------------
+>> 110
+>> 6639c3b3bf0a76d1ef717bd7
+>> Getting conference date from: https://www.date-conference.com/
+>> Found conference date near title
+Expected Start Date: 2024-03-25T00:00:00.000Z
+Expected End Date: 2024-03-27T00:00:00.000Z
+Extracted Start Date: 2025-03-31T00:00:00.000Z
+Extracted End Date: 2025-04-02T00:00:00.000Z
+False
+---------------------------
+>> 111
+>> 6639c3bbbf0a76d1ef717bdf
+>> Getting conference date from: https://dafx24.surrey.ac.uk/
+Found conference date in screenshot
+True
+---------------------------
+>> 112
+>> 6639c3c4bf0a76d1ef717be9
+>> Getting conference date from: https://2023.splashcon.org/home/dls-2023
+Found conference date in home page
+True
+---------------------------
+>> 113
+>> 6639c3cdbf0a76d1ef717bf3
+>> Getting conference date from: https://www.unirioja.es/ethicomp/2024/index.html
+>> Found conference date near title
+True
+---------------------------
+>> 114
+>> 6639c2964931f50e65517e5d
+>> Getting conference date from: https://isaga2024.com/
+>> Found conference date near title
+True
+---------------------------
+>> 115
+>> 6639c38dbf0a76d1ef717baf
+>> Getting conference date from: https://2024.ieee-cog.org/
+Found conference date in home page
+True
+---------------------------
+>> 116
+>> 6639c393bf0a76d1ef717bb5
+>> Getting conference date from: https://www.cidrdb.org/cidr2024/
+>> Found conference date near title
+True
+---------------------------
+>> 117
+>> 6639c3c2bf0a76d1ef717be7
+>> Getting conference date from: https://www.dna30.org/
+>> Found conference date near keyword
+True
+---------------------------
+>> 118
+>> 6639c3d1bf0a76d1ef717bf7
+>> Getting conference date from: https://www.euroxr.org/conference-2024
+undefined
+Found conference date in home page
+True
+---------------------------
+>> 119
+>> 6639c384bf0a76d1ef717ba5
+>> Getting conference date from: https://theory.utdallas.edu/COCOA2023/cfp.html
+>> Found conference date near title
+True
+---------------------------
+>> 120
+>> 6639c399bf0a76d1ef717bbb
+>> Getting conference date from: https://www.viam.science.tsu.ge/itp2024/
+>> Found conference date near title
+True
+---------------------------
+>> 121
+>> 6639c3c0bf0a76d1ef717be5
+>> Getting conference date from: http://ds2024.isti.cnr.it/
+>> Found conference date near title
+True
+---------------------------
+>> 122
+>> 6639c3c6bf0a76d1ef717beb
+>> Getting conference date from: https://educationaldatamining.org/edm2024/
+Found conference date in screenshot
+True
+---------------------------
+>> 123
+>> 6639c482078f0b3454c91b7e
+Hasn't link
+---------------------------
+>> 124
+>> 6639c484078f0b3454c91b80
+>> Getting conference date from: https://www.ecrts.org/
+>> Found conference date near keyword
+True
+---------------------------
+>> 125
+>> 6639c37bbf0a76d1ef717b9d
+>> Getting conference date from: https://paclic2023.github.io/
+>> Found conference date near keyword
+Expected Start Date: 2023-12-02T00:00:00.000Z
+Expected End Date: 2023-12-05T00:00:00.000Z
+Extracted Start Date: 2024-12-02T00:00:00.000Z
+Extracted End Date: 2024-12-04T00:00:00.000Z
+False
+---------------------------
+>> 126
+>> 6639c397bf0a76d1ef717bb9
+>> Getting conference date from: https://cicm-conference.org/2024/cicm.php
+>> Found conference date near title
+True
+---------------------------
+>> 127
+>> 6639c39fbf0a76d1ef717bc3
+>> Getting conference date from: https://conf.researchr.org/home/cseet-2024
+>> Found conference date near title
+True
+---------------------------
+>> 128
+>> 6639c3abbf0a76d1ef717bcd
+>> Getting conference date from: https://ct-rsa-2024.aau.at/
+>> Found conference date near keyword
+True
+---------------------------
+>> 129
+>> 6639c3aebf0a76d1ef717bd1
+Hasn't link
+---------------------------
+>> 130
+>> 6639c3b9bf0a76d1ef717bdd
+>> Getting conference date from: https://events.gwdg.de/event/576/
+>> Found conference date near title
+Expected Start Date: 2024-08-12T00:00:00.000Z
+Expected End Date: 2024-08-16T00:00:00.000Z
+Extracted Start Date: 2024-03-22T00:00:00.000Z
+Extracted End Date: null
+False
+---------------------------
+>> 131
+>> 6639c3cfbf0a76d1ef717bf5
+>> Getting conference date from: https://eatis.org/eatis2024/index.html
+>> Found conference date near title
+True
+---------------------------
+>> 132
+>> 6639c3d6bf0a76d1ef717bfb
+Hasn't link
+---------------------------
+>> 133
+>> 6639c48b078f0b3454c91b86
+>> Getting conference date from: https://2024.eacl.org/
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
+---------------------------
+>> 134
+>> 6639c28b4931f50e65517e53
+>> Getting conference date from: https://casc-conference.org/
+>> Found conference date near title
+True
+---------------------------
+>> 135
+>> 6639c28f4931f50e65517e57
+>> Getting conference date from: https://www.cgs-network.org/cgi24/
+>> Found conference date near title
+True
+---------------------------
+>> 136
+>> 6639c37ebf0a76d1ef717b9f
+>> Getting conference date from: https://www.agilealliance.org/xp2024/
+>> Found conference date near title
+True
+---------------------------
+>> 137
+>> 6639c386bf0a76d1ef717ba7
+>> Getting conference date from: https://www.conll.org/
+>> Found conference date near title
+Expected Start Date: 2024-11-12T00:00:00.000Z
+Expected End Date: 2024-11-13T00:00:00.000Z
+Extracted Start Date: 2024-05-24T00:00:00.000Z
+Extracted End Date: null
+False
+---------------------------
+>> 138
+>> 6639c3b0bf0a76d1ef717bd3
+>> Getting conference date from: https://www.dexa.org/dawak2024
+undefined
+Found conference date in home page
+True
+---------------------------
+>> 139
+>> 6639c3b7bf0a76d1ef717bdb
+>> Getting conference date from: https://dese.ai/dese-2024/
+17th INTERNATIONAL CONFERENCE
+DEVELOPMENTS IN e-SYSTEMS ENGINEERING
+2024
+NOVEMBER
+UAE
+
+Found conference date in home page
+True
+---------------------------
+>> 140
+>> 6639c3cabf0a76d1ef717bef
+>> Getting conference date from: https://2024.emnlp.org/
+>> Found conference date near title
+True
+---------------------------
+>> 141
+>> 6639c3d3bf0a76d1ef717bf9
+>> Getting conference date from: https://iuuk.mff.cuni.cz/events/conferences/eurocomb23/callForPapers.html
+Found conference date in home page
+Expected Start Date: 2023-08-28T00:00:00.000Z
+Expected End Date: 2023-09-01T00:00:00.000Z
+Extracted Start Date: 2023-03-21T00:00:00.000Z
+Extracted End Date: null
+False
+---------------------------
+>> 142
+>> 6639c487078f0b3454c91b82
+>> Getting conference date from: https://dsd-seaa.com/
+Found conference date in home page
+True
+---------------------------
+>> 143
+>> 6639c489078f0b3454c91b84
+>> Getting conference date from: https://pdp2024.org/
+
+Found conference date in home page
+True
+---------------------------
+>> 144
+>> 6639c29c4931f50e65517e63
+>> Getting conference date from: https://apors2024.casconf.cn/
+undefined
+Found conference date in screenshot
+True
+---------------------------
+>> 145
+>> 6639c39abf0a76d1ef717bbd
+>> Getting conference date from: https://learningtheory.org/colt2024/
+>> Found conference date near title
+True
+---------------------------
+>> 146
+>> 6639c3a5bf0a76d1ef717bc7
+>> Getting conference date from: https://tamc2024.comp.polyu.edu.hk/
+>> Found conference date near title
+True
+---------------------------
+>> 147
+>> 6639c3a9bf0a76d1ef717bcb
+>> Getting conference date from: https://www.cdve.org/dates.html
+Th 21st International Conference
+on Cooperative Design, Vi ualization
+and Engineering
+CDVE2024
+
+Found conference date in home page
+True
+---------------------------
+>> 148
+>> 6639c497078f0b3454c91b92
+>> Getting conference date from: https://ecscw.eusset.eu/2024/
+Found conference date in home page
+True
+---------------------------
+>> 149
+>> 6639c491078f0b3454c91b8c
+>> Getting conference date from: https://www.ecai2024.eu/
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
+---------------------------
+>> 150
+>> 6639c4bc078f0b3454c91bb4
+>> Getting conference date from: https://conference.eurospi.net/index.php/en/programme/conference-programme
+Found conference date in home page
+True
+---------------------------
+>> 151
+>> 6639c4c3078f0b3454c91bba
+>> Getting conference date from: https://etaps.org/2024/conferences/esop/
+>> Found conference date near keyword in important date site
+True
+---------------------------
+>> 152
+>> 6639c4d0078f0b3454c91bc8
+>> Getting conference date from: https://dastlab.github.io/edbticdt2024/
+Found conference date in home page
+True
+---------------------------
+>> 153
+>> 6639c4e6078f0b3454c91bd8
+>> Getting conference date from: https://etaps.org/2024/conferences/fossacs/
+>> Found conference date near keyword in important date site
+True
+---------------------------
+>> 154
+>> 6639c4f8078f0b3454c91be6
+>> Getting conference date from: https://graphdrawing.github.io/gd2024/
+>> Found conference date near title
+True
+---------------------------
+>> 155
+>> 6639c50f078f0b3454c91bfc
+>> Getting conference date from: http://www.asru2023.org/
+IEEE WORKS
+TAIWAN
+P ON AUTOMATIC SPEECH RECOGNITION AND UNDERSTANDING
+IEEE ASW 2023
+—DATEÉ DECEMBER 16 - 20, 2023
+VENUE -ASIA PACIFIC HOTEL, BEITÖU, TAIPEI
+
+Found conference date in banner image
+True
+---------------------------
+>> 156
+>> 6639c513078f0b3454c91c00
+>> Getting conference date from: https://csf2024.ieee-security.org/
+>> Found conference date near title
+True
+---------------------------
+>> 157
+>> 6639c51d078f0b3454c91c08
+>> Getting conference date from: https://cvpr.thecvf.com/
+>> Found conference date near title
+True
+---------------------------
+>> 158
+>> 6639c539078f0b3454c91c24
+>> Getting conference date from: https://fg2024.ieee-biometrics.org/
+>> Found conference date near keyword
+Expected Start Date: 2024-05-27T00:00:00.000Z
+Expected End Date: 2024-05-31T00:00:00.000Z
+Extracted Start Date: 2024-05-28T00:00:00.000Z
+Extracted End Date: 2024-05-30T00:00:00.000Z
+False
+---------------------------
+>> 159
+>> 6639c540078f0b3454c91c2a
+>> Getting conference date from: https://icbc2024.ieee-icbc.org/
+>> Found conference date near keyword
+True
+---------------------------
+>> 160
+>> 6639c542078f0b3454c91c2c
+Hasn't link
+---------------------------
+>> 161
+>> 6639c69c4c771c093141cb90
+>> Getting conference date from: https://conf.researchr.org/track/icpc-2024/icpc-2024-research?
+
+Found conference date in home page
+Expected Start Date: 2024-04-15T00:00:00.000Z
+Expected End Date: 2024-04-16T00:00:00.000Z
+Extracted Start Date: 2024-04-14T00:00:00.000Z
+Extracted End Date: 2024-04-20T00:00:00.000Z
+False
+---------------------------
+>> 162
+>> 6639c6b14c771c093141cba4
+>> Getting conference date from: https://conferences.big.tuwien.ac.at/biweek2024/edoc.php     
+>> Found conference date near keyword
+True
+---------------------------
+>> 163
+>> 6639c49e078f0b3454c91b98
+>> Getting conference date from: https://www.evostar.org/2024/evocop/
+Found conference date in home page
+True
+---------------------------
+>> 164
+>> 6639c4be078f0b3454c91bb6
+>> Getting conference date from: https://algo-conference.org/2024/esa/
+>> Found conference date near title
+True
+---------------------------
+>> 165
+>> 6639c4c0078f0b3454c91bb8
+>> Getting conference date from: https://www.esann.org/
+>> Found conference date near title
+True
+---------------------------
+>> 166
+>> 6639c4d6078f0b3454c91bcc
+>> Getting conference date from: https://fc24.ifca.ai/
+>> Found conference date near title
+True
+---------------------------
+>> 167
+>> 6639c4e0078f0b3454c91bd4
+>> Getting conference date from: https://www.fdl-conference.com/index.html
+>> Found conference date near title
+True
+---------------------------
+>> 168
+>> 6639c51f078f0b3454c91c0a
+>> Getting conference date from: https://www.ieeelcn.org/
+>> Found conference date near title
+True
+---------------------------
+>> 169
+>> 6639c525078f0b3454c91c10
+>> Getting conference date from: https://ieeevr.org/2024/contribute/papers/
+>> Found conference date near title
+True
+---------------------------
+>> 170
+>> 6639c554078f0b3454c91c3c
+>> Getting conference date from: https://www.cis-ram.org/2024/
+>> Error in getConferenceDates: TimeoutError: Waiting failed: 30000ms exceeded
+False
+---------------------------
+>> 171
+>> 6639c556078f0b3454c91c3e
+>> Getting conference date from: https://www.icdm2024.org/
+Found conference date in home page
+True
+---------------------------
+>> 172
+>> 6639c67e4c771c093141cb74
+>> Getting conference date from: https://icfec2024.ontariotechu.ca/
+Found conference date in home page
+True
+---------------------------
+>> 173
+>> 6639c6aa4c771c093141cb9e
+>> Getting conference date from: https://www.vcip2024.org/index.html
+>> Found conference date near keyword
+True
+---------------------------
+>> 174
+>> 6639c6b84c771c093141cbac
+>> Getting conference date from: https://www.ipdps.org/
+Found conference date in home page
+Expected Start Date: 2024-05-27T00:00:00.000Z
+Expected End Date: 2024-05-31T00:00:00.000Z
+Extracted Start Date: 2025-06-03T00:00:00.000Z
+Extracted End Date: 2025-06-07T00:00:00.000Z
+False
+---------------------------
+>> 175
+>> 6639c4cc078f0b3454c91bc4
+>> Getting conference date from: https://www.emmsad.org/home
+>> Found conference date near keyword
+True
+---------------------------
+>> 176
+>> 6639c4e3078f0b3454c91bd6
+>> Getting conference date from: https://hpi.de/foga2023/
+>> Found conference date near title
+True
+---------------------------
+>> 177
+>> 6639c503078f0b3454c91bf0
+>> Getting conference date from: https://hcw-ipdps.org/
+>> Found conference date near title
+True
+---------------------------
+>> 178
+>> 6639c51b078f0b3454c91c06
+>> Getting conference date from: https://computationalcomplexity.org/
+>> Found conference date near title
+True
+---------------------------
+>> 179
+>> 6639c529078f0b3454c91c14
+>> Getting conference date from: https://services.conferences.computer.org/2024/
+>> Found conference date near title
+True
+---------------------------
+>> 180
+>> 6639c53b078f0b3454c91c26
+>> Getting conference date from: https://2024.acsos.org/track/acsos-2024-papers
+Found conference date in home page
+True
+---------------------------
+>> 181
+>> 6639c54b078f0b3454c91c34
+Hasn't link
+---------------------------
+>> 182
+>> 6639c54d078f0b3454c91c36
+>> Getting conference date from: https://mobinets.cn/conf/cit2023/index.html
+>> Found conference date near keyword
+True
+---------------------------
+>> 183
+>> 6639c6934c771c093141cb88
+>> Getting conference date from: https://www.ieee-is.org/news/next-ieee-conference/
+Found conference date in home page
+True
+---------------------------
+>> 184
+>> 6639c6954c771c093141cb8a
+>> Getting conference date from: https://sites.google.com/view/ieee-mass-2024
+Found conference date in home page
+True
+---------------------------
+>> 185
+>> 6639c69a4c771c093141cb8e
+>> Getting conference date from: https://percom.org/2024/
+>> Found conference date near keyword
+True
+---------------------------
+>> 186
+>> 6639c69e4c771c093141cb92
+>> Getting conference date from: https://2024.ieee-icra.org/
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
+---------------------------
+>> 187
+>> 6639c4ac078f0b3454c91ba4
+>> Getting conference date from: https://2024.ecoop.org/track/ecoop-2024-papers
+Found conference date in home page
+True
+---------------------------
+>> 188
+>> 6639c48d078f0b3454c91b88
+>> Getting conference date from: https://ecco2024.euro-online.org/
+>> Found conference date near title
+Expected Start Date: 2024-06-06T00:00:00.000Z
+Expected End Date: 2024-06-08T00:00:00.000Z
+Extracted Start Date: 2024-06-08T00:00:00.000Z
+Extracted End Date: null
+False
+---------------------------
+>> 189
+>> 6639c4b6078f0b3454c91bae
+>> Getting conference date from: https://ea-tel.eu/ectel2024
+>> Found conference date near title
+True
+---------------------------
+>> 190
+>> 6639c4ba078f0b3454c91bb2
+>> Getting conference date from: https://events.vsc.ac.at/event/123/
+Found conference date in home page
+True
+---------------------------
+>> 191
+>> 6639c4c4078f0b3454c91bbc
+>> Getting conference date from: https://esorics2024.org/
+>> Found conference date near title
+True
+---------------------------
+>> 192
+>> 6639c4c6078f0b3454c91bbe
+>> Getting conference date from: https://eurocg2024.math.uoi.gr/
+>> Found conference date near title
+True
+---------------------------
+>> 193
+>> 6639c4d9078f0b3454c91bce
+Hasn't link
+---------------------------
+>> 194
+>> 6639c4de078f0b3454c91bd2
+>> Getting conference date from: https://fmcad.org/FMCAD24/
+>> Found conference date near title
+True
+---------------------------
+>> 195
+>> 6639c4f6078f0b3454c91be4
+>> Getting conference date from: https://dimva.org/dimva2024/#page-top
+>> Found conference date near keyword
+True
+---------------------------
+>> 196
+>> 6639c4fa078f0b3454c91be8
+>> Getting conference date from: https://graphicsinterface.org/conference/2024/
+>> Found conference date near title
+Expected Start Date: 2024-06-03T00:00:00.000Z
+Expected End Date: 2024-06-06T00:00:00.000Z
+Extracted Start Date: 2024-06-24T00:00:00.000Z
+Extracted End Date: 2024-06-06T00:00:00.000Z
+False
+---------------------------
+>> 197
+>> 6639c505078f0b3454c91bf2
+>> Getting conference date from: https://www.flextechchair.org/HSI2024/home-1.html
+>> Found conference date near title
+True
+---------------------------
+>> 198
+>> 6639c53e078f0b3454c91c28
+>> Getting conference date from: https://www3.cs.stonybrook.edu/~ieeebigdata2024/
+>> Found conference date near keyword in important date site
+True
+---------------------------
+>> 199
+>> 6639c558078f0b3454c91c40
+>> Getting conference date from: https://dsaa2024.dsaa.co/index.html
+Found conference date in home page
+True
+---------------------------
+>> 200
+>> 6639c6734c771c093141cb6a
+>> Getting conference date from: https://dcoss.org/dcoss23/
+>> Found conference date near keyword
+True
+---------------------------
+>> 201
+>> 6639c67a4c771c093141cb70
+>> Getting conference date from: https://healthcom2024.ieee-healthcom.org/
+>> Found conference date near title
+True
+---------------------------
+>> 202
+>> 6639c67c4c771c093141cb72
+>> Getting conference date from: https://cyprusconferences.org/iceccs2024/
+>> Found conference date near keyword
+True
+---------------------------
+>> 203
+>> 6639c6834c771c093141cb78
+>> Getting conference date from: https://waset.org/global-software-engineering-conference-in-august-2024-in-moscow
+>> Found conference date near keyword
+Expected Start Date: 2024-08-29T00:00:00.000Z
+Expected End Date: 2024-08-30T00:00:00.000Z
+Extracted Start Date: 2025-03-22T00:00:00.000Z
+Extracted End Date: 2025-03-23T00:00:00.000Z
+False
+---------------------------
+>> 204
+>> 6639c6874c771c093141cb7c
+Hasn't link
+---------------------------
+>> 205
+>> 6639c68e4c771c093141cb84
+>> Getting conference date from: https://ieee-isi.org/2023/
+>> Found conference date near keyword
+True
+---------------------------
+>> 206
+>> 6639c6a24c771c093141cb96
+>> Getting conference date from: https://www.soca-ieee.org/index.html
+False
+---------------------------
+>> 207
+>> 6639c6a44c771c093141cb98
+>> Getting conference date from: https://conf.researchr.org/home/saner-2024
+Found conference date in home page
+True
+---------------------------
+>> 208
+>> 6639c6ac4c771c093141cba0
+>> Getting conference date from: https://icws.conferences.computer.org/2024/
+Found conference date in screenshot
+True
+---------------------------
+>> 209
+>> 6639c6b24c771c093141cba6
+>> Getting conference date from: https://www.2024.ieeeigarss.org/
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
+---------------------------
+>> 210
+>> 6639c48f078f0b3454c91b8a
+Hasn't link
+---------------------------
+>> 211
+>> 6639c499078f0b3454c91b94
+>> Getting conference date from: https://eccv.ecva.net/
+>> Found conference date near title
+True
+---------------------------
+>> 212
+>> 6639c49c078f0b3454c91b96
+Hasn't link
+---------------------------
+>> 213
+>> 6639c4a2078f0b3454c91b9c
+>> Getting conference date from: https://www.ecir2024.org/
+>> Found conference date near title
+True
+---------------------------
+>> 214
+>> 6639c4c9078f0b3454c91bc0
+Hasn't link
+---------------------------
+>> 215
+>> 6639c4cb078f0b3454c91bc2
+>> Getting conference date from: https://2024.eurosys.org/index.html
+>> Found conference date near title
+True
+---------------------------
+>> 216
+>> 6639c4cf078f0b3454c91bc6
+Hasn't link
+---------------------------
+>> 217
+>> 6639c4ee078f0b3454c91bde
+>> Getting conference date from: https://etaps.org/2024/conferences/fase/
+>> Found conference date near keyword in important date site
+True
+---------------------------
+>> 218
+>> 6639c507078f0b3454c91bf4
+>> Getting conference date from: https://hai-conference.net/hai2024/
+>> Found conference date near title
+Expected Start Date: 2024-11-24T00:00:00.000Z
+Expected End Date: 2024-11-27T00:00:00.000Z
+Extracted Start Date: 2024-06-14T00:00:00.000Z
+Extracted End Date: null
+False
+---------------------------
+>> 219
+>> 6639c511078f0b3454c91bfe
+>> Getting conference date from: http://www.bibe2024.kg.ac.rs/
+Found conference date in home page
+True
+---------------------------
+>> 220
+>> 6639c52f078f0b3454c91c1a
+>> Getting conference date from: https://infocom2023.ieee-infocom.org/ieee-global-internet-gi-symposium
+Found conference date in home page
+True
+---------------------------
+>> 221
+>> 6639c537078f0b3454c91c22
+>> Getting conference date from: https://avss2024.org/program.php
+Found conference date in home page
+True
+---------------------------
+>> 222
+>> 6639c547078f0b3454c91c30
+>> Getting conference date from: https://www.cloudcom2024.org/
+Found conference date in home page
+True
+---------------------------
+>> 223
+>> 6639c54f078f0b3454c91c38
+>> Getting conference date from: https://infocom2024.ieee-infocom.org/
+
+Found conference date in home page
+True
+---------------------------
+>> 224
+>> 6639c6784c771c093141cb6e
+>> Getting conference date from: https://www.escience-conference.org/2024/
+>> Found conference date near keyword in important date site
+True
+---------------------------
+>> 225
+>> 6639c6a64c771c093141cb9a
+>> Getting conference date from: https://conf.researchr.org/track/icsme-2024/icsme-2024-papers
+
+Found conference date in home page
+True
+---------------------------
+>> 226
+>> 6639c4b2078f0b3454c91baa
+>> Getting conference date from: https://conf.researchr.org/track/ecsa-2024/ecsa-2024-research-papers
+>> Found conference date near title
+True
+---------------------------
+>> 227
+>> 6639c4b4078f0b3454c91bac
+Hasn't link
+---------------------------
+>> 228
+>> 6639c4ec078f0b3454c91bdc
+>> Getting conference date from: https://2024.fie-conference.org/
+>> Found conference date near title
+True
+---------------------------
+>> 229
+>> 6639c552078f0b3454c91c3a
+>> Getting conference date from: https://iser.org.in/conf/index.php?id=2622714#:~:text=Welcome%20to%20(ICCV%2D24),experts%20of%20to%20one%20platform.
+Found conference date in home page
+True
+---------------------------
+>> 230
+>> 6639c6804c771c093141cb76
+>> Getting conference date from: https://2024.ieeewcci.org/
+Found conference date in home page
+True
+---------------------------
+>> 231
+>> 6639c6854c771c093141cb7a
+>> Getting conference date from: http://www.ieee-hust-ncc.org/2024/HPCC/index.html
+>> Error in getConferenceDates: TimeoutError: Navigation timeout of 30000 ms exceeded
+False
+---------------------------
+>> 232
+>> 6639c6b44c771c093141cba8
+>> Getting conference date from: https://2024.ieeewcci.org/
+Terminate batch job (Y/N)? y
+PS C:\Users\PC\Workspace\HCMUS\conference-crawler> 
