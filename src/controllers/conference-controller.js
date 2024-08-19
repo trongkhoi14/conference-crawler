@@ -24,130 +24,6 @@ const { getType } = require('../rule/extractType-rule')
 const { getCallForPaper } = require('../rule/extractCallForPaper-rule')
 const { updateJobProgress } = require('../services/job-service')
 
-
-// const crawlConferenceById = async (job) => {
-
-//     let browser = await startBrowser();
-//     console.log(">> Browser is opening ...")
-
-//     try {
-//         const conference = await Conference.findById(job.conf_id);
-
-//         if (!conference) {
-//             return {
-//                 status: false,
-//                 message: "Conference not found"
-//             };
-//         }
-
-//         // Xử lý nếu conference chưa có link
-//         // Cần cào thêm các thông tin khác (getLocation, getConferenceDates, getConferenceLink)
-
-//         // Cào important dates
-//         let newImportantDates;
-//         if (conference.Links[0].length > 0) {
-//             newImportantDates = await getImportantDates(browser, conference.Links[0]);
-//         } else {
-//             return {
-//                 status: true,
-//                 message: "Conference hasn't new update"
-//             };
-//         }
-
-//         if(!newImportantDates) {
-//             return {
-//                 status: false,
-//                 message: "Navigation timeout of 30000 ms exceeded when go to " + conference.Links[0]
-//             };
-//         } else {
-            
-//         }
-//         // console.log(newImportantDates)
-
-//         const oldImportantDates = {
-//             submissionDate: conference.SubmissonDate.map(item => ({
-//                 date: item.date,
-//                 keyword: item.keyword,
-//                 update_time: item.update_time
-//             })),
-//             notificationDate: conference.NotificationDate.map(item => ({
-//                 date: item.date,
-//                 keyword: item.keyword,
-//                 update_time: item.update_time
-//             })),
-//             cameraReady: conference.CameraReady.map(item => ({
-//                 date: item.date,
-//                 keyword: item.keyword,
-//                 update_time: item.update_time
-//             })),
-//         };
-
-//         // console.log(oldImportantDates)
-
-//         const updates = { SubmissonDate: [], NotificationDate: [], CameraReady: [] };
-
-//         const compareDatesOnly = (date1, date2) => {
-//             const d1 = new Date(date1).toISOString().split('T')[0];
-//             const d2 = new Date(date2).toISOString().split('T')[0];
-//             return d1 === d2;
-//         };
-
-//         let hasNewChange = false
-
-//         const checkAndUpdate = (oldDates, newDates, type) => {
-//             oldDates.forEach(oldItem => {
-//                 const newItem = newDates.find(newItem => newItem.keyword === oldItem.keyword);
-//                 if (newItem && !compareDatesOnly(oldItem.date, newItem.date)) {
-//                     updates[type].push(newItem);
-//                     hasNewChange = true
-//                     console.log("+ " + oldItem.keyword + ": " + new Date(oldItem.date).toISOString().split('T')[0] + " change to " + new Date(newItem.date).toISOString().split('T')[0])
-//                 } else {
-//                     updates[type].push(oldItem)
-//                 }
-//             });
-//         };
-
-
-//         checkAndUpdate(oldImportantDates.submissionDate, newImportantDates.submissionDate, 'SubmissonDate');
-//         checkAndUpdate(oldImportantDates.notificationDate, newImportantDates.notificationDate, 'NotificationDate');
-//         checkAndUpdate(oldImportantDates.cameraReady, newImportantDates.cameraReady, 'CameraReady');
-
-//         if(safeConferenceList.some(i => i == job.conf_id) && hasNewChange) {
-//             await Conference.findByIdAndUpdate(job.conf_id, updates);
-//         } else {
-//             console.log(">> Important date not change or not in safe list")
-//             return {
-//                 status: true,
-//                 message: "Important date not change or not in safe list"
-//             };
-//         }
-        
-//         // Pineline
-//         const isPinelineSuccess = await dataPinelineAPI(job.conf_id)
-//         if(isPinelineSuccess) {
-//             return {
-//                 status: true,
-//                 message: "Update conference successfully"
-//             };
-//         } else {
-//             return {
-//                 status: false,
-//                 message: "Something occurred in data pipeline"
-//             }
-//         }
-       
-//     } catch (error) {
-//         console.log("Error in Conference controller/crawlConferenceById: " + error);
-//         return {
-//             status: false,
-//             message: error
-//         };
-//     } finally {
-//         await browser.close();
-//         console.log(">> Browser is closed")
-//     }
-// };
-
 // Handle job update now
 const crawlConferenceById = async (job) => {
 
@@ -163,9 +39,6 @@ const crawlConferenceById = async (job) => {
                 message: "Conference not found"
             };
         }
-
-        // Xử lý nếu conference chưa có link
-        // Cần cào thêm các thông tin khác (getLocation, getConferenceDates, getConferenceLink)
 
         // Cào important dates
         await updateJobProgress(job._id, 10, "Crawling important dates")
@@ -239,19 +112,13 @@ const crawlConferenceById = async (job) => {
         checkAndUpdate(oldImportantDates.notificationDate, newImportantDates.notificationDate, 'NotificationDate');
         checkAndUpdate(oldImportantDates.cameraReady, newImportantDates.cameraReady, 'CameraReady');
 
-        
-
-        if(safeConferenceList.some(i => i == job.conf_id) && hasNewChange) {
+        if(hasNewChange) {
             await Conference.findByIdAndUpdate(job.conf_id, updates);
             console.log(">> Save new update to database successfully")
             await updateJobProgress(job._id, 60, "Save new update to database successfully")
         } else {
             console.log(">> Important date not change or not in safe list")
             await updateJobProgress(job._id, 60, "Important date not change")
-            // return {
-            //     status: true,
-            //     message: "Important date not change or not in safe list"
-            // };
         }
         await updateJobProgress(job._id, 80, "ETL data to destination")
         // Pineline
@@ -296,26 +163,9 @@ const crawlNewConferenceById = async (job) => {
             };
         }
 
-        // Trường hợp conf đã có link
         if (conference.Links[0]?.length > 0) {
-            // Cào important dates
-            await updateJobProgress(job._id, 10, "Crawling important dates")
-            let newImportantDates = await getImportantDates(browser, conference.Links[0]);
-            //Cào Conference Dates
-            await updateJobProgress(job._id, 30, "Crawling conference dates")
-            let conferenceDates = await getConferenceDates(browser, conference.Links[0], conference.Title);
-            //Cào Location
-            await updateJobProgress(job._id, 50, "Crawling location")
-            let location = await getLocation(browser, conference.Links[0])
-            //Cào Type
-            await updateJobProgress(job._id, 60, "Crawling type")
-            let type = await getType(browser, conference.Links[0]);
-            //Cào cfp
-            await updateJobProgress(job._id, 80, "Crawling call for papers")
-            let callForPaper = await getCallForPaper(browser, conference.Links[0], conference.Acronym);
         } 
         else {
-            // Trường hợp conf chưa có link
             let links = await webScraperService.searchConferenceLinksByTitle(
                 browser,
                 conference,
@@ -336,25 +186,7 @@ const crawlNewConferenceById = async (job) => {
                 let type = await getType(browser, link);
 
                 await updateJobProgress(job._id, 80, "Crawling call for papers")
-                let callForPaper = await getCallForPaper(browser, link, conference.Acronym);
-                
-                const bk = await cache.findOne({
-                    Title: conference.Title
-                })
-                if(bk) {
-                    await Conference.findByIdAndUpdate(conference._id, {
-                        Links: bk.Links,
-                        ConferenceDate: bk.ConferenceDate,
-                        SubmissonDate: bk.SubmissonDate,
-                        NotificationDate: bk.NotificationDate,
-                        CameraReady: bk.CameraReady,
-                        CallForPaper: bk.CallForPaper,
-                        Location: bk.Location,
-                        Type: bk.Type
-                    })
-                    break;
-                }
-                 
+                let callForPaper = await getCallForPaper(browser, link, conference.Acronym);       
 
                 if (importantDates && conferenceDates && type) {
                     await Conference.findByIdAndUpdate(conference._id, {
@@ -423,87 +255,9 @@ const crawlNewConferenceById = async (job) => {
 
 
 
-const crawlController = async (browserInstance) => {
+const crawlController = async () => {
     try {
-        
-        // Create browser
-        // let browser = await browserInstance;
-        // let list = [
-        //     "6639d723b9c725a1d3ed3e0b"
-        // ];
-        // for(l of list) {
-        //     console.log("------------------------------------------")
-        //     console.log(">> " + l)
-        //     const isSuccess = await crawlConferenceById({
-        //         conf_id: l
-        //     })
-        //     console.log(isSuccess)
-        // }
-        
-        await crawlNewConferenceById({
-            conf_id: "6697c81460386000ce523ebb"
-        })
-       
-       
-        //await crawlAllConferencesDetail(browser);
-        // await processConferenceError(browser);
-
-
-        // ETL dữ liệu vừa cào sang postgre
-        // await etlDataToPostgre()
-
-        // const importantDate = await getImportantDates(
-        //     browser,"http://cisisconference.eu/")
-        
-        // console.log(importantDate)
-        // const dateArr = [
-        //     ...importantDate.submissionDate.map((item) => ({
-        //         date_value: item.date,
-        //         date_type: item.keyword,
-        //     })),
-        //     ...importantDate.notificationDate.map((item) => ({
-        //         date_value: item.date,
-        //         date_type: item.keyword,
-        //     })),
-        //     ...importantDate.cameraReady.map((item) => ({
-        //         date_value: item.date,
-        //         date_type: item.keyword,
-        //     })),
-        // ];
-
-        // console.log(dateArr)
-        // const conferenceDate = await getConferenceDates(browser,"https://ic3k.scitevents.org/")
-        // const conferenceDate = await getConferenceDates(browser,"https://ic3k.scitevents.org/")
-
-        
-        // console.log(conferenceDate)
-
-        // const title = "International Conference on Advanced Communications and Computation"
-        // const link = "https://www.iaria.org/conferences2024/INFOCOMP24.html"
-        // const location = await getLocation(browser, title, link)
-        // console.log("Location: " + location)
-        
-        
-        // filterInvalidConferences()
-
-        // saveKeywordsToFile()
-        
-        // await dataPineline("")
-        /* Cần ETL
-            
-            
-        */
-
-        // await saveEvaluationDataset(browser)
-
-        // await savePageContent(browser)
-
-        //-----------
-        // Test bộ luật
-        // await testTypeExtraction(browser)
-        // await testConferenceDateExtraction(browser)
-        // await testCallForPaper(browser)
-        
+        saveKeywordsToFile()
 
     } catch (error) {
         console.log("Error in crawlController: " + error);
@@ -660,82 +414,6 @@ const testConferenceDateExtraction = async (browser) => {
         console.log("Error in testConferenceDateExtraction: " + error);
     }
 };
-
-// const testConferenceDateExtraction = async (browser) => {
-//     try {
-//         let conferenceIds = [];
-
-//         const fileContent = fs.readFileSync("EvaluationDataset.csv", "utf8");
-//         const existingData = csvParse(fileContent, { columns: true });
-
-//         for (const row of existingData) {
-//             while(row._id.includes(`"`)) {
-//                 row._id = row._id.replace(`"`, "");
-//             }
-//             conferenceIds.push(row._id);
-//         }
-
-//         let total = 0;
-//         let correct = 0;
-//         let isNull = 0;
-//         let isLinkEmpty = 0;
-
-//         let index = 515;
-//         for (let i=index; i<index+1; i++) {
-//             const conference = await conferenceModel.findOne({ _id: conferenceIds[i] });
-//             console.log(i)
-//             logToFile("---------------------------");
-//             logToFile(">> " + i);
-//             logToFile(">> " + conference._id);
-
-//             if (!conference.Links[0] || conference.Links[0].length == 0) {
-//                 isLinkEmpty++;
-//                 logToFile("Hasn't link");
-//                 continue;
-//             }
-
-//             const expectedStartDate = new Date(conference.ConferenceDate[0].date).toISOString();
-//             let expectedEndDate;
-//             if(conference.ConferenceDate.length == 1) {
-//                 expectedEndDate = null;
-//             } else {
-//                 expectedEndDate = new Date(conference.ConferenceDate[1]?.date).toISOString();
-//             }
-
-//             const extractedDates = await getConferenceDates(browser, conference.Links[0], conference.Title);
-//             if (extractedDates == null) {
-//                 isNull++;
-//                 logToFile("False");
-//                 continue;
-//             }
-
-//             const extractedStartDate = extractedDates.startDateISO;
-//             const extractedEndDate = extractedDates.endDateISO;
-
-//             if (expectedStartDate == extractedStartDate && expectedEndDate == extractedEndDate) {
-//                 logToFile("True");
-//                 correct++;
-//             } else {
-//                 logToFile("Expected Start Date: " + expectedStartDate);
-//                 logToFile("Expected End Date: " + expectedEndDate);
-//                 logToFile("Extracted Start Date: " + extractedStartDate);
-//                 logToFile("Extracted End Date: " + extractedEndDate);
-//                 logToFile("False");
-//             }
-//             total++;
-//         }
-
-//         const accuracy = (correct / total) * 100;
-//         logToFile(`Total extracted: ${total}`);
-//         logToFile(`Correct Accuracy: ${accuracy.toFixed(2)}%`);
-//         logToFile(`Null: ${isNull}`);
-//         logToFile(`Hasn't link: ${isLinkEmpty}`);
-
-//         return accuracy;
-//     } catch (error) {
-//         logToFile("Error in testConferenceDateExtraction: " + error);
-//     }
-// };
 
 const testTypeExtraction = async (browser) => {
     try {
@@ -1146,77 +824,6 @@ const savePageContent = async (browser) => {
             }
         });
         await page.close();
-    }
-};
-
-
-const updateFormattedConferences = async () => {
-    const filePath = "formatted_conferences.csv";
-
-    // Read existing CSV data
-    if (!fs.existsSync(filePath)) {
-        console.error(`File ${filePath} does not exist.`);
-        return;
-    }
-
-    const fileContent = fs.readFileSync(filePath, "utf8");
-    const existingData = csvParse(fileContent, { columns: true });
-
-    // Iterate through each row to update the new column
-    for (const row of existingData) {
-        const j_id = row.j_id;
-
-        try {
-            const conference = await Conference.findOne({ _id: j_id });
-
-            if (!conference) {
-                row.newColumn = null;
-            } else {
-                const links = conference.Links;
-
-                if (links.length === 1) {
-                    switch (links[0]) {
-                        case row.link1:
-                            row.newColumn = "link 1";
-                            break;
-                        case row.link2:
-                            row.newColumn = "link 2";
-                            break;
-                        case row.link3:
-                            row.newColumn = "link 3";
-                            break;
-                        case row.link4:
-                            row.newColumn = "link 4";
-                            break;
-                        default:
-                            row.newColumn = "link 5";
-                            break;
-                    }
-                } else if (links.length === 4) {
-                    row.newColumn = "4 links";
-                } else {
-                    row.newColumn = null;
-                }
-            }
-        } catch (error) {
-            console.error(
-                `Error fetching conference with j_id ${j_id}:`,
-                error
-            );
-            row.newColumn = null;
-        }
-    }
-
-    // Convert results to CSV
-    const fields = [...Object.keys(existingData[0]), "newColumn"];
-    const opts = { fields };
-
-    try {
-        const csv = parse(existingData, opts);
-        fs.writeFileSync(filePath, csv);
-        console.log("CSV file has been updated successfully.");
-    } catch (err) {
-        console.error(err);
     }
 };
 
